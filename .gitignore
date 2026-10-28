@@ -43,6 +43,8 @@ sdkconfig.old
 # Backup files
 *.bak
 *.backup
+*.FCBak
+mechanism/assembly/recovery-backup-*/
 
 # Node modules (if any web development tools are used)
 node_modules/

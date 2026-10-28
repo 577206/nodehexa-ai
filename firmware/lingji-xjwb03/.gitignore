@@ -1,0 +1,8 @@
+.env.local
+project_identity.local.h
+secrets.local.*
+build/
+backups/
+captures/
+.espressif/
+sdk/.espressif/

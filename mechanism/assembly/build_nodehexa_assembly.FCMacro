@@ -1,0 +1,393 @@
+# -*- coding: utf-8 -*-
+"""Build a grouped, editable NodeHexa whole-robot preview in FreeCAD.
+
+This is a reference-fit assembly made from the repository STL parts.  The STL
+files contain no assembly constraints, so the values in ASSEMBLY PARAMETERS are
+deliberately kept together for easy calibration against the physical robot.
+"""
+
+import os
+
+import FreeCAD as App
+import FreeCADGui as Gui
+import Mesh
+import Part
+
+
+# ---------------------------------------------------------------------------
+# ASSEMBLY PARAMETERS (millimetres / degrees)
+# ---------------------------------------------------------------------------
+
+REPO_ROOT = "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository"
+STL_DIR = os.path.join(REPO_ROOT, "mechanism", "hexapod")
+OUT_DIR = os.path.join(REPO_ROOT, "mechanism", "assembly")
+OUT_FCSTD = os.path.join(OUT_DIR, "NodeHexa-Whole-Robot.FCStd")
+OUT_PREVIEW = os.path.join(OUT_DIR, "NodeHexa-Whole-Robot-preview.png")
+
+BODY_BOTTOM_Z = 0.0
+BODY_CENTER_Z = 15.0
+BODY_TOP_Z = 34.0
+BODY_SIDE_Y = 37.0
+BODY_END_X = 61.0
+
+# Six hip anchors and their outward yaw directions.
+# Coordinate convention: +X front, +Y left, +Z up.
+LEG_LAYOUT = (
+    ("FL", "左前腿", (48.0, 35.0, 10.0), 55.0),
+    ("ML", "左中腿", (0.0, 39.0, 10.0), 90.0),
+    ("RL", "左后腿", (-48.0, 35.0, 10.0), 125.0),
+    ("FR", "右前腿", (48.0, -35.0, 10.0), -55.0),
+    ("MR", "右中腿", (0.0, -39.0, 10.0), -90.0),
+    ("RR", "右后腿", (-48.0, -35.0, 10.0), -125.0),
+)
+
+# Neutral pose.  These centres are expressed in one leg's local frame:
+# X = radially outwards, Y = tangential plate spacing, Z = upwards.
+PAIR_SPACING = 8.0
+SHIN_PITCH = 65.0
+FOOT_PANEL_TILT = -20.0
+
+
+# ---------------------------------------------------------------------------
+# DOCUMENT HELPERS
+# ---------------------------------------------------------------------------
+
+DOC_NAME = "NodeHexaWholeRobot"
+try:
+    App.getDocument(DOC_NAME)
+except NameError:
+    pass
+else:
+    App.closeDocument(DOC_NAME)
+
+doc = App.newDocument(DOC_NAME, "NodeHexa 整机装配预览")
+
+
+def rotation_xyz(rx=0.0, ry=0.0, rz=0.0):
+    """Return Rz * Ry * Rx, using degrees."""
+    qx = App.Rotation(App.Vector(1, 0, 0), rx)
+    qy = App.Rotation(App.Vector(0, 1, 0), ry)
+    qz = App.Rotation(App.Vector(0, 0, 1), rz)
+    return qz.multiply(qy).multiply(qx)
+
+
+def vector(values):
+    return App.Vector(float(values[0]), float(values[1]), float(values[2]))
+
+
+def centred_placement(source, target, rotation):
+    box = source.Mesh.BoundBox
+    centre = App.Vector(
+        (box.XMin + box.XMax) * 0.5,
+        (box.YMin + box.YMax) * 0.5,
+        (box.ZMin + box.ZMax) * 0.5,
+    )
+    base = vector(target) - rotation.multVec(centre)
+    return App.Placement(base, rotation)
+
+
+def safe_name(text):
+    return text.replace("-", "_").replace(" ", "_")
+
+
+source_group = doc.addObject("App::DocumentObjectGroup", "SourceMeshes")
+source_group.Label = "原始 STL（链接源，已隐藏）"
+
+SOURCES = {}
+
+
+def load_source(filename, color):
+    key = os.path.splitext(filename)[0]
+    obj = doc.addObject("Mesh::Feature", "SRC_" + safe_name(key))
+    obj.Label = key + " [源]"
+    obj.Mesh = Mesh.Mesh(os.path.join(STL_DIR, filename))
+    obj.ViewObject.ShapeColor = color
+    obj.ViewObject.LineColor = tuple(max(0.0, c * 0.55) for c in color)
+    obj.ViewObject.DisplayMode = "Flat Lines"
+    source_group.addObject(obj)
+    SOURCES[key] = obj
+
+
+BODY_COLOR = (0.34, 0.38, 0.43)
+FRAME_COLOR = (0.28, 0.31, 0.35)
+ACCENT_COLOR = (0.95, 0.30, 0.07)
+FOOT_COLOR = (0.20, 0.23, 0.26)
+
+for filename in (
+    "TKRC-BodyBackWall.STL",
+    "TKRC-BodyButtom.STL",
+    "TKRC-BodyButtom-18650-2S.STL",
+    "TKRC-BodyCenter.STL",
+    "TKRC-BodyCenter-Thin.STL",
+    "TKRC-BodySideWall.STL",
+    "TKRC-BodyTop.STL",
+):
+    load_source(filename, BODY_COLOR)
+
+for filename in (
+    "TKRC-JointCross.STL",
+    "TKRC-JointDown.STL",
+    "TKRC-JointTop.STL",
+    "TKRC-ThighBottom.STL",
+    "TKRC-ThighTop.STL",
+):
+    load_source(filename, ACCENT_COLOR)
+
+for filename in (
+    "TKRC-LegBottom.STL",
+    "TKRC-LegTop.STL",
+):
+    load_source(filename, FRAME_COLOR)
+
+for filename in (
+    "TKRC-FootButtom.STL",
+    "TKRC-FootGround.STL",
+    "TKRC-FootTip.STL",
+    "TKRC-FootTop.STL",
+):
+    load_source(filename, FOOT_COLOR)
+
+
+def add_link(group, part_key, label, target, rotation):
+    # Links reuse each STL mesh and keep the six-leg document compact.  Each
+    # instance still has its own Placement and visibility in the model tree.
+    obj = doc.addObject("App::Link", safe_name(group.Name + "_" + label))
+    obj.Label = label
+    obj.LinkedObject = SOURCES[part_key]
+    obj.LinkTransform = False
+    obj.Placement = centred_placement(SOURCES[part_key], target, rotation)
+    group.addObject(obj)
+    obj.ViewObject.Visibility = True
+    return obj
+
+
+def add_box(group, name, label, size, centre, rotation, color):
+    sx, sy, sz = size
+    obj = doc.addObject("Part::Feature", safe_name(name))
+    obj.Label = label
+    obj.Shape = Part.makeBox(float(sx), float(sy), float(sz))
+    half = App.Vector(sx * 0.5, sy * 0.5, sz * 0.5)
+    obj.Placement = App.Placement(vector(centre) - rotation.multVec(half), rotation)
+    obj.ViewObject.ShapeColor = color
+    obj.ViewObject.LineColor = (0.10, 0.10, 0.10)
+    group.addObject(obj)
+    return obj
+
+
+def leg_world(anchor, yaw, local_point):
+    yaw_rotation = rotation_xyz(rz=yaw)
+    return vector(anchor) + yaw_rotation.multVec(vector(local_point))
+
+
+def leg_rotation(yaw, rx=0.0, ry=0.0, rz=0.0):
+    return rotation_xyz(rz=yaw).multiply(rotation_xyz(rx, ry, rz))
+
+
+# ---------------------------------------------------------------------------
+# BODY
+# ---------------------------------------------------------------------------
+
+body = doc.addObject("App::Part", "BodyAssembly")
+body.Label = "机身总成"
+
+plate_rotation = rotation_xyz(rx=-90.0)
+add_link(body, "TKRC-BodyButtom", "机身底板", (0, 0, BODY_BOTTOM_Z), plate_rotation)
+add_link(body, "TKRC-BodyCenter", "中层安装板", (0, 0, BODY_CENTER_Z), plate_rotation)
+add_link(body, "TKRC-BodyTop", "机身顶板", (0, 0, BODY_TOP_Z), plate_rotation)
+
+side_rotation = rotation_xyz(rx=90.0)
+add_link(body, "TKRC-BodySideWall", "左侧壁", (0, BODY_SIDE_Y, 17), side_rotation)
+add_link(body, "TKRC-BodySideWall", "右侧壁", (0, -BODY_SIDE_Y, 17), rotation_xyz(90, 0, 180))
+
+end_rotation = rotation_xyz(rx=90.0, rz=90.0)
+add_link(body, "TKRC-BodyBackWall", "后端壁", (-BODY_END_X, 0, 17), end_rotation)
+add_link(body, "TKRC-BodyBackWall", "前端壁", (BODY_END_X, 0, 17), rotation_xyz(90, 0, -90))
+
+# Alternative repository parts are preserved in a hidden group instead of
+# overlapping the chosen body configuration.
+alternatives = doc.addObject("App::DocumentObjectGroup", "BodyAlternatives")
+alternatives.Label = "机身备选零件（默认隐藏）"
+alt_battery = add_link(
+    alternatives,
+    "TKRC-BodyButtom-18650-2S",
+    "2S 18650 底板备选",
+    (0, 0, BODY_BOTTOM_Z),
+    plate_rotation,
+)
+alt_thin = add_link(
+    alternatives,
+    "TKRC-BodyCenter-Thin",
+    "薄型中层板备选",
+    (0, 0, BODY_CENTER_Z),
+    plate_rotation,
+)
+alt_battery.ViewObject.Visibility = False
+alt_thin.ViewObject.Visibility = False
+
+
+# ---------------------------------------------------------------------------
+# SIX REPEATED LEGS
+# ---------------------------------------------------------------------------
+
+legs_root = doc.addObject("App::DocumentObjectGroup", "SixLegAssemblies")
+legs_root.Label = "六条腿总成"
+
+servo_root = doc.addObject("App::DocumentObjectGroup", "ServoPlaceholders")
+servo_root.Label = "18 个舵机占位（非仓库 STL）"
+
+for code, chinese_name, anchor, yaw in LEG_LAYOUT:
+    leg = doc.addObject("App::Part", "Leg_" + code)
+    leg.Label = chinese_name + " / " + code
+    legs_root.addObject(leg)
+
+    # Hip bracket: three repository parts.
+    add_link(
+        leg,
+        "TKRC-JointCross",
+        code + " 髋关节十字架",
+        leg_world(anchor, yaw, (8, 0, 22)),
+        leg_rotation(yaw),
+    )
+    add_link(
+        leg,
+        "TKRC-JointTop",
+        code + " 髋关节上片",
+        leg_world(anchor, yaw, (20, PAIR_SPACING, 31)),
+        leg_rotation(yaw),
+    )
+    add_link(
+        leg,
+        "TKRC-JointDown",
+        code + " 髋关节下片",
+        leg_world(anchor, yaw, (20, -PAIR_SPACING, 13)),
+        leg_rotation(yaw),
+    )
+
+    # Short coxa/thigh plates.
+    add_link(
+        leg,
+        "TKRC-ThighTop",
+        code + " 大腿上片",
+        leg_world(anchor, yaw, (40, PAIR_SPACING, 23)),
+        leg_rotation(yaw),
+    )
+    add_link(
+        leg,
+        "TKRC-ThighBottom",
+        code + " 大腿下片",
+        leg_world(anchor, yaw, (40, -PAIR_SPACING, 23)),
+        leg_rotation(yaw),
+    )
+
+    # Long femur plates.
+    add_link(
+        leg,
+        "TKRC-LegTop",
+        code + " 小腿上片",
+        leg_world(anchor, yaw, (85, PAIR_SPACING, 20)),
+        leg_rotation(yaw, ry=5.0),
+    )
+    add_link(
+        leg,
+        "TKRC-LegBottom",
+        code + " 小腿下片",
+        leg_world(anchor, yaw, (85, -PAIR_SPACING, 20)),
+        leg_rotation(yaw, ry=5.0),
+    )
+
+    # Distal shin/foot plates in a neutral standing pose.
+    add_link(
+        leg,
+        "TKRC-FootTop",
+        code + " 足部上片",
+        leg_world(anchor, yaw, (137, PAIR_SPACING - 1, -10)),
+        leg_rotation(yaw, ry=SHIN_PITCH),
+    )
+    add_link(
+        leg,
+        "TKRC-FootButtom",
+        code + " 足部下片",
+        leg_world(anchor, yaw, (137, -PAIR_SPACING + 1, -10)),
+        leg_rotation(yaw, ry=SHIN_PITCH),
+    )
+    add_link(
+        leg,
+        "TKRC-FootGround",
+        code + " 足部格栅板",
+        leg_world(anchor, yaw, (153, 0, -22)),
+        leg_rotation(yaw, rx=-90.0, ry=FOOT_PANEL_TILT),
+    )
+    add_link(
+        leg,
+        "TKRC-FootTip",
+        code + " 足尖",
+        leg_world(anchor, yaw, (170, 0, -57)),
+        leg_rotation(yaw),
+    )
+
+    # Approximate 9 g servo envelopes.  They are intentionally simple solids;
+    # replace them with the exact purchased servo CAD when available.
+    for servo_no, local_centre, local_rot in (
+        (1, (8, 0, 22), (0, 0, 0)),
+        (2, (48, 0, 22), (0, 0, 0)),
+        (3, (115, 0, 8), (0, SHIN_PITCH, 0)),
+    ):
+        add_box(
+            servo_root,
+            "Servo_%s_%d" % (code, servo_no),
+            "%s 舵机 %d（占位）" % (code, servo_no),
+            (23.0, 12.5, 24.0),
+            leg_world(anchor, yaw, local_centre),
+            leg_rotation(yaw, *local_rot),
+            (0.08, 0.08, 0.09),
+        )
+
+
+# A simple controller-board envelope makes future camera/voice-module packaging
+# easier without pretending that a precise PCB CAD model exists in the repo.
+electronics = doc.addObject("App::DocumentObjectGroup", "ElectronicsPlaceholders")
+electronics.Label = "电子模块占位（用于后续 DIY 扩展）"
+add_box(
+    electronics,
+    "ControllerBoardEnvelope",
+    "ESP32 / 主控板占位",
+    (72.0, 32.0, 3.0),
+    (0, 0, 25.0),
+    rotation_xyz(),
+    (0.05, 0.36, 0.18),
+)
+
+
+# ---------------------------------------------------------------------------
+# ASSEMBLY NOTES AND OUTPUT
+# ---------------------------------------------------------------------------
+
+info = doc.addObject("App::FeaturePython", "AssemblyNotes")
+info.Label = "先看这里：整机装配说明"
+info.addProperty("App::PropertyString", "ModelStatus", "装配信息")
+info.ModelStatus = "整机初装版：已按仓库参考图组合，尚未使用实体卡尺数据进行装配约束校准"
+info.addProperty("App::PropertyInteger", "LegCount", "装配信息")
+info.LegCount = 6
+info.addProperty("App::PropertyInteger", "ServoCount", "装配信息")
+info.ServoCount = 18
+info.addProperty("App::PropertyString", "CoordinateSystem", "装配信息")
+info.CoordinateSystem = "+X 前，+Y 左，+Z 上"
+info.addProperty("App::PropertyString", "AdjustmentFile", "装配信息")
+info.AdjustmentFile = os.path.join("mechanism", "assembly", "build_nodehexa_assembly.FCMacro")
+info.addProperty("App::PropertyString", "Caution", "装配信息")
+info.Caution = "打印前须用实物核对孔距、舵机厚度、板间距和零位角；当前模型用于整体布局与扩展件预设计"
+
+doc.recompute()
+source_group.Visibility = False
+
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
+Gui.activeDocument().activeView().setAnimationEnabled(False)
+
+os.makedirs(OUT_DIR, exist_ok=True)
+doc.recompute()
+doc.saveAs(OUT_FCSTD)
+Gui.activeDocument().activeView().saveImage(OUT_PREVIEW, 1800, 1200, "White")
+
+print("NodeHexa assembly saved to:", OUT_FCSTD)
+print("Preview saved to:", OUT_PREVIEW)

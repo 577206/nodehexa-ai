@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>灵犀 · 摄像头预览</title>
+  <style>
+    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; background: #101319; color: #eef1f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 78% 6%, #27384b 0, transparent 33%), #101319; }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 34px 28px 48px; }
+    header { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 10px; color: #89b8bb; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(27px, 4vw, 42px); letter-spacing: -.04em; font-weight: 700; }
+    .subtitle { margin: 12px 0 0; color: #aeb8c4; font-size: 14px; line-height: 1.6; }
+    .status { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #43505d; border-radius: 999px; padding: 9px 13px; color: #c3cbd5; background: #202832; white-space: nowrap; font-size: 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #e1ad68; box-shadow: 0 0 0 4px #e1ad6820; }
+    .status.live .dot { background: #6cd6a0; box-shadow: 0 0 0 4px #6cd6a020; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(300px, .9fr); gap: 22px; align-items: stretch; }
+    .panel { background: #1b212a; border: 1px solid #303a46; border-radius: 20px; box-shadow: 0 22px 60px #070a0f55; overflow: hidden; }
+    .panel-title { display: flex; align-items: center; justify-content: space-between; padding: 18px 21px; border-bottom: 1px solid #303a46; }
+    .panel-title h2 { margin: 0; font-size: 15px; font-weight: 650; }
+    .meta { color: #8f9caa; font-size: 12px; }
+    .preview { position: relative; min-height: 540px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, #17202a, #0c1015); }
+    .preview::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(#ffffff07 1px, transparent 1px), linear-gradient(90deg, #ffffff07 1px, transparent 1px); background-size: 28px 28px; pointer-events: none; }
+    .preview img { position: relative; max-width: 100%; max-height: 70vh; min-height: 480px; width: auto; object-fit: contain; display: none; box-shadow: 0 0 0 1px #ffffff18, 0 16px 60px #0009; }
+    .preview img.show { display: block; }
+    .empty { position: relative; text-align: center; padding: 25px; color: #aab5c2; max-width: 350px; }
+    .empty .icon { width: 66px; height: 66px; border: 1px solid #5a6878; border-radius: 19px; display: grid; place-items: center; margin: 0 auto 20px; font-size: 30px; color: #a7d7d8; background: #ffffff09; }
+    .empty strong { display: block; color: #e4e9ed; font-size: 17px; margin-bottom: 9px; }
+    .empty span { font-size: 13px; line-height: 1.7; }
+    .preview-foot { display: flex; justify-content: space-between; gap: 10px; padding: 13px 20px; border-top: 1px solid #303a46; color: #8f9caa; font-size: 12px; }
+    .side { display: flex; flex-direction: column; }
+    .side-body { display: flex; flex: 1; flex-direction: column; padding: 23px; }
+    .side-body p { color: #aab5c2; font-size: 14px; line-height: 1.7; margin: 0 0 22px; }
+    button { width: 100%; border: 0; border-radius: 13px; padding: 15px 18px; background: #a5e3cb; color: #17352d; font-size: 15px; font-weight: 750; cursor: pointer; transition: transform .15s, background .15s; }
+    button:not(:disabled):hover { background: #baf2da; transform: translateY(-1px); }
+    button:disabled { cursor: not-allowed; background: #53645e; color: #b6c4bc; }
+    button.secondary { margin-top: 10px; background: #344958; color: #e5f2f4; border: 1px solid #4a6572; }
+    button.secondary:not(:disabled):hover { background: #405b6a; }
+    .hint { margin: 13px 2px 25px; color: #8999a7; font-size: 12px; line-height: 1.6; }
+    .result { border-top: 1px solid #33404b; padding-top: 22px; min-height: 220px; }
+    .result-label { color: #8eabb0; font-size: 11px; letter-spacing: .14em; font-weight: 750; }
+    .result-head { margin: 12px 0 10px; font-size: 24px; line-height: 1.3; font-weight: 700; }
+    .result-summary { color: #c6d0d9; font-size: 14px; line-height: 1.7; }
+    .warning { margin-top: auto; padding-top: 22px; color: #8c9aa7; font-size: 12px; line-height: 1.6; }
+    @media (max-width: 850px) { .layout { grid-template-columns: 1fr; } .preview { min-height: 420px; } .preview img { min-height: 360px; max-height: 60vh; } }
+    @media (max-width: 550px) { .shell { padding: 24px 14px; } header { flex-direction: column; } .preview-foot { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">LINGXI / CAMERA LAB</p>
+        <h1>灵犀的视角</h1>
+        <p class="subtitle">灵机板 BF3901 实时预览 · 由你决定什么时候识别</p>
+      </div>
+      <div id="liveStatus" class="status"><span class="dot"></span><span id="statusText">正在连接摄像头</span></div>
+    </header>
+    <div class="layout">
+      <section class="panel">
+        <div class="panel-title"><h2>摄像头画面</h2><span class="meta">BF3901 · 240 × 320</span></div>
+        <div class="preview">
+          <img id="cameraFrame" alt="灵机板摄像头实时画面">
+          <div id="emptyState" class="empty"><div class="icon">◉</div><strong>等待第一帧画面</strong><span id="emptyDetail">正在读取灵机板串口，请保持 USB 连接。</span></div>
+        </div>
+        <div class="preview-foot"><span id="frameInfo">尚未收到有效帧</span><span>画面仅在这台电脑的本机页面显示</span></div>
+      </section>
+      <aside class="panel side">
+        <div class="panel-title"><h2>画面描述</h2><span class="meta">千问 · 按需调用</span></div>
+        <div class="side-body">
+          <p>画面会持续更新。想知道镜头里有什么时，点击按钮；系统只把<strong>当前这一帧</strong>发送给千问，请它描述看见的内容。</p>
+          <button id="analyzeButton" disabled>描述当前画面</button>
+          <button id="talkButton" class="secondary" disabled>描述并让灵犀语音回应</button>
+          <div class="hint">也可以先说唤醒词，再直接问镜头里有什么。唤醒后的话交给千问判断是否需要画面；只有视觉请求才会拍一帧做图像识别。</div>
+          <div id="voiceVisionStatus" class="hint" role="status">待机：唤醒后才判断视觉请求</div>
+          <div id="audioPrivacyStatus" class="hint" role="status">正在读取语音上行状态…</div>
+          <div class="result">
+            <div class="result-label">LATEST DESCRIPTION</div>
+            <div id="resultHead" class="result-head">等待你点击按钮</div>
+            <div id="resultSummary" class="result-summary">千问对这一帧的描述会显示在这里。</div>
+            <div id="agentStatus" class="hint" role="status"></div>
+          </div>
+          <div class="warning">只有点击语音回应按钮才会把文字摘要交给灵犀；画面不会触发机器人动作。</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script>
+    const frame = document.getElementById('cameraFrame');
+    const empty = document.getElementById('emptyState');
+    const emptyDetail = document.getElementById('emptyDetail');
+    const frameInfo = document.getElementById('frameInfo');
+    const liveStatus = document.getElementById('liveStatus');
+    const statusText = document.getElementById('statusText');
+    const button = document.getElementById('analyzeButton');
+    const talkButton = document.getElementById('talkButton');
+    const resultHead = document.getElementById('resultHead');
+    const resultSummary = document.getElementById('resultSummary');
+    const agentStatus = document.getElementById('agentStatus');
+    const voiceVisionStatus = document.getElementById('voiceVisionStatus');
+    const audioPrivacyStatus = document.getElementById('audioPrivacyStatus');
+    let lastSequence = 0;
+    let busy = false;
+    let shownAnalysisAt = 0;
+
+    function showResult(result, at) {
+      if (!result || at <= shownAnalysisAt) return;
+      shownAnalysisAt = at;
+      resultHead.textContent = '千问看到的画面';
+      resultSummary.textContent = result;
+    }
+
+    async function refresh() {
+      try {
+        const response = await fetch('/status', {cache: 'no-store'});
+        const status = await response.json();
+        const ready = Boolean(status.ready);
+        voiceVisionStatus.textContent = status.voice_vision_status || '等待语音视觉请求';
+        audioPrivacyStatus.textContent = status.audio_status ?
+          (status.audio_status.uplink ? '语音状态：已唤醒，麦克风云端上行开启' : '语音状态：云端麦克风上行关闭，仅本地等待唤醒词') :
+          '正在读取语音上行状态…';
+        liveStatus.classList.toggle('live', ready);
+        statusText.textContent = ready ? '实时画面已连接' : '等待有效画面';
+        button.disabled = !ready || busy || status.analyzing;
+        talkButton.disabled = !ready || busy || status.analyzing;
+        if (ready && status.sequence !== lastSequence) {
+          lastSequence = status.sequence;
+          frame.src = `/frame.jpg?seq=${status.sequence}`;
+          frame.classList.add('show');
+          empty.hidden = true;
+        }
+        if (!ready) {
+          frame.classList.remove('show');
+          empty.hidden = false;
+          emptyDetail.textContent = status.error || '画面暂时中断，正在重连。';
+        }
+        frameInfo.textContent = ready ? `第 ${status.sequence} 帧 · ${status.age_seconds} 秒前 · ${(status.bytes / 1024).toFixed(1)} KB` : '尚未收到新的有效帧';
+        showResult(status.result, status.last_analysis_at);
+      } catch (_) {
+        liveStatus.classList.remove('live');
+        statusText.textContent = '本机服务已断开';
+        button.disabled = true;
+        talkButton.disabled = true;
+      }
+    }
+
+    async function requestDescription(talk) {
+      busy = true;
+      button.disabled = true;
+      talkButton.disabled = true;
+      const activeButton = talk ? talkButton : button;
+      activeButton.textContent = talk ? '正在连接语音 Agent…' : '正在描述…';
+      resultHead.textContent = '正在查看当前画面';
+      resultSummary.textContent = '请稍等，画面预览会继续更新。';
+      agentStatus.textContent = '';
+      try {
+        const response = await fetch(talk ? '/talk' : '/analyze', {method: 'POST'});
+        const data = await response.json();
+        if (data.result) showResult(data.result, Date.now() / 1000);
+        if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+        if (talk) agentStatus.textContent = '画面摘要已送到灵机语音 Agent，请听喇叭回应；之后可用唤醒词继续聊。';
+      } catch (error) {
+        if (!talk || resultHead.textContent === '正在查看当前画面') {
+          resultHead.textContent = talk ? '暂时无法连接语音 Agent' : '这次描述没有完成';
+          resultSummary.textContent = error.message || String(error);
+        } else {
+          agentStatus.textContent = error.message || String(error);
+        }
+      } finally {
+        busy = false;
+        activeButton.textContent = talk ? '描述并让灵犀语音回应' : '描述当前画面';
+        refresh();
+      }
+    }
+
+    button.addEventListener('click', () => requestDescription(false));
+    talkButton.addEventListener('click', () => requestDescription(true));
+
+    refresh();
+    setInterval(refresh, 900);
+  </script>
+</body>
+</html>
