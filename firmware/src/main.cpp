@@ -1941,6 +1941,24 @@ void parseSerialMovementCommand(const String& jsonString) {
     return;
   }
 
+  // A stop request must always be accepted, including during a low-battery
+  // latch. Bench firmware acknowledges it while keeping all PWM off.
+  if (json["stop"].is<bool>() && json["stop"].as<bool>()) {
+    const AdvancedCommandResult stop = handleAdvancedMotionCommand(json.as<JsonVariantConst>());
+    StaticJsonDocument<128> response;
+    response["status"] = stop.success ? "success" : "error";
+    response["message"] = stop.message;
+    String payload;
+    serializeJson(response, payload);
+    sendSerialResponse(payload);
+    return;
+  }
+
+  if (board::kBenchMode) {
+    sendSerialResponse("{\"status\":\"error\",\"message\":\"bench_mode_servo_disabled\"}");
+    return;
+  }
+
   // 低电量锁存后：屏蔽所有控制指令（包括运动模式/速度/步态/序列）
   if (isMotionBlocked()) {
     motion::controller().clear("[Power] low battery, command ignored");

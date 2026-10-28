@@ -12,8 +12,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from capture_camera import CameraSerial
+from interaction_intent import classify
 from vision_qwen import DEFAULT_BASE_URL, DEFAULT_MODEL, analyze, load_local_config
-from voice_vision_intent import needs_camera
 
 PAGE = Path(__file__).with_name("camera_dashboard.html")
 STALE_SECONDS = 12.0
@@ -110,6 +110,12 @@ class CameraState:
                 raise RuntimeError("灵机板串口尚未连接")
             self.camera.check_vision_bridge()
 
+    def send_robot_action(self, action: str) -> str:
+        with self.serial_lock:
+            if self.camera is None:
+                raise RuntimeError("灵机板串口尚未连接")
+            return self.camera.robot_action(action)
+
 
 def _fit_utf8(text: str, limit: int) -> str:
     clean = " ".join(text.split())
@@ -205,7 +211,7 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
             utterance = state.asr_queue.get(timeout=0.5)
         except queue.Empty:
             continue
-        state.set_voice_status("正在判断是否需要查看画面…")
+        state.set_voice_status("正在判断语音请求…")
         try:
             settings = load_local_config()
             key = settings.get("DASHSCOPE_API_KEY", "").strip()
@@ -213,8 +219,17 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                 raise RuntimeError("请先在 .env.local 填写千问 API Key")
             base_url = settings.get("DASHSCOPE_BASE_URL") or DEFAULT_BASE_URL
             model = settings.get("DASHSCOPE_VISION_MODEL") or DEFAULT_MODEL
-            if not needs_camera(utterance, key, base_url, model):
-                state.set_voice_status("普通对话：未调用摄像头视觉模型")
+            intent = classify(utterance, key, base_url, model)
+            if intent.kind == "chat":
+                state.set_voice_status("普通对话：无需摄像头或机器人动作")
+                continue
+            if intent.kind == "motion":
+                state.set_voice_status(f"识别到机器人动作：{intent.action}，等待执行确认…")
+                outcome = state.send_robot_action(intent.action)
+                state.set_voice_status(
+                    "机器人为台架模式：舵机已禁用，未执行动作" if outcome == "bench"
+                    else f"机器人已接受预设动作：{intent.action}"
+                )
                 continue
             state.set_voice_status("识别到视觉请求，正在查看当前画面…")
             state.require_agent_bridge()

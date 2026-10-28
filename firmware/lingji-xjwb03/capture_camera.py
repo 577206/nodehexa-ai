@@ -154,6 +154,36 @@ class CameraSerial:
                         "uplink": match.group(3) == b"1"}
         raise TimeoutError("灵机板未返回语音隐私状态")
 
+    def robot_action(self, action: str, timeout: float = 5.0) -> str:
+        """Ask the Lingji board to execute one firmware-owned preset."""
+        from interaction_intent import MOTION_ACTIONS
+
+        if action not in MOTION_ACTIONS:
+            raise ValueError("Action is outside the preset allowlist")
+        self.device.write(f"robot action {action}\r".encode("ascii"))
+        self.device.flush()
+        deadline = time.monotonic() + timeout
+        queued = False
+        while time.monotonic() < deadline:
+            line = self._readline()
+            if b"ROBOT-OFFLINE" in line:
+                raise RuntimeError("机器人串口未连接")
+            if b"ROBOT-BENCH" in line:
+                return "bench"
+            if b"ROBOT-BUSY" in line:
+                raise RuntimeError("机器人正在处理上一条动作")
+            if b"ROBOT-INVALID-ACTION" in line:
+                raise RuntimeError("机器人拒绝了未知动作")
+            if b"ROBOT-QUEUED" in line:
+                queued = True
+            if b"ROBOT-ACK" in line and b"action=" + action.encode("ascii") in line:
+                if b"status=success" in line:
+                    return "accepted"
+                if b"status=timeout" in line:
+                    raise TimeoutError("机器人动作未得到确认；请检查串口和供电")
+                raise RuntimeError("机器人拒绝了动作")
+        raise TimeoutError("机器人未确认动作" if queued else "灵机板未确认机器人指令")
+
 
 def capture(port: str, output: Path, timeout: float) -> Path:
     with CameraSerial(port) as camera:

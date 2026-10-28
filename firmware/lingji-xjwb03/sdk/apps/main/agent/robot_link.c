@@ -2,6 +2,7 @@
 
 #include "driver/uart.h"
 #include "freertos/FreeRTOS.h"
+#include "freertos/queue.h"
 #include "freertos/task.h"
 #include "qm_cli.h"
 #include "qm_log.h"
@@ -19,12 +20,30 @@
 #define LINK_MAX_PAYLOAD 512U
 #define LINK_INTERVAL_MS 2000U
 #define LINK_OFFLINE_MS 6000U
+#define COMMAND_TIMEOUT_MS 3000U
+
+typedef struct {
+    const char *name;
+    const char *payload;
+} preset_t;
+
+/* The model never supplies movementMode, speed, duration, or raw JSON. */
+static const preset_t s_presets[] = {
+    {"forward", "{\"mode\":\"forward\",\"cycles\":1}"},
+    {"backward", "{\"mode\":\"backward\",\"cycles\":1}"},
+    {"turn_left", "{\"mode\":\"turn_left\",\"cycles\":0.5}"},
+    {"turn_right", "{\"mode\":\"turn_right\",\"cycles\":0.5}"},
+    {"shift_left", "{\"mode\":\"shift_left\",\"cycles\":0.5}"},
+    {"shift_right", "{\"mode\":\"shift_right\",\"cycles\":0.5}"},
+};
 
 static atomic_bool s_online = ATOMIC_VAR_INIT(false);
 static atomic_bool s_bench = ATOMIC_VAR_INIT(false);
 static atomic_uint s_rx_count = ATOMIC_VAR_INIT(0);
 static atomic_uint s_tx_count = ATOMIC_VAR_INIT(0);
 static uint16_t s_pending_sequence;
+static QueueHandle_t s_commands;
+static atomic_bool s_stop_requested = ATOMIC_VAR_INIT(false);
 
 static uint16_t crc16(const uint8_t *data, size_t length)
 {
@@ -38,21 +57,22 @@ static uint16_t crc16(const uint8_t *data, size_t length)
     return crc;
 }
 
-static void send_probe(uint8_t type, uint16_t sequence)
+static bool send_frame(uint8_t type, uint16_t sequence, const char *payload)
 {
-    const char *payload = type == 1 ? "{\"device\":\"lingji\",\"firmware\":\"robot-link-1\"}" : "{}";
     const size_t len = strlen(payload);
-    uint8_t frame[96] = {0xa5, 0x4e, 2, type, 0,
+    uint8_t frame[128] = {0xa5, 0x4e, 2, type, 0,
                          (uint8_t)sequence, (uint8_t)(sequence >> 8),
                          (uint8_t)len, (uint8_t)(len >> 8)};
+    if (len > sizeof(frame) - 11U) return false;
     memcpy(frame + 9, payload, len);
     const uint16_t crc = crc16(frame + 2, 7 + len);
     frame[9 + len] = (uint8_t)crc;
     frame[10 + len] = (uint8_t)(crc >> 8);
     if (uart_write_bytes(LINK_UART, frame, 11 + len) == (int)(11 + len)) {
-        s_pending_sequence = sequence;
         atomic_fetch_add(&s_tx_count, 1);
+        return true;
     }
+    return false;
 }
 
 static void link_task(void *arg)
@@ -62,6 +82,9 @@ static void link_task(void *arg)
     size_t used = 0, total = 0;
     uint16_t sequence = 0;
     TickType_t next_probe = xTaskGetTickCount(), last_reply = 0, last_byte = 0;
+    TickType_t command_sent_at = 0;
+    uint16_t command_sequence = 0;
+    const char *pending_command = NULL;
     for (;;) {
         uint8_t byte;
         const TickType_t now = xTaskGetTickCount();
@@ -71,9 +94,40 @@ static void link_task(void *arg)
             atomic_store(&s_bench, false);
             QM_LOGW(LOG_TAG, "NodeHexa offline");
         }
+        if (pending_command && (now - command_sent_at) > pdMS_TO_TICKS(COMMAND_TIMEOUT_MS)) {
+            qm_cli_printf("ROBOT-ACK seq=%u status=timeout action=%s\r\n",
+                          command_sequence, pending_command);
+            pending_command = NULL;
+        }
+        if (atomic_exchange(&s_stop_requested, false)) {
+            /* A stop takes precedence over an outstanding movement request. */
+            pending_command = "stop";
+            command_sequence = ++sequence;
+            command_sent_at = now;
+            if (!send_frame(2, command_sequence, "{\"stop\":true}")) {
+                qm_cli_printf("ROBOT-ACK seq=%u status=error action=stop\r\n", command_sequence);
+                pending_command = NULL;
+            }
+        } else if (!pending_command && s_commands && atomic_load(&s_online)) {
+            const preset_t *command = NULL;
+            if (xQueueReceive(s_commands, &command, 0) == pdTRUE && command) {
+                pending_command = command->name;
+                command_sequence = ++sequence;
+                command_sent_at = now;
+                if (!send_frame(2, command_sequence, command->payload)) {
+                    qm_cli_printf("ROBOT-ACK seq=%u status=error action=%s\r\n",
+                                  command_sequence, pending_command);
+                    pending_command = NULL;
+                }
+            }
+        }
         if ((int32_t)(now - next_probe) >= 0) {
             if (++sequence == 0) ++sequence;
-            send_probe(atomic_load(&s_online) ? 5 : 1, sequence);
+            if (send_frame(atomic_load(&s_online) ? 5 : 1, sequence,
+                           atomic_load(&s_online) ? "{}" :
+                           "{\"device\":\"lingji\",\"firmware\":\"robot-link-2\"}")) {
+                s_pending_sequence = sequence;
+            }
             next_probe = now + pdMS_TO_TICKS(LINK_INTERVAL_MS);
         }
         if (uart_read_bytes(LINK_UART, &byte, 1, pdMS_TO_TICKS(20)) != 1) continue;
@@ -96,18 +150,27 @@ static void link_task(void *arg)
             const size_t len = total - 11;
             const uint16_t crc = (uint16_t)frame[9 + len] | ((uint16_t)frame[10 + len] << 8);
             const uint16_t received_seq = (uint16_t)frame[5] | ((uint16_t)frame[6] << 8);
-            if (frame[3] == 3 && received_seq == s_pending_sequence && crc == crc16(frame + 2, 7 + len)) {
+            if (frame[3] == 3 && crc == crc16(frame + 2, 7 + len)) {
                 frame[9 + len] = '\0';
                 const char *payload = (const char *)(frame + 9);
-                const bool was_online = atomic_load(&s_online);
-                if (was_online || strstr(payload, "\"device\":\"nodehexa\"") != NULL) {
-                    if (!was_online) {
-                        atomic_store(&s_bench, strstr(payload, "\"benchMode\":true") != NULL);
-                        QM_LOGI(LOG_TAG, "NodeHexa online, bench=%d", atomic_load(&s_bench));
-                    }
-                    atomic_store(&s_online, true);
+                if (pending_command && received_seq == command_sequence) {
+                    const char *status = strstr(payload, "\"status\":\"success\"") ? "success" : "error";
+                    qm_cli_printf("ROBOT-ACK seq=%u status=%s action=%s\r\n",
+                                  command_sequence, status, pending_command);
+                    pending_command = NULL;
                     atomic_fetch_add(&s_rx_count, 1);
                     last_reply = xTaskGetTickCount();
+                } else if (received_seq == s_pending_sequence) {
+                    const bool was_online = atomic_load(&s_online);
+                    if (was_online || strstr(payload, "\"device\":\"nodehexa\"") != NULL) {
+                        if (!was_online) {
+                            atomic_store(&s_bench, strstr(payload, "\"benchMode\":true") != NULL);
+                            QM_LOGI(LOG_TAG, "NodeHexa online, bench=%d", atomic_load(&s_bench));
+                        }
+                        atomic_store(&s_online, true);
+                        atomic_fetch_add(&s_rx_count, 1);
+                        last_reply = xTaskGetTickCount();
+                    }
                 }
             }
             used = total = 0;
@@ -117,8 +180,39 @@ static void link_task(void *arg)
 
 static void link_cli(char *out, int out_len, int argc, char **argv)
 {
-    (void)argc;
-    (void)argv;
+    if (argc == 3 && strcmp(argv[1], "action") == 0) {
+        if (!atomic_load(&s_online)) {
+            snprintf(out, out_len, "ROBOT-OFFLINE\r\n");
+            return;
+        }
+        if (strcmp(argv[2], "stop") == 0) {
+            if (s_commands) xQueueReset(s_commands);
+            atomic_store(&s_stop_requested, true);
+            snprintf(out, out_len, "ROBOT-QUEUED action=stop\r\n");
+            return;
+        }
+        for (size_t i = 0; i < sizeof(s_presets) / sizeof(s_presets[0]); ++i) {
+            if (strcmp(argv[2], s_presets[i].name) == 0) {
+                if (atomic_load(&s_bench)) {
+                    snprintf(out, out_len, "ROBOT-BENCH action=%s\r\n", argv[2]);
+                    return;
+                }
+                const preset_t *selected = &s_presets[i];
+                if (s_commands && xQueueSend(s_commands, &selected, 0) == pdTRUE) {
+                    snprintf(out, out_len, "ROBOT-QUEUED action=%s\r\n", argv[2]);
+                } else {
+                    snprintf(out, out_len, "ROBOT-BUSY\r\n");
+                }
+                return;
+            }
+        }
+        snprintf(out, out_len, "ROBOT-INVALID-ACTION\r\n");
+        return;
+    }
+    if (argc != 2 || strcmp(argv[1], "status") != 0) {
+        snprintf(out, out_len, "usage: robot status | robot action <preset|stop>\r\n");
+        return;
+    }
     snprintf(out, out_len, "ROBOT-LINK online=%d bench=%d tx=%u rx=%u\r\n",
              atomic_load(&s_online), atomic_load(&s_bench),
              atomic_load(&s_tx_count), atomic_load(&s_rx_count));
@@ -126,12 +220,14 @@ static void link_cli(char *out, int out_len, int argc, char **argv)
 
 static const struct qm_cli_command s_cli = {
     .name = "robot",
-    .help = "robot status: read-only NodeHexa UART link status",
+    .help = "robot status | robot action <forward|backward|turn_left|turn_right|shift_left|shift_right|stop>",
     .function = link_cli,
 };
 
 int robot_link_init(void)
 {
+    s_commands = xQueueCreate(1, sizeof(const preset_t *));
+    if (s_commands == NULL) return -1;
     uart_config_t config = {
         .baud_rate = 115200, .data_bits = UART_DATA_8_BITS,
         .parity = UART_PARITY_DISABLE, .stop_bits = UART_STOP_BITS_1,
@@ -140,16 +236,24 @@ int robot_link_init(void)
     if (uart_is_driver_installed(LINK_UART) ||
         uart_param_config(LINK_UART, &config) != ESP_OK ||
         uart_set_pin(LINK_UART, LINK_TX, LINK_RX, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE) != ESP_OK ||
-        uart_driver_install(LINK_UART, 2048, 0, 0, NULL, 0) != ESP_OK) return -1;
+        uart_driver_install(LINK_UART, 2048, 0, 0, NULL, 0) != ESP_OK) {
+        vQueueDelete(s_commands);
+        s_commands = NULL;
+        return -1;
+    }
     if (qm_cli_register_command(&s_cli) != 0) {
         uart_driver_delete(LINK_UART);
+        vQueueDelete(s_commands);
+        s_commands = NULL;
         return -1;
     }
     if (xTaskCreate(link_task, "robot_link", 4096, NULL, 5, NULL) != pdPASS) {
         qm_cli_unregister_command(&s_cli);
         uart_driver_delete(LINK_UART);
+        vQueueDelete(s_commands);
+        s_commands = NULL;
         return -1;
     }
-    QM_LOGI(LOG_TAG, "UART2 TX=%d RX=%d ready; read-only probes", LINK_TX, LINK_RX);
+    QM_LOGI(LOG_TAG, "UART2 TX=%d RX=%d ready; bounded action presets", LINK_TX, LINK_RX);
     return 0;
 }
