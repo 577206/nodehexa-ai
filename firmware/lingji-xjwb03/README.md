@@ -28,7 +28,7 @@
 
 灵机板负责语音输入输出、摄像头采集/姿态识别、灵机平台 Agent 会话、偏好记忆和高层动作决策。NodeHexa 板负责步态、舵机、电池保护、动作边界和停止指令；Agent 不直接输出舵机角度。
 
-首选两板之间使用 3.3 V UART，灵机板自身用 Wi-Fi 接入互联网。灵机板的 GPIO17（TX）/GPIO18（RX）是待实物核验的候选引脚；NodeHexa 现有 UART2 为 GPIO16（RX）/GPIO17（TX），115200 8N1。交叉连接 TX/RX 并共地，两板分别供电。不得占用灵机板音频 UART 的 GPIO38/39/40 或日志 UART 的 GPIO43/44。具体三线连接和上电检查见 [ROBOT_LINK_WIRING.md](ROBOT_LINK_WIRING.md)。
+首选两板之间使用 3.3 V UART，灵机板自身用 Wi-Fi 接入互联网。灵机板的 GPIO17（TX）/GPIO18（RX）是待实物核验的候选引脚；NodeHexa 现有 UART2 为 GPIO16（板上丝印 `P16`，RX）/GPIO17（丝印 `P17`，TX），115200 8N1，板上没有标 `RX2` / `TX2`。交叉连接 TX/RX 并共地，两板分别供电。不得占用灵机板音频 UART 的 GPIO38/39/40 或日志 UART 的 GPIO43/44。具体三线连接和上电检查见 [ROBOT_LINK_WIRING.md](ROBOT_LINK_WIRING.md)。
 
 通信沿用 NodeHexa 的 UART v2 帧（序号、CRC、应答和心跳），只传高层动作与状态。动作命令必须有允许列表、幅度/时长上限与超时停止；失联停止行为需要实机验证，不能仅凭“外设离线”状态推断。
 

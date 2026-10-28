@@ -25,7 +25,7 @@
 - 语音板 VB701N：UART1，TX GPIO40、RX GPIO39、流控 GPIO38，SDK 配为 2 Mbaud；保持官方配置。
 - 日志/CLI：UART0，TX GPIO43、RX GPIO44，115200；保持官方配置。
 - BF3901 摄像头：3.3 V，SDA GPIO21、SCL GPIO47、VSYNC/CS GPIO4、PCLK/SCLK GPIO13、D0 GPIO8、PWDN GPIO41。GPIO4 与灵机板可选舵机、GPIO8 与可选 MPU6050 复用，因此本方案不在灵机板上驱动这些外设。
-- 两板控制链路：计划在灵机板 UART2 上试用 TX GPIO17、RX GPIO18，接 NodeHexa UART2 的 RX GPIO16、TX GPIO17，并共地；先核对实物排针和占用，再写驱动。波特率 115200，3.3 V 逻辑。机器人供电与灵机板供电分开。
+- 两板控制链路：计划在灵机板 UART2 上试用 TX GPIO17、RX GPIO18，分别接 NodeHexa 板下排丝印 `P16`（GPIO16，UART2 RX）、`P17`（GPIO17，UART2 TX），并共地；先核对实物排针和占用，再写驱动。NodeHexa 板没有标 `RX2` / `TX2`；靠右的 `RX` / `TX` 属于 USB 下载/日志串口。波特率 115200，3.3 V 逻辑。机器人供电与灵机板供电分开。
 
 ## 云端与应用代码
 
