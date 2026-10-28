@@ -62,6 +62,7 @@ class CameraState:
                 "result": self.result,
                 "voice_vision_status": self.voice_vision_status,
                 "audio_status": self.audio_status,
+                "last_wake_text": self.last_asr_text if time.monotonic() - self.last_asr_at < 60 else "",
             }
 
     def submit_asr(self, text: str) -> None:
@@ -115,6 +116,12 @@ class CameraState:
             if self.camera is None:
                 raise RuntimeError("灵机板串口尚未连接")
             return self.camera.robot_action(action)
+
+    def send_agent_feedback(self, text: str) -> None:
+        with self.serial_lock:
+            if self.camera is None:
+                raise RuntimeError("灵机板串口尚未连接")
+            self.camera.send_agent_feedback(text)
 
 
 def _fit_utf8(text: str, limit: int) -> str:
@@ -225,11 +232,25 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                 continue
             if intent.kind == "motion":
                 state.set_voice_status(f"识别到机器人动作：{intent.action}，等待执行确认…")
-                outcome = state.send_robot_action(intent.action)
-                state.set_voice_status(
-                    "机器人为台架模式：舵机已禁用，未执行动作" if outcome == "bench"
-                    else f"机器人已接受预设动作：{intent.action}"
-                )
+                names = {
+                    "forward": "前进", "backward": "后退", "turn_left": "左转",
+                    "turn_right": "右转", "shift_left": "左移",
+                    "shift_right": "右移", "stop": "停止",
+                }
+                name = names[intent.action]
+                try:
+                    outcome = state.send_robot_action(intent.action)
+                    if outcome == "bench":
+                        result = f"用户要求{name}；机器人在台架模式，舵机关闭，本次没有移动"
+                    elif intent.action == "stop":
+                        result = "用户要求停止；机器人板已确认停止指令"
+                    else:
+                        result = f"用户要求{name}；机器人板已接受有限周期预设动作，尚未确认完成"
+                except (OSError, RuntimeError, ValueError, TimeoutError) as exc:
+                    result = f"用户要求{name}；机器人动作未确认，本次不要声称已经移动"
+                    state.set_voice_status(f"机器人动作未确认：{str(exc)[:90]}")
+                state.send_agent_feedback(result)
+                state.set_voice_status(f"动作状态已交给灵犀播报：{result}")
                 continue
             state.set_voice_status("识别到视觉请求，正在查看当前画面…")
             state.require_agent_bridge()

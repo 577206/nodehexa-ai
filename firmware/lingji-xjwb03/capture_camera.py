@@ -184,6 +184,26 @@ class CameraSerial:
                 raise RuntimeError("机器人拒绝了动作")
         raise TimeoutError("机器人未确认动作" if queued else "灵机板未确认机器人指令")
 
+    def send_agent_feedback(self, text: str, timeout: float = 6.0) -> None:
+        """Queue a confirmed action outcome for the existing voice Agent."""
+        raw = text.encode("utf-8")
+        if not raw or len(raw) > 160 or any(ch < 0x20 or ch == 0x7f for ch in raw):
+            raise ValueError("Voice feedback must be 1–160 UTF-8 bytes")
+        self.device.write(b"feedback " + base64.b64encode(raw) + b"\r")
+        self.device.flush()
+        deadline = time.monotonic() + timeout
+        while time.monotonic() < deadline:
+            line = self._readline()
+            if b"FEEDBACK-QUEUED" in line:
+                return
+            if b"VISION-UNAVAILABLE" in line:
+                raise RuntimeError("灵犀 Agent 尚未连云")
+            if b"VISION-BUSY" in line:
+                raise RuntimeError("灵犀 Agent 正在处理上一条反馈")
+            if line.strip().startswith(b"VISION-ERROR"):
+                raise RuntimeError("灵机板拒绝了语音反馈")
+        raise TimeoutError("灵机板未确认语音反馈")
+
 
 def capture(port: str, output: Path, timeout: float) -> Path:
     with CameraSerial(port) as camera:

@@ -73,7 +73,8 @@
           <p>画面会持续更新。想知道镜头里有什么时，点击按钮；系统只把<strong>当前这一帧</strong>发送给千问，请它描述看见的内容。</p>
           <button id="analyzeButton" disabled>描述当前画面</button>
           <button id="talkButton" class="secondary" disabled>描述并让灵犀语音回应</button>
-          <div class="hint">也可以先说唤醒词，再直接问镜头里有什么。唤醒后的话交给千问判断是否需要画面；只有视觉请求才会拍一帧做图像识别。</div>
+          <div class="hint">先说唤醒词，再提问画面或要求机器人动作。千问只选意图；运动的种类和幅度由板上预设。当前台架模式会拒绝实际运动。</div>
+          <div id="lastWakeText" class="hint" role="status">最近一次唤醒后的识别文字：暂无</div>
           <div id="voiceVisionStatus" class="hint" role="status">待机：唤醒后才判断视觉请求</div>
           <div id="audioPrivacyStatus" class="hint" role="status">正在读取语音上行状态…</div>
           <div class="result">
@@ -82,7 +83,7 @@
             <div id="resultSummary" class="result-summary">千问对这一帧的描述会显示在这里。</div>
             <div id="agentStatus" class="hint" role="status"></div>
           </div>
-          <div class="warning">只有点击语音回应按钮才会把文字摘要交给灵犀；画面不会触发机器人动作。</div>
+          <div class="warning">只有点击语音回应按钮或唤醒后提出视觉问题，才会把画面摘要交给灵犀。画面不会直接触发机器人动作。</div>
         </div>
       </aside>
     </div>
@@ -101,6 +102,7 @@
     const agentStatus = document.getElementById('agentStatus');
     const voiceVisionStatus = document.getElementById('voiceVisionStatus');
     const audioPrivacyStatus = document.getElementById('audioPrivacyStatus');
+    const lastWakeText = document.getElementById('lastWakeText');
     let lastSequence = 0;
     let busy = false;
     let shownAnalysisAt = 0;
@@ -118,6 +120,7 @@
         const status = await response.json();
         const ready = Boolean(status.ready);
         voiceVisionStatus.textContent = status.voice_vision_status || '等待语音视觉请求';
+        lastWakeText.textContent = '最近一次唤醒后的识别文字：' + (status.last_wake_text || '暂无');
         audioPrivacyStatus.textContent = status.audio_status ?
           (status.audio_status.uplink ? '语音状态：已唤醒，麦克风云端上行开启' : '语音状态：云端麦克风上行关闭，仅本地等待唤醒词') :
           '正在读取语音上行状态…';
