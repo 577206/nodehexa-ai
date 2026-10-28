@@ -49,6 +49,7 @@ set(COMPONENT_SRCS
     "./main.c"
     "./agent/agent_app.c"
     "./arbiter/agent_arbiter.c"
+    "./agent/robot_link.c"
     "./cloud/ljyd_cloud.c"
     "./cloud/ljyd_method.c"
     "./cloud/ljyd_provision.c"

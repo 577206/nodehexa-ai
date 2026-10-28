@@ -9,6 +9,7 @@
 #include "boot_sound.h"
 #include "agent_app.h"
 #include "agent_arbiter.h"
+#include "robot_link.h"
 #include "ljyd_cloud.h"
 #include "ljyd_provision.h"
 #include "iot_control.h"
@@ -131,6 +132,10 @@ void qm_application_start(void)
             QM_LOGE("main", "vision serial bridge init failed");
         }
 #endif
+    }
+
+    if (robot_link_init() != 0) {
+        QM_LOGE("main", "robot UART link init failed");
     }
 
 #if defined(CONFIG_QM_ALARM_SUPPORT) && CONFIG_QM_ALARM_SUPPORT
