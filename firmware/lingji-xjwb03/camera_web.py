@@ -33,6 +33,7 @@ class CameraState:
         self.result: str | None = None
         self.asr_queue: queue.Queue[str] = queue.Queue(maxsize=4)
         self.voice_vision_status = "待机：唤醒后才判断视觉请求"
+        self.agent_delivery = "尚无主动播报请求"
         self.audio_status: dict[str, bool] | None = None
         self.last_asr_at = 0.0
         self.last_asr_text = ""
@@ -61,6 +62,7 @@ class CameraState:
                 "last_analysis_at": self.last_analysis_at,
                 "result": self.result,
                 "voice_vision_status": self.voice_vision_status,
+                "agent_delivery": self.agent_delivery,
                 "audio_status": self.audio_status,
                 "last_wake_text": self.last_asr_text if time.monotonic() - self.last_asr_at < 60 else "",
             }
@@ -81,6 +83,10 @@ class CameraState:
     def set_voice_status(self, value: str) -> None:
         with self.lock:
             self.voice_vision_status = value
+
+    def set_agent_delivery(self, value: str) -> None:
+        with self.lock:
+            self.agent_delivery = value
 
     def begin_analysis(self) -> bool:
         with self.lock:
@@ -173,17 +179,23 @@ def capture_loop(state: CameraState, port: str, stop: threading.Event) -> None:
                                 state.fail("摄像头流尚未就绪，等待开发板完成初始化")
                             finally:
                                 events = camera.pop_asr_events()
+                                agent_events = camera.pop_agent_events()
                         for text in events:
                             state.submit_asr(text)
+                        for event in agent_events:
+                            state.set_agent_delivery(event)
                         if frame is None:
                             try:
                                 with state.serial_lock:
                                     audio = camera.audio_status()
                                     events = camera.pop_asr_events()
+                                    agent_events = camera.pop_agent_events()
                                 with state.lock:
                                     state.audio_status = audio
                                 for text in events:
                                     state.submit_asr(text)
+                                for event in agent_events:
+                                    state.set_agent_delivery(event)
                             except TimeoutError:
                                 with state.lock:
                                     state.audio_status = None
@@ -196,10 +208,13 @@ def capture_loop(state: CameraState, port: str, stop: threading.Event) -> None:
                                 with state.serial_lock:
                                     audio = camera.audio_status()
                                     events = camera.pop_asr_events()
+                                    agent_events = camera.pop_agent_events()
                                 with state.lock:
                                     state.audio_status = audio
                                 for text in events:
                                     state.submit_asr(text)
+                                for event in agent_events:
+                                    state.set_agent_delivery(event)
                             except TimeoutError:
                                 with state.lock:
                                     state.audio_status = None
@@ -250,7 +265,8 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                     result = f"用户要求{name}；机器人动作未确认，本次不要声称已经移动"
                     state.set_voice_status(f"机器人动作未确认：{str(exc)[:90]}")
                 state.send_agent_feedback(result)
-                state.set_voice_status(f"动作状态已交给灵犀播报：{result}")
+                state.set_agent_delivery("动作状态已排队，等待语音 Agent 回执")
+                state.set_voice_status(f"机器人动作状态：{result}")
                 continue
             state.set_voice_status("识别到视觉请求，正在查看当前画面…")
             state.require_agent_bridge()
@@ -265,10 +281,11 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                 result = analyze(frame, key, base_url, model,
                                  brief=True, question=utterance)
                 state.send_to_agent(fit_agent_context(utterance, result))
+                state.set_agent_delivery("画面描述已排队，等待语音 Agent 回执")
                 with state.lock:
                     state.result = result
                     state.last_analysis_at = time.time()
-                state.set_voice_status("视觉结果已交给灵犀，请听语音回答")
+                state.set_voice_status("画面识别完成，等待灵犀回答")
             finally:
                 state.end_analysis()
         except (OSError, RuntimeError, ValueError, KeyError, IndexError) as exc:

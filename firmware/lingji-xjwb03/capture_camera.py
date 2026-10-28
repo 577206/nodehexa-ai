@@ -37,6 +37,7 @@ class CameraSerial:
             raise RuntimeError("Port is not the verified XJWB03 USB bridge")
         self.device = serial.Serial(port, 115200, timeout=0.5)
         self.asr_events: deque[str] = deque(maxlen=8)
+        self.agent_events: deque[str] = deque(maxlen=8)
         self.device.dtr = False
         self.device.rts = False
         # Opening the USB-UART bridge can reset the ESP32-S3.
@@ -54,11 +55,22 @@ class CameraSerial:
                     self.asr_events.append(text)
             except (ValueError, UnicodeDecodeError):
                 pass
+        if b"VISION-DONE" in line:
+            self.agent_events.append("语音 Agent 已播报完成")
+        elif b"VISION-SENT" in line:
+            self.agent_events.append("内容已送达语音 Agent，等待播报")
+        elif b"VISION-ERROR agent" in line:
+            self.agent_events.append("语音 Agent 播报失败，请检查设备鉴权或网络")
         return line
 
     def pop_asr_events(self) -> list[str]:
         events = list(self.asr_events)
         self.asr_events.clear()
+        return events
+
+    def pop_agent_events(self) -> list[str]:
+        events = list(self.agent_events)
+        self.agent_events.clear()
         return events
 
     def close(self) -> None:
@@ -125,7 +137,7 @@ class CameraSerial:
                 raise RuntimeError("灵机语音 Agent 尚未连云，或当前固件没有视觉桥接功能")
             if b"VISION-BUSY" in line:
                 raise RuntimeError("灵机语音 Agent 正在处理上一条视觉消息")
-            if b"VISION-ERROR" in line:
+            if line.strip().startswith(b"VISION-ERROR"):
                 raise RuntimeError("灵机板拒绝了视觉消息")
         raise TimeoutError("灵机板未确认视觉消息；请检查是否烧录了视觉与语音合并固件")
 
@@ -147,11 +159,12 @@ class CameraSerial:
         deadline = time.monotonic() + timeout
         while time.monotonic() < deadline:
             line = self._readline()
-            match = re.search(rb"VISION-STATUS cloud=([01]) active=([01]) uplink=([01])", line)
+            match = re.search(rb"VISION-STATUS cloud=([01]) active=([01]) uplink=([01])(?: auth=([01]))?", line)
             if match:
                 return {"cloud": match.group(1) == b"1",
                         "active": match.group(2) == b"1",
-                        "uplink": match.group(3) == b"1"}
+                        "uplink": match.group(3) == b"1",
+                        "auth": match.group(4) == b"1" if match.group(4) is not None else False}
         raise TimeoutError("灵机板未返回语音隐私状态")
 
     def robot_action(self, action: str, timeout: float = 5.0) -> str:

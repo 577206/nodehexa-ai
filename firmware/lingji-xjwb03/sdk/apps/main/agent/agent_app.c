@@ -489,6 +489,12 @@ int agent_app_is_cloud_connected(void)
     return (s_cloud_connected != 0 && s_agent != NULL) ? 1 : 0;
 }
 
+int agent_app_is_corpus_ready(void)
+{
+    return (s_cloud_connected != 0 && s_agent != NULL &&
+            s_agent->auth.helper != NULL && s_agent->auth.has_auth) ? 1 : 0;
+}
+
 int agent_app_is_uplink_enabled(void)
 {
     return (s_agent != NULL &&

@@ -41,6 +41,12 @@ class CameraCommandTest(unittest.TestCase):
         camera.send_agent_feedback("台架模式")
         self.assertTrue(camera.device.writes[0].startswith(b"feedback "))
 
+    def test_vision_worker_log_does_not_look_like_cli_rejection(self):
+        camera = camera_with(b"[007420]<W> VISION-ERROR agent ret=-12\r\n",
+                             b"VISION-QUEUED\r\n")
+        camera.send_vision_text("画面摘要")
+        self.assertTrue(camera.device.writes[0].startswith(b"vision "))
+
     def test_unknown_action_is_never_sent(self):
         camera = camera_with()
         with self.assertRaises(ValueError):

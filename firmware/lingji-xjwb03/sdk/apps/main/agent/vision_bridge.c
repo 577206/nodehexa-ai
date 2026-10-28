@@ -81,6 +81,14 @@ static void vision_worker(void *arg)
             atomic_store(&s_busy, false);
             continue;
         }
+        for (unsigned attempt = 0; attempt < 12 && !agent_app_is_corpus_ready(); ++attempt) {
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+        if (!agent_app_is_corpus_ready()) {
+            QM_LOGW(LOG_TAG, "VISION-ERROR agent auth unavailable");
+            atomic_store(&s_busy, false);
+            continue;
+        }
         ret = agent_arbiter_request(AGENT_ARBITER_OWNER_VISION,
                                     AGENT_ARBITER_PRIO_NORMAL);
         if (ret != 0) {
@@ -88,9 +96,8 @@ static void vision_worker(void *arg)
             atomic_store(&s_busy, false);
             continue;
         }
-        /* Cloud connectivity can be reported before the speak-request auth
-         * token is available after boot. Retry only that definite condition;
-         * other failures could mean the request was already delivered. */
+        /* A token refresh may race the request. Retry only the definite
+         * auth-unavailable result; other failures may already be delivered. */
         for (unsigned attempt = 0; attempt < 6; ++attempt) {
             ret = agent_app_user_corpus(corpus);
             if (ret != -QM_ENOENT) break;
@@ -124,9 +131,9 @@ static void vision_cli_command(char *out, int out_len, int argc, char **argv)
         return;
     }
     if (argc == 2 && strcmp(argv[1], "status") == 0) {
-        snprintf(out, out_len, "VISION-STATUS cloud=%d active=%d uplink=%d\r\n",
+        snprintf(out, out_len, "VISION-STATUS cloud=%d active=%d uplink=%d auth=%d\r\n",
                  agent_app_is_cloud_connected(), agent_app_is_active(),
-                 agent_app_is_uplink_enabled());
+                 agent_app_is_uplink_enabled(), agent_app_is_corpus_ready());
         return;
     }
     if (argc != 2 || (strcmp(argv[0], "vision") != 0 && !feedback)) {

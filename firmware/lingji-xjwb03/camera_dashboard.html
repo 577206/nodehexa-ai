@@ -76,6 +76,7 @@
           <div class="hint">先说唤醒词，再提问画面或要求机器人动作。千问只选意图；运动的种类和幅度由板上预设。当前台架模式会拒绝实际运动。</div>
           <div id="lastWakeText" class="hint" role="status">最近一次唤醒后的识别文字：暂无</div>
           <div id="voiceVisionStatus" class="hint" role="status">待机：唤醒后才判断视觉请求</div>
+          <div id="agentDelivery" class="hint" role="status">尚无主动播报请求</div>
           <div id="audioPrivacyStatus" class="hint" role="status">正在读取语音上行状态…</div>
           <div class="result">
             <div class="result-label">LATEST DESCRIPTION</div>
@@ -101,6 +102,7 @@
     const resultSummary = document.getElementById('resultSummary');
     const agentStatus = document.getElementById('agentStatus');
     const voiceVisionStatus = document.getElementById('voiceVisionStatus');
+    const agentDelivery = document.getElementById('agentDelivery');
     const audioPrivacyStatus = document.getElementById('audioPrivacyStatus');
     const lastWakeText = document.getElementById('lastWakeText');
     let lastSequence = 0;
@@ -120,9 +122,12 @@
         const status = await response.json();
         const ready = Boolean(status.ready);
         voiceVisionStatus.textContent = status.voice_vision_status || '等待语音视觉请求';
+        agentDelivery.textContent = status.agent_delivery || '尚无主动播报请求';
         lastWakeText.textContent = '最近一次唤醒后的识别文字：' + (status.last_wake_text || '暂无');
         audioPrivacyStatus.textContent = status.audio_status ?
-          (status.audio_status.uplink ? '语音状态：已唤醒，麦克风云端上行开启' : '语音状态：云端麦克风上行关闭，仅本地等待唤醒词') :
+          ((status.audio_status.uplink ? '语音状态：已唤醒，麦克风云端上行开启' : '语音状态：云端麦克风上行关闭，仅本地等待唤醒词') +
+           (status.audio_status.auth ? ' · 播报鉴权已就绪' :
+            status.audio_status.active ? ' · 正在获取播报鉴权' : ' · 唤醒后获取播报鉴权')) :
           '正在读取语音上行状态…';
         liveStatus.classList.toggle('live', ready);
         statusText.textContent = ready ? '实时画面已连接' : '等待有效画面';
