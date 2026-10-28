@@ -4,6 +4,12 @@
 
 namespace board {
 
+#ifdef NODEHEXA_BENCH_MODE
+static constexpr bool kBenchMode = true;
+#else
+static constexpr bool kBenchMode = false;
+#endif
+
 #ifdef ROBOT_MODEL_NODEQUADMINI
 static constexpr const char* kRobotType = "quad";
 static constexpr const char* kHardwareFamily = "NodeQuadMini";

@@ -12,7 +12,13 @@ static constexpr uint8_t kMaxControllers = 2;
 hexapod::hal::PCA9685* controllers[kMaxControllers] = {nullptr, nullptr};
 uint8_t controllerCount = 0;
 SemaphoreHandle_t i2cMutex = nullptr;
+#ifdef NODEHEXA_BENCH_MODE
+// Start closed: no motion path may emit a pulse before the controllers are
+// initialized and their ALL_LED_OFF registers have been written.
+std::atomic<bool> writesEnabled(false);
+#else
 std::atomic<bool> writesEnabled(true);
+#endif
 std::atomic<bool> outputsReleased(false);
 std::atomic<uint32_t> writeFailures(0);
 std::atomic<uint32_t> releaseFailures(0);

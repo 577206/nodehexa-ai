@@ -27,6 +27,11 @@ namespace quadruped {
             pwm.begin();
             pwm.setPWMFreq(kFrequency);
             servo_output::registerController(&pwm);
+#ifdef NODEHEXA_BENCH_MODE
+            if (!servo_output::releaseAll()) {
+                LOG_INFO("[Bench] Failed to confirm servo PWM full-off; disconnect servo power.");
+            }
+#endif
             pwmInited = true;
         }
 

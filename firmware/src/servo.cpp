@@ -29,6 +29,13 @@ namespace hexapod {
             pwmRight.setPWMFreq(kFrequency);
             servo_output::registerController(&pwmLeft);
             servo_output::registerController(&pwmRight);
+#ifdef NODEHEXA_BENCH_MODE
+            // USB bench builds keep the robot protocol alive without driving
+            // a servo. This also clears PWM left by a previous MCU reset.
+            if (!servo_output::releaseAll()) {
+                LOG_INFO("[Bench] Failed to confirm servo PWM full-off; disconnect servo power.");
+            }
+#endif
             pwmInited = true;
         }
 

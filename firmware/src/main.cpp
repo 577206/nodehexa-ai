@@ -46,6 +46,13 @@ _mode和mode的处理在异步的Web服务回调函数中处理
 #include "camera_link.h"
 #include "ultrasonic_sensor.h"
 #include "power_manager.h"
+#ifdef NODEHEXA_BENCH_MODE
+#ifdef ROBOT_MODEL_NODEQUADMINI
+#include "quad_servo.h"
+#else
+#include "servo.h"
+#endif
+#endif
 
 // 宏定义
 #define REACT_DELAY hexapod::config::movementInterval
@@ -228,6 +235,15 @@ void setup() {
 
   // 初始化I2C
   Wire.setPins(board::kI2cSdaPin, board::kI2cSclPin);
+#ifdef NODEHEXA_BENCH_MODE
+  // Shut off PCA9685 channels before mounting flash or starting Wi-Fi. This
+  // matters when the ESP32 resets while the servo controllers stay powered.
+#ifdef ROBOT_MODEL_NODEQUADMINI
+  quadruped::ServoQuad::init();
+#else
+  hexapod::Servo::init();
+#endif
+#endif
 
   // 挂载SPIFFS文件系统
   if (!SPIFFS.begin(true)) {
@@ -250,6 +266,9 @@ void setup() {
   devsettings::init();
   Serial.printf("Power: lowBatteryPolicy=%s\n",
                 power::policyToString(devsettings::getLowBatteryPolicy()));
+  if (board::kBenchMode) {
+    Serial.println("[Bench] Servo PWM disabled; UART, Wi-Fi and status remain available.");
+  }
 
   // 初始化Web服务
   server.on("/", HTTP_GET, handleRoot);
@@ -318,15 +337,18 @@ void setup() {
   singleleg::controller().begin();
   motion::controller().setSequenceCallback(handleSequenceComplete);
 
-  // 创建电池监测任务
-  xTaskCreate(
-    BatteryMonitorTask,
-    "BatteryMonitor",
-    4096,
-    NULL,
-    1,
-    NULL
-  );
+  // USB bench builds intentionally have no traction battery. Do not latch a
+  // false low-battery alarm while testing UART and Wi-Fi without servo power.
+  if (!board::kBenchMode) {
+    xTaskCreate(
+      BatteryMonitorTask,
+      "BatteryMonitor",
+      4096,
+      NULL,
+      1,
+      NULL
+    );
+  }
 
   // 创建LED控制任务
   xTaskCreate(
@@ -593,6 +615,7 @@ void handleCapsGet(AsyncWebServerRequest *request) {
   robot["hardwareProfile"] = board::kHardwareProfile;
   JsonObject firmware = doc.createNestedObject("firmware");
   firmware["version"] = NODEHEXA_STRINGIFY(FIRMWARE_VERSION);
+  firmware["benchMode"] = board::kBenchMode;
   JsonObject protocol = doc.createNestedObject("protocol");
   protocol["uartCurrent"] = 2;
   protocol["uartLegacy"] = true;
@@ -648,6 +671,8 @@ void handleCapsGet(AsyncWebServerRequest *request) {
   power["motionBlocked"] = isMotionBlocked();
   const servo_output::OutputState outputState = servo_output::state();
   power["servoPwmReleased"] = outputState.released;
+  power["servoPwmWriteAllowed"] = outputState.writeAllowed;
+  power["batteryMonitoringActive"] = !board::kBenchMode;
   power["alarmActive"] = buzzer::alarmActive();
   const uint16_t voltageMv = getLatestBatteryVoltageMv();
   power["voltageMv"] = voltageMv;
@@ -2013,10 +2038,15 @@ void UartDispatchTask(void *pvParameters) {
       hello["robotType"] = board::kRobotType;
       hello["firmware"] = NODEHEXA_STRINGIFY(FIRMWARE_VERSION);
       hello["protocol"] = 2;
+      hello["benchMode"] = board::kBenchMode;
       JsonObject helloPower = hello.createNestedObject("power");
       helloPower["lowBatteryLatched"] = isLowBatteryLatched();
       JsonArray capabilities = hello.createNestedArray("capabilities");
-      capabilities.add("control");
+      if (board::kBenchMode) {
+        capabilities.add("servo_output_disabled");
+      } else {
+        capabilities.add("control");
+      }
       capabilities.add("power_event");
       capabilities.add("camera_provision");
       capabilities.add("camera_binding_v1");
