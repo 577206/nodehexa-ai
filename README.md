@@ -21,6 +21,8 @@ NodeHexa 是一个开源的六足机器人项目，基于 ESP32 微控制器开�
 
 灵机一动 XJWB03 语音/视觉扩展板的独立 ESP-IDF 工程、烧录脚本和 BF3901 接线说明见 [firmware/lingji-xjwb03](firmware/lingji-xjwb03/README.md)。它与这里的 NodeHexa 运动控制固件分别构建、分别烧录。
 
+灵犀桌宠驾驶舱与 NodeHexa 磁吸机甲底盘的当前产品定义见 [产品需求与结构](PRODUCT_REQUIREMENTS.md)。
+
 ## 🧩 支持的构型
 
 当前代码仓库同时提供 **四足构型固件** 支持，便于共用一套 Web UI、校准与运动控制框架。
