@@ -72,7 +72,7 @@
         <div class="side-body">
           <p>画面会持续更新。想知道镜头里有什么时，点击按钮；系统只把<strong>当前这一帧</strong>发送给千问，请它描述看见的内容。</p>
           <button id="analyzeButton" disabled>描述当前画面</button>
-          <button id="talkButton" class="secondary" disabled>描述并让灵犀语音回应</button>
+          <button id="talkButton" class="secondary" disabled>描述并用喇叭播报</button>
           <div class="hint">先说唤醒词，再提问画面或要求机器人动作。千问只选意图；运动的种类和幅度由板上预设。当前台架模式会拒绝实际运动。</div>
           <div id="lastWakeText" class="hint" role="status">最近一次唤醒后的识别文字：暂无</div>
           <div id="voiceVisionStatus" class="hint" role="status">待机：唤醒后才判断视觉请求</div>
@@ -84,7 +84,7 @@
             <div id="resultSummary" class="result-summary">千问对这一帧的描述会显示在这里。</div>
             <div id="agentStatus" class="hint" role="status"></div>
           </div>
-          <div class="warning">只有点击语音回应按钮或唤醒后提出视觉问题，才会把画面摘要交给灵犀。画面不会直接触发机器人动作。</div>
+          <div class="warning">只有点击播报按钮或唤醒后提出视觉问题，才会调用千问生成最终短答并用板上喇叭播出。画面不会直接触发机器人动作。</div>
         </div>
       </aside>
     </div>
@@ -159,7 +159,7 @@
       button.disabled = true;
       talkButton.disabled = true;
       const activeButton = talk ? talkButton : button;
-      activeButton.textContent = talk ? '正在连接语音 Agent…' : '正在描述…';
+      activeButton.textContent = talk ? '正在生成语音回答…' : '正在描述…';
       resultHead.textContent = '正在查看当前画面';
       resultSummary.textContent = '请稍等，画面预览会继续更新。';
       agentStatus.textContent = '';
@@ -168,17 +168,17 @@
         const data = await response.json();
         if (data.result) showResult(data.result, Date.now() / 1000);
         if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
-        if (talk) agentStatus.textContent = '画面摘要已送到灵机语音 Agent，请听喇叭回应；之后可用唤醒词继续聊。';
+        if (talk) agentStatus.textContent = '最终短答已排队，请听板上喇叭播报。';
       } catch (error) {
         if (!talk || resultHead.textContent === '正在查看当前画面') {
-          resultHead.textContent = talk ? '暂时无法连接语音 Agent' : '这次描述没有完成';
+          resultHead.textContent = talk ? '暂时无法播报' : '这次描述没有完成';
           resultSummary.textContent = error.message || String(error);
         } else {
           agentStatus.textContent = error.message || String(error);
         }
       } finally {
         busy = false;
-        activeButton.textContent = talk ? '描述并让灵犀语音回应' : '描述当前画面';
+        activeButton.textContent = talk ? '描述并用喇叭播报' : '描述当前画面';
         refresh();
       }
     }

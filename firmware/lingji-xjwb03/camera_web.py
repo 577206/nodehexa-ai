@@ -130,34 +130,16 @@ class CameraState:
             self.camera.send_agent_feedback(text)
 
 
-def _fit_utf8(text: str, limit: int) -> str:
-    clean = " ".join(text.split())
+def spoken_answer(answer: str) -> str:
+    """The board's speak endpoint reads this text literally, so send only an answer."""
+    clean = " ".join(answer.split())
+    if not clean or any(marker in clean for marker in
+                        ("【视觉结果】", "问题：", "依据：", "请针对原问题")):
+        raise ValueError("视觉模型没有给出可直接播报的答案")
     raw = clean.encode("utf-8")
-    if len(raw) <= limit:
+    if len(raw) <= 160:
         return clean
-    return raw[:limit - 3].decode("utf-8", "ignore").rstrip("，、。 ") + "…"
-
-
-def _fit_question(text: str, limit: int) -> str:
-    clean = " ".join(text.split())
-    raw = clean.encode("utf-8")
-    if len(raw) <= limit:
-        return clean
-    head_len = (limit - 3) // 3
-    tail_len = limit - 3 - head_len
-    head = raw[:head_len].decode("utf-8", "ignore").rstrip("，、。 ")
-    tail = raw[-tail_len:].decode("utf-8", "ignore").lstrip("，、。 ")
-    return head + "…" + tail
-
-
-def fit_agent_context(question: str, observation: str) -> str:
-    """Preserve the user's question and visual evidence in one 160-byte CLI item."""
-    question = _fit_question(question, 54)
-    prefix = f"【视觉结果】问题：{question}；依据："
-    remaining = 160 - len(prefix.encode("utf-8"))
-    if remaining < 12:
-        raise ValueError("Visual question is too long for the Agent bridge")
-    return prefix + _fit_utf8(observation, remaining)
+    return raw[:157].decode("utf-8", "ignore").rstrip("，、。 ") + "…"
 
 
 def capture_loop(state: CameraState, port: str, stop: threading.Event) -> None:
@@ -257,14 +239,18 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                     outcome = state.send_robot_action(intent.action)
                     if outcome == "bench":
                         result = f"用户要求{name}；机器人在台架模式，舵机关闭，本次没有移动"
+                        spoken = "现在是台架模式，舵机已关闭，我还不能移动。"
                     elif intent.action == "stop":
                         result = "用户要求停止；机器人板已确认停止指令"
+                        spoken = "收到，机器人已经停止。"
                     else:
                         result = f"用户要求{name}；机器人板已接受有限周期预设动作，尚未确认完成"
+                        spoken = f"收到，机器人已开始{name}，动作完成情况还在确认。"
                 except (OSError, RuntimeError, ValueError, TimeoutError) as exc:
                     result = f"用户要求{name}；机器人动作未确认，本次不要声称已经移动"
+                    spoken = "我还没收到机器人板的确认，这次先不移动。"
                     state.set_voice_status(f"机器人动作未确认：{str(exc)[:90]}")
-                state.send_agent_feedback(result)
+                state.send_agent_feedback(spoken)
                 state.set_agent_delivery("动作状态已排队，等待语音 Agent 回执")
                 state.set_voice_status(f"机器人动作状态：{result}")
                 continue
@@ -280,12 +266,12 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
                     raise RuntimeError("摄像头尚无新鲜画面")
                 result = analyze(frame, key, base_url, model,
                                  brief=True, question=utterance)
-                state.send_to_agent(fit_agent_context(utterance, result))
-                state.set_agent_delivery("画面描述已排队，等待语音 Agent 回执")
+                state.send_to_agent(spoken_answer(result))
+                state.set_agent_delivery("画面短答已排队，等待喇叭播报回执")
                 with state.lock:
                     state.result = result
                     state.last_analysis_at = time.time()
-                state.set_voice_status("画面识别完成，等待灵犀回答")
+                state.set_voice_status("画面识别完成，等待短答播报")
             finally:
                 state.end_analysis()
         except (OSError, RuntimeError, ValueError, KeyError, IndexError) as exc:
@@ -357,7 +343,7 @@ def handler_for(state: CameraState) -> type[BaseHTTPRequestHandler]:
                     state.result = result
                     state.last_analysis_at = time.time()
                 if talk:
-                    state.send_to_agent(fit_agent_context("描述当前画面", result))
+                    state.send_to_agent(spoken_answer(result))
                 self.send_json(200, {"result": result, "agent_queued": talk})
             except (OSError, RuntimeError, ValueError, KeyError, IndexError) as exc:
                 self.send_json(502, {"error": str(exc)[:180], "result": result})
