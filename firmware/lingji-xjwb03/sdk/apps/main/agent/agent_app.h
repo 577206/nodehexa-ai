@@ -24,7 +24,8 @@ int agent_app_play_local_audio(const void *data, uint32_t len);
 /* Stop cloud/local output and pause the physical capture path. */
 int agent_app_abort_output(void);
 
-/* Ask the cloud agent to speak one application-provided sentence. */
+/* sendSpeakRequest speaks text literally; pass only final user-facing words,
+ * never prompts, context wrappers, or instructions for the Agent to follow. */
 int agent_app_user_corpus(const char *text);
 
 /* Wait until the local TTS queue and speaker have drained. */
