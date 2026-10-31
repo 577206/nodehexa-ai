@@ -15,8 +15,8 @@ def main():
     params=load_parameters(ROOT/'parameters.yaml')
     model=build_model(params)
     vertices=[];faces=[];part_records=[]
-    colors={'N002_lower_frame_W30_DRAFT':'#494b50','N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT':'#565860','N001_upper_frame_W30_DRAFT':'#36383d','N111_shin_face_DRAFT':'#33353a',
-            'N112_L_red_insert_DRAFT':'#c22437','N112_R_red_insert_DRAFT':'#c22437'}
+    colors={'N002_lower_frame_W30_DRAFT':'#e5edf7','N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT':'#e5edf7','N001_upper_frame_W30_DRAFT':'#e5edf7','N111_shin_face_DRAFT':'#e5edf7',
+            'N112_L_red_insert_DRAFT':'#086acc','N112_R_red_insert_DRAFT':'#086acc'}
     for part in model.children:
         vv,tt=part.tessellate(0.08,0.15)
         offset=len(vertices)
@@ -29,7 +29,7 @@ def main():
                           'world_point':pts.mean(0).tolist(),'normal':normal.tolist()})
         part_records.append({'id':part.label,'label':part.label,'visible':True,'color':colors[part.label]})
     manifest=json.loads((ROOT/'review/manifest.json').read_text())
-    manifest['project']['name']='NOCTURNE | Partial CAD draft - not full robot'
+    manifest['project']['name']='BLUE / WHITE - old W30 geometry; requested edge W50 pending'
     manifest['preview']={'mesh_json':'cache/current_mesh.json','mesh_closed':True}
     manifest['parts']=part_records;manifest['parameters']=[]
     manifest['versions']['current']['source']='../source/model.py'
@@ -51,16 +51,16 @@ def main():
 
     ax=fig.add_subplot(gs[0,1]);ax.set_title('02 / SHIN FACE — preserved interfaces',loc='left',fontsize=12,fontweight='bold')
     loops=profile('FootGround')['loops_uv_mm']
-    for i,loop in enumerate(loops):ax.add_patch(Polygon(loop,facecolor='#44474c' if i==0 else '#f2f2f0',edgecolor='#15171a',lw=.55))
+    for i,loop in enumerate(loops):ax.add_patch(Polygon(loop,facecolor='#e5edf7' if i==0 else '#f2f2f0',edgecolor='#15171a',lw=.55))
     for rail,recess in [(ARMOR_RAIL,RED_RECESS),(mirrored(ARMOR_RAIL),mirrored(RED_RECESS))]:
-        ax.add_patch(Polygon(rail,facecolor='#686b71',edgecolor='#25272c',lw=.8))
-        ax.add_patch(Polygon(recess,facecolor='#c22437',edgecolor='#7d1420',lw=.5))
+        ax.add_patch(Polygon(rail,facecolor='#d9e5f3',edgecolor='#25272c',lw=.8))
+        ax.add_patch(Polygon(recess,facecolor='#086acc',edgecolor='#124878',lw=.5))
     for x,y,w,h in [(0,24,5.5,12),(34,24,5.5,12),(12.75,0,14,6.8),(0,54.8,39.5,10.25)]:
         ax.add_patch(Rectangle((x,y),w,h,facecolor='#499d81',alpha=.18,edgecolor='none'))
     ax.text(45,48,'Green zones:\noriginal connector\ngeometry unchanged\n\nOriginal 3 mm core\nis preserved.\nExterior relief: 1.2 mm\nMax thickness: 4.2 mm',fontsize=9,va='top')
     ax.set_xlim(-3,82);ax.set_ylim(-4,70);ax.set_aspect('equal');ax.set_xlabel('Local u / mm');ax.set_ylabel('Local v / mm');ax.grid(alpha=.12)
 
-    ax=fig.add_subplot(gs[1,0],projection='3d');ax.set_title('03 / ACTUAL CAD — shin + two red inserts',loc='left',fontsize=12,fontweight='bold')
+    ax=fig.add_subplot(gs[1,0],projection='3d');ax.set_title('03 / ACTUAL CAD — shin + two blue inserts',loc='left',fontsize=12,fontweight='bold')
     all_triangles=[];all_colors=[]
     for part in ground_parts(params):
         vv,tt=part.tessellate(.08,.15);vv=np.array([[v.X,v.Y,v.Z] for v in vv])
@@ -72,9 +72,9 @@ def main():
     ax=fig.add_subplot(gs[1,1]);ax.axis('off')
     ax.text(0,.98,'DRAFT ENGINEERING CHECK',fontsize=16,fontweight='bold',va='top')
     bb=ground_parts(params)[1].bounding_box().size
-    text=f'Six CAD solids / lower frames are alternatives\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nRed inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining walls, assembled fit and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
+    text=f'Six CAD solids / lower frames are alternatives\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nBlue inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining walls, assembled fit and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
     ax.text(0,.84,text,fontsize=11,linespacing=1.65,va='top')
-    fig.suptitle('NOCTURNE / ENGINEERING DRAFT 01',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
+    fig.suptitle('BLUE / WHITE — PALETTE ONLY; W50 EDGE REDESIGN PENDING',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.png',dpi=150,bbox_inches='tight')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.svg',bbox_inches='tight')
     print('Wrote review mesh and actual CAD comparison sheet.')

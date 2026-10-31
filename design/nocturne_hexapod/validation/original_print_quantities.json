@@ -1,0 +1,91 @@
+{
+  "scope": "original six-legged robot, not redesigned kit",
+  "not_final_print_release": true,
+  "parts": [
+    {
+      "part": "JointCross",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "JointTop",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "JointDown",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "LegTop",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "LegBottom",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "ThighTop",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "ThighBottom",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "FootTop",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "FootButtom",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "FootGround",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "FootTip",
+      "quantity": 6,
+      "status": "provisional: one per leg inferred from local reference assembly; official parts quantity table unavailable"
+    },
+    {
+      "part": "BodyTop",
+      "quantity": 1,
+      "status": "body structure baseline"
+    },
+    {
+      "part": "BodyButtom OR BodyButtom-18650-2S",
+      "quantity": 1,
+      "status": "choose one variant"
+    },
+    {
+      "part": "BodyCenter OR BodyCenter-Thin",
+      "quantity": 1,
+      "status": "choose one variant"
+    },
+    {
+      "part": "BodySideWall",
+      "quantity": 2,
+      "status": "body structure baseline"
+    },
+    {
+      "part": "BodyBackWall",
+      "quantity": null,
+      "status": "quantity and placement unresolved in local structure audit"
+    }
+  ],
+  "sources": [
+    "repository/mechanism/assembly/TORSO_STRUCTURE.md",
+    "repository/mechanism/assembly/build_nodehexa_assembly.FCMacro (reference only; not validated official assembly)"
+  ],
+  "warning": "Do not print both mutually exclusive body variants; do not claim this is a verified complete BOM."
+}

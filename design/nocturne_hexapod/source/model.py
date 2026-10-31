@@ -107,17 +107,17 @@ def ground_parts(params):
         insert=Solid.extrude(Face(wire),(0,0,depth-gap))
         insert=Pos(0,0,t+h-depth)*insert
         insert.label=f'N112_{suffix}_red_insert_DRAFT'
-        insert.color=Color(0.65,0.025,0.045)
+        insert.color=Color(0.025,0.28,0.78)
         inserts.append(insert)
     base.label='N111_shin_face_DRAFT'
-    base.color=Color(0.13,0.14,0.16)
+    base.color=Color(0.90,0.93,0.97)
     return [base,*inserts]
 
 
 def local_parts(params):
     top=widened_top(params)
     top.label='N001_upper_frame_W30_DRAFT'
-    top.color=Color(0.18,0.19,0.21)
+    top.color=Color(0.90,0.93,0.97)
     return [top,*ground_parts(params), widened_bottom("BodyButtom",value(params,"body_width_increase")), widened_bottom("BodyButtom-18650-2S",value(params,"body_width_increase"))]
 
 

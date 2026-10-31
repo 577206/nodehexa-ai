@@ -6,6 +6,9 @@ Original reference contours are used without dimensional scaling; explicit
 transverse pilot bores are reconstructed separately. All fits remain provisional.
 """
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from lower_frame import widened_bottom
 import json
 import yaml
 from build123d import Face, Wire, Solid, Compound, Color, Pos, Rot, Cylinder, Box, Align, Kind, export_step
@@ -115,7 +118,7 @@ def local_parts(params):
     top=widened_top(params)
     top.label='N001_upper_frame_W30_DRAFT'
     top.color=Color(0.18,0.19,0.21)
-    return [top,*ground_parts(params)]
+    return [top,*ground_parts(params), widened_bottom("BodyButtom",value(params,"body_width_increase")), widened_bottom("BodyButtom-18650-2S",value(params,"body_width_increase"))]
 
 
 def build_model(params):
@@ -123,7 +126,8 @@ def build_model(params):
     # Inspection layout only, not a claimed assembled-robot transform.
     laid_out=[parts[0]]
     for p in parts[1:]:
-        placed=Pos(155,12,0)*p
+        offset=(0,140,0) if p.label.startswith("N002") else (0,280,0) if p.label.startswith("N003") else (155,12,0)
+        placed=Pos(*offset)*p
         placed.label=p.label
         placed.color=p.color
         laid_out.append(placed)

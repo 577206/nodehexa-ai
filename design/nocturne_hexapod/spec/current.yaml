@@ -4,7 +4,7 @@ project:
   kind: assembly
   units: mm
 model:
-  selected_direction: NOCTURNE black-red hexapod
+  selected_direction: white-blue hexapod; edge-only body widening
   precision: reference-derived CAD; physical fit unverified
 coordinate_system:
   units: mm
@@ -86,9 +86,6 @@ constraints:
   narrative:
   - Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores,
     nut pockets and screw bearing thickness.
-  - Width increase 30 mm total, left/right interface groups translate 15 mm each without
-    scale.
-  - Red leg inserts are solid non-emissive material. No leg lighting wiring.
   - No whole-mesh scaling. Preserve original effective link lengths.
   - Concept image is appearance reference only; never infer production hole dimensions
     from it.
@@ -97,15 +94,18 @@ constraints:
   - Original hardware remains. Any additive armor must preserve tool access and joint
     sweep.
   - No printable-production-ready claim before full assembly and fit checks.
+  - 'New target: edge-only widening 50 mm total, central PCB mounting geometry and
+    opening fixed. Leg-root movement pending clarification.'
+  - White main structure, blue solid inserts, no leg lighting.
 decisions:
 - id: style
-  status: confirmed
+  status: superseded_20261031
   value: NOCTURNE selected by user
 - id: body_width_increase
-  status: confirmed
+  status: superseded_20261031
   value_mm: 30
 - id: red_leg_details
-  status: confirmed
+  status: superseded_20261031
   value: solid red inserts, no lights
 - id: electronics_footprint
   status: approximate_user_measurement
@@ -118,9 +118,18 @@ decisions:
   value: small clearance inlay; retention not yet validated; do not rely on interference
     fit for moving robot
 - id: lower_frame_follow_upper
-  status: confirmed
+  status: superseded_20261031
   value: Same 30 mm total central extension as top, no interface scaling. Both original
     variants kept as alternatives.
+- id: edge_only_widening_20261031
+  status: confirmed_target_pending_mount_placement
+  value: Original central PCB opening and mounting geometry fixed; extend left/right
+    outer edges 25 mm each, total 50 mm. Top and bottom thickness unchanged. Supersedes
+    W30 center extension.
+- id: palette_20261031
+  status: confirmed
+  value: white main parts, blue non-emissive inserts; previous red part IDs retained
+    for traceability
 validation_targets:
   dimensions:
     leg_kinematics_mm:
@@ -163,9 +172,16 @@ pending:
   release
 - Original short rear wall placement
 - Red insert retention verification and process fit coupon
+- Resolve whether leg roots move outward with W50 edge extension; replace obsolete
+  W30 geometry after clarification.
 delivery_scope:
   requested: all redesigned print parts with defined dimensions
   current_iteration: 'partial CAD: upper frame, two alternative lower frames, shin
     face and inserts'
   whole_robot_complete: false
   production_ready: false
+implementation_state:
+  geometry: W30 center-extension geometry is obsolete, retained only as interim palette
+    preview
+  target_geometry: W50 edge-only extension; pending leg-root placement clarification
+  palette: implemented white-blue

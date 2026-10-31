@@ -42,7 +42,10 @@ coordinate_system:
     width: x
     length: y
     height: z
-  component_frames: {}
+  component_frames:
+    lower_frame_local:
+      description: u=source X-Xmin; v=source Zmax-Z; w=source Y-Ymin; proper rotation
+        for inspection only. Global assembly transform still pending.
   imported_components: {}
   source:
     status: recorded
@@ -74,6 +77,10 @@ features:
 - id: red_recesses_and_inserts
   description: Two solid red inserts, no lighting; retention and printer tolerances
     pending
+- id: lower_frame_width_extension
+  description: 'Both mutually exclusive lower-frame variants: preserve source-derived
+    local half geometry; translate +/-15 mm and bridge center section; dimensions
+    130.343 x 108.343 x 9 mm.'
 constraints:
   formal: []
   narrative:
@@ -110,6 +117,10 @@ decisions:
   status: provisional_engineering_choice
   value: small clearance inlay; retention not yet validated; do not rely on interference
     fit for moving robot
+- id: lower_frame_follow_upper
+  status: confirmed
+  value: Same 30 mm total central extension as top, no interface scaling. Both original
+    variants kept as alternatives.
 validation_targets:
   dimensions:
     leg_kinematics_mm:
@@ -154,6 +165,7 @@ pending:
 - Red insert retention verification and process fit coupon
 delivery_scope:
   requested: all redesigned print parts with defined dimensions
-  current_iteration: 'partial CAD prototype: upper frame and shin face/inserts only'
+  current_iteration: 'partial CAD: upper frame, two alternative lower frames, shin
+    face and inserts'
   whole_robot_complete: false
   production_ready: false

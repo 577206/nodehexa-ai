@@ -1,7 +1,7 @@
 {
   "schema": "engineering-3d-modeling.review_manifest.v1",
   "project": {
-    "name": "NOCTURNE | Partial CAD draft - not full robot",
+    "name": "BLUE / WHITE - old W30 geometry; requested edge W50 pending",
     "kind": "assembly",
     "units": "mm"
   },
@@ -21,37 +21,37 @@
       "id": "N001_upper_frame_W30_DRAFT",
       "label": "N001_upper_frame_W30_DRAFT",
       "visible": true,
-      "color": "#36383d"
+      "color": "#e5edf7"
     },
     {
       "id": "N111_shin_face_DRAFT",
       "label": "N111_shin_face_DRAFT",
       "visible": true,
-      "color": "#33353a"
+      "color": "#e5edf7"
     },
     {
       "id": "N112_L_red_insert_DRAFT",
       "label": "N112_L_red_insert_DRAFT",
       "visible": true,
-      "color": "#c22437"
+      "color": "#086acc"
     },
     {
       "id": "N112_R_red_insert_DRAFT",
       "label": "N112_R_red_insert_DRAFT",
       "visible": true,
-      "color": "#c22437"
+      "color": "#086acc"
     },
     {
       "id": "N002_lower_frame_W30_DRAFT",
       "label": "N002_lower_frame_W30_DRAFT",
       "visible": true,
-      "color": "#494b50"
+      "color": "#e5edf7"
     },
     {
       "id": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
       "label": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
       "visible": true,
-      "color": "#565860"
+      "color": "#e5edf7"
     }
   ],
   "parameters": [],

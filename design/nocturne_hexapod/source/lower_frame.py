@@ -34,5 +34,5 @@ def widened_bottom(name='BodyButtom',increase=30.0):
     result=lower.fuse(upper,*bridges,tol=1e-5).clean()
     if not result.is_valid or len(result.solids())!=1:raise RuntimeError('Invalid widened bottom')
     result.label='N002_lower_frame_W30_DRAFT' if name=='BodyButtom' else 'N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT'
-    result.color=Color(.22,.23,.25)
+    result.color=Color(.90,.93,.97)
     return result

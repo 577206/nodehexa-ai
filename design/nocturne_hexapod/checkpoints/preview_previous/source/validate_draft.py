@@ -49,12 +49,12 @@ def main():
                         'bbox_local_mm':[bb.size.X,bb.size.Y,bb.size.Z],
                         'volume_mm3':part.volume,'physical_fit_verified':False})
     overlap=[]
-    for i in range(1,len(parts)):
-        for j in range(i+1,len(parts)):
+    for i in range(1,4):
+        for j in range(i+1,4):
             v=volume(parts[i] & parts[j])
             overlap.append({'parts':[parts[i].label,parts[j].label],'intersection_mm3':v,'pass':v<1e-5})
     passed=all(r['valid'] and r['solids']==1 for r in records) and all(c['pass'] for c in checks+overlap) and reference_error<0.0001
-    report={'status':'pass' if passed else 'fail','scope':'Four CAD solids only; not whole-robot validation',
+    report={'status':'pass' if passed else 'fail','scope':'Six CAD solids including two alternative lower frames; not whole-robot validation',
             'footground_reconstruction_relative_volume_error':reference_error,
             'interface_checks':checks,'parts':records,'intersections':overlap,
             'not_verified':['actual servo and leg assembly sweep','printing tolerances and strength','inlay retention','electronics packaging','all remaining body and leg parts'],

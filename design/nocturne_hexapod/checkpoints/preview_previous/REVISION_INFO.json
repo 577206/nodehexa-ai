@@ -1,16 +1,16 @@
 {
   "schema": "engineering-3d-modeling.preview_revision.v1",
   "status": "available",
-  "created_at": "2026-10-31T02:29:06.513344Z",
+  "created_at": "2026-10-31T03:07:46.968521Z",
   "created_by": "scripts/checkpoint_preview_revision.py",
-  "reason": "Add lower frame variants with matching 30 mm central width extension; retain original local interfaces",
+  "reason": "Switch to user-confirmed white-blue palette; supersede center-widening with pending edge-only 50 mm design",
   "checkpoint": "checkpoints/preview_previous",
   "hashes_before": {
-    "spec": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419",
+    "spec": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
     "parameters": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-    "source": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5",
-    "review_manifest": "b0fa2f7d8633578feaa51763a603bcd1a64226ffb31115e68593cc10474cd958",
-    "review_mesh": "5410e1c9742f2a2f43dcaf2b272f91cf0d21a8bf63c431b180ee2c16191dfee0"
+    "source": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
+    "review_manifest": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532",
+    "review_mesh": "b5148fe0d18a47f1069b17911e93c81b054b39624b9a0619dce6cc145fa49457"
   },
   "files": [
     "spec/current.yaml",
@@ -21,5 +21,5 @@
     "outputs/step"
   ],
   "missing": [],
-  "checkpoint_hash": "277c9e79a9b98be1f151b2409a92f461bd80d889c024b01d89419377c536b2c5"
+  "checkpoint_hash": "6e8f863bf8a0e1019e79d069480de20d4582eaf3fcccedd332f6c96b03e23ae7"
 }

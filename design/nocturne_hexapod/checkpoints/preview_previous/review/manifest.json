@@ -40,6 +40,18 @@
       "label": "N112_R_red_insert_DRAFT",
       "visible": true,
       "color": "#c22437"
+    },
+    {
+      "id": "N002_lower_frame_W30_DRAFT",
+      "label": "N002_lower_frame_W30_DRAFT",
+      "visible": true,
+      "color": "#494b50"
+    },
+    {
+      "id": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
+      "label": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
+      "visible": true,
+      "color": "#565860"
     }
   ],
   "parameters": [],
