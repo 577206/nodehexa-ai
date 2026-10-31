@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-31",
+  "scope": "Official document photos plus current local application; not live electrical measurement",
+  "sources": [
+    "/Users/dyke_4/Downloads/灵机XJWB03标准开发板使用文档.pdf",
+    "/Users/dyke_4/Downloads/灵机一动AI+硬件赛道配件图.pdf",
+    "sdk/apps/main/peripheral/bsp_camera.h",
+    "sdk/apps/main/agent/robot_link.c",
+    "sdk/apps/main/qm_config/qm_config.h",
+    "sdk/apps/main/peripheral/bsp_io.c",
+    "sdk/apps/main/main.c"
+  ],
+  "occupied": {
+    "camera": [
+      21,
+      47,
+      4,
+      13,
+      8,
+      41
+    ],
+    "robot_uart": [
+      17,
+      18
+    ],
+    "audio_internal": [
+      40,
+      39,
+      38
+    ],
+    "debug_uart": [
+      43,
+      44
+    ],
+    "unbind_input": [
+      14
+    ]
+  },
+  "not_general_purpose": [
+    "bottom audio connector",
+    "P0/BOOT",
+    "EN",
+    "USB-related P19/P20"
+  ],
+  "candidate_not_approved": [
+    10,
+    11
+  ],
+  "previous_eyes_gpio_assignment": "withdrawn; code defaults -1 and compile guard",
+  "unresolved": [
+    "Full baseboard schematic/net mapping of audio header",
+    "Live physical availability of candidate headers",
+    "OLED controller and supply specification"
+  ]
+}

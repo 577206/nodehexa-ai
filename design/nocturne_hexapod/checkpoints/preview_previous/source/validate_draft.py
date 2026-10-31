@@ -30,18 +30,6 @@ def main():
     for name,box in zones:
         delta=mismatch(original_ground & box,ground & box)
         checks.append({'name':name,'symmetric_difference_volume_mm3':delta,'pass':delta<1e-5})
-    top_ref=plate(profile('BodyTop')['loops_uv_mm'],3)
-    top=parts[0]
-    center=top_ref.bounding_box().center().Y
-    shift=value(params,'body_width_increase')/2
-    for sign in [-1,1]:
-        mask=Pos(67.5,center+sign*125,1.5)*Box(150,250,5)
-        old=top_ref & mask
-        transformed=Pos(0,sign*shift,0)*old
-        shifted_mask=Pos(0,sign*shift,0)*mask
-        delta=mismatch(transformed,top & shifted_mask)
-        checks.append({'name':f'upper_frame_original_half_{sign}_rigid_translation',
-                       'symmetric_difference_volume_mm3':delta,'pass':delta<1e-4})
     records=[]
     for part in parts:
         bb=part.bounding_box()

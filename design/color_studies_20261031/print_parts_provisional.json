@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-31",
+  "scope": "Bare hexapod chassis; excludes detachable cockpit and desk dock",
+  "status": "Provisional print planning, not a released manufacturing BOM",
+  "basis": [
+    "mechanism/hexapod original STL filenames",
+    "mechanism/README.md contains fastener quantities, not printed-parts quantities",
+    "mechanism/assembly/TORSO_STRUCTURE.md",
+    "parts_product_photo_clear.jpg；2026-10-31清晰商品图计数及原始STL轮廓核对"
+  ],
+  "warnings": [
+    "Image concepts do not establish geometry, part count or print-ready files",
+    "Do not derive quantities from the obsolete guessed whole-robot assembly",
+    "Current W30 CAD exports are obsolete relative to the current edge-widening target; do not treat them as current production files",
+    "Do not count original FootGround and its replacement twice",
+    "Hardware, servos and screws are purchased/reused, not printed"
+  ],
+  "parts": [
+    {
+      "part": "JointCross",
+      "file": "mechanism/hexapod/TKRC-JointCross.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "JointTop",
+      "file": "mechanism/hexapod/TKRC-JointTop.STL",
+      "assembly_quantity": 12,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "JointDown",
+      "file": "mechanism/hexapod/TKRC-JointDown.STL",
+      "assembly_quantity": 12,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "ThighTop",
+      "file": "mechanism/hexapod/TKRC-ThighTop.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "ThighBottom",
+      "file": "mechanism/hexapod/TKRC-ThighBottom.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "LegTop",
+      "file": "mechanism/hexapod/TKRC-LegTop.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "LegBottom",
+      "file": "mechanism/hexapod/TKRC-LegBottom.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "FootTop",
+      "file": "mechanism/hexapod/TKRC-FootTop.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "FootButtom",
+      "file": "mechanism/hexapod/TKRC-FootButtom.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "FootGround",
+      "file": "mechanism/hexapod/TKRC-FootGround.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "FootTip",
+      "file": "mechanism/hexapod/TKRC-FootTip.STL",
+      "assembly_quantity": 6,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Joint interfaces reused. Exterior replacements depend on selected redesign; original FootGround replaced by new face, not added twice."
+    },
+    {
+      "part": "BodyTop",
+      "assembly_quantity": 1,
+      "reprint": "Target: widened replacement; CAD not released",
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据"
+    },
+    {
+      "part": "BodyButtom OR BodyButtom-18650-2S",
+      "assembly_quantity": 1,
+      "selection": "Choose exactly one bottom variant; do not print both for one robot",
+      "reprint": "Target: widened replacement; CAD not released",
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据"
+    },
+    {
+      "part": "BodyCenter OR BodyCenter-Thin",
+      "assembly_quantity": 1,
+      "selection": "Choose exactly one center variant; actual use must be checked against physical build",
+      "reprint": "Reuse existing if interface layout permits",
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据"
+    },
+    {
+      "part": "BodySideWall",
+      "assembly_quantity": 2,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "Reuse existing"
+    },
+    {
+      "part": "BodyBackWall",
+      "assembly_quantity": 1,
+      "basis": "清晰商品图展示数量；未作为新设计生产放行依据",
+      "reprint": "原件可复用，实际安装位置需与实物核对"
+    },
+    {
+      "part": "New left leg color insert",
+      "assembly_quantity": 6,
+      "basis": "Planned new design: one per leg, not an original part",
+      "reprint": "New draft; retention and fit unverified"
+    },
+    {
+      "part": "New right leg color insert",
+      "assembly_quantity": 6,
+      "basis": "Planned new design: one per leg, not an original part",
+      "reprint": "New draft; retention and fit unverified"
+    }
+  ],
+  "concept_files": [
+    "01_obsidian_crimson_gold.png",
+    "02_polar_white_orange.png",
+    "03_deepsea_navy_teal_copper.png",
+    "04_desert_sand_olive.png"
+  ],
+  "original_chassis_photo_total_excluding_cover": 84,
+  "optional_original_cover_printed_components": 3
+}

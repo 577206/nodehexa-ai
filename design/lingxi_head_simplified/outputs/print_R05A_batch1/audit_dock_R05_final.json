@@ -1,0 +1,300 @@
+{
+  "audit": "retained_head_dock_for_R05",
+  "units": "mm",
+  "scope": "Read-only actual BREP interfaces, not production acceptance",
+  "coordinates": {
+    "X": "right",
+    "Y": "front",
+    "Z": "up",
+    "bowl_placement": "identity, frame top Z0"
+  },
+  "provenance": {
+    "dock_brep": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/review/cache/R05_H02_DOCK_RECEIVER.brep",
+    "dock_sha256": "0ad7a21152824f1068c6705c5173779e13b1e12a66f4ab2c07dfe863f89a56ef",
+    "dock_mtime": 1793437346.912143,
+    "bowl_source_sha256": "91f6dae2003b4730a56a561cb6644519829881c532b4d3df3369fe101215b51f",
+    "bowl_parameters_sha256": "dc754c2242e0b184c436723a1faac4764560c3c80e9b8eb8eddd6607a474479e"
+  },
+  "base": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 83631.12894738332,
+    "min_mm": [
+      -56.840000100000005,
+      -63.840000100000005,
+      -6.999999998608054e-07
+    ],
+    "max_mm": [
+      56.840000100000005,
+      69.8000001,
+      34.0
+    ],
+    "size_mm": [
+      113.68000020000001,
+      133.6400002,
+      34.0000007
+    ]
+  },
+  "bowl": {
+    "valid": true,
+    "solid_count": 1,
+    "volume_mm3": 45915.991258438364,
+    "min_mm": [
+      -43.0000001,
+      -43.000000100000015,
+      -1.0000000036880365e-07
+    ],
+    "max_mm": [
+      43.00000010000001,
+      43.00000010000001,
+      29.0
+    ],
+    "size_mm": [
+      86.00000020000002,
+      86.00000020000002,
+      29.0000001
+    ]
+  },
+  "nest": {
+    "static_overlap_mm3": 0.0,
+    "minimum_separation_mm": 0.38766971970624803,
+    "vertical_lift": [
+      {
+        "head_translation_z_mm": 0,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 0.5,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 2,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 5,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 10,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 20,
+        "collision_mm3": 0.0
+      },
+      {
+        "head_translation_z_mm": 30,
+        "collision_mm3": 0.0
+      }
+    ]
+  },
+  "head_fasteners": [
+    {
+      "axis_xy_mm": [
+        -46,
+        0
+      ],
+      "counterbore_nominal_diameter_mm": 5.2,
+      "shaft_nominal_diameter_mm": 2.4,
+      "underside_head_seat_z_mm": 30,
+      "upper_mating_face_z_mm": 34,
+      "local_bearing_thickness_mm": 4,
+      "counterbore_clear_probe_mm3": 0.0,
+      "shaft_clear_probe_mm3": 0.0,
+      "lower_5mm_access_blocked_mm3": 0.0,
+      "above_5mm_access_blocked_mm3": 0.0,
+      "seat_probe_solid_fraction": 1.0,
+      "10mm_underhead_screw_nominal_reach_above_base_mm": 6,
+      "reach_note": "Arithmetic only; actual main-shell captive nut placement, screw type, engagement and actual screw length are not verified by this base-only audit."
+    },
+    {
+      "axis_xy_mm": [
+        46,
+        0
+      ],
+      "counterbore_nominal_diameter_mm": 5.2,
+      "shaft_nominal_diameter_mm": 2.4,
+      "underside_head_seat_z_mm": 30,
+      "upper_mating_face_z_mm": 34,
+      "local_bearing_thickness_mm": 4,
+      "counterbore_clear_probe_mm3": 0.0,
+      "shaft_clear_probe_mm3": 0.0,
+      "lower_5mm_access_blocked_mm3": 0.0,
+      "above_5mm_access_blocked_mm3": 0.0,
+      "seat_probe_solid_fraction": 1.0,
+      "10mm_underhead_screw_nominal_reach_above_base_mm": 6,
+      "reach_note": "Arithmetic only; actual main-shell captive nut placement, screw type, engagement and actual screw length are not verified by this base-only audit."
+    }
+  ],
+  "bowl_fasteners": [
+    {
+      "axis_xy_mm": [
+        -28.502068400382996,
+        0
+      ],
+      "shaft_diameter_mm": 2.4,
+      "tool_access_diameter_mm": 5.2,
+      "outer_reserved_corridor_diameter_mm": 8,
+      "seat_z_mm": 2.4,
+      "shaft_clear_probe_mm3": 0.0,
+      "access_clear_probe_mm3": 0.0,
+      "10mm_underhead_screw_nominal_reach_below_bowl_mm": 7.6
+    },
+    {
+      "axis_xy_mm": [
+        28.502068400382996,
+        0
+      ],
+      "shaft_diameter_mm": 2.4,
+      "tool_access_diameter_mm": 5.2,
+      "outer_reserved_corridor_diameter_mm": 8,
+      "seat_z_mm": 2.4,
+      "shaft_clear_probe_mm3": 0.0,
+      "access_clear_probe_mm3": 0.0,
+      "10mm_underhead_screw_nominal_reach_below_bowl_mm": 7.6
+    }
+  ],
+  "upper_connector": {
+    "insertion": "downward from the head electronics side (+Z to -Z)",
+    "contact_face_normal": [
+      0,
+      0,
+      -1
+    ],
+    "nominal_face_z_mm": 29.4,
+    "flange_lower_stop_z_mm": 31.4,
+    "collar_z_mm": [
+      30.4,
+      31.4
+    ],
+    "throat_nominal_mm": [
+      17.94,
+      4.4
+    ],
+    "upper_relief_mm": [
+      22,
+      8
+    ],
+    "front_housing_envelope_mm": [
+      17.54,
+      4,
+      2
+    ],
+    "nominal_installed_neck_collision_mm3": 0.0,
+    "downward_insertion_probes": [
+      {
+        "raised_z_mm": 8,
+        "collision_mm3": 0.0
+      },
+      {
+        "raised_z_mm": 4,
+        "collision_mm3": 0.0
+      },
+      {
+        "raised_z_mm": 2,
+        "collision_mm3": 0.0
+      },
+      {
+        "raised_z_mm": 0.5,
+        "collision_mm3": 0.0
+      },
+      {
+        "raised_z_mm": 0,
+        "collision_mm3": 0.0
+      }
+    ],
+    "flange_stop_probe": {
+      "description": "Artificial 0.2mm thick nominal19.54x4 flange slice; demonstrates end support, not flange thickness",
+      "correct_side_collision_mm3": 0.0,
+      "overinserted_collision_mm3": 1.1722631560480588
+    }
+  },
+  "lower_connector": {
+    "insertion": "upward from bowl interior (-Z to +Z)",
+    "contact_face_normal": [
+      0,
+      0,
+      1
+    ],
+    "nominal_face_z_mm": 29,
+    "flange_upper_stop_z_mm": 27,
+    "collar_top_z_mm": 28,
+    "nominal_installed_neck_collision_mm3": 0.0,
+    "flange_stop_probe": {
+      "correct_side_collision_mm3": 0.0,
+      "overinserted_collision_mm3": 1.1722631560480592
+    }
+  },
+  "contact_pair": {
+    "head_face_z_mm": 29.4,
+    "bowl_face_z_mm": 29,
+    "nominal_face_plane_gap_mm": 0.4,
+    "electrical_contact_verified": false,
+    "note": "Opposite mechanical directions are modelled. A .4mm housing-face gap cannot prove pogo-pin contact or spring compression. Male/female profiles, spring free length/stroke and connector polarity must be checked."
+  },
+  "thin_wall_observation": {
+    "location": "Near bottom of deep screw-access wells at X +/-46,Y0",
+    "nominal_well_inner_x_mm": 43.4,
+    "nominal_cavity_half_width_at_start_mm": 43.4,
+    "nominal_web_at_cavity_start_mm": 0.0,
+    "analytic_web_at_z0_mm": 0.007272727272727764,
+    "note": "These analytic values describe the unrepaired nominal well/cavity boundary, not the final cut geometry. R05 deliberately opens it with a 4.4 x 4.0 x 12.1mm notch. The independent notch probes below verify that cut without confusing it with the load-bearing Z30 seat."
+  },
+  "lower_access_notches": [
+    {
+      "center_xyz_mm": [
+        -44,
+        0,
+        5.95
+      ],
+      "nominal_cut_mm": [
+        4.4,
+        4.0,
+        12.1
+      ],
+      "inset_probe_mm": [
+        4.38,
+        3.98,
+        12.08
+      ],
+      "blocked_probe_mm3": 0.0
+    },
+    {
+      "center_xyz_mm": [
+        44,
+        0,
+        5.95
+      ],
+      "nominal_cut_mm": [
+        4.4,
+        4.0,
+        12.1
+      ],
+      "inset_probe_mm": [
+        4.38,
+        3.98,
+        12.08
+      ],
+      "blocked_probe_mm3": 0.0
+    }
+  ],
+  "checks_in_scope": [
+    "Cached receiving base CAD validity and connected-solid count",
+    "Static bowl clearance and sampled vertical release path",
+    "Two distinct screw-axis sets and nominal bore access probes",
+    "Deliberately open lower screw-well/cavity junction and intact Z30 bearing annuli",
+    "Opposing upper/lower connector insertion directions and nominal collar stops"
+  ],
+  "not_verified": [
+    "Actual connector male/female shapes, body tolerances, spring reach and compression",
+    "Magnet holding force versus complete head/phone mass, impacts and tipping",
+    "Actual screw diameters, head heights, thread engagement, printed pilot retention and tool dimensions",
+    "Printer/material tolerances, bridging/support access and fit after printing",
+    "PCB, solder and cable strain-relief envelopes above upper connector and below lower connector",
+    "Head plinth versus robot frame/leg swept volumes and external wiring",
+    "New R05 main-shell mating holes and contact surfaces; must audit after rebuild"
+  ],
+  "CAD_failures": [],
+  "status": "CAD_interface_checks_pass_physical_fit_unverified"
+}

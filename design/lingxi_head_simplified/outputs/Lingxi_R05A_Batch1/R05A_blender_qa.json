@@ -1,0 +1,421 @@
+{
+  "schema": "lingxi.cad_render_qa.v1",
+  "revision": "R05A",
+  "source_file": "repository/design/lingxi_head_simplified/review/cache/R05A_scene.json",
+  "source_sha256": "f335a04932f1513ccd19d649c9f998e86821cce380b7df519ab6b4c08b4cf4fc",
+  "blender_version": "5.2.1 LTS",
+  "units": {
+    "source": "mm",
+    "blender": "m",
+    "scale_factor": 0.001
+  },
+  "axis_convention": {
+    "front": "+Y",
+    "left": "-X",
+    "up": "+Z"
+  },
+  "geometry_policy": "Exact coordinate deduplication only; source positions and triangles unchanged; no modifiers.",
+  "qa_coordinate_unit": "millimeter, exact source coordinates in temporary copies",
+  "qa_parameters_mm": {
+    "coplanarity_eps": 0.02,
+    "assembly_contact_tol": 0.75
+  },
+  "asset": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "hidden back-to-back faces: QA_MM_H03_CLEAR_VISOR<->QA_MM_H04_VISOR_FRAME (1436 pairs) - delete to save tris",
+      "hidden back-to-back faces: QA_MM_H01_MAIN_SHELL<->QA_MM_H02_DOCK_RECEIVER (1177 pairs) - delete to save tris"
+    ],
+    "ground_z": 0.0,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [
+      {
+        "where": "QA_MM_H03_CLEAR_VISOR<->QA_MM_H04_VISOR_FRAME",
+        "tri_pairs": 1436
+      },
+      {
+        "where": "QA_MM_H01_MAIN_SHELL<->QA_MM_H02_DOCK_RECEIVER",
+        "tri_pairs": 1177
+      }
+    ],
+    "enclosed": [],
+    "objects": {
+      "QA_MM_H01_MAIN_SHELL": {
+        "verts": 17216,
+        "faces": 34624,
+        "tris": 34624,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "QA_MM_H02_DOCK_RECEIVER": {
+        "verts": 4613,
+        "faces": 9270,
+        "tris": 9270,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "QA_MM_H03_CLEAR_VISOR": {
+        "verts": 1881,
+        "faces": 3774,
+        "tris": 3774,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "QA_MM_H04_VISOR_FRAME": {
+        "verts": 2858,
+        "faces": 5724,
+        "tris": 5724,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "hardware_reference_topology": {},
+  "core_only": true,
+  "scope_note": "First-batch body, deep base and any included clear visor/retainer; second-batch screw-on decorative parts are not included in this source scene.",
+  "objects": [
+    {
+      "name": "SM_H01_MAIN_SHELL",
+      "source_name": "H01_MAIN_SHELL",
+      "reference": false,
+      "part_id": "H01_MAIN_SHELL",
+      "input_vertices": 17216,
+      "exact_coordinate_vertices": 17216,
+      "triangles": 34624,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        125.2,
+        141.0,
+        101.79995
+      ]
+    },
+    {
+      "name": "SM_H02_DOCK_RECEIVER",
+      "source_name": "H02_DOCK_RECEIVER",
+      "reference": false,
+      "part_id": "H02_DOCK_RECEIVER",
+      "input_vertices": 4613,
+      "exact_coordinate_vertices": 4613,
+      "triangles": 9270,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        113.68,
+        133.63999,
+        34.0
+      ]
+    },
+    {
+      "name": "SM_H03_CLEAR_VISOR",
+      "source_name": "H03_CLEAR_VISOR",
+      "reference": false,
+      "part_id": "H03_CLEAR_VISOR",
+      "input_vertices": 1881,
+      "exact_coordinate_vertices": 1881,
+      "triangles": 3774,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        84.0,
+        60.4,
+        78.19863
+      ]
+    },
+    {
+      "name": "SM_H04_VISOR_FRAME",
+      "source_name": "H04_VISOR_FRAME",
+      "reference": false,
+      "part_id": "H04_VISOR_FRAME",
+      "input_vertices": 2858,
+      "exact_coordinate_vertices": 2858,
+      "triangles": 5724,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        102.8,
+        66.49999,
+        80.59878
+      ]
+    }
+  ],
+  "excluded_reference_objects": [
+    "REF_OLED_L",
+    "REF_OLED_R",
+    "REF_FIXED_BOWL_R02",
+    "REF_BOARDS_120x50_APPROX"
+  ],
+  "total_triangles": 53392,
+  "materials": 5,
+  "accepted_scope_notes": [
+    "UV audit omitted: only procedural/solid materials, no texture delivery.",
+    "Reference OLED boards, displays, mask and pixels are illustrative hardware envelopes; individual topology is audited separately.",
+    "This rendering report is not CAD collision, dimensional fit or manufacturing approval.",
+    "Back-to-back surfaces are intentionally separate mating surfaces of print parts; retain closed solids.",
+    "Individual assembly Z offsets are intentional; per-part STLs translated to Zmin0.",
+    "Clear visor transmission is illustrative; printed optical clarity unverified."
+  ],
+  "visual_review_status": "REVIEWED_ACTUAL_HERO_FRONT_RANDOM_AND_WIREFRAME",
+  "individual_print_mesh_checks": {
+    "QA_MM_H01_MAIN_SHELL": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "asset lowest point z=10.0 (not resting on ground plane z=0)"
+      ],
+      "ground_z": 10.0,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H01_MAIN_SHELL": {
+          "verts": 17216,
+          "faces": 34624,
+          "tris": 34624,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    },
+    "QA_MM_H02_DOCK_RECEIVER": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "ground_z": 0.0,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H02_DOCK_RECEIVER": {
+          "verts": 4613,
+          "faces": 9270,
+          "tris": 9270,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    },
+    "QA_MM_H03_CLEAR_VISOR": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "asset lowest point z=33.5003 (not resting on ground plane z=0)"
+      ],
+      "ground_z": 33.5003,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H03_CLEAR_VISOR": {
+          "verts": 1881,
+          "faces": 3774,
+          "tris": 3774,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    },
+    "QA_MM_H04_VISOR_FRAME": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "asset lowest point z=32.501 (not resting on ground plane z=0)"
+      ],
+      "ground_z": 32.501,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H04_VISOR_FRAME": {
+          "verts": 2858,
+          "faces": 5724,
+          "tris": 5724,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    }
+  },
+  "visual_review_images": [
+    {
+      "view": "hero",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_hero.png",
+      "size_bytes": 2015905,
+      "resolution": 1400,
+      "seconds": 8.0
+    },
+    {
+      "view": "front",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_front.png",
+      "size_bytes": 1051544,
+      "resolution": 1000,
+      "seconds": 3.3
+    },
+    {
+      "view": "bottom",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_bottom.png",
+      "size_bytes": 1027879,
+      "resolution": 1000,
+      "seconds": 2.4
+    }
+  ],
+  "topology_review_sheets": [
+    {
+      "ok": true,
+      "sheet": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_random.png",
+      "views": [
+        "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_random_three_quarter.png",
+        "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_random_bottom.png"
+      ],
+      "layout": "2x1",
+      "order": [
+        "three_quarter",
+        "bottom"
+      ]
+    },
+    {
+      "ok": true,
+      "sheet": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_wire.png",
+      "views": [
+        "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_wire_three_quarter.png",
+        "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_QA_wire_bottom.png"
+      ],
+      "layout": "2x1",
+      "order": [
+        "three_quarter",
+        "bottom"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "revision": "R05",
+  "source_sha256": "54527514124f2b5eefc6f2b74b881f28ae40f159f6852b32b9a341641e31b8d9",
+  "source_unchanged_during_render": true,
+  "core_only": true,
+  "scope_note": "First-batch body and deep base; second-batch screw-on decorative parts are not included in this source scene.",
+  "blend": "repository/design/lingxi_head_simplified/outputs/renders/R05/Lingxi_Head_R05_Actual_CAD.blend",
+  "device": "METAL",
+  "samples": 48,
+  "asset_size_mm": [
+    125.2,
+    141.0,
+    111.7999
+  ],
+  "objects": 2,
+  "triangles": 43894,
+  "materials": 4,
+  "renders": [
+    {
+      "view": "hero",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_hero.png",
+      "size_bytes": 1984893,
+      "resolution": 1400,
+      "seconds": 4.8
+    },
+    {
+      "view": "bottom",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_bottom.png",
+      "size_bytes": 1015511,
+      "resolution": 1000,
+      "seconds": 2.0
+    }
+  ],
+  "qa_report": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/validation/R05_blender_qa.json",
+  "qa_asset_pass": true,
+  "status": "DRAFT_RENDER_REQUIRES_VISUAL_REVIEW_NOT_PRINT_RELEASE"
+}

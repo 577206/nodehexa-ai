@@ -1,0 +1,165 @@
+{
+  "revision": "R06",
+  "features": [
+    {
+      "id": "faceted_shell",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "visor_seat",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "bottom_dock",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "two_fasteners",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "side_vents",
+      "source": "source/decoration_vents_R06.py:build_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "type_c_access",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "oled_carrier",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "reference envelope only; internal mount not designed"
+    },
+    {
+      "id": "decorative_mounts",
+      "source": "source/model.py:build_model -> source/model_R05A_archive.py",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "clear_cover",
+      "source": "source/visor_R05A.py:visor_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "orange_gray_shoulders",
+      "source": "source/decoration_armor_R06.py:build_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "round_service_caps",
+      "source": "source/decoration_armor_R06.py:build_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "camera_bezel",
+      "source": "source/decoration_camera_R06.py:build_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    },
+    {
+      "id": "phone_cradle",
+      "source": "source/decoration_phone_R06.py:build_parts",
+      "evidence": "validation/R06_checks.json; validation/mount_interfaces_R06.json",
+      "status": "digitally validated prototype; physical assembly unverified"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "Fixed bowl R02 unchanged atZ0; full29mm envelope fits deep female recess with nominal0.4mm clearance",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "No electronics or battery fit claim from concept image",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "Do not include fixed bowl in head print count",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "H01/H02/H03/H04 R05A first-batch solids immutable. New components adapt to frozen holes and clearances.",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "Second-batch print bundle contains decorative parts only; original4 first-batch parts shown in assembly but not duplicated in this print count.",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "Gray and orange are distinct printable solids, no cosmetic disconnected color regions. Transparent cover remains first-batch.",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "Keep USB left service opening and unobstructed frontward clear-cover removal.",
+      "source": "source/model.py; source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json",
+      "status": "prototype scope"
+    },
+    {
+      "id": "Phone slot thickness13mm suits user-confirmed10–12mm cased phone; soft pads needed for grip.",
+      "source": "source/decoration_phone_R06.py:build_parts",
+      "evidence": "validation/phone_R06_checks.json; validation/service_R06_checks.json",
+      "status": "13mm CAD slot verified; physical grip requires soft pads and trial fit"
+    }
+  ],
+  "validation_targets": [
+    {
+      "id": "dock_full_depth_mm",
+      "source": "source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json; validation/visor_R05A_independent.json",
+      "status": "CAD evidence; physical fit deferred"
+    },
+    {
+      "id": "parts",
+      "source": "source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json; validation/visor_R05A_independent.json",
+      "status": "CAD evidence; physical fit deferred"
+    },
+    {
+      "id": "bowl_reference",
+      "source": "source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json; validation/visor_R05A_independent.json",
+      "status": "CAD evidence; physical fit deferred"
+    },
+    {
+      "id": "mesh",
+      "source": "source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json; validation/visor_R05A_independent.json",
+      "status": "CAD evidence; physical fit deferred"
+    },
+    {
+      "id": "limitations",
+      "source": "source/build_R06_print.py",
+      "evidence": "validation/R06_checks.json; validation/visor_R05A_independent.json",
+      "status": "CAD evidence; physical fit deferred"
+    }
+  ]
+}

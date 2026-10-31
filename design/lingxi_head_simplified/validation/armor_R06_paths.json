@@ -1,0 +1,27 @@
+{
+  "visor_translation_collisions": [],
+  "rear_source_hole_lip": {
+    "mm3": 0.00020026813795257116,
+    "min": [
+      45.96666656666666,
+      -27.280000100586946,
+      95.9999999
+    ],
+    "max": [
+      46.0000001,
+      -26.719999897598317,
+      96.0400001
+    ]
+  },
+  "tested_visor_and_frame_translations_y_mm": [
+    0.1,
+    0.5,
+    2,
+    5,
+    10,
+    20,
+    40,
+    80
+  ],
+  "method": "Positive-Y discrete extraction samples for both frozen visor and retainer against all8 armor solids. Zero intersections at tested samples; not a continuous swept-solid certification."
+}

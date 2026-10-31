@@ -1,0 +1,16 @@
+{
+  "R05A_checks.json": "0751ce32d6c4c01cdcb2f42e2afa5a3fd5314b17544463538ccd88d1d4521caa",
+  "R05A_front.png": "9fcd1290c70c9ab785a5471824be5a69e905f4a58ea56b46d470cefcc8d25c95",
+  "PRINT_MANIFEST_R05A.json": "98d949914fc51cb45eebe54799d8d63a456f88c04f907869ef3acbb79abc4d10",
+  "mount_interfaces_R05A.json": "175e09df62060a2681363c4c4ca2dfc913a6cf2adff2fbee854576cadf20cbaf",
+  "H02_DOCK_RECEIVER_R05_1pc_mm.stl": "9b3e5da8bbef400aff949d8096461b548fe1cc38484fa21b0a58b9509ae739f3",
+  "R05A_hero.png": "4cba8c1ccbd682c4693519f5bdf42acfa74f01ce08e43c26817099add9bd6bc5",
+  "R05A_blender_qa.json": "408d5b58e245554869572b4d9f2dba654d445f433e22ac9ec35671986d4a3765",
+  "visor_R05A_independent.json": "b89187b053affef70215c70e2eddd2060363d1188f47666c7a25abf8c289c28c",
+  "Lingxi_R05A_Batch1_GRAY_CLEAR_4SeparateParts_Assembly.3mf": "1449002fa82e03549a6798ad069fa33502868df1cf86a7ccb0cae29898b2f625",
+  "H01_MAIN_SHELL_R05_1pc_mm.stl": "bc79fb7b144e5b56a5e130602d2faf66d7a00ba852866aa32c301d8652b0c67a",
+  "H03_CLEAR_VISOR_R05A_1pc_mm.stl": "dcc256f10a2f51d5246f33f02de078896b6d04fbe4c5753d1372dce61bd5406f",
+  "先读我_第一批打印.txt": "173d350cf865304fac7841ff6e01da98bffc0cc22545acd6f5c1116942d5e174",
+  "H04_VISOR_FRAME_R05A_1pc_mm.stl": "741951a51b5759675cd7be050209cf8fb0589f7ebf0a680fe10d7bbae81f6aef",
+  "audit_dock_R05_final.json": "38bf5d3218b189ec927a3d721e4c4b67bbd10794e2d1ba99a81daf63684a1018"
+}

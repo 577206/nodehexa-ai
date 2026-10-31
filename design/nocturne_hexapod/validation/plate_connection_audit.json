@@ -1,0 +1,49 @@
+{
+  "status": "assembly_not_verified",
+  "basis": "Original leg-root regions translated 25 mm per side, compared to current upper plate; these are envelope differences, not proof of collision with an actual servo.",
+  "upper_mount_region_comparison": [
+    {
+      "region": "-1_end_left",
+      "added_in_previous_open_space_mm3": 287.45560156276974,
+      "removed_original_material_mm3": 0
+    },
+    {
+      "region": "-1_middle",
+      "added_in_previous_open_space_mm3": 400.76545691112364,
+      "removed_original_material_mm3": 0
+    },
+    {
+      "region": "-1_end_right",
+      "added_in_previous_open_space_mm3": 297.58060046106397,
+      "removed_original_material_mm3": 0
+    },
+    {
+      "region": "1_end_left",
+      "added_in_previous_open_space_mm3": 287.45555663860364,
+      "removed_original_material_mm3": 0
+    },
+    {
+      "region": "1_middle",
+      "added_in_previous_open_space_mm3": 400.76514003946795,
+      "removed_original_material_mm3": 0
+    },
+    {
+      "region": "1_end_right",
+      "added_in_previous_open_space_mm3": 297.5805555369225,
+      "removed_original_material_mm3": 0
+    }
+  ],
+  "verified": [
+    "Six lower external mount geometries unchanged from translated originals, prior Boolean checks pass",
+    "Upper 12 external holes retain dimensions and move +/-25 mm",
+    "Central aperture and two upper central holes unchanged",
+    "Lower 3 mm base unchanged from previous widened revision"
+  ],
+  "unverified": [
+    "Authoritative upper/lower/sidewall assembly transforms and joint constraints unavailable",
+    "Servo envelope and tool access within newly filled upper bands",
+    "Original BodySideWall/BodyCenter/BodyBackWall connection engagement and fastening length",
+    "Physical fit"
+  ],
+  "package": "NodeHexa_BLACK_R02_EDGE50.zip remains a prototype package, not assembly-approved"
+}

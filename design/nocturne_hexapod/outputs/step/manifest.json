@@ -7,7 +7,7 @@
   "generated_by": "scripts/export_step.py",
   "promoted_by": null,
   "stale": true,
-  "stale_reason": "Lower frame variants added to authoring source and preview on 2026-10-31; existing STEP exports predate this change.",
+  "stale_reason": "EDGE50 replaces central W30 draft; old STEP not current",
   "previous_state": "exported",
   "source_hash": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5",
   "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",

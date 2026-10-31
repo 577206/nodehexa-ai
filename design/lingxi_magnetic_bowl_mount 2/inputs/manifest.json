@@ -1,0 +1,32 @@
+[
+  {
+    "path": "inputs/01_user_connection_markup.png",
+    "sha256": "9e5fdf57ec9ae2a011146185fee51e70f6d393c1e80446657386267a92f4bb5e",
+    "use": "qualitative reference; no inferred physical dimensions"
+  },
+  {
+    "path": "inputs/02_robot_board_photo.jpg",
+    "sha256": "5ef68b7fa5708e9a406f838167276a0591e4cfce144550b050aa7c9552e7bfb0",
+    "use": "qualitative reference; no inferred physical dimensions"
+  },
+  {
+    "path": "inputs/03_bowl_shape_analogy.jpg",
+    "sha256": "f413ff10ab54c9332f4cb36f970125b62e3652d91bee22e0fce91951f2faf31b",
+    "use": "qualitative reference; no inferred physical dimensions"
+  },
+  {
+    "path": "inputs/04_connector_dimension_reference.jpg",
+    "sha256": "1e4a76f3ef51cace1079032ec3df905ca1f2734295f283044c90d7b9b5857a92",
+    "use": "dimensioned connector reference"
+  },
+  {
+    "path": "inputs/05_user_cover_sketch.png",
+    "sha256": "21d4dcdf2cad7873b60c8d6b3e9d847fcc55936c2290dd2ff471cc8f29725f13",
+    "use": "qualitative reference; no inferred physical dimensions"
+  },
+  {
+    "path": "inputs/06_EDGE50_reference.png",
+    "sha256": "5396bf43558435d3f95b4436c8b4a13af6c36c8c456f556e42b214328942a1dd",
+    "use": "qualitative reference; no inferred physical dimensions"
+  }
+]

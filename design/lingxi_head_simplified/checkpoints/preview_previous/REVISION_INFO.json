@@ -1,0 +1,25 @@
+{
+  "schema": "engineering-3d-modeling.preview_revision.v1",
+  "status": "available",
+  "created_at": "2026-10-31T10:12:53.446593Z",
+  "created_by": "scripts/checkpoint_preview_revision.py",
+  "reason": "R06 final shoulder clearance correction after multi-angle CAD mesh QA; frozen first batch unchanged",
+  "checkpoint": "checkpoints/preview_previous",
+  "hashes_before": {
+    "spec": "61b4b9b514466170494372e43e7f11ac4d0348d151f76c7170dea36494a901ec",
+    "parameters": "28da7670278478fb06dd0e0e65734b9f50b22238a7c181ce90ebe3c750e5b123",
+    "source": "4bc3d01f99b9ad19b9381eff65fe7c4e26be7dae0c75824feb39314dbc9eb64e",
+    "review_manifest": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71",
+    "review_mesh": "fc282ee5aec3309c6307aacaa78820367ffed87959bd60ad8e27b61a5cc52318"
+  },
+  "files": [
+    "spec/current.yaml",
+    "parameters.yaml",
+    "source",
+    "review/manifest.json",
+    "review/cache",
+    "outputs/step"
+  ],
+  "missing": [],
+  "checkpoint_hash": "3a8e7fb9564c5718fb59fee162c581f98af08ac374310d22ee85245237810223"
+}

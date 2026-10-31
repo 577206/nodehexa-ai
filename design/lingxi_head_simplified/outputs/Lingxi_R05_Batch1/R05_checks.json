@@ -1,0 +1,162 @@
+{
+  "revision": "R05",
+  "status": "fit_print_prototype",
+  "physical_fit_verified": false,
+  "parts": [
+    {
+      "id": "H01_MAIN_SHELL",
+      "valid_solid": true,
+      "solid_count": 1,
+      "watertight": true,
+      "positive_closed_volume": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        125.2000002,
+        141.0000002,
+        101.80000019999999
+      ],
+      "CAD_volume_mm3": 120848.09777099534,
+      "mesh_volume_mm3": 120846.71560515545,
+      "triangles": 34624
+    },
+    {
+      "id": "H02_DOCK_RECEIVER",
+      "valid_solid": true,
+      "solid_count": 1,
+      "watertight": true,
+      "positive_closed_volume": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        113.68000020000001,
+        133.6400002,
+        34.0000007
+      ],
+      "CAD_volume_mm3": 83631.12894738323,
+      "mesh_volume_mm3": 83593.87905848179,
+      "triangles": 9270
+    }
+  ],
+  "intersections": [
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "H02_DOCK_RECEIVER",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_OLED_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_OLED_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_FIXED_BOWL_R02",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_BOARDS_120x50_APPROX",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "REF_OLED_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "REF_OLED_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "REF_FIXED_BOWL_R02",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "REF_BOARDS_120x50_APPROX",
+      "volume_mm3": 0
+    }
+  ],
+  "probes": [
+    {
+      "id": "access_well",
+      "x": -46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "base_shaft",
+      "x": -46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "shell_shaft",
+      "x": -46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "access_well",
+      "x": 46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "base_shaft",
+      "x": 46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "shell_shaft",
+      "x": 46,
+      "intersection_mm3": 0
+    },
+    {
+      "id": "left_USB_route_14x9",
+      "intersection_mm3": 0
+    }
+  ],
+  "mechanical_dimensions": {
+    "fixed_bowl_mm": [
+      86,
+      86,
+      29
+    ],
+    "receiving_mouth_mm": [
+      86.8,
+      86.8
+    ],
+    "main_taper_depth_mm": 27.4,
+    "guide_depth_mm": 29.4,
+    "head_base_hole_spacing_mm": 92,
+    "fixed_chassis_bowl_hole_spacing_mm": 57.0041368,
+    "base_screw_seat_Z_mm": 30,
+    "base_joint_Z_mm": 34,
+    "M2_nut_pocket_Z_mm": [
+      37.2,
+      39.2
+    ],
+    "USB_window_YxZ_mm": [
+      42.0,
+      28.0
+    ],
+    "connector_neck_mm": [
+      17.94,
+      4.4
+    ],
+    "connector_solder_relief_mm": [
+      22,
+      8
+    ],
+    "nominal_connector_face_gap_mm": 0.4
+  },
+  "limitations": [
+    "Physical fit and magnetic connector engagement not tested.",
+    "OLED/PCB/camera mounting inserts and all exterior ornaments are second-batch parts; their screw patterns must use frozen R05 interfaces.",
+    "3MF contains two separate objects in assembly coordinates, no slicing profile."
+  ],
+  "pass": true
+}

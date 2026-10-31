@@ -1,0 +1,716 @@
+{
+  "revision": "R06",
+  "scope": "separate side vents only",
+  "coordinate_system": "mm; +X right +Y front +Z up",
+  "parts": [
+    {
+      "name": "D01_VENT_FRAME_L",
+      "is_valid": true,
+      "solids": 1,
+      "volume_mm3": 8527.410357652025,
+      "bbox_mm": [
+        7.400002600000008,
+        46.0000002,
+        56.0000002
+      ],
+      "mesh_watertight": true,
+      "mesh_volume": true,
+      "mesh_components": 1
+    },
+    {
+      "name": "D03_VENT_GRILLE_L",
+      "is_valid": true,
+      "solids": 1,
+      "volume_mm3": 4879.262078852078,
+      "bbox_mm": [
+        11.353846353846144,
+        46.0,
+        56.0
+      ],
+      "mesh_watertight": true,
+      "mesh_volume": true,
+      "mesh_components": 1
+    },
+    {
+      "name": "D02_VENT_FRAME_R",
+      "is_valid": true,
+      "solids": 1,
+      "volume_mm3": 8527.410357652025,
+      "bbox_mm": [
+        7.400002600000008,
+        46.0000002,
+        56.0000002
+      ],
+      "mesh_watertight": true,
+      "mesh_volume": true,
+      "mesh_components": 1
+    },
+    {
+      "name": "D04_VENT_GRILLE_R",
+      "is_valid": true,
+      "solids": 1,
+      "volume_mm3": 4879.262078852078,
+      "bbox_mm": [
+        11.353846353846144,
+        46.0,
+        56.0
+      ],
+      "mesh_watertight": true,
+      "mesh_volume": true,
+      "mesh_components": 1
+    }
+  ],
+  "pair_intersections_mm3": [
+    [
+      "D01_VENT_FRAME_L",
+      "D03_VENT_GRILLE_L",
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      "D02_VENT_FRAME_R",
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      "D04_VENT_GRILLE_R",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "D02_VENT_FRAME_R",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "D04_VENT_GRILLE_R",
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      "D04_VENT_GRILLE_R",
+      0
+    ]
+  ],
+  "core_intersections_mm3": [
+    [
+      "D01_VENT_FRAME_L",
+      "H01_MAIN_SHELL",
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      "H02_DOCK_RECEIVER",
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      "H03_CLEAR_VISOR",
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      "H04_VISOR_FRAME",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "H01_MAIN_SHELL",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "H02_DOCK_RECEIVER",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "H03_CLEAR_VISOR",
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      "H04_VISOR_FRAME",
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      "H01_MAIN_SHELL",
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      "H02_DOCK_RECEIVER",
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      "H03_CLEAR_VISOR",
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      "H04_VISOR_FRAME",
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      "H01_MAIN_SHELL",
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      "H02_DOCK_RECEIVER",
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      "H03_CLEAR_VISOR",
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      "H04_VISOR_FRAME",
+      0
+    ]
+  ],
+  "extraction": [
+    [
+      "D01_VENT_FRAME_L",
+      0.1,
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      0.2,
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      1,
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      5,
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      20,
+      0
+    ],
+    [
+      "D01_VENT_FRAME_L",
+      75,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      0.1,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      0.2,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      1,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      5,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      20,
+      0
+    ],
+    [
+      "D03_VENT_GRILLE_L",
+      75,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      0.1,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      0.2,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      1,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      5,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      20,
+      0
+    ],
+    [
+      "D02_VENT_FRAME_R",
+      75,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      0.1,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      0.2,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      1,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      5,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      20,
+      0
+    ],
+    [
+      "D04_VENT_GRILLE_R",
+      75,
+      0
+    ]
+  ],
+  "fasteners": [
+    {
+      "side": -1,
+      "tag": "UPPER",
+      "nut_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      }
+    },
+    {
+      "side": -1,
+      "tag": "LOWER",
+      "nut_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      }
+    },
+    {
+      "side": 1,
+      "tag": "UPPER",
+      "nut_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      }
+    },
+    {
+      "side": 1,
+      "tag": "LOWER",
+      "nut_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intersection_mm3": {
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      }
+    }
+  ],
+  "nut_access_without_base": [
+    [
+      -1,
+      "UPPER",
+      0,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      0.2,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      1,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      3,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      5,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      10,
+      0
+    ],
+    [
+      -1,
+      "UPPER",
+      20,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      0,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      0.2,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      1,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      3,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      5,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      10,
+      0
+    ],
+    [
+      -1,
+      "LOWER",
+      20,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      0,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      0.2,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      1,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      3,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      5,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      10,
+      0
+    ],
+    [
+      1,
+      "UPPER",
+      20,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      0,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      0.2,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      1,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      3,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      5,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      10,
+      0
+    ],
+    [
+      1,
+      "LOWER",
+      20,
+      0
+    ]
+  ],
+  "mounts": [
+    {
+      "id": "VENT_UPPER_L",
+      "parts": [
+        "D01_VENT_FRAME_L",
+        "D03_VENT_GRILLE_L"
+      ],
+      "centers_mm": [
+        [
+          -58.44615384615385,
+          22.0,
+          68.0
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x25 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        -70.8,
+        22.0,
+        68.0
+      ],
+      "nut_bearing_mm": [
+        -51.84615384615385,
+        22.0,
+        68.0
+      ],
+      "grille_bearing_mm": [
+        -58.64615384615385,
+        22.0,
+        68.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 4.44615384615385,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_LOWER_L",
+      "parts": [
+        "D01_VENT_FRAME_L",
+        "D03_VENT_GRILLE_L"
+      ],
+      "centers_mm": [
+        [
+          -62.6,
+          23.0,
+          29.0
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x20 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        -70.8,
+        23.0,
+        29.0
+      ],
+      "nut_bearing_mm": [
+        -56.0,
+        23.0,
+        29.0
+      ],
+      "grille_bearing_mm": [
+        -62.800000000000004,
+        23.0,
+        29.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 3.6000000000000028,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_UPPER_R",
+      "parts": [
+        "D02_VENT_FRAME_R",
+        "D04_VENT_GRILLE_R"
+      ],
+      "centers_mm": [
+        [
+          58.44615384615385,
+          22.0,
+          68.0
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x25 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        70.8,
+        22.0,
+        68.0
+      ],
+      "nut_bearing_mm": [
+        51.84615384615385,
+        22.0,
+        68.0
+      ],
+      "grille_bearing_mm": [
+        58.64615384615385,
+        22.0,
+        68.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 4.44615384615385,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_LOWER_R",
+      "parts": [
+        "D02_VENT_FRAME_R",
+        "D04_VENT_GRILLE_R"
+      ],
+      "centers_mm": [
+        [
+          62.6,
+          23.0,
+          29.0
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x20 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        70.8,
+        23.0,
+        29.0
+      ],
+      "nut_bearing_mm": [
+        56.0,
+        23.0,
+        29.0
+      ],
+      "grille_bearing_mm": [
+        62.800000000000004,
+        23.0,
+        29.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 3.6000000000000028,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    }
+  ],
+  "assembly_order": [
+    "移开H02下方深腔底座，从主体内放入M2螺母",
+    "左右各先装灰色百叶，再套橙色外框",
+    "每侧上孔M2x25、下孔M2x20盘头螺丝，轻轻拧紧",
+    "确认透明盖和左侧USB线仍可拆装，再装回H02底座"
+  ],
+  "limitations": [
+    "螺钉/螺母为标称M2尺寸；实物打印装配尚未验证",
+    "完整移除通风组件时先拆外框、再取灰色百叶；灰色百叶不应强行穿过橙框",
+    "0.2mm初始轴向间隙用于装配，紧固时需轻压贴合，不可过紧"
+  ]
+}

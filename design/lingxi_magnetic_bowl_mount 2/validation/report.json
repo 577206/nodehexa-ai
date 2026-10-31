@@ -1,0 +1,541 @@
+{
+  "schema": "engineering-3d-modeling.project_validation.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+  "generated_at": "2026-10-31T05:47:48.979162Z",
+  "phase": {
+    "value": "draft_review",
+    "source": "spec.lifecycle.phase"
+  },
+  "step_requirement": {
+    "required": false,
+    "reason": "phase:draft_review"
+  },
+  "status": "pass",
+  "checks": [
+    {
+      "check": "dir:spec",
+      "status": "pass"
+    },
+    {
+      "check": "dir:inputs",
+      "status": "pass"
+    },
+    {
+      "check": "dir:source",
+      "status": "pass"
+    },
+    {
+      "check": "dir:outputs/step",
+      "status": "pass"
+    },
+    {
+      "check": "dir:validation",
+      "status": "pass"
+    },
+    {
+      "check": "dir:review",
+      "status": "pass"
+    },
+    {
+      "check": "dir:previous",
+      "status": "pass"
+    },
+    {
+      "check": "file:AGENTS.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:brief.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:spec/current.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:parameters.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:source/model.py",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/index.html",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "source-direct-run-no-step-export",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:load_parameters",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:build_model",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:write_step",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "domain:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "review-parameter-audit:basic",
+      "status": "pass"
+    },
+    {
+      "check": "spec-coverage-audit",
+      "status": "pass"
+    },
+    {
+      "check": "review-preview-stability",
+      "status": "warn",
+      "trust": "warning"
+    },
+    {
+      "check": "preview-mesh",
+      "status": "pass"
+    }
+  ],
+  "warnings": [
+    "phase draft_review allows missing STEP/STP during draft/review work (phase:draft_review); do not call this state accepted, complete, or release-ready",
+    "review preview assembly_rendering_large_reference_group: large imported/reference preview groups may skip detailed edge sorting"
+  ],
+  "errors": [],
+  "step_files": [],
+  "snapshot": {
+    "generated_at": "2026-10-31T05:47:48.979162Z",
+    "phase": {
+      "value": "draft_review",
+      "source": "spec.lifecycle.phase"
+    },
+    "files": {
+      "spec": {
+        "path": "spec/current.yaml",
+        "sha256": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7"
+      },
+      "parameters": {
+        "path": "parameters.yaml",
+        "sha256": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79"
+      },
+      "source": {
+        "path": "source/model.py",
+        "sha256": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16"
+      },
+      "manifest": {
+        "path": "review/manifest.json",
+        "sha256": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      },
+      "step_manifest": {
+        "path": "outputs/step/manifest.json"
+      },
+      "mesh": {
+        "path": "review/cache/current_mesh.json",
+        "sha256": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7"
+      }
+    },
+    "step_files": [],
+    "warnings": []
+  },
+  "source_interface": {
+    "status": "pass",
+    "source": "source/model.py",
+    "warnings": [],
+    "errors": []
+  },
+  "step_manifest": null,
+  "review_parameter_audit_mode": "basic",
+  "review_parameter_audit": {
+    "schema": "engineering-3d-modeling.review_parameter_audit.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+    "mode": "basic",
+    "status": "pass",
+    "valid_preview_parameters": [],
+    "disabled_parameters": [],
+    "new_candidates": [],
+    "warnings": [],
+    "checks": []
+  },
+  "review_preview": {
+    "schema": "engineering-3d-modeling.review_preview_diagnostic.v1",
+    "generated_at": "2026-10-31T05:47:48.900644Z",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+    "status": "warn",
+    "trust": {
+      "preview": "warning",
+      "reason": "assembly_rendering_large_reference_group"
+    },
+    "checks": [
+      {
+        "check": "review-template-identity",
+        "status": "pass"
+      },
+      {
+        "check": "manifest-asset-paths",
+        "status": "pass"
+      },
+      {
+        "check": "preview-mesh-shape-topology",
+        "status": "pass"
+      },
+      {
+        "check": "preview-provenance",
+        "status": "pass"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "assembly_rendering_large_reference_group",
+        "message": "large imported/reference preview groups may skip detailed edge sorting",
+        "parts": [
+          "B001_FIXED_MAGNETIC_HOOD_R01"
+        ]
+      }
+    ],
+    "errors": [],
+    "template": {
+      "path": "review/index.html",
+      "exists": true,
+      "sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "expected_sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "status": "pass"
+    },
+    "manifest": {
+      "path": "review/manifest.json",
+      "exists": true,
+      "sha256": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9",
+      "status": "pass",
+      "mesh_json": "cache/current_mesh.json",
+      "mesh_path": "review/cache/current_mesh.json",
+      "adapter_js": null,
+      "adapter_path": null,
+      "mesh_closed": true
+    },
+    "mesh": {
+      "path": "review/cache/current_mesh.json",
+      "exists": true,
+      "sha256": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7",
+      "status": "pass",
+      "vertex_count": 4460,
+      "face_count": 4336,
+      "part_count": 1,
+      "feature_count": 4,
+      "part_face_counts": {
+        "B001_FIXED_MAGNETIC_HOOD_R01": 4336
+      },
+      "feature_face_counts": {
+        "fixed_hood": 1334,
+        "head_keyed_nest": 516,
+        "two_recessed_screw_wells": 1580,
+        "connector_pocket": 906
+      },
+      "semantic_metadata": {
+        "missing_feature_id_faces": 0,
+        "missing_world_point_faces": 0,
+        "missing_normal_faces": 0
+      },
+      "degenerate_faces": {},
+      "open_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "part_bboxes": {
+        "B001_FIXED_MAGNETIC_HOOD_R01": {
+          "min": [
+            -43.0,
+            -43.0,
+            -3.7470027081099033e-16
+          ],
+          "max": [
+            43.0,
+            43.0,
+            29.0
+          ]
+        }
+      },
+      "transparent_parts": [],
+      "provenance": {
+        "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+        "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+        "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+        "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      },
+      "parameters": {}
+    },
+    "provenance": {
+      "status": "current",
+      "missing": [],
+      "stale": [],
+      "metadata_drift": [],
+      "recorded": {
+        "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+        "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+        "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+        "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      }
+    },
+    "rendering_risk": {
+      "status": "warning",
+      "risks": [
+        "large_reference_group"
+      ],
+      "overlap_pairs": [],
+      "transparent_parts": []
+    },
+    "assembly_overlap_risk": {
+      "status": "clear",
+      "pairs": []
+    },
+    "adapter": {
+      "declared": false,
+      "path": null,
+      "exists": false,
+      "sha256": null,
+      "adapter_parameter_ids": [],
+      "status": "not_declared"
+    },
+    "review_controls": {
+      "status": "clear",
+      "risks": []
+    },
+    "warning_count": 1,
+    "error_count": 0
+  },
+  "spec_coverage": {
+    "schema": "engineering-3d-modeling.spec_coverage.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+    "generated_at": "2026-10-31T05:47:48.892418Z",
+    "status": "pass",
+    "checks": [
+      {
+        "check": "feature:fixed_hood",
+        "status": "pass"
+      },
+      {
+        "check": "feature:two_recessed_screw_wells",
+        "status": "pass"
+      },
+      {
+        "check": "feature:connector_pocket",
+        "status": "pass"
+      },
+      {
+        "check": "feature:head_keyed_nest",
+        "status": "pass"
+      },
+      {
+        "check": "feature:wire_exit",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Do not change or drill original frame; use exactly its two cover holes",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Two screws fix only the hood to chassis, never the detachable head",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:User requested magnetic-only head retention; no latch",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Bottom remains open; do not create a full lower floor",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Preserve servo pockets, local widths and joint interfaces",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Keep both power supplies independent; no battery/power rail through the 3 signal wires",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Glue only connector housing support lands, not pins, springs or contact face",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Do not infer actual robot heights or cover width from perspective photos",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:hole_center_distance_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:base_outer_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:maximum_height_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:screw_bearing_thickness_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:clearances:electronics",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:clearances:head_nest",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:clearances:screw_engagement",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:hood",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:screw_wells",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:connector",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:motion",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:cover_hole_pitch",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:base_outer",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:roof_outer",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:inner_bottom",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:inner_top",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:outer_corner_radius",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:inner_corner_radius",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:ceiling_height",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:roof_thickness",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:well_outer_diameter",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:well_access_diameter",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:screw_clearance_diameter",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:screw_seat_thickness",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:pocket_length",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:pocket_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:pocket_floor",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:connector_boss_top",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:boss_length",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:boss_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:tail_length",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:tail_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:guide_outer",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:guide_inner",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:guide_height",
+        "status": "pass"
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "feature_gaps": [],
+    "placement_gaps": [],
+    "constraint_gaps": [],
+    "validation_target_gaps": [],
+    "unused_geometry_parameters": [],
+    "waived_unused_geometry_parameters": []
+  },
+  "consistency_audit_mode": "off",
+  "consistency_audit": null
+}

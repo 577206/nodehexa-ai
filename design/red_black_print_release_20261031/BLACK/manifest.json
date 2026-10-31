@@ -1,0 +1,261 @@
+{
+  "status": "body_added_fit_checks_pending",
+  "parts": [
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-FootGround.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-FootGround.STL",
+      "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a",
+      "dimensions_mm": [
+        39.5,
+        65.0477,
+        3.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-LegBottom.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-LegBottom.STL",
+      "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b",
+      "dimensions_mm": [
+        65.0,
+        6.0,
+        21.5
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-ThighBottom.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-ThighBottom.STL",
+      "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6",
+      "dimensions_mm": [
+        35.0,
+        6.0,
+        20.5
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_12/TKRC-JointTop.STL",
+      "quantity": 12,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-JointTop.STL",
+      "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7",
+      "dimensions_mm": [
+        32.2292,
+        6.0,
+        15.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_12/TKRC-JointDown.STL",
+      "quantity": 12,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-JointDown.STL",
+      "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43",
+      "dimensions_mm": [
+        25.0251,
+        6.0,
+        15.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-FootTip.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-FootTip.STL",
+      "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a",
+      "dimensions_mm": [
+        10.0,
+        11.5,
+        10.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/TKRC-BodyCenter.STL",
+      "quantity": 1,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-BodyCenter.STL",
+      "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5",
+      "dimensions_mm": [
+        96.6716,
+        6.0,
+        44.3431
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_02/TKRC-BodySideWall.STL",
+      "quantity": 2,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-BodySideWall.STL",
+      "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78",
+      "dimensions_mm": [
+        105.0125,
+        33.65,
+        6.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/TKRC-BodyBackWall.STL",
+      "quantity": 1,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-BodyBackWall.STL",
+      "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad",
+      "dimensions_mm": [
+        26.0,
+        33.65,
+        3.0
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-FootTop_MountDraft.stl",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "user_supplied/TKRC-FootTop_MountDraft.stl",
+      "sha256": "27a4fb3d8c1c3e2a9f64fdd19d3b18c17523ccbaecc89ad2aaf5dd3c4cb40951",
+      "dimensions_mm": [
+        76.992,
+        3.0,
+        14.968
+      ],
+      "watertight": true,
+      "note": "试装/安装草稿，未验证装配间隙"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/TKRC-FootButtom_MountDraft.stl",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "user_supplied/TKRC-FootButtom_MountDraft.stl",
+      "sha256": "fb3ab5e1b1070a27daacb26ce37aa9f6539f1b092c5f73aabe2ebf96f32fae48",
+      "dimensions_mm": [
+        66.972,
+        3.0,
+        14.942
+      ],
+      "watertight": true,
+      "note": "试装/安装草稿，未验证装配间隙"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/Armor_L_A1_TrialFit.stl",
+      "quantity": 6,
+      "quantity_basis": "每条腿左右外壳各一件，暂按各6件备料；需试装确认",
+      "source": "user_supplied/Armor_L_A1_TrialFit.stl",
+      "sha256": "3a2c2ac4adde4ca49b9dcc872488346cef9067a3162e2e0688699212ccae84c6",
+      "dimensions_mm": [
+        75.0,
+        25.3924,
+        25.2131
+      ],
+      "watertight": true,
+      "note": "试装/安装草稿，未验证装配间隙"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_06/Armor_R_A1_TrialFit.stl",
+      "quantity": 6,
+      "quantity_basis": "每条腿左右外壳各一件，暂按各6件备料；需试装确认",
+      "source": "user_supplied/Armor_R_A1_TrialFit.stl",
+      "sha256": "713999f303cdaf5029a4c3dc6112d4bbebfdb33eade42e1a664045467a1dfe0b",
+      "dimensions_mm": [
+        75.0,
+        25.3924,
+        25.2131
+      ],
+      "watertight": true,
+      "note": "试装/安装草稿，未验证装配间隙"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/N001_BodyTop_EDGE50.stl",
+      "quantity": 1,
+      "sha256": "ad0ba2c6b914f3b039a84fd4d05e34d49cbe99e0ac47f68dd9691a378b120116",
+      "dimensions_mm": [
+        134.80905151367188,
+        124.34314727783203,
+        3.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "中央开口保持原尺寸，两侧各增宽25 mm",
+      "physical_fit_verified": false
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/N002_BodyBottom_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "sha256": "fae1a5d49df2d5aa191d91d15c4d3d236e1248fb820e411bc5b1c317ccd717bd",
+      "dimensions_mm": [
+        130.3431396484375,
+        128.34314727783203,
+        9.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "普通下板与18650-2S下板二选一，只打印一个下板",
+      "physical_fit_verified": false
+    }
+  ],
+  "optional": [
+    {
+      "file": "BLACK/optional_not_in_main_count/QTY_01/TKRC-BodyCenter-Thin.STL",
+      "quantity": 1,
+      "note": "备选：仅用于原机采用薄版中央支架时，和普通BodyCenter二选一",
+      "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0"
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/optional_not_in_main_count/QTY_01/N003_BodyBottom_18650_2S_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "sha256": "6fad4e9bbdefd86fdf46f9e713f07091677db4d780d2e156a8fb29f9596f3459",
+      "dimensions_mm": [
+        130.3431396484375,
+        128.34314727783203,
+        9.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "普通下板与18650-2S下板二选一，只打印一个下板",
+      "physical_fit_verified": false
+    }
+  ],
+  "revision": "R02",
+  "body_source_hashes": {
+    "source/edge_frames.py": "1b6473bd16bbe32e4b04dbdd7b95843ceeabb4519c22de0dca0731112724eac9",
+    "source/build_edge_bottom_freecad.py": "8c5e7e4a6cf40e9b0a9ee6351d9a700bb0854fc072141bc585f9f16c6eebeddd",
+    "spec/current.yaml": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+    "validation/interfaces/BodyButtom_edge50.brep": "7e98b6fe1d279d35b474bac781807be37b15b5624b1fc94ea53e33abcf85673d",
+    "validation/interfaces/BodyButtom-18650-2S_edge50.brep": "7366e5001d3054cb0da538d965ea3fb56d07b4b0dc276c82a101367f8edd0da9"
+  }
+}

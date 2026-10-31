@@ -1,0 +1,25 @@
+{
+  "schema": "engineering-3d-modeling.preview_revision.v1",
+  "status": "available",
+  "created_at": "2026-10-31T05:41:40.818072Z",
+  "created_by": "scripts/checkpoint_preview_revision.py",
+  "reason": "Build first bowl cover after 70x70x20 envelope, pan head screws, and both clear screw corridors confirmed",
+  "checkpoint": "checkpoints/preview_previous",
+  "hashes_before": {
+    "spec": "a0a96953feb1c724b46bfce4a3baf538b2536c3653b6372bb6f3aab90498135b",
+    "parameters": "3bd99e61ed2a3167dda7fa41ccefa547d9d61a7778371f62ef7475267ef2bc22",
+    "source": "e5617b9d6890cbedbb51a446d52388f1b0d96d631d0693c7cfd3f26f67d08a64",
+    "review_manifest": "9a5a357d1b2c7b22bf788162093fce4a69581fd0b4aa87930bb7eebd8ea3c470",
+    "review_mesh": null
+  },
+  "files": [
+    "spec/current.yaml",
+    "parameters.yaml",
+    "source",
+    "review/manifest.json",
+    "review/cache",
+    "outputs/step"
+  ],
+  "missing": [],
+  "checkpoint_hash": "3284684c0decabbd812d0245b5059f30e2e7944fc97a412f02c45faa02cb6c31"
+}

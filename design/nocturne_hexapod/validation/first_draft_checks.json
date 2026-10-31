@@ -27,29 +27,19 @@
       "name": "upper_connector_band",
       "symmetric_difference_volume_mm3": 0.0,
       "pass": true
-    },
-    {
-      "name": "upper_frame_original_half_-1_rigid_translation",
-      "symmetric_difference_volume_mm3": 0.0,
-      "pass": true
-    },
-    {
-      "name": "upper_frame_original_half_1_rigid_translation",
-      "symmetric_difference_volume_mm3": 0.0,
-      "pass": true
     }
   ],
   "parts": [
     {
-      "id": "N001_upper_frame_W30_DRAFT",
+      "id": "N001_upper_frame_EDGE50_DRAFT",
       "valid": true,
       "solids": 1,
       "bbox_local_mm": [
         134.80905151367188,
-        104.34314727783203,
+        124.34314727783203,
         3.0
       ],
-      "volume_mm3": 9713.672629273471,
+      "volume_mm3": 28545.14416304886,
       "physical_fit_verified": false
     },
     {
@@ -89,27 +79,27 @@
       "physical_fit_verified": false
     },
     {
-      "id": "N002_lower_frame_W30_DRAFT",
+      "id": "N002_lower_frame_EDGE50_DRAFT",
       "valid": true,
       "solids": 1,
       "bbox_local_mm": [
-        130.343139648438,
-        108.34314823150635,
+        130.3431396484375,
+        128.34314823150635,
         9.000000000000016
       ],
-      "volume_mm3": 12824.720416472195,
+      "volume_mm3": 27900.22654825222,
       "physical_fit_verified": false
     },
     {
-      "id": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
+      "id": "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT",
       "valid": true,
       "solids": 1,
       "bbox_local_mm": [
-        130.343139648438,
-        108.34314823150635,
+        130.3431396484375,
+        128.34314823150635,
         9.000000000000016
       ],
-      "volume_mm3": 11846.774278149564,
+      "volume_mm3": 27324.268219382146,
       "physical_fit_verified": false
     }
   ],

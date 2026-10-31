@@ -1,0 +1,19 @@
+{
+  "file": "B001_Bowl_Mount_R01_86x86x29mm_1pc.stl",
+  "units": "mm",
+  "quantity": 1,
+  "bbox_mm": [
+    86.0,
+    86.0,
+    29.0
+  ],
+  "watertight": true,
+  "positive_volume": true,
+  "cad_solids": 1,
+  "sha256": "919b7ad3994e7b76b072b5904bbc78961346a777122417376fb4310e14be6316",
+  "source_sha256": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+  "parameters_sha256": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+  "physical_fit": "Trial fit required; screw diameter/head and connector insertion remain physically unverified.",
+  "usage_status": "hold_for_connector_mount_revision",
+  "hold_reason": "User supplied soldered connector photo; narrow original wire passage is unsuitable. Await flange, lower housing and solder envelope measurements."
+}

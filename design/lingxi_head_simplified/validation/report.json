@@ -1,0 +1,1098 @@
+{
+  "schema": "engineering-3d-modeling.project_validation.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+  "generated_at": "2026-10-31T10:19:18.578556Z",
+  "phase": {
+    "value": "draft_review",
+    "source": "spec.lifecycle.phase"
+  },
+  "step_requirement": {
+    "required": false,
+    "reason": "phase:draft_review"
+  },
+  "status": "pass",
+  "checks": [
+    {
+      "check": "dir:spec",
+      "status": "pass"
+    },
+    {
+      "check": "dir:inputs",
+      "status": "pass"
+    },
+    {
+      "check": "dir:source",
+      "status": "pass"
+    },
+    {
+      "check": "dir:outputs/step",
+      "status": "pass"
+    },
+    {
+      "check": "dir:validation",
+      "status": "pass"
+    },
+    {
+      "check": "dir:review",
+      "status": "pass"
+    },
+    {
+      "check": "dir:previous",
+      "status": "pass"
+    },
+    {
+      "check": "file:AGENTS.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:brief.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:spec/current.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:parameters.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:source/model.py",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/index.html",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "source-direct-run-no-step-export",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:load_parameters",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:build_model",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:write_step",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "domain:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "review-parameter-audit:basic",
+      "status": "pass"
+    },
+    {
+      "check": "spec-coverage-audit",
+      "status": "pass"
+    },
+    {
+      "check": "review-preview-stability",
+      "status": "warn",
+      "trust": "warning"
+    },
+    {
+      "check": "preview-mesh",
+      "status": "pass"
+    }
+  ],
+  "warnings": [
+    "phase draft_review allows missing STEP/STP during draft/review work (phase:draft_review); do not call this state accepted, complete, or release-ready",
+    "downstream or mesh output files found under outputs/: outputs/print_R05A_batch1/H02_DOCK_RECEIVER_R05_1pc_mm.stl, outputs/print_R05A_batch1/Lingxi_R05A_Batch1_GRAY_CLEAR_4SeparateParts_Assembly.3mf, outputs/print_R05A_batch1/H01_MAIN_SHELL_R05_1pc_mm.stl, outputs/print_R05A_batch1/H03_CLEAR_VISOR_R05A_1pc_mm.stl, outputs/print_R05A_batch1/H04_VISOR_FRAME_R05A_1pc_mm.stl, outputs/Lingxi_R05A_Batch1/H02_DOCK_RECEIVER_R05_1pc_mm.stl, outputs/Lingxi_R05A_Batch1/Lingxi_R05A_Batch1_GRAY_CLEAR_4SeparateParts_Assembly.3mf, outputs/Lingxi_R05A_Batch1/H01_MAIN_SHELL_R05_1pc_mm.stl, outputs/Lingxi_R05A_Batch1/H03_CLEAR_VISOR_R05A_1pc_mm.stl, outputs/Lingxi_R05A_Batch1/H04_VISOR_FRAME_R05A_1pc_mm.stl, outputs/Lingxi_R05_Batch1/H02_DOCK_RECEIVER_R05_1pc_mm.stl, outputs/Lingxi_R05_Batch1/Lingxi_R05_Batch1_GRAY_2SeparateParts_Assembly.3mf, outputs/Lingxi_R05_Batch1/H01_MAIN_SHELL_R05_1pc_mm.stl, outputs/print_R05_batch1/H02_DOCK_RECEIVER_R05_1pc_mm.stl, outputs/print_R05_batch1/Lingxi_R05_Batch1_GRAY_2SeparateParts_Assembly.3mf, outputs/print_R05_batch1/H01_MAIN_SHELL_R05_1pc_mm.stl, outputs/print_R06_batch2/Lingxi_R06_Batch2_ORANGE_GRAY_Assembly.3mf, outputs/color_prototype/Lingxi_OLED_Head_R02_LAYOUT_PROTOTYPE.3mf, outputs/color_prototype/Lingxi_Head_Simplified_R01_COLOR_PROTOTYPE.3mf, outputs/color_prototype/Lingxi_OrangeGray_R03_REVIEW_ONLY.3mf, outputs/print_R06_batch2/01_ORANGE/D09_ROUND_ORANGE_L_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D02_VENT_FRAME_R_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D06_SHOULDER_ORANGE_R_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D01_VENT_FRAME_L_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D13_CAMERA_BEZEL_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D15_PHONE_JAW_L_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D05_SHOULDER_ORANGE_L_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D16_PHONE_JAW_R_R06_1pc_mm.stl, outputs/print_R06_batch2/01_ORANGE/D10_ROUND_ORANGE_R_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D07_SHOULDER_GRAY_L_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D11_ROUND_GRAY_L_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D04_VENT_GRILLE_R_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D12_ROUND_GRAY_R_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D03_VENT_GRILLE_L_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D08_SHOULDER_GRAY_R_R06_1pc_mm.stl, outputs/print_R06_batch2/02_GRAY/D14_PHONE_BACK_R06_1pc_mm.stl",
+    "review preview preview_mesh_nonmanifold_edges: preview mesh has 2156 non-manifold edges by coordinate-key topology",
+    "review preview assembly_rendering_bbox_overlap: assembly preview has overlapping part bounding boxes; this is rendering risk, not proof of CAD collision",
+    "review preview assembly_rendering_large_reference_group: large imported/reference preview groups may skip detailed edge sorting"
+  ],
+  "errors": [],
+  "step_files": [],
+  "snapshot": {
+    "generated_at": "2026-10-31T10:19:18.578556Z",
+    "phase": {
+      "value": "draft_review",
+      "source": "spec.lifecycle.phase"
+    },
+    "files": {
+      "spec": {
+        "path": "spec/current.yaml",
+        "sha256": "1c7bd65bebb1ac346618e31c373aee5416e46fb32cb35040197e1d4835876747"
+      },
+      "parameters": {
+        "path": "parameters.yaml",
+        "sha256": "28da7670278478fb06dd0e0e65734b9f50b22238a7c181ce90ebe3c750e5b123"
+      },
+      "source": {
+        "path": "source/model.py",
+        "sha256": "4bc3d01f99b9ad19b9381eff65fe7c4e26be7dae0c75824feb39314dbc9eb64e"
+      },
+      "manifest": {
+        "path": "review/manifest.json",
+        "sha256": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71"
+      },
+      "step_manifest": {
+        "path": "outputs/step/manifest.json"
+      },
+      "mesh": {
+        "path": "review/cache/current_mesh.json",
+        "sha256": "adc0b9d9038390840210545cc217fadb1d0e7afdf2f892776cb6038a41f784c4"
+      }
+    },
+    "step_files": [],
+    "warnings": []
+  },
+  "source_interface": {
+    "status": "pass",
+    "source": "source/model.py",
+    "warnings": [],
+    "errors": []
+  },
+  "step_manifest": null,
+  "review_parameter_audit_mode": "basic",
+  "review_parameter_audit": {
+    "schema": "engineering-3d-modeling.review_parameter_audit.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+    "mode": "basic",
+    "status": "pass",
+    "valid_preview_parameters": [],
+    "disabled_parameters": [],
+    "new_candidates": [],
+    "warnings": [],
+    "checks": []
+  },
+  "review_preview": {
+    "schema": "engineering-3d-modeling.review_preview_diagnostic.v1",
+    "generated_at": "2026-10-31T10:19:17.452167Z",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+    "status": "warn",
+    "trust": {
+      "preview": "warning",
+      "reason": "preview_mesh_nonmanifold_edges"
+    },
+    "checks": [
+      {
+        "check": "review-template-identity",
+        "status": "pass"
+      },
+      {
+        "check": "manifest-asset-paths",
+        "status": "pass"
+      },
+      {
+        "check": "preview-mesh-shape-topology",
+        "status": "pass"
+      },
+      {
+        "check": "preview-provenance",
+        "status": "pass"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "preview_mesh_nonmanifold_edges",
+        "message": "preview mesh has 2156 non-manifold edges by coordinate-key topology"
+      },
+      {
+        "code": "assembly_rendering_bbox_overlap",
+        "message": "assembly preview has overlapping part bounding boxes; this is rendering risk, not proof of CAD collision",
+        "pairs": [
+          [
+            "D01_VENT_FRAME_L",
+            "D03_VENT_GRILLE_L"
+          ],
+          [
+            "D02_VENT_FRAME_R",
+            "D04_VENT_GRILLE_R"
+          ],
+          [
+            "D03_VENT_GRILLE_L",
+            "H01_MAIN_SHELL"
+          ],
+          [
+            "D04_VENT_GRILLE_R",
+            "H01_MAIN_SHELL"
+          ],
+          [
+            "D05_SHOULDER_ORANGE_L",
+            "D07_SHOULDER_GRAY_L"
+          ],
+          [
+            "D05_SHOULDER_ORANGE_L",
+            "D09_ROUND_ORANGE_L"
+          ],
+          [
+            "D05_SHOULDER_ORANGE_L",
+            "H01_MAIN_SHELL"
+          ],
+          [
+            "D05_SHOULDER_ORANGE_L",
+            "H03_CLEAR_VISOR"
+          ],
+          [
+            "D05_SHOULDER_ORANGE_L",
+            "H04_VISOR_FRAME"
+          ],
+          [
+            "D06_SHOULDER_ORANGE_R",
+            "D08_SHOULDER_GRAY_R"
+          ]
+        ]
+      },
+      {
+        "code": "assembly_rendering_large_reference_group",
+        "message": "large imported/reference preview groups may skip detailed edge sorting",
+        "parts": [
+          "REF_FIXED_BOWL_R02"
+        ]
+      }
+    ],
+    "errors": [],
+    "template": {
+      "path": "review/index.html",
+      "exists": true,
+      "sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "expected_sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "status": "pass"
+    },
+    "manifest": {
+      "path": "review/manifest.json",
+      "exists": true,
+      "sha256": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71",
+      "status": "pass",
+      "mesh_json": "cache/current_mesh.json",
+      "mesh_path": "review/cache/current_mesh.json",
+      "adapter_js": null,
+      "adapter_path": null,
+      "mesh_closed": true
+    },
+    "mesh": {
+      "path": "review/cache/current_mesh.json",
+      "exists": true,
+      "sha256": "adc0b9d9038390840210545cc217fadb1d0e7afdf2f892776cb6038a41f784c4",
+      "status": "pass",
+      "vertex_count": 44251,
+      "face_count": 88898,
+      "part_count": 24,
+      "feature_count": 24,
+      "part_face_counts": {
+        "H01_MAIN_SHELL": 34624,
+        "H02_DOCK_RECEIVER": 9270,
+        "H03_CLEAR_VISOR": 3774,
+        "H04_VISOR_FRAME": 5724,
+        "D01_VENT_FRAME_L": 2078,
+        "D03_VENT_GRILLE_L": 1920,
+        "D02_VENT_FRAME_R": 2078,
+        "D04_VENT_GRILLE_R": 1920,
+        "D05_SHOULDER_ORANGE_L": 2506,
+        "D06_SHOULDER_ORANGE_R": 2506,
+        "D07_SHOULDER_GRAY_L": 2436,
+        "D08_SHOULDER_GRAY_R": 2436,
+        "D09_ROUND_ORANGE_L": 1442,
+        "D10_ROUND_ORANGE_R": 1442,
+        "D11_ROUND_GRAY_L": 836,
+        "D12_ROUND_GRAY_R": 836,
+        "D13_CAMERA_BEZEL": 1396,
+        "D14_PHONE_BACK": 3904,
+        "D15_PHONE_JAW_L": 2450,
+        "D16_PHONE_JAW_R": 2450,
+        "REF_OLED_L": 12,
+        "REF_OLED_R": 12,
+        "REF_FIXED_BOWL_R02": 2834,
+        "REF_BOARDS_120x50_APPROX": 12
+      },
+      "feature_face_counts": {
+        "H01_MAIN_SHELL": 34624,
+        "H02_DOCK_RECEIVER": 9270,
+        "H03_CLEAR_VISOR": 3774,
+        "H04_VISOR_FRAME": 5724,
+        "D01_VENT_FRAME_L": 2078,
+        "D03_VENT_GRILLE_L": 1920,
+        "D02_VENT_FRAME_R": 2078,
+        "D04_VENT_GRILLE_R": 1920,
+        "D05_SHOULDER_ORANGE_L": 2506,
+        "D06_SHOULDER_ORANGE_R": 2506,
+        "D07_SHOULDER_GRAY_L": 2436,
+        "D08_SHOULDER_GRAY_R": 2436,
+        "D09_ROUND_ORANGE_L": 1442,
+        "D10_ROUND_ORANGE_R": 1442,
+        "D11_ROUND_GRAY_L": 836,
+        "D12_ROUND_GRAY_R": 836,
+        "D13_CAMERA_BEZEL": 1396,
+        "D14_PHONE_BACK": 3904,
+        "D15_PHONE_JAW_L": 2450,
+        "D16_PHONE_JAW_R": 2450,
+        "REF_OLED_L": 12,
+        "REF_OLED_R": 12,
+        "REF_FIXED_BOWL_R02": 2834,
+        "REF_BOARDS_120x50_APPROX": 12
+      },
+      "semantic_metadata": {
+        "missing_feature_id_faces": 0,
+        "missing_world_point_faces": 0,
+        "missing_normal_faces": 0
+      },
+      "degenerate_faces": {},
+      "open_edge_count": 0,
+      "nonmanifold_edge_count": 2156,
+      "part_bboxes": {
+        "H01_MAIN_SHELL": {
+          "min": [
+            -62.6,
+            -67.0,
+            10.0
+          ],
+          "max": [
+            62.6,
+            74.0,
+            111.79994590108817
+          ]
+        },
+        "H02_DOCK_RECEIVER": {
+          "min": [
+            -56.84,
+            -63.84,
+            0.0
+          ],
+          "max": [
+            56.84,
+            69.8,
+            34.0
+          ]
+        },
+        "H03_CLEAR_VISOR": {
+          "min": [
+            -42.0,
+            22.1,
+            33.50031947966036
+          ],
+          "max": [
+            42.0,
+            82.5,
+            111.6989580932089
+          ]
+        },
+        "H04_VISOR_FRAME": {
+          "min": [
+            -51.4,
+            20.0,
+            32.500958389666046
+          ],
+          "max": [
+            51.4,
+            86.5,
+            113.09974229477258
+          ]
+        },
+        "D01_VENT_FRAME_L": {
+          "min": [
+            -72.80000000000001,
+            8.0,
+            20.0
+          ],
+          "max": [
+            -65.4,
+            54.0,
+            76.0
+          ]
+        },
+        "D03_VENT_GRILLE_L": {
+          "min": [
+            -70.0,
+            8.0,
+            20.0
+          ],
+          "max": [
+            -58.64615384615385,
+            54.0,
+            76.0
+          ]
+        },
+        "D02_VENT_FRAME_R": {
+          "min": [
+            65.4,
+            8.0,
+            20.0
+          ],
+          "max": [
+            72.80000000000001,
+            54.0,
+            76.0
+          ]
+        },
+        "D04_VENT_GRILLE_R": {
+          "min": [
+            58.64615384615385,
+            8.0,
+            20.0
+          ],
+          "max": [
+            70.0,
+            54.0,
+            76.0
+          ]
+        },
+        "D05_SHOULDER_ORANGE_L": {
+          "min": [
+            -58.9,
+            -45.0,
+            77.0
+          ],
+          "max": [
+            -29.799999999999994,
+            34.0,
+            109.2
+          ]
+        },
+        "D06_SHOULDER_ORANGE_R": {
+          "min": [
+            29.799999999999994,
+            -45.0,
+            77.0
+          ],
+          "max": [
+            58.9,
+            34.0,
+            109.2
+          ]
+        },
+        "D07_SHOULDER_GRAY_L": {
+          "min": [
+            -59.05,
+            -32.206250000000004,
+            82.0
+          ],
+          "max": [
+            -40.65,
+            25.0,
+            106.8
+          ]
+        },
+        "D08_SHOULDER_GRAY_R": {
+          "min": [
+            40.65,
+            -32.206250000000004,
+            82.0
+          ],
+          "max": [
+            59.05,
+            25.0,
+            106.8
+          ]
+        },
+        "D09_ROUND_ORANGE_L": {
+          "min": [
+            -65.5,
+            -45.49777442594767,
+            65.00027003974516
+          ],
+          "max": [
+            -46.5,
+            -16.5,
+            98.2
+          ]
+        },
+        "D10_ROUND_ORANGE_R": {
+          "min": [
+            46.5,
+            -45.49777442594767,
+            65.00027003974516
+          ],
+          "max": [
+            65.5,
+            -16.5,
+            98.2
+          ]
+        },
+        "D11_ROUND_GRAY_L": {
+          "min": [
+            -64.46153846153845,
+            -42.09975588726264,
+            68.4049159617787
+          ],
+          "max": [
+            -61.86153846153846,
+            -19.90024411273736,
+            91.2
+          ]
+        },
+        "D12_ROUND_GRAY_R": {
+          "min": [
+            61.86153846153846,
+            -42.09975588726264,
+            68.4049159617787
+          ],
+          "max": [
+            64.46153846153845,
+            -19.90024411273736,
+            91.2
+          ]
+        },
+        "D13_CAMERA_BEZEL": {
+          "min": [
+            -15.400000000000006,
+            74.2,
+            12.5
+          ],
+          "max": [
+            15.400000000000006,
+            78.2,
+            39.0
+          ]
+        },
+        "D14_PHONE_BACK": {
+          "min": [
+            -46.0,
+            -92.0,
+            42.0
+          ],
+          "max": [
+            46.0,
+            -67.0,
+            145.0
+          ]
+        },
+        "D15_PHONE_JAW_L": {
+          "min": [
+            -46.0,
+            -90.0,
+            46.2
+          ],
+          "max": [
+            -35.0,
+            -74.0,
+            136.0
+          ]
+        },
+        "D16_PHONE_JAW_R": {
+          "min": [
+            35.0,
+            -90.0,
+            46.2
+          ],
+          "max": [
+            46.0,
+            -74.0,
+            136.0
+          ]
+        },
+        "REF_OLED_L": {
+          "min": [
+            -30.0,
+            54.59030506197635,
+            45.096118262605344
+          ],
+          "max": [
+            -3.0,
+            69.27456630346335,
+            70.50751496768395
+          ]
+        },
+        "REF_OLED_R": {
+          "min": [
+            3.0,
+            54.59030506197635,
+            45.096118262605344
+          ],
+          "max": [
+            30.0,
+            69.27456630346335,
+            70.50751496768395
+          ]
+        },
+        "REF_FIXED_BOWL_R02": {
+          "min": [
+            -43.0,
+            -43.0,
+            -3.7470027081099033e-16
+          ],
+          "max": [
+            43.0,
+            43.0,
+            29.0
+          ]
+        },
+        "REF_BOARDS_120x50_APPROX": {
+          "min": [
+            -25.0,
+            -60.0,
+            40.2
+          ],
+          "max": [
+            25.0,
+            60.0,
+            41.800000000000004
+          ]
+        }
+      },
+      "transparent_parts": [],
+      "provenance": {
+        "source_hash": "4bc3d01f99b9ad19b9381eff65fe7c4e26be7dae0c75824feb39314dbc9eb64e",
+        "parameters_hash": "28da7670278478fb06dd0e0e65734b9f50b22238a7c181ce90ebe3c750e5b123",
+        "spec_hash": "1c7bd65bebb1ac346618e31c373aee5416e46fb32cb35040197e1d4835876747",
+        "manifest_hash": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71",
+        "module_hashes": {
+          "decoration_vents_R06": "0547fb5116ad36e2903f89e40c789b4b784d6e1b32d9731afd9d17f3bddce918",
+          "decoration_armor_R06": "35652df4a4534ae3339b1be8895826bc6022385567610bcd0438f8e06a5e61c8",
+          "decoration_camera_R06": "26ebaea069c3b1c6f580629a47b76b2fac89da42dd01dcc0ed684ea3ec9612f5",
+          "decoration_phone_R06": "a24b555bd5b933aaddca23c0bb1270e93f5639679a2c1c66de01d241590e77c6"
+        },
+        "frozen_core_hash": "11a6ed040ed50dc435f680c6c301fa8b42ce3d328206a8609be575b3d4783309",
+        "visor_source_hash": "5d44e1e485d76e80bf138f24618c2f300b9408f5f2f0b7145b4fed7e81ac926a"
+      },
+      "parameters": {
+        "width": 112.0,
+        "length": 146.0,
+        "base_thickness": 34.0,
+        "wall": 3.0,
+        "dock_pocket": 86.8,
+        "dock_depth": 29.4,
+        "screw_span": 92.0,
+        "shaft_diameter": 2.4,
+        "pan_recess_diameter": 5.2,
+        "oled_board_width": 27.0,
+        "oled_board_height": 28.0,
+        "oled_center_spacing": 33.0,
+        "usb_access_width": 42.0,
+        "usb_access_height": 28.0,
+        "usb_access_center_z": 50.0,
+        "phone_clear_width": 76.0,
+        "phone_clear_depth": 13.0,
+        "phone_support_top": 145.0,
+        "dock_radial_clearance": 0.4,
+        "bowl_height": 29.0,
+        "phone_nominal_width": 75.0
+      }
+    },
+    "provenance": {
+      "status": "current",
+      "missing": [],
+      "stale": [],
+      "metadata_drift": [],
+      "recorded": {
+        "source_hash": "4bc3d01f99b9ad19b9381eff65fe7c4e26be7dae0c75824feb39314dbc9eb64e",
+        "parameters_hash": "28da7670278478fb06dd0e0e65734b9f50b22238a7c181ce90ebe3c750e5b123",
+        "spec_hash": "1c7bd65bebb1ac346618e31c373aee5416e46fb32cb35040197e1d4835876747",
+        "manifest_hash": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71",
+        "module_hashes": {
+          "decoration_vents_R06": "0547fb5116ad36e2903f89e40c789b4b784d6e1b32d9731afd9d17f3bddce918",
+          "decoration_armor_R06": "35652df4a4534ae3339b1be8895826bc6022385567610bcd0438f8e06a5e61c8",
+          "decoration_camera_R06": "26ebaea069c3b1c6f580629a47b76b2fac89da42dd01dcc0ed684ea3ec9612f5",
+          "decoration_phone_R06": "a24b555bd5b933aaddca23c0bb1270e93f5639679a2c1c66de01d241590e77c6"
+        },
+        "frozen_core_hash": "11a6ed040ed50dc435f680c6c301fa8b42ce3d328206a8609be575b3d4783309",
+        "visor_source_hash": "5d44e1e485d76e80bf138f24618c2f300b9408f5f2f0b7145b4fed7e81ac926a"
+      }
+    },
+    "rendering_risk": {
+      "status": "warning",
+      "risks": [
+        "bbox_overlap",
+        "large_reference_group"
+      ],
+      "overlap_pairs": [
+        [
+          "D01_VENT_FRAME_L",
+          "D03_VENT_GRILLE_L"
+        ],
+        [
+          "D02_VENT_FRAME_R",
+          "D04_VENT_GRILLE_R"
+        ],
+        [
+          "D03_VENT_GRILLE_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D04_VENT_GRILLE_R",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "D07_SHOULDER_GRAY_L"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "D09_ROUND_ORANGE_L"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "D08_SHOULDER_GRAY_R"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "D10_ROUND_ORANGE_R"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "D09_ROUND_ORANGE_L"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D08_SHOULDER_GRAY_R",
+          "D10_ROUND_ORANGE_R"
+        ],
+        [
+          "D08_SHOULDER_GRAY_R",
+          "H01_MAIN_SHELL"
+        ]
+      ],
+      "transparent_parts": []
+    },
+    "assembly_overlap_risk": {
+      "status": "warning",
+      "pairs": [
+        [
+          "D01_VENT_FRAME_L",
+          "D03_VENT_GRILLE_L"
+        ],
+        [
+          "D02_VENT_FRAME_R",
+          "D04_VENT_GRILLE_R"
+        ],
+        [
+          "D03_VENT_GRILLE_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D04_VENT_GRILLE_R",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "D07_SHOULDER_GRAY_L"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "D09_ROUND_ORANGE_L"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D05_SHOULDER_ORANGE_L",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "D08_SHOULDER_GRAY_R"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "D10_ROUND_ORANGE_R"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D06_SHOULDER_ORANGE_R",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "D09_ROUND_ORANGE_L"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H01_MAIN_SHELL"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H03_CLEAR_VISOR"
+        ],
+        [
+          "D07_SHOULDER_GRAY_L",
+          "H04_VISOR_FRAME"
+        ],
+        [
+          "D08_SHOULDER_GRAY_R",
+          "D10_ROUND_ORANGE_R"
+        ],
+        [
+          "D08_SHOULDER_GRAY_R",
+          "H01_MAIN_SHELL"
+        ]
+      ]
+    },
+    "adapter": {
+      "declared": false,
+      "path": null,
+      "exists": false,
+      "sha256": null,
+      "adapter_parameter_ids": [],
+      "status": "not_declared"
+    },
+    "review_controls": {
+      "status": "clear",
+      "risks": []
+    },
+    "warning_count": 3,
+    "error_count": 0
+  },
+  "spec_coverage": {
+    "schema": "engineering-3d-modeling.spec_coverage.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+    "generated_at": "2026-10-31T10:19:17.443893Z",
+    "status": "pass",
+    "checks": [
+      {
+        "check": "feature:faceted_shell",
+        "status": "pass"
+      },
+      {
+        "check": "feature:visor_seat",
+        "status": "pass"
+      },
+      {
+        "check": "feature:bottom_dock",
+        "status": "pass"
+      },
+      {
+        "check": "feature:two_fasteners",
+        "status": "pass"
+      },
+      {
+        "check": "feature:side_vents",
+        "status": "pass"
+      },
+      {
+        "check": "feature:type_c_access",
+        "status": "pass"
+      },
+      {
+        "check": "feature:oled_carrier",
+        "status": "pass"
+      },
+      {
+        "check": "feature:decorative_mounts",
+        "status": "pass"
+      },
+      {
+        "check": "feature:clear_cover",
+        "status": "pass"
+      },
+      {
+        "check": "feature:orange_gray_shoulders",
+        "status": "pass"
+      },
+      {
+        "check": "feature:round_service_caps",
+        "status": "pass"
+      },
+      {
+        "check": "feature:camera_bezel",
+        "status": "pass"
+      },
+      {
+        "check": "feature:phone_cradle",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Fixed bowl R02 unchanged atZ0; full29mm envelope fits deep female recess with nominal0.4mm clearance",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:No electronics or battery fit claim from concept image",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Do not include fixed bowl in head print count",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:H01/H02/H03/H04 R05A first-batch solids immutable. New components adapt to frozen holes and clearances.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Second-batch print bundle contains decorative parts only; original4 first-batch parts shown in assembly but not duplicated in this print count.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Gray and orange are distinct printable solids, no cosmetic disconnected color regions. Transparent cover remains first-batch.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Keep USB left service opening and unobstructed frontward clear-cover removal.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Phone slot thickness13mm suits user-confirmed10\u201312mm cased phone; soft pads needed for grip.",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:dock_full_depth_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:clearances:parts",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:clearances:bowl_reference",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:mesh",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:features:limitations",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:base_thickness",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:wall",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:dock_pocket",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:dock_depth",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:screw_span",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:shaft_diameter",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:pan_recess_diameter",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:oled_board_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:oled_board_height",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:oled_center_spacing",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:usb_access_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:usb_access_height",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:usb_access_center_z",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:phone_clear_width",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:phone_clear_depth",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:phone_support_top",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:dock_radial_clearance",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:bowl_height",
+        "status": "pass"
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "feature_gaps": [],
+    "placement_gaps": [],
+    "constraint_gaps": [],
+    "validation_target_gaps": [],
+    "unused_geometry_parameters": [],
+    "waived_unused_geometry_parameters": []
+  },
+  "consistency_audit_mode": "off",
+  "consistency_audit": null
+}

@@ -573,6 +573,22 @@ def create_app(controller, port=8765):
             raise ValueError('对话修改格式无效')
         return await memory(request)
 
+    async def eyes(request):
+        payload = await request.json()
+        if (not isinstance(payload, dict) or set(payload) != {'mode', 'durationMs', 'contrast'}
+            or any(type(payload[k]) is not int for k in payload)
+            or not -1 <= payload['mode'] <= 8
+            or not 100 <= payload['durationMs'] <= 10000
+            or not 0 <= payload['contrast'] <= 255):
+            raise ValueError('表情参数无效')
+        try:
+            code, raw = await controller.request('POST', '/api/eyes', json.dumps(payload).encode())
+        except Exception as error:
+            return web.json_response({'error': controller.safe_error(error)}, status=503)
+        if code != 202:
+            return web.json_response({'error': '主板未接受表情指令，请检查连接与固件'}, status=502)
+        return web.json_response({'status': 'queued'}, status=202)
+
     async def image(request):
         if not controller.jpeg:
             raise web.HTTPNotFound()
@@ -619,6 +635,7 @@ def create_app(controller, port=8765):
     app.router.add_post('/api/settings', settings)
     app.router.add_post('/api/context', context)
     app.router.add_get('/api/status', status)
+    app.router.add_post('/api/eyes', eyes)
     app.router.add_get('/api/frame.jpg', image)
     app.router.add_post('/api/capture', capture)
     app.router.add_post('/api/motion-enable', motion)

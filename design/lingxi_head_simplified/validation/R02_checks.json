@@ -1,0 +1,90 @@
+{
+  "revision": "R02",
+  "scope": "restored mecha form and shared-visor OLED reference layout",
+  "physical_fit": "not verified",
+  "parts": [
+    {
+      "id": "R02_ORANGE_BODY",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        114.0000002,
+        137.20807275921763,
+        84.00000259999999
+      ]
+    },
+    {
+      "id": "R02_YELLOW_SIDE_L",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        19.000000200000002,
+        75.0000002,
+        45.000000199999995
+      ]
+    },
+    {
+      "id": "R02_YELLOW_SIDE_R",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        19.000000200000002,
+        75.0000002,
+        45.000000199999995
+      ]
+    },
+    {
+      "id": "R02_YELLOW_VISOR_FRAME",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        85.0000002,
+        44.70000019999999,
+        65.2000002
+      ]
+    },
+    {
+      "id": "R02_CLEAR_CANOPY",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        78.0000002,
+        41.500000199999995,
+        56.000000199999995
+      ]
+    },
+    {
+      "id": "R02_ORANGE_BASE",
+      "solid": true,
+      "closed_volume_mesh": true,
+      "dimensions_mm": [
+        104.0,
+        136.0,
+        7.4
+      ]
+    }
+  ],
+  "intersections": [],
+  "physical_part_count": 4,
+  "manufactured_material_regions": 6,
+  "OLED": {
+    "provisional_module_mm": [
+      27,
+      28
+    ],
+    "thickness_mm": null,
+    "active_area_mm": null,
+    "eye_center_spacing_mm": 33,
+    "overall_two_board_width_mm": 60,
+    "PCB_holes": "not modeled; unmeasured",
+    "references_excluded_from_print": true
+  },
+  "limitations": [
+    "Exact OLED dimensions, pin-inclusive thickness and active aperture not confirmed",
+    "Mask is visual reference only, not a finalized printable opening",
+    "OLED retainer/PCB mounting geometry not released",
+    "Camera bore, frame fastening and actual component fit remain prototype",
+    "Transparent pane retention and available adhesive/sheet process not verified"
+  ],
+  "CAD_overlap_pass": true
+}

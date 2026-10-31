@@ -1,16 +1,16 @@
 {
   "schema": "engineering-3d-modeling.preview_revision.v1",
   "status": "available",
-  "created_at": "2026-10-31T03:07:46.968521Z",
+  "created_at": "2026-10-31T04:00:30.296422Z",
   "created_by": "scripts/checkpoint_preview_revision.py",
-  "reason": "Switch to user-confirmed white-blue palette; supersede center-widening with pending edge-only 50 mm design",
+  "reason": "Remove six obsolete inner lower seats; preserve six outer leg mounts and central aperture",
   "checkpoint": "checkpoints/preview_previous",
   "hashes_before": {
-    "spec": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-    "parameters": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-    "source": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-    "review_manifest": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532",
-    "review_mesh": "b5148fe0d18a47f1069b17911e93c81b054b39624b9a0619dce6cc145fa49457"
+    "spec": "38abbf0bc3fde8712faae41dac8f46ef532dc9ae01ac0aae685f678d5294d202",
+    "parameters": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+    "source": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+    "review_manifest": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b",
+    "review_mesh": "e2b7094fb724261e4ec44f6c19d190f4c9400386ba791dccf21d6b59fdd4b76b"
   },
   "files": [
     "spec/current.yaml",
@@ -21,5 +21,5 @@
     "outputs/step"
   ],
   "missing": [],
-  "checkpoint_hash": "6e8f863bf8a0e1019e79d069480de20d4582eaf3fcccedd332f6c96b03e23ae7"
+  "checkpoint_hash": "e5f75524b0b0da2f7c73ce4f518011d28659ffffe719fd56e127196267bb19fa"
 }

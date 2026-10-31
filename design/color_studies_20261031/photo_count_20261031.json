@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-31",
+  "source": "parts_product_photo_clear.jpg",
+  "scope": "商品图所展示的原机打印套件数量；不是新设计生产放行 BOM",
+  "method": "原图只读放大查看，并与原始 STL 轮廓比对；未生成式补细节",
+  "rows": [
+    {
+      "photo_group": "顶部左侧尖头长片",
+      "candidate_part": "FootTop",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "顶部中间圆头长片",
+      "candidate_part": "FootButtom",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "左侧三排双列镂空足板",
+      "candidate_part": "FootGround",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "右上竖直排列的小足尖",
+      "candidate_part": "FootTip",
+      "observed_quantity": 6,
+      "confidence": "medium",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "红色双窗口长框",
+      "candidate_part": "LegTop",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "中右较长灰色连接片",
+      "candidate_part": "LegBottom",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "红色单窗口短框",
+      "candidate_part": "ThighTop",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "中右较短灰色连接片",
+      "candidate_part": "ThighBottom",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "两排各三个红色环形支架",
+      "candidate_part": "JointCross",
+      "observed_quantity": 6,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "右上尖头短片，两排各六件",
+      "candidate_part": "JointTop",
+      "observed_quantity": 12,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "底部圆头短片，两组各六件",
+      "candidate_part": "JointDown",
+      "observed_quantity": 12,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "右下中空大框",
+      "candidate_part": "BodyTop",
+      "observed_quantity": 1,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "右下交叉筋大框",
+      "candidate_part": "BodyButtom variant unspecified",
+      "observed_quantity": 1,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "最右上三角筋中央支架",
+      "candidate_part": "BodyCenter variant unspecified",
+      "observed_quantity": 1,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "最右侧两条长侧板",
+      "candidate_part": "BodySideWall",
+      "observed_quantity": 2,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "最右下小格栅短立板",
+      "candidate_part": "BodyBackWall",
+      "observed_quantity": 1,
+      "confidence": "high",
+      "note": "文件对应根据原始 STL 轮廓比对；此处记录商品图摆放数量。"
+    },
+    {
+      "photo_group": "机盖（可选）",
+      "candidate_part": "Cover set; component filenames unconfirmed",
+      "observed_quantity": 3,
+      "confidence": "high",
+      "note": "图中文字明确注明机盖含3个配件，顶、底配件已装配；两套可见外形不能按两件计数。"
+    }
+  ],
+  "photo_total_excluding_covers": 84,
+  "photo_total_including_covers": 87,
+  "total_caveat": "按清晰商品图计数，FootTip 竖列辨识度相对较低；未验证实物装配或改造件适配。",
+  "corrections": [
+    "JointTop与JointDown各12件，底部两组小件已归入JointDown，不另设未识别类别。",
+    "机盖说明明确为3件，含机盖合计由此前86改为87。",
+    "BodyButtom普通/18650版本及BodyCenter普通/Thin版本各选一种，不累计。"
+  ]
+}

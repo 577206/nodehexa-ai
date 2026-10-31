@@ -1,0 +1,28 @@
+原机打印件商品图计数（2026-10-31，清晰图修订）
+依据：parts_product_photo_clear.jpg；只读放大，与原始STL轮廓比对。
+范围：商品图摆放数量，未验证改造件适配或实物装配。
+
+FootTop：6件（顶部左侧尖头长片）
+FootButtom：6件（顶部中间圆头长片）
+FootGround：6件（左侧三排双列镂空足板）
+FootTip：6件（右上竖直排列的小足尖）
+LegTop：6件（红色双窗口长框）
+LegBottom：6件（中右较长灰色连接片）
+ThighTop：6件（红色单窗口短框）
+ThighBottom：6件（中右较短灰色连接片）
+JointCross：6件（两排各三个红色环形支架）
+JointTop：12件（右上尖头短片，两排各六件）
+JointDown：12件（底部圆头短片，两组各六件）
+BodyTop：1件（右下中空大框）
+BodyButtom variant unspecified：1件（右下交叉筋大框）
+BodyCenter variant unspecified：1件（最右上三角筋中央支架）
+BodySideWall：2件（最右侧两条长侧板）
+BodyBackWall：1件（最右下小格栅短立板）
+机盖：3件（可选；图中文字注明顶、底配件已装配，不能只按两个外观组件计数）
+
+不含机盖：84件；含原机机盖：87件。
+足尖竖列按6件计，辨识度相对较低。
+JointTop和JointDown均为12件；原来底部未识别A/B两组各6件，实际同属JointDown。
+红色长框一件包含两个窗口，总共6件，不是12件。
+BodyButtom普通/18650版本与BodyCenter普通/Thin版本各二选一，照片不能确定具体变体。
+驾驶舱、新增饰件、桌面底座、舵机与紧固件不在这份原机计数内。

@@ -1,0 +1,255 @@
+schema: engineering-3d-modeling.parameters.v1
+units: mm
+parameters:
+  electronics_length:
+    value: 70
+    unit: mm
+    role: confirmed user bounding length
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  electronics_width:
+    value: 70
+    unit: mm
+    role: confirmed user bounding width
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  electronics_height:
+    value: 20
+    unit: mm
+    role: confirmed user highest point
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  cover_hole_pitch:
+    value: 57.00413680076599
+    unit: mm
+    role: original unmodified cover hole spacing
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  base_outer:
+    value: 86
+    unit: mm
+    role: R01 lower outer envelope
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  roof_outer:
+    value: 82
+    unit: mm
+    role: R01 upper outer envelope
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  inner_bottom:
+    value: 80
+    unit: mm
+    role: R01 lower cavity
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  inner_top:
+    value: 76
+    unit: mm
+    role: R01 minimum upper cavity
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  outer_corner_radius:
+    value: 7
+    unit: mm
+    role: outer loft corners
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  inner_corner_radius:
+    value: 4
+    unit: mm
+    role: inner loft corners
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  ceiling_height:
+    value: 24
+    unit: mm
+    role: lowest general roof ceiling
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  roof_thickness:
+    value: 3
+    unit: mm
+    role: nominal roof thickness
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  well_outer_diameter:
+    value: 8
+    unit: mm
+    role: user-approved free screw corridor
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  well_access_diameter:
+    value: 5.2
+    unit: mm
+    role: draft cylindrical pan-head/tool access
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  screw_clearance_diameter:
+    value: 2.4
+    unit: mm
+    role: draft M2 clearance; actual screw pending check
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  screw_seat_thickness:
+    value: 2.4
+    unit: mm
+    role: low bearing flange to preserve screw reach
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  connector_length:
+    value: 19.54
+    unit: mm
+    role: supplier full nominal outline
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  connector_width:
+    value: 4
+    unit: mm
+    role: supplier face nominal
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  connector_height:
+    value: 4
+    unit: mm
+    role: supplier body nominal
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Measured/reference envelope used by validation, not source dimensions
+        of cover
+  pocket_length:
+    value: 20
+    unit: mm
+    role: prototype envelope glue pocket
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  pocket_width:
+    value: 4.5
+    unit: mm
+    role: prototype envelope glue pocket
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  pocket_floor:
+    value: 25
+    unit: mm
+    role: connector support plane
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  connector_boss_top:
+    value: 29
+    unit: mm
+    role: nominal connector mating plane
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  boss_length:
+    value: 26
+    unit: mm
+    role: support around connector pocket
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  boss_width:
+    value: 10
+    unit: mm
+    role: support around connector pocket
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  tail_length:
+    value: 12
+    unit: mm
+    role: clear opening for four tails
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  tail_width:
+    value: 2.4
+    unit: mm
+    role: clear opening for tails and wires
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  guide_outer:
+    value: 76
+    unit: mm
+    role: male locating rim external span
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  guide_inner:
+    value: 72
+    unit: mm
+    role: male locating rim internal span
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  guide_height:
+    value: 2
+    unit: mm
+    role: locating rim height
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true

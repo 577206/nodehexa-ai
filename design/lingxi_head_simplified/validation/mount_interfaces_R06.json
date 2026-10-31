@@ -1,0 +1,798 @@
+{
+  "revision": "R06",
+  "units": "mm",
+  "frozen_core": [
+    {
+      "id": "BASE_-1",
+      "center_mm": [
+        -46.0,
+        0,
+        34
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "through_diameter_mm": 2.4,
+      "nut": "M2 AF4.4/depth2 trial allowance",
+      "nut_z_mm": [
+        37.2,
+        39.2
+      ]
+    },
+    {
+      "id": "BASE_1",
+      "center_mm": [
+        46.0,
+        0,
+        34
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "through_diameter_mm": 2.4,
+      "nut": "M2 AF4.4/depth2 trial allowance",
+      "nut_z_mm": [
+        37.2,
+        39.2
+      ]
+    },
+    {
+      "id": "VENT_UPPER_L",
+      "center_mm": [
+        -58.44615384615385,
+        22,
+        68
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_LOWER_L",
+      "center_mm": [
+        -62.6,
+        23,
+        29
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_FRONT_L",
+      "center_mm": [
+        -47.6,
+        16,
+        94
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_REAR_L",
+      "center_mm": [
+        -45.766666666666666,
+        -27,
+        97
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "ROUND_COVER_L",
+      "center_mm": [
+        -57.06153846153846,
+        -31,
+        74
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_UPPER_R",
+      "center_mm": [
+        58.44615384615385,
+        22,
+        68
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_LOWER_R",
+      "center_mm": [
+        62.6,
+        23,
+        29
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_FRONT_R",
+      "center_mm": [
+        47.6,
+        16,
+        94
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_REAR_R",
+      "center_mm": [
+        45.766666666666666,
+        -27,
+        97
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "ROUND_COVER_R",
+      "center_mm": [
+        57.06153846153846,
+        -31,
+        74
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "CAMERA_-11",
+      "center_mm": [
+        -11,
+        74,
+        26
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "CAMERA_11",
+      "center_mm": [
+        11,
+        74,
+        26
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_-31_37",
+      "center_mm": [
+        -31,
+        71.6,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_31_37",
+      "center_mm": [
+        31,
+        71.6,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_-23_108.6",
+      "center_mm": [
+        -23,
+        22.5,
+        108.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_23_108.6",
+      "center_mm": [
+        23,
+        22.5,
+        108.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "PHONE_-25",
+      "center_mm": [
+        -25,
+        -67,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "PHONE_25",
+      "center_mm": [
+        25,
+        -67,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    }
+  ],
+  "decorative_fasteners": [
+    {
+      "id": "VENT_UPPER_L",
+      "parts": [
+        "D01_VENT_FRAME_L",
+        "D03_VENT_GRILLE_L"
+      ],
+      "centers_mm": [
+        [
+          -58.44615384615385,
+          22.0,
+          68.0
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x25 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        -70.8,
+        22.0,
+        68.0
+      ],
+      "nut_bearing_mm": [
+        -51.84615384615385,
+        22.0,
+        68.0
+      ],
+      "grille_bearing_mm": [
+        -58.64615384615385,
+        22.0,
+        68.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 4.44615384615385,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_LOWER_L",
+      "parts": [
+        "D01_VENT_FRAME_L",
+        "D03_VENT_GRILLE_L"
+      ],
+      "centers_mm": [
+        [
+          -62.6,
+          23.0,
+          29.0
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x20 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        -70.8,
+        23.0,
+        29.0
+      ],
+      "nut_bearing_mm": [
+        -56.0,
+        23.0,
+        29.0
+      ],
+      "grille_bearing_mm": [
+        -62.800000000000004,
+        23.0,
+        29.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 3.6000000000000028,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_UPPER_R",
+      "parts": [
+        "D02_VENT_FRAME_R",
+        "D04_VENT_GRILLE_R"
+      ],
+      "centers_mm": [
+        [
+          58.44615384615385,
+          22.0,
+          68.0
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x25 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        70.8,
+        22.0,
+        68.0
+      ],
+      "nut_bearing_mm": [
+        51.84615384615385,
+        22.0,
+        68.0
+      ],
+      "grille_bearing_mm": [
+        58.64615384615385,
+        22.0,
+        68.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 4.44615384615385,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "VENT_LOWER_R",
+      "parts": [
+        "D02_VENT_FRAME_R",
+        "D04_VENT_GRILLE_R"
+      ],
+      "centers_mm": [
+        [
+          62.6,
+          23.0,
+          29.0
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x20 pan head, head diameter<=4.4mm",
+      "quantity": 1,
+      "nut": "M2 AF4mm x 1.6mm, inside shell",
+      "head_bearing_mm": [
+        70.8,
+        23.0,
+        29.0
+      ],
+      "nut_bearing_mm": [
+        56.0,
+        23.0,
+        29.0
+      ],
+      "grille_bearing_mm": [
+        62.800000000000004,
+        23.0,
+        29.0
+      ],
+      "through_diameter_mm": 2.4,
+      "head_recess_diameter_mm": 4.6,
+      "head_recess_depth_mm": 2.0,
+      "nominal_tip_past_nut_mm": 3.6000000000000028,
+      "note": "先装侧装饰，再装深腔底座。0.2mm装配间隙由紧固收拢；上M2x25，下M2x20。不能用锥形沉头螺丝。"
+    },
+    {
+      "id": "ARMOR_SHOULDER_FRONT_L",
+      "orange_bore_diameter_mm": 2.9,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0.25,
+      "parts": [
+        "D05_SHOULDER_ORANGE_L",
+        "D07_SHOULDER_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -47.6,
+          16,
+          94
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -55.0,
+        16,
+        94
+      ],
+      "nut_bearing_mm": [
+        -41.0,
+        16,
+        94
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。"
+    },
+    {
+      "id": "ARMOR_SHOULDER_REAR_L",
+      "orange_bore_diameter_mm": 2.4,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0,
+      "parts": [
+        "D05_SHOULDER_ORANGE_L",
+        "D07_SHOULDER_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -45.766666666666666,
+          -27,
+          97
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -53.166666666666664,
+        -27,
+        97
+      ],
+      "nut_bearing_mm": [
+        -39.166666666666664,
+        -27,
+        97
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。后肩原壳通孔下缘有约0.034mm残边，须用Ø2.4mm钻头手动清孔；Ø2.0杆包络干涉0.0002003mm³，未更改原壳文件。"
+    },
+    {
+      "id": "ARMOR_ROUND_L",
+      "parts": [
+        "D09_ROUND_ORANGE_L",
+        "D11_ROUND_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -57.06153846153846,
+          -31,
+          74
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -64.46153846153845,
+        -31,
+        74
+      ],
+      "nut_bearing_mm": [
+        -50.46153846153846,
+        -31,
+        74
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "圆盖底座上方舌片与橙肩甲的侧向槽配合止转；灰面板顶部定位舌片嵌入橙杯；先将圆盖舌片插入肩甲槽再共同装到机壳，螺母内置。"
+    },
+    {
+      "id": "ARMOR_SHOULDER_FRONT_R",
+      "orange_bore_diameter_mm": 2.9,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0.25,
+      "parts": [
+        "D06_SHOULDER_ORANGE_R",
+        "D08_SHOULDER_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          47.6,
+          16,
+          94
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        55.0,
+        16,
+        94
+      ],
+      "nut_bearing_mm": [
+        41.0,
+        16,
+        94
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。"
+    },
+    {
+      "id": "ARMOR_SHOULDER_REAR_R",
+      "orange_bore_diameter_mm": 2.4,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0,
+      "parts": [
+        "D06_SHOULDER_ORANGE_R",
+        "D08_SHOULDER_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          45.766666666666666,
+          -27,
+          97
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        53.166666666666664,
+        -27,
+        97
+      ],
+      "nut_bearing_mm": [
+        39.166666666666664,
+        -27,
+        97
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。后肩原壳通孔下缘有约0.034mm残边，须用Ø2.4mm钻头手动清孔；Ø2.0杆包络干涉0.0002003mm³，未更改原壳文件。"
+    },
+    {
+      "id": "ARMOR_ROUND_R",
+      "parts": [
+        "D10_ROUND_ORANGE_R",
+        "D12_ROUND_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          57.06153846153846,
+          -31,
+          74
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        64.46153846153845,
+        -31,
+        74
+      ],
+      "nut_bearing_mm": [
+        50.46153846153846,
+        -31,
+        74
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "圆盖底座上方舌片与橙肩甲的侧向槽配合止转；灰面板顶部定位舌片嵌入橙杯；先将圆盖舌片插入肩甲槽再共同装到机壳，螺母内置。"
+    },
+    {
+      "part": "D13_CAMERA_BEZEL",
+      "axis": "Y",
+      "centers_mm": [
+        [
+          -11,
+          74,
+          26
+        ],
+        [
+          11,
+          74,
+          26
+        ]
+      ],
+      "screw": "M2x12 pan head",
+      "quantity": 2,
+      "nut": "M2, AF4mm, thickness1.6mm",
+      "head_bearing_Y_mm": 78.2,
+      "nut_bearing_Y_mm": 68.0,
+      "stack_plus_nut_mm": 11.8,
+      "note": "Fit-print screw length based on1.6mm nut. Install nuts from inside before docking base; camera hardware mounting separate."
+    },
+    {
+      "id": "PHONE_TO_BODY",
+      "parts": [
+        "D14_PHONE_BACK",
+        "H01_MAIN_SHELL"
+      ],
+      "centers_mm": [
+        [
+          -25,
+          -67,
+          50
+        ],
+        [
+          25,
+          -67,
+          50
+        ]
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "screw": "M2x12 pan",
+      "quantity": 2,
+      "nut": "M2 AF4.0 x1.6; internal accessible loose nut",
+      "head_bearing_y_mm": -72.0,
+      "nut_bearing_y_mm": -62.0,
+      "note": "Install body nuts with docking base removed, before electronics. Pan heads recessed 2mm into rearplate to avoid phone contact. Two flat pads seat at Y=-67; do not use bracket as a lifting handle."
+    },
+    {
+      "id": "PHONE_JAWS",
+      "parts": [
+        "D14_PHONE_BACK",
+        "D15_PHONE_JAW_L",
+        "D16_PHONE_JAW_R"
+      ],
+      "centers_mm": [
+        [
+          -42.0,
+          -74,
+          78
+        ],
+        [
+          -42.0,
+          -74,
+          120
+        ],
+        [
+          42.0,
+          -74,
+          78
+        ],
+        [
+          42.0,
+          -74,
+          120
+        ]
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "screw": "M2x12 pan",
+      "quantity": 4,
+      "nut": "M2 AF4.0 x1.6; exposed loose nut",
+      "head_bearing_y_mm": -80.0,
+      "nut_bearing_y_mm": -70.0,
+      "note": "Orange jaw recess Ø4.8; all shafts Ø2.4. Fit jaws to backplate before mounting cradle. Phone enters from +Z; soft contact pads user fitted."
+    }
+  ]
+}

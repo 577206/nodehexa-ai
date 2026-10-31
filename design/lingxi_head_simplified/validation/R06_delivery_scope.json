@@ -1,0 +1,19 @@
+{
+  "scope": "Second-batch STL/3MF trial-fit printing only, not a STEP CAD release.",
+  "exact_parameter_snapshot_check": {
+    "pass": true,
+    "keys_checked": 21
+  },
+  "strict_CAD_audit_status": "fail",
+  "strict_CAD_audit_notes": [
+    "No STEP was requested/exported; two strict-release STEP errors remain out of this print-prototype scope.",
+    "Strict generic report audit associates similar parameter names across width/height/depth and reports cross-key mismatches; direct same-key comparison of all current parameter values passes. Raw strict audit is retained unchanged."
+  ],
+  "manufacturing_checks": {
+    "CAD_pairwise_pass": true,
+    "print_mesh_pass": true,
+    "blender_asset_pass": true,
+    "service_path_pass": true
+  },
+  "physical_fit_verified": false
+}

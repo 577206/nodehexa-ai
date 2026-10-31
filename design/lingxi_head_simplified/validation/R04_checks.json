@@ -1,0 +1,332 @@
+{
+  "revision": "R04",
+  "physical_fit": "prototype_unverified",
+  "parts": [
+    {
+      "id": "SHELL_GRAY_0",
+      "valid_solid": true,
+      "closed_mesh": false,
+      "volume_mesh": false,
+      "bbox_mm": [
+        142.00126616645235,
+        144.0500002,
+        109.50000010000001
+      ],
+      "volume_mm3": 140345.92634908453
+    },
+    {
+      "id": "SHELL_GRAY_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        18.40150343720275,
+        14.597523960530822,
+        7.599999999999998
+      ],
+      "volume_mm3": 703.9366658898659
+    },
+    {
+      "id": "SHELL_GRAY_2",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        18.401503437202734,
+        14.597523960530815,
+        7.599999999999998
+      ],
+      "volume_mm3": 703.9366658898651
+    },
+    {
+      "id": "SHOULDER_ORANGE_0",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        25.435017885699864,
+        92.0000002,
+        32.00000019999999
+      ],
+      "volume_mm3": 3219.9111340908357
+    },
+    {
+      "id": "SHOULDER_ORANGE_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        25.435017885699864,
+        92.0000002,
+        32.00000019999999
+      ],
+      "volume_mm3": 3219.9112012911623
+    },
+    {
+      "id": "CAP_RING_-1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        2.0,
+        29.200000000000003,
+        29.199999999999996
+      ],
+      "volume_mm3": 464.4530579067151
+    },
+    {
+      "id": "CAP_FACE_-1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        6.0,
+        23.599999999999998,
+        23.599999999999994
+      ],
+      "volume_mm3": 1595.5520769051845
+    },
+    {
+      "id": "CAP_RING_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        2.0,
+        29.200000000000003,
+        29.199999999999996
+      ],
+      "volume_mm3": 464.4530579067151
+    },
+    {
+      "id": "CAP_FACE_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        6.0,
+        23.599999999999998,
+        23.599999999999994
+      ],
+      "volume_mm3": 1595.5520769051843
+    },
+    {
+      "id": "VISOR_FRAME",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        102.8000002,
+        65.4000002,
+        74.2000002
+      ],
+      "volume_mm3": 8768.390838335099
+    },
+    {
+      "id": "CLEAR_VISOR",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        84.0000002,
+        60.400000199999994,
+        68.00000019999999
+      ],
+      "volume_mm3": 7259.000000000006
+    },
+    {
+      "id": "DOCK_BASE",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        113.68000020000001,
+        133.6400002,
+        34.0000007
+      ],
+      "volume_mm3": 83840.80025217727
+    },
+    {
+      "id": "VENT_FRAME_-1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        25.364135183444382,
+        41.051717079325584,
+        47.855896250111044
+      ],
+      "volume_mm3": 5596.264960087101
+    },
+    {
+      "id": "VENT_GRILLE_-1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        15.850042069294588,
+        27.427370911339594,
+        33.0
+      ],
+      "volume_mm3": 931.8501785714261
+    },
+    {
+      "id": "VENT_FRAME_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        25.36413518344437,
+        41.05171707932557,
+        47.855896250111044
+      ],
+      "volume_mm3": 5596.264960087099
+    },
+    {
+      "id": "VENT_GRILLE_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        15.850042069294588,
+        27.427370911339594,
+        33.0
+      ],
+      "volume_mm3": 931.8501785714288
+    },
+    {
+      "id": "PHONE_BACK",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        72.0,
+        24.0,
+        103.0
+      ],
+      "volume_mm3": 18442.66549210363
+    },
+    {
+      "id": "PHONE_JAWS_0",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        6.0,
+        23.0,
+        103.0
+      ],
+      "volume_mm3": 7381.999999999998
+    },
+    {
+      "id": "PHONE_JAWS_1",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        6.0,
+        23.0,
+        103.0
+      ],
+      "volume_mm3": 7382.0
+    },
+    {
+      "id": "CAMERA_BEZEL",
+      "valid_solid": true,
+      "closed_mesh": true,
+      "volume_mesh": true,
+      "bbox_mm": [
+        30.000000000000014,
+        5.0,
+        26.000000000000014
+      ],
+      "volume_mm3": 2555.958955372285
+    }
+  ],
+  "collisions": [],
+  "physical_groups": {
+    "P01_SHELL": {
+      "regions": [
+        "SHELL_GRAY_0",
+        "SHELL_GRAY_1",
+        "SHELL_GRAY_2",
+        "SHOULDER_ORANGE_0",
+        "SHOULDER_ORANGE_1",
+        "CAP_RING_-1",
+        "CAP_FACE_-1",
+        "CAP_RING_1",
+        "CAP_FACE_1"
+      ],
+      "joined_solids": 3,
+      "volume_mm3": 152313.691187999
+    },
+    "P02_VISOR": {
+      "regions": [
+        "VISOR_FRAME"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 8768.390838335099
+    },
+    "P03_CLEAR": {
+      "regions": [
+        "CLEAR_VISOR"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 7259.000000000006
+    },
+    "P04_BASE": {
+      "regions": [
+        "DOCK_BASE"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 83840.80025217727
+    },
+    "P05_VENT_-1": {
+      "regions": [
+        "VENT_FRAME_-1",
+        "VENT_GRILLE_-1"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 6528.115138658531
+    },
+    "P05_VENT_1": {
+      "regions": [
+        "VENT_FRAME_1",
+        "VENT_GRILLE_1"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 6528.115138658531
+    },
+    "P07_PHONE": {
+      "regions": [
+        "PHONE_BACK",
+        "PHONE_JAWS_0",
+        "PHONE_JAWS_1"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 33206.665492103646
+    },
+    "P08_CAMERA": {
+      "regions": [
+        "CAMERA_BEZEL"
+      ],
+      "joined_solids": 1,
+      "volume_mm3": 2555.958955372285
+    }
+  },
+  "bowl_collisions": [],
+  "reference_conflicts": [],
+  "CAD_overlap_pass": true,
+  "dimensions": {
+    "phone_internal_width_mm": 76.0,
+    "phone_user_width_mm": 75.0,
+    "phone_thickness_unmeasured": true,
+    "dock_envelope_depth_mm": 29.4,
+    "fixed_bowl_height_mm": 29.0,
+    "assembly_without_reference_bbox_mm": [
+      156.27614504807084,
+      172.0000001,
+      145.0000007
+    ]
+  }
+}

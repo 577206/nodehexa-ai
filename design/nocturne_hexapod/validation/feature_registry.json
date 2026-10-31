@@ -3,9 +3,9 @@
   "features": [
     {
       "id": "upper_frame_width_extension",
-      "source": "source/model.py:widened_top / widen_loop",
-      "evidence": "validation/first_draft_checks.json:upper_frame_original_half_*",
-      "status": "CAD_check_pass"
+      "source": "source/edge_frames.py:edge_top",
+      "evidence": "validation/edge_frame_checks.json",
+      "status": "see_current_checks"
     },
     {
       "id": "shin_original_interfaces",
@@ -27,9 +27,9 @@
     },
     {
       "id": "lower_frame_width_extension",
-      "source": "source/lower_frame.py:widened_bottom",
-      "evidence": "validation/lower_frame_checks.json",
-      "status": "see_validation_report"
+      "source": "source/build_edge_bottom_freecad.py; source/edge_frames.py:edge_bottom",
+      "evidence": "validation/edge_frame_checks.json",
+      "status": "see_current_checks"
     }
   ],
   "constraints": [
@@ -37,16 +37,6 @@
       "id": "Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores, nut pockets and screw bearing thickness.",
       "status": "project_requirement_not_fully_verified",
       "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
-    },
-    {
-      "id": "Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
-      "status": "upper_and_lower_drafts_rigid_translation",
-      "evidence": "validation/first_draft_checks.json; validation/lower_frame_checks.json"
-    },
-    {
-      "id": "Red leg inserts are solid non-emissive material. No leg lighting wiring.",
-      "status": "verified_for_two_red_inserts",
-      "evidence": "source/model.py:ground_parts"
     },
     {
       "id": "No whole-mesh scaling. Preserve original effective link lengths.",
@@ -72,6 +62,16 @@
       "id": "No printable-production-ready claim before full assembly and fit checks.",
       "status": "project_requirement_not_fully_verified",
       "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    },
+    {
+      "id": "New target: edge-only widening 50 mm total, central PCB mounting geometry and opening fixed. Leg-root groups translate outward 25 mm while PCB mounting/support geometry stays fixed.",
+      "status": "draft_geometry_verified_assembly_pending",
+      "evidence": "source/model.py; validation/edge_frame_checks.json"
+    },
+    {
+      "id": "White main structure, blue solid inserts, no leg lighting.",
+      "status": "draft_geometry_verified_assembly_pending",
+      "evidence": "source/model.py; validation/edge_frame_checks.json"
     }
   ],
   "validation_targets": [
@@ -88,7 +88,7 @@
     {
       "id": "body_bottom_plan_target_mm",
       "status": "see_lower_frame_checks",
-      "evidence": "validation/lower_frame_checks.json"
+      "evidence": "validation/edge_frame_checks.json"
     },
     {
       "id": "note",

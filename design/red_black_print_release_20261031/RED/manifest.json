@@ -1,0 +1,51 @@
+{
+  "status": "pending_new_body_and_fit_checks",
+  "parts": [
+    {
+      "color": "RED",
+      "file": "RED/models/QTY_06/TKRC-LegTop.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-LegTop.STL",
+      "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a",
+      "dimensions_mm": [
+        63.8,
+        4.6,
+        20.6
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "RED",
+      "file": "RED/models/QTY_06/TKRC-ThighTop.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-ThighTop.STL",
+      "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183",
+      "dimensions_mm": [
+        34.4,
+        7.16,
+        20.6
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    },
+    {
+      "color": "RED",
+      "file": "RED/models/QTY_06/TKRC-JointCross.STL",
+      "quantity": 6,
+      "quantity_basis": "清晰原机套件照片数量；新版FootTop/FootButtom按原件数量替换",
+      "source": "mechanism/hexapod/TKRC-JointCross.STL",
+      "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73",
+      "dimensions_mm": [
+        41.3547,
+        3.9,
+        41.3547
+      ],
+      "watertight": true,
+      "note": "原版几何，未修改"
+    }
+  ],
+  "optional": []
+}

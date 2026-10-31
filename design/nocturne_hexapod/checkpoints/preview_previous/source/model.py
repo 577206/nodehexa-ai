@@ -8,7 +8,7 @@ transverse pilot bores are reconstructed separately. All fits remain provisional
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from lower_frame import widened_bottom
+from edge_frames import edge_top,edge_bottom
 import json
 import yaml
 from build123d import Face, Wire, Solid, Compound, Color, Pos, Rot, Cylinder, Box, Align, Kind, export_step
@@ -68,12 +68,7 @@ def widen_loop(loop, center, increase):
 
 
 def widened_top(params):
-    data=profile('BodyTop')
-    ys=[point[1] for point in data['loops_uv_mm'][0]]
-    center=(min(ys)+max(ys))/2
-    increase=value(params,'body_width_increase')
-    loops=[widen_loop(loop,center,increase) for loop in data['loops_uv_mm']]
-    return plate(loops,data['thickness_mm'])
+    return edge_top(value(params,'body_width_increase'))
 
 
 # Relief stays inside the original planar envelope and away from all outer
@@ -107,18 +102,18 @@ def ground_parts(params):
         insert=Solid.extrude(Face(wire),(0,0,depth-gap))
         insert=Pos(0,0,t+h-depth)*insert
         insert.label=f'N112_{suffix}_red_insert_DRAFT'
-        insert.color=Color(0.65,0.025,0.045)
+        insert.color=Color(0.025,0.28,0.78)
         inserts.append(insert)
     base.label='N111_shin_face_DRAFT'
-    base.color=Color(0.13,0.14,0.16)
+    base.color=Color(0.90,0.93,0.97)
     return [base,*inserts]
 
 
 def local_parts(params):
     top=widened_top(params)
-    top.label='N001_upper_frame_W30_DRAFT'
-    top.color=Color(0.18,0.19,0.21)
-    return [top,*ground_parts(params), widened_bottom("BodyButtom",value(params,"body_width_increase")), widened_bottom("BodyButtom-18650-2S",value(params,"body_width_increase"))]
+    top.label='N001_upper_frame_EDGE50_DRAFT'
+    top.color=Color(0.90,0.93,0.97)
+    return [top,*ground_parts(params), edge_bottom("BodyButtom",value(params,"body_width_increase")), edge_bottom("BodyButtom-18650-2S",value(params,"body_width_increase"))]
 
 
 def build_model(params):

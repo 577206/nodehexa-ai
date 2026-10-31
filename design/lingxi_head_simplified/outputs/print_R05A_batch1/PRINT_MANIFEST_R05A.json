@@ -1,0 +1,85 @@
+{
+  "revision": "R05A",
+  "status": "fit_print_prototype",
+  "source_provenance": {
+    "source_hash": "11a6ed040ed50dc435f680c6c301fa8b42ce3d328206a8609be575b3d4783309",
+    "parameters_hash": "eef5822af45b841334e249b08862d5b781dfaad5dc284ded1c4ffc5b717d2919",
+    "spec_hash": "863e31a04a4b48bb11dc97e2088b4bbca53e5600a7e75981ea8f670c7f00aac6",
+    "manifest_hash": "c06ba52a996d97afb36f5b45a586f8d4882ff586c9d08a0d07860c15b776959d",
+    "visor_source_hash": "5d44e1e485d76e80bf138f24618c2f300b9408f5f2f0b7145b4fed7e81ac926a",
+    "R02_archive_hash": "9f2d42c31d3b1a699c8827c43426969f377d4369785be6b5584e72fe94c50af7",
+    "R03_archive_hash": "dac772d22a40b4bd7e0fea94e973d07d7b9aec0a8bcbbaeb08044037fc096112",
+    "R04_archive_hash": "d0df827312b79316a21c534eaf6319198a6508040962d2d9b4e88260d85ee2d5",
+    "R05_archive_hash": "affe5b9b26ab10ce5bbf54d9178606b0a9d880f2a2940e4f93d74f229e785460"
+  },
+  "files": [
+    {
+      "file": "H01_MAIN_SHELL_R05_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "gray",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -10.0
+      ],
+      "sha256": "bc79fb7b144e5b56a5e130602d2faf66d7a00ba852866aa32c301d8652b0c67a"
+    },
+    {
+      "file": "H02_DOCK_RECEIVER_R05_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "gray",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -0.0
+      ],
+      "sha256": "9b3e5da8bbef400aff949d8096461b548fe1cc38484fa21b0a58b9509ae739f3"
+    },
+    {
+      "file": "H03_CLEAR_VISOR_R05A_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "clear",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -33.50031947966036
+      ],
+      "sha256": "dcc256f10a2f51d5246f33f02de078896b6d04fbe4c5753d1372dce61bd5406f"
+    },
+    {
+      "file": "H04_VISOR_FRAME_R05A_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "gray",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -32.500958389666046
+      ],
+      "sha256": "741951a51b5759675cd7be050209cf8fb0589f7ebf0a680fe10d7bbae81f6aef"
+    },
+    {
+      "file": "Lingxi_R05A_Batch1_GRAY_CLEAR_4SeparateParts_Assembly.3mf",
+      "separate_parts": 4,
+      "unit": "mm",
+      "strict_3mf_warnings": 0,
+      "sha256": "1449002fa82e03549a6798ad069fa33502868df1cf86a7ccb0cae29898b2f625"
+    }
+  ],
+  "assembly_hardware": {
+    "M2x20_pan_head_screw": 2,
+    "M2x10_pan_head_screw": 2,
+    "M2_nut": 4
+  },
+  "geometry_checked": true,
+  "physical_fit_verified": false,
+  "QA_evidence": [
+    "R05A_checks.json",
+    "R05A_blender_qa.json",
+    "visor_R05A_independent.json",
+    "audit_dock_R05_final.json"
+  ]
+}

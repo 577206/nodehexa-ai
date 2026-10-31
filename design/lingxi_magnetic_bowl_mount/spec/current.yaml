@@ -1,0 +1,232 @@
+schema: engineering-3d-modeling.spec.v1
+project:
+  name: 灵犀磁吸驾驶舱固定罩座
+  kind: part
+  units: mm
+model:
+  selected_direction: Open-bottom hood; connector pushed upward from interior, flange
+    stops below thin collar, contact face protrudes; solder and wires remain inside.
+  precision: dimensioned interfaces; cover clearance awaits physical measurements
+coordinate_system:
+  units: mm
+  origin:
+    id: upper_frame_cover_hole_midpoint
+    description: midpoint of two original upper-frame cover holes, Z=0 at upper-frame
+      top surface
+    point_mm:
+    - 0
+    - 0
+    - 0
+  axes:
+    x:
+      vector:
+      - 1
+      - 0
+      - 0
+      positive: right when viewed from the front
+      negative: left when viewed from the front
+    y:
+      vector:
+      - 0
+      - 1
+      - 0
+      positive: front / user-facing direction
+      negative: rear / back direction
+    z:
+      vector:
+      - 0
+      - 0
+      - 1
+      positive: up
+      negative: down / bottom
+  direction_aliases:
+    front: +Y
+    rear: -Y
+    back: -Y
+    left: -X
+    right: +X
+    top: +Z
+    bottom: -Z
+    up: +Z
+    down: -Z
+  component_frames: {}
+  imported_components: {}
+  source:
+    status: confirmed
+    confirmed_by: EDGE50 assembly coordinate convention; preserve both cover hole
+      locations
+    notes:
+    - X=robot right/width; Y=design front/length; Z=up
+    - Front/back identity must match final head camera orientation before asymmetric
+      geometry
+    - Reference origin retained; R01 is symmetric except one locating key on design+Y,
+      mirrored head counterpart will inherit this key.
+lifecycle:
+  phase: draft_review
+  status: in_progress
+  note: R02 bottom-insert through opening; user circled flange. Preserve hood, holes
+    and guide rim. Prototype-fit allowance pending physical trial.
+inputs:
+- path: inputs/01_user_connection_markup.png
+  sha256: 9e5fdf57ec9ae2a011146185fee51e70f6d393c1e80446657386267a92f4bb5e
+  use: qualitative reference; no inferred physical dimensions
+- path: inputs/02_robot_board_photo.jpg
+  sha256: 5ef68b7fa5708e9a406f838167276a0591e4cfce144550b050aa7c9552e7bfb0
+  use: qualitative reference; no inferred physical dimensions
+- path: inputs/03_bowl_shape_analogy.jpg
+  sha256: f413ff10ab54c9332f4cb36f970125b62e3652d91bee22e0fce91951f2faf31b
+  use: qualitative reference; no inferred physical dimensions
+- path: inputs/04_connector_dimension_reference.jpg
+  sha256: 1e4a76f3ef51cace1079032ec3df905ca1f2734295f283044c90d7b9b5857a92
+  use: dimensioned connector reference
+- path: inputs/05_user_cover_sketch.png
+  sha256: 21d4dcdf2cad7873b60c8d6b3e9d847fcc55936c2290dd2ff471cc8f29725f13
+  use: qualitative reference; no inferred physical dimensions
+- path: inputs/06_EDGE50_reference.png
+  sha256: 5396bf43558435d3f95b4436c8b4a13af6c36c8c456f556e42b214328942a1dd
+  use: qualitative reference; no inferred physical dimensions
+- path: inputs/08_bottom_insert_connector_markup.png
+  use: User clarified bottom-up insertion and flange stop; no solder dimensions inferred
+placements: {}
+features:
+- id: fixed_hood
+  intent: one fixed open-bottom inverted-bowl cover enclosing central robot board
+    and wiring
+  open_direction: -Z
+  envelope: 86x86 lower outside,82x82 roof outside; internal minimum76x76, ceilingZ24;
+    screws occupy only approved8mm corridors
+- id: two_recessed_screw_wells
+  intent: two top-access wells leading down to local screw seats near original frame;
+    do not pass a 10mm screw through the whole hood height
+  placement: X=+/-28.5020684,Y=0; reference-derived, retain original holes
+  seat_type: 'cylindrical pan-head seat: bore5.2, shaft2.4, remaining local bearing
+    thickness2.4;8mm outer corridor'
+  quantity: 2
+- id: connector_pocket
+  intent: Bottom-insert open throat wraps contact-end housing, flange stops against
+    collar underside, glue lands on plastic only
+  profile: 17.94x4.4 rounded through throat;22x8 underside relief; no closed floor
+  seat_height: flange upper stopZ27; collar topZ28; contact face nominalZ29 using
+    supplier2mm shoulder-to-face
+- id: head_keyed_nest
+  intent: complementary loose-fit locating rim/key, not interference fit; magnets
+    provide separation retention, shoulder/rim carry compression and shear
+  release: vertical lift, no mechanical latch per user
+  dimensions: outer76x76, inner72x72 rim fromZ27to29; asymmetrical key at+Y; upper
+    complementary part deferred
+- id: wire_exit
+  intent: Full underside opening; pre-soldered connector inserted from inside so solder
+    and wires never pass narrow front throat
+  pinout: GND/TX/RX; mapping explicitly pending final wiring check
+constraints:
+  formal: []
+  narrative:
+  - Do not change or drill original frame; use exactly its two cover holes
+  - Two screws fix only the hood to chassis, never the detachable head
+  - User requested magnetic-only head retention; no latch
+  - Bottom remains open; do not create a full lower floor
+  - Preserve servo pockets, local widths and joint interfaces
+  - Keep both power supplies independent; no battery/power rail through the 3 signal
+    wires
+  - Glue only connector housing support lands, not pins, springs or contact face
+  - Do not infer actual robot heights or cover width from perspective photos
+decisions:
+- date: '2026-10-31'
+  status: user_confirmed
+  decision: Body widening remains total50mm; red/black palette; fixed hood mounts
+    to existing two holes; magnetic-only detachable head; 4-contact connector uses3
+    wires
+- status: dimensioned_image_reference
+  connector:
+    full_outline_length_mm: 19.54
+    full_outline_length_tolerance_mm: 0.1
+    secondary_length_mm: 17.54
+    secondary_length_tolerance_mm: 0.05
+    face_width_mm: 4.0
+    face_width_tolerance_mm: 0.08
+    contact_pitch_mm: 2.54
+    contact_pitch_tolerance_mm: 0.05
+    housing_height_shown_mm: 4.0
+    tail_projection_shown_mm: 1.5
+  note: 19.54 and17.54 dimension different profile levels; not interchangeable rectangle
+    sizes; no pocket dimensions frozen
+- status: user_confirmed
+  date: '2026-10-31'
+  electronics_envelope_mm:
+  - 70
+  - 70
+  - 20
+  screw_head: pan/button head
+  screw_corridors: both original cover holes have approximately8mm diameter free corridors
+- status: agent_draft_design_choice
+  intent: R01 reviewable cover with generous clearance; no physical-fit claim
+  dimensions_mm:
+    base_outer:
+    - 86
+    - 86
+    roof_outer:
+    - 82
+    - 82
+    minimum_internal_plan:
+    - 76
+    - 76
+    ceiling_height: 24
+    roof_top: 27
+    connector_boss_top: 29
+    guide_top: 29
+    local_screw_seat: 2.4
+  mount_assumption: Original approximately10mm screw is treated as M2 based on original
+    cover documentation; clearance2.4mm and access5.2mm are prototype values, check
+    actual head and threaded receiver before printing.
+- status: user_confirmed
+  date: '2026-10-31'
+  decision: Push connector up from bowl interior; protruding flange locates below
+    opening, front magnetic face exposed above, glue housing. No side-loading clamp.
+- status: trial_fit_assumption
+  decision: Supplier17.54x4 front profile uses0.2mm per-side allowance. Flange19.54
+    end span retained by throat length17.94; flange thickness and solder envelope
+    not inferred. Validate using small collar coupon before full bowl print.
+validation_targets:
+  dimensions:
+    hole_center_distance_mm: 57.00413680076599
+    base_outer_mm:
+    - 86
+    - 86
+    maximum_height_mm: 29
+    screw_bearing_thickness_mm: 2.4
+  clearances:
+    electronics: 70x70x20 envelope clear except two explicitly user-approved8mm screw
+      corridors; central roof atZ24
+    head_nest: positive assembly clearance; no zero-clearance or press fit
+    screw_engagement: calculate from actual head/seat/threaded destination, not nominal
+      screw length alone
+  features:
+    hood: one closed solid with open lower cavity
+    screw_wells: both driver access paths clear
+    connector: Bottom-up17.54x4 front envelope passes;19.54 end flange blocked; faceZ29
+      and guideZ29 retained; solder below roof not constrained to small slit
+    motion: no collision with leg sweeps; not yet verified
+backend:
+  default: build123d
+  override: null
+source:
+  entrypoint: source/model.py
+outputs:
+  assembly_step: outputs/step/model.step
+  per_part_step: false
+review:
+  manifest: review/manifest.json
+  annotations: review/annotations.json
+  parameter_patch: review/parameter_patch.json
+validation:
+  report: validation/report.json
+  current_context: validation/current_context.json
+  spec_coverage: validation/spec_coverage.json
+  feature_registry: validation/feature_registry.json
+  layout_report: validation/layout_report.json
+open_questions:
+- id: physical_fit
+  blocking: false
+  question: Before production, verify actual screw shaft/head size, thread destination
+    and usable screw engagement; connector pocket test-fit; board location/leg sweeps
+    and glue attachment strength.

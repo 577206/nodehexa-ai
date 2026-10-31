@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "archive": "NodeHexa_BLACK_R02_EDGE50.zip",
+  "archive_sha256": "3f96048c707ef6ae7ba82d617feedecdec83681eaba144195bd22a918bc90522",
+  "prior_meshes_preserved": 14,
+  "added_body_parts": [
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/N001_BodyTop_EDGE50.stl",
+      "quantity": 1,
+      "sha256": "ad0ba2c6b914f3b039a84fd4d05e34d49cbe99e0ac47f68dd9691a378b120116",
+      "dimensions_mm": [
+        134.80905151367188,
+        124.34314727783203,
+        3.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "中央开口保持原尺寸，两侧各增宽25 mm",
+      "physical_fit_verified": false
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/models/QTY_01/N002_BodyBottom_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "sha256": "fae1a5d49df2d5aa191d91d15c4d3d236e1248fb820e411bc5b1c317ccd717bd",
+      "dimensions_mm": [
+        130.3431396484375,
+        128.34314727783203,
+        9.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "普通下板与18650-2S下板二选一，只打印一个下板",
+      "physical_fit_verified": false
+    },
+    {
+      "color": "BLACK",
+      "file": "BLACK/optional_not_in_main_count/QTY_01/N003_BodyBottom_18650_2S_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "sha256": "6fad4e9bbdefd86fdf46f9e713f07091677db4d780d2e156a8fb29f9596f3459",
+      "dimensions_mm": [
+        130.3431396484375,
+        128.34314727783203,
+        9.0
+      ],
+      "watertight": true,
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "note": "普通下板与18650-2S下板二选一，只打印一个下板",
+      "physical_fit_verified": false
+    }
+  ],
+  "main_print_quantity": 78,
+  "lower_variants": "choose exactly one",
+  "physical_fit_verified": false
+}

@@ -1,0 +1,96 @@
+{
+  "source": "BodyButtom-18650-2S",
+  "valid": true,
+  "solids": 1,
+  "dimensions_mm": [
+    130.3431396484375,
+    128.34314823150635,
+    9.000000000000016
+  ],
+  "checks": [
+    {
+      "region": "outer_mount_0",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "outer_mount_1",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "outer_mount_2",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "outer_mount_3",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "outer_mount_4",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "outer_mount_5",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_0",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 216.45413326092617,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_1",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 216.4413821286871,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_2",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 190.6173214255046,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_3",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 216.4413590118902,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_4",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 216.4542360013532,
+      "pass": true
+    },
+    {
+      "region": "removed_inner_seat_5",
+      "remaining_mm3": 0.0,
+      "removed_mm3": 190.61738123937036,
+      "pass": true
+    },
+    {
+      "region": "original_core_before_authorized_removal",
+      "difference_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "region": "subtractive_volume_accounting",
+      "removed_total_mm3": 1247.0258131062983,
+      "target_volume_mm3": 1247.0258130677316,
+      "difference_mm3": 3.8566668081330135e-08,
+      "pass": true
+    },
+    {
+      "region": "entire_3mm_base_unchanged",
+      "difference_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "status": "pass"
+}

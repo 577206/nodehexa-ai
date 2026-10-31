@@ -1,0 +1,381 @@
+{
+  "parts": [
+    {
+      "name": "D05_SHOULDER_ORANGE_L",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4051.9627680675007,
+      "bbox_mm": [
+        29.100000200000007,
+        79.0000002,
+        32.20000019999999
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D06_SHOULDER_ORANGE_R",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4051.9627680675003,
+      "bbox_mm": [
+        29.100000200000007,
+        79.0000002,
+        32.20000019999999
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D07_SHOULDER_GRAY_L",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1223.874437352096,
+      "bbox_mm": [
+        18.4000002,
+        57.20625020000001,
+        24.800000199999985
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D08_SHOULDER_GRAY_R",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1223.8744373520958,
+      "bbox_mm": [
+        18.4000002,
+        57.20625020000001,
+        24.800000199999985
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D09_ROUND_ORANGE_L",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6247.912722608843,
+      "bbox_mm": [
+        19.000000199999995,
+        29.000000200000002,
+        33.200000208851804
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D10_ROUND_ORANGE_R",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6247.912722608843,
+      "bbox_mm": [
+        19.000000199999995,
+        29.000000200000002,
+        33.200000208851804
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D11_ROUND_GRAY_L",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 999.5787573982772,
+      "bbox_mm": [
+        2.5999999999999943,
+        22.200000000000003,
+        22.799999999999997
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    },
+    {
+      "name": "D12_ROUND_GRAY_R",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 999.5787573982772,
+      "bbox_mm": [
+        2.5999999999999943,
+        22.200000000000003,
+        22.799999999999997
+      ],
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1
+    }
+  ],
+  "mounts": [
+    {
+      "id": "ARMOR_SHOULDER_FRONT_L",
+      "parts": [
+        "D05_SHOULDER_ORANGE_L",
+        "D07_SHOULDER_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -47.6,
+          16,
+          94
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -55.0,
+        16,
+        94
+      ],
+      "nut_bearing_mm": [
+        -41.0,
+        16,
+        94
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。",
+      "orange_bore_diameter_mm": 2.9,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0.25
+    },
+    {
+      "id": "ARMOR_SHOULDER_REAR_L",
+      "parts": [
+        "D05_SHOULDER_ORANGE_L",
+        "D07_SHOULDER_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -45.766666666666666,
+          -27,
+          97
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -53.166666666666664,
+        -27,
+        97
+      ],
+      "nut_bearing_mm": [
+        -39.166666666666664,
+        -27,
+        97
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。后肩原壳通孔下缘有约0.034mm残边，须用Ø2.4mm钻头手动清孔；Ø2.0杆包络干涉0.0002003mm³，未更改原壳文件。",
+      "orange_bore_diameter_mm": 2.4,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0
+    },
+    {
+      "id": "ARMOR_ROUND_L",
+      "parts": [
+        "D09_ROUND_ORANGE_L",
+        "D11_ROUND_GRAY_L"
+      ],
+      "centers_mm": [
+        [
+          -57.06153846153846,
+          -31,
+          74
+        ]
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        -64.46153846153845,
+        -31,
+        74
+      ],
+      "nut_bearing_mm": [
+        -50.46153846153846,
+        -31,
+        74
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "圆盖底座上方舌片与橙肩甲的侧向槽配合止转；灰面板顶部定位舌片嵌入橙杯；先将圆盖舌片插入肩甲槽再共同装到机壳，螺母内置。"
+    },
+    {
+      "id": "ARMOR_SHOULDER_FRONT_R",
+      "parts": [
+        "D06_SHOULDER_ORANGE_R",
+        "D08_SHOULDER_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          47.6,
+          16,
+          94
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        55.0,
+        16,
+        94
+      ],
+      "nut_bearing_mm": [
+        41.0,
+        16,
+        94
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。",
+      "orange_bore_diameter_mm": 2.9,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0.25
+    },
+    {
+      "id": "ARMOR_SHOULDER_REAR_R",
+      "parts": [
+        "D06_SHOULDER_ORANGE_R",
+        "D08_SHOULDER_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          45.766666666666666,
+          -27,
+          97
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        53.166666666666664,
+        -27,
+        97
+      ],
+      "nut_bearing_mm": [
+        39.166666666666664,
+        -27,
+        97
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "从外侧向内穿过灰压条和橙肩甲，内侧安装螺母。先拆头部底座以便扶住螺母；须实物试装。后肩原壳通孔下缘有约0.034mm残边，须用Ø2.4mm钻头手动清孔；Ø2.0杆包络干涉0.0002003mm³，未更改原壳文件。",
+      "orange_bore_diameter_mm": 2.4,
+      "core_bore_diameter_mm": 2.4,
+      "orange_radial_relief_mm": 0
+    },
+    {
+      "id": "ARMOR_ROUND_R",
+      "parts": [
+        "D10_ROUND_ORANGE_R",
+        "D12_ROUND_GRAY_R"
+      ],
+      "centers_mm": [
+        [
+          57.06153846153846,
+          -31,
+          74
+        ]
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "screw": "M2x16 pan head",
+      "quantity": 1,
+      "nut": "M2 hex nut AF4.0, thickness1.6mm",
+      "head_bearing_mm": [
+        64.46153846153845,
+        -31,
+        74
+      ],
+      "nut_bearing_mm": [
+        50.46153846153846,
+        -31,
+        74
+      ],
+      "clamp_stack_mm": 14.0,
+      "nut_thickness_mm": 1.6,
+      "thread_past_nut_mm": 0.4,
+      "note": "圆盖底座上方舌片与橙肩甲的侧向槽配合止转；灰面板顶部定位舌片嵌入橙杯；先将圆盖舌片插入肩甲槽再共同装到机壳，螺母内置。"
+    }
+  ],
+  "collisions": [],
+  "hardware_checks": [
+    {
+      "mount": "ARMOR_SHOULDER_FRONT_L",
+      "max_intersection_mm3": 0,
+      "status": "pass"
+    },
+    {
+      "mount": "ARMOR_SHOULDER_REAR_L",
+      "max_intersection_mm3": 0.00020026818666004013,
+      "status": "requires_rear_hole_deburr"
+    },
+    {
+      "mount": "ARMOR_ROUND_L",
+      "max_intersection_mm3": 0,
+      "status": "pass"
+    },
+    {
+      "mount": "ARMOR_SHOULDER_FRONT_R",
+      "max_intersection_mm3": 0,
+      "status": "pass"
+    },
+    {
+      "mount": "ARMOR_SHOULDER_REAR_R",
+      "max_intersection_mm3": 0.00020026813795257116,
+      "status": "requires_rear_hole_deburr"
+    },
+    {
+      "mount": "ARMOR_ROUND_R",
+      "max_intersection_mm3": 0,
+      "status": "pass"
+    }
+  ],
+  "status": "geometry_pass_rear_source_holes_require_deburr",
+  "fit_note": "Frozen H01 rear shoulder holes have a residual lower-edge film, about0.034mm. Each intersects a conservativeØ2.0 screw envelope by0.0002003mm³. Clean the two rear shoulder holes by hand with aØ2.4mm drill before fit. This is not an interference-free hardware pass; H01 CAD/printfiles are unchanged."
+}

@@ -48,7 +48,7 @@ coordinate_system:
         for inspection only. Global assembly transform still pending.
   imported_components: {}
   source:
-    status: recorded
+    status: confirmed
     confirmed_by: existing robot frame convention; user confirms width direction
     notes:
     - Local flat part coordinates u/v/w are separate from assembly XYZ. Assembly transforms
@@ -66,8 +66,8 @@ inputs:
 placements: {}
 features:
 - id: upper_frame_width_extension
-  description: Original opposite interface groups rigidly translated +/-15 mm, center
-    crossings bridged
+  description: Outer boundary and twelve leg mount holes extended +/-25 mm; original
+    central aperture and two central cover mount holes fixed.
 - id: shin_original_interfaces
   description: Reference-contour reconstruction plus two measured transverse pilot
     bores; compare protected bands before/after
@@ -78,9 +78,9 @@ features:
   description: Two solid red inserts, no lighting; retention and printer tolerances
     pending
 - id: lower_frame_width_extension
-  description: 'Both mutually exclusive lower-frame variants: preserve source-derived
-    local half geometry; translate +/-15 mm and bridge center section; dimensions
-    130.343 x 108.343 x 9 mm.'
+  description: Add 3 mm perimeter bands and six translated outer leg mounts; remove
+    all six obsolete inner seats above w=3 mm. Preserve base, central opening and
+    remaining core. Both bottom alternatives.
 constraints:
   formal: []
   narrative:
@@ -131,6 +131,14 @@ decisions:
   status: confirmed
   value: white main parts, blue non-emissive inserts; previous red part IDs retained
     for traceability
+- id: edge50_implementation
+  status: implemented_draft
+  value: Six obsolete inner seats removed above 3 mm base; six outer leg mounts preserved.
+    Central opening fixed; 50 mm total edge extension.
+- id: remove_six_inner_seats
+  status: confirmed
+  value: User selects removal of all six old inner seats and retention of all six
+    outer leg mounts. Both bottom variants; cut raised seats only, preserve 3 mm base.
 validation_targets:
   dimensions:
     leg_kinematics_mm:
@@ -149,7 +157,12 @@ validation_targets:
   features: {}
 backend:
   default: build123d
-  override: null
+  override:
+    scope: lower_frame_geometry_only
+    backend: FreeCAD OCCT
+    reason: Existing FreeCAD-derived BRep references; robust Boolean joining of faceted
+      reference boundaries. Rebuild source/build_edge_bottom_freecad.py; preview composition
+      remains build123d.
 source:
   entrypoint: source/model.py
 outputs:
@@ -173,18 +186,16 @@ pending:
   release
 - Original short rear wall placement
 - Red insert retention verification and process fit coupon
-- Map actual PCB mounting holes and support walls to original part coordinates before
-  splitting fixed PCB structure from translated leg-root groups. Photos have no scale
-  or hole-center mapping.
 delivery_scope:
   requested: all redesigned print parts with defined dimensions
-  current_iteration: 'partial CAD: upper frame, two alternative lower frames, shin
-    face and inserts'
+  current_iteration: EDGE50 top and two alternative bottoms, shin face and blue inserts;
+    no full assembly
   whole_robot_complete: false
   production_ready: false
 implementation_state:
-  geometry: W30 center-extension geometry is obsolete, retained only as interim palette
-    preview
-  target_geometry: W50 edge-only extension; leg roots move outward 25 mm; exact PCB
-    mounting/support protection boundary not yet mapped to CAD
-  palette: implemented white-blue
+  geometry: EDGE50; fixed upper aperture and central holes; lower six obsolete inner
+    seats removed to base, all six outer leg groups retained at +/-25 mm.
+  palette: white structure and solid blue inserts
+  lower_backend: FreeCAD helper builds validated reference-derived BRep; build123d
+    composes inspection model
+  assembly: inspection layout only, no full robot fit verification

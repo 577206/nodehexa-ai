@@ -1,6 +1,6 @@
 {
   "schema": "engineering-3d-modeling.current_context.v1",
-  "generated_at": "2026-10-31T02:34:47.818112Z",
+  "generated_at": "2026-10-31T04:08:10.312721Z",
   "project": {
     "name": "NOCTURNE 六足机甲工程改版",
     "kind": "assembly",
@@ -20,13 +20,13 @@
     "mesh": {
       "path": "review/cache/current_mesh.json",
       "exists": true,
-      "sha256": "b5148fe0d18a47f1069b17911e93c81b054b39624b9a0619dce6cc145fa49457",
-      "modified_at": "2026-10-31T02:34:11.071278Z",
+      "sha256": "98ebe09584207b8e244d1e576b091abedf2834202df1f7f5f378f460a8732e56",
+      "modified_at": "2026-10-31T04:07:44.266199Z",
       "provenance": {
-        "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-        "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-        "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-        "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+        "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+        "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+        "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+        "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
       }
     }
   },
@@ -34,7 +34,7 @@
     "manifest": "outputs/step/manifest.json",
     "state": "exported",
     "stale": true,
-    "stale_reason": "hash mismatch: source_hash, spec_hash, review_mesh_hash",
+    "stale_reason": "hash mismatch: source_hash, parameters_hash, spec_hash, review_mesh_hash",
     "files": [
       {
         "path": "outputs/step/N001_upper_frame_W30_DRAFT.step",
@@ -59,10 +59,11 @@
     ],
     "freshness_mismatches": [
       "source_hash",
+      "parameters_hash",
       "spec_hash",
       "review_mesh_hash"
     ],
-    "export_allowed": false
+    "export_allowed": true
   },
   "preview": {
     "status": "warning",
@@ -70,21 +71,21 @@
     "stale_reasons": [],
     "metadata_drift": [],
     "provenance": {
-      "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-      "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-      "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-      "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+      "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+      "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+      "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+      "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
     }
   },
   "preview_checkpoint": {
     "available": true,
     "path": "checkpoints/preview_previous",
-    "created_at": "2026-10-31T02:29:06.513344Z",
-    "reason": "Add lower frame variants with matching 30 mm central width extension; retain original local interfaces"
+    "created_at": "2026-10-31T04:00:30.296422Z",
+    "reason": "Remove six obsolete inner lower seats; preserve six outer leg mounts and central aperture"
   },
   "coordinate_state": {
-    "status": "missing",
-    "usable": false,
+    "status": "confirmed",
+    "usable": true,
     "units": "mm",
     "origin": "Top frame planar center, Z=0 at bottom frame lower face after interface-aligned",
     "axes": {
@@ -101,9 +102,7 @@
         "negative": "down"
       }
     },
-    "missing": [
-      "coordinate_system.source.status"
-    ],
+    "missing": [],
     "ambiguous_terms": [],
     "direction_terms": [],
     "direction_aliases": {
@@ -116,7 +115,7 @@
         "description": "u=source X-Xmin; v=source Zmax-Z; w=source Y-Ymin; proper rotation"
       }
     },
-    "requires_clarification": true,
+    "requires_clarification": false,
     "required_reasons": [
       "project kind is assembly",
       "spec contains direction-sensitive layout, shell, cutout, airflow, access, or fixed-component terms"
@@ -141,13 +140,13 @@
   "key_parameters": [
     {
       "id": "body_width_increase",
-      "value": 30,
+      "value": 50,
       "unit": "mm",
-      "role": "Confirmed total width increase, no global scaling"
+      "role": "Total outer-edge width increase; original central openings fixed"
     },
     {
       "id": "side_translation",
-      "value": 15,
+      "value": 25,
       "unit": "mm",
       "role": "Derived half width increase"
     },
@@ -185,7 +184,7 @@
   },
   "review_preview_diagnostic": {
     "schema": "engineering-3d-modeling.review_preview_diagnostic.v1",
-    "generated_at": "2026-10-31T02:34:47.623947Z",
+    "generated_at": "2026-10-31T04:08:10.063167Z",
     "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
     "status": "warn",
     "trust": {
@@ -237,7 +236,7 @@
     "manifest": {
       "path": "review/manifest.json",
       "exists": true,
-      "sha256": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532",
+      "sha256": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b",
       "status": "pass",
       "mesh_json": "cache/current_mesh.json",
       "mesh_path": "review/cache/current_mesh.json",
@@ -248,27 +247,27 @@
     "mesh": {
       "path": "review/cache/current_mesh.json",
       "exists": true,
-      "sha256": "b5148fe0d18a47f1069b17911e93c81b054b39624b9a0619dce6cc145fa49457",
+      "sha256": "98ebe09584207b8e244d1e576b091abedf2834202df1f7f5f378f460a8732e56",
       "status": "pass",
-      "vertex_count": 33378,
-      "face_count": 19320,
+      "vertex_count": 40326,
+      "face_count": 23956,
       "part_count": 6,
       "feature_count": 6,
       "part_face_counts": {
-        "N001_upper_frame_W30_DRAFT": 4528,
+        "N001_upper_frame_EDGE50_DRAFT": 4496,
         "N111_shin_face_DRAFT": 2856,
         "N112_L_red_insert_DRAFT": 28,
         "N112_R_red_insert_DRAFT": 28,
-        "N002_lower_frame_W30_DRAFT": 5804,
-        "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT": 6076
+        "N002_lower_frame_EDGE50_DRAFT": 8060,
+        "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": 8488
       },
       "feature_face_counts": {
-        "N001_upper_frame_W30_DRAFT": 4528,
+        "N001_upper_frame_EDGE50_DRAFT": 4496,
         "N111_shin_face_DRAFT": 2856,
         "N112_L_red_insert_DRAFT": 28,
         "N112_R_red_insert_DRAFT": 28,
-        "N002_lower_frame_W30_DRAFT": 5804,
-        "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT": 6076
+        "N002_lower_frame_EDGE50_DRAFT": 8060,
+        "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": 8488
       },
       "semantic_metadata": {
         "missing_feature_id_faces": 0,
@@ -279,15 +278,15 @@
       "open_edge_count": 0,
       "nonmanifold_edge_count": 0,
       "part_bboxes": {
-        "N001_upper_frame_W30_DRAFT": {
+        "N001_upper_frame_EDGE50_DRAFT": {
           "min": [
             0.0,
-            -15.0,
+            -25.0,
             0.0
           ],
           "max": [
             134.80905151367188,
-            89.34314727783203,
+            99.34314727783203,
             3.0
           ]
         },
@@ -327,37 +326,37 @@
             4.05
           ]
         },
-        "N002_lower_frame_W30_DRAFT": {
+        "N002_lower_frame_EDGE50_DRAFT": {
           "min": [
-            1.677412463387942e-17,
-            124.99999999999999,
-            1.9721522630525295e-31
+            1.67741246338794e-17,
+            115.0,
+            0.0
           ],
           "max": [
             130.343139648438,
-            233.3431482315063,
-            9.000000000000007
+            243.3431482315063,
+            9.00000000000001
           ]
         },
-        "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT": {
+        "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": {
           "min": [
-            1.677412463387942e-17,
-            265.0,
+            0.0,
+            255.0,
             -2.9582283945787943e-30
           ],
           "max": [
             130.343139648438,
-            373.34314823150635,
-            9.000000000000007
+            383.3431482315063,
+            9.00000000000001
           ]
         }
       },
       "transparent_parts": [],
       "provenance": {
-        "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-        "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-        "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-        "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+        "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+        "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+        "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+        "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
       },
       "parameters": {}
     },
@@ -367,10 +366,10 @@
       "stale": [],
       "metadata_drift": [],
       "recorded": {
-        "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-        "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-        "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-        "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+        "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+        "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+        "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+        "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
       }
     },
     "rendering_risk": {
@@ -421,7 +420,7 @@
   "parameter_state": [
     {
       "id": "body_width_increase",
-      "truth_value": 30,
+      "truth_value": 50,
       "review_value": null,
       "pending_patch_value": null,
       "preview_snapshot_value": null,
@@ -435,7 +434,7 @@
     },
     {
       "id": "side_translation",
-      "truth_value": 15,
+      "truth_value": 25,
       "review_value": null,
       "pending_patch_value": null,
       "preview_snapshot_value": null,
@@ -506,7 +505,7 @@
   ],
   "trust": {
     "authoring_truth": "current",
-    "coordinate_system": "missing",
+    "coordinate_system": "confirmed",
     "review_preview": "warning",
     "parameters": "current",
     "step": "stale",
@@ -539,7 +538,7 @@
       "manifest": {
         "path": "review/manifest.json",
         "exists": true,
-        "sha256": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532",
+        "sha256": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b",
         "status": "pass",
         "mesh_json": "cache/current_mesh.json",
         "mesh_path": "review/cache/current_mesh.json",
@@ -550,27 +549,27 @@
       "mesh_summary": {
         "path": "review/cache/current_mesh.json",
         "exists": true,
-        "sha256": "b5148fe0d18a47f1069b17911e93c81b054b39624b9a0619dce6cc145fa49457",
+        "sha256": "98ebe09584207b8e244d1e576b091abedf2834202df1f7f5f378f460a8732e56",
         "status": "pass",
-        "vertex_count": 33378,
-        "face_count": 19320,
+        "vertex_count": 40326,
+        "face_count": 23956,
         "part_count": 6,
         "feature_count": 6,
         "part_face_counts": {
-          "N001_upper_frame_W30_DRAFT": 4528,
+          "N001_upper_frame_EDGE50_DRAFT": 4496,
           "N111_shin_face_DRAFT": 2856,
           "N112_L_red_insert_DRAFT": 28,
           "N112_R_red_insert_DRAFT": 28,
-          "N002_lower_frame_W30_DRAFT": 5804,
-          "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT": 6076
+          "N002_lower_frame_EDGE50_DRAFT": 8060,
+          "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": 8488
         },
         "feature_face_counts": {
-          "N001_upper_frame_W30_DRAFT": 4528,
+          "N001_upper_frame_EDGE50_DRAFT": 4496,
           "N111_shin_face_DRAFT": 2856,
           "N112_L_red_insert_DRAFT": 28,
           "N112_R_red_insert_DRAFT": 28,
-          "N002_lower_frame_W30_DRAFT": 5804,
-          "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT": 6076
+          "N002_lower_frame_EDGE50_DRAFT": 8060,
+          "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": 8488
         },
         "semantic_metadata": {
           "missing_feature_id_faces": 0,
@@ -582,10 +581,10 @@
         "nonmanifold_edge_count": 0,
         "transparent_parts": [],
         "provenance": {
-          "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-          "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-          "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-          "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+          "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+          "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+          "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+          "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
         },
         "parameters": {}
       },
@@ -595,10 +594,10 @@
         "stale": [],
         "metadata_drift": [],
         "recorded": {
-          "source_hash": "831c6b7e29738d487bfa91aa50ddf9d013034822ca3c97f9261d2f25bf68a81d",
-          "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
-          "spec_hash": "0e924084a3d15fb7937acb33ea12e05e86831b0a37a8a3a606f1694864426d4a",
-          "manifest_hash": "ef18695282bddb9ff9bf728ce9039351c9ab2ca909ceb96647036d63bd89b532"
+          "source_hash": "a6b5bf5ba32a5cdc2b46cfc3fbcaacdaf472aa8a7747ec1776bd3a1fd06556bf",
+          "parameters_hash": "8c7d5b0a27e8af53c4b1dd33160484d3c03693adeb0c31f962cf397bd32202d1",
+          "spec_hash": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff",
+          "manifest_hash": "e8887226f37e4c8ba3cede4e8c78749457201fce4aeca6423c7ab934d01b3f4b"
         }
       },
       "rendering_risk": {
@@ -642,48 +641,37 @@
     }
   },
   "ready_states": {
-    "authoring_ready": false,
+    "authoring_ready": true,
     "review_preview_ready": true,
-    "draft_review_ready": false,
+    "draft_review_ready": true,
     "export_ready": false,
     "handoff_ready": false
   },
   "routing": {
-    "next_action": "clarify_coordinate_system",
+    "next_action": "inspect",
     "intent": "continue_existing_project",
-    "context_cost": "medium",
+    "context_cost": "tiny",
     "recommended_tags": [
-      "continue_existing_project",
-      "coordinate_system_gate"
+      "continue_existing_project"
     ],
     "minimum_reads": [
-      "validation/current_context.json",
-      "spec/current.yaml",
-      "outputs/step/manifest.json"
+      "validation/current_context.json"
     ],
     "minimum_next_reads": [
-      "validation/current_context.json",
-      "spec/current.yaml",
-      "outputs/step/manifest.json"
+      "validation/current_context.json"
     ],
     "optional_reads": [],
     "required_gates": [
-      "coordinate_system_agreement",
       "update_current_context"
     ],
     "forbidden_actions": [
-      "geometry_source_edit",
-      "export_step",
       "handoff_package"
     ],
-    "escalation_reasons": [
-      "coordinate system clarification needed: project kind is assembly; spec contains direction-sensitive layout, shell, cutout, airflow, access, or fixed-component terms"
-    ]
+    "escalation_reasons": []
   },
   "gate_plan": {
-    "for_next_action": "clarify_coordinate_system",
+    "for_next_action": "inspect",
     "required": [
-      "coordinate_system_agreement",
       "update_current_context"
     ],
     "optional": [
@@ -700,14 +688,10 @@
       }
     ]
   },
-  "blockers": [
-    "coordinate system agreement is required before direction-sensitive modeling"
-  ],
+  "blockers": [],
   "assumptions": [],
   "input_precision": {},
   "recommended_next_reads": [
-    "validation/current_context.json",
-    "spec/current.yaml",
-    "outputs/step/manifest.json"
+    "validation/current_context.json"
   ]
 }

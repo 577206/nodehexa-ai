@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-31",
+  "left": {
+    "sda": 10,
+    "scl": 11,
+    "address": "0x3c",
+    "init": "ESP_OK"
+  },
+  "right": {
+    "sda": 6,
+    "scl": 7,
+    "address": "0x3c",
+    "init": "ESP_OK"
+  },
+  "profile": "SH1106 128x64 (visual confirmation pending)",
+  "flash_sha256": "e00306e1980fa1356ddf802b799b95d348d2957e09deca6f7f18102433950f9c",
+  "observation_seconds": 25,
+  "frame_errors_observed": false,
+  "visual_verified": false,
+  "speech_animation_verified": false,
+  "backup": "backups/eyes-pre-app-20261031.bin"
+}

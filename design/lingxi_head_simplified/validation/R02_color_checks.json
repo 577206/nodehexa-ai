@@ -1,0 +1,101 @@
+{
+  "revision": "R02",
+  "state": "layout_prototype_not_production",
+  "physical_parts": 4,
+  "material_region_meshes": 6,
+  "references_excluded": true,
+  "overlaps": [
+    {
+      "a": "R02_ORANGE_BODY",
+      "b": "R02_YELLOW_SIDE_L",
+      "mm3": 0
+    },
+    {
+      "a": "R02_ORANGE_BODY",
+      "b": "R02_YELLOW_SIDE_R",
+      "mm3": 0
+    },
+    {
+      "a": "R02_ORANGE_BODY",
+      "b": "R02_YELLOW_VISOR_FRAME",
+      "mm3": 0
+    },
+    {
+      "a": "R02_ORANGE_BODY",
+      "b": "R02_CLEAR_CANOPY",
+      "mm3": 0
+    },
+    {
+      "a": "R02_ORANGE_BODY",
+      "b": "R02_ORANGE_BASE",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_L",
+      "b": "R02_YELLOW_SIDE_R",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_L",
+      "b": "R02_YELLOW_VISOR_FRAME",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_L",
+      "b": "R02_CLEAR_CANOPY",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_L",
+      "b": "R02_ORANGE_BASE",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_R",
+      "b": "R02_YELLOW_VISOR_FRAME",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_R",
+      "b": "R02_CLEAR_CANOPY",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_SIDE_R",
+      "b": "R02_ORANGE_BASE",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_VISOR_FRAME",
+      "b": "R02_CLEAR_CANOPY",
+      "mm3": 0
+    },
+    {
+      "a": "R02_YELLOW_VISOR_FRAME",
+      "b": "R02_ORANGE_BASE",
+      "mm3": 0
+    },
+    {
+      "a": "R02_CLEAR_CANOPY",
+      "b": "R02_ORANGE_BASE",
+      "mm3": 0
+    }
+  ],
+  "fixed_bowl_base_intersection_mm3": 0,
+  "strict_lib3mf": {
+    "warnings": 0,
+    "meshes": 6,
+    "build_items": 4,
+    "color_groups": 1
+  },
+  "sha256": "3fa444901cf2e4af6bf77ef087c78e33223e29c8d1a3cb56faf60fec2033ad5b",
+  "limitations": [
+    "OLED PCB envelope approximate; pin-inclusive thickness, active display and hole centers unmeasured",
+    "OLED carrier/mask not finalized, references excluded",
+    "Camera mount, other electronics and battery packaging not finalized",
+    "Base screws and removable canopy retention require physical verification",
+    "Magnetic connector axial compression and pull strength not verified",
+    "Assembled coordinates, not arranged build plate; no printer settings",
+    "Clear color is visualization, not assurance of optical transparency"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema": "engineering-3d-modeling.review_manifest.v1",
   "project": {
-    "name": "BLUE / WHITE - old W30 geometry; requested edge W50 pending",
+    "name": "BLUE / WHITE - EDGE50 fixed central opening",
     "kind": "assembly",
     "units": "mm"
   },
@@ -18,8 +18,8 @@
   },
   "parts": [
     {
-      "id": "N001_upper_frame_W30_DRAFT",
-      "label": "N001_upper_frame_W30_DRAFT",
+      "id": "N001_upper_frame_EDGE50_DRAFT",
+      "label": "N001_upper_frame_EDGE50_DRAFT",
       "visible": true,
       "color": "#e5edf7"
     },
@@ -42,14 +42,14 @@
       "color": "#086acc"
     },
     {
-      "id": "N002_lower_frame_W30_DRAFT",
-      "label": "N002_lower_frame_W30_DRAFT",
+      "id": "N002_lower_frame_EDGE50_DRAFT",
+      "label": "N002_lower_frame_EDGE50_DRAFT",
       "visible": true,
       "color": "#e5edf7"
     },
     {
-      "id": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
-      "label": "N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT",
+      "id": "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT",
+      "label": "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT",
       "visible": true,
       "color": "#e5edf7"
     }

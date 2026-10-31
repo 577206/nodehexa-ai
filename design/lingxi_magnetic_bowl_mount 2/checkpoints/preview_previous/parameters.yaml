@@ -1,0 +1,57 @@
+schema: engineering-3d-modeling.parameters.v1
+units: mm
+parameters:
+  frame_length:
+    value: 134.80905151367188
+    unit: mm
+    role: EDGE50 upper frame reference only
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved
+  frame_width:
+    value: 124.34314727783203
+    unit: mm
+    role: EDGE50 upper frame reference only
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved
+  cover_hole_pitch:
+    value: 57.00413680076599
+    unit: mm
+    role: unchanged original cover-hole center spacing
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved
+  connector_outline_length:
+    value: 19.54
+    unit: mm
+    role: dimensioned image nominal, verify purchased variant
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved
+  connector_width:
+    value: 4.0
+    unit: mm
+    role: dimensioned image nominal
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved
+  connector_pitch:
+    value: 2.54
+    unit: mm
+    role: dimensioned image nominal
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: No geometry generated while fit dimensions unresolved

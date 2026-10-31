@@ -1,0 +1,152 @@
+{
+  "features": [
+    {
+      "id": "fixed_hood",
+      "source": "source/model.py:fixed_hood",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD_valid; physical fit pending"
+    },
+    {
+      "id": "two_recessed_screw_wells",
+      "source": "source/model.py:two_recessed_screw_wells",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD_valid; physical fit pending"
+    },
+    {
+      "id": "connector_pocket",
+      "source": "source/model.py:connector_pocket",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD_valid; physical fit pending"
+    },
+    {
+      "id": "head_keyed_nest",
+      "source": "source/model.py:head_keyed_nest",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD_valid; physical fit pending"
+    },
+    {
+      "id": "wire_exit",
+      "source": "source/model.py:wire_exit",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD_valid; physical fit pending"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "Do not change or drill original frame; use exactly its two cover holes",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Two screws fix only the hood to chassis, never the detachable head",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "User requested magnetic-only head retention; no latch",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Bottom remains open; do not create a full lower floor",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Preserve servo pockets, local widths and joint interfaces",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Keep both power supplies independent; no battery/power rail through the 3 signal wires",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Glue only connector housing support lands, not pins, springs or contact face",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    },
+    {
+      "id": "Do not infer actual robot heights or cover width from perspective photos",
+      "source": "spec/current.yaml; source/model.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "design_contract; see physical_not_verified limitations"
+    }
+  ],
+  "validation_targets": [
+    {
+      "id": "hole_center_distance_mm",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "base_outer_mm",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "maximum_height_mm",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "screw_bearing_thickness_mm",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "electronics",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "head_nest",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "screw_engagement",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "hood",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "screw_wells",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "connector",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    },
+    {
+      "id": "motion",
+      "source": "source/model.py; source/build_review.py",
+      "evidence": "validation/fit_checks.json",
+      "status": "CAD evidence or explicitly deferred physical requirement"
+    }
+  ]
+}

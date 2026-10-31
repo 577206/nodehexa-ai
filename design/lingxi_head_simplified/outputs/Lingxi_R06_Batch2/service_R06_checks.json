@@ -1,0 +1,1015 @@
+{
+  "schema": "lingxi.R06.service_access.v1",
+  "generated_at": "2026-10-31T10:19:14.122493+00:00",
+  "units": "mm",
+  "mode": "read_only_final_cache",
+  "provenance": [
+    {
+      "part": "H01_MAIN_SHELL",
+      "path": "review/cache/R06_H01_MAIN_SHELL.brep",
+      "sha256": "2827a896b3148a40287bf3d2128b29bd32acba6eeb99eec260c37b2b6a1be026"
+    },
+    {
+      "part": "H02_DOCK_RECEIVER",
+      "path": "review/cache/R06_H02_DOCK_RECEIVER.brep",
+      "sha256": "0ad7a21152824f1068c6705c5173779e13b1e12a66f4ab2c07dfe863f89a56ef"
+    },
+    {
+      "part": "H03_CLEAR_VISOR",
+      "path": "review/cache/R06_H03_CLEAR_VISOR.brep",
+      "sha256": "95ff06a97895124af3aa4e94107021b9635693f072ad22f03bef1c7442e0a50c"
+    },
+    {
+      "part": "H04_VISOR_FRAME",
+      "path": "review/cache/R06_H04_VISOR_FRAME.brep",
+      "sha256": "44d08ed94cdb6972021de7f9e51d2bcc81865a7c47b6f87477792a52dbacd7fa"
+    },
+    {
+      "part": "D01_VENT_FRAME_L",
+      "path": "review/cache/R06_D01_VENT_FRAME_L.brep",
+      "sha256": "04bbcb43f9c1782d85f607609a96f9e8cf9ba3721d0ed6f85246cff6cda986a7"
+    },
+    {
+      "part": "D03_VENT_GRILLE_L",
+      "path": "review/cache/R06_D03_VENT_GRILLE_L.brep",
+      "sha256": "b7ca86cf83e859a617b106f0cfc77384a954629437c0be0bb62003832b73a603"
+    },
+    {
+      "part": "D02_VENT_FRAME_R",
+      "path": "review/cache/R06_D02_VENT_FRAME_R.brep",
+      "sha256": "37e34766a0430c36782b613dcbdf625e60cac42a7e7e813cbaffdf10beec85bb"
+    },
+    {
+      "part": "D04_VENT_GRILLE_R",
+      "path": "review/cache/R06_D04_VENT_GRILLE_R.brep",
+      "sha256": "71a3c8debe8a581b1f40db6b8f93e6de483cfc5f97f4402e83a834f474904c0d"
+    },
+    {
+      "part": "D05_SHOULDER_ORANGE_L",
+      "path": "review/cache/R06_D05_SHOULDER_ORANGE_L.brep",
+      "sha256": "12366d9429e8307e5e93f7361482d0ac008668519d826be7bf7b442ad17d0ea4"
+    },
+    {
+      "part": "D06_SHOULDER_ORANGE_R",
+      "path": "review/cache/R06_D06_SHOULDER_ORANGE_R.brep",
+      "sha256": "85c0e45efa1bceec90769db2ef353dd4aa3b10fddad6bd78526c1e94dba21443"
+    },
+    {
+      "part": "D07_SHOULDER_GRAY_L",
+      "path": "review/cache/R06_D07_SHOULDER_GRAY_L.brep",
+      "sha256": "91532c37ad04ddc1f7d8394bd7346137d7e6df8010bc2ddae33a7ad2db73b43f"
+    },
+    {
+      "part": "D08_SHOULDER_GRAY_R",
+      "path": "review/cache/R06_D08_SHOULDER_GRAY_R.brep",
+      "sha256": "78bb73815dede5cfa2226a6ad36af9718389816897bee4abc9f3bdfd5c86d856"
+    },
+    {
+      "part": "D09_ROUND_ORANGE_L",
+      "path": "review/cache/R06_D09_ROUND_ORANGE_L.brep",
+      "sha256": "0c38437b8ea85990ce9fbeb1e170afc78ab69c912178094728f2868e9c54395a"
+    },
+    {
+      "part": "D10_ROUND_ORANGE_R",
+      "path": "review/cache/R06_D10_ROUND_ORANGE_R.brep",
+      "sha256": "bdfde23a01aca395be9e81ab91f40846835a2f884327efcde23ad4d6237dbfff"
+    },
+    {
+      "part": "D11_ROUND_GRAY_L",
+      "path": "review/cache/R06_D11_ROUND_GRAY_L.brep",
+      "sha256": "1f78bd3fea20dec4581197d63c7c9b6559ed27093f4b2b5b4fc37020bd3ce97d"
+    },
+    {
+      "part": "D12_ROUND_GRAY_R",
+      "path": "review/cache/R06_D12_ROUND_GRAY_R.brep",
+      "sha256": "542e50f812692f95ebc068f837e82206d3f14c34ff23bff89bfa104dbec3afc6"
+    },
+    {
+      "part": "D13_CAMERA_BEZEL",
+      "path": "review/cache/R06_D13_CAMERA_BEZEL.brep",
+      "sha256": "777b9ae972ef0f136072e932473de3ccf38f571229944078810dc194b3c16c4d"
+    },
+    {
+      "part": "D14_PHONE_BACK",
+      "path": "review/cache/R06_D14_PHONE_BACK.brep",
+      "sha256": "91cac9371ac73338abda387656fc5c281915a032065601c02cebfa0ae8b7223c"
+    },
+    {
+      "part": "D15_PHONE_JAW_L",
+      "path": "review/cache/R06_D15_PHONE_JAW_L.brep",
+      "sha256": "f3d56784c7b66cc4acad1d35f60b7b9416e21007d6a52548a2a6b125bfa208e1"
+    },
+    {
+      "part": "D16_PHONE_JAW_R",
+      "path": "review/cache/R06_D16_PHONE_JAW_R.brep",
+      "sha256": "e891dd6d5509d2b0925d5a000d6f3bdcde7ebd8896343371dc7f23199224eab2"
+    }
+  ],
+  "source_sha256": "8004edf538bc666910fe666b6e4d2739ef647160cefb17c45b62fa02c6c61074",
+  "volume_tolerance_mm3": 1e-05,
+  "physical_fit_verified": false,
+  "USB": {
+    "probe_center_mm": [
+      -47.5,
+      -15,
+      41.5
+    ],
+    "probe_size_mm": [
+      45,
+      14,
+      9
+    ],
+    "insertion_axis": [
+      1,
+      0,
+      0
+    ],
+    "scope": "Existing 14 x 9 mm minimum plug corridor; actual cable head may require more clearance.",
+    "parts": [
+      {
+        "part": "H01_MAIN_SHELL",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "H02_DOCK_RECEIVER",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "H03_CLEAR_VISOR",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "H04_VISOR_FRAME",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D01_VENT_FRAME_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D03_VENT_GRILLE_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D02_VENT_FRAME_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D04_VENT_GRILLE_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D05_SHOULDER_ORANGE_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D06_SHOULDER_ORANGE_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D07_SHOULDER_GRAY_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D08_SHOULDER_GRAY_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D09_ROUND_ORANGE_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D10_ROUND_ORANGE_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D11_ROUND_GRAY_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D12_ROUND_GRAY_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D13_CAMERA_BEZEL",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D14_PHONE_BACK",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D15_PHONE_JAW_L",
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "part": "D16_PHONE_JAW_R",
+        "intersection_mm3": 0.0,
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "visor_removal": {
+    "translation_axis": [
+      0,
+      1,
+      0
+    ],
+    "distance_mm": 100,
+    "assembly_condition": "Remove the two lower M2 visor screws, then translate H03 and H04 together. Decorations and body remain fixed.",
+    "sampled_positions_mm": [
+      0,
+      0.1,
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      20,
+      40,
+      75,
+      100
+    ],
+    "sample_checks": [
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H03_CLEAR_VISOR",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 0.5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 1,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 2,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D07_SHOULDER_GRAY_L",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D08_SHOULDER_GRAY_R",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 5,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D05_SHOULDER_ORANGE_L",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D06_SHOULDER_ORANGE_R",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 10,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 20,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H01_MAIN_SHELL",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "H02_DOCK_RECEIVER",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      },
+      {
+        "moving": "H04_VISOR_FRAME",
+        "fixed": "D13_CAMERA_BEZEL",
+        "translation_mm": 40,
+        "intersection_mm3": 0.0,
+        "pass": true
+      }
+    ],
+    "face_prism_sweeps": [
+      {
+        "part": "H03_CLEAR_VISOR",
+        "method": "CAD prisms from every non-Y-parallel boundary face extruded +Y by100mm; 3x3 UV normal gate, bounding-box early rejection. Initial-volume checks included above.",
+        "faces_considered": 58,
+        "faces_parallel": 24,
+        "faces_outside_static_bounds": 4,
+        "prisms_checked": 30,
+        "errors": [],
+        "intersections": [],
+        "pass": true
+      },
+      {
+        "part": "H04_VISOR_FRAME",
+        "method": "CAD prisms from every non-Y-parallel boundary face extruded +Y by100mm; 3x3 UV normal gate, bounding-box early rejection. Initial-volume checks included above.",
+        "faces_considered": 200,
+        "faces_parallel": 84,
+        "faces_outside_static_bounds": 30,
+        "prisms_checked": 86,
+        "errors": [],
+        "intersections": [],
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "pass": true,
+  "limitations": [
+    "Positive-volume CAD collision checks do not guarantee real printed clearances or flexible cable bend radius.",
+    "Removable visor parts move together; metal visor screws must be removed before extraction.",
+    "No model files are modified by this audit."
+  ]
+}

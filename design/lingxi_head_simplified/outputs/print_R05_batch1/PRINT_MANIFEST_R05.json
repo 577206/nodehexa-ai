@@ -1,0 +1,46 @@
+{
+  "revision": "R05",
+  "status": "fit_print_prototype",
+  "source_provenance": {
+    "source_hash": "affe5b9b26ab10ce5bbf54d9178606b0a9d880f2a2940e4f93d74f229e785460",
+    "parameters_hash": "eef5822af45b841334e249b08862d5b781dfaad5dc284ded1c4ffc5b717d2919",
+    "spec_hash": "b853be2173d92bc1165abd68498b13452b8b5af07566ca3068fee11e601f1af7",
+    "manifest_hash": "8c01600fcf33aeaf303179bc01490fa6d32eb789d24508a6c72793d4f15a34c7",
+    "R02_archive_hash": "9f2d42c31d3b1a699c8827c43426969f377d4369785be6b5584e72fe94c50af7",
+    "R03_archive_hash": "dac772d22a40b4bd7e0fea94e973d07d7b9aec0a8bcbbaeb08044037fc096112",
+    "R04_archive_hash": "d0df827312b79316a21c534eaf6319198a6508040962d2d9b4e88260d85ee2d5"
+  },
+  "files": [
+    {
+      "file": "H01_MAIN_SHELL_R05_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "gray",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -10.0
+      ],
+      "sha256": "bc79fb7b144e5b56a5e130602d2faf66d7a00ba852866aa32c301d8652b0c67a"
+    },
+    {
+      "file": "H02_DOCK_RECEIVER_R05_1pc_mm.stl",
+      "quantity": 1,
+      "material_color": "gray",
+      "unit": "mm",
+      "assembly_to_STL_translation_mm": [
+        0,
+        0,
+        -0.0
+      ],
+      "sha256": "9b3e5da8bbef400aff949d8096461b548fe1cc38484fa21b0a58b9509ae739f3"
+    },
+    {
+      "file": "Lingxi_R05_Batch1_GRAY_2SeparateParts_Assembly.3mf",
+      "two_separate_parts": true,
+      "unit": "mm",
+      "strict_3mf_warnings": 0,
+      "sha256": "8b3bcddd25f0313a0b9f7ecebc001c01e2a2742134006ea80cc88fb73faa5b00"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "static_audit_warning_reason": "audit_spec_coverage searches only entrypoint source; it does not follow imported archive functions. Eight warned parameters remain in actual call chain.",
+  "actual_call_chain": {
+    "base_thickness,dock_pocket,dock_depth,dock_radial_clearance,bowl_height": "model.bottom_dock -> model_R04_archive.bottom_dock -> model_R03_archive.bottom_dock",
+    "oled_board_width,oled_board_height,oled_center_spacing": "model.hardware_references -> model_R04_archive.hardware_references -> model_R04_archive.oled_references"
+  },
+  "limits": "reference-only electronics, untested physical tolerances; no claim of finished device"
+}

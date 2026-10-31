@@ -1,0 +1,910 @@
+{
+  "schema": "engineering-3d-modeling.current_context.v1",
+  "generated_at": "2026-10-31T05:48:05.756815Z",
+  "project": {
+    "name": "灵犀磁吸驾驶舱固定罩座",
+    "kind": "part",
+    "units": "mm"
+  },
+  "work_state": {
+    "phase": "draft_review"
+  },
+  "source": {
+    "entrypoint": "source/model.py"
+  },
+  "pending_review": {
+    "annotations": 0,
+    "parameter_patches": 0
+  },
+  "review": {
+    "mesh": {
+      "path": "review/cache/current_mesh.json",
+      "exists": true,
+      "sha256": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7",
+      "modified_at": "2026-10-31T05:46:28.124843Z",
+      "provenance": {
+        "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+        "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+        "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+        "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      }
+    }
+  },
+  "step": {
+    "manifest": null,
+    "state": "not_exported",
+    "stale": null,
+    "stale_reason": "",
+    "files": [],
+    "export_allowed": true
+  },
+  "preview": {
+    "status": "warning",
+    "reason": "assembly_rendering_large_reference_group",
+    "stale_reasons": [],
+    "metadata_drift": [],
+    "provenance": {
+      "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+      "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+      "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+      "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+    }
+  },
+  "preview_checkpoint": {
+    "available": true,
+    "path": "checkpoints/preview_previous",
+    "created_at": "2026-10-31T05:41:40.818072Z",
+    "reason": "Build first bowl cover after 70x70x20 envelope, pan head screws, and both clear screw corridors confirmed"
+  },
+  "coordinate_state": {
+    "status": "confirmed",
+    "usable": true,
+    "units": "mm",
+    "origin": "midpoint of two original upper-frame cover holes, Z=0 at upper-frame",
+    "axes": {
+      "x": {
+        "positive": "right when viewed from the front",
+        "negative": "left when viewed from the front"
+      },
+      "y": {
+        "positive": "front / user-facing direction",
+        "negative": "rear / back direction"
+      },
+      "z": {
+        "positive": "up",
+        "negative": "down / bottom"
+      }
+    },
+    "missing": [],
+    "ambiguous_terms": [],
+    "direction_terms": [],
+    "direction_aliases": {
+      "front": "+Y",
+      "rear": "-Y",
+      "back": "-Y",
+      "left": "-X",
+      "right": "+X",
+      "top": "+Z",
+      "bottom": "-Z",
+      "up": "+Z",
+      "down": "-Z"
+    },
+    "component_frames": {},
+    "requires_clarification": false,
+    "required_reasons": [
+      "spec contains direction-sensitive layout, shell, cutout, airflow, access, or fixed-component terms"
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "errors": [],
+    "warnings": [
+      "phase draft_review allows missing STEP/STP during draft/review work (phase:draft_review); do not call this state accepted, complete, or release-ready",
+      "review preview assembly_rendering_large_reference_group: large imported/reference preview groups may skip detailed edge sorting"
+    ]
+  },
+  "coverage": {
+    "status": "pass",
+    "feature_gaps": [],
+    "unused_geometry_parameters": [],
+    "placement_gaps": [],
+    "constraint_gaps": [],
+    "validation_target_gaps": []
+  },
+  "key_parameters": [
+    {
+      "id": "electronics_length",
+      "value": 70,
+      "unit": "mm",
+      "role": "confirmed user bounding length"
+    },
+    {
+      "id": "electronics_width",
+      "value": 70,
+      "unit": "mm",
+      "role": "confirmed user bounding width"
+    },
+    {
+      "id": "electronics_height",
+      "value": 20,
+      "unit": "mm",
+      "role": "confirmed user highest point"
+    },
+    {
+      "id": "cover_hole_pitch",
+      "value": 57.00413680076599,
+      "unit": "mm",
+      "role": "original unmodified cover hole spacing"
+    },
+    {
+      "id": "base_outer",
+      "value": 86,
+      "unit": "mm",
+      "role": "R01 lower outer envelope"
+    },
+    {
+      "id": "roof_outer",
+      "value": 82,
+      "unit": "mm",
+      "role": "R01 upper outer envelope"
+    },
+    {
+      "id": "inner_bottom",
+      "value": 80,
+      "unit": "mm",
+      "role": "R01 lower cavity"
+    },
+    {
+      "id": "inner_top",
+      "value": 76,
+      "unit": "mm",
+      "role": "R01 minimum upper cavity"
+    }
+  ],
+  "layout_facts": {},
+  "unresolved": {
+    "blockers": [],
+    "questions": []
+  },
+  "review_preview_diagnostic": {
+    "schema": "engineering-3d-modeling.review_preview_diagnostic.v1",
+    "generated_at": "2026-10-31T05:48:05.717637Z",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+    "status": "warn",
+    "trust": {
+      "preview": "warning",
+      "reason": "assembly_rendering_large_reference_group"
+    },
+    "checks": [
+      {
+        "check": "review-template-identity",
+        "status": "pass"
+      },
+      {
+        "check": "manifest-asset-paths",
+        "status": "pass"
+      },
+      {
+        "check": "preview-mesh-shape-topology",
+        "status": "pass"
+      },
+      {
+        "check": "preview-provenance",
+        "status": "pass"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "assembly_rendering_large_reference_group",
+        "message": "large imported/reference preview groups may skip detailed edge sorting",
+        "parts": [
+          "B001_FIXED_MAGNETIC_HOOD_R01"
+        ]
+      }
+    ],
+    "errors": [],
+    "template": {
+      "path": "review/index.html",
+      "exists": true,
+      "sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "expected_sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "status": "pass"
+    },
+    "manifest": {
+      "path": "review/manifest.json",
+      "exists": true,
+      "sha256": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9",
+      "status": "pass",
+      "mesh_json": "cache/current_mesh.json",
+      "mesh_path": "review/cache/current_mesh.json",
+      "adapter_js": null,
+      "adapter_path": null,
+      "mesh_closed": true
+    },
+    "mesh": {
+      "path": "review/cache/current_mesh.json",
+      "exists": true,
+      "sha256": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7",
+      "status": "pass",
+      "vertex_count": 4460,
+      "face_count": 4336,
+      "part_count": 1,
+      "feature_count": 4,
+      "part_face_counts": {
+        "B001_FIXED_MAGNETIC_HOOD_R01": 4336
+      },
+      "feature_face_counts": {
+        "fixed_hood": 1334,
+        "head_keyed_nest": 516,
+        "two_recessed_screw_wells": 1580,
+        "connector_pocket": 906
+      },
+      "semantic_metadata": {
+        "missing_feature_id_faces": 0,
+        "missing_world_point_faces": 0,
+        "missing_normal_faces": 0
+      },
+      "degenerate_faces": {},
+      "open_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "part_bboxes": {
+        "B001_FIXED_MAGNETIC_HOOD_R01": {
+          "min": [
+            -43.0,
+            -43.0,
+            -3.7470027081099033e-16
+          ],
+          "max": [
+            43.0,
+            43.0,
+            29.0
+          ]
+        }
+      },
+      "transparent_parts": [],
+      "provenance": {
+        "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+        "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+        "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+        "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      },
+      "parameters": {}
+    },
+    "provenance": {
+      "status": "current",
+      "missing": [],
+      "stale": [],
+      "metadata_drift": [],
+      "recorded": {
+        "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+        "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+        "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+        "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+      }
+    },
+    "rendering_risk": {
+      "status": "warning",
+      "risks": [
+        "large_reference_group"
+      ],
+      "overlap_pairs": [],
+      "transparent_parts": []
+    },
+    "assembly_overlap_risk": {
+      "status": "clear",
+      "pairs": []
+    },
+    "adapter": {
+      "declared": false,
+      "path": null,
+      "exists": false,
+      "sha256": null,
+      "adapter_parameter_ids": [],
+      "status": "not_declared"
+    },
+    "review_controls": {
+      "status": "clear",
+      "risks": []
+    },
+    "warning_count": 1,
+    "error_count": 0
+  },
+  "parameter_state": [
+    {
+      "id": "electronics_length",
+      "truth_value": 70,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "electronics_width",
+      "truth_value": 70,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "electronics_height",
+      "truth_value": 20,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "cover_hole_pitch",
+      "truth_value": 57.00413680076599,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "base_outer",
+      "truth_value": 86,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "roof_outer",
+      "truth_value": 82,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "inner_bottom",
+      "truth_value": 80,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "inner_top",
+      "truth_value": 76,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "outer_corner_radius",
+      "truth_value": 7,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "inner_corner_radius",
+      "truth_value": 4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "ceiling_height",
+      "truth_value": 24,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "roof_thickness",
+      "truth_value": 3,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "well_outer_diameter",
+      "truth_value": 8,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "well_access_diameter",
+      "truth_value": 5.2,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "screw_clearance_diameter",
+      "truth_value": 2.4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "screw_seat_thickness",
+      "truth_value": 2.4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "connector_length",
+      "truth_value": 19.54,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "connector_width",
+      "truth_value": 4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "connector_height",
+      "truth_value": 4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": false,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "pocket_length",
+      "truth_value": 20,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "pocket_width",
+      "truth_value": 4.5,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "pocket_floor",
+      "truth_value": 25,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "connector_boss_top",
+      "truth_value": 29,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "boss_length",
+      "truth_value": 26,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "boss_width",
+      "truth_value": 10,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "tail_length",
+      "truth_value": 12,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "tail_width",
+      "truth_value": 2.4,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "guide_outer",
+      "truth_value": 76,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "guide_inner",
+      "truth_value": 72,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    },
+    {
+      "id": "guide_height",
+      "truth_value": 2,
+      "review_value": null,
+      "pending_patch_value": null,
+      "preview_snapshot_value": null,
+      "unit": "mm",
+      "affects_geometry": true,
+      "source_consumed": true,
+      "review_exposed": false,
+      "preview_bound": false,
+      "editable": false,
+      "status": "backend_only"
+    }
+  ],
+  "trust": {
+    "authoring_truth": "current",
+    "coordinate_system": "confirmed",
+    "review_preview": "warning",
+    "parameters": "current",
+    "step": "not_exported",
+    "handoff": "not_requested"
+  },
+  "review_state": {
+    "pending_input": {
+      "parameter_patches": 0,
+      "annotations": 0
+    },
+    "annotation_clarity": {
+      "status": "clear",
+      "blocking_count": 0,
+      "assumption_count": 0,
+      "high_risk_count": 0,
+      "items": []
+    },
+    "preview": {
+      "status": "warning",
+      "trust": "warning",
+      "provenance": "present",
+      "mesh": "review/cache/current_mesh.json",
+      "template": {
+        "path": "review/index.html",
+        "exists": true,
+        "sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+        "expected_sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+        "status": "pass"
+      },
+      "manifest": {
+        "path": "review/manifest.json",
+        "exists": true,
+        "sha256": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9",
+        "status": "pass",
+        "mesh_json": "cache/current_mesh.json",
+        "mesh_path": "review/cache/current_mesh.json",
+        "adapter_js": null,
+        "adapter_path": null,
+        "mesh_closed": true
+      },
+      "mesh_summary": {
+        "path": "review/cache/current_mesh.json",
+        "exists": true,
+        "sha256": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7",
+        "status": "pass",
+        "vertex_count": 4460,
+        "face_count": 4336,
+        "part_count": 1,
+        "feature_count": 4,
+        "part_face_counts": {
+          "B001_FIXED_MAGNETIC_HOOD_R01": 4336
+        },
+        "feature_face_counts": {
+          "fixed_hood": 1334,
+          "head_keyed_nest": 516,
+          "two_recessed_screw_wells": 1580,
+          "connector_pocket": 906
+        },
+        "semantic_metadata": {
+          "missing_feature_id_faces": 0,
+          "missing_world_point_faces": 0,
+          "missing_normal_faces": 0
+        },
+        "degenerate_faces": {},
+        "open_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "transparent_parts": [],
+        "provenance": {
+          "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+          "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+          "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+          "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+        },
+        "parameters": {}
+      },
+      "provenance_summary": {
+        "status": "current",
+        "missing": [],
+        "stale": [],
+        "metadata_drift": [],
+        "recorded": {
+          "source_hash": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+          "parameters_hash": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+          "spec_hash": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+          "manifest_hash": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9"
+        }
+      },
+      "rendering_risk": {
+        "status": "warning",
+        "risks": [
+          "large_reference_group"
+        ],
+        "overlap_pairs": [],
+        "transparent_parts": []
+      },
+      "adapter": {
+        "declared": false,
+        "path": null,
+        "exists": false,
+        "sha256": null,
+        "adapter_parameter_ids": [],
+        "status": "not_declared"
+      },
+      "review_controls": {
+        "status": "clear",
+        "risks": []
+      }
+    },
+    "parameter_panel": {
+      "status": "current",
+      "exposed_count": 0,
+      "stale_count": 0
+    },
+    "refs": {
+      "status": "available",
+      "count": 3
+    }
+  },
+  "ready_states": {
+    "authoring_ready": true,
+    "review_preview_ready": true,
+    "draft_review_ready": true,
+    "export_ready": false,
+    "handoff_ready": false
+  },
+  "routing": {
+    "next_action": "inspect",
+    "intent": "continue_existing_project",
+    "context_cost": "tiny",
+    "recommended_tags": [
+      "continue_existing_project"
+    ],
+    "minimum_reads": [
+      "validation/current_context.json"
+    ],
+    "minimum_next_reads": [
+      "validation/current_context.json"
+    ],
+    "optional_reads": [],
+    "required_gates": [
+      "update_current_context"
+    ],
+    "forbidden_actions": [
+      "handoff_package"
+    ],
+    "escalation_reasons": []
+  },
+  "gate_plan": {
+    "for_next_action": "inspect",
+    "required": [
+      "update_current_context"
+    ],
+    "optional": [
+      "export_step_after_preview_confirmation",
+      "diagnose_review_preview"
+    ],
+    "skipped": [
+      {
+        "gate": "step_export",
+        "reason": "draft review iteration; user did not request STEP"
+      },
+      {
+        "gate": "handoff_package",
+        "reason": "handoff package was not requested"
+      }
+    ]
+  },
+  "blockers": [],
+  "assumptions": [],
+  "input_precision": {},
+  "recommended_next_reads": [
+    "validation/current_context.json"
+  ]
+}

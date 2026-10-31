@@ -1,0 +1,268 @@
+{
+  "schema": "lingxi.visor_R05A.independent_cad_audit.v1",
+  "generated_at": "2026-10-31T09:46:46.543902+00:00",
+  "units": "mm",
+  "scope": "Read-only independent BREP verification; only this audit report is written. Fixed R05 H01 and H02 remain unchanged. Removal means H03/H04 move together along +Y after lower screws are removed.",
+  "source": {
+    "path": "source/visor_R05A.py",
+    "sha256": "5d44e1e485d76e80bf138f24618c2f300b9408f5f2f0b7145b4fed7e81ac926a"
+  },
+  "volume_tolerance_mm3": 1e-06,
+  "parts": {
+    "H01_MAIN_SHELL": {
+      "path": "review/cache/R05_H01_MAIN_SHELL.brep",
+      "sha256": "62762140b2e33e9d78d2046ac17f7aa0fd4da3e5203e1121b58420fecb63063b",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 120848.09777099492,
+      "face_count": 371,
+      "face_types": {
+        "GeomType.BSPLINE": 108,
+        "GeomType.PLANE": 179,
+        "GeomType.CYLINDER": 84
+      },
+      "bbox_mm": {
+        "min": [
+          -62.6000001,
+          -67.0000001,
+          9.9999999
+        ],
+        "max": [
+          62.6000001,
+          74.00000010000001,
+          111.80000009999999
+        ]
+      }
+    },
+    "H02_DOCK_RECEIVER": {
+      "path": "review/cache/R05_H02_DOCK_RECEIVER.brep",
+      "sha256": "0ad7a21152824f1068c6705c5173779e13b1e12a66f4ab2c07dfe863f89a56ef",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 83631.12894738332,
+      "face_count": 157,
+      "face_types": {
+        "GeomType.PLANE": 83,
+        "GeomType.BSPLINE": 36,
+        "GeomType.CYLINDER": 38
+      },
+      "bbox_mm": {
+        "min": [
+          -56.840000100000005,
+          -63.840000100000005,
+          -6.999999998608054e-07
+        ],
+        "max": [
+          56.840000100000005,
+          69.8000001,
+          34.0
+        ]
+      }
+    },
+    "H03_CLEAR_VISOR": {
+      "path": "review/cache/R05A_H03_CLEAR_VISOR.brep",
+      "sha256": "95ff06a97895124af3aa4e94107021b9635693f072ad22f03bef1c7442e0a50c",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 7985.755038883716,
+      "face_count": 58,
+      "face_types": {
+        "GeomType.BSPLINE": 32,
+        "GeomType.PLANE": 16,
+        "GeomType.CYLINDER": 10
+      },
+      "bbox_mm": {
+        "min": [
+          -42.00000010000003,
+          22.099999899999972,
+          33.4999999
+        ],
+        "max": [
+          42.00000010000003,
+          82.50000010000002,
+          111.70000009999998
+        ]
+      }
+    },
+    "H04_VISOR_FRAME": {
+      "path": "review/cache/R05A_H04_VISOR_FRAME.brep",
+      "sha256": "44d08ed94cdb6972021de7f9e51d2bcc81865a7c47b6f87477792a52dbacd7fa",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9914.625588714458,
+      "face_count": 200,
+      "face_types": {
+        "GeomType.BSPLINE": 100,
+        "GeomType.PLANE": 76,
+        "GeomType.CYLINDER": 24
+      },
+      "bbox_mm": {
+        "min": [
+          -51.4000001,
+          20.0,
+          32.4999999
+        ],
+        "max": [
+          51.4000001,
+          86.50000000000001,
+          113.10000009999999
+        ]
+      }
+    }
+  },
+  "assembly_pairs": [
+    {
+      "parts": [
+        "H03_CLEAR_VISOR",
+        "H01_MAIN_SHELL"
+      ],
+      "intersection_volume_mm3": 0,
+      "minimum_distance_mm": 0.0,
+      "pass": true
+    },
+    {
+      "parts": [
+        "H03_CLEAR_VISOR",
+        "H02_DOCK_RECEIVER"
+      ],
+      "intersection_volume_mm3": 0,
+      "minimum_distance_mm": 23.91505801790997,
+      "pass": true
+    },
+    {
+      "parts": [
+        "H04_VISOR_FRAME",
+        "H01_MAIN_SHELL"
+      ],
+      "intersection_volume_mm3": 0,
+      "minimum_distance_mm": 0.19999996721636684,
+      "pass": true
+    },
+    {
+      "parts": [
+        "H04_VISOR_FRAME",
+        "H02_DOCK_RECEIVER"
+      ],
+      "intersection_volume_mm3": 0,
+      "minimum_distance_mm": 24.886341635523685,
+      "pass": true
+    },
+    {
+      "parts": [
+        "H03_CLEAR_VISOR",
+        "H04_VISOR_FRAME"
+      ],
+      "intersection_volume_mm3": 0,
+      "minimum_distance_mm": 0.0,
+      "pass": true
+    }
+  ],
+  "removal_sweeps": [
+    {
+      "part": "H03_CLEAR_VISOR",
+      "translation_axis": [
+        0,
+        1,
+        0
+      ],
+      "translation_range_mm": [
+        0,
+        100
+      ],
+      "method": "Extrude every face with nonzero Y-normal into a CAD prism over 100 mm and intersect each swept prism with each fixed core. Y-parallel faces add no swept volume; normals are checked on a 3x3 UV grid. Initial assembled solid intersections are checked separately. This includes mounting ears, frame support pads and locating pins.",
+      "face_prisms_checked": 34,
+      "parallel_faces_skipped": 24,
+      "sweep_errors": [],
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "part": "H04_VISOR_FRAME",
+      "translation_axis": [
+        0,
+        1,
+        0
+      ],
+      "translation_range_mm": [
+        0,
+        100
+      ],
+      "method": "Extrude every face with nonzero Y-normal into a CAD prism over 100 mm and intersect each swept prism with each fixed core. Y-parallel faces add no swept volume; normals are checked on a 3x3 UV grid. Initial assembled solid intersections are checked separately. This includes mounting ears, frame support pads and locating pins.",
+      "face_prisms_checked": 116,
+      "parallel_faces_skipped": 84,
+      "sweep_errors": [],
+      "collisions": [],
+      "pass": true
+    }
+  ],
+  "hardware_checks": [
+    {
+      "check": "lower_M2_nominal_shank_clearance",
+      "axis_origin_mm": [
+        -31,
+        65.4,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius_mm": 1.0,
+      "end_y_mm": 85.0,
+      "intersection_volume_mm3_by_part": {
+        "H01_MAIN_SHELL": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "pass": true
+    },
+    {
+      "check": "lower_M2_nominal_shank_clearance",
+      "axis_origin_mm": [
+        31,
+        65.4,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius_mm": 1.0,
+      "end_y_mm": 85.0,
+      "intersection_volume_mm3_by_part": {
+        "H01_MAIN_SHELL": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "pass": true
+    }
+  ],
+  "warnings": [
+    "H03 and H04 have nominal CAD contact (zero minimum distance) at the retaining interface. This verifies absence of penetration, not printed-part fit or a guaranteed manufacturing clearance.",
+    "H03 also has nominal contact with H01 (zero minimum CAD distance), despite zero intersection volume and a clear +Y sweep. Treat this as a seating/contact interface; no positive manufacturing clearance is guaranteed there."
+  ],
+  "hardware_notes": {
+    "upper_holes": "H01 upper holes at X +/-23, Z108.6 are blind from Y22.5 to Y12. H04 uses diameter2.0 locating pins beginning at Y20, leaving 0.2 mm nominal radial clearance in diameter2.4 bores and 8 mm to the blind end. No upper through-bolt/nut claim.",
+    "lower_holes": "Lower body nut seating face Y67; M2 AF4 x1.6 nuts placed at Y65.4..67 were previously verified clear. Final fastener length remains determined by final stack and physical trial fit."
+  },
+  "resolved_candidate_issue": {
+    "issue": "Initial upper clear ears with back Y22.7 penetrated the unchanged crown in four regions totaling2.154865047483154 mm3, located at Z107.5..108.15 and Y22.7..23.5.",
+    "fix": "Only upper ear back planes moved to Y23.7; front planes remain Y29.6. No subtraction of H01 from the transparent ears was used."
+  },
+  "status": "pass",
+  "clear_panel_body_closest_points_mm": {
+    "distance_mm": 0.0,
+    "on_H03": [
+      31.0,
+      73.0,
+      33.5
+    ],
+    "on_H01": [
+      31.0,
+      73.0,
+      33.5
+    ]
+  }
+}

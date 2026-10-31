@@ -1,0 +1,593 @@
+{
+  "revision": "R06",
+  "status": "fit_print_prototype",
+  "physical_fit_verified": false,
+  "parts": [
+    {
+      "id": "H01_MAIN_SHELL",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        125.2000002,
+        141.0000002,
+        101.80000019999999
+      ],
+      "CAD_volume_mm3": 120848.09777099534,
+      "triangles": 34624,
+      "batch": 1
+    },
+    {
+      "id": "H02_DOCK_RECEIVER",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        113.68000020000001,
+        133.6400002,
+        34.0000007
+      ],
+      "CAD_volume_mm3": 83631.12894738323,
+      "triangles": 9270,
+      "batch": 1
+    },
+    {
+      "id": "H03_CLEAR_VISOR",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        84.0000002,
+        60.400000199999994,
+        78.20000019999998
+      ],
+      "CAD_volume_mm3": 7985.755038883682,
+      "triangles": 3774,
+      "batch": 1
+    },
+    {
+      "id": "H04_VISOR_FRAME",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        102.8000002,
+        66.5,
+        80.60000019999998
+      ],
+      "CAD_volume_mm3": 9914.625588714434,
+      "triangles": 5724,
+      "batch": 1
+    },
+    {
+      "id": "D01_VENT_FRAME_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        7.400002600000008,
+        46.0000002,
+        56.0000002
+      ],
+      "CAD_volume_mm3": 8527.410357652025,
+      "triangles": 2078,
+      "batch": 2
+    },
+    {
+      "id": "D03_VENT_GRILLE_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        11.353846353846144,
+        46.0,
+        56.0
+      ],
+      "CAD_volume_mm3": 4879.262078852078,
+      "triangles": 1920,
+      "batch": 2
+    },
+    {
+      "id": "D02_VENT_FRAME_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        7.400002600000008,
+        46.0000002,
+        56.0000002
+      ],
+      "CAD_volume_mm3": 8527.410357652025,
+      "triangles": 2078,
+      "batch": 2
+    },
+    {
+      "id": "D04_VENT_GRILLE_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        11.353846353846144,
+        46.0,
+        56.0
+      ],
+      "CAD_volume_mm3": 4879.262078852078,
+      "triangles": 1920,
+      "batch": 2
+    },
+    {
+      "id": "D05_SHOULDER_ORANGE_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        29.100000200000007,
+        79.0000002,
+        32.20000019999999
+      ],
+      "CAD_volume_mm3": 4051.9627680675007,
+      "triangles": 2506,
+      "batch": 2
+    },
+    {
+      "id": "D06_SHOULDER_ORANGE_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        29.100000200000007,
+        79.0000002,
+        32.20000019999999
+      ],
+      "CAD_volume_mm3": 4051.9627680675003,
+      "triangles": 2506,
+      "batch": 2
+    },
+    {
+      "id": "D07_SHOULDER_GRAY_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        18.4000002,
+        57.20625020000001,
+        24.800000199999985
+      ],
+      "CAD_volume_mm3": 1223.874437352096,
+      "triangles": 2436,
+      "batch": 2
+    },
+    {
+      "id": "D08_SHOULDER_GRAY_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        18.4000002,
+        57.20625020000001,
+        24.800000199999985
+      ],
+      "CAD_volume_mm3": 1223.8744373520958,
+      "triangles": 2436,
+      "batch": 2
+    },
+    {
+      "id": "D09_ROUND_ORANGE_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        19.000000199999995,
+        29.000000200000002,
+        33.200000208851804
+      ],
+      "CAD_volume_mm3": 6247.912722608843,
+      "triangles": 1442,
+      "batch": 2
+    },
+    {
+      "id": "D10_ROUND_ORANGE_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        19.000000199999995,
+        29.000000200000002,
+        33.200000208851804
+      ],
+      "CAD_volume_mm3": 6247.912722608843,
+      "triangles": 1442,
+      "batch": 2
+    },
+    {
+      "id": "D11_ROUND_GRAY_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        2.5999999999999943,
+        22.200000000000003,
+        22.799999999999997
+      ],
+      "CAD_volume_mm3": 999.5787573982772,
+      "triangles": 836,
+      "batch": 2
+    },
+    {
+      "id": "D12_ROUND_GRAY_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        2.5999999999999943,
+        22.200000000000003,
+        22.799999999999997
+      ],
+      "CAD_volume_mm3": 999.5787573982772,
+      "triangles": 836,
+      "batch": 2
+    },
+    {
+      "id": "D13_CAMERA_BEZEL",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        30.800000000000026,
+        4.0,
+        26.50000000000001
+      ],
+      "CAD_volume_mm3": 2135.8358522938147,
+      "triangles": 1396,
+      "batch": 2
+    },
+    {
+      "id": "D14_PHONE_BACK",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        92.0,
+        25.0,
+        103.0
+      ],
+      "CAD_volume_mm3": 28146.274322196605,
+      "triangles": 3904,
+      "batch": 2
+    },
+    {
+      "id": "D15_PHONE_JAW_L",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        11.000000000000007,
+        16.0,
+        89.80000000000003
+      ],
+      "CAD_volume_mm3": 11339.898506896103,
+      "triangles": 2450,
+      "batch": 2
+    },
+    {
+      "id": "D16_PHONE_JAW_R",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "volume_mesh": true,
+      "components": 1,
+      "bbox_mm": [
+        11.0,
+        16.0,
+        89.80000000000003
+      ],
+      "CAD_volume_mm3": 11339.898506896101,
+      "triangles": 2450,
+      "batch": 2
+    }
+  ],
+  "intersections": [
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "H02_DOCK_RECEIVER",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "H03_CLEAR_VISOR",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D03_VENT_GRILLE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D04_VENT_GRILLE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D05_SHOULDER_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D06_SHOULDER_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D07_SHOULDER_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D08_SHOULDER_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D09_ROUND_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D10_ROUND_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D11_ROUND_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "D12_ROUND_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_OLED_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_OLED_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_FIXED_BOWL_R02",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H01_MAIN_SHELL",
+      "b": "REF_BOARDS_120x50_APPROX",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "H03_CLEAR_VISOR",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H02_DOCK_RECEIVER",
+      "b": "REF_FIXED_BOWL_R02",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "D05_SHOULDER_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "D06_SHOULDER_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "D07_SHOULDER_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "D08_SHOULDER_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "D13_CAMERA_BEZEL",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "REF_OLED_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "REF_OLED_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H03_CLEAR_VISOR",
+      "b": "REF_BOARDS_120x50_APPROX",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "D05_SHOULDER_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "D06_SHOULDER_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "D07_SHOULDER_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "D08_SHOULDER_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "D13_CAMERA_BEZEL",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "REF_OLED_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "REF_OLED_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "H04_VISOR_FRAME",
+      "b": "REF_BOARDS_120x50_APPROX",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D01_VENT_FRAME_L",
+      "b": "D03_VENT_GRILLE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D02_VENT_FRAME_R",
+      "b": "D04_VENT_GRILLE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D05_SHOULDER_ORANGE_L",
+      "b": "D07_SHOULDER_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D05_SHOULDER_ORANGE_L",
+      "b": "D09_ROUND_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D06_SHOULDER_ORANGE_R",
+      "b": "D08_SHOULDER_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D06_SHOULDER_ORANGE_R",
+      "b": "D10_ROUND_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D07_SHOULDER_GRAY_L",
+      "b": "D09_ROUND_ORANGE_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D08_SHOULDER_GRAY_R",
+      "b": "D10_ROUND_ORANGE_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D09_ROUND_ORANGE_L",
+      "b": "D11_ROUND_GRAY_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D10_ROUND_ORANGE_R",
+      "b": "D12_ROUND_GRAY_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "D15_PHONE_JAW_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "D16_PHONE_JAW_R",
+      "volume_mm3": 0
+    }
+  ],
+  "unchanged_core": [
+    {
+      "id": "H01_MAIN_SHELL",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "id": "H02_DOCK_RECEIVER",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "id": "H03_CLEAR_VISOR",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "id": "H04_VISOR_FRAME",
+      "symmetric_difference_mm3": 0
+    }
+  ],
+  "pass": true
+}

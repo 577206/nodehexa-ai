@@ -1,0 +1,13 @@
+{
+  "status": "implemented_R02_trial_fit",
+  "reference": "inputs/07_soldered_connector_flange_reference.jpg",
+  "requested_change": "Support protruding plastic flange, open clearance beneath solder joints, adhesive lands on housing only. Confirm insertion path for prewired connector.",
+  "preserve": [
+    "bowl external envelope",
+    "two original screw axes",
+    "head nesting interface unless connector mating height needs adjustment"
+  ],
+  "required_measurements": [],
+  "note": "R02 CAD and STL exported. Physical trial still required; see outputs/print/R02_print_check.json.",
+  "resolved_by": "User annotated supplier drawing and clarified bottom-up insertion; solder does not pass throat."
+}

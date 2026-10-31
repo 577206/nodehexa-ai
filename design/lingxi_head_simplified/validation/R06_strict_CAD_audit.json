@@ -1,0 +1,341 @@
+{
+  "schema": "engineering-3d-modeling.project_consistency_audit.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+  "generated_at": "2026-10-31T10:19:43.863844Z",
+  "phase": {
+    "value": "draft_review",
+    "source": "spec.lifecycle.phase"
+  },
+  "mode": "strict",
+  "strictness": "strict",
+  "status": "fail",
+  "checks": [
+    {
+      "check": "lifecycle-phase",
+      "status": "pass",
+      "phase": "draft_review",
+      "source": "spec.lifecycle.phase"
+    },
+    {
+      "check": "manifest-current-source",
+      "status": "pass",
+      "path": "source/model.py"
+    },
+    {
+      "check": "preview-mesh-json",
+      "status": "pass",
+      "path": "review/cache/current_mesh.json"
+    },
+    {
+      "check": "preview-mesh-provenance",
+      "status": "pass",
+      "path": "review/cache/current_mesh.json"
+    },
+    {
+      "check": "validation-report-generated-at",
+      "status": "pass",
+      "generated_at": "2026-10-31T10:19:18.578556Z"
+    },
+    {
+      "check": "validation-report-phase",
+      "status": "pass",
+      "phase": "draft_review"
+    },
+    {
+      "check": "validation-report-hash:source",
+      "status": "pass"
+    },
+    {
+      "check": "validation-report-hash:parameters",
+      "status": "pass"
+    },
+    {
+      "check": "validation-report-hash:manifest",
+      "status": "pass"
+    },
+    {
+      "check": "validation-report-hash:mesh",
+      "status": "pass"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "error",
+      "code": "step_missing_required_phase",
+      "message": "phase draft_review requires STEP/STP output under outputs/step"
+    },
+    {
+      "severity": "error",
+      "code": "manifest_current_step_missing",
+      "message": "review/manifest.json versions.current.step is missing"
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "oled_board_height",
+        "report_path": "review_preview.mesh.parameters.oled_board_width",
+        "report_value": 27.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "oled_board_width",
+        "report_path": "review_preview.mesh.parameters.oled_board_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 27
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_height",
+        "report_path": "review_preview.mesh.parameters.usb_access_width",
+        "report_value": 42.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_center_z",
+        "report_path": "review_preview.mesh.parameters.usb_access_width",
+        "report_value": 42.0,
+        "parameters_yaml_value": 50
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_width",
+        "report_path": "review_preview.mesh.parameters.usb_access_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 42
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_center_z",
+        "report_path": "review_preview.mesh.parameters.usb_access_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 50
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_width",
+        "report_path": "review_preview.mesh.parameters.usb_access_center_z",
+        "report_value": 50.0,
+        "parameters_yaml_value": 42
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_height",
+        "report_path": "review_preview.mesh.parameters.usb_access_center_z",
+        "report_value": 50.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_clear_depth",
+        "report_path": "review_preview.mesh.parameters.phone_clear_width",
+        "report_value": 76.0,
+        "parameters_yaml_value": 13
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_nominal_width",
+        "report_path": "review_preview.mesh.parameters.phone_clear_width",
+        "report_value": 76.0,
+        "parameters_yaml_value": 75
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_clear_width",
+        "report_path": "review_preview.mesh.parameters.phone_clear_depth",
+        "report_value": 13.0,
+        "parameters_yaml_value": 76
+      }
+    }
+  ],
+  "errors": [
+    {
+      "severity": "error",
+      "code": "step_missing_required_phase",
+      "message": "phase draft_review requires STEP/STP output under outputs/step"
+    },
+    {
+      "severity": "error",
+      "code": "manifest_current_step_missing",
+      "message": "review/manifest.json versions.current.step is missing"
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "oled_board_height",
+        "report_path": "review_preview.mesh.parameters.oled_board_width",
+        "report_value": 27.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "oled_board_width",
+        "report_path": "review_preview.mesh.parameters.oled_board_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 27
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_height",
+        "report_path": "review_preview.mesh.parameters.usb_access_width",
+        "report_value": 42.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_center_z",
+        "report_path": "review_preview.mesh.parameters.usb_access_width",
+        "report_value": 42.0,
+        "parameters_yaml_value": 50
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_width",
+        "report_path": "review_preview.mesh.parameters.usb_access_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 42
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_center_z",
+        "report_path": "review_preview.mesh.parameters.usb_access_height",
+        "report_value": 28.0,
+        "parameters_yaml_value": 50
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_width",
+        "report_path": "review_preview.mesh.parameters.usb_access_center_z",
+        "report_value": 50.0,
+        "parameters_yaml_value": 42
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "usb_access_height",
+        "report_path": "review_preview.mesh.parameters.usb_access_center_z",
+        "report_value": 50.0,
+        "parameters_yaml_value": 28
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_clear_depth",
+        "report_path": "review_preview.mesh.parameters.phone_clear_width",
+        "report_value": 76.0,
+        "parameters_yaml_value": 13
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_nominal_width",
+        "report_path": "review_preview.mesh.parameters.phone_clear_width",
+        "report_value": 76.0,
+        "parameters_yaml_value": 75
+      }
+    },
+    {
+      "severity": "error",
+      "code": "validation_report_stale_parameter_value",
+      "message": "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "details": {
+        "parameter_id": "phone_clear_width",
+        "report_path": "review_preview.mesh.parameters.phone_clear_depth",
+        "report_value": 13.0,
+        "parameters_yaml_value": 76
+      }
+    }
+  ],
+  "warnings": [],
+  "summary": {
+    "status_line": "fail: 13 error(s), 0 warning(s)",
+    "phase": "draft_review",
+    "strictness": "strict",
+    "top_errors": [
+      "phase draft_review requires STEP/STP output under outputs/step",
+      "review/manifest.json versions.current.step is missing",
+      "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "validation/report.json records a current parameter value that differs from parameters.yaml",
+      "validation/report.json records a current parameter value that differs from parameters.yaml"
+    ],
+    "top_warnings": []
+  }
+}

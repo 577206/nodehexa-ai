@@ -1,0 +1,51 @@
+{
+  "cause": "Front shoulder bore walls shared the H01\u00d82.4 cylindrical surface over portions of X46.8..47.6mm. Exact Boolean solids had no positive-volume overlap but tessellated surfaces z-fought.",
+  "repair": "Only D05/D06 front bore enlarged to\u00d82.9,0.25mm radial clearance from original\u00d82.4, preserving axisY16/Z94 and\u00d88.2outer bearing collar. Applied after gray/round construction to preserve those parts.",
+  "part_differences": [
+    {
+      "name": "D05_SHOULDER_ORANGE_L",
+      "symmetric_difference_mm3": 8.147267527874678
+    },
+    {
+      "name": "D06_SHOULDER_ORANGE_R",
+      "symmetric_difference_mm3": 8.147267527874678
+    },
+    {
+      "name": "D07_SHOULDER_GRAY_L",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "D08_SHOULDER_GRAY_R",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "D09_ROUND_ORANGE_L",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "D10_ROUND_ORANGE_R",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "D11_ROUND_GRAY_L",
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "name": "D12_ROUND_GRAY_R",
+      "symmetric_difference_mm3": 0
+    }
+  ],
+  "blender_probe": {
+    "parts": [
+      "H01_MAIN_SHELL",
+      "D06_SHOULDER_ORANGE_R"
+    ],
+    "version": "5.2.1 LTS",
+    "eps_mm": 0.02,
+    "errors": [],
+    "zfighting_pairs_before": 62,
+    "zfighting_pairs_after": 0,
+    "note": "Isolated pair probe; parent will re-run entire assembly including mirrored left counterpart."
+  },
+  "source_sha256": "35652df4a4534ae3339b1be8895826bc6022385567610bcd0438f8e06a5e61c8"
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "engineering-3d-modeling.review_manifest.v1",
+  "project": {
+    "name": "灵犀磁吸驾驶舱固定罩座",
+    "kind": "part",
+    "units": "mm"
+  },
+  "versions": {
+    "current": {
+      "source": "../source/model.py",
+      "step": null
+    },
+    "previous": null
+  },
+  "preview": {
+    "mesh_json": "cache/current_mesh.json",
+    "mesh_closed": true
+  },
+  "parts": [
+    {
+      "id": "B001_FIXED_MAGNETIC_HOOD_R02",
+      "label": "固定罩座 R02 / 单个实体",
+      "visible": true,
+      "color": "#3b4652"
+    }
+  ],
+  "parameters": [],
+  "refs": [
+    {
+      "id": "left_screw_seat",
+      "part_id": "B001_FIXED_MAGNETIC_HOOD_R02",
+      "entity_type": "face",
+      "feature_id": "two_recessed_screw_wells",
+      "label": "左盘头螺丝承压面",
+      "world_point": [
+        -28.502068400382996,
+        2,
+        2.4
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "connector_flange_stop",
+      "part_id": "B001_FIXED_MAGNETIC_HOOD_R02",
+      "entity_type": "face",
+      "feature_id": "connector_pocket",
+      "label": "凸缘向上止挡面",
+      "world_point": [
+        9.3,
+        0,
+        27.0
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "locating_rim",
+      "part_id": "B001_FIXED_MAGNETIC_HOOD_R02",
+      "entity_type": "face",
+      "feature_id": "head_keyed_nest",
+      "label": "驾驶舱定位边",
+      "world_point": [
+        0,
+        37,
+        29
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

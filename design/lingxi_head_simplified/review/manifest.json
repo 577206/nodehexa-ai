@@ -1,0 +1,191 @@
+{
+  "schema": "engineering-3d-modeling.review_manifest.v1",
+  "project": {
+    "name": "灵犀 R06 · 橙灰独立装饰件",
+    "kind": "assembly",
+    "units": "mm"
+  },
+  "versions": {
+    "current": {
+      "source": "../source/model.py",
+      "step": null
+    },
+    "previous": null
+  },
+  "preview": {
+    "mesh_json": "cache/current_mesh.json",
+    "mesh_closed": true
+  },
+  "parts": [
+    {
+      "id": "H01_MAIN_SHELL",
+      "label": "H01 主体壳 / 第一批打印1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "H02_DOCK_RECEIVER",
+      "label": "H02 头部深腔底座 / 第一批打印1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "H03_CLEAR_VISOR",
+      "label": "H03 透明盖 / 第一批打印1件",
+      "visible": true,
+      "color": "#E8F5FF",
+      "reference": false
+    },
+    {
+      "id": "H04_VISOR_FRAME",
+      "label": "H04 灰色压框 / 第一批打印1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D01_VENT_FRAME_L",
+      "label": "左橙色通风口外框",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D03_VENT_GRILLE_L",
+      "label": "左灰色独立百叶",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D02_VENT_FRAME_R",
+      "label": "右橙色通风口外框",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D04_VENT_GRILLE_R",
+      "label": "右灰色独立百叶",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D05_SHOULDER_ORANGE_L",
+      "label": "左橙色肩甲 / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D06_SHOULDER_ORANGE_R",
+      "label": "右橙色肩甲 / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D07_SHOULDER_GRAY_L",
+      "label": "左灰色肩甲压条 / 1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D08_SHOULDER_GRAY_R",
+      "label": "右灰色肩甲压条 / 1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D09_ROUND_ORANGE_L",
+      "label": "左橙色圆盖底座 / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D10_ROUND_ORANGE_R",
+      "label": "右橙色圆盖底座 / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D11_ROUND_GRAY_L",
+      "label": "左灰色圆盖面板 / 1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D12_ROUND_GRAY_R",
+      "label": "右灰色圆盖面板 / 1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D13_CAMERA_BEZEL",
+      "label": "摄像头橙色外框",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D14_PHONE_BACK",
+      "label": "直立手机背托 / 灰色1件",
+      "visible": true,
+      "color": "#7C8388",
+      "reference": false
+    },
+    {
+      "id": "D15_PHONE_JAW_L",
+      "label": "手机支架橙色侧夹L / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "D16_PHONE_JAW_R",
+      "label": "手机支架橙色侧夹R / 1件",
+      "visible": true,
+      "color": "#F37824",
+      "reference": false
+    },
+    {
+      "id": "REF_OLED_L",
+      "label": "REF_OLED_L / 参照不打印",
+      "visible": false,
+      "color": "#315F86",
+      "reference": true
+    },
+    {
+      "id": "REF_OLED_R",
+      "label": "REF_OLED_R / 参照不打印",
+      "visible": false,
+      "color": "#315F86",
+      "reference": true
+    },
+    {
+      "id": "REF_FIXED_BOWL_R02",
+      "label": "REF_FIXED_BOWL_R02 / 参照不打印",
+      "visible": false,
+      "color": "#A6B4C0",
+      "reference": true
+    },
+    {
+      "id": "REF_BOARDS_120x50_APPROX",
+      "label": "REF_BOARDS_120x50_APPROX / 参照不打印",
+      "visible": false,
+      "color": "#375E56",
+      "reference": true
+    }
+  ],
+  "parameters": [],
+  "refs": []
+}

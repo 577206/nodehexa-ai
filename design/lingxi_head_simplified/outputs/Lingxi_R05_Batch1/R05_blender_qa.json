@@ -1,0 +1,270 @@
+{
+  "schema": "lingxi.cad_render_qa.v1",
+  "revision": "R05",
+  "source_file": "repository/design/lingxi_head_simplified/review/cache/R05_scene.json",
+  "source_sha256": "54527514124f2b5eefc6f2b74b881f28ae40f159f6852b32b9a341641e31b8d9",
+  "blender_version": "5.2.1 LTS",
+  "units": {
+    "source": "mm",
+    "blender": "m",
+    "scale_factor": 0.001
+  },
+  "axis_convention": {
+    "front": "+Y",
+    "left": "-X",
+    "up": "+Z"
+  },
+  "geometry_policy": "Exact coordinate deduplication only; source positions and triangles unchanged; no modifiers.",
+  "qa_coordinate_unit": "millimeter, exact source coordinates in temporary copies",
+  "qa_parameters_mm": {
+    "coplanarity_eps": 0.02,
+    "assembly_contact_tol": 0.75
+  },
+  "asset": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "hidden back-to-back faces: QA_MM_H01_MAIN_SHELL<->QA_MM_H02_DOCK_RECEIVER (1177 pairs) - delete to save tris"
+    ],
+    "ground_z": 0.0,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [
+      {
+        "where": "QA_MM_H01_MAIN_SHELL<->QA_MM_H02_DOCK_RECEIVER",
+        "tri_pairs": 1177
+      }
+    ],
+    "enclosed": [],
+    "objects": {
+      "QA_MM_H01_MAIN_SHELL": {
+        "verts": 17216,
+        "faces": 34624,
+        "tris": 34624,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "QA_MM_H02_DOCK_RECEIVER": {
+        "verts": 4613,
+        "faces": 9270,
+        "tris": 9270,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "hardware_reference_topology": {},
+  "core_only": true,
+  "scope_note": "First-batch body and deep base; second-batch screw-on decorative parts are not included in this source scene.",
+  "objects": [
+    {
+      "name": "SM_H01_MAIN_SHELL",
+      "source_name": "H01_MAIN_SHELL",
+      "reference": false,
+      "part_id": "H01_MAIN_SHELL",
+      "input_vertices": 17216,
+      "exact_coordinate_vertices": 17216,
+      "triangles": 34624,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        125.2,
+        141.0,
+        101.79995
+      ]
+    },
+    {
+      "name": "SM_H02_DOCK_RECEIVER",
+      "source_name": "H02_DOCK_RECEIVER",
+      "reference": false,
+      "part_id": "H02_DOCK_RECEIVER",
+      "input_vertices": 4613,
+      "exact_coordinate_vertices": 4613,
+      "triangles": 9270,
+      "unchanged_faces": true,
+      "geometry_modifiers": 0,
+      "size_mm": [
+        113.68,
+        133.63999,
+        34.0
+      ]
+    }
+  ],
+  "excluded_reference_objects": [
+    "REF_OLED_L",
+    "REF_OLED_R",
+    "REF_FIXED_BOWL_R02",
+    "REF_BOARDS_120x50_APPROX"
+  ],
+  "total_triangles": 43894,
+  "materials": 4,
+  "accepted_scope_notes": [
+    "UV audit omitted: only procedural/solid materials, no texture delivery.",
+    "Reference OLED boards, displays, mask and pixels are illustrative hardware envelopes; individual topology is audited separately.",
+    "This rendering report is not CAD collision, dimensional fit or manufacturing approval."
+  ],
+  "visual_review_status": "inspected hero,bottom,random-part and thin-wire views; main shell and base separately identifiable; no unintended detached mesh",
+  "individual_print_mesh_checks": {
+    "QA_MM_H01_MAIN_SHELL": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [
+        "asset lowest point z=10.0 (not resting on ground plane z=0)"
+      ],
+      "ground_z": 10.0,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H01_MAIN_SHELL": {
+          "verts": 17216,
+          "faces": 34624,
+          "tris": 34624,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    },
+    "QA_MM_H02_DOCK_RECEIVER": {
+      "ok": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "ground_z": 0.0,
+      "zfighting": [],
+      "floating": [],
+      "back_to_back": [],
+      "enclosed": [],
+      "objects": {
+        "QA_MM_H02_DOCK_RECEIVER": {
+          "verts": 4613,
+          "faces": 9270,
+          "tris": 9270,
+          "ngons": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "wire_edges": 0,
+          "loose_verts": 0,
+          "degenerate_faces": 0,
+          "zero_length_edges": 0,
+          "inconsistent_normals_edges": 0,
+          "duplicate_verts": 0,
+          "islands": 1,
+          "inside_out_islands": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "materials": 1
+        }
+      }
+    }
+  },
+  "visual_review_images": [
+    {
+      "view": "hero",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_hero.png",
+      "size_bytes": 1984893,
+      "resolution": 1400,
+      "seconds": 4.8
+    },
+    {
+      "view": "bottom",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_bottom.png",
+      "size_bytes": 1015511,
+      "resolution": 1000,
+      "seconds": 2.0
+    }
+  ],
+  "topology_review_sheets": [
+    {
+      "ok": true,
+      "sheet": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_random.png",
+      "views": [
+        "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_random_three_quarter.png",
+        "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_random_bottom.png"
+      ],
+      "layout": "2x1",
+      "order": [
+        "three_quarter",
+        "bottom"
+      ]
+    },
+    {
+      "ok": true,
+      "sheet": "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_wire.png",
+      "views": [
+        "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_wire_three_quarter.png",
+        "repository/design/lingxi_head_simplified/outputs/renders/R05/R05_QA_wire_bottom.png"
+      ],
+      "layout": "2x1",
+      "order": [
+        "three_quarter",
+        "bottom"
+      ]
+    }
+  ],
+  "accepted_warnings": [
+    {
+      "warning": "opposed coincident faces between H01 and H02",
+      "reason": "Separate screw-fastened physical parts need their complete closed mating faces; exact BREP overlap volume zero. Deleting faces would open printable solids."
+    },
+    {
+      "warning": "H01 origin lowestZ10 in assembly coordinates",
+      "reason": "Intentional assembly placement above H02 lower plinth. Standalone H01 STL translatedZ−10 to rest atZ0, no rescaling."
+    }
+  ],
+  "triangle_counts": {
+    "H01_MAIN_SHELL": 34624,
+    "H02_DOCK_RECEIVER": 9270
+  }
+}

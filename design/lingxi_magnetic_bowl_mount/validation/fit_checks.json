@@ -1,0 +1,56 @@
+{
+  "status": "pass_CAD_checks_only",
+  "valid": true,
+  "solids": 1,
+  "bbox_mm": [
+    86.00000020000002,
+    86.00000020000002,
+    29.0000001
+  ],
+  "volume_mm3": 45915.991258438364,
+  "confirmed_electronics_envelope_mm": [
+    70,
+    70,
+    20
+  ],
+  "approved_exclusions": "two8mm vertical screw corridors, user-confirmed",
+  "electronics_intersection_mm3": 0,
+  "shaft_passages": [
+    {
+      "axis_mm": [
+        -28.502068400382996,
+        0
+      ],
+      "blocked_volume_mm3": 0
+    },
+    {
+      "axis_mm": [
+        28.502068400382996,
+        0
+      ],
+      "blocked_volume_mm3": 0
+    }
+  ],
+  "effective_ceiling_mm": 24.0,
+  "nominal_roof_clearance_mm": 4.0,
+  "screw_bearing_thickness_mm": 2.4,
+  "nominal_10mm_screw_reach_below_seat_mm": 7.6,
+  "reach_caveat": "Not actual thread engagement; account for original frame, receiver and screw tolerance.",
+  "connector_throat_mm": [
+    17.94,
+    4.4
+  ],
+  "underside_relief_mm": [
+    22.0,
+    8.0
+  ],
+  "collar_stop_z": 27.0,
+  "contact_face_z_nominal": 29.0,
+  "physical_not_verified": [
+    "Original screw shaft/head/thread receiver and retained engagement",
+    "Connector exact ear/step profile, glue and spring compression",
+    "Real electronics placement, solder loops and mechanical leg sweep",
+    "Upper head counterpart, mass and magnetic holding force",
+    "External cable service openings not modeled"
+  ]
+}

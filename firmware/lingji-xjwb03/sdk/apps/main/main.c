@@ -1,3 +1,4 @@
+#include "eyes/eyes.h"
 #include "qm.h"
 #include "qm_work.h"
 #include "bsp_io.h"
@@ -87,6 +88,7 @@ void qm_application_start(void)
     /* if (bsp_mpu6050_init() != QM_EOK) {
         QM_LOGE("main", "mpu6050 init failed");
     } */
+    eyes_start();
     /* 资源让位仲裁层：先于一切会出声的模块初始化 */
     (void)agent_arbiter_init();
     if (voice_start() != QM_EOK) {

@@ -1,0 +1,22 @@
+{
+  "schema": "engineering-3d-modeling.review_manifest.v1",
+  "project": {
+    "name": "\u7075\u7280\u78c1\u5438\u9a7e\u9a76\u8231\u56fa\u5b9a\u7f69\u5ea7",
+    "kind": "part",
+    "units": "mm"
+  },
+  "versions": {
+    "current": {
+      "source": "../source/model.py",
+      "step": null
+    },
+    "previous": null
+  },
+  "preview": {
+    "mesh_json": null,
+    "mesh_closed": true
+  },
+  "parts": [],
+  "parameters": [],
+  "refs": []
+}

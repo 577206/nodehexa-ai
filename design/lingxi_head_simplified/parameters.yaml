@@ -1,0 +1,188 @@
+schema: engineering-3d-modeling.parameters.v1
+units: mm
+parameters:
+  width:
+    value: 112
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: R04 exterior follows explicit multi-section ROWS in source; retained
+        legacy dimension is superseded, not a live envelope parameter.
+  length:
+    value: 146
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: R04 exterior follows explicit multi-section ROWS in source; retained
+        legacy dimension is superseded, not a live envelope parameter.
+  base_thickness:
+    value: 34
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  wall:
+    value: 3
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  dock_pocket:
+    value: 86.8
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  dock_depth:
+    value: 29.4
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  screw_span:
+    value: 92
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  shaft_diameter:
+    value: 2.4
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  pan_recess_diameter:
+    value: 5.2
+    unit: mm
+    role: prototype design parameter; do not change without CAD regeneration and interface
+      checks
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  oled_board_width:
+    value: 27
+    unit: mm
+    role: provisional reference-only OLED envelope; not measured hardware mounting
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  oled_board_height:
+    value: 28
+    unit: mm
+    role: provisional reference-only OLED envelope; not measured hardware mounting
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  oled_center_spacing:
+    value: 33
+    unit: mm
+    role: provisional reference-only OLED envelope; not measured hardware mounting
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  usb_access_width:
+    value: 42
+    unit: mm
+    role: R03 prototype layout, physical fit unverified
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  usb_access_height:
+    value: 28
+    unit: mm
+    role: 'R05 first-batch left plug route: bottom Z36, top Z64; 14x9 mm plug insertion
+      probe clears'
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  usb_access_center_z:
+    value: 50
+    unit: mm
+    role: R03 prototype layout, physical fit unverified
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  phone_clear_width:
+    value: 76
+    unit: mm
+    role: User cased-phone75mm plus1mm total allowance; soft pad compression needed
+      for grip
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  phone_clear_depth:
+    value: 13
+    unit: mm
+    role: User cased-phone thickness10–12mm;13mm clear slot with soft pads.
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  phone_support_top:
+    value: 145
+    unit: mm
+    role: R03 prototype layout, physical fit unverified
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  dock_radial_clearance:
+    value: 0.4
+    unit: mm
+    role: R03 interface design parameter
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  bowl_height:
+    value: 29
+    unit: mm
+    role: R03 interface design parameter
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  phone_nominal_width:
+    value: 75
+    unit: mm
+    role: R03 interface design parameter
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+      unused_reason: Retained for second-batch phone cradle; first-batch shell only
+        freezes original rear mounting holes.

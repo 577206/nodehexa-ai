@@ -1,0 +1,308 @@
+{
+  "revision": "R05",
+  "units": "mm",
+  "origin": "fixed bowl support plane Z0; camera +Y; right +X",
+  "source_sha256": "affe5b9b26ab10ce5bbf54d9178606b0a9d880f2a2940e4f93d74f229e785460",
+  "interfaces": [
+    {
+      "id": "BASE_-1",
+      "center_mm": [
+        -46.0,
+        0,
+        34
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "through_diameter_mm": 2.4,
+      "nut": "M2 AF4.4/depth2 trial allowance",
+      "nut_z_mm": [
+        37.2,
+        39.2
+      ]
+    },
+    {
+      "id": "BASE_1",
+      "center_mm": [
+        46.0,
+        0,
+        34
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "through_diameter_mm": 2.4,
+      "nut": "M2 AF4.4/depth2 trial allowance",
+      "nut_z_mm": [
+        37.2,
+        39.2
+      ]
+    },
+    {
+      "id": "VENT_UPPER_L",
+      "center_mm": [
+        -58.44615384615385,
+        22,
+        68
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_LOWER_L",
+      "center_mm": [
+        -62.6,
+        23,
+        29
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_FRONT_L",
+      "center_mm": [
+        -47.6,
+        16,
+        94
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_REAR_L",
+      "center_mm": [
+        -45.766666666666666,
+        -27,
+        97
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "ROUND_COVER_L",
+      "center_mm": [
+        -57.06153846153846,
+        -31,
+        74
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_UPPER_R",
+      "center_mm": [
+        58.44615384615385,
+        22,
+        68
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "VENT_LOWER_R",
+      "center_mm": [
+        62.6,
+        23,
+        29
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_FRONT_R",
+      "center_mm": [
+        47.6,
+        16,
+        94
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "SHOULDER_REAR_R",
+      "center_mm": [
+        45.766666666666666,
+        -27,
+        97
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "ROUND_COVER_R",
+      "center_mm": [
+        57.06153846153846,
+        -31,
+        74
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "through_diameter_mm": 2.4,
+      "inside": "accessible M2 nut/washer; ornament will adapt to this frozen interface"
+    },
+    {
+      "id": "CAMERA_-11",
+      "center_mm": [
+        -11,
+        74,
+        26
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "CAMERA_11",
+      "center_mm": [
+        11,
+        74,
+        26
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_-31_37",
+      "center_mm": [
+        -31,
+        71.6,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_31_37",
+      "center_mm": [
+        31,
+        71.6,
+        37
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_-23_108.6",
+      "center_mm": [
+        -23,
+        22.5,
+        108.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "VISOR_23_108.6",
+      "center_mm": [
+        23,
+        22.5,
+        108.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "PHONE_-25",
+      "center_mm": [
+        -25,
+        -67,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    },
+    {
+      "id": "PHONE_25",
+      "center_mm": [
+        25,
+        -67,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "through_diameter_mm": 2.4
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "revision": "R04",
+  "source_sha256": "08752b95d077f415639cf5eb8d591799389a252a66c9a063fc750f8050ef0673",
+  "blend": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/outputs/renders/R04_candidate_01/Lingxi_Head_R04_Actual_CAD.blend",
+  "device": "METAL",
+  "samples": 32,
+  "asset_size_mm": [
+    144.2761,
+    172.0,
+    145.0
+  ],
+  "objects": 30,
+  "triangles": 39164,
+  "materials": 14,
+  "renders": [
+    {
+      "view": "hero",
+      "path": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/outputs/renders/R04_candidate_01/R04_hero.png",
+      "size_bytes": 2095327,
+      "resolution": 1400,
+      "seconds": 5.6
+    }
+  ],
+  "qa_report": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/validation/R04_blender_qa.json",
+  "qa_asset_pass": false,
+  "status": "DRAFT_RENDER_REQUIRES_VISUAL_REVIEW_NOT_PRINT_RELEASE"
+}

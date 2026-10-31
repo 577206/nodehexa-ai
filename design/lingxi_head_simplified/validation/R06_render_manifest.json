@@ -1,0 +1,58 @@
+{
+  "revision": "R06",
+  "source_sha256": "5b652dbfe0e9ca4c3095466f747741d6b01d364a0d810cc76f5ae2230f9096bb",
+  "source_unchanged_during_render": true,
+  "core_only": true,
+  "scope_note": "Actual R05A first-batch core plus R06 separate decorative/phone parts. Hardware envelopes excluded; no reference device is printed.",
+  "blend": "repository/design/lingxi_head_simplified/outputs/renders/R06/Lingxi_Head_R06_Actual_CAD.blend",
+  "device": "METAL",
+  "samples": 48,
+  "asset_size_mm": [
+    145.6,
+    178.5,
+    145.0
+  ],
+  "objects": 20,
+  "triangles": 86028,
+  "materials": 6,
+  "renders": [
+    {
+      "view": "hero",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R06/R06_hero.png",
+      "size_bytes": 2099530,
+      "resolution": 1400,
+      "seconds": 5.0
+    },
+    {
+      "view": "front",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R06/R06_front.png",
+      "size_bytes": 1084885,
+      "resolution": 1000,
+      "seconds": 2.5
+    },
+    {
+      "view": "left",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R06/R06_left.png",
+      "size_bytes": 1093103,
+      "resolution": 1000,
+      "seconds": 2.1
+    },
+    {
+      "view": "rear",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R06/R06_rear.png",
+      "size_bytes": 1015010,
+      "resolution": 1000,
+      "seconds": 2.4
+    },
+    {
+      "view": "bottom",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R06/R06_bottom.png",
+      "size_bytes": 1044409,
+      "resolution": 1000,
+      "seconds": 2.9
+    }
+  ],
+  "qa_report": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/validation/R06_blender_qa.json",
+  "qa_asset_pass": true,
+  "status": "VISUALLY_REVIEWED_ACTUAL_CAD_TRIAL_FIT_PROTOTYPE"
+}

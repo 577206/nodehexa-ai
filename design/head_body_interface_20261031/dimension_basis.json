@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-31",
+  "status": "dimension_reference_and_connection_proposal_only",
+  "user_confirmed_width_increase_mm": 50,
+  "side_translation_mm": 25,
+  "new_user_body_files_received": false,
+  "source_mesh": "design/nocturne_hexapod/review/cache/current_mesh.json",
+  "source_mesh_sha256": "98ebe09584207b8e244d1e576b091abedf2834202df1f7f5f378f460a8732e56",
+  "coordinate_system": {
+    "X": "right / width",
+    "Y": "design front / length; confirm against final electronics installation",
+    "Z": "up"
+  },
+  "frame_dimensions_length_width_height_mm": {
+    "N001_upper_frame_EDGE50_DRAFT": [
+      134.80905151367188,
+      124.34314727783203,
+      3.0
+    ],
+    "N002_lower_frame_EDGE50_DRAFT": [
+      130.3431396484375,
+      128.34314823150635,
+      9.000000000000016
+    ],
+    "N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT": [
+      130.3431396484375,
+      128.34314823150635,
+      9.000000000000016
+    ]
+  },
+  "aperture_bbox": {
+    "length_bbox_mm": 122.84236669540405,
+    "width_bbox_mm": 47.34157180786133,
+    "note": "异形开口包围尺寸，不是矩形可用安装面"
+  },
+  "original_cover_hole_center_distance_mm": 57.00413680076599,
+  "limitations": [
+    "Frame dimension reference only; excludes legs",
+    "No measured assembly height or electronics envelope",
+    "Existing STL/mesh coordinates assumed mm",
+    "Current source already EDGE50; no geometry regenerated or modified",
+    "New user body files pending",
+    "Magnet/pin/hole sizes and adapter dimensions not yet fixed"
+  ],
+  "proposal": {
+    "mechanism": "fixed riser adapter + guided magnetic dock + release latch",
+    "contacts": [
+      "GND",
+      "GND",
+      "TX",
+      "RX",
+      "DET",
+      "reserve"
+    ],
+    "power": "independent; no power rail connected in first revision",
+    "detach": "stop base on detach or communication timeout"
+  }
+}

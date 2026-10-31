@@ -1,0 +1,18 @@
+{
+  "valid": true,
+  "solid_count": 1,
+  "volume_mm3": 2135.8358522938147,
+  "intersections": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "nut_-11_intersect": 0,
+  "nut_11_intersect": 0,
+  "mesh": {
+    "watertight": true,
+    "is_volume": true,
+    "connected": 1
+  }
+}

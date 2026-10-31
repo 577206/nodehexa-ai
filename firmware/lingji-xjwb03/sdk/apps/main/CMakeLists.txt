@@ -47,6 +47,8 @@ message(STATUS "app camera test=${APP_CAMERA_TEST}")
 
 set(COMPONENT_SRCS
     "./main.c"
+    "./eyes/eye_animation.c"
+    "./eyes/eyes.c"
     "./agent/agent_app.c"
     "./arbiter/agent_arbiter.c"
     "./agent/robot_link.c"

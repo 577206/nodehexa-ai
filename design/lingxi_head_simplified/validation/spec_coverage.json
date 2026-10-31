@@ -1,0 +1,192 @@
+{
+  "schema": "engineering-3d-modeling.spec_coverage.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified",
+  "generated_at": "2026-10-31T10:19:17.443893Z",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "feature:faceted_shell",
+      "status": "pass"
+    },
+    {
+      "check": "feature:visor_seat",
+      "status": "pass"
+    },
+    {
+      "check": "feature:bottom_dock",
+      "status": "pass"
+    },
+    {
+      "check": "feature:two_fasteners",
+      "status": "pass"
+    },
+    {
+      "check": "feature:side_vents",
+      "status": "pass"
+    },
+    {
+      "check": "feature:type_c_access",
+      "status": "pass"
+    },
+    {
+      "check": "feature:oled_carrier",
+      "status": "pass"
+    },
+    {
+      "check": "feature:decorative_mounts",
+      "status": "pass"
+    },
+    {
+      "check": "feature:clear_cover",
+      "status": "pass"
+    },
+    {
+      "check": "feature:orange_gray_shoulders",
+      "status": "pass"
+    },
+    {
+      "check": "feature:round_service_caps",
+      "status": "pass"
+    },
+    {
+      "check": "feature:camera_bezel",
+      "status": "pass"
+    },
+    {
+      "check": "feature:phone_cradle",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Fixed bowl R02 unchanged atZ0; full29mm envelope fits deep female recess with nominal0.4mm clearance",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:No electronics or battery fit claim from concept image",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Do not include fixed bowl in head print count",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:H01/H02/H03/H04 R05A first-batch solids immutable. New components adapt to frozen holes and clearances.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Second-batch print bundle contains decorative parts only; original4 first-batch parts shown in assembly but not duplicated in this print count.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Gray and orange are distinct printable solids, no cosmetic disconnected color regions. Transparent cover remains first-batch.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Keep USB left service opening and unobstructed frontward clear-cover removal.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Phone slot thickness13mm suits user-confirmed10–12mm cased phone; soft pads needed for grip.",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:dock_full_depth_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:clearances:parts",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:clearances:bowl_reference",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:mesh",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:limitations",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:base_thickness",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:wall",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:dock_pocket",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:dock_depth",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:screw_span",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:shaft_diameter",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:pan_recess_diameter",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:oled_board_width",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:oled_board_height",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:oled_center_spacing",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:usb_access_width",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:usb_access_height",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:usb_access_center_z",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:phone_clear_width",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:phone_clear_depth",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:phone_support_top",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:dock_radial_clearance",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:bowl_height",
+      "status": "pass"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "feature_gaps": [],
+  "placement_gaps": [],
+  "constraint_gaps": [],
+  "validation_target_gaps": [],
+  "unused_geometry_parameters": [],
+  "waived_unused_geometry_parameters": []
+}

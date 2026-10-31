@@ -1,0 +1,275 @@
+{
+  "raw": {
+    "vertices": 17230,
+    "faces": 34660,
+    "watertight": false,
+    "is_volume": false,
+    "volume": 121429.54688324298,
+    "boundary_count": 0,
+    "nonmanifold_count": 2,
+    "degenerate_count": 0,
+    "boundary_coords": [],
+    "nonmanifold_coords": [
+      [
+        [
+          23.0,
+          22.0,
+          107.0
+        ],
+        [
+          23.0,
+          20.6,
+          107.0
+        ]
+      ],
+      [
+        [
+          -23.0,
+          22.0,
+          107.0
+        ],
+        [
+          -23.0,
+          20.6,
+          107.0
+        ]
+      ]
+    ],
+    "degenerate_coords": []
+  },
+  "trials": [
+    {
+      "vertices": 17230,
+      "faces": 34660,
+      "watertight": false,
+      "is_volume": false,
+      "volume": 121429.54688324298,
+      "boundary_count": 0,
+      "nonmanifold_count": 2,
+      "degenerate_count": 0,
+      "boundary_coords": [],
+      "nonmanifold_coords": [
+        [
+          [
+            23.0,
+            22.0,
+            107.0
+          ],
+          [
+            23.0,
+            20.6,
+            107.0
+          ]
+        ],
+        [
+          [
+            -23.0,
+            22.0,
+            107.0
+          ],
+          [
+            -23.0,
+            20.6,
+            107.0
+          ]
+        ]
+      ],
+      "degenerate_coords": [],
+      "merge_digits": 7
+    },
+    {
+      "vertices": 17230,
+      "faces": 34660,
+      "watertight": false,
+      "is_volume": false,
+      "volume": 121429.54688324298,
+      "boundary_count": 0,
+      "nonmanifold_count": 2,
+      "degenerate_count": 0,
+      "boundary_coords": [],
+      "nonmanifold_coords": [
+        [
+          [
+            23.0,
+            22.0,
+            107.0
+          ],
+          [
+            23.0,
+            20.6,
+            107.0
+          ]
+        ],
+        [
+          [
+            -23.0,
+            22.0,
+            107.0
+          ],
+          [
+            -23.0,
+            20.6,
+            107.0
+          ]
+        ]
+      ],
+      "degenerate_coords": [],
+      "merge_digits": 6
+    },
+    {
+      "vertices": 17230,
+      "faces": 34660,
+      "watertight": false,
+      "is_volume": false,
+      "volume": 121429.54688324298,
+      "boundary_count": 0,
+      "nonmanifold_count": 2,
+      "degenerate_count": 0,
+      "boundary_coords": [],
+      "nonmanifold_coords": [
+        [
+          [
+            23.0,
+            22.0,
+            107.0
+          ],
+          [
+            23.0,
+            20.6,
+            107.0
+          ]
+        ],
+        [
+          [
+            -23.0,
+            22.0,
+            107.0
+          ],
+          [
+            -23.0,
+            20.6,
+            107.0
+          ]
+        ]
+      ],
+      "degenerate_coords": [],
+      "merge_digits": 5
+    },
+    {
+      "vertices": 17230,
+      "faces": 34660,
+      "watertight": false,
+      "is_volume": false,
+      "volume": 121429.54688324298,
+      "boundary_count": 0,
+      "nonmanifold_count": 2,
+      "degenerate_count": 0,
+      "boundary_coords": [],
+      "nonmanifold_coords": [
+        [
+          [
+            23.0,
+            22.0,
+            107.0
+          ],
+          [
+            23.0,
+            20.6,
+            107.0
+          ]
+        ],
+        [
+          [
+            -23.0,
+            22.0,
+            107.0
+          ],
+          [
+            -23.0,
+            20.6,
+            107.0
+          ]
+        ]
+      ],
+      "degenerate_coords": [],
+      "merge_digits": 4
+    },
+    {
+      "vertices": 17230,
+      "faces": 34660,
+      "watertight": false,
+      "is_volume": false,
+      "volume": 121429.54688324298,
+      "boundary_count": 0,
+      "nonmanifold_count": 2,
+      "degenerate_count": 0,
+      "boundary_coords": [],
+      "nonmanifold_coords": [
+        [
+          [
+            23.0,
+            22.0,
+            107.0
+          ],
+          [
+            23.0,
+            20.6,
+            107.0
+          ]
+        ],
+        [
+          [
+            -23.0,
+            22.0,
+            107.0
+          ],
+          [
+            -23.0,
+            20.6,
+            107.0
+          ]
+        ]
+      ],
+      "degenerate_coords": [],
+      "merge_digits": 3
+    }
+  ],
+  "after_degenerate_filter": {
+    "vertices": 17230,
+    "faces": 34660,
+    "watertight": false,
+    "is_volume": false,
+    "volume": 121429.54688324298,
+    "boundary_count": 0,
+    "nonmanifold_count": 2,
+    "degenerate_count": 0,
+    "boundary_coords": [],
+    "nonmanifold_coords": [
+      [
+        [
+          23.0,
+          22.0,
+          107.0
+        ],
+        [
+          23.0,
+          20.6,
+          107.0
+        ]
+      ],
+      [
+        [
+          -23.0,
+          22.0,
+          107.0
+        ],
+        [
+          -23.0,
+          20.6,
+          107.0
+        ]
+      ]
+    ],
+    "degenerate_coords": []
+  }
+}

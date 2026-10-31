@@ -1,0 +1,250 @@
+schema: engineering-3d-modeling.spec.v1
+project:
+  name: 灵犀 R06 橙灰第二批装饰配件
+  kind: assembly
+  units: mm
+model:
+  selected_direction: Frozen R05A four-piece structural core plus independent orange-gray
+    screw-mounted vent frames/grilles, shoulders/straps, circular side caps, camera
+    bezel and75mm-cased-phone upright holder.
+  precision: appearance-and-interface prototype; no final electronics packaging
+coordinate_system:
+  units: mm
+  origin:
+    id: dock_origin
+    description: Center of fixed bowl at robot upper frame top. Bowl R02 stays at
+      identity placement; head underside Z0 and cavity receives entire bowl height29.
+    point_mm:
+    - 0
+    - 0
+    - 0
+  axes:
+    x:
+      vector:
+      - 1
+      - 0
+      - 0
+      positive: robot right / width
+      negative: robot left
+    y:
+      vector:
+      - 0
+      - 1
+      - 0
+      positive: robot front / camera side / length
+      negative: robot rear
+    z:
+      vector:
+      - 0
+      - 0
+      - 1
+      positive: up
+      negative: down
+  direction_aliases:
+    front: +Y
+    rear: -Y
+    left: -X
+    right: +X
+    top: +Z
+    bottom: -Z
+    width: X
+    length: Y
+    height: Z
+  component_frames: {}
+  imported_components: {}
+  source:
+    status: confirmed
+    confirmed_by: same X right,Y front,Z up convention as bowl project
+    notes:
+    - X right, Y camera-forward, Z up. Board-local lower-left origin maps provisionally
+      to(-25,-60,41); USB local(0,40..50) maps tohead(-25,-20..-10,41). Internal board
+      height/fasteners unmeasured.
+lifecycle:
+  phase: draft_review
+  status: in_progress
+  note: User authorizes completing second-batch separate decorative print parts. R05A
+    core geometry and existing print packages frozen. Dimensional prototype; physical
+    assembly unverified.
+inputs:
+- path: ../lingxi_magnetic_bowl_mount/spec/current.yaml
+  type: CAD reference
+  precision_class: dimensioned CAD reference
+  role: Fixed R02 bowl86 lower/82 roof,29 max height; full containment, preserve two
+    chassis screws
+- path: inputs/OLED_back_reference.jpg
+  precision_class: qualitative photo
+  role: OLED package form, four corner mounting holes, rear header and lower flex
+    keepout; no thickness inferred
+- path: inputs/OLED_front_reference.jpg
+  precision_class: qualitative photo
+  role: OLED package form, four corner mounting holes, rear header and lower flex
+    keepout; no thickness inferred
+- path: inputs/accepted_orange_gray_concept_R03.png
+  precision_class: qualitative concept
+  role: User accepted overall gray-orange helmet, shared faceted visor, side vents,
+    upright rear and phone cradle
+placements: {}
+features:
+- id: faceted_shell
+  intent: R05 one-piece hollow structural helmet only,3mm nominal walls, primaryR04
+    silhouette, open visor receiver; no co-printed decorative skins, rings or hatch.
+- id: visor_seat
+  intent: Use unchanged R05 body axes. Lower X±31/Z37 twoM2x20 throughscrews/nuts;
+    upperX±23/Z108.6 body holes are blind, acceptØ2 integral gray-frame locating pins.
+    Clear cover moved+Y5.5mm to escape original trapped corners, with four through-holed
+    support ears; separate retainer.
+- id: bottom_dock
+  intent: Deep female cavity receives full fixed86x86x29 bowl;0.4mm radial nominal
+    clearance, guide/key relief and4P upper connector pocket; base detachable from
+    head
+- id: two_fasteners
+  intent: Head base to shell X±46/Y0,Ø2.4 through,Z30 pan seat,Z34joint; two M2x10
+    round-head screws with two M2 hex nuts inserted sideways into AF4.4/depth2 pocket
+    atZ37.2..39.2. Lower Ø5.2 access recut after ribs; weak lower web deliberately
+    open to cavity.
+- id: side_vents
+  intent: Independent orange vent perimeters and gray louvers; existing two X-axis
+    screw holes on each side; preserve left TypeC insertion corridor.
+- id: type_c_access
+  intent: Large42x28mm opening on LEFT side near board-localY40..50mm position; side
+    opening allows access to recessed board socket; minimum14x9mm plug route checked
+    to board-side socket.
+- id: oled_carrier
+  intent: Two approximate27x28mm board references behind visor, lowered planeorigin(0,68.8,61.5)
+    withnormal(0,1,.5385). Active displayarea, pins and mounting holes unmeasured;
+    edge mask and internal carrier deferred to second batch.
+- id: decorative_mounts
+  intent: R05A hole positions remain fixed; new separate decorations adapt to those
+    positions with real screws, nuts and assembly clearance. No changes to first-batch
+    STL solids.
+- id: clear_cover
+  intent: One separate clear folded visor with four support ears, nominal1.4mm Y thickness
+    on optical panel; two M2x20 lower fasteners and two upper integral retainer guides.
+    Validate removal path and solid intersections. No optical clarity guarantee from3MF
+    color.
+- id: orange_gray_shoulders
+  intent: Separate orange shell-following shoulder rail and gray overstrap, stacked
+    on original two shoulder screw axes each side.
+- id: round_service_caps
+  intent: Separate orange faceted/ring surround and gray round inner cover, mechanically
+    located and retained by existing central screw each side.
+- id: camera_bezel
+  intent: Separate orange octagonal camera surround, existing X±11/Z26 Y-axis bolts,
+    inner diameter16mm; camera itself mounts separately.
+- id: phone_cradle
+  intent: Restore upright rear support, nominal phone width75mm includingcase,76mm
+    clear width,13mm slot for user-confirmed10–12mm cased thickness, with soft pads;
+    gray backplate and orange jaws, screw-on using existing rear X±25/Z50 axes.
+constraints:
+  formal: []
+  narrative:
+  - Fixed bowl R02 unchanged atZ0; full29mm envelope fits deep female recess with
+    nominal0.4mm clearance
+  - No electronics or battery fit claim from concept image
+  - Do not include fixed bowl in head print count
+  - H01/H02/H03/H04 R05A first-batch solids immutable. New components adapt to frozen
+    holes and clearances.
+  - Second-batch print bundle contains decorative parts only; original4 first-batch
+    parts shown in assembly but not duplicated in this print count.
+  - Gray and orange are distinct printable solids, no cosmetic disconnected color
+    regions. Transparent cover remains first-batch.
+  - Keep USB left service opening and unobstructed frontward clear-cover removal.
+  - Phone slot thickness13mm suits user-confirmed10–12mm cased phone; soft pads needed
+    for grip.
+decisions:
+- status: superseded_by_R03
+  decision: orange/yellow palette; transparent visor separate; reduced complexity
+    and screws; request3MF color format
+- status: manufacturing_limit
+  decision: 3MF is assembled geometry with named material regions and color properties,
+    not machine-specific slicer settings or arranged printer plate
+- status: superseded_by_R03
+  date: '2026-10-31'
+  decision: Retain richer original mecha styling; prior3-part tapered form too simple.
+    Add twoOLED modules, user stated2.7x2.8; units interpreted provisionally as cm,
+    awaiting confirmation. Preserve orange/yellow and reduced decorative screws.
+- status: user_confirmed
+  decision: Both OLED modules behind one shared transparent visor; an opaque frame
+    must conceal PCB edges. User supplied front/back photos.
+- status: user_confirmed
+  date: '2026-10-31'
+  decision: Upright rear wall instead of forward taper; restore phone holder; orange-gray
+    palette; two separate side vent modules attach with screws; large Type-C access
+    because board socket does not align directly with exterior.
+- status: user_confirmed
+  date: '2026-10-31'
+  decision: Accepted concept as silhouette target with small deviations allowed; phone75mm
+    width includes case; full bowl nesting; port on left edge at board-local(0,40..50mm).
+- status: prototype_assumption
+  decision: Phone cradle76mm internal width,14mm depth, soft pads consume width clearance;
+    thickness not supplied. All electronics mounts/reference apertures remain provisional.
+- date: '2026-10-31'
+  status: user_requested
+  decision: User rejected R03 proportions completely; rebuild actual model close to
+    accepted concept. Preserve dimensional mechanical interfaces; photo governs appearance
+    only.
+- status: prototype_assumption
+  decision: Lower OLED arrangement along with shared visor to restore short chin.
+    Board position is a movable prototype reference, not a confirmed hardware mount.
+- date: '2026-10-31'
+  status: user_requested
+  decision: First print only main structural shell and matching internal docking base.
+    Decorative armor and differently colored parts must be independent, attached by
+    screws in second batch.
+- date: '2026-10-31'
+  status: prototype_engineering_choice
+  decision: M2x10 head/base screws with two added M2 nuts rather than unverified plastic
+    pilot threads; M2nut envelope AF4.4/depth2 includes prototype allowance. Real
+    fastener fit remains trial-fit.
+- date: '2026-10-31'
+  status: user_requested
+  decision: Add clear removable visor to first printing batch; include its gray retaining
+    frame necessary for assembly. Preserve R05 core and fixed bowl geometry.
+- date: '2026-10-31'
+  status: user_requested
+  decision: Continue and complete remaining separate decorative components after first-batch
+    body/base/clear visor package.
+- date: '2026-10-31'
+  status: user_confirmed
+  decision: Cased-phone thickness approximately10–12mm. Set13mm channel with soft
+    pads; width75mm remains confirmed.
+validation_targets:
+  dimensions:
+    dock_full_depth_mm: 29.4
+  clearances:
+    parts: no positive-volume overlap
+    bowl_reference: No solid interference with R02 bowl at identity placement, whole
+      height29 nested
+  features:
+    mesh: valid closed solid meshes with materials
+    limitations: visor retention,screw receivers,magnets and actual electronics remain
+      provisional
+backend:
+  default: build123d
+  override: null
+source:
+  entrypoint: source/model.py
+outputs:
+  assembly_step: outputs/step/model.step
+  per_part_step: true
+  requested_color_format: 3MF, user explicitly requested
+  print_bundle: outputs/print_R06_batch2/
+review:
+  manifest: review/manifest.json
+  annotations: review/annotations.json
+  parameter_patch: review/parameter_patch.json
+validation:
+  report: validation/report.json
+  current_context: validation/current_context.json
+  spec_coverage: validation/spec_coverage.json
+  feature_registry: validation/feature_registry.json
+  layout_report: validation/layout_report.json
+open_questions:
+- id: oled_final_dimensions
+  blocking_for:
+  - production mounting holes
+  - final opaque orange mask display aperture
+  - production depth fit
+  question: 27x28mm assumed cm conversion of user2.7x2.8; exact active display area,
+    pin-inclusive thickness and hole centers remain unmeasured. Proceed only with
+    adjustable reference envelopes.

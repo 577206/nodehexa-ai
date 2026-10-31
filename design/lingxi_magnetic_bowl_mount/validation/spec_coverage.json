@@ -1,0 +1,208 @@
+{
+  "schema": "engineering-3d-modeling.spec_coverage.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_magnetic_bowl_mount",
+  "generated_at": "2026-10-31T07:26:59.301324Z",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "feature:fixed_hood",
+      "status": "pass"
+    },
+    {
+      "check": "feature:two_recessed_screw_wells",
+      "status": "pass"
+    },
+    {
+      "check": "feature:connector_pocket",
+      "status": "pass"
+    },
+    {
+      "check": "feature:head_keyed_nest",
+      "status": "pass"
+    },
+    {
+      "check": "feature:wire_exit",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Do not change or drill original frame; use exactly its two cover holes",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Two screws fix only the hood to chassis, never the detachable head",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:User requested magnetic-only head retention; no latch",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Bottom remains open; do not create a full lower floor",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Preserve servo pockets, local widths and joint interfaces",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Keep both power supplies independent; no battery/power rail through the 3 signal wires",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Glue only connector housing support lands, not pins, springs or contact face",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Do not infer actual robot heights or cover width from perspective photos",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:hole_center_distance_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:base_outer_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:maximum_height_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:screw_bearing_thickness_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:clearances:electronics",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:clearances:head_nest",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:clearances:screw_engagement",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:hood",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:screw_wells",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:connector",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:features:motion",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:cover_hole_pitch",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:base_outer",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:roof_outer",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:inner_bottom",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:inner_top",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:outer_corner_radius",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:inner_corner_radius",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:ceiling_height",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:roof_thickness",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:well_outer_diameter",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:well_access_diameter",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:screw_clearance_diameter",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:screw_seat_thickness",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:boss_length",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:boss_width",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:guide_outer",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:guide_inner",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:guide_height",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:throat_length",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:throat_width",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:flange_stop_z",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:collar_top_z",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:relief_length",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:relief_width",
+      "status": "pass"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "feature_gaps": [],
+  "placement_gaps": [],
+  "constraint_gaps": [],
+  "validation_target_gaps": [],
+  "unused_geometry_parameters": [],
+  "waived_unused_geometry_parameters": []
+}

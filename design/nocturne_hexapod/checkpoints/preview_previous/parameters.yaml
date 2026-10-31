@@ -2,15 +2,15 @@ schema: engineering-3d-modeling.parameters.v1
 units: mm
 parameters:
   body_width_increase:
-    value: 30
+    value: 50
     unit: mm
-    role: Confirmed total width increase, no global scaling
+    role: Total outer-edge width increase; original central openings fixed
     ui:
       editable: false
     validation:
       affects_geometry: true
   side_translation:
-    value: 15
+    value: 25
     unit: mm
     role: Derived half width increase
     ui:

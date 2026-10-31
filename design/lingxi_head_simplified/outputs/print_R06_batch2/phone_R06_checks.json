@@ -1,0 +1,446 @@
+{
+  "parts": [
+    {
+      "name": "D14_PHONE_BACK",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28146.274322196605,
+      "bbox_mm": [
+        92.0,
+        25.0,
+        103.0
+      ],
+      "watertight": true,
+      "is_volume": true,
+      "components": 1
+    },
+    {
+      "name": "D15_PHONE_JAW_L",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11339.898506896103,
+      "bbox_mm": [
+        11.000000000000007,
+        16.0,
+        89.80000000000003
+      ],
+      "watertight": true,
+      "is_volume": true,
+      "components": 1
+    },
+    {
+      "name": "D16_PHONE_JAW_R",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11339.898506896101,
+      "bbox_mm": [
+        11.0,
+        16.0,
+        89.80000000000003
+      ],
+      "watertight": true,
+      "is_volume": true,
+      "components": 1
+    }
+  ],
+  "intersections": [
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "H01_MAIN_SHELL",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "H02_DOCK_RECEIVER",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "H03_CLEAR_VISOR",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D15_PHONE_JAW_L",
+      "b": "H01_MAIN_SHELL",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D15_PHONE_JAW_L",
+      "b": "H02_DOCK_RECEIVER",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D15_PHONE_JAW_L",
+      "b": "H03_CLEAR_VISOR",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D15_PHONE_JAW_L",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D16_PHONE_JAW_R",
+      "b": "H01_MAIN_SHELL",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D16_PHONE_JAW_R",
+      "b": "H02_DOCK_RECEIVER",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D16_PHONE_JAW_R",
+      "b": "H03_CLEAR_VISOR",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D16_PHONE_JAW_R",
+      "b": "H04_VISOR_FRAME",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "D15_PHONE_JAW_L",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D14_PHONE_BACK",
+      "b": "D16_PHONE_JAW_R",
+      "volume_mm3": 0
+    },
+    {
+      "a": "D15_PHONE_JAW_L",
+      "b": "D16_PHONE_JAW_R",
+      "volume_mm3": 0
+    }
+  ],
+  "hardware": [
+    {
+      "group": "PHONE_TO_BODY",
+      "center": [
+        -25,
+        -67,
+        50
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.3999999999999986
+    },
+    {
+      "group": "PHONE_TO_BODY",
+      "center": [
+        25,
+        -67,
+        50
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.3999999999999986
+    },
+    {
+      "group": "PHONE_JAWS",
+      "center": [
+        -42.0,
+        -74,
+        78
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.4000000000000057
+    },
+    {
+      "group": "PHONE_JAWS",
+      "center": [
+        -42.0,
+        -74,
+        120
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.4000000000000057
+    },
+    {
+      "group": "PHONE_JAWS",
+      "center": [
+        42.0,
+        -74,
+        78
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.4000000000000057
+    },
+    {
+      "group": "PHONE_JAWS",
+      "center": [
+        42.0,
+        -74,
+        120
+      ],
+      "nut_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "shaft_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "head_intrusion": {
+        "D14_PHONE_BACK": 0,
+        "D15_PHONE_JAW_L": 0,
+        "D16_PHONE_JAW_R": 0,
+        "H01_MAIN_SHELL": 0,
+        "H02_DOCK_RECEIVER": 0,
+        "H03_CLEAR_VISOR": 0,
+        "H04_VISOR_FRAME": 0
+      },
+      "phone_hardware_intrusion_mm3": 0,
+      "nominal_thread_protrusion_mm": 0.4000000000000057
+    }
+  ],
+  "mounts": [
+    {
+      "id": "PHONE_TO_BODY",
+      "parts": [
+        "D14_PHONE_BACK",
+        "H01_MAIN_SHELL"
+      ],
+      "centers_mm": [
+        [
+          -25,
+          -67,
+          50
+        ],
+        [
+          25,
+          -67,
+          50
+        ]
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "screw": "M2x12 pan",
+      "quantity": 2,
+      "nut": "M2 AF4.0 x1.6; internal accessible loose nut",
+      "head_bearing_y_mm": -72.0,
+      "nut_bearing_y_mm": -62.0,
+      "note": "Install body nuts with docking base removed, before electronics. Pan heads recessed 2mm into rearplate to avoid phone contact. Two flat pads seat at Y=-67; do not use bracket as a lifting handle."
+    },
+    {
+      "id": "PHONE_JAWS",
+      "parts": [
+        "D14_PHONE_BACK",
+        "D15_PHONE_JAW_L",
+        "D16_PHONE_JAW_R"
+      ],
+      "centers_mm": [
+        [
+          -42.0,
+          -74,
+          78
+        ],
+        [
+          -42.0,
+          -74,
+          120
+        ],
+        [
+          42.0,
+          -74,
+          78
+        ],
+        [
+          42.0,
+          -74,
+          120
+        ]
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "screw": "M2x12 pan",
+      "quantity": 4,
+      "nut": "M2 AF4.0 x1.6; exposed loose nut",
+      "head_bearing_y_mm": -80.0,
+      "nut_bearing_y_mm": -70.0,
+      "note": "Orange jaw recess Ø4.8; all shafts Ø2.4. Fit jaws to backplate before mounting cradle. Phone enters from +Z; soft contact pads user fitted."
+    }
+  ],
+  "phone": {
+    "nominal_cased_width_mm": 75,
+    "user_cased_thickness_range_mm": [
+      10,
+      12
+    ],
+    "clear_width_mm": 76.0,
+    "clear_depth_mm": 13.0,
+    "unconfirmed": "Actual soft-pad grip and loaded bracket flex require physical test.",
+    "envelope_collision_mm3": {
+      "D14_PHONE_BACK": 0,
+      "D15_PHONE_JAW_L": 0,
+      "D16_PHONE_JAW_R": 0
+    }
+  },
+  "body_nut_installation_path": [
+    {
+      "x": -25,
+      "inside_cavity_approach_to_nut_volume_mm3": 0
+    },
+    {
+      "x": 25,
+      "inside_cavity_approach_to_nut_volume_mm3": 0
+    }
+  ],
+  "pass": true
+}

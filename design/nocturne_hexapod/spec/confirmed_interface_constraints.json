@@ -11,11 +11,11 @@
     "Joint axis locations within each local assembly and existing alignment",
     "Servo horn, bearing/axle seat and original mechanical clearances"
   ],
-  "allowed_change": "Superseded 30 mm center extension: new confirmed target is 50 mm total edge extension, moving leg-root groups 25 mm each while central PCB mounts/opening stay fixed. Mapping PCB support interface to CAD is required before rebuild.",
+  "allowed_change": "EDGE50: outer mount groups translate +/-25 mm without scaling; upper center aperture and two fixed center holes remain; lower core remains except six obsolete inner seats removed above the 3 mm base. White-blue palette.",
   "current_evidence": {
-    "upper_frame": "validation/first_draft_checks.json confirms each original half is unchanged after rigid translation",
-    "shin_plate": "Protected connector regions and original 3 mm core match the reconstructed reference. Added exterior relief reaches 4.2 mm total only outside checked interface islands.",
-    "limitations": "This is not verification against a measured servo envelope or full assembled leg sweep."
+    "upper_frame": "validation/edge_frame_checks.json",
+    "lower_frame": "validation/BodyButtom_edge50_checks.json; validation/BodyButtom-18650-2S_edge50_checks.json",
+    "limitations": "no complete assembled sweep or physical fit"
   },
   "release_gates": [
     "Compare original vs redesigned local interface sections and plate separation",

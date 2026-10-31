@@ -1,0 +1,92 @@
+{
+  "valid_solids": 5,
+  "closed_volume_meshes": 5,
+  "part_counts": {
+    "orange_yellow_co_print_shell": 1,
+    "orange_base": 1,
+    "clear_visor": 1
+  },
+  "color_region_meshes": 5,
+  "color_names": [
+    "ORANGE",
+    "YELLOW",
+    "CLEAR"
+  ],
+  "overlaps": [
+    {
+      "a": "H01_ORANGE_SHELL",
+      "b": "H02_YELLOW_L",
+      "mm3": 0.0
+    },
+    {
+      "a": "H01_ORANGE_SHELL",
+      "b": "H03_YELLOW_R",
+      "mm3": 0.0
+    },
+    {
+      "a": "H01_ORANGE_SHELL",
+      "b": "H04_ORANGE_BASE",
+      "mm3": 0.0
+    },
+    {
+      "a": "H01_ORANGE_SHELL",
+      "b": "H05_CLEAR_VISOR",
+      "mm3": 0.0
+    },
+    {
+      "a": "H02_YELLOW_L",
+      "b": "H03_YELLOW_R",
+      "mm3": 0.0
+    },
+    {
+      "a": "H02_YELLOW_L",
+      "b": "H04_ORANGE_BASE",
+      "mm3": 0.0
+    },
+    {
+      "a": "H02_YELLOW_L",
+      "b": "H05_CLEAR_VISOR",
+      "mm3": 0.0
+    },
+    {
+      "a": "H03_YELLOW_R",
+      "b": "H04_ORANGE_BASE",
+      "mm3": 0.0
+    },
+    {
+      "a": "H03_YELLOW_R",
+      "b": "H05_CLEAR_VISOR",
+      "mm3": 0.0
+    },
+    {
+      "a": "H04_ORANGE_BASE",
+      "b": "H05_CLEAR_VISOR",
+      "mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "STRUCTURE PROTOTYPE, not a production print release",
+    "Camera port, electronics standoffs, battery, speaker layout not designed",
+    "Visor backing seat modeled; final sliding retention / clips not validated",
+    "Screw positions and dimensions are draft; final nut/thread retention unverified",
+    "Magnetic pair exact axial compression, adhesive and holding strength not physically verified",
+    "3MF is assembled positions, not a sliced or arranged build plate",
+    "Transparent display color does not guarantee optically clear printed material"
+  ],
+  "bowl_base_overlap_mm3": 0.0,
+  "3mf_package": {
+    "crc_pass": true,
+    "model_objects": 6,
+    "physical_build_items": 3,
+    "color_properties": 3,
+    "sha256": "00da76df2bb0e96ad8cf93ad7b6081e26e5d6a4ac294938c4459de4a9374fd5d",
+    "slicer_round_trip": "not verified in actual user slicer"
+  },
+  "official_lib3mf_strict_readback": {
+    "mesh_objects": 5,
+    "build_items": 3,
+    "color_groups": 1,
+    "base_material_groups": 1,
+    "warning_count": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "revision": "R05A",
+  "source_sha256": "f335a04932f1513ccd19d649c9f998e86821cce380b7df519ab6b4c08b4cf4fc",
+  "source_unchanged_during_render": true,
+  "core_only": true,
+  "scope_note": "First-batch body, deep base and any included clear visor/retainer; second-batch screw-on decorative parts are not included in this source scene.",
+  "blend": "repository/design/lingxi_head_simplified/outputs/renders/R05A/Lingxi_Head_R05A_Actual_CAD.blend",
+  "device": "METAL",
+  "samples": 48,
+  "asset_size_mm": [
+    125.2,
+    153.5,
+    113.0997
+  ],
+  "objects": 4,
+  "triangles": 53392,
+  "materials": 5,
+  "renders": [
+    {
+      "view": "hero",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_hero.png",
+      "size_bytes": 2015905,
+      "resolution": 1400,
+      "seconds": 8.0
+    },
+    {
+      "view": "front",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_front.png",
+      "size_bytes": 1051544,
+      "resolution": 1000,
+      "seconds": 3.3
+    },
+    {
+      "view": "bottom",
+      "path": "repository/design/lingxi_head_simplified/outputs/renders/R05A/R05A_bottom.png",
+      "size_bytes": 1027879,
+      "resolution": 1000,
+      "seconds": 2.4
+    }
+  ],
+  "qa_report": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_head_simplified/validation/R05A_blender_qa.json",
+  "qa_asset_pass": true,
+  "status": "VISUALLY_REVIEWED_FIT_PRINT_PROTOTYPE"
+}

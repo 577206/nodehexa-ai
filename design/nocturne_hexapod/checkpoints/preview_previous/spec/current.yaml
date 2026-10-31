@@ -4,7 +4,7 @@ project:
   kind: assembly
   units: mm
 model:
-  selected_direction: NOCTURNE black-red hexapod
+  selected_direction: white-blue hexapod; edge-only body widening
   precision: reference-derived CAD; physical fit unverified
 coordinate_system:
   units: mm
@@ -48,7 +48,7 @@ coordinate_system:
         for inspection only. Global assembly transform still pending.
   imported_components: {}
   source:
-    status: recorded
+    status: confirmed
     confirmed_by: existing robot frame convention; user confirms width direction
     notes:
     - Local flat part coordinates u/v/w are separate from assembly XYZ. Assembly transforms
@@ -66,8 +66,8 @@ inputs:
 placements: {}
 features:
 - id: upper_frame_width_extension
-  description: Original opposite interface groups rigidly translated +/-15 mm, center
-    crossings bridged
+  description: Outer boundary and twelve leg mount holes extended +/-25 mm; original
+    central aperture and two central cover mount holes fixed.
 - id: shin_original_interfaces
   description: Reference-contour reconstruction plus two measured transverse pilot
     bores; compare protected bands before/after
@@ -78,17 +78,14 @@ features:
   description: Two solid red inserts, no lighting; retention and printer tolerances
     pending
 - id: lower_frame_width_extension
-  description: 'Both mutually exclusive lower-frame variants: preserve source-derived
-    local half geometry; translate +/-15 mm and bridge center section; dimensions
-    130.343 x 108.343 x 9 mm.'
+  description: Original lower core stays fixed; add 3mm perimeter bands and original
+    translated outer mount geometry; ordinary and 2S alternatives 130.343 x 128.343
+    x 9mm.
 constraints:
   formal: []
   narrative:
   - Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores,
     nut pockets and screw bearing thickness.
-  - Width increase 30 mm total, left/right interface groups translate 15 mm each without
-    scale.
-  - Red leg inserts are solid non-emissive material. No leg lighting wiring.
   - No whole-mesh scaling. Preserve original effective link lengths.
   - Concept image is appearance reference only; never infer production hole dimensions
     from it.
@@ -97,15 +94,19 @@ constraints:
   - Original hardware remains. Any additive armor must preserve tool access and joint
     sweep.
   - No printable-production-ready claim before full assembly and fit checks.
+  - 'New target: edge-only widening 50 mm total, central PCB mounting geometry and
+    opening fixed. Leg-root groups translate outward 25 mm while PCB mounting/support
+    geometry stays fixed.'
+  - White main structure, blue solid inserts, no leg lighting.
 decisions:
 - id: style
-  status: confirmed
+  status: superseded_20261031
   value: NOCTURNE selected by user
 - id: body_width_increase
-  status: confirmed
+  status: superseded_20261031
   value_mm: 30
 - id: red_leg_details
-  status: confirmed
+  status: superseded_20261031
   value: solid red inserts, no lights
 - id: electronics_footprint
   status: approximate_user_measurement
@@ -118,9 +119,23 @@ decisions:
   value: small clearance inlay; retention not yet validated; do not rely on interference
     fit for moving robot
 - id: lower_frame_follow_upper
-  status: confirmed
+  status: superseded_20261031
   value: Same 30 mm total central extension as top, no interface scaling. Both original
     variants kept as alternatives.
+- id: edge_only_widening_20261031
+  status: confirmed
+  value: Original central PCB opening and mounting geometry fixed; original leg-root
+    groups translate outward 25 mm per side with local interfaces unchanged; top and
+    bottom plates extend by 50 mm total, thickness unchanged.
+- id: palette_20261031
+  status: confirmed
+  value: white main parts, blue non-emissive inserts; previous red part IDs retained
+    for traceability
+- id: edge50_implementation
+  status: implemented_draft
+  value: Retain original lower core and unused inner seats; use outward translated
+    outer mounts for legs. 0.05 mm Boolean overlap lies within existing rim material
+    and is validated against original core.
 validation_targets:
   dimensions:
     leg_kinematics_mm:
@@ -130,16 +145,21 @@ validation_targets:
     - 90.05
     body_top_plan_target_mm:
     - 134.809
-    - 104.343
+    - 124.343
     body_bottom_plan_target_mm:
     - 130.343
-    - 108.343
+    - 128.343
     note: Global body roughly 135 by 109 mm; not usable cavity size.
   clearances: {}
   features: {}
 backend:
   default: build123d
-  override: null
+  override:
+    scope: lower_frame_geometry_only
+    backend: FreeCAD OCCT
+    reason: Existing FreeCAD-derived BRep references; robust Boolean joining of faceted
+      reference boundaries. Rebuild source/build_edge_bottom_freecad.py; preview composition
+      remains build123d.
 source:
   entrypoint: source/model.py
 outputs:
@@ -165,7 +185,14 @@ pending:
 - Red insert retention verification and process fit coupon
 delivery_scope:
   requested: all redesigned print parts with defined dimensions
-  current_iteration: 'partial CAD: upper frame, two alternative lower frames, shin
-    face and inserts'
+  current_iteration: EDGE50 top and two alternative bottoms, shin face and blue inserts;
+    no full assembly
   whole_robot_complete: false
   production_ready: false
+implementation_state:
+  geometry: 'EDGE50 implemented: upper central aperture and two central mount holes
+    fixed; lower original core retained, outer leg mount groups displaced +/-25 mm'
+  palette: white structure and solid blue inserts
+  lower_backend: FreeCAD helper builds validated reference-derived BRep; build123d
+    composes inspection model
+  assembly: inspection layout only, no full robot fit verification

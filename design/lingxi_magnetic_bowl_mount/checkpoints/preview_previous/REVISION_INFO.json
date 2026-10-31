@@ -1,0 +1,25 @@
+{
+  "schema": "engineering-3d-modeling.preview_revision.v1",
+  "status": "available",
+  "created_at": "2026-10-31T07:25:01.033356Z",
+  "created_by": "scripts/checkpoint_preview_revision.py",
+  "reason": "R02 bottom insertion connector throat with flange stop and open solder relief",
+  "checkpoint": "checkpoints/preview_previous",
+  "hashes_before": {
+    "spec": "81b707352ef787eb0db3be376b005e5c49bbe73f9c6467b94037506ff98d34c7",
+    "parameters": "886782fb8a660a8ff36f668461f1501d2457be4c0ad631c3240ec0761cd31a79",
+    "source": "5178cbcd00084482ccdefce29264741d6972d5145c695850f093e27bf1305b16",
+    "review_manifest": "04ba09d3c6168813f263719dbf028da68b4ab59dd5ebb40a40fb136870045ad9",
+    "review_mesh": "868f7e94fc22f28f50713e414cbc5843b504a85d418d430ce634b8183ad2f8c7"
+  },
+  "files": [
+    "spec/current.yaml",
+    "parameters.yaml",
+    "source",
+    "review/manifest.json",
+    "review/cache",
+    "outputs/step"
+  ],
+  "missing": [],
+  "checkpoint_hash": "38fef7be110c92649b6d7e696ac75336f9f893cb5ff26e54c0aae7571fbbb011"
+}

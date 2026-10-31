@@ -15,7 +15,7 @@ def main():
     params=load_parameters(ROOT/'parameters.yaml')
     model=build_model(params)
     vertices=[];faces=[];part_records=[]
-    colors={'N002_lower_frame_W30_DRAFT':'#e5edf7','N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT':'#e5edf7','N001_upper_frame_W30_DRAFT':'#e5edf7','N111_shin_face_DRAFT':'#e5edf7',
+    colors={'N002_lower_frame_EDGE50_DRAFT':'#e5edf7','N003_lower_frame_18650_2S_EDGE50_ALTERNATIVE_DRAFT':'#e5edf7','N001_upper_frame_EDGE50_DRAFT':'#e5edf7','N111_shin_face_DRAFT':'#e5edf7',
             'N112_L_red_insert_DRAFT':'#086acc','N112_R_red_insert_DRAFT':'#086acc'}
     for part in model.children:
         vv,tt=part.tessellate(0.08,0.15)
@@ -29,7 +29,7 @@ def main():
                           'world_point':pts.mean(0).tolist(),'normal':normal.tolist()})
         part_records.append({'id':part.label,'label':part.label,'visible':True,'color':colors[part.label]})
     manifest=json.loads((ROOT/'review/manifest.json').read_text())
-    manifest['project']['name']='BLUE / WHITE - old W30 geometry; requested edge W50 pending'
+    manifest['project']['name']='BLUE / WHITE - EDGE50 fixed central opening'
     manifest['preview']={'mesh_json':'cache/current_mesh.json','mesh_closed':True}
     manifest['parts']=part_records;manifest['parameters']=[]
     manifest['versions']['current']['source']='../source/model.py'
@@ -39,15 +39,17 @@ def main():
 
     fig=plt.figure(figsize=(14,10),facecolor='#f2f2f0')
     gs=fig.add_gridspec(2,2,height_ratios=[1,1],wspace=.22,hspace=.3)
-    ax=fig.add_subplot(gs[0,0]);ax.set_title('01 / UPPER FRAME — original vs +30 mm width',loc='left',fontsize=12,fontweight='bold')
+    ax=fig.add_subplot(gs[0,0]);ax.set_title('01 / UPPER FRAME — edge +50 mm / original opening fixed',loc='left',fontsize=12,fontweight='bold')
     orig=profile('BodyTop')['loops_uv_mm'];cy=74.34314727783203/2
-    for points in orig:
+    for idx,points in enumerate(orig):
         q=np.array(points);q=np.vstack([q,q[0]])
         ax.plot(q[:,0],q[:,1],color='#999b9f',lw=.8,ls='--')
-        q=np.array(widen_loop(points,cy,30));q=np.vstack([q,q[0]])
+        q=np.array(widen_loop(points,cy,50)) if idx==0 else np.array(points)
+        if idx not in (0,1,5,11): q[:,1]+=25 if np.mean(q[:,1])>cy else -25
+        q=np.vstack([q,q[0]])
         ax.plot(q[:,0],q[:,1],color='#b92038',lw=.8)
     ax.set_aspect('equal');ax.set_xlabel('Local u / mm');ax.set_ylabel('Local v / mm');ax.grid(alpha=.12)
-    ax.text(.02,.02,'134.809 × 104.343 × 3.000 mm\nOriginal interface groups translated ±15 mm',transform=ax.transAxes,fontsize=9,bbox={'facecolor':'white','alpha':.9,'edgecolor':'none'})
+    ax.text(.02,.02,'134.809 × 124.343 × 3.000 mm\nOuter mounts moved ±25 mm; central opening fixed',transform=ax.transAxes,fontsize=9,bbox={'facecolor':'white','alpha':.9,'edgecolor':'none'})
 
     ax=fig.add_subplot(gs[0,1]);ax.set_title('02 / SHIN FACE — preserved interfaces',loc='left',fontsize=12,fontweight='bold')
     loops=profile('FootGround')['loops_uv_mm']
@@ -72,9 +74,9 @@ def main():
     ax=fig.add_subplot(gs[1,1]);ax.axis('off')
     ax.text(0,.98,'DRAFT ENGINEERING CHECK',fontsize=16,fontweight='bold',va='top')
     bb=ground_parts(params)[1].bounding_box().size
-    text=f'Six CAD solids / lower frames are alternatives\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nBlue inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining walls, assembled fit and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
+    text=f'Six CAD solids / lower frames are alternatives\nLower frames: 130.343 x 128.343 x 9 mm\n\nUpper frame: 134.809 × 124.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nBlue inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining walls, assembled fit and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
     ax.text(0,.84,text,fontsize=11,linespacing=1.65,va='top')
-    fig.suptitle('BLUE / WHITE — PALETTE ONLY; W50 EDGE REDESIGN PENDING',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
+    fig.suptitle('BLUE / WHITE — EDGE +50 / CENTRAL OPENING FIXED',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.png',dpi=150,bbox_inches='tight')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.svg',bbox_inches='tight')
     print('Wrote review mesh and actual CAD comparison sheet.')

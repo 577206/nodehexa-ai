@@ -1,4 +1,5 @@
 #include "wifi_bridge.h"
+#include "../eyes/eyes.h"
 
 #include "bsp_camera.h"
 #include "robot_link.h"
@@ -83,6 +84,14 @@ static esp_err_t status_get(httpd_req_t *req)
     const robot_link_snapshot_t robot = robot_link_snapshot();
     cJSON *root = cJSON_CreateObject();
     if (root == NULL) return send_json(req, NULL, "500 Internal Server Error");
+    cJSON *eyes=cJSON_AddObjectToObject(root,"eyes");
+    if(eyes){
+        unsigned mask=eyes_ready_mask();
+        cJSON_AddBoolToObject(eyes,"left",mask&1);
+        cJSON_AddBoolToObject(eyes,"right",mask&2);
+        cJSON_AddNumberToObject(eyes,"mode",eyes_current_mode());
+        cJSON_AddNumberToObject(eyes,"contrast",eyes_contrast());
+    }
     cJSON_AddNumberToObject(root, "protocol", 1);
     cJSON_AddBoolToObject(root, "directAudio", CONFIG_NODEHEXA_QWEN_DIRECT);
     cJSON_AddNumberToObject(root, "audioState", direct_audio_state());
@@ -165,6 +174,25 @@ static cJSON *read_post(httpd_req_t *req)
     return cJSON_ParseWithLength(body, used);
 }
 
+static esp_err_t eyes_post(httpd_req_t *req)
+{
+    if(!authorized(req))return ESP_OK;
+    cJSON *body=read_post(req);
+    cJSON *mode=cJSON_GetObjectItemCaseSensitive(body,"mode");
+    cJSON *duration=cJSON_GetObjectItemCaseSensitive(body,"durationMs");
+    cJSON *contrast=cJSON_GetObjectItemCaseSensitive(body,"contrast");
+    if(!cJSON_IsObject(body)||cJSON_GetArraySize(body)!=3||
+       !cJSON_IsNumber(mode)||mode->valuedouble!=mode->valueint||mode->valueint < -1||mode->valueint>=EYE_MODE_COUNT||
+       !cJSON_IsNumber(duration)||duration->valuedouble!=duration->valueint||duration->valueint<100||duration->valueint>10000||
+       !cJSON_IsNumber(contrast)||contrast->valuedouble!=contrast->valueint||contrast->valueint<0||contrast->valueint>255){
+        cJSON_Delete(body);return send_error(req,"400 Bad Request","Invalid eye controls");
+    }
+    eyes_control(mode->valueint,duration->valueint,contrast->valueint);
+    cJSON_Delete(body);
+    cJSON *result=cJSON_CreateObject();cJSON_AddStringToObject(result,"status","queued");
+    return send_json(req,result,"202 Accepted");
+}
+
 static esp_err_t speak_post(httpd_req_t *req)
 {
     if (!authorized(req)) return ESP_OK;
@@ -241,13 +269,14 @@ int wifi_bridge_init(void)
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = BRIDGE_PORT;
     config.stack_size = 8192;
-    config.max_uri_handlers = 6;
+    config.max_uri_handlers = 7;
     config.max_open_sockets = 4;
     config.lru_purge_enable = true;
     config.recv_wait_timeout = 8;
     config.send_wait_timeout = 8;
     if (httpd_start(&s_server, &config) != ESP_OK) return -1;
     const httpd_uri_t handlers[] = {
+        {.uri = "/api/eyes", .method = HTTP_POST, .handler = eyes_post},
         {.uri = "/api/audio/up", .method = HTTP_GET, .handler = audio_get},
         {.uri = "/api/audio/down", .method = HTTP_POST, .handler = audio_post},
         {.uri = "/api/status", .method = HTTP_GET, .handler = status_get},
