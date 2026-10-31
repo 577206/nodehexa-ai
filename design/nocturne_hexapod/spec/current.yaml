@@ -95,7 +95,8 @@ constraints:
     sweep.
   - No printable-production-ready claim before full assembly and fit checks.
   - 'New target: edge-only widening 50 mm total, central PCB mounting geometry and
-    opening fixed. Leg-root movement pending clarification.'
+    opening fixed. Leg-root groups translate outward 25 mm while PCB mounting/support
+    geometry stays fixed.'
   - White main structure, blue solid inserts, no leg lighting.
 decisions:
 - id: style
@@ -122,10 +123,10 @@ decisions:
   value: Same 30 mm total central extension as top, no interface scaling. Both original
     variants kept as alternatives.
 - id: edge_only_widening_20261031
-  status: confirmed_target_pending_mount_placement
-  value: Original central PCB opening and mounting geometry fixed; extend left/right
-    outer edges 25 mm each, total 50 mm. Top and bottom thickness unchanged. Supersedes
-    W30 center extension.
+  status: confirmed
+  value: Original central PCB opening and mounting geometry fixed; original leg-root
+    groups translate outward 25 mm per side with local interfaces unchanged; top and
+    bottom plates extend by 50 mm total, thickness unchanged.
 - id: palette_20261031
   status: confirmed
   value: white main parts, blue non-emissive inserts; previous red part IDs retained
@@ -139,10 +140,10 @@ validation_targets:
     - 90.05
     body_top_plan_target_mm:
     - 134.809
-    - 104.343
+    - 124.343
     body_bottom_plan_target_mm:
     - 130.343
-    - 108.343
+    - 128.343
     note: Global body roughly 135 by 109 mm; not usable cavity size.
   clearances: {}
   features: {}
@@ -172,8 +173,9 @@ pending:
   release
 - Original short rear wall placement
 - Red insert retention verification and process fit coupon
-- Resolve whether leg roots move outward with W50 edge extension; replace obsolete
-  W30 geometry after clarification.
+- Map actual PCB mounting holes and support walls to original part coordinates before
+  splitting fixed PCB structure from translated leg-root groups. Photos have no scale
+  or hole-center mapping.
 delivery_scope:
   requested: all redesigned print parts with defined dimensions
   current_iteration: 'partial CAD: upper frame, two alternative lower frames, shin
@@ -183,5 +185,6 @@ delivery_scope:
 implementation_state:
   geometry: W30 center-extension geometry is obsolete, retained only as interim palette
     preview
-  target_geometry: W50 edge-only extension; pending leg-root placement clarification
+  target_geometry: W50 edge-only extension; leg roots move outward 25 mm; exact PCB
+    mounting/support protection boundary not yet mapped to CAD
   palette: implemented white-blue

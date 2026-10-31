@@ -1,8 +1,8 @@
 {
   "schema": "engineering-3d-modeling.spec_coverage.v1",
   "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
-  "generated_at": "2026-10-31T02:34:31.301127Z",
-  "status": "pass",
+  "generated_at": "2026-10-31T03:13:27.253378Z",
+  "status": "warn",
   "checks": [
     {
       "check": "feature:upper_frame_width_extension",
@@ -29,14 +29,6 @@
       "status": "pass"
     },
     {
-      "check": "constraint:Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
-      "status": "pass"
-    },
-    {
-      "check": "constraint:Red leg inserts are solid non-emissive material. No leg lighting wiring.",
-      "status": "pass"
-    },
-    {
       "check": "constraint:No whole-mesh scaling. Preserve original effective link lengths.",
       "status": "pass"
     },
@@ -55,6 +47,14 @@
     {
       "check": "constraint:No printable-production-ready claim before full assembly and fit checks.",
       "status": "pass"
+    },
+    {
+      "check": "constraint:New target: edge-only widening 50 mm total, central PCB mounting geometry and opening fixed. Leg-root groups translate outward 25 mm while PCB mounting/support geometry stays fixed.",
+      "status": "warn"
+    },
+    {
+      "check": "constraint:White main structure, blue solid inserts, no leg lighting.",
+      "status": "warn"
     },
     {
       "check": "validation_target:dimensions:leg_kinematics_mm",
@@ -93,11 +93,22 @@
       "status": "pass"
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "spec coverage audit found 2 gap(s)"
+  ],
   "errors": [],
   "feature_gaps": [],
   "placement_gaps": [],
-  "constraint_gaps": [],
+  "constraint_gaps": [
+    {
+      "kind": "constraint",
+      "id": "New target: edge-only widening 50 mm total, central PCB mounting geometry and opening fixed. Leg-root groups translate outward 25 mm while PCB mounting/support geometry stays fixed."
+    },
+    {
+      "kind": "constraint",
+      "id": "White main structure, blue solid inserts, no leg lighting."
+    }
+  ],
   "validation_target_gaps": [],
   "unused_geometry_parameters": [],
   "waived_unused_geometry_parameters": []

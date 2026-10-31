@@ -1,0 +1,22 @@
+原版六足机器人打印数量核对（不含备件）
+腿部数量按每腿一套推算，尚非官方完整BOM；短立板数量未确认。
+
+JointCross: 6 件
+JointTop: 6 件
+JointDown: 6 件
+LegTop: 6 件
+LegBottom: 6 件
+ThighTop: 6 件
+ThighBottom: 6 件
+FootTop: 6 件
+FootButtom: 6 件
+FootGround: 6 件
+FootTip: 6 件
+BodyTop: 1 件
+BodyButtom OR BodyButtom-18650-2S: 1 件
+BodyCenter OR BodyCenter-Thin: 1 件
+BodySideWall: 2 件
+BodyBackWall: 待确认
+
+底板普通版/18650-2S版二选一；Center/Thin二选一。
+原版打印数量不等于新改版套件。当前W30旧几何已废止，W50边缘加宽尚未完成。
