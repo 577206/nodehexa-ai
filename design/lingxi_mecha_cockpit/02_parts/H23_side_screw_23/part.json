@@ -1,0 +1,19 @@
+{
+  "id": "H23",
+  "slug": "side_screw_23",
+  "title": "侧部螺钉头占位",
+  "category": "hardware",
+  "material": "black",
+  "folder": "02_parts/H23_side_screw_23",
+  "stl": "02_parts/H23_side_screw_23/H23_assembly.stl",
+  "volume_mm3": 11.699,
+  "size_mm": [
+    1.35,
+    3.598,
+    3.6
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

@@ -1,0 +1,138 @@
+{
+  "revision": "R05",
+  "predecessor": "R04",
+  "phase": "draft_review",
+  "backend": "FreeCAD solid scripts; Blender renders CAD meshes",
+  "reference": "00_reference/turnaround/generated_six_views.png",
+  "coordinate_system": {
+    "units": "mm",
+    "X": "right",
+    "Y": "rear",
+    "Z": "up",
+    "front": "-Y"
+  },
+  "request": "继续修改；以已确认橙灰机甲参考图为准",
+  "modifications": [
+    "手机支架压低、后倾",
+    "前颊灰色面减小，增加分层护甲和嵌缝",
+    "侧格栅提高并重新组织侧面装甲",
+    "保留多折面透明舱罩、实体分件和独立目录"
+  ],
+  "preserve": [
+    "R04历史总装和零件",
+    "同一CAD实体导入Blender，不靠渲染假造几何",
+    "所有尺寸未实测，暂用参数化样机"
+  ],
+  "verification": [
+    "single valid solid per part",
+    "front/side/hero comparison",
+    "mesh QA material+wireframe",
+    "assembly overlap report"
+  ],
+  "status": "DRAFT_REVIEW_NOT_PRINT_RELEASE",
+  "updated_local_date": "2026-10-30",
+  "print_assembly_ready": false,
+  "reference_match": "improved_not_approved",
+  "files": {
+    "cad_source": "06_tools/build_r05.py",
+    "edge_break_source": "06_tools/cad_edge_break_r05.py",
+    "assembly": "03_assembly/Lingxi_Cockpit_R05.FCStd",
+    "part_root": "02_parts/R05",
+    "manifest": "03_assembly/manifest_R05.json",
+    "blender_scene": "03_assembly/Lingxi_Cockpit_R05_review.blend",
+    "review_root": "04_review/iteration_05c",
+    "interference_report": "03_assembly/interference_R05.json"
+  },
+  "decisions": {
+    "body_half_widths_mm": [
+      37,
+      46,
+      50,
+      48,
+      41,
+      31,
+      27
+    ],
+    "shell_joint_mm": 0.3,
+    "canopy_stations_z_y_halfwidth_mm": [
+      [
+        33,
+        -53,
+        23
+      ],
+      [
+        40,
+        -52,
+        27
+      ],
+      [
+        58,
+        -42,
+        29
+      ],
+      [
+        73,
+        -27,
+        24
+      ],
+      [
+        81,
+        -15,
+        20
+      ]
+    ],
+    "camera_center_z_mm": 21,
+    "canopy_panels": 12,
+    "phone_cradle_tilt_deg": 10,
+    "phone_support_top_unrotated_z_mm": 95,
+    "vent_center_right_mm": [
+      47.5,
+      -28,
+      32
+    ],
+    "vent_profile_scale_yz": 0.9,
+    "vent_inset_unscaled_mm": 3.3,
+    "hardware_sizes": "unmeasured appearance placeholders"
+  },
+  "specification_role": "Decision record; authoring parameters are in build_r05.py and cad_edge_break_r05.py",
+  "resolved_in_iteration_05b": [
+    "Camera-hole tangency to split-shell plane removed with 0.3mm seam",
+    "Shoulder and intake pockets trimmed",
+    "Roof screw locations moved outside handle bases",
+    "Eye carrier moved to meet light guides"
+  ],
+  "limitations": [
+    "Unknown PCB, battery, lens, phone and connector fit dimensions",
+    "Assembly interfaces and tolerances not cleared",
+    "Desktop base remains legacy provisional model",
+    "FCStd solids are script editable; no full native sketch constraint history"
+  ],
+  "validation": {
+    "parts": 121,
+    "categories": {
+      "clear_sheet": 12,
+      "fdm": 69,
+      "translucent": 2,
+      "hardware": 38
+    },
+    "valid_single_solids": 121,
+    "chamfered_parts": 23,
+    "mesh_errors": 0,
+    "mesh_warnings": 31,
+    "mesh_triangles": 103360,
+    "rigid_overlap_pairs": 64,
+    "visual_review": [
+      "01_assembled.png",
+      "02_front.png",
+      "03_right.png",
+      "review_random.png",
+      "review_wire.png"
+    ],
+    "warnings_accepted_for": "appearance review only, not print release",
+    "source_hashes": {
+      "06_tools/build_r05.py": "ec9ceb145f8bf2e6d3f73be1f65002bbc98320c0f5923464187d2738a92b5a79",
+      "06_tools/cad_edge_break_r05.py": "49536d509310cc2bb5402f97afd5ea2c9754f1c7ab50e5af56830e628c2cdabd",
+      "06_tools/render_r05.py": "3b1c2633d1d652c78163d3e0606803a990d93f344e7e1664e1c022cd3b731eff"
+    }
+  }
+}

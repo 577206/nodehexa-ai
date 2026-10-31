@@ -1,0 +1,5689 @@
+{
+  "blender": "5.2.1 LTS",
+  "materials": {
+    "M_black": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.014000000432133675,
+        0.017000000923871994,
+        0.020999999716877937,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.014000000432133675,
+              0.017000000923871994,
+              0.020999999716877937,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_dark": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.04500000178813934,
+        0.05000000074505806,
+        0.05999999865889549,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.04500000178813934,
+              0.05000000074505806,
+              0.05999999865889549,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_floor": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.6499999761581421,
+        0.6700000166893005,
+        0.699999988079071,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.6499999761581421,
+              0.6700000166893005,
+              0.699999988079071,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.699999988079071,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_glass": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.41999998688697815,
+        0.3199999928474426,
+        0.2199999988079071,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.41999998688697815,
+              0.3199999928474426,
+              0.2199999988079071,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.12999999523162842,
+            "IOR": 1.4500000476837158,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.9800000190734863,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_gold": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.8299999833106995,
+        0.5299999713897705,
+        0.17000000178813934,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.8299999833106995,
+              0.5299999713897705,
+              0.17000000178813934,
+              1.0
+            ],
+            "Metallic": 1.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_gray": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.15000000596046448,
+        0.1599999964237213,
+        0.17499999701976776,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.15000000596046448,
+              0.1599999964237213,
+              0.17499999701976776,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_light": {
+      "use_nodes": true,
+      "diffuse_color": [
+        1.0,
+        0.2800000011920929,
+        0.006000000052154064,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              1.0,
+              0.2800000011920929,
+              0.006000000052154064,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.12999999523162842,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              0.23000000417232513,
+              0.004000000189989805,
+              1.0
+            ],
+            "Emission Strength": 12.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_metal": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.6000000238418579,
+        0.6200000047683716,
+        0.6499999761581421,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.6000000238418579,
+              0.6200000047683716,
+              0.6499999761581421,
+              1.0
+            ],
+            "Metallic": 1.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "M_orange": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.949999988079071,
+        0.1599999964237213,
+        0.00800000037997961,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.949999988079071,
+              0.1599999964237213,
+              0.00800000037997961,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.38999998569488525,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "Material": {
+      "use_nodes": true,
+      "diffuse_color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "is_active_output": true,
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "is_active_output": null,
+          "inputs": {
+            "Base Color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.5,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    }
+  },
+  "objects": {
+    "SM_P01_lower_shell": {
+      "materials": [
+        "M_dark"
+      ],
+      "polygon_slots": [
+        0
+      ],
+      "modifiers": []
+    },
+    "SM_P14_vent_frame1": {
+      "materials": [
+        "M_gray"
+      ],
+      "polygon_slots": [
+        0
+      ],
+      "modifiers": []
+    },
+    "SM_P16_vent_fins1": {
+      "materials": [
+        "M_orange"
+      ],
+      "polygon_slots": [
+        0
+      ],
+      "modifiers": []
+    },
+    "SM_P38_shoulder_intake1": {
+      "materials": [
+        "M_orange"
+      ],
+      "polygon_slots": [
+        0
+      ],
+      "modifiers": []
+    }
+  },
+  "lights": {
+    "STUDIO_Area_0": {
+      "energy": 0.6666666865348816,
+      "location": [
+        -0.18000000715255737,
+        -0.2199999988079071,
+        0.30000001192092896
+      ],
+      "type": "AREA"
+    },
+    "STUDIO_Area_1": {
+      "energy": 0.3333333432674408,
+      "location": [
+        0.18000000715255737,
+        -0.10000000149011612,
+        0.1599999964237213
+      ],
+      "type": "AREA"
+    },
+    "STUDIO_Area_2": {
+      "energy": 0.8333333134651184,
+      "location": [
+        0.05999999865889549,
+        0.1899999976158142,
+        0.23999999463558197
+      ],
+      "type": "AREA"
+    }
+  },
+  "trials": {
+    "SM_H29_contact_29": [
+      {
+        "distance_m": 0,
+        "volume_m3": 6.028260426488866e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H29_contact_29 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-07,
+        "volume_m3": 6.028260426488866e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H29_contact_29 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-06,
+        "volume_m3": 6.028260426488866e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H29_contact_29 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 5e-06,
+        "volume_m3": 6.0215076904665965e-09,
+        "volume_change_percent": -0.11201798768674436,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=8 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 358,
+              "tris": 416,
+              "ngons": 10,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 8,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-05,
+        "volume_m3": 6.019277155734905e-09,
+        "volume_change_percent": -0.14901928779465343,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=8 zero-len edges=0",
+            "z-fighting: SM_H29_contact_29 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 356,
+              "tris": 416,
+              "ngons": 14,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 8,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.0001,
+        "sampled_surface_change_mm": 1.3757833094985017e-05,
+        "volume_m3": 6.028260426488865e-09,
+        "volume_change_percent": -1.37217132975593e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H29_contact_29: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H29_contact_29 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 392,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.001,
+        "sampled_surface_change_mm": 2.2093640694720307e-05,
+        "volume_m3": 6.0282604264888616e-09,
+        "volume_change_percent": -6.86085664877965e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "z-fighting: SM_H29_contact_29 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.01,
+        "sampled_surface_change_mm": 2.2093640694720307e-05,
+        "volume_m3": 6.0282604264888616e-09,
+        "volume_change_percent": -6.86085664877965e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "z-fighting: SM_H29_contact_29 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H29_contact_29",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "planar_caps_centroid_fan",
+        "sampled_surface_change_mm": 2.0932938937789913e-05,
+        "volume_m3": 6.028256215798272e-09,
+        "volume_change_percent": -6.984918194788401e-05,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H29_contact_29": {
+              "verts": 212,
+              "faces": 315,
+              "tris": 420,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_H30_contact_30": [
+      {
+        "distance_m": 0,
+        "volume_m3": 6.02826022512899e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=42 zero-len edges=0",
+            "z-fighting: SM_H30_contact_30 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H30_contact_30",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 42,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-07,
+        "volume_m3": 6.02826022512899e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=42 zero-len edges=0",
+            "z-fighting: SM_H30_contact_30 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H30_contact_30",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 42,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-06,
+        "volume_m3": 6.02826022512899e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=42 zero-len edges=0",
+            "z-fighting: SM_H30_contact_30 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H30_contact_30",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 42,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 5e-06,
+        "volume_m3": 6.01916593421913e-09,
+        "volume_change_percent": -0.15086095440853495,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=12 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 362,
+              "tris": 416,
+              "ngons": 12,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 12,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-05,
+        "volume_m3": 6.01558073980676e-09,
+        "volume_change_percent": -0.21033407398994997,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=12 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 357,
+              "tris": 416,
+              "ngons": 14,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 12,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.0001,
+        "sampled_surface_change_mm": 2.2233502150470486e-05,
+        "volume_m3": 6.028260225128993e-09,
+        "volume_change_percent": 5.488685502360363e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H30_contact_30: degenerate faces=42 zero-len edges=0",
+            "z-fighting: SM_H30_contact_30 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H30_contact_30",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 390,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 42,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.001,
+        "sampled_surface_change_mm": 2.303113477708507e-06,
+        "volume_m3": 6.028260225128986e-09,
+        "volume_change_percent": -6.860856877950454e-14,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.01,
+        "sampled_surface_change_mm": 2.303113477708507e-06,
+        "volume_m3": 6.028260225128986e-09,
+        "volume_change_percent": -6.860856877950454e-14,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "planar_caps_centroid_fan",
+        "sampled_surface_change_mm": 1.875156385722221e-05,
+        "volume_m3": 6.028257106099047e-09,
+        "volume_change_percent": -5.174013440555408e-05,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H30_contact_30": {
+              "verts": 212,
+              "faces": 315,
+              "tris": 420,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_H31_contact_31": [
+      {
+        "distance_m": 0,
+        "volume_m3": 6.02826009058887e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H31_contact_31 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-07,
+        "volume_m3": 6.02826009058887e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H31_contact_31 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-06,
+        "volume_m3": 6.02826009058887e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H31_contact_31 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 5e-06,
+        "volume_m3": 6.021507348963415e-09,
+        "volume_change_percent": -0.11201808687712662,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=8 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 358,
+              "tris": 416,
+              "ngons": 10,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 8,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-05,
+        "volume_m3": 6.019276870159942e-09,
+        "volume_change_percent": -0.14901846127959498,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=8 zero-len edges=0",
+            "z-fighting: SM_H31_contact_31 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 356,
+              "tris": 416,
+              "ngons": 14,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 8,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.0001,
+        "sampled_surface_change_mm": 1.2112264968777708e-05,
+        "volume_m3": 6.028260090588868e-09,
+        "volume_change_percent": -2.7443428124290658e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H31_contact_31: degenerate faces=48 zero-len edges=0",
+            "z-fighting: SM_H31_contact_31 (4 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 4
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 386,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 48,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.001,
+        "sampled_surface_change_mm": 2.22800800031564e-05,
+        "volume_m3": 6.028260090588858e-09,
+        "volume_change_percent": -1.9210399687003461e-13,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "z-fighting: SM_H31_contact_31 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.01,
+        "sampled_surface_change_mm": 2.22800800031564e-05,
+        "volume_m3": 6.028260090588858e-09,
+        "volume_change_percent": -1.9210399687003461e-13,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "z-fighting: SM_H31_contact_31 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H31_contact_31",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "planar_caps_centroid_fan",
+        "sampled_surface_change_mm": 1.8803529400202024e-05,
+        "volume_m3": 6.028259466782888e-09,
+        "volume_change_percent": -1.034802700228679e-05,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H31_contact_31": {
+              "verts": 212,
+              "faces": 315,
+              "tris": 420,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_H32_contact_32": [
+      {
+        "distance_m": 0,
+        "volume_m3": 6.028259761639778e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=46 zero-len edges=0",
+            "z-fighting: SM_H32_contact_32 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H32_contact_32",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 46,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-07,
+        "volume_m3": 6.028259761639778e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=46 zero-len edges=0",
+            "z-fighting: SM_H32_contact_32 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H32_contact_32",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 46,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-06,
+        "volume_m3": 6.028259761639778e-09,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=46 zero-len edges=0",
+            "z-fighting: SM_H32_contact_32 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H32_contact_32",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 416,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 46,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 5e-06,
+        "volume_m3": 6.021516182095668e-09,
+        "volume_change_percent": -0.11186610747968084,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=7 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 360,
+              "tris": 416,
+              "ngons": 10,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 7,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-05,
+        "volume_m3": 6.0183217452383825e-09,
+        "volume_change_percent": -0.1648571361279971,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=6 zero-len edges=0",
+            "z-fighting: SM_H32_contact_32 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H32_contact_32",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 355,
+              "tris": 416,
+              "ngons": 10,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 6,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.0001,
+        "sampled_surface_change_mm": 2.0331748729063293e-05,
+        "volume_m3": 6.028259761639777e-09,
+        "volume_change_percent": -1.3721714810909575e-14,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_H32_contact_32: degenerate faces=46 zero-len edges=0",
+            "z-fighting: SM_H32_contact_32 (6 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [
+            {
+              "where": "SM_H32_contact_32",
+              "tri_pairs": 6
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 388,
+              "tris": 416,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 46,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.001,
+        "sampled_surface_change_mm": 1.1399825972091548e-05,
+        "volume_m3": 6.028259761639787e-09,
+        "volume_change_percent": 1.5093886292000533e-13,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.01,
+        "sampled_surface_change_mm": 1.1399825972091548e-05,
+        "volume_m3": 6.028259761639787e-09,
+        "volume_change_percent": 1.5093886292000533e-13,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 210,
+              "faces": 107,
+              "tris": 416,
+              "ngons": 2,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "planar_caps_centroid_fan",
+        "sampled_surface_change_mm": 2.7993044326990457e-05,
+        "volume_m3": 6.028258202124909e-09,
+        "volume_change_percent": -2.587006749033224e-05,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.0038 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.0038,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_H32_contact_32": {
+              "verts": 212,
+              "faces": 315,
+              "tris": 420,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_P01_lower_shell": [
+      {
+        "distance_m": 0,
+        "volume_m3": 3.193385305622328e-05,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=179 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=66 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (416 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 416
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6880,
+              "faces": 13856,
+              "tris": 13856,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 179,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 66,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-07,
+        "volume_m3": 3.193385305622328e-05,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=179 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=66 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (416 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 416
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6880,
+              "faces": 13856,
+              "tris": 13856,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 179,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 66,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-06,
+        "volume_m3": 3.193385305592647e-05,
+        "volume_change_percent": -9.294647179671282e-10,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=129 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=66 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (455 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 455
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6880,
+              "faces": 13806,
+              "tris": 13856,
+              "ngons": 5,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 129,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 66,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 5e-06,
+        "volume_m3": 3.1933848637202924e-05,
+        "volume_change_percent": -1.3838043131049253e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=112 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=54 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (341 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 341
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6858,
+              "faces": 13713,
+              "tris": 13812,
+              "ngons": 11,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 112,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 54,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "distance_m": 1e-05,
+        "volume_m3": 3.1933834946618606e-05,
+        "volume_change_percent": -5.670973886230091e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=63 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=2 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (130 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 130
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6796,
+              "faces": 13561,
+              "tris": 13688,
+              "ngons": 18,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 63,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 2,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.0001,
+        "sampled_surface_change_mm": 0.013820120329910424,
+        "volume_m3": 3.19338527926402e-05,
+        "volume_change_percent": -8.254033106043377e-07,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=167 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=66 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (402 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 402
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6861,
+              "faces": 12690,
+              "tris": 13818,
+              "ngons": 163,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 167,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 66,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.001,
+        "sampled_surface_change_mm": 0.02755461900960654,
+        "volume_m3": 3.193385289426236e-05,
+        "volume_change_percent": -5.071762734482895e-07,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P01_lower_shell: degenerate faces=34 zero-len edges=0",
+            "SM_P01_lower_shell: duplicate verts=24 loose verts=0",
+            "z-fighting: SM_P01_lower_shell (68 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [
+            {
+              "where": "SM_P01_lower_shell",
+              "tri_pairs": 68
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6359,
+              "faces": 5672,
+              "tris": 12814,
+              "ngons": 50,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 34,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 24,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "method": "limited_dissolve",
+        "angle_radians": 0.01,
+        "sampled_surface_change_mm": 0.025120041755144484,
+        "volume_m3": 3.193386191483808e-05,
+        "volume_change_percent": 2.7740513432496258e-05,
+        "qa": {
+          "ok": true,
+          "pass": true,
+          "errors": [],
+          "warnings": [
+            "asset lowest point z=0.006 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.006,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P01_lower_shell": {
+              "verts": 6269,
+              "faces": 4365,
+              "tris": 12634,
+              "ngons": 36,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 0,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ]
+  },
+  "view": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "assembly_after_cleaned_targets": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "SM_P42_handle_mount1: 2 edges with inconsistent face winding",
+      "SM_P43_handle_mount-1: 2 edges with inconsistent face winding",
+      "SM_P56_legacy_P38: degenerate faces=10 zero-len edges=0",
+      "SM_P56_legacy_P38: duplicate verts=2 loose verts=0",
+      "SM_P57_legacy_P39: degenerate faces=10 zero-len edges=0",
+      "SM_P57_legacy_P39: duplicate verts=2 loose verts=0",
+      "hidden back-to-back faces: SM_P02_upper_shell<->SM_P40_roof_hatch (580 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H06_screw_6<->SM_P28_service_0-1 (340 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H08_screw_8<->SM_P30_service_1-1 (339 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H15_screw_15<->SM_P29_service_01 (328 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H17_screw_17<->SM_P31_service_11 (325 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H05_screw_5<->SM_P28_service_0-1 (306 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H07_screw_7<->SM_P30_service_1-1 (305 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H14_screw_14<->SM_P29_service_01 (301 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_P40_roof_hatch<->SM_P42_handle_mount1 (300 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H22_screw_22<->SM_P40_roof_hatch (297 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H16_screw_16<->SM_P31_service_11 (296 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_P40_roof_hatch<->SM_P43_handle_mount-1 (293 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H23_screw_23<->SM_P40_roof_hatch (290 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H24_screw_24<->SM_P40_roof_hatch (284 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H21_screw_21<->SM_P40_roof_hatch (256 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H03_screw_3<->SM_P23_shoulder_strap-1 (205 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H04_screw_4<->SM_P23_shoulder_strap-1 (203 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H13_screw_13<->SM_P21_shoulder_strap1 (195 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_H12_screw_12<->SM_P21_shoulder_strap1 (194 pairs) - delete to save tris",
+      "hidden back-to-back faces: SM_P53_legacy_P35<->SM_P57_legacy_P39 (194 pairs) - delete to save tris",
+      "asset lowest point z=-0.0185 (not resting on ground plane z=0)"
+    ],
+    "ground_z": -0.0185,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [
+      {
+        "where": "SM_P02_upper_shell<->SM_P40_roof_hatch",
+        "tri_pairs": 580
+      },
+      {
+        "where": "SM_H06_screw_6<->SM_P28_service_0-1",
+        "tri_pairs": 340
+      },
+      {
+        "where": "SM_H08_screw_8<->SM_P30_service_1-1",
+        "tri_pairs": 339
+      },
+      {
+        "where": "SM_H15_screw_15<->SM_P29_service_01",
+        "tri_pairs": 328
+      },
+      {
+        "where": "SM_H17_screw_17<->SM_P31_service_11",
+        "tri_pairs": 325
+      },
+      {
+        "where": "SM_H05_screw_5<->SM_P28_service_0-1",
+        "tri_pairs": 306
+      },
+      {
+        "where": "SM_H07_screw_7<->SM_P30_service_1-1",
+        "tri_pairs": 305
+      },
+      {
+        "where": "SM_H14_screw_14<->SM_P29_service_01",
+        "tri_pairs": 301
+      },
+      {
+        "where": "SM_P40_roof_hatch<->SM_P42_handle_mount1",
+        "tri_pairs": 300
+      },
+      {
+        "where": "SM_H22_screw_22<->SM_P40_roof_hatch",
+        "tri_pairs": 297
+      },
+      {
+        "where": "SM_H16_screw_16<->SM_P31_service_11",
+        "tri_pairs": 296
+      },
+      {
+        "where": "SM_P40_roof_hatch<->SM_P43_handle_mount-1",
+        "tri_pairs": 293
+      },
+      {
+        "where": "SM_H23_screw_23<->SM_P40_roof_hatch",
+        "tri_pairs": 290
+      },
+      {
+        "where": "SM_H24_screw_24<->SM_P40_roof_hatch",
+        "tri_pairs": 284
+      },
+      {
+        "where": "SM_H21_screw_21<->SM_P40_roof_hatch",
+        "tri_pairs": 256
+      },
+      {
+        "where": "SM_H03_screw_3<->SM_P23_shoulder_strap-1",
+        "tri_pairs": 205
+      },
+      {
+        "where": "SM_H04_screw_4<->SM_P23_shoulder_strap-1",
+        "tri_pairs": 203
+      },
+      {
+        "where": "SM_H13_screw_13<->SM_P21_shoulder_strap1",
+        "tri_pairs": 195
+      },
+      {
+        "where": "SM_H12_screw_12<->SM_P21_shoulder_strap1",
+        "tri_pairs": 194
+      },
+      {
+        "where": "SM_P53_legacy_P35<->SM_P57_legacy_P39",
+        "tri_pairs": 194
+      }
+    ],
+    "enclosed": [],
+    "objects": {
+      "SM_G01_visor_1C": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G02_visor_1R": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G03_visor_1L": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G04_visor_2C": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G05_visor_2R": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G06_visor_2L": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G07_visor_3C": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G08_visor_3R": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G09_visor_3L": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G10_visor_4C": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G11_visor_4R": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_G12_visor_4L": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H01_lens_body": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H02_lens_glass": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H03_screw_3": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H04_screw_4": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H05_screw_5": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H06_screw_6": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H07_screw_7": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H08_screw_8": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H09_screw_9": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H10_screw_10": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H11_screw_11": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H12_screw_12": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H13_screw_13": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H14_screw_14": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H15_screw_15": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H16_screw_16": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H17_screw_17": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H18_screw_18": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H19_screw_19": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H20_screw_20": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H21_screw_21": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H22_screw_22": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H23_screw_23": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H24_screw_24": {
+        "verts": 222,
+        "faces": 440,
+        "tris": 440,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H25_magnet_25": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H26_magnet_26": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H27_magnet_27": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H28_magnet_28": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H29_contact_29": {
+        "verts": 212,
+        "faces": 315,
+        "tris": 420,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H30_contact_30": {
+        "verts": 212,
+        "faces": 315,
+        "tris": 420,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H31_contact_31": {
+        "verts": 212,
+        "faces": 315,
+        "tris": 420,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_H32_contact_32": {
+        "verts": 212,
+        "faces": 315,
+        "tris": 420,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P01_lower_shell": {
+        "verts": 6269,
+        "faces": 4365,
+        "tris": 12634,
+        "ngons": 36,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P02_upper_shell": {
+        "verts": 546,
+        "faces": 1092,
+        "tris": 1092,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P03_canopy_frame": {
+        "verts": 180,
+        "faces": 372,
+        "tris": 372,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P04_visor_joiner_1": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P05_visor_joiner_2": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P06_visor_joiner_3": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P07_eye_carrier": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P08_eye_lightguide_-1": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P09_eye_lightguide_1": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P10_cheek_rail_1": {
+        "verts": 20,
+        "faces": 36,
+        "tris": 36,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P11_cheek_rail_-1": {
+        "verts": 20,
+        "faces": 36,
+        "tris": 36,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P12_camera_bezel": {
+        "verts": 226,
+        "faces": 452,
+        "tris": 452,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P13_lens_gasket": {
+        "verts": 226,
+        "faces": 452,
+        "tris": 452,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P14_vent_frame1": {
+        "verts": 24,
+        "faces": 48,
+        "tris": 48,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P15_vent_louvers1": {
+        "verts": 36,
+        "faces": 80,
+        "tris": 80,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P16_vent_fins1": {
+        "verts": 44,
+        "faces": 84,
+        "tris": 84,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P17_vent_frame-1": {
+        "verts": 24,
+        "faces": 48,
+        "tris": 48,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P18_vent_louvers-1": {
+        "verts": 36,
+        "faces": 80,
+        "tris": 80,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P19_vent_fins-1": {
+        "verts": 68,
+        "faces": 132,
+        "tris": 132,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P20_shoulder_orange1": {
+        "verts": 24,
+        "faces": 44,
+        "tris": 44,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P21_shoulder_strap1": {
+        "verts": 442,
+        "faces": 888,
+        "tris": 888,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P22_shoulder_orange-1": {
+        "verts": 24,
+        "faces": 44,
+        "tris": 44,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P23_shoulder_strap-1": {
+        "verts": 542,
+        "faces": 1088,
+        "tris": 1088,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P24_side_upper_armor1": {
+        "verts": 16,
+        "faces": 28,
+        "tris": 28,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P25_side_lower_armor1": {
+        "verts": 520,
+        "faces": 1044,
+        "tris": 1044,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P26_side_upper_armor-1": {
+        "verts": 16,
+        "faces": 28,
+        "tris": 28,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P27_side_lower_armor-1": {
+        "verts": 1561,
+        "faces": 3126,
+        "tris": 3126,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P28_service_0-1": {
+        "verts": 488,
+        "faces": 980,
+        "tris": 980,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P29_service_01": {
+        "verts": 432,
+        "faces": 868,
+        "tris": 868,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P30_service_1-1": {
+        "verts": 488,
+        "faces": 980,
+        "tris": 980,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P31_service_11": {
+        "verts": 432,
+        "faces": 868,
+        "tris": 868,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P32_hinge_base1": {
+        "verts": 420,
+        "faces": 840,
+        "tris": 840,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P33_hinge_ring1": {
+        "verts": 420,
+        "faces": 840,
+        "tris": 840,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P34_hinge_center1": {
+        "verts": 420,
+        "faces": 840,
+        "tris": 840,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P35_hinge_base-1": {
+        "verts": 524,
+        "faces": 1048,
+        "tris": 1048,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P36_hinge_ring-1": {
+        "verts": 506,
+        "faces": 1012,
+        "tris": 1012,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P37_hinge_center-1": {
+        "verts": 522,
+        "faces": 1044,
+        "tris": 1044,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P38_shoulder_intake1": {
+        "verts": 36,
+        "faces": 68,
+        "tris": 68,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P39_shoulder_intake-1": {
+        "verts": 36,
+        "faces": 68,
+        "tris": 68,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P40_roof_hatch": {
+        "verts": 864,
+        "faces": 1740,
+        "tris": 1740,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P41_roof_inset": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P42_handle_mount1": {
+        "verts": 434,
+        "faces": 870,
+        "tris": 870,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P43_handle_mount-1": {
+        "verts": 432,
+        "faces": 866,
+        "tris": 866,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P44_roof_handle": {
+        "verts": 210,
+        "faces": 416,
+        "tris": 416,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P45_phone_backplate": {
+        "verts": 52,
+        "faces": 100,
+        "tris": 100,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P46_phone_orange_rail1": {
+        "verts": 16,
+        "faces": 28,
+        "tris": 28,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P47_phone_orange_rail-1": {
+        "verts": 16,
+        "faces": 28,
+        "tris": 28,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P48_phone_shelf": {
+        "verts": 12,
+        "faces": 20,
+        "tris": 20,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P49_rear_service_frame": {
+        "verts": 864,
+        "faces": 1740,
+        "tris": 1740,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P50_rear_service_cover": {
+        "verts": 40,
+        "faces": 76,
+        "tris": 76,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P51_rear_latch": {
+        "verts": 8,
+        "faces": 12,
+        "tris": 12,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P52_legacy_P34": {
+        "verts": 1284,
+        "faces": 2588,
+        "tris": 2588,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P53_legacy_P35": {
+        "verts": 2155,
+        "faces": 4326,
+        "tris": 4326,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P54_legacy_P36": {
+        "verts": 242,
+        "faces": 480,
+        "tris": 480,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P55_legacy_P37": {
+        "verts": 242,
+        "faces": 480,
+        "tris": 480,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P56_legacy_P38": {
+        "verts": 1472,
+        "faces": 2940,
+        "tris": 2940,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 10,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 2,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      },
+      "SM_P57_legacy_P39": {
+        "verts": 1472,
+        "faces": 2940,
+        "tris": 2940,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 10,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 2,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  }
+}

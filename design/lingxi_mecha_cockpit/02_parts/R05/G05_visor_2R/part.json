@@ -1,0 +1,20 @@
+{
+  "id": "G05",
+  "slug": "visor_2R",
+  "title": "舱罩折面 2R",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R05/G05_visor_2R",
+  "stl": "02_parts/R05/G05_visor_2R/G05_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 119.473,
+  "size_mm": [
+    8.718,
+    17.582,
+    17.695
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

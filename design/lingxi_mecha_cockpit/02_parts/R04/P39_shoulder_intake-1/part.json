@@ -1,0 +1,20 @@
+{
+  "id": "P39",
+  "slug": "shoulder_intake-1",
+  "title": "后肩橙色导流罩",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R04/P39_shoulder_intake-1",
+  "stl": "02_parts/R04/P39_shoulder_intake-1/P39_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1310.176,
+  "size_mm": [
+    5.0,
+    19.728,
+    19.759
+  ],
+  "edge_break_mm": 0.45,
+  "notes": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "P28",
+  "slug": "service_0-1",
+  "title": "贴壳双螺钉检修条 1",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R06/P28_service_0-1",
+  "stl": "02_parts/R06/P28_service_0-1/P28_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 102.867,
+  "size_mm": [
+    2.55,
+    13.3,
+    5.4
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

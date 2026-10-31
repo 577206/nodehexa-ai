@@ -1,0 +1,19 @@
+{
+  "id": "P18",
+  "slug": "vent_trim_L",
+  "title": "橙色鳍片饰件 L",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P18_vent_trim_L",
+  "stl": "02_parts/P18_vent_trim_L/P18_assembly.stl",
+  "volume_mm3": 294.51,
+  "size_mm": [
+    16.567,
+    10.213,
+    32.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

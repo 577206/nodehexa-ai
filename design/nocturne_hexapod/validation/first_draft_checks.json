@@ -1,0 +1,126 @@
+{
+  "status": "pass",
+  "scope": "Four CAD solids only; not whole-robot validation",
+  "footground_reconstruction_relative_volume_error": 4.710826254210798e-05,
+  "interface_checks": [
+    {
+      "name": "original_3mm_core",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "left_lower_connector",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "right_lower_connector",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "tip_mount",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "upper_connector_band",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "upper_frame_original_half_-1_rigid_translation",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "name": "upper_frame_original_half_1_rigid_translation",
+      "symmetric_difference_volume_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "parts": [
+    {
+      "id": "N001_upper_frame_W30_DRAFT",
+      "valid": true,
+      "solids": 1,
+      "bbox_local_mm": [
+        134.80905151367188,
+        104.34314727783203,
+        3.0
+      ],
+      "volume_mm3": 9713.672629273471,
+      "physical_fit_verified": false
+    },
+    {
+      "id": "N111_shin_face_DRAFT",
+      "valid": true,
+      "solids": 1,
+      "bbox_local_mm": [
+        39.5,
+        65.04774475097656,
+        4.2000001000000005
+      ],
+      "volume_mm3": 3309.511773652347,
+      "physical_fit_verified": false
+    },
+    {
+      "id": "N112_L_red_insert_DRAFT",
+      "valid": true,
+      "solids": 1,
+      "bbox_local_mm": [
+        8.182254014466325,
+        34.601675921731285,
+        0.5499999999999998
+      ],
+      "volume_mm3": 24.81315253114172,
+      "physical_fit_verified": false
+    },
+    {
+      "id": "N112_R_red_insert_DRAFT",
+      "valid": true,
+      "solids": 1,
+      "bbox_local_mm": [
+        8.182254014466327,
+        34.601675921731285,
+        0.5499999999999998
+      ],
+      "volume_mm3": 24.813152531141736,
+      "physical_fit_verified": false
+    }
+  ],
+  "intersections": [
+    {
+      "parts": [
+        "N111_shin_face_DRAFT",
+        "N112_L_red_insert_DRAFT"
+      ],
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "parts": [
+        "N111_shin_face_DRAFT",
+        "N112_R_red_insert_DRAFT"
+      ],
+      "intersection_mm3": 0.0,
+      "pass": true
+    },
+    {
+      "parts": [
+        "N112_L_red_insert_DRAFT",
+        "N112_R_red_insert_DRAFT"
+      ],
+      "intersection_mm3": 0.0,
+      "pass": true
+    }
+  ],
+  "not_verified": [
+    "actual servo and leg assembly sweep",
+    "printing tolerances and strength",
+    "inlay retention",
+    "electronics packaging",
+    "all remaining body and leg parts"
+  ],
+  "production_ready": false
+}

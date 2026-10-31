@@ -1,0 +1,20 @@
+{
+  "id": "H24",
+  "slug": "screw_24",
+  "title": "顶盖螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/H24_screw_24",
+  "stl": "02_parts/R04/H24_screw_24/H24_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 7.533,
+  "size_mm": [
+    3.199,
+    3.2,
+    1.1
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

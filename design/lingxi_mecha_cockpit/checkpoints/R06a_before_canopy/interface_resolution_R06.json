@@ -1,0 +1,3089 @@
+{
+  "schema_version": 1,
+  "operation": "exact_receiver_pockets",
+  "report_overlap_threshold_mm3": 0.05,
+  "boolean_epsilon_mm3": 1e-07,
+  "clearance_added_mm": 0.0,
+  "policy": "No insert clipping, object deletion, fragment removal, or implicit clearance.",
+  "before": {
+    "interference_count": 69,
+    "interferences": [
+      {
+        "parts": [
+          "P01",
+          "P52"
+        ],
+        "overlap_mm3": 1318.948940180275
+      },
+      {
+        "parts": [
+          "P02",
+          "P48"
+        ],
+        "overlap_mm3": 1229.7400269904217
+      },
+      {
+        "parts": [
+          "P48",
+          "P49"
+        ],
+        "overlap_mm3": 1030.6605512642716
+      },
+      {
+        "parts": [
+          "P02",
+          "P49"
+        ],
+        "overlap_mm3": 950.7654477049409
+      },
+      {
+        "parts": [
+          "P01",
+          "P49"
+        ],
+        "overlap_mm3": 859.2041187590476
+      },
+      {
+        "parts": [
+          "P03",
+          "P02"
+        ],
+        "overlap_mm3": 484.21546949202093
+      },
+      {
+        "parts": [
+          "P01",
+          "P50"
+        ],
+        "overlap_mm3": 409.57635135696614
+      },
+      {
+        "parts": [
+          "P10",
+          "P02"
+        ],
+        "overlap_mm3": 336.3093348987533
+      },
+      {
+        "parts": [
+          "P11",
+          "P02"
+        ],
+        "overlap_mm3": 336.302975172278
+      },
+      {
+        "parts": [
+          "P03",
+          "P10"
+        ],
+        "overlap_mm3": 174.27000000000004
+      },
+      {
+        "parts": [
+          "P03",
+          "P11"
+        ],
+        "overlap_mm3": 174.27000000000004
+      },
+      {
+        "parts": [
+          "P12",
+          "P13"
+        ],
+        "overlap_mm3": 173.38684122554002
+      },
+      {
+        "parts": [
+          "P49",
+          "P51"
+        ],
+        "overlap_mm3": 138.6539999999991
+      },
+      {
+        "parts": [
+          "P48",
+          "P51"
+        ],
+        "overlap_mm3": 134.64897761914577
+      },
+      {
+        "parts": [
+          "P63",
+          "P71"
+        ],
+        "overlap_mm3": 107.66162939109081
+      },
+      {
+        "parts": [
+          "P62",
+          "P70"
+        ],
+        "overlap_mm3": 107.66162939109077
+      },
+      {
+        "parts": [
+          "P63",
+          "P69"
+        ],
+        "overlap_mm3": 102.2418808937203
+      },
+      {
+        "parts": [
+          "P62",
+          "P68"
+        ],
+        "overlap_mm3": 102.24188089371997
+      },
+      {
+        "parts": [
+          "P64",
+          "P49"
+        ],
+        "overlap_mm3": 93.56057534716923
+      },
+      {
+        "parts": [
+          "P65",
+          "P49"
+        ],
+        "overlap_mm3": 93.56057534618564
+      },
+      {
+        "parts": [
+          "P03",
+          "P67"
+        ],
+        "overlap_mm3": 87.79726530612251
+      },
+      {
+        "parts": [
+          "P03",
+          "P66"
+        ],
+        "overlap_mm3": 87.79726530612247
+      },
+      {
+        "parts": [
+          "P48",
+          "P64"
+        ],
+        "overlap_mm3": 75.86839296405003
+      },
+      {
+        "parts": [
+          "P48",
+          "P65"
+        ],
+        "overlap_mm3": 75.86839296405
+      },
+      {
+        "parts": [
+          "P02",
+          "P64"
+        ],
+        "overlap_mm3": 72.797837839137
+      },
+      {
+        "parts": [
+          "P02",
+          "P65"
+        ],
+        "overlap_mm3": 72.79783783913697
+      },
+      {
+        "parts": [
+          "P02",
+          "P50"
+        ],
+        "overlap_mm3": 70.50000000047436
+      },
+      {
+        "parts": [
+          "P67",
+          "P02"
+        ],
+        "overlap_mm3": 68.83130598559649
+      },
+      {
+        "parts": [
+          "P66",
+          "P02"
+        ],
+        "overlap_mm3": 68.83130598552967
+      },
+      {
+        "parts": [
+          "P18",
+          "P69"
+        ],
+        "overlap_mm3": 27.183771096924588
+      },
+      {
+        "parts": [
+          "P15",
+          "P68"
+        ],
+        "overlap_mm3": 27.183771096923376
+      },
+      {
+        "parts": [
+          "P69",
+          "P26"
+        ],
+        "overlap_mm3": 24.794382064844577
+      },
+      {
+        "parts": [
+          "P68",
+          "P24"
+        ],
+        "overlap_mm3": 24.79438206484456
+      },
+      {
+        "parts": [
+          "P62",
+          "P24"
+        ],
+        "overlap_mm3": 21.54834194740206
+      },
+      {
+        "parts": [
+          "P63",
+          "P26"
+        ],
+        "overlap_mm3": 21.54834194740202
+      },
+      {
+        "parts": [
+          "P70",
+          "P38"
+        ],
+        "overlap_mm3": 10.733107140086407
+      },
+      {
+        "parts": [
+          "P71",
+          "P39"
+        ],
+        "overlap_mm3": 10.733107140081078
+      },
+      {
+        "parts": [
+          "G06",
+          "P03"
+        ],
+        "overlap_mm3": 8.341270320641028
+      },
+      {
+        "parts": [
+          "G05",
+          "P03"
+        ],
+        "overlap_mm3": 8.341270320640922
+      },
+      {
+        "parts": [
+          "G09",
+          "P03"
+        ],
+        "overlap_mm3": 7.2586728863434224
+      },
+      {
+        "parts": [
+          "G08",
+          "P03"
+        ],
+        "overlap_mm3": 7.258672886343419
+      },
+      {
+        "parts": [
+          "P69",
+          "P71"
+        ],
+        "overlap_mm3": 5.179102963203558
+      },
+      {
+        "parts": [
+          "P68",
+          "P70"
+        ],
+        "overlap_mm3": 5.179102963203236
+      },
+      {
+        "parts": [
+          "P03",
+          "P06"
+        ],
+        "overlap_mm3": 4.8640000000000985
+      },
+      {
+        "parts": [
+          "P03",
+          "P05"
+        ],
+        "overlap_mm3": 4.864
+      },
+      {
+        "parts": [
+          "P03",
+          "P04"
+        ],
+        "overlap_mm3": 4.863999999999939
+      },
+      {
+        "parts": [
+          "G11",
+          "P03"
+        ],
+        "overlap_mm3": 4.258363859845804
+      },
+      {
+        "parts": [
+          "G12",
+          "P03"
+        ],
+        "overlap_mm3": 4.258363859845468
+      },
+      {
+        "parts": [
+          "G10",
+          "P06"
+        ],
+        "overlap_mm3": 3.997073419988573
+      },
+      {
+        "parts": [
+          "G03",
+          "P03"
+        ],
+        "overlap_mm3": 3.6959442956228226
+      },
+      {
+        "parts": [
+          "G02",
+          "P03"
+        ],
+        "overlap_mm3": 3.6959442956227795
+      },
+      {
+        "parts": [
+          "G07",
+          "P05"
+        ],
+        "overlap_mm3": 2.559309667991837
+      },
+      {
+        "parts": [
+          "G10",
+          "P03"
+        ],
+        "overlap_mm3": 2.2517553788697606
+      },
+      {
+        "parts": [
+          "P10",
+          "P20"
+        ],
+        "overlap_mm3": 1.8359227634405255
+      },
+      {
+        "parts": [
+          "P11",
+          "P22"
+        ],
+        "overlap_mm3": 1.8359227634405249
+      },
+      {
+        "parts": [
+          "G07",
+          "P03"
+        ],
+        "overlap_mm3": 1.4694778385798837
+      },
+      {
+        "parts": [
+          "G04",
+          "P04"
+        ],
+        "overlap_mm3": 1.1519999999999984
+      },
+      {
+        "parts": [
+          "G01",
+          "P03"
+        ],
+        "overlap_mm3": 1.068897420972578
+      },
+      {
+        "parts": [
+          "P63",
+          "P35"
+        ],
+        "overlap_mm3": 1.0228265566721255
+      },
+      {
+        "parts": [
+          "P62",
+          "P32"
+        ],
+        "overlap_mm3": 1.0228265566720018
+      },
+      {
+        "parts": [
+          "P14",
+          "P15"
+        ],
+        "overlap_mm3": 0.7579363812112079
+      },
+      {
+        "parts": [
+          "P17",
+          "P18"
+        ],
+        "overlap_mm3": 0.7579363812082462
+      },
+      {
+        "parts": [
+          "P03",
+          "P61"
+        ],
+        "overlap_mm3": 0.5583807056989682
+      },
+      {
+        "parts": [
+          "P03",
+          "P60"
+        ],
+        "overlap_mm3": 0.5583807056989678
+      },
+      {
+        "parts": [
+          "G12",
+          "P02"
+        ],
+        "overlap_mm3": 0.5019952637058168
+      },
+      {
+        "parts": [
+          "G11",
+          "P02"
+        ],
+        "overlap_mm3": 0.5019952637058158
+      },
+      {
+        "parts": [
+          "P17",
+          "P69"
+        ],
+        "overlap_mm3": 0.3339039639858088
+      },
+      {
+        "parts": [
+          "P14",
+          "P68"
+        ],
+        "overlap_mm3": 0.3339039639807942
+      },
+      {
+        "parts": [
+          "G04",
+          "P03"
+        ],
+        "overlap_mm3": 0.29959463435288175
+      }
+    ]
+  },
+  "actions": [
+    {
+      "receiver": "P12",
+      "inserts": [
+        "P13"
+      ],
+      "reason": "camera bezel receives black lens gasket",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1998.3514240100048,
+        "null": false
+      },
+      "insert_states": {
+        "P13": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 314.4969105872756,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 173.38684122554002,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1824.9645827844658,
+        "null": false
+      },
+      "removed_volume_mm3": 173.386841225539,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1824.9645827844658,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P14",
+      "inserts": [
+        "P15"
+      ],
+      "reason": "right vent perimeter receives black louver cassette",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.9411258483972,
+        "null": false
+      },
+      "insert_states": {
+        "P15": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 830.4895281332812,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.7579363812112079,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.1831894671886,
+        "null": false
+      },
+      "removed_volume_mm3": 0.7579363812085376,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.1831894671886,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P17",
+      "inserts": [
+        "P18"
+      ],
+      "reason": "left vent perimeter receives black louver cassette",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.9411258484006,
+        "null": false
+      },
+      "insert_states": {
+        "P18": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 830.4895281332839,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.7579363812082462,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.1831894671852,
+        "null": false
+      },
+      "removed_volume_mm3": 0.7579363812153588,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1997.1831894671852,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P04",
+      "inserts": [
+        "G04"
+      ],
+      "reason": "lower canopy seam carrier receives clear center pane",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28.799999999999955,
+        "null": false
+      },
+      "insert_states": {
+        "G04": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 738.5541551252234,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1.1519999999999984,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27.64799999999996,
+        "null": false
+      },
+      "removed_volume_mm3": 1.151999999999994,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27.64799999999996,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P05",
+      "inserts": [
+        "G07"
+      ],
+      "reason": "middle canopy seam carrier receives clear center pane",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28.799999999999955,
+        "null": false
+      },
+      "insert_states": {
+        "G07": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 571.3181680437197,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 2.5593096679918363,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 26.24069033200815,
+        "null": false
+      },
+      "removed_volume_mm3": 2.559309667991805,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 26.24069033200815,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P06",
+      "inserts": [
+        "G10"
+      ],
+      "reason": "upper canopy seam carrier receives clear center pane",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28.799999999999955,
+        "null": false
+      },
+      "insert_states": {
+        "G10": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 232.07718606015587,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 3.997073419988573,
+      "candidate": {
+        "valid": true,
+        "solids": 2,
+        "volume_mm3": 24.802926580011412,
+        "null": false
+      },
+      "candidate_fragment_volumes_mm3": [
+        24.636259913344762,
+        0.16666666666665864
+      ],
+      "status": "rejected_multiple_or_zero_solids",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28.799999999999955,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P07",
+      "inserts": [
+        "G05"
+      ],
+      "reason": "eye carrier clears the two adjacent clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1353.0000000000005,
+        "null": false
+      },
+      "insert_states": {
+        "G05": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 119.47293251929358,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1353.0000000000005,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P07",
+      "inserts": [
+        "G06"
+      ],
+      "reason": "eye carrier clears the two adjacent clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1353.0000000000005,
+        "null": false
+      },
+      "insert_states": {
+        "G06": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 119.47293251929358,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1353.0000000000005,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P10",
+      "inserts": [
+        "P20"
+      ],
+      "reason": "right upper cheek rail ends under shoulder armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 593.4600000000004,
+        "null": false
+      },
+      "insert_states": {
+        "P20": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 448.49411095838377,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1.8359227634405255,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 591.6240771954962,
+        "null": false
+      },
+      "removed_volume_mm3": 1.8359228045042073,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 591.6240771954962,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P11",
+      "inserts": [
+        "P22"
+      ],
+      "reason": "left upper cheek rail ends under shoulder armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 593.4600000000004,
+        "null": false
+      },
+      "insert_states": {
+        "P22": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 448.4941109659244,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1.8359227634405249,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 591.6240771954963,
+        "null": false
+      },
+      "removed_volume_mm3": 1.8359228045040936,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 591.6240771954963,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P60",
+      "inserts": [
+        "P68"
+      ],
+      "reason": "right front cheek receives its side transition armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 647.7203321346678,
+        "null": false
+      },
+      "insert_states": {
+        "P68": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1005.8341379683635,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 647.7203321346678,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P61",
+      "inserts": [
+        "P69"
+      ],
+      "reason": "left front cheek receives its side transition armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 647.7203321346681,
+        "null": false
+      },
+      "insert_states": {
+        "P69": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1005.8341379683634,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 647.7203321346681,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G01"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2906.3051417550914,
+        "null": false
+      },
+      "insert_states": {
+        "G01": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 238.1386839819433,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1.0688974209725777,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2905.2362443341153,
+        "null": false
+      },
+      "removed_volume_mm3": 1.0688974209761,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2905.2362443341153,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G02"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2905.2362443341153,
+        "null": false
+      },
+      "insert_states": {
+        "G02": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 45.173988757239954,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 3.695944295622778,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2901.540300038494,
+        "null": false
+      },
+      "removed_volume_mm3": 3.6959442956213024,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2901.540300038494,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G03"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2901.540300038494,
+        "null": false
+      },
+      "insert_states": {
+        "G03": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 45.17398875723993,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 3.6959442956228226,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.8443557428695,
+        "null": false
+      },
+      "removed_volume_mm3": 3.6959442956244857,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.8443557428695,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G04"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.8443557428695,
+        "null": false
+      },
+      "insert_states": {
+        "G04": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 738.5541551252234,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.2995946343528817,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.544761108515,
+        "null": false
+      },
+      "removed_volume_mm3": 0.2995946343544347,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.544761108515,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G05"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2897.544761108515,
+        "null": false
+      },
+      "insert_states": {
+        "G05": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 119.47293251929358,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 8.34127032064091,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2889.203490787874,
+        "null": false
+      },
+      "removed_volume_mm3": 8.341270320640888,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2889.203490787874,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G06"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2889.203490787874,
+        "null": false
+      },
+      "insert_states": {
+        "G06": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 119.47293251929358,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 8.341270320641025,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2880.8622204672342,
+        "null": false
+      },
+      "removed_volume_mm3": 8.341270320639978,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2880.8622204672342,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G07"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2880.8622204672342,
+        "null": false
+      },
+      "insert_states": {
+        "G07": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 571.3181680437197,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1.469477838579884,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2879.3927426286537,
+        "null": false
+      },
+      "removed_volume_mm3": 1.4694778385805876,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2879.3927426286537,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G08"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2879.3927426286537,
+        "null": false
+      },
+      "insert_states": {
+        "G08": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 99.83764188567281,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 7.258672886343416,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2872.134069742307,
+        "null": false
+      },
+      "removed_volume_mm3": 7.2586728863466305,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2872.134069742307,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G09"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2872.134069742307,
+        "null": false
+      },
+      "insert_states": {
+        "G09": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 99.83764188567288,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 7.258672886343435,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2864.875396855957,
+        "null": false
+      },
+      "removed_volume_mm3": 7.258672886349814,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2864.875396855957,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G10"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2864.875396855957,
+        "null": false
+      },
+      "insert_states": {
+        "G10": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 232.07718606015587,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 2.2517553788697606,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2862.6236414770856,
+        "null": false
+      },
+      "removed_volume_mm3": 2.2517553788716214,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2862.6236414770856,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G11"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2862.6236414770856,
+        "null": false
+      },
+      "insert_states": {
+        "G11": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 52.7966572562095,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 4.258363859845789,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2858.3652776172376,
+        "null": false
+      },
+      "removed_volume_mm3": 4.258363859848032,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2858.3652776172376,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "G12"
+      ],
+      "reason": "canopy carrier receives all twelve separate clear facets",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2858.3652776172376,
+        "null": false
+      },
+      "insert_states": {
+        "G12": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 52.79665725620954,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 4.2583638598454865,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2854.106913757396,
+        "null": false
+      },
+      "removed_volume_mm3": 4.2583638598416655,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2854.106913757396,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P04"
+      ],
+      "reason": "canopy carrier receives three removable seam joiners",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2854.106913757396,
+        "null": false
+      },
+      "insert_states": {
+        "P04": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 27.64799999999996,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 4.80423111111106,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2849.3026826462833,
+        "null": false
+      },
+      "removed_volume_mm3": 4.8042311111125855,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2849.3026826462833,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P05"
+      ],
+      "reason": "canopy carrier receives three removable seam joiners",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2849.3026826462833,
+        "null": false
+      },
+      "insert_states": {
+        "P05": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 26.24069033200815,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 4.593599999999959,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2844.7090826462836,
+        "null": false
+      },
+      "removed_volume_mm3": 4.593599999999697,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2844.7090826462836,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P06"
+      ],
+      "reason": "canopy carrier receives three removable seam joiners",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2844.7090826462836,
+        "null": false
+      },
+      "insert_states": {
+        "P06": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 28.799999999999955,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 4.324459588321415,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2840.3846230579616,
+        "null": false
+      },
+      "removed_volume_mm3": 4.324459588322043,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2840.3846230579616,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P10"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2840.3846230579616,
+        "null": false
+      },
+      "insert_states": {
+        "P10": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 591.6240771954962,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 174.27000000000004,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2666.114623057964,
+        "null": false
+      },
+      "removed_volume_mm3": 174.2699999999977,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2666.114623057964,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P11"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2666.114623057964,
+        "null": false
+      },
+      "insert_states": {
+        "P11": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 591.6240771954963,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 174.27000000000004,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2491.8446230579666,
+        "null": false
+      },
+      "removed_volume_mm3": 174.26999999999725,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2491.8446230579666,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P66"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2491.8446230579666,
+        "null": false
+      },
+      "insert_states": {
+        "P66": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 298.62000000000006,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 87.79726530612247,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2404.0473577518405,
+        "null": false
+      },
+      "removed_volume_mm3": 87.79726530612606,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2404.0473577518405,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P67"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2404.0473577518405,
+        "null": false
+      },
+      "insert_states": {
+        "P67": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 298.6200000000001,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 87.79726530612251,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2316.250092445721,
+        "null": false
+      },
+      "removed_volume_mm3": 87.7972653061197,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2316.250092445721,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P60"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2316.250092445721,
+        "null": false
+      },
+      "insert_states": {
+        "P60": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 647.7203321346678,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.5583807056989678,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2315.6917117354246,
+        "null": false
+      },
+      "removed_volume_mm3": 0.5583807102962055,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2315.6917117354246,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P03",
+      "inserts": [
+        "P61"
+      ],
+      "reason": "concealed canopy carrier clears the external cheek rails and cheek armor",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2315.6917117354246,
+        "null": false
+      },
+      "insert_states": {
+        "P61": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 647.7203321346681,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.5583807056989682,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2315.13333102524,
+        "null": false
+      },
+      "removed_volume_mm3": 0.5583807101847924,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2315.13333102524,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P62",
+      "inserts": [
+        "P24"
+      ],
+      "reason": "right upper black service panel receives lower armor and its backing",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 535.3694593209358,
+        "null": false
+      },
+      "insert_states": {
+        "P24": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 487.67512281787657,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 21.54834194740206,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211278192779,
+        "null": false
+      },
+      "removed_volume_mm3": 21.548331501657913,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211278192779,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P62",
+      "inserts": [
+        "P70"
+      ],
+      "reason": "right upper black service panel receives lower armor and its backing",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211278192779,
+        "null": false
+      },
+      "insert_states": {
+        "P70": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1582.301925931616,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 107.66165696122208,
+      "candidate": {
+        "valid": true,
+        "solids": 2,
+        "volume_mm3": 406.1594606206298,
+        "null": false
+      },
+      "candidate_fragment_volumes_mm3": [
+        405.20134498176407,
+        0.9581224710330027
+      ],
+      "status": "rejected_multiple_or_zero_solids",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211278192779,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P63",
+      "inserts": [
+        "P26"
+      ],
+      "reason": "left upper black service panel receives lower armor and its backing",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 535.3694593209359,
+        "null": false
+      },
+      "insert_states": {
+        "P26": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 487.67512281882375,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 21.54834194740202,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211288538091,
+        "null": false
+      },
+      "removed_volume_mm3": 21.54833046712679,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211288538091,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P63",
+      "inserts": [
+        "P71"
+      ],
+      "reason": "left upper black service panel receives lower armor and its backing",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211288538091,
+        "null": false
+      },
+      "insert_states": {
+        "P71": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1582.3019259316152,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 107.66165696122214,
+      "candidate": {
+        "valid": true,
+        "solids": 2,
+        "volume_mm3": 406.1594614163281,
+        "null": false
+      },
+      "candidate_fragment_volumes_mm3": [
+        405.2013449817643,
+        0.95812164586325
+      ],
+      "status": "rejected_multiple_or_zero_solids",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 513.8211288538091,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P70",
+      "inserts": [
+        "P38"
+      ],
+      "reason": "right black backing clears rear orange intake",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1582.301925931616,
+        "null": false
+      },
+      "insert_states": {
+        "P38": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1177.2872778836602,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 10.733107140086407,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1571.5674520077166,
+        "null": false
+      },
+      "removed_volume_mm3": 10.734473923899486,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1571.5674520077166,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P71",
+      "inserts": [
+        "P39"
+      ],
+      "reason": "left black backing clears rear orange intake",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1582.3019259316152,
+        "null": false
+      },
+      "insert_states": {
+        "P39": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1177.2872877661093,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 10.733107140081078,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1571.567452037916,
+        "null": false
+      },
+      "removed_volume_mm3": 10.73447389369926,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1571.567452037916,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P49",
+      "inserts": [
+        "P51"
+      ],
+      "reason": "rear service frame receives latch and phone-support ribs",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5888.528458438603,
+        "null": false
+      },
+      "insert_states": {
+        "P51": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 245.47000000000014,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 138.6539999999991,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5749.874458438601,
+        "null": false
+      },
+      "removed_volume_mm3": 138.65400000000136,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5749.874458438601,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P49",
+      "inserts": [
+        "P64"
+      ],
+      "reason": "rear service frame receives latch and phone-support ribs",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5749.874458438601,
+        "null": false
+      },
+      "insert_states": {
+        "P64": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 228.0,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 93.56057534716922,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5656.313883112461,
+        "null": false
+      },
+      "removed_volume_mm3": 93.56057532614068,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5656.313883112461,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P49",
+      "inserts": [
+        "P65"
+      ],
+      "reason": "rear service frame receives latch and phone-support ribs",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5656.313883112461,
+        "null": false
+      },
+      "insert_states": {
+        "P65": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 227.99999999999994,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 93.56057534618566,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5562.753307778709,
+        "null": false
+      },
+      "removed_volume_mm3": 93.56057533375133,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5562.753307778709,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P48",
+      "inserts": [
+        "P64"
+      ],
+      "reason": "phone lower cradle receives support ribs and rear frame/latch",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3728.2432500000014,
+        "null": false
+      },
+      "insert_states": {
+        "P64": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 228.0,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 75.86839296405003,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3652.374857035951,
+        "null": false
+      },
+      "removed_volume_mm3": 75.86839296405014,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3652.374857035951,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P48",
+      "inserts": [
+        "P65"
+      ],
+      "reason": "phone lower cradle receives support ribs and rear frame/latch",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3652.374857035951,
+        "null": false
+      },
+      "insert_states": {
+        "P65": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 227.99999999999994,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 75.86839296405,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3576.5064640718992,
+        "null": false
+      },
+      "removed_volume_mm3": 75.86839296405196,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3576.5064640718992,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P48",
+      "inserts": [
+        "P49"
+      ],
+      "reason": "phone lower cradle receives support ribs and rear frame/latch",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3576.5064640718992,
+        "null": false
+      },
+      "insert_states": {
+        "P49": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 5562.753307778709,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 867.1803713195856,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2709.3260927523156,
+        "null": false
+      },
+      "removed_volume_mm3": 867.1803713195836,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2709.3260927523156,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P48",
+      "inserts": [
+        "P51"
+      ],
+      "reason": "phone lower cradle receives support ribs and rear frame/latch",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2709.3260927523156,
+        "null": false
+      },
+      "insert_states": {
+        "P51": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 245.47000000000014,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 134.64897761914577,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2574.6771151331695,
+        "null": false
+      },
+      "removed_volume_mm3": 134.64897761914608,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2574.6771151331695,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P01",
+      "inserts": [
+        "P52"
+      ],
+      "reason": "lower shell receives bottom contact cassette, rear service module and vent modules",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 29944.863617514533,
+        "null": false
+      },
+      "insert_states": {
+        "P52": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 2198.2482336337907,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 1318.948940180275,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28625.923094922244,
+        "null": false
+      },
+      "removed_volume_mm3": 1318.9405225922892,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28625.923094922244,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P01",
+      "inserts": [
+        "P49"
+      ],
+      "reason": "lower shell receives bottom contact cassette, rear service module and vent modules",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 28625.923094922244,
+        "null": false
+      },
+      "insert_states": {
+        "P49": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 5562.753307778709,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 859.2041187590471,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27765.41461703408,
+        "null": false
+      },
+      "removed_volume_mm3": 860.5084778881646,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27765.41461703408,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P01",
+      "inserts": [
+        "P50"
+      ],
+      "reason": "lower shell receives bottom contact cassette, rear service module and vent modules",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27765.41461703408,
+        "null": false
+      },
+      "insert_states": {
+        "P50": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1714.479999999999,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 409.57635135696614,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "removed_volume_mm3": 410.56817700330066,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P01",
+      "inserts": [
+        "P14"
+      ],
+      "reason": "lower shell receives bottom contact cassette, rear service module and vent modules",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "insert_states": {
+        "P14": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1997.1831894671886,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P01",
+      "inserts": [
+        "P17"
+      ],
+      "reason": "lower shell receives bottom contact cassette, rear service module and vent modules",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "insert_states": {
+        "P17": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1997.1831894671852,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 27354.84644003078,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P03"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 35653.96502726929,
+        "null": false
+      },
+      "insert_states": {
+        "P03": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 2315.13333102524,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 374.8766555091018,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 35279.79203943478,
+        "null": false
+      },
+      "removed_volume_mm3": 374.1729878345068,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 35279.79203943478,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P10"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 35279.79203943478,
+        "null": false
+      },
+      "insert_states": {
+        "P10": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 591.6240771954962,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 336.3112813587031,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34943.436562969764,
+        "null": false
+      },
+      "removed_volume_mm3": 336.355476465018,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34943.436562969764,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P11"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34943.436562969764,
+        "null": false
+      },
+      "insert_states": {
+        "P11": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 591.6240771954963,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 336.2997656327408,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34607.18063330244,
+        "null": false
+      },
+      "removed_volume_mm3": 336.25592966732074,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34607.18063330244,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P66"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34607.18063330244,
+        "null": false
+      },
+      "insert_states": {
+        "P66": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 298.62000000000006,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 68.83130599034625,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34538.33599636251,
+        "null": false
+      },
+      "removed_volume_mm3": 68.84463693993166,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34538.33599636251,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P67"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34538.33599636251,
+        "null": false
+      },
+      "insert_states": {
+        "P67": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 298.6200000000001,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 68.83130596814496,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "removed_volume_mm3": 68.84937419639027,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P14"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "insert_states": {
+        "P14": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1997.1831894671886,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P17"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "insert_states": {
+        "P17": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1997.1831894671852,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.0,
+      "status": "no_measurable_overlap",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "overlap_after_mm3": 0.0,
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P49"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 34469.48662216612,
+        "null": false
+      },
+      "insert_states": {
+        "P49": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 5562.753307778709,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 883.6442492826916,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33586.18765017411,
+        "null": false
+      },
+      "removed_volume_mm3": 883.2989719920079,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33586.18765017411,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P50"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33586.18765017411,
+        "null": false
+      },
+      "insert_states": {
+        "P50": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 1714.479999999999,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 70.49999999999235,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33515.72246378967,
+        "null": false
+      },
+      "removed_volume_mm3": 70.46518638444104,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33515.72246378967,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P64"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33515.72246378967,
+        "null": false
+      },
+      "insert_states": {
+        "P64": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 228.0,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 72.7978378390266,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33442.94053086163,
+        "null": false
+      },
+      "removed_volume_mm3": 72.78193292803917,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33442.94053086163,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "P65"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33442.94053086163,
+        "null": false
+      },
+      "insert_states": {
+        "P65": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 227.99999999999994,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 72.79783783902657,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33370.15700242652,
+        "null": false
+      },
+      "removed_volume_mm3": 72.78352843511675,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33370.15700242652,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "G11"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33370.15700242652,
+        "null": false
+      },
+      "insert_states": {
+        "G11": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 52.7966572562095,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.5019952636307564,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33369.65363656915,
+        "null": false
+      },
+      "removed_volume_mm3": 0.5033658573665889,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33369.65363656915,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "inserts": [
+        "G12"
+      ],
+      "reason": "upper shell receives canopy, cheek rails, vents, rear service module, phone ribs and upper glass",
+      "mode": "pair",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33369.65363656915,
+        "null": false
+      },
+      "insert_states": {
+        "G12": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 52.79665725620954,
+          "null": false
+        }
+      },
+      "overlap_before_mm3": 0.5019952636307432,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33369.15051482723,
+        "null": false
+      },
+      "removed_volume_mm3": 0.5031217419164022,
+      "overlap_after_mm3": 0.0,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 33369.15051482723,
+        "null": false
+      },
+      "insert_unchanged": true
+    }
+  ],
+  "missing_parts": [],
+  "audit_errors": [],
+  "limitations": [
+    "Nominal common-volume removal does not validate wall thickness.",
+    "No physical tolerance, fastener retention, assembly path or print fit approval."
+  ],
+  "after": {
+    "interference_count": 16,
+    "interferences": [
+      {
+        "parts": [
+          "P02",
+          "P48"
+        ],
+        "overlap_mm3": 1069.4446494118954
+      },
+      {
+        "parts": [
+          "P63",
+          "P71"
+        ],
+        "overlap_mm3": 107.66169562351503
+      },
+      {
+        "parts": [
+          "P62",
+          "P70"
+        ],
+        "overlap_mm3": 107.661695623515
+      },
+      {
+        "parts": [
+          "P63",
+          "P69"
+        ],
+        "overlap_mm3": 100.2099403711984
+      },
+      {
+        "parts": [
+          "P62",
+          "P68"
+        ],
+        "overlap_mm3": 100.2099403711978
+      },
+      {
+        "parts": [
+          "P18",
+          "P69"
+        ],
+        "overlap_mm3": 27.183771096924588
+      },
+      {
+        "parts": [
+          "P15",
+          "P68"
+        ],
+        "overlap_mm3": 27.183771096923376
+      },
+      {
+        "parts": [
+          "P69",
+          "P26"
+        ],
+        "overlap_mm3": 24.794382064844577
+      },
+      {
+        "parts": [
+          "P68",
+          "P24"
+        ],
+        "overlap_mm3": 24.79438206484456
+      },
+      {
+        "parts": [
+          "P69",
+          "P71"
+        ],
+        "overlap_mm3": 5.179102963203496
+      },
+      {
+        "parts": [
+          "P68",
+          "P70"
+        ],
+        "overlap_mm3": 5.179102963203173
+      },
+      {
+        "parts": [
+          "G10",
+          "P06"
+        ],
+        "overlap_mm3": 3.997073419988573
+      },
+      {
+        "parts": [
+          "P63",
+          "P35"
+        ],
+        "overlap_mm3": 1.0228265508607088
+      },
+      {
+        "parts": [
+          "P62",
+          "P32"
+        ],
+        "overlap_mm3": 1.022826550860635
+      },
+      {
+        "parts": [
+          "P17",
+          "P69"
+        ],
+        "overlap_mm3": 0.2034707799136564
+      },
+      {
+        "parts": [
+          "P14",
+          "P68"
+        ],
+        "overlap_mm3": 0.20347077990756662
+      }
+    ]
+  },
+  "changed_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P10",
+    "P11",
+    "P12",
+    "P14",
+    "P17",
+    "P48",
+    "P49",
+    "P62",
+    "P63",
+    "P70",
+    "P71"
+  ],
+  "resolved_pair_count": 53,
+  "status": "PARTIAL_CLEARANCE_REQUIRES_REVIEW",
+  "applied_action_count": 53,
+  "rejected_action_count": 3
+}

@@ -1,0 +1,26 @@
+{
+  "id": "P26",
+  "slug": "hinge_ring_L",
+  "title": "侧轴橙色圈 L",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P26_hinge_ring_L",
+  "stl": "02_parts/P26_hinge_ring_L/P26_assembly.stl",
+  "volume_mm3": 168.528,
+  "size_mm": [
+    1.6,
+    19.399,
+    19.398
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

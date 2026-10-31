@@ -1,0 +1,20 @@
+{
+  "id": "P50",
+  "slug": "rear_service_cover",
+  "title": "后部条纹检修盖",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/P50_rear_service_cover",
+  "stl": "02_parts/R04/P50_rear_service_cover/P50_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1714.48,
+  "size_mm": [
+    30.0,
+    2.8,
+    21.5
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

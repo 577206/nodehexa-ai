@@ -178,8 +178,9 @@ int qm_vsnprintf(char *str, size_t count, const char *fmt, va_list ap);
 /* 1：在完整应用里编译并启动 BF3901 摄像头取流。 */
 #define CONFIG_APP_CAMERA_TEST 1
 
-/* Combined camera + cloud voice profile; cloud identity stays in local ignored header. */
+/* Direct audio/video over LAN. Set QWEN_DIRECT=0 to restore the legacy Agent path. */
 #define CONFIG_NODEHEXA_VOICE_SELFTEST 0
+#define CONFIG_NODEHEXA_QWEN_DIRECT 1
 
 /* 0 关，1 打方向和命令，2 再打整帧十六进制 */
 #define VB701N_UART_TRACE 0

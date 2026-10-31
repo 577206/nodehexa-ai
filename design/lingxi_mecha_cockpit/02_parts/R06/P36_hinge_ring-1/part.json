@@ -1,0 +1,20 @@
+{
+  "id": "P36",
+  "slug": "hinge_ring-1",
+  "title": "侧面圆形轴盖分件",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R06/P36_hinge_ring-1",
+  "stl": "02_parts/R06/P36_hinge_ring-1/P36_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 190.381,
+  "size_mm": [
+    1.5,
+    22.198,
+    22.195
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

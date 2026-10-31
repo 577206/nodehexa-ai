@@ -1,0 +1,19 @@
+{
+  "id": "H14",
+  "slug": "side_screw_14",
+  "title": "侧部螺钉头占位",
+  "category": "hardware",
+  "material": "black",
+  "folder": "02_parts/H14_side_screw_14",
+  "stl": "02_parts/H14_side_screw_14/H14_assembly.stl",
+  "volume_mm3": 11.699,
+  "size_mm": [
+    1.35,
+    3.598,
+    3.6
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "engineering-3d-modeling.review_manifest.v1",
+  "project": {
+    "name": "NOCTURNE | Partial CAD draft - not full robot",
+    "kind": "assembly",
+    "units": "mm"
+  },
+  "versions": {
+    "current": {
+      "source": "../source/model.py",
+      "step": "../outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step"
+    },
+    "previous": null
+  },
+  "preview": {
+    "mesh_json": "cache/current_mesh.json",
+    "mesh_closed": true
+  },
+  "parts": [
+    {
+      "id": "N001_upper_frame_W30_DRAFT",
+      "label": "N001_upper_frame_W30_DRAFT",
+      "visible": true,
+      "color": "#36383d"
+    },
+    {
+      "id": "N111_shin_face_DRAFT",
+      "label": "N111_shin_face_DRAFT",
+      "visible": true,
+      "color": "#33353a"
+    },
+    {
+      "id": "N112_L_red_insert_DRAFT",
+      "label": "N112_L_red_insert_DRAFT",
+      "visible": true,
+      "color": "#c22437"
+    },
+    {
+      "id": "N112_R_red_insert_DRAFT",
+      "label": "N112_R_red_insert_DRAFT",
+      "visible": true,
+      "color": "#c22437"
+    }
+  ],
+  "parameters": [],
+  "refs": []
+}

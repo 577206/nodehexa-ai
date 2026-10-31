@@ -1,0 +1,100 @@
+{
+  "schema": "engineering-3d-modeling.spec_coverage.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
+  "generated_at": "2026-10-30T18:34:56.699408Z",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "feature:upper_frame_width_extension",
+      "status": "pass"
+    },
+    {
+      "check": "feature:shin_original_interfaces",
+      "status": "pass"
+    },
+    {
+      "check": "feature:shin_outer_relief",
+      "status": "pass"
+    },
+    {
+      "check": "feature:red_recesses_and_inserts",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores, nut pockets and screw bearing thickness.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Red leg inserts are solid non-emissive material. No leg lighting wiring.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:No whole-mesh scaling. Preserve original effective link lengths.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Concept image is appearance reference only; never infer production hole dimensions from it.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Head electronic combined assembly approximately 120 by 50 mm per user; height, connectors, camera adapter, battery, speaker and magnetic contacts not yet dimensioned.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:Original hardware remains. Any additive armor must preserve tool access and joint sweep.",
+      "status": "pass"
+    },
+    {
+      "check": "constraint:No printable-production-ready claim before full assembly and fit checks.",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:leg_kinematics_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:body_top_plan_target_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:body_bottom_plan_target_mm",
+      "status": "pass"
+    },
+    {
+      "check": "validation_target:dimensions:note",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:body_width_increase",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:ground_plate_thickness",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:armor_raise",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:inlay_depth",
+      "status": "pass"
+    },
+    {
+      "check": "parameter:inlay_clearance",
+      "status": "pass"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "feature_gaps": [],
+  "placement_gaps": [],
+  "constraint_gaps": [],
+  "validation_target_gaps": [],
+  "unused_geometry_parameters": [],
+  "waived_unused_geometry_parameters": []
+}

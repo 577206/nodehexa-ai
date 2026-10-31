@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>灵犀驾驶舱 · 外形与分件对照</title>
+  <style>
+    :root{color-scheme:dark;--bg:#13171b;--panel:#20262d;--line:#3b4651;--ink:#f0f3f5;--muted:#b6c1ca;--accent:#ff8a35}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"PingFang SC",sans-serif}
+    button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #ffc08e;outline-offset:4px}
+    main{max-width:1560px;margin:auto;padding:32px 28px 44px}.eyebrow{margin:0 0 7px;color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.16em}
+    h1{margin:0;font-size:clamp(27px,3.2vw,43px);line-height:1.3;letter-spacing:-.025em}.intro{max-width:920px;margin:14px 0 18px;color:var(--muted)}
+    .status{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}.status span{border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:13px;color:var(--muted)}.status .hold{color:#ffcba3;border-color:#805132;background:#30231b}
+    nav{display:flex;gap:9px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}nav button{padding:9px 19px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}nav button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#1c130b;font-weight:700}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--panel)}figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 19px;border-bottom:1px solid var(--line)}figcaption strong{font-size:20px}figcaption small{color:var(--muted);font-size:13px}.revision{font-size:13px;letter-spacing:.07em;color:var(--accent);margin-right:9px}
+    .image-button{display:block;width:100%;padding:0;border:0;background:#252b30;text-align:left;position:relative}.image-button img{display:block;width:100%;height:auto;aspect-ratio:12/11;object-fit:contain}.image-button .zoom-hint{position:absolute;right:13px;bottom:12px;border:1px solid #ffffff40;border-radius:6px;padding:3px 9px;background:#10151bd9;color:#fff;font-size:12px;pointer-events:none}
+    .image-button:hover .zoom-hint{background:var(--accent);color:#16110d}.source-line{margin:0;padding:10px 19px;color:var(--muted);font-size:12px}.missing{display:none;aspect-ratio:12/11;place-content:center;text-align:center;padding:40px;color:var(--muted)}.missing strong{color:var(--ink);display:block;font-size:22px;margin-bottom:10px}.is-missing .image-button{display:none}.is-missing .missing{display:grid}
+    .review-note{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px;padding:21px 24px;border-left:3px solid var(--accent);border-radius:6px;background:#1b2229}.review-note h2{font-size:16px;margin:0 0 6px}.review-note p{margin:0;color:var(--muted);font-size:14px}.reference{max-width:1320px;margin:24px auto 0}.reference .image-button img{aspect-ratio:3/2}.reference-note{color:var(--muted);margin:14px 4px 0;font-size:14px}footer{margin-top:25px;color:#8795a1;font-size:12px}[hidden]{display:none!important}
+    dialog{width:min(97vw,1800px);max-width:97vw;max-height:95vh;padding:0;border:1px solid #687480;border-radius:12px;background:#151b20;color:var(--ink)}dialog::backdrop{background:#080b0ee6}.dialog-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 17px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#151b20}.dialog-bar p{margin:0}.dialog-bar button{padding:6px 13px;border:1px solid var(--line);background:#2b333c;border-radius:6px;color:var(--ink)}dialog img{display:block;width:100%;height:auto;max-height:calc(95vh - 74px);object-fit:contain}
+    @media(max-width:760px){main{padding:22px 16px 30px}.compare,.review-note{grid-template-columns:1fr}.compare{gap:18px}nav{gap:7px}nav button{padding:8px 13px;font-size:14px}figcaption{padding:13px 15px}figcaption strong{font-size:18px}.review-note{gap:16px;padding:18px}.status{margin-bottom:20px}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">LINGXI · COCKPIT REVIEW</p>
+  <h1>驾驶舱：外形与分件对照</h1>
+  <p class="intro">左侧保留上一轮外形，右侧查看本轮模型。重点对照舱罩折面、前颊包角、肩甲层次和手机托架；点击图片可放大检查边缘与接缝。</p>
+  <div class="status" aria-label="模型状态">
+    <span>真实 CAD 实体转网格渲染</span><span>硬件尺寸未实测</span><span class="hold">评审样机 · 尚未批准打印</span>
+  </div>
+  <nav aria-label="选择对照视角">
+    <button type="button" data-view="01_assembled" aria-pressed="true">斜前方</button>
+    <button type="button" data-view="02_front" aria-pressed="false">正面</button>
+    <button type="button" data-view="03_right" aria-pressed="false">右侧</button>
+    <button type="button" data-view="reference" aria-pressed="false">参考六视图</button>
+  </nav>
+  <section id="comparison" class="compare" aria-label="同视角版本对照">
+    <figure id="baseline-figure">
+      <figcaption><strong><span class="revision">R05c</span>上一轮外形</strong><small class="view-label">斜前方</small></figcaption>
+      <button class="image-button" type="button" data-image="baseline-image" aria-label="放大上一轮模型">
+        <img id="baseline-image" src="iteration_05c/01_assembled.png" alt="R05c 驾驶舱 CAD 模型斜前方渲染">
+        <span class="zoom-hint">点击放大</span>
+      </button>
+      <div class="missing" role="status"><div><strong>此视角图片暂不可用</strong>请确认上一轮渲染文件仍在原目录。</div></div>
+      <p class="source-line">基线模型 · iteration_05c</p>
+    </figure>
+    <figure id="current-figure">
+      <figcaption><strong><span class="revision">R06</span>本轮结构调整</strong><small class="view-label">斜前方</small></figcaption>
+      <button class="image-button" type="button" data-image="current-image" aria-label="放大本轮模型">
+        <img id="current-image" src="iteration_06c/01_assembled.png" alt="R06 驾驶舱 CAD 模型斜前方渲染">
+        <span class="zoom-hint">点击放大</span>
+      </button>
+      <div class="missing" role="status"><div><strong>本轮视角图尚未就绪</strong>渲染完成后刷新此页，即可显示实际模型。</div></div>
+      <p class="source-line">本轮模型 · iteration_06c</p>
+    </figure>
+  </section>
+  <section id="reference-panel" class="reference" hidden aria-label="所选方案六视图">
+    <figure>
+      <figcaption><strong>已选方案 · 外形目标</strong><small>AI 概念参考</small></figcaption>
+      <button class="image-button" type="button" data-image="reference-image" aria-label="放大六视图参考">
+        <img id="reference-image" src="../00_reference/turnaround/generated_six_views.png" alt="橙灰机甲驾驶舱六视图概念参考，包括正面、两侧、背面、顶部及底部">
+        <span class="zoom-hint">点击放大</span>
+      </button>
+    </figure>
+    <p class="reference-note">参考图用于核对轮廓、装甲层次、位置与配色，没有标定尺寸，也不是可制造结构的证明。</p>
+  </section>
+  <aside class="review-note">
+    <div><h2>本轮检查重点</h2><p>前颊是否沿舱罩转折并包向两侧，肩甲叠层是否过厚，手机架是否过高或离后壳过远；灰色护轨已移到壳面前方，侧格栅保持无遮挡；舱罩内新增纵筋与双销座接缝扣。</p></div>
+    <div><h2>外形通过后仍需确认</h2><p>板件与电池尺寸、最小壁厚、固定方式、装配路径和打印配合。消除 CAD 交叠不等于已完成这些验证。</p></div>
+  </aside>
+  <details style="margin-top:24px">
+    <summary style="cursor:pointer;color:var(--accent)">查看舱罩内部：临时隐藏 12 块透明片</summary>
+    <figure style="max-width:850px;margin:16px auto">
+      <figcaption><strong>真实纵筋与接缝扣</strong><small>结构检查视图</small></figcaption>
+      <button class="image-button" type="button" data-image="canopy-structure-image" aria-label="放大舱罩内部结构">
+        <img id="canopy-structure-image" src="iteration_06c/07_canopy_structure.png" alt="R06 驾驶舱临时隐藏透明片后的纵筋和扣件 CAD 渲染">
+        <span class="zoom-hint">点击放大</span>
+      </button>
+      <p class="source-line">此图只为展示内部结构而隐藏透明片；上方正常外观对照图保留全部透明片。</p>
+    </figure>
+  </details>
+  <footer>此页为本地评审材料。版本渲染来自 CAD 零件模型，参考六视图来自已选概念图；没有用概念图替换模型结果。</footer>
+</main>
+<dialog id="lightbox" aria-labelledby="lightbox-title">
+  <div class="dialog-bar"><p id="lightbox-title"></p><button type="button" id="close-lightbox">关闭 <span aria-hidden="true">×</span></button></div>
+  <img id="lightbox-image" alt="">
+</dialog>
+<script>
+  'use strict';
+  const revisions = { baseline: 'iteration_05c', current: 'iteration_06c' };
+  const viewNames = { '01_assembled': '斜前方', '02_front': '正面', '03_right': '右侧' };
+  const renderImages = { baseline: document.getElementById('baseline-image'), current: document.getElementById('current-image') };
+  Object.values(renderImages).forEach(img => {
+    const figure = img.closest('figure');
+    img.addEventListener('load', () => figure.classList.remove('is-missing'));
+    img.addEventListener('error', () => figure.classList.add('is-missing'));
+    if (img.complete && img.naturalWidth === 0) figure.classList.add('is-missing');
+  });
+  document.querySelectorAll('button[data-view]').forEach(button => {
+    button.addEventListener('click', () => {
+      const view = button.dataset.view;
+      const isReference = view === 'reference';
+      document.querySelectorAll('button[data-view]').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+      document.getElementById('comparison').hidden = isReference;
+      document.getElementById('reference-panel').hidden = !isReference;
+      if (isReference) return;
+      document.querySelectorAll('.view-label').forEach(label => { label.textContent = viewNames[view]; });
+      Object.entries(renderImages).forEach(([revision, img]) => {
+        img.closest('figure').classList.remove('is-missing');
+        img.alt = `${revision === 'baseline' ? 'R05c' : 'R06'} 驾驶舱 CAD 模型${viewNames[view]}渲染`;
+        img.src = `${revisions[revision]}/${view}.png`;
+      });
+    });
+  });
+  const lightbox = document.getElementById('lightbox');
+  document.querySelectorAll('button[data-image]').forEach(button => {
+    button.addEventListener('click', () => {
+      const source = document.getElementById(button.dataset.image);
+      if (!source.complete || !source.naturalWidth) return;
+      const target = document.getElementById('lightbox-image');
+      target.src = source.currentSrc || source.src;
+      target.alt = source.alt;
+      document.getElementById('lightbox-title').textContent = source.alt;
+      lightbox.showModal();
+    });
+  });
+  document.getElementById('close-lightbox').addEventListener('click', () => lightbox.close());
+  lightbox.addEventListener('click', event => {
+    const bounds = lightbox.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) lightbox.close();
+  });
+</script>
+</body>
+</html>

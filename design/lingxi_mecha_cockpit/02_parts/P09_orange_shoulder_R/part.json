@@ -1,0 +1,26 @@
+{
+  "id": "P09",
+  "slug": "orange_shoulder_R",
+  "title": "右橙色肩部护架",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P09_orange_shoulder_R",
+  "stl": "02_parts/P09_orange_shoulder_R/P09_assembly.stl",
+  "volume_mm3": 3301.26,
+  "size_mm": [
+    10.0,
+    55.0,
+    31.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "两根定位销；后续按外壳接触区域微调。",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "P05",
+  "slug": "visor_joiner_2",
+  "title": "舱罩内接缝扣 2",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R06/P05_visor_joiner_2",
+  "stl": "02_parts/R06/P05_visor_joiner_2/P05_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 31.074,
+  "size_mm": [
+    9.0,
+    2.03,
+    2.4
+  ],
+  "edge_break_mm": 0,
+  "notes": "双销座和盲槽实体；向内退让避开陡折透明片。薄舌需试制验证。"
+}

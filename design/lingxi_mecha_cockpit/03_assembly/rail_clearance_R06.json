@@ -1,0 +1,149 @@
+{
+  "operation": "R06_upper_rail_source_profile_clearance",
+  "receiver": "P02",
+  "insert_parts": [
+    "P10",
+    "P11"
+  ],
+  "nominal_xy_profile_expansion_mm": 0.3,
+  "nominal_z_end_extension_mm": 0.2,
+  "upper_rail_lower_z_mm": 49.6,
+  "source_canopy_stations": [
+    [
+      33,
+      -53,
+      23
+    ],
+    [
+      40,
+      -52,
+      27
+    ],
+    [
+      58,
+      -42,
+      29
+    ],
+    [
+      73,
+      -27,
+      24
+    ],
+    [
+      81,
+      -15,
+      20
+    ]
+  ],
+  "front_setbacks_mm": [
+    3.0,
+    3.6,
+    3.6,
+    2.5,
+    1.8
+  ],
+  "actions": [
+    {
+      "receiver": "P02",
+      "insert": "P10",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32248.94064355354,
+        "null": false
+      },
+      "tool_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1324.7148450818,
+        "null": false
+      },
+      "insert_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1066.117789807819,
+        "null": false
+      },
+      "insert_outside_envelope_mm3": 0.0,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 31787.446897520447,
+        "null": false
+      },
+      "measured_min_gap_mm": 0.17334507732513024,
+      "remaining_overlap_mm3": 0.0,
+      "removed_volume_mm3": 461.49374603309116,
+      "status": "applied",
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "insert": "P11",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 31787.446897520447,
+        "null": false
+      },
+      "tool_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1324.7148450818,
+        "null": false
+      },
+      "insert_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 1066.1177898078274,
+        "null": false
+      },
+      "insert_outside_envelope_mm3": 0.0,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 31325.95206463852,
+        "null": false
+      },
+      "measured_min_gap_mm": 0.17334507732512922,
+      "remaining_overlap_mm3": 0.0,
+      "removed_volume_mm3": 461.4948328819264,
+      "status": "applied",
+      "insert_unchanged": true
+    }
+  ],
+  "changed_ids": [
+    "P02"
+  ],
+  "limitations": [
+    "XY profile expansion is not uniform surface-normal clearance.",
+    "Print tolerance, retention, minimum wall thickness and assembly paths remain unverified."
+  ],
+  "before": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 32248.94064355354,
+    "null": false
+  },
+  "receiving_loft_z_levels_mm": [
+    49.4,
+    58.0,
+    73.0,
+    81.2
+  ],
+  "final_measured_gaps_mm": {
+    "P10": 0.17334507732513024,
+    "P11": 0.17334507732512922
+  },
+  "final_overlaps_mm3": {
+    "P10": 0.0,
+    "P11": 0.0
+  },
+  "status": "NOMINAL_GAP_VERIFIED_FIT_UNVERIFIED",
+  "after": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 31325.95206463852,
+    "null": false
+  }
+}

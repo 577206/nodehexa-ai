@@ -1,0 +1,20 @@
+{
+  "id": "P10",
+  "slug": "cheek_rail_1",
+  "title": "前侧上段舱罩护轨",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P10_cheek_rail_1",
+  "stl": "02_parts/R05/P10_cheek_rail_1/P10_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 593.46,
+  "size_mm": [
+    13.5,
+    35.867,
+    31.4
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

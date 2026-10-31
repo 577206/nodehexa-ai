@@ -1,0 +1,19 @@
+{
+  "id": "P01",
+  "slug": "lower_shell",
+  "title": "下壳／电池仓",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P01_lower_shell",
+  "stl": "02_parts/P01_lower_shell/P01_assembly.stl",
+  "volume_mm3": 38339.556,
+  "size_mm": [
+    104.0,
+    84.5,
+    27.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "M3 底部螺钉孔、四磁铁袋、接触盒开口；电池压板未定尺寸。",
+  "print_axis": null
+}

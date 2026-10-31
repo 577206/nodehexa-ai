@@ -1,0 +1,19 @@
+{
+  "id": "P28",
+  "slug": "roof_inset",
+  "title": "顶部黑色嵌片",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P28_roof_inset",
+  "stl": "02_parts/P28_roof_inset/P28_assembly.stl",
+  "volume_mm3": 193.6,
+  "size_mm": [
+    24.0,
+    11.0,
+    0.8
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

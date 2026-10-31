@@ -1,0 +1,20 @@
+{
+  "id": "P68",
+  "slug": "diagonal_cheek_bridge1",
+  "title": "前侧斜向过渡颊甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P68_diagonal_cheek_bridge1",
+  "stl": "02_parts/R05/P68_diagonal_cheek_bridge1/P68_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 485.179,
+  "size_mm": [
+    13.5,
+    17.3,
+    24.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

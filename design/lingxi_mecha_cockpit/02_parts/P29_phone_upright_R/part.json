@@ -1,0 +1,26 @@
+{
+  "id": "P29",
+  "slug": "phone_upright_R",
+  "title": "手机支架侧臂",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P29_phone_upright_R",
+  "stl": "02_parts/P29_phone_upright_R/P29_assembly.stl",
+  "volume_mm3": 3256.191,
+  "size_mm": [
+    9.0,
+    20.0,
+    78.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "仅保留手机定位宽度；手机实物尺寸与重心待验证。",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

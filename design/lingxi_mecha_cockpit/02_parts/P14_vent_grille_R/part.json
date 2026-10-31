@@ -1,0 +1,19 @@
+{
+  "id": "P14",
+  "slug": "vent_grille_R",
+  "title": "黑色百叶窗 R",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P14_vent_grille_R",
+  "stl": "02_parts/P14_vent_grille_R/P14_assembly.stl",
+  "volume_mm3": 310.166,
+  "size_mm": [
+    15.45,
+    9.291,
+    26.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

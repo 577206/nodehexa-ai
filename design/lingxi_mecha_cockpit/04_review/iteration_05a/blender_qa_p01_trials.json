@@ -1,0 +1,282 @@
+{
+  "raw": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5482,
+        "faces": 11036,
+        "tris": 11036,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "planar003": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5388,
+        "faces": 4161,
+        "tris": 10848,
+        "ngons": 29,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "planar005": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5388,
+        "faces": 4013,
+        "tris": 10848,
+        "ngons": 29,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "planar01": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5388,
+        "faces": 3655,
+        "tris": 10848,
+        "ngons": 29,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "weld1um_planar01": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5388,
+        "faces": 3655,
+        "tris": 10848,
+        "ngons": 29,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "weld10um_planar01": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5386,
+        "faces": 3676,
+        "tris": 10844,
+        "ngons": 37,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "weld10um_planar005": {
+    "ok": true,
+    "pass": false,
+    "errors": [
+      "TEST_P01_RAW: 2 edges with inconsistent face winding",
+      "TEST_P01_RAW: non-manifold edges=1 wire=0"
+    ],
+    "warnings": [
+      "asset lowest point z=0.006 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.006,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "TEST_P01_RAW": {
+        "verts": 5387,
+        "faces": 4033,
+        "tris": 10846,
+        "ngons": 35,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 1,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 2,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  }
+}

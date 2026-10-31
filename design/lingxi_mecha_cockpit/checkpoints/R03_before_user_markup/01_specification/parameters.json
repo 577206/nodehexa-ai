@@ -1,0 +1,55 @@
+{
+  "units": "mm",
+  "status": "unmeasured_fit_prototype",
+  "wall": 2.6,
+  "seam_z": 29.0,
+  "fit_clearance": 0.35,
+  "magnet_diameter": 6.2,
+  "magnet_depth": 2.4,
+  "camera_bore": 11.4,
+  "canopy_thickness": 1.0,
+  "profiles": [
+    [
+      40,
+      -32,
+      32,
+      10,
+      5
+    ],
+    [
+      49,
+      -44,
+      39,
+      12,
+      14
+    ],
+    [
+      53,
+      -46,
+      39,
+      12,
+      34
+    ],
+    [
+      49,
+      -37,
+      33,
+      10,
+      54
+    ],
+    [
+      39,
+      -20,
+      27,
+      8,
+      73
+    ],
+    [
+      29,
+      -10,
+      20,
+      6,
+      83
+    ]
+  ]
+}

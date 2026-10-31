@@ -1,0 +1,20 @@
+{
+  "id": "P35",
+  "slug": "hinge_base-1",
+  "title": "侧面圆形轴盖分件",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R05/P35_hinge_base-1",
+  "stl": "02_parts/R05/P35_hinge_base-1/P35_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 2958.345,
+  "size_mm": [
+    13.308,
+    26.398,
+    26.4
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

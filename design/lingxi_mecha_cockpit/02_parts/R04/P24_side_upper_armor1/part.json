@@ -1,0 +1,20 @@
+{
+  "id": "P24",
+  "slug": "side_upper_armor1",
+  "title": "侧面上层梯形装甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R04/P24_side_upper_armor1",
+  "stl": "02_parts/R04/P24_side_upper_armor1/P24_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1.94,
+  "size_mm": [
+    3.486,
+    1.044,
+    2.312
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "P22",
+  "slug": "side_armor_L",
+  "title": "侧面层叠装甲",
+  "category": "fdm",
+  "material": "gray",
+  "folder": "02_parts/P22_side_armor_L",
+  "stl": "02_parts/P22_side_armor_L/P22_assembly.stl",
+  "volume_mm3": 3994.315,
+  "size_mm": [
+    3.0,
+    49.0,
+    36.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

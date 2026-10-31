@@ -1,0 +1,20 @@
+{
+  "id": "H76",
+  "slug": "side_fastener_76",
+  "title": "侧甲贴面螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R05/H76_side_fastener_76",
+  "stl": "02_parts/R05/H76_side_fastener_76/H76_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 11.33,
+  "size_mm": [
+    3.484,
+    3.484,
+    3.905
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

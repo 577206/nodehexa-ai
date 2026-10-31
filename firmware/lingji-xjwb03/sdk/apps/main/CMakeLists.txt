@@ -50,6 +50,7 @@ set(COMPONENT_SRCS
     "./agent/agent_app.c"
     "./arbiter/agent_arbiter.c"
     "./agent/robot_link.c"
+    "./agent/direct_audio.c"
     "./cloud/ljyd_cloud.c"
     "./cloud/ljyd_method.c"
     "./cloud/ljyd_provision.c"
@@ -175,6 +176,7 @@ if(APP_CAMERA_TEST)
     list(APPEND COMPONENT_SRCS
         "./peripheral/bsp_camera.c"
         "./agent/vision_bridge.c"
+        "./agent/wifi_bridge.c"
     )
 endif()
 
@@ -298,7 +300,7 @@ if(QM_POSE_SUPPORT)
 endif()
 
 if(APP_CAMERA_TEST)
-    list(APPEND COMPONENT_REQUIRES espressif__esp_video espressif__esp_cam_sensor
+    list(APPEND COMPONENT_REQUIRES esp_http_server espressif__esp_video espressif__esp_cam_sensor
          espressif__esp_new_jpeg)
 endif()
 

@@ -1,0 +1,20 @@
+{
+  "id": "H31",
+  "slug": "contact_31",
+  "title": "磁吸信号触点占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "gold",
+  "folder": "02_parts/R06/H31_contact_31",
+  "stl": "02_parts/R06/H31_contact_31/H31_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 6.032,
+  "size_mm": [
+    1.6,
+    1.6,
+    3.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

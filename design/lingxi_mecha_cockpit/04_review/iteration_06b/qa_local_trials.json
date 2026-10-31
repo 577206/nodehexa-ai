@@ -1,0 +1,956 @@
+{
+  "SM_P46_phone_orange_rail1": [
+    {
+      "angle_rad": 0,
+      "deviation_sampled_mm": 5.138335623655621e-05,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=14 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=4 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 114,
+            "faces": 224,
+            "tris": 224,
+            "ngons": 0,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 14,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 4,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.0001,
+      "deviation_sampled_mm": 5.138335623655621e-05,
+      "volume_change_percent": 6.426026826493683e-08,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=14 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=4 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 114,
+            "faces": 213,
+            "tris": 224,
+            "ngons": 0,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 14,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 4,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.001,
+      "deviation_sampled_mm": 0.0016850145811986295,
+      "volume_change_percent": 7.477765995349527e-06,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=12 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=4 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 113,
+            "faces": 137,
+            "tris": 222,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 12,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 4,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.003,
+      "deviation_sampled_mm": 0.0016850145811986295,
+      "volume_change_percent": 7.479773397157076e-06,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=11 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=4 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 113,
+            "faces": 135,
+            "tris": 222,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 11,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 4,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.005,
+      "deviation_sampled_mm": 0.0016850145811986295,
+      "volume_change_percent": 7.479138032464223e-06,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=10 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=4 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 111,
+            "faces": 131,
+            "tris": 218,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 10,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 4,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.01,
+      "deviation_sampled_mm": 0.0016850145811986295,
+      "volume_change_percent": 7.457846000450789e-06,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P46_phone_orange_rail1: degenerate faces=7 zero-len edges=0",
+          "SM_P46_phone_orange_rail1: duplicate verts=2 loose verts=0",
+          "z-fighting: SM_P46_phone_orange_rail1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P46_phone_orange_rail1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P46_phone_orange_rail1": {
+            "verts": 109,
+            "faces": 125,
+            "tris": 214,
+            "ngons": 4,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 7,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 2,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    }
+  ],
+  "SM_P47_phone_orange_rail-1": [
+    {
+      "angle_rad": 0,
+      "deviation_sampled_mm": 5.1753385577058e-05,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=11 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=2 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 120,
+            "faces": 236,
+            "tris": 236,
+            "ngons": 0,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 11,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 2,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.0001,
+      "deviation_sampled_mm": 8.050420774452505e-05,
+      "volume_change_percent": 3.135296855239615e-06,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=11 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=2 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 120,
+            "faces": 226,
+            "tris": 236,
+            "ngons": 0,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 11,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 2,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.001,
+      "deviation_sampled_mm": 8.050420774452505e-05,
+      "volume_change_percent": 1.2812769425591856e-05,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=11 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=2 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 120,
+            "faces": 152,
+            "tris": 236,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 11,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 2,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.003,
+      "deviation_sampled_mm": 8.050420774452505e-05,
+      "volume_change_percent": 1.2815571530091383e-05,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=9 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=1 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 118,
+            "faces": 147,
+            "tris": 232,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 9,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 1,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.005,
+      "deviation_sampled_mm": 8.050420774452505e-05,
+      "volume_change_percent": 1.2815571530091383e-05,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=9 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=1 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 118,
+            "faces": 146,
+            "tris": 232,
+            "ngons": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 9,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 1,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.01,
+      "deviation_sampled_mm": 8.050420774452505e-05,
+      "volume_change_percent": 1.2812770891606897e-05,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "SM_P47_phone_orange_rail-1: degenerate faces=6 zero-len edges=0",
+          "SM_P47_phone_orange_rail-1: duplicate verts=1 loose verts=0",
+          "z-fighting: SM_P47_phone_orange_rail-1 (1 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.0394 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.0394,
+        "zfighting": [
+          {
+            "where": "SM_P47_phone_orange_rail-1",
+            "tri_pairs": 1
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P47_phone_orange_rail-1": {
+            "verts": 118,
+            "faces": 142,
+            "tris": 232,
+            "ngons": 5,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 6,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 1,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    }
+  ],
+  "SM_P63_upper_service_inset-1": [
+    {
+      "angle_rad": 0,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.0001,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.001,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.003,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.005,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "angle_rad": 0.01,
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": 0.0,
+      "qa": {
+        "ok": true,
+        "pass": false,
+        "errors": [
+          "z-fighting: SM_P63_upper_service_inset-1 (2 overlapping coplanar tri pairs)"
+        ],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [
+          {
+            "where": "SM_P63_upper_service_inset-1",
+            "tri_pairs": 2
+          }
+        ],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    },
+    {
+      "method": "mirror_P62_review_tessellation",
+      "deviation_sampled_mm": 0.016057143511716276,
+      "volume_change_percent": -7.426701082587641e-05,
+      "qa": {
+        "ok": true,
+        "pass": true,
+        "errors": [],
+        "warnings": [
+          "asset lowest point z=0.056 (not resting on ground plane z=0)"
+        ],
+        "ground_z": 0.056,
+        "zfighting": [],
+        "floating": [],
+        "back_to_back": [],
+        "enclosed": [],
+        "objects": {
+          "SM_P63_upper_service_inset-1": {
+            "verts": 982,
+            "faces": 605,
+            "tris": 1964,
+            "ngons": 14,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "wire_edges": 0,
+            "loose_verts": 0,
+            "degenerate_faces": 0,
+            "zero_length_edges": 0,
+            "inconsistent_normals_edges": 0,
+            "duplicate_verts": 0,
+            "islands": 1,
+            "inside_out_islands": 0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "materials": 1
+          }
+        }
+      }
+    }
+  ]
+}

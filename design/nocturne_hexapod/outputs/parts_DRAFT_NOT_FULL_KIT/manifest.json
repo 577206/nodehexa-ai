@@ -1,0 +1,89 @@
+{
+  "status": "PARTIAL_DRAFT_NOT_FULL_KIT",
+  "parts": [
+    {
+      "id": "N001_upper_frame_W30_DRAFT",
+      "units": "mm",
+      "bbox_mm": [
+        134.80905151367188,
+        104.34314727783203,
+        3.0
+      ],
+      "CAD_solids": 1,
+      "CAD_valid": true,
+      "STL_watertight": true,
+      "STL_winding_consistent": true,
+      "mesh_volume_mm3": 9713.672670902743,
+      "CAD_volume_mm3": 9713.672629273471,
+      "status": "prototype_for_review_not_production",
+      "physical_fit_verified": false,
+      "files": [
+        "N001_upper_frame_W30_DRAFT.step",
+        "N001_upper_frame_W30_DRAFT.stl"
+      ]
+    },
+    {
+      "id": "N111_shin_face_DRAFT",
+      "units": "mm",
+      "bbox_mm": [
+        39.5,
+        65.04774475097656,
+        4.199999809265137
+      ],
+      "CAD_solids": 1,
+      "CAD_valid": true,
+      "STL_watertight": true,
+      "STL_winding_consistent": true,
+      "mesh_volume_mm3": 3309.5221615905916,
+      "CAD_volume_mm3": 3309.511773652347,
+      "status": "prototype_for_review_not_production",
+      "physical_fit_verified": false,
+      "files": [
+        "N111_shin_face_DRAFT.step",
+        "N111_shin_face_DRAFT.stl"
+      ]
+    },
+    {
+      "id": "N112_L_red_insert_DRAFT",
+      "units": "mm",
+      "bbox_mm": [
+        8.182254791259766,
+        34.60167407989502,
+        0.5500001907348633
+      ],
+      "CAD_solids": 1,
+      "CAD_valid": true,
+      "STL_watertight": true,
+      "STL_winding_consistent": true,
+      "mesh_volume_mm3": 24.813173199816386,
+      "CAD_volume_mm3": 24.81315253114172,
+      "status": "prototype_for_review_not_production",
+      "physical_fit_verified": false,
+      "files": [
+        "N112_L_red_insert_DRAFT.step",
+        "N112_L_red_insert_DRAFT.stl"
+      ]
+    },
+    {
+      "id": "N112_R_red_insert_DRAFT",
+      "units": "mm",
+      "bbox_mm": [
+        8.182254791259766,
+        34.60167407989502,
+        0.5500001907348633
+      ],
+      "CAD_solids": 1,
+      "CAD_valid": true,
+      "STL_watertight": true,
+      "STL_winding_consistent": true,
+      "mesh_volume_mm3": 24.81317319981639,
+      "CAD_volume_mm3": 24.813152531141736,
+      "status": "prototype_for_review_not_production",
+      "physical_fit_verified": false,
+      "files": [
+        "N112_R_red_insert_DRAFT.step",
+        "N112_R_red_insert_DRAFT.stl"
+      ]
+    }
+  ]
+}

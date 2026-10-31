@@ -1,0 +1,2485 @@
+{
+  "revision": "R05",
+  "status": "DRAFT_REVIEW_NOT_PRINT_RELEASE",
+  "units": "mm",
+  "source": "06_tools/build_r05.py",
+  "parts": [
+    {
+      "id": "G01",
+      "slug": "visor_1C",
+      "title": "舱罩折面 1C",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G01_visor_1C",
+      "stl": "02_parts/R05/G01_visor_1C/G01_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 238.139,
+      "size_mm": [
+        39.451,
+        1.955,
+        6.683
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G02",
+      "slug": "visor_1R",
+      "title": "舱罩折面 1R",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G02_visor_1R",
+      "stl": "02_parts/R05/G02_visor_1R/G02_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 45.174,
+      "size_mm": [
+        10.574,
+        8.705,
+        6.694
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G03",
+      "slug": "visor_1L",
+      "title": "舱罩折面 1L",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G03_visor_1L",
+      "stl": "02_parts/R05/G03_visor_1L/G03_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 45.174,
+      "size_mm": [
+        10.574,
+        8.705,
+        6.694
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G04",
+      "slug": "visor_2C",
+      "title": "舱罩折面 2C",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G04_visor_2C",
+      "stl": "02_parts/R05/G04_visor_2C/G04_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 738.554,
+      "size_mm": [
+        43.647,
+        10.845,
+        17.72
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G05",
+      "slug": "visor_2R",
+      "title": "舱罩折面 2R",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G05_visor_2R",
+      "stl": "02_parts/R05/G05_visor_2R/G05_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 119.473,
+      "size_mm": [
+        8.718,
+        17.582,
+        17.695
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G06",
+      "slug": "visor_2L",
+      "title": "舱罩折面 2L",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G06_visor_2L",
+      "stl": "02_parts/R05/G06_visor_2L/G06_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 119.473,
+      "size_mm": [
+        8.718,
+        17.582,
+        17.695
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G07",
+      "slug": "visor_3C",
+      "title": "舱罩折面 3C",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G07_visor_3C",
+      "stl": "02_parts/R05/G07_visor_3C/G07_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 571.318,
+      "size_mm": [
+        43.596,
+        15.774,
+        14.774
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G08",
+      "slug": "visor_3R",
+      "title": "舱罩折面 3R",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G08_visor_3R",
+      "stl": "02_parts/R05/G08_visor_3R/G08_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 99.838,
+      "size_mm": [
+        11.683,
+        22.528,
+        14.767
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G09",
+      "slug": "visor_3L",
+      "title": "舱罩折面 3L",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G09_visor_3L",
+      "stl": "02_parts/R05/G09_visor_3L/G09_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 99.838,
+      "size_mm": [
+        11.683,
+        22.528,
+        14.767
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G10",
+      "slug": "visor_4C",
+      "title": "舱罩折面 4C",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G10_visor_4C",
+      "stl": "02_parts/R05/G10_visor_4C/G10_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 232.077,
+      "size_mm": [
+        33.579,
+        12.734,
+        7.822
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G11",
+      "slug": "visor_4R",
+      "title": "舱罩折面 4R",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G11_visor_4R",
+      "stl": "02_parts/R05/G11_visor_4R/G11_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 52.797,
+      "size_mm": [
+        10.663,
+        19.478,
+        7.815
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "G12",
+      "slug": "visor_4L",
+      "title": "舱罩折面 4L",
+      "category": "clear_sheet",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/G12_visor_4L",
+      "stl": "02_parts/R05/G12_visor_4L/G12_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 52.797,
+      "size_mm": [
+        10.663,
+        19.478,
+        7.815
+      ],
+      "edge_break_mm": 0,
+      "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+    },
+    {
+      "id": "P03",
+      "slug": "canopy_frame",
+      "title": "多折面舱罩承托框",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P03_canopy_frame",
+      "stl": "02_parts/R05/P03_canopy_frame/P03_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2906.305,
+      "size_mm": [
+        65.0,
+        47.3,
+        50.4
+      ],
+      "edge_break_mm": 0,
+      "notes": "外侧窄压框及片间接缝；独立透明薄片需要实物固定验证。"
+    },
+    {
+      "id": "P04",
+      "slug": "visor_joiner_1",
+      "title": "舱罩内接缝扣 1",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P04_visor_joiner_1",
+      "stl": "02_parts/R05/P04_visor_joiner_1/P04_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28.8,
+      "size_mm": [
+        8.0,
+        2.0,
+        1.8
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P05",
+      "slug": "visor_joiner_2",
+      "title": "舱罩内接缝扣 2",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P05_visor_joiner_2",
+      "stl": "02_parts/R05/P05_visor_joiner_2/P05_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28.8,
+      "size_mm": [
+        8.0,
+        2.0,
+        1.8
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P06",
+      "slug": "visor_joiner_3",
+      "title": "舱罩内接缝扣 3",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P06_visor_joiner_3",
+      "stl": "02_parts/R05/P06_visor_joiner_3/P06_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 28.8,
+      "size_mm": [
+        8.0,
+        2.0,
+        1.8
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P07",
+      "slug": "eye_carrier",
+      "title": "灯眼内托板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P07_eye_carrier",
+      "stl": "02_parts/R05/P07_eye_carrier/P07_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1540.0,
+      "size_mm": [
+        52.0,
+        2.2,
+        14.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P08",
+      "slug": "eye_lightguide_-1",
+      "title": "斜向眼睛导光件",
+      "category": "translucent",
+      "group": "cockpit",
+      "material": "light",
+      "folder": "02_parts/R05/P08_eye_lightguide_-1",
+      "stl": "02_parts/R05/P08_eye_lightguide_-1/P08_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33.11,
+      "size_mm": [
+        14.0,
+        1.1,
+        8.6
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P09",
+      "slug": "eye_lightguide_1",
+      "title": "斜向眼睛导光件",
+      "category": "translucent",
+      "group": "cockpit",
+      "material": "light",
+      "folder": "02_parts/R05/P09_eye_lightguide_1",
+      "stl": "02_parts/R05/P09_eye_lightguide_1/P09_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33.11,
+      "size_mm": [
+        14.0,
+        1.1,
+        8.6
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P10",
+      "slug": "cheek_rail_1",
+      "title": "前侧上段舱罩护轨",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P10_cheek_rail_1",
+      "stl": "02_parts/R05/P10_cheek_rail_1/P10_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 593.46,
+      "size_mm": [
+        13.5,
+        35.867,
+        31.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P66",
+      "slug": "lower_cheek_rail_1",
+      "title": "前侧下段舱罩护轨",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P66_lower_cheek_rail_1",
+      "stl": "02_parts/R05/P66_lower_cheek_rail_1/P66_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 298.62,
+      "size_mm": [
+        9.478,
+        10.089,
+        15.8
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P11",
+      "slug": "cheek_rail_-1",
+      "title": "前侧上段舱罩护轨",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P11_cheek_rail_-1",
+      "stl": "02_parts/R05/P11_cheek_rail_-1/P11_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 593.46,
+      "size_mm": [
+        13.5,
+        35.867,
+        31.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P67",
+      "slug": "lower_cheek_rail_-1",
+      "title": "前侧下段舱罩护轨",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P67_lower_cheek_rail_-1",
+      "stl": "02_parts/R05/P67_lower_cheek_rail_-1/P67_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 298.62,
+      "size_mm": [
+        9.478,
+        10.089,
+        15.8
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P12",
+      "slug": "camera_bezel",
+      "title": "下颏橙色镜头框",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P12_camera_bezel",
+      "stl": "02_parts/R05/P12_camera_bezel/P12_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1998.351,
+      "size_mm": [
+        25.94,
+        5.0,
+        22.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P13",
+      "slug": "lens_gasket",
+      "title": "镜头方形内衬",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P13_lens_gasket",
+      "stl": "02_parts/R05/P13_lens_gasket/P13_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 314.497,
+      "size_mm": [
+        20.0,
+        1.5,
+        17.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "H01",
+      "slug": "lens_body",
+      "title": "镜头外观占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H01_lens_body",
+      "stl": "02_parts/R05/H01_lens_body/H01_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 295.561,
+      "size_mm": [
+        11.199,
+        3.0,
+        11.197
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H02",
+      "slug": "lens_glass",
+      "title": "镜片外观占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "glass",
+      "folder": "02_parts/R05/H02_lens_glass",
+      "stl": "02_parts/R05/H02_lens_glass/H02_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10.895,
+      "size_mm": [
+        6.799,
+        0.3,
+        6.798
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P01",
+      "slug": "lower_shell",
+      "title": "收边下壳／电池仓",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P01_lower_shell",
+      "stl": "02_parts/R05/P01_lower_shell/P01_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 30558.996,
+      "size_mm": [
+        97.778,
+        92.444,
+        21.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "内衬和 PCB 定位待量；真实侧孔已开。"
+    },
+    {
+      "id": "P02",
+      "slug": "upper_shell",
+      "title": "多折线内层主壳",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P02_upper_shell",
+      "stl": "02_parts/R05/P02_upper_shell/P02_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36336.973,
+      "size_mm": [
+        100.0,
+        93.0,
+        57.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P14",
+      "slug": "vent_frame1",
+      "title": "侧面格栅装甲框",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P14_vent_frame1",
+      "stl": "02_parts/R05/P14_vent_frame1/P14_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3527.38,
+      "size_mm": [
+        22.406,
+        35.126,
+        42.767
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P15",
+      "slug": "vent_louvers1",
+      "title": "侧面黑色百叶",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P15_vent_louvers1",
+      "stl": "02_parts/R05/P15_vent_louvers1/P15_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 770.55,
+      "size_mm": [
+        14.0,
+        24.544,
+        32.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P16",
+      "slug": "vent_fins1",
+      "title": "侧面橙色斜鳍片",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P16_vent_fins1",
+      "stl": "02_parts/R05/P16_vent_fins1/P16_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 484.527,
+      "size_mm": [
+        16.524,
+        29.052,
+        38.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P17",
+      "slug": "vent_frame-1",
+      "title": "侧面格栅装甲框",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P17_vent_frame-1",
+      "stl": "02_parts/R05/P17_vent_frame-1/P17_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3527.38,
+      "size_mm": [
+        22.406,
+        35.126,
+        42.767
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P18",
+      "slug": "vent_louvers-1",
+      "title": "侧面黑色百叶",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P18_vent_louvers-1",
+      "stl": "02_parts/R05/P18_vent_louvers-1/P18_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 770.55,
+      "size_mm": [
+        14.0,
+        24.544,
+        32.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P19",
+      "slug": "vent_fins-1",
+      "title": "侧面橙色斜鳍片",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P19_vent_fins-1",
+      "stl": "02_parts/R05/P19_vent_fins-1/P19_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 484.527,
+      "size_mm": [
+        16.524,
+        29.052,
+        38.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P60",
+      "slug": "front_cheek_shield1",
+      "title": "前脸独立打孔颊甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P60_front_cheek_shield1",
+      "stl": "02_parts/R05/P60_front_cheek_shield1/P60_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 650.262,
+      "size_mm": [
+        16.5,
+        9.275,
+        25.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P61",
+      "slug": "front_cheek_shield-1",
+      "title": "前脸独立打孔颊甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P61_front_cheek_shield-1",
+      "stl": "02_parts/R05/P61_front_cheek_shield-1/P61_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 650.262,
+      "size_mm": [
+        16.5,
+        9.275,
+        25.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P20",
+      "slug": "shoulder_orange1",
+      "title": "折角橙色肩部护架",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P20_shoulder_orange1",
+      "stl": "02_parts/R05/P20_shoulder_orange1/P20_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1353.607,
+      "size_mm": [
+        27.124,
+        54.0,
+        27.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P21",
+      "slug": "shoulder_strap1",
+      "title": "灰色肩部压甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P21_shoulder_strap1",
+      "stl": "02_parts/R05/P21_shoulder_strap1/P21_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 755.84,
+      "size_mm": [
+        16.975,
+        42.0,
+        24.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P22",
+      "slug": "shoulder_orange-1",
+      "title": "折角橙色肩部护架",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P22_shoulder_orange-1",
+      "stl": "02_parts/R05/P22_shoulder_orange-1/P22_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1353.607,
+      "size_mm": [
+        27.124,
+        54.0,
+        27.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P23",
+      "slug": "shoulder_strap-1",
+      "title": "灰色肩部压甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P23_shoulder_strap-1",
+      "stl": "02_parts/R05/P23_shoulder_strap-1/P23_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 755.84,
+      "size_mm": [
+        16.975,
+        42.0,
+        24.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P62",
+      "slug": "upper_service_inset1",
+      "title": "肩甲下凹黑色检修面板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P62_upper_service_inset1",
+      "stl": "02_parts/R05/P62_upper_service_inset1/P62_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 742.019,
+      "size_mm": [
+        10.739,
+        31.0,
+        14.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P63",
+      "slug": "upper_service_inset-1",
+      "title": "肩甲下凹黑色检修面板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P63_upper_service_inset-1",
+      "stl": "02_parts/R05/P63_upper_service_inset-1/P63_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 742.019,
+      "size_mm": [
+        10.739,
+        31.0,
+        14.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P24",
+      "slug": "side_upper_armor1",
+      "title": "侧面上层梯形拼甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P24_side_upper_armor1",
+      "stl": "02_parts/R05/P24_side_upper_armor1/P24_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 488.529,
+      "size_mm": [
+        8.784,
+        23.335,
+        16.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "顺主体折面；独立嵌甲、两道真实浅刻线；不是平面贴片。"
+    },
+    {
+      "id": "P25",
+      "slug": "side_lower_armor1",
+      "title": "侧面下层收边拼甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P25_side_lower_armor1",
+      "stl": "02_parts/R05/P25_side_lower_armor1/P25_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 816.852,
+      "size_mm": [
+        9.517,
+        30.0,
+        16.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "与上方检修带分缝，双孔贴面螺钉。"
+    },
+    {
+      "id": "P58",
+      "slug": "hinge_lower_infill1",
+      "title": "轴盖下方后侧嵌甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P58_hinge_lower_infill1",
+      "stl": "02_parts/R05/P58_hinge_lower_infill1/P58_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 150.651,
+      "size_mm": [
+        10.072,
+        9.0,
+        13.5
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P70",
+      "slug": "side_service_backing1",
+      "title": "侧甲黑色检修底板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P70_side_service_backing1",
+      "stl": "02_parts/R05/P70_side_service_backing1/P70_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1582.302,
+      "size_mm": [
+        11.907,
+        43.0,
+        55.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "连续贴合壳面，暴露部分形成真实装甲分缝。"
+    },
+    {
+      "id": "P29",
+      "slug": "service_01",
+      "title": "贴壳双螺钉检修条 1",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P29_service_01",
+      "stl": "02_parts/R05/P29_service_01/P29_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 102.867,
+      "size_mm": [
+        2.55,
+        13.3,
+        5.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P31",
+      "slug": "service_11",
+      "title": "贴壳双螺钉检修条 2",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P31_service_11",
+      "stl": "02_parts/R05/P31_service_11/P31_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 248.045,
+      "size_mm": [
+        2.55,
+        26.6,
+        5.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P32",
+      "slug": "hinge_base1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P32_hinge_base1",
+      "stl": "02_parts/R05/P32_hinge_base1/P32_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2958.345,
+      "size_mm": [
+        13.308,
+        26.398,
+        26.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P33",
+      "slug": "hinge_ring1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P33_hinge_ring1",
+      "stl": "02_parts/R05/P33_hinge_ring1/P33_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 190.381,
+      "size_mm": [
+        1.5,
+        22.198,
+        22.195
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P34",
+      "slug": "hinge_center1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P34_hinge_center1",
+      "stl": "02_parts/R05/P34_hinge_center1/P34_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 224.805,
+      "size_mm": [
+        1.0,
+        17.198,
+        17.196
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P26",
+      "slug": "side_upper_armor-1",
+      "title": "侧面上层梯形拼甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P26_side_upper_armor-1",
+      "stl": "02_parts/R05/P26_side_upper_armor-1/P26_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 488.529,
+      "size_mm": [
+        8.784,
+        23.335,
+        16.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "顺主体折面；独立嵌甲、两道真实浅刻线；不是平面贴片。"
+    },
+    {
+      "id": "P27",
+      "slug": "side_lower_armor-1",
+      "title": "侧面下层收边拼甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P27_side_lower_armor-1",
+      "stl": "02_parts/R05/P27_side_lower_armor-1/P27_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 816.852,
+      "size_mm": [
+        9.517,
+        30.0,
+        16.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "与上方检修带分缝，双孔贴面螺钉。"
+    },
+    {
+      "id": "P59",
+      "slug": "hinge_lower_infill-1",
+      "title": "轴盖下方后侧嵌甲",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P59_hinge_lower_infill-1",
+      "stl": "02_parts/R05/P59_hinge_lower_infill-1/P59_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 150.651,
+      "size_mm": [
+        10.072,
+        9.0,
+        13.5
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P71",
+      "slug": "side_service_backing-1",
+      "title": "侧甲黑色检修底板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P71_side_service_backing-1",
+      "stl": "02_parts/R05/P71_side_service_backing-1/P71_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1582.302,
+      "size_mm": [
+        11.907,
+        43.0,
+        55.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "连续贴合壳面，暴露部分形成真实装甲分缝。"
+    },
+    {
+      "id": "P28",
+      "slug": "service_0-1",
+      "title": "贴壳双螺钉检修条 1",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P28_service_0-1",
+      "stl": "02_parts/R05/P28_service_0-1/P28_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 102.867,
+      "size_mm": [
+        2.55,
+        13.3,
+        5.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P30",
+      "slug": "service_1-1",
+      "title": "贴壳双螺钉检修条 2",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P30_service_1-1",
+      "stl": "02_parts/R05/P30_service_1-1/P30_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 248.045,
+      "size_mm": [
+        2.55,
+        26.6,
+        5.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P35",
+      "slug": "hinge_base-1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P35_hinge_base-1",
+      "stl": "02_parts/R05/P35_hinge_base-1/P35_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2958.345,
+      "size_mm": [
+        13.308,
+        26.398,
+        26.4
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P36",
+      "slug": "hinge_ring-1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P36_hinge_ring-1",
+      "stl": "02_parts/R05/P36_hinge_ring-1/P36_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 190.381,
+      "size_mm": [
+        1.5,
+        22.198,
+        22.195
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P37",
+      "slug": "hinge_center-1",
+      "title": "侧面圆形轴盖分件",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P37_hinge_center-1",
+      "stl": "02_parts/R05/P37_hinge_center-1/P37_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 224.805,
+      "size_mm": [
+        1.0,
+        17.198,
+        17.196
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H60",
+      "slug": "side_fastener_60",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H60_side_fastener_60",
+      "stl": "02_parts/R05/H60_side_fastener_60/H60_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.528,
+        3.76,
+        3.86
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H61",
+      "slug": "side_fastener_61",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H61_side_fastener_61",
+      "stl": "02_parts/R05/H61_side_fastener_61/H61_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.528,
+        3.76,
+        3.86
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H62",
+      "slug": "side_fastener_62",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H62_side_fastener_62",
+      "stl": "02_parts/R05/H62_side_fastener_62/H62_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.327,
+        3.76,
+        3.815
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H63",
+      "slug": "side_fastener_63",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H63_side_fastener_63",
+      "stl": "02_parts/R05/H63_side_fastener_63/H63_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.327,
+        3.76,
+        3.815
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H64",
+      "slug": "side_fastener_64",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H64_side_fastener_64",
+      "stl": "02_parts/R05/H64_side_fastener_64/H64_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.909,
+        3.76,
+        3.913
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H65",
+      "slug": "side_fastener_65",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H65_side_fastener_65",
+      "stl": "02_parts/R05/H65_side_fastener_65/H65_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.909,
+        3.76,
+        3.913
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H66",
+      "slug": "side_fastener_66",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H66_side_fastener_66",
+      "stl": "02_parts/R05/H66_side_fastener_66/H66_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        3.484,
+        3.484,
+        3.905
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H67",
+      "slug": "side_fastener_67",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H67_side_fastener_67",
+      "stl": "02_parts/R05/H67_side_fastener_67/H67_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        2.533,
+        3.76,
+        3.893
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H68",
+      "slug": "side_fastener_68",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H68_side_fastener_68",
+      "stl": "02_parts/R05/H68_side_fastener_68/H68_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        2.533,
+        3.76,
+        3.893
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H69",
+      "slug": "axis_fastener_1",
+      "title": "轴盖中心螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H69_axis_fastener_1",
+      "stl": "02_parts/R05/H69_axis_fastener_1/H69_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.527,
+      "size_mm": [
+        1.1,
+        3.8,
+        3.799
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H70",
+      "slug": "side_fastener_70",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H70_side_fastener_70",
+      "stl": "02_parts/R05/H70_side_fastener_70/H70_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.528,
+        3.76,
+        3.86
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H71",
+      "slug": "side_fastener_71",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H71_side_fastener_71",
+      "stl": "02_parts/R05/H71_side_fastener_71/H71_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.528,
+        3.76,
+        3.86
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H72",
+      "slug": "side_fastener_72",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H72_side_fastener_72",
+      "stl": "02_parts/R05/H72_side_fastener_72/H72_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.327,
+        3.76,
+        3.815
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H73",
+      "slug": "side_fastener_73",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H73_side_fastener_73",
+      "stl": "02_parts/R05/H73_side_fastener_73/H73_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.327,
+        3.76,
+        3.815
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H74",
+      "slug": "side_fastener_74",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H74_side_fastener_74",
+      "stl": "02_parts/R05/H74_side_fastener_74/H74_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.909,
+        3.76,
+        3.913
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H75",
+      "slug": "side_fastener_75",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H75_side_fastener_75",
+      "stl": "02_parts/R05/H75_side_fastener_75/H75_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        1.909,
+        3.76,
+        3.913
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H76",
+      "slug": "side_fastener_76",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H76_side_fastener_76",
+      "stl": "02_parts/R05/H76_side_fastener_76/H76_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        3.484,
+        3.484,
+        3.905
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H77",
+      "slug": "side_fastener_77",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H77_side_fastener_77",
+      "stl": "02_parts/R05/H77_side_fastener_77/H77_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        2.533,
+        3.76,
+        3.893
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H78",
+      "slug": "side_fastener_78",
+      "title": "侧甲贴面螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H78_side_fastener_78",
+      "stl": "02_parts/R05/H78_side_fastener_78/H78_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.33,
+      "size_mm": [
+        2.533,
+        3.76,
+        3.893
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H79",
+      "slug": "axis_fastener_-1",
+      "title": "轴盖中心螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H79_axis_fastener_-1",
+      "stl": "02_parts/R05/H79_axis_fastener_-1/H79_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11.527,
+      "size_mm": [
+        1.1,
+        3.8,
+        3.799
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P38",
+      "slug": "shoulder_intake1",
+      "title": "后肩橙色导流罩",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P38_shoulder_intake1",
+      "stl": "02_parts/R05/P38_shoulder_intake1/P38_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1178.537,
+      "size_mm": [
+        21.456,
+        20.0,
+        20.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P39",
+      "slug": "shoulder_intake-1",
+      "title": "后肩橙色导流罩",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P39_shoulder_intake-1",
+      "stl": "02_parts/R05/P39_shoulder_intake-1/P39_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1178.537,
+      "size_mm": [
+        21.456,
+        20.0,
+        20.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P40",
+      "slug": "roof_hatch",
+      "title": "顶部检修甲板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P40_roof_hatch",
+      "stl": "02_parts/R05/P40_roof_hatch/P40_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2436.679,
+      "size_mm": [
+        47.922,
+        32.0,
+        2.0
+      ],
+      "edge_break_mm": 0.25,
+      "notes": ""
+    },
+    {
+      "id": "P41",
+      "slug": "roof_inset",
+      "title": "顶部凹槽内衬",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P41_roof_inset",
+      "stl": "02_parts/R05/P41_roof_inset/P41_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 202.176,
+      "size_mm": [
+        23.4,
+        14.4,
+        0.6
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P42",
+      "slug": "handle_mount1",
+      "title": "顶部把手安装座",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P42_handle_mount1",
+      "stl": "02_parts/R05/P42_handle_mount1/P42_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 321.495,
+      "size_mm": [
+        6.0,
+        11.715,
+        6.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P43",
+      "slug": "handle_mount-1",
+      "title": "顶部把手安装座",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P43_handle_mount-1",
+      "stl": "02_parts/R05/P43_handle_mount-1/P43_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 321.495,
+      "size_mm": [
+        6.0,
+        11.715,
+        6.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P44",
+      "slug": "roof_handle",
+      "title": "顶部横向提手",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P44_roof_handle",
+      "stl": "02_parts/R05/P44_roof_handle/P44_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 282.743,
+      "size_mm": [
+        40.0,
+        3.0,
+        2.999
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P45",
+      "slug": "phone_backplate",
+      "title": "后倾手机托架背板",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P45_phone_backplate",
+      "stl": "02_parts/R05/P45_phone_backplate/P45_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 10377.71,
+      "size_mm": [
+        68.045,
+        12.719,
+        55.549
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P46",
+      "slug": "phone_orange_rail1",
+      "title": "橙色手机托架侧边",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P46_phone_orange_rail1",
+      "stl": "02_parts/R05/P46_phone_orange_rail1/P46_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2376.828,
+      "size_mm": [
+        8.926,
+        16.288,
+        55.224
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P47",
+      "slug": "phone_orange_rail-1",
+      "title": "橙色手机托架侧边",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P47_phone_orange_rail-1",
+      "stl": "02_parts/R05/P47_phone_orange_rail-1/P47_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2376.828,
+      "size_mm": [
+        8.926,
+        16.288,
+        55.224
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P48",
+      "slug": "phone_shelf",
+      "title": "后倾手机下托",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P48_phone_shelf",
+      "stl": "02_parts/R05/P48_phone_shelf/P48_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4067.813,
+      "size_mm": [
+        72.0,
+        12.356,
+        8.821
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P64",
+      "slug": "phone_mount_web1",
+      "title": "手机托架底部连接肋",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P64_phone_mount_web1",
+      "stl": "02_parts/R05/P64_phone_mount_web1/P64_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 330.0,
+      "size_mm": [
+        4.0,
+        16.0,
+        9.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P65",
+      "slug": "phone_mount_web-1",
+      "title": "手机托架底部连接肋",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P65_phone_mount_web-1",
+      "stl": "02_parts/R05/P65_phone_mount_web-1/P65_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 330.0,
+      "size_mm": [
+        4.0,
+        16.0,
+        9.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P49",
+      "slug": "rear_service_frame",
+      "title": "后部检修框",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "gray",
+      "folder": "02_parts/R05/P49_rear_service_frame",
+      "stl": "02_parts/R05/P49_rear_service_frame/P49_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5888.528,
+      "size_mm": [
+        75.823,
+        4.0,
+        33.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P50",
+      "slug": "rear_service_cover",
+      "title": "后部条纹检修盖",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/P50_rear_service_cover",
+      "stl": "02_parts/R05/P50_rear_service_cover/P50_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1714.48,
+      "size_mm": [
+        30.0,
+        2.8,
+        21.5
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "P51",
+      "slug": "rear_latch",
+      "title": "后部橙色锁扣占位",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "orange",
+      "folder": "02_parts/R05/P51_rear_latch",
+      "stl": "02_parts/R05/P51_rear_latch/P51_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 245.47,
+      "size_mm": [
+        20.0,
+        3.2,
+        4.0
+      ],
+      "edge_break_mm": 0.45,
+      "notes": ""
+    },
+    {
+      "id": "P52",
+      "slug": "legacy_P34",
+      "title": "磁吸底座／接触盒 P34",
+      "category": "fdm",
+      "group": "cockpit",
+      "material": "dark",
+      "folder": "02_parts/R05/P52_legacy_P34",
+      "stl": "02_parts/R05/P52_legacy_P34/P52_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2198.248,
+      "size_mm": [
+        50.0,
+        26.0,
+        2.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "P53",
+      "slug": "legacy_P35",
+      "title": "磁吸底座／接触盒 P35",
+      "category": "fdm",
+      "group": "desktop_base",
+      "material": "dark",
+      "folder": "02_parts/R05/P53_legacy_P35",
+      "stl": "02_parts/R05/P53_legacy_P35/P53_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7929.93,
+      "size_mm": [
+        82.0,
+        61.0,
+        5.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "P54",
+      "slug": "legacy_P36",
+      "title": "磁吸底座／接触盒 P36",
+      "category": "fdm",
+      "group": "desktop_base",
+      "material": "dark",
+      "folder": "02_parts/R05/P54_legacy_P36",
+      "stl": "02_parts/R05/P54_legacy_P36/P54_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3614.294,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "P55",
+      "slug": "legacy_P37",
+      "title": "磁吸底座／接触盒 P37",
+      "category": "fdm",
+      "group": "desktop_base",
+      "material": "dark",
+      "folder": "02_parts/R05/P55_legacy_P37",
+      "stl": "02_parts/R05/P55_legacy_P37/P55_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3614.294,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "P56",
+      "slug": "legacy_P38",
+      "title": "磁吸底座／接触盒 P38",
+      "category": "fdm",
+      "group": "desktop_base",
+      "material": "dark",
+      "folder": "02_parts/R05/P56_legacy_P38",
+      "stl": "02_parts/R05/P56_legacy_P38/P56_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3613.775,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "P57",
+      "slug": "legacy_P39",
+      "title": "磁吸底座／接触盒 P39",
+      "category": "fdm",
+      "group": "desktop_base",
+      "material": "dark",
+      "folder": "02_parts/R05/P57_legacy_P39",
+      "stl": "02_parts/R05/P57_legacy_P39/P57_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3613.775,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "edge_break_mm": 0,
+      "notes": "沿用 R03，实体尺寸待校准。"
+    },
+    {
+      "id": "H03",
+      "slug": "screw_3",
+      "title": "肩部螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H03_screw_3",
+      "stl": "02_parts/R05/H03_screw_3/H03_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.883,
+      "size_mm": [
+        1.1,
+        3.6,
+        3.599
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H04",
+      "slug": "screw_4",
+      "title": "肩部螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H04_screw_4",
+      "stl": "02_parts/R05/H04_screw_4/H04_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.883,
+      "size_mm": [
+        1.1,
+        3.6,
+        3.599
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H12",
+      "slug": "screw_12",
+      "title": "肩部螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H12_screw_12",
+      "stl": "02_parts/R05/H12_screw_12/H12_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.883,
+      "size_mm": [
+        1.1,
+        3.6,
+        3.599
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H13",
+      "slug": "screw_13",
+      "title": "肩部螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H13_screw_13",
+      "stl": "02_parts/R05/H13_screw_13/H13_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9.883,
+      "size_mm": [
+        1.1,
+        3.6,
+        3.599
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H21",
+      "slug": "screw_21",
+      "title": "顶盖螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H21_screw_21",
+      "stl": "02_parts/R05/H21_screw_21/H21_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7.533,
+      "size_mm": [
+        3.199,
+        3.2,
+        1.1
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H22",
+      "slug": "screw_22",
+      "title": "顶盖螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H22_screw_22",
+      "stl": "02_parts/R05/H22_screw_22/H22_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7.533,
+      "size_mm": [
+        3.199,
+        3.2,
+        1.1
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H23",
+      "slug": "screw_23",
+      "title": "顶盖螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H23_screw_23",
+      "stl": "02_parts/R05/H23_screw_23/H23_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7.533,
+      "size_mm": [
+        3.199,
+        3.2,
+        1.1
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H24",
+      "slug": "screw_24",
+      "title": "顶盖螺钉占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "black",
+      "folder": "02_parts/R05/H24_screw_24",
+      "stl": "02_parts/R05/H24_screw_24/H24_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7.533,
+      "size_mm": [
+        3.199,
+        3.2,
+        1.1
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H25",
+      "slug": "magnet_25",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "metal",
+      "folder": "02_parts/R05/H25_magnet_25",
+      "stl": "02_parts/R05/H25_magnet_25/H25_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56.549,
+      "size_mm": [
+        5.999,
+        5.999,
+        2.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H26",
+      "slug": "magnet_26",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "metal",
+      "folder": "02_parts/R05/H26_magnet_26",
+      "stl": "02_parts/R05/H26_magnet_26/H26_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56.549,
+      "size_mm": [
+        5.999,
+        5.999,
+        2.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H27",
+      "slug": "magnet_27",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "metal",
+      "folder": "02_parts/R05/H27_magnet_27",
+      "stl": "02_parts/R05/H27_magnet_27/H27_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56.549,
+      "size_mm": [
+        5.999,
+        5.999,
+        2.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H28",
+      "slug": "magnet_28",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "metal",
+      "folder": "02_parts/R05/H28_magnet_28",
+      "stl": "02_parts/R05/H28_magnet_28/H28_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 56.549,
+      "size_mm": [
+        5.999,
+        5.999,
+        2.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H29",
+      "slug": "contact_29",
+      "title": "磁吸信号触点占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "gold",
+      "folder": "02_parts/R05/H29_contact_29",
+      "stl": "02_parts/R05/H29_contact_29/H29_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.6,
+        3.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H30",
+      "slug": "contact_30",
+      "title": "磁吸信号触点占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "gold",
+      "folder": "02_parts/R05/H30_contact_30",
+      "stl": "02_parts/R05/H30_contact_30/H30_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.6,
+        3.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H31",
+      "slug": "contact_31",
+      "title": "磁吸信号触点占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "gold",
+      "folder": "02_parts/R05/H31_contact_31",
+      "stl": "02_parts/R05/H31_contact_31/H31_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.6,
+        3.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    },
+    {
+      "id": "H32",
+      "slug": "contact_32",
+      "title": "磁吸信号触点占位",
+      "category": "hardware",
+      "group": "cockpit",
+      "material": "gold",
+      "folder": "02_parts/R05/H32_contact_32",
+      "stl": "02_parts/R05/H32_contact_32/H32_review.stl",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.6,
+        3.0
+      ],
+      "edge_break_mm": 0,
+      "notes": ""
+    }
+  ],
+  "all_valid": true,
+  "canopy_facets": 12,
+  "side_vent_normals": [
+    [
+      0.882948,
+      -0.469472,
+      0
+    ],
+    [
+      -0.882948,
+      -0.469472,
+      0
+    ]
+  ],
+  "shell_profiles": [
+    [
+      37,
+      -35,
+      38,
+      13,
+      6
+    ],
+    [
+      46,
+      -48,
+      43,
+      15,
+      14
+    ],
+    [
+      50,
+      -50,
+      43,
+      14,
+      32
+    ],
+    [
+      48,
+      -43,
+      38,
+      14,
+      50
+    ],
+    [
+      41,
+      -31,
+      34,
+      11,
+      66
+    ],
+    [
+      31,
+      -14,
+      27,
+      8,
+      80
+    ],
+    [
+      27,
+      -7,
+      24,
+      7,
+      84
+    ]
+  ],
+  "canopy_stations": [
+    [
+      33,
+      -53,
+      23
+    ],
+    [
+      40,
+      -52,
+      27
+    ],
+    [
+      58,
+      -42,
+      29
+    ],
+    [
+      73,
+      -27,
+      24
+    ],
+    [
+      81,
+      -15,
+      20
+    ]
+  ],
+  "limitations": [
+    "Hardware dimensions unmeasured",
+    "Accessory retention and assembly interference not cleared",
+    "Original desktop base remains provisional"
+  ]
+}

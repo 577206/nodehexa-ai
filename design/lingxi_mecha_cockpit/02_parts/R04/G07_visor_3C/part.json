@@ -1,0 +1,20 @@
+{
+  "id": "G07",
+  "slug": "visor_3C",
+  "title": "舱罩折面 3C",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R04/G07_visor_3C",
+  "stl": "02_parts/R04/G07_visor_3C/G07_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 698.673,
+  "size_mm": [
+    47.587,
+    16.781,
+    16.767
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

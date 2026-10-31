@@ -1,0 +1,20 @@
+{
+  "id": "P31",
+  "slug": "service_11",
+  "title": "侧面双层检修盖",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/P31_service_11",
+  "stl": "02_parts/R04/P31_service_11/P31_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 257.37,
+  "size_mm": [
+    2.0,
+    25.0,
+    6.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

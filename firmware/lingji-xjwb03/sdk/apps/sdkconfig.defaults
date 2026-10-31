@@ -25,7 +25,7 @@ CONFIG_ESP_WIFI_ENT_FREE_DYNAMIC_BUFFER=y
 CONFIG_NVS_ALLOCATE_CACHE_IN_SPIRAM=y
 
 # More BSD sockets for MQTT + RTC; one slot reserved by bsp_oss_upload_init()
-CONFIG_LWIP_MAX_SOCKETS=12
+CONFIG_LWIP_MAX_SOCKETS=24
 
 # YOLO11n-pose in the coco_pose partition. V1 matches ct_eye_plush.
 CONFIG_FLASH_COCO_POSE_YOLO11N_POSE_S8_V1=y

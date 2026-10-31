@@ -1,0 +1,20 @@
+{
+  "id": "H26",
+  "slug": "magnet_26",
+  "title": "磁铁占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "metal",
+  "folder": "02_parts/R06/H26_magnet_26",
+  "stl": "02_parts/R06/H26_magnet_26/H26_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 56.549,
+  "size_mm": [
+    5.999,
+    5.999,
+    2.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

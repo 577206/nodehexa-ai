@@ -1,0 +1,26 @@
+{
+  "id": "P11",
+  "slug": "outer_strap_R",
+  "title": "右外侧装甲压条",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P11_outer_strap_R",
+  "stl": "02_parts/P11_outer_strap_R/P11_assembly.stl",
+  "volume_mm3": 1237.893,
+  "size_mm": [
+    3.2,
+    51.0,
+    29.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

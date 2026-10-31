@@ -18,6 +18,11 @@ int agent_app_is_cloud_connected(void);
 /* Network may be up before Agent credentials are ready for speak requests. */
 int agent_app_is_corpus_ready(void);
 int agent_app_is_uplink_enabled(void);
+/* Read-only diagnostics for LAN status; no audio, transcript, or credentials. */
+int agent_app_is_media_connected(void);
+int agent_app_is_tts_waiting(void);
+int agent_app_dialog_state(void);
+uint32_t agent_app_error_count(void);
 /* 以本地提示音方式播一段已按 qm_audio 线上格式编好的音频；会话未创建时返回 -QM_EINIT。 */
 int agent_app_play_local_audio(const void *data, uint32_t len);
 

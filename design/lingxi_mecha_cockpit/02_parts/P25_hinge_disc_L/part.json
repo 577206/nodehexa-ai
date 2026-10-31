@@ -1,0 +1,26 @@
+{
+  "id": "P25",
+  "slug": "hinge_disc_L",
+  "title": "侧圆形轴盖 L",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P25_hinge_disc_L",
+  "stl": "02_parts/P25_hinge_disc_L/P25_assembly.stl",
+  "volume_mm3": 1229.018,
+  "size_mm": [
+    3.0,
+    22.996,
+    22.997
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

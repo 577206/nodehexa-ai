@@ -1,0 +1,20 @@
+{
+  "id": "G04",
+  "slug": "visor_2C",
+  "title": "舱罩折面 2C",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R04/G04_visor_2C",
+  "stl": "02_parts/R04/G04_visor_2C/G04_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 854.682,
+  "size_mm": [
+    47.648,
+    9.863,
+    18.711
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

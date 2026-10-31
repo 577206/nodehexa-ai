@@ -1,0 +1,48 @@
+{
+  "status": "INTERFACES_NEED_REVIEW",
+  "rigid_part_interferences": [
+    {
+      "parts": [
+        "P10",
+        "P02"
+      ],
+      "overlap_mm3": 423.508
+    },
+    {
+      "parts": [
+        "P11",
+        "P02"
+      ],
+      "overlap_mm3": 423.508
+    },
+    {
+      "parts": [
+        "P66",
+        "P60"
+      ],
+      "overlap_mm3": 1.618
+    },
+    {
+      "parts": [
+        "P67",
+        "P61"
+      ],
+      "overlap_mm3": 1.618
+    },
+    {
+      "parts": [
+        "P45",
+        "P46"
+      ],
+      "overlap_mm3": 0.435
+    },
+    {
+      "parts": [
+        "P45",
+        "P47"
+      ],
+      "overlap_mm3": 0.435
+    }
+  ],
+  "note": "Hardware omitted. Volumetric overlap does not evaluate minimum wall thickness, assembly paths or physical tolerances."
+}

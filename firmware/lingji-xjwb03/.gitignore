@@ -1,4 +1,6 @@
 .env.local
+omni_memory.local.json
+.lingxi-memory-*
 project_identity.local.h
 secrets.local.*
 build/

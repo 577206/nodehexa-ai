@@ -1,0 +1,21 @@
+{
+  "id": "P01",
+  "slug": "lower_shell",
+  "title": "收边下壳／电池仓",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R06/P01_lower_shell",
+  "stl": "02_parts/R06/P01_lower_shell/P01_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 27354.846,
+  "size_mm": [
+    97.711,
+    92.428,
+    20.85
+  ],
+  "edge_break_mm": 0,
+  "notes": "内衬和 PCB 定位待量；真实侧孔已开。",
+  "receiving_pockets_applied": true
+}

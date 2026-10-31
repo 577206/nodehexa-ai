@@ -1,0 +1,19 @@
+{
+  "id": "P32",
+  "slug": "phone_grip_R",
+  "title": "右橙色手机挡条",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P32_phone_grip_R",
+  "stl": "02_parts/P32_phone_grip_R/P32_assembly.stl",
+  "volume_mm3": 875.414,
+  "size_mm": [
+    5.0,
+    5.0,
+    36.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

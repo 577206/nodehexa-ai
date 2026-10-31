@@ -1,0 +1,20 @@
+{
+  "id": "H27",
+  "slug": "magnet_27",
+  "title": "磁铁占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "metal",
+  "folder": "02_parts/R05/H27_magnet_27",
+  "stl": "02_parts/R05/H27_magnet_27/H27_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 56.549,
+  "size_mm": [
+    5.999,
+    5.999,
+    2.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

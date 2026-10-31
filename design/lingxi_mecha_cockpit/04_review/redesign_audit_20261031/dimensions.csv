@@ -1,0 +1,178 @@
+﻿family,id,label,X_mm,Y_mm,Z_mm,evidence,source
+original_chassis,TKRC-BodyBackWall,,26.0,33.65,3.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyBackWall.STL
+original_chassis,TKRC-BodyButtom-18650-2S,,130.343,9.0,78.343,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyButtom-18650-2S.STL
+original_chassis,TKRC-BodyButtom,,130.343,9.0,78.343,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyButtom.STL
+original_chassis,TKRC-BodyCenter-Thin,,96.672,6.0,44.343,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyCenter-Thin.STL
+original_chassis,TKRC-BodyCenter,,96.672,6.0,44.343,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyCenter.STL
+original_chassis,TKRC-BodySideWall,,105.013,33.65,6.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodySideWall.STL
+original_chassis,TKRC-BodyTop,,134.809,3.0,74.343,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-BodyTop.STL
+original_chassis,TKRC-FootButtom,,66.972,3.0,14.962,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-FootButtom.STL
+original_chassis,TKRC-FootGround,,39.5,65.048,3.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-FootGround.STL
+original_chassis,TKRC-FootTip,,10.0,11.5,10.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-FootTip.STL
+original_chassis,TKRC-FootTop,,76.992,3.0,14.968,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-FootTop.STL
+original_chassis,TKRC-JointCross,,41.355,3.9,41.355,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-JointCross.STL
+original_chassis,TKRC-JointDown,,25.025,6.0,15.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-JointDown.STL
+original_chassis,TKRC-JointTop,,32.229,6.0,15.0,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-JointTop.STL
+original_chassis,TKRC-LegBottom,,65.0,6.0,21.5,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-LegBottom.STL
+original_chassis,TKRC-LegTop,,63.8,4.6,20.6,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-LegTop.STL
+original_chassis,TKRC-ThighBottom,,35.0,6.0,20.5,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-ThighBottom.STL
+original_chassis,TKRC-ThighTop,,34.4,7.16,20.6,"STL model dimensions; assumed mm, not physical measurement",repository/mechanism/hexapod/TKRC-ThighTop.STL
+cockpit_R06,G01,G01 | 舱罩折面 1C,39.451,1.955,6.683,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G02,G02 | 舱罩折面 1R,10.574,8.705,6.694,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G03,G03 | 舱罩折面 1L,10.574,8.705,6.694,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G04,G04 | 舱罩折面 2C,43.647,10.845,17.72,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G05,G05 | 舱罩折面 2R,8.718,17.582,17.695,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G06,G06 | 舱罩折面 2L,8.718,17.582,17.695,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G07,G07 | 舱罩折面 3C,43.596,15.774,14.774,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G08,G08 | 舱罩折面 3R,11.683,22.528,14.767,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G09,G09 | 舱罩折面 3L,11.683,22.528,14.767,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G10,G10 | 舱罩折面 4C,33.579,12.734,7.822,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G11,G11 | 舱罩折面 4R,10.663,19.478,7.815,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,G12,G12 | 舱罩折面 4L,10.663,19.478,7.815,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P03,P03 | 多折面舱罩承托框,73.0,47.3,50.4,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P04,P04 | 舱罩内接缝扣 1,9.0,1.88,2.4,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P05,P05 | 舱罩内接缝扣 2,9.0,2.03,2.4,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P06,P06 | 舱罩内接缝扣 3,9.0,2.63,2.4,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P07,P07 | 灯眼内托板,45.0,2.2,14.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P08,P08 | 斜向眼睛导光件,14.0,1.1,8.6,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P09,P09 | 斜向眼睛导光件,14.0,1.1,8.6,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P10,P10 | 前侧上段舱罩护轨,23.35,48.4,44.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P66,P66 | 前侧下段舱罩护轨,14.3,16.1,25.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P11,P11 | 前侧上段舱罩护轨,23.35,48.4,44.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P67,P67 | 前侧下段舱罩护轨,14.3,16.1,25.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P12,P12 | 下颏橙色镜头框,25.94,5.0,22.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P13,P13 | 镜头方形内衬,20.0,1.5,17.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H01,H01 | 双台阶镜筒外观占位,11.2,3.0,11.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H02,H02 | 凹入镜片外观占位,6.36,0.3,6.36,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P01,P01 | 收边下壳／电池仓,127.937,93.0,47.6,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P02,P02 | 多折线内层主壳,127.937,93.0,70.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P14,P14 | 侧面格栅装甲框,21.409,32.807,39.451,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P15,P15 | 侧面黑色百叶,14.061,24.659,32.211,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P16,P16 | 侧面橙色斜鳍片,15.022,26.227,34.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P17,P17 | 侧面格栅装甲框,21.409,32.807,39.451,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P18,P18 | 侧面黑色百叶,14.061,24.659,32.211,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P19,P19 | 侧面橙色斜鳍片,15.022,26.227,34.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P60,P60 | 前脸独立打孔颊甲,166.665,77.123,56.268,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P61,P61 | 前脸独立打孔颊甲,166.665,77.123,56.268,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P20,P20 | 折角橙色肩部护架,30.35,67.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P21,P21 | 灰色肩部压甲,18.75,53.0,30.627,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P22,P22 | 折角橙色肩部护架,30.35,67.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P23,P23 | 灰色肩部压甲,18.75,53.0,30.627,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P62,P62 | 肩甲下凹黑色检修面板,18.35,53.0,30.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P63,P63 | 肩甲下凹黑色检修面板,18.35,53.0,30.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P68,P68 | 连续包角过渡颊甲,22.75,74.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P69,P69 | 连续包角过渡颊甲,22.75,74.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H80,H80 | 过渡颊甲贴面螺钉占位,3.636,3.636,3.847,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H81,H81 | 过渡颊甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H82,H82 | 过渡颊甲贴面螺钉占位,3.636,3.636,3.847,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H83,H83 | 过渡颊甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P24,P24 | 侧面上层梯形拼甲,11.6,65.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P25,P25 | 侧面下层收边拼甲,15.35,65.0,26.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P58,P58 | 轴盖下方后侧嵌甲,21.62,79.0,36.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P70,P70 | 侧甲黑色检修底板,21.2,79.0,60.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P29,P29 | 贴壳双螺钉检修条 1,3.95,65.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P31,P31 | 贴壳双螺钉检修条 2,6.049,65.0,36.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P32,P32 | 侧面圆形轴盖分件,22.05,79.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P33,P33 | 侧面圆形轴盖分件,1.5,22.2,22.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P34,P34 | 侧面圆形轴盖分件,1.0,17.2,17.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P26,P26 | 侧面上层梯形拼甲,11.6,65.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P27,P27 | 侧面下层收边拼甲,15.35,65.0,26.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P59,P59 | 轴盖下方后侧嵌甲,21.62,79.0,36.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P71,P71 | 侧甲黑色检修底板,21.2,79.0,60.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P28,P28 | 贴壳双螺钉检修条 1,3.95,65.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P30,P30 | 贴壳双螺钉检修条 2,6.049,65.0,36.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P35,P35 | 侧面圆形轴盖分件,22.05,79.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P36,P36 | 侧面圆形轴盖分件,1.5,22.2,22.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P37,P37 | 侧面圆形轴盖分件,1.0,17.2,17.2,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H60,H60 | 侧甲贴面螺钉占位,1.528,3.76,3.861,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H61,H61 | 侧甲贴面螺钉占位,1.528,3.76,3.861,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H62,H62 | 侧甲贴面螺钉占位,1.327,3.76,3.816,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H63,H63 | 侧甲贴面螺钉占位,1.327,3.76,3.816,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H64,H64 | 侧甲贴面螺钉占位,1.909,3.76,3.913,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H65,H65 | 侧甲贴面螺钉占位,1.909,3.76,3.913,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H66,H66 | 侧甲贴面螺钉占位,3.485,3.485,3.905,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H67,H67 | 侧甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H68,H68 | 侧甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H69,H69 | 轴盖中心螺钉占位,1.1,3.8,3.8,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H70,H70 | 侧甲贴面螺钉占位,1.528,3.76,3.861,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H71,H71 | 侧甲贴面螺钉占位,1.528,3.76,3.861,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H72,H72 | 侧甲贴面螺钉占位,1.327,3.76,3.816,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H73,H73 | 侧甲贴面螺钉占位,1.327,3.76,3.816,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H74,H74 | 侧甲贴面螺钉占位,1.909,3.76,3.913,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H75,H75 | 侧甲贴面螺钉占位,1.909,3.76,3.913,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H76,H76 | 侧甲贴面螺钉占位,3.485,3.485,3.905,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H77,H77 | 侧甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H78,H78 | 侧甲贴面螺钉占位,2.533,3.76,3.894,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H79,H79 | 轴盖中心螺钉占位,1.1,3.8,3.8,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P38,P38 | 后肩橙色导流罩,32.5,67.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P39,P39 | 后肩橙色导流罩,32.5,67.0,34.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P40,P40 | 顶部检修甲板,47.922,32.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P41,P41 | 顶部凹槽内衬,23.4,14.4,0.6,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P42,P42 | 顶部把手安装座,6.0,11.715,6.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P43,P43 | 顶部把手安装座,6.0,11.715,6.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P44,P44 | 顶部横向提手,40.0,3.0,3.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P45,P45 | 后倾手机托架背板,64.0,11.157,46.685,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P46,P46 | 橙色手机托架侧边,14.0,14.881,46.517,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P47,P47 | 橙色手机托架侧边,14.0,14.881,46.517,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P48,P48 | 后倾手机下托,66.0,12.356,8.821,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P64,P64 | 手机托架底部连接肋,4.0,9.0,9.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P65,P65 | 手机托架底部连接肋,4.0,9.0,9.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P49,P49 | 后部检修框,75.823,4.0,33.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P50,P50 | 后部条纹检修盖,30.0,2.8,21.5,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P51,P51 | 后部橙色锁扣占位,20.0,3.2,4.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P52,P52 | 磁吸底座／接触盒 P34,50.0,26.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P53,P53 | 磁吸底座／接触盒 P35,82.0,61.0,5.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P54,P54 | 磁吸底座／接触盒 P36,14.0,24.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P55,P55 | 磁吸底座／接触盒 P37,14.0,24.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P56,P56 | 磁吸底座／接触盒 P38,14.0,24.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,P57,P57 | 磁吸底座／接触盒 P39,14.0,24.0,18.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H03,H03 | 肩部贴面螺钉占位,3.097,3.76,3.711,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H04,H04 | 肩部贴面螺钉占位,3.097,3.76,3.711,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H12,H12 | 肩部贴面螺钉占位,3.097,3.76,3.711,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H13,H13 | 肩部贴面螺钉占位,3.097,3.76,3.711,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H21,H21 | 顶盖螺钉占位,3.2,3.2,1.1,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H22,H22 | 顶盖螺钉占位,3.2,3.2,1.1,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H23,H23 | 顶盖螺钉占位,3.2,3.2,1.1,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H24,H24 | 顶盖螺钉占位,3.2,3.2,1.1,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H25,H25 | 磁铁占位,6.0,6.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H26,H26 | 磁铁占位,6.0,6.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H27,H27 | 磁铁占位,6.0,6.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H28,H28 | 磁铁占位,6.0,6.0,2.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H29,H29 | 磁吸信号触点占位,1.6,1.6,3.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H30,H30 | 磁吸信号触点占位,1.6,1.6,3.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H31,H31 | 磁吸信号触点占位,1.6,1.6,3.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+cockpit_R06,H32,H32 | 磁吸信号触点占位,1.6,1.6,3.0,Saved R06 CAD; provisional physical interfaces,repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd
+desktop_pet_34_alternative,P01_internal_carrier,,88.0,98.0,54.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P01_internal_carrier.step
+desktop_pet_34_alternative,P02_base_plate,,110.0,94.0,3.6,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P02_base_plate.step
+desktop_pet_34_alternative,P03_front_frame,,148.0,99.84,129.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P03_front_frame.step
+desktop_pet_34_alternative,P04_rear_shell,,148.0,100.84,129.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P04_rear_shell.step
+desktop_pet_34_alternative,P05_top_lid,,128.0,102.0,33.6,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P05_top_lid.step
+desktop_pet_34_alternative,P06_side_armor_L,,42.432,136.0,129.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P06_side_armor_L.step
+desktop_pet_34_alternative,P07_side_armor_R,,42.432,136.0,129.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P07_side_armor_R.step
+desktop_pet_34_alternative,P08_upper_orange_L,,42.39,110.48,68.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P08_upper_orange_L.step
+desktop_pet_34_alternative,P08f_slanted_fins_L,,3.0,29.0,18.407,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P08f_slanted_fins_L.step
+desktop_pet_34_alternative,P09_upper_orange_R,,42.39,110.48,68.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P09_upper_orange_R.step
+desktop_pet_34_alternative,P09f_slanted_fins_R,,3.0,29.0,18.407,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P09f_slanted_fins_R.step
+desktop_pet_34_alternative,P10_smoke_visor,,128.0,62.208,109.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P10_smoke_visor.step
+desktop_pet_34_alternative,P11_visor_retainer,,131.0,101.9,109.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P11_visor_retainer.step
+desktop_pet_34_alternative,P12_camera_carrier,,32.0,4.0,32.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P12_camera_carrier.step
+desktop_pet_34_alternative,P13_lens_bezel,,40.0,5.0,34.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P13_lens_bezel.step
+desktop_pet_34_alternative,P14_eye_diffuser,,27.0,2.0,15.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P14_eye_diffuser.step
+desktop_pet_34_alternative,P15_eye_diffuser,,27.0,2.0,15.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P15_eye_diffuser.step
+desktop_pet_34_alternative,P16L_light_baffle,,34.0,6.0,16.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P16L_light_baffle.step
+desktop_pet_34_alternative,P16R_light_baffle,,34.0,6.0,16.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P16R_light_baffle.step
+desktop_pet_34_alternative,P17_grille_L,,4.0,39.0,38.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P17_grille_L.step
+desktop_pet_34_alternative,P18_grille_R,,4.0,39.0,38.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P18_grille_R.step
+desktop_pet_34_alternative,P19a_fixed_round_cap_L,,5.0,44.0,44.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P19a_fixed_round_cap_L.step
+desktop_pet_34_alternative,P19b_orange_ring_L,,2.5,38.0,38.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P19b_orange_ring_L.step
+desktop_pet_34_alternative,P20a_fixed_round_cap_R,,5.0,44.0,44.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P20a_fixed_round_cap_R.step
+desktop_pet_34_alternative,P20b_orange_ring_R,,2.5,38.0,38.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P20b_orange_ring_R.step
+desktop_pet_34_alternative,P21_top_bridge,,53.0,16.0,15.5,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P21_top_bridge.step
+desktop_pet_34_alternative,P22_phone_backplate,,86.0,18.0,108.0,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P22_phone_backplate.step
+desktop_pet_34_alternative,P23_phone_cradle,,86.0,16.0,109.5,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P23_phone_cradle.step
+desktop_pet_34_alternative,P24_rear_access_cover,,48.6,3.0,42.6,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P24_rear_access_cover.step
+desktop_pet_34_alternative,P25_contact_blank,,33.6,23.6,2.8,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P25_contact_blank.step
+desktop_pet_34_alternative,P26a_magnet_site_blank,,19.6,19.6,2.8,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P26a_magnet_site_blank.step
+desktop_pet_34_alternative,P26b_magnet_site_blank,,19.6,19.6,2.8,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P26b_magnet_site_blank.step
+desktop_pet_34_alternative,P26c_magnet_site_blank,,19.6,19.6,2.8,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P26c_magnet_site_blank.step
+desktop_pet_34_alternative,P26d_magnet_site_blank,,19.6,19.6,2.8,"Alternative head STEP; provisional, not chosen as new baseline",work/desktop-pet-cad-2026-10-29/outputs/step/P26d_magnet_site_blank.step

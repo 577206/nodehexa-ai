@@ -1,0 +1,26 @@
+{
+  "id": "P04",
+  "slug": "upper_visor",
+  "title": "透明舱盖上片",
+  "category": "clear_sheet",
+  "material": "glass",
+  "folder": "02_parts/P04_upper_visor",
+  "stl": "02_parts/P04_upper_visor/P04_assembly.stl",
+  "volume_mm3": 1113.0,
+  "size_mm": [
+    62.0,
+    21.0,
+    21.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "与下片构成折面，优先透明 PET 裁片，边缘用可拆压框固定。",
+  "print_axis": [
+    [
+      1,
+      0,
+      0
+    ],
+    -46.397
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "Traceability mapping, not a declaration that pending requirements pass",
+  "features": [
+    {
+      "id": "upper_frame_width_extension",
+      "source": "source/model.py:widened_top / widen_loop",
+      "evidence": "validation/first_draft_checks.json:upper_frame_original_half_*",
+      "status": "CAD_check_pass"
+    },
+    {
+      "id": "shin_original_interfaces",
+      "source": "source/model.py:reference_ground",
+      "evidence": "validation/first_draft_checks.json:original_3mm_core,left_lower_connector,right_lower_connector,tip_mount,upper_connector_band",
+      "status": "CAD_check_pass_physical_fit_pending"
+    },
+    {
+      "id": "shin_outer_relief",
+      "source": "source/model.py:ground_parts / ARMOR_RAIL; ruled loft with 0.35mm top inset",
+      "evidence": "validation/first_draft_checks.json:parts",
+      "status": "valid_CAD_sweep_pending"
+    },
+    {
+      "id": "red_recesses_and_inserts",
+      "source": "source/model.py:ground_parts / RED_RECESS",
+      "evidence": "validation/first_draft_checks.json:intersections",
+      "status": "no_solid_overlap_retention_pending"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores, nut pockets and screw bearing thickness.",
+      "status": "project_requirement_not_fully_verified",
+      "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    },
+    {
+      "id": "Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
+      "status": "verified_for_upper_frame_only",
+      "evidence": "validation/first_draft_checks.json:interface_checks"
+    },
+    {
+      "id": "Red leg inserts are solid non-emissive material. No leg lighting wiring.",
+      "status": "verified_for_two_red_inserts",
+      "evidence": "source/model.py:ground_parts"
+    },
+    {
+      "id": "No whole-mesh scaling. Preserve original effective link lengths.",
+      "status": "project_requirement_not_fully_verified",
+      "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    },
+    {
+      "id": "Concept image is appearance reference only; never infer production hole dimensions from it.",
+      "status": "project_requirement_not_fully_verified",
+      "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    },
+    {
+      "id": "Head electronic combined assembly approximately 120 by 50 mm per user; height, connectors, camera adapter, battery, speaker and magnetic contacts not yet dimensioned.",
+      "status": "user_approximate_dimension_only",
+      "evidence": "spec/current.yaml:decisions"
+    },
+    {
+      "id": "Original hardware remains. Any additive armor must preserve tool access and joint sweep.",
+      "status": "project_requirement_not_fully_verified",
+      "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    },
+    {
+      "id": "No printable-production-ready claim before full assembly and fit checks.",
+      "status": "project_requirement_not_fully_verified",
+      "evidence": "spec/part_register.json; validation/first_draft_checks.json:not_verified"
+    }
+  ],
+  "validation_targets": [
+    {
+      "id": "leg_kinematics_mm",
+      "status": "pending_or_reference_only",
+      "evidence": "validation/first_draft_checks.json; spec/part_register.json"
+    },
+    {
+      "id": "body_top_plan_target_mm",
+      "status": "partial_upper_frame_only",
+      "evidence": "validation/first_draft_checks.json; spec/part_register.json"
+    },
+    {
+      "id": "body_bottom_plan_target_mm",
+      "status": "pending_or_reference_only",
+      "evidence": "validation/first_draft_checks.json; spec/part_register.json"
+    },
+    {
+      "id": "note",
+      "status": "pending_or_reference_only",
+      "evidence": "validation/first_draft_checks.json; spec/part_register.json"
+    }
+  ]
+}

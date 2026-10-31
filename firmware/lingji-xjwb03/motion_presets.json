@@ -1,0 +1,20 @@
+[
+  {"id":"forward","label":"前进","group":"行走","example":"往前走一点","payload":{"mode":"forward","cycles":1}},
+  {"id":"backward","label":"后退","group":"行走","example":"往后退一点","payload":{"mode":"backward","cycles":1}},
+  {"id":"turn_left","label":"左转","group":"行走","example":"向左转一点","payload":{"mode":"turn_left","cycles":0.5}},
+  {"id":"turn_right","label":"右转","group":"行走","example":"向右转一点","payload":{"mode":"turn_right","cycles":0.5}},
+  {"id":"shift_left","label":"左移","group":"行走","example":"往左横移一下","payload":{"mode":"shift_left","cycles":0.5}},
+  {"id":"shift_right","label":"右移","group":"行走","example":"往右横移一下","payload":{"mode":"shift_right","cycles":0.5}},
+  {"id":"standby","label":"恢复待机站姿","group":"姿态","example":"恢复站姿","payload":{"mode":"standby","cycles":1}},
+  {"id":"forward_fast","label":"快步前进","group":"行走","example":"快步前进一下","payload":{"mode":"forward_fast","cycles":0.5}},
+  {"id":"climb","label":"抬腿爬行步态","group":"行走","example":"做一下抬腿爬行动作","payload":{"mode":"climb","cycles":1}},
+  {"id":"rotate_x","label":"机身 X 轴摆动","group":"姿态","example":"机身绕 X 轴摆动一下","payload":{"mode":"rotate_x","cycles":1}},
+  {"id":"rotate_y","label":"机身 Y 轴摆动","group":"姿态","example":"机身绕 Y 轴摆动一下","payload":{"mode":"rotate_y","cycles":1}},
+  {"id":"rotate_z","label":"机身 Z 轴摆动","group":"姿态","example":"机身绕 Z 轴摆动一下","payload":{"mode":"rotate_z","cycles":1}},
+  {"id":"twist","label":"扭动身体","group":"姿态","example":"扭扭身体","payload":{"mode":"twist","cycles":1}},
+  {"id":"beat_sway","label":"节奏摇摆","group":"姿态","example":"有节奏地摇摆一下","payload":{"mode":"beat_sway","cycles":1}},
+  {"id":"freestyle","label":"自由舞","group":"表演","example":"跳一段自由舞","payload":{"performance":"freestyle","repeat":false}},
+  {"id":"dance_beatsway","label":"节奏舞","group":"表演","example":"跳一段节奏舞","payload":{"performance":"beatsway","repeat":false}},
+  {"id":"showtime","label":"组合表演","group":"表演","example":"来一段组合表演","payload":{"performance":"showtime","repeat":false}},
+  {"id":"stop","label":"停止运动","group":"控制","example":"停下来","payload":{"stop":true}}
+]

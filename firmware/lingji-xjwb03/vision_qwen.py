@@ -47,7 +47,8 @@ def load_local_config(path: Path = LOCAL_CONFIG) -> dict[str, str]:
     """Read only the three expected settings; never execute a secrets file."""
     if not path.exists():
         return {}
-    allowed = {"DASHSCOPE_API_KEY", "DASHSCOPE_BASE_URL", "DASHSCOPE_VISION_MODEL"}
+    allowed = {"DASHSCOPE_API_KEY", "DASHSCOPE_BASE_URL", "DASHSCOPE_VISION_MODEL",
+               "LINGXI_BRIDGE_TOKEN", "LINGXI_BOARD_URL"}
     result: dict[str, str] = {}
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()

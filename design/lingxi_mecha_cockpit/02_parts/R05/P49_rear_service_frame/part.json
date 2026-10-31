@@ -1,0 +1,20 @@
+{
+  "id": "P49",
+  "slug": "rear_service_frame",
+  "title": "后部检修框",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P49_rear_service_frame",
+  "stl": "02_parts/R05/P49_rear_service_frame/P49_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 5888.528,
+  "size_mm": [
+    75.823,
+    4.0,
+    33.0
+  ],
+  "edge_break_mm": 0.45,
+  "notes": ""
+}

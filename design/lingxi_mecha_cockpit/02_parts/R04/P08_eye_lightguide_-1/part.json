@@ -1,0 +1,20 @@
+{
+  "id": "P08",
+  "slug": "eye_lightguide_-1",
+  "title": "斜向眼睛导光件",
+  "category": "translucent",
+  "group": "cockpit",
+  "material": "light",
+  "folder": "02_parts/R04/P08_eye_lightguide_-1",
+  "stl": "02_parts/R04/P08_eye_lightguide_-1/P08_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 40.205,
+  "size_mm": [
+    17.0,
+    1.1,
+    8.6
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

@@ -31,6 +31,25 @@ typedef struct {
 static QueueHandle_t s_queue;
 static TaskHandle_t s_worker;
 static atomic_bool s_busy = ATOMIC_VAR_INIT(false);
+static portMUX_TYPE s_asr_lock = portMUX_INITIALIZER_UNLOCKED;
+static char s_last_asr[VISION_ASR_MAX_BYTES + 1U];
+static uint32_t s_last_asr_sequence;
+
+uint32_t vision_bridge_last_asr(char *text, size_t capacity)
+{
+    uint32_t sequence;
+    if (text == NULL || capacity == 0U) return 0U;
+    portENTER_CRITICAL(&s_asr_lock);
+    snprintf(text, capacity, "%s", s_last_asr);
+    sequence = s_last_asr_sequence;
+    portEXIT_CRITICAL(&s_asr_lock);
+    return sequence;
+}
+
+bool vision_bridge_cloud_connected(void) { return agent_app_is_cloud_connected(); }
+bool vision_bridge_active(void) { return agent_app_is_active(); }
+bool vision_bridge_uplink_enabled(void) { return agent_app_is_uplink_enabled(); }
+bool vision_bridge_corpus_ready(void) { return agent_app_is_corpus_ready(); }
 
 void vision_bridge_on_asr(const char *text, int truncated)
 {
@@ -48,7 +67,36 @@ void vision_bridge_on_asr(const char *text, int truncated)
         return;
     }
     encoded[encoded_len] = '\0';
+    portENTER_CRITICAL(&s_asr_lock);
+    memcpy(s_last_asr, text, len + 1U);
+    ++s_last_asr_sequence;
+    portEXIT_CRITICAL(&s_asr_lock);
     qm_cli_printf("VISION-ASR %s\r\n", encoded);
+}
+
+bool vision_bridge_submit(const char *text, size_t length)
+{
+    vision_request_t *item;
+    if (text == NULL || length == 0U || length > VISION_TEXT_MAX_BYTES ||
+        s_queue == NULL || !agent_app_is_cloud_connected()) return false;
+    for (size_t i = 0; i < length; ++i) {
+        if ((unsigned char)text[i] < 0x20U || text[i] == 0x7f) return false;
+    }
+    if (atomic_exchange(&s_busy, true)) return false;
+    item = heap_caps_malloc(sizeof(*item), MALLOC_CAP_8BIT);
+    if (item == NULL) {
+        atomic_store(&s_busy, false);
+        return false;
+    }
+    memcpy(item->text, text, length);
+    item->text[length] = '\0';
+    item->feedback = false;
+    if (xQueueSend(s_queue, &item, 0) != pdTRUE) {
+        heap_caps_free(item);
+        atomic_store(&s_busy, false);
+        return false;
+    }
+    return true;
 }
 
 static void vision_worker(void *arg)

@@ -1,0 +1,20 @@
+{
+  "id": "G11",
+  "slug": "visor_4R",
+  "title": "舱罩折面 4R",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R04/G11_visor_4R",
+  "stl": "02_parts/R04/G11_visor_4R/G11_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 59.585,
+  "size_mm": [
+    11.657,
+    20.492,
+    8.815
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

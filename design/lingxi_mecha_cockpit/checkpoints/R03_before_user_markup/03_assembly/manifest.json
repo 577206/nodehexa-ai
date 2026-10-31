@@ -1,0 +1,1198 @@
+{
+  "revision": "R03",
+  "units": "mm",
+  "source": "06_tools/build_cad.py",
+  "parts": [
+    {
+      "id": "P01",
+      "slug": "lower_shell",
+      "title": "下壳／电池仓",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P01_lower_shell",
+      "stl": "02_parts/P01_lower_shell/P01_assembly.stl",
+      "volume_mm3": 39162.335,
+      "size_mm": [
+        104.0,
+        84.5,
+        27.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "M3 底部螺钉孔、四磁铁袋、接触盒开口；电池压板未定尺寸。"
+    },
+    {
+      "id": "P02",
+      "slug": "upper_shell",
+      "title": "上壳／斜面舱体",
+      "category": "fdm",
+      "material": "gray",
+      "folder": "02_parts/P02_upper_shell",
+      "stl": "02_parts/P02_upper_shell/P02_assembly.stl",
+      "volume_mm3": 39669.325,
+      "size_mm": [
+        106.0,
+        85.0,
+        54.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "接收 M3 嵌件与定位唇；PCB 安装孔待实测。"
+    },
+    {
+      "id": "P03",
+      "slug": "lower_visor",
+      "title": "透明舱盖下片",
+      "category": "clear_sheet",
+      "material": "glass",
+      "folder": "02_parts/P03_lower_visor",
+      "stl": "02_parts/P03_lower_visor/P03_assembly.stl",
+      "volume_mm3": 1482.0,
+      "size_mm": [
+        62.0,
+        14.0,
+        26.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "平面透明片模板；厚度占位 1 mm，可按轮廓裁片；视线在镜片下方。"
+    },
+    {
+      "id": "P04",
+      "slug": "upper_visor",
+      "title": "透明舱盖上片",
+      "category": "clear_sheet",
+      "material": "glass",
+      "folder": "02_parts/P04_upper_visor",
+      "stl": "02_parts/P04_upper_visor/P04_assembly.stl",
+      "volume_mm3": 1113.0,
+      "size_mm": [
+        62.0,
+        21.0,
+        21.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "与下片构成折面，优先透明 PET 裁片，边缘用可拆压框固定。"
+    },
+    {
+      "id": "P05",
+      "slug": "canopy_frame",
+      "title": "折面舱盖压框",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P05_canopy_frame",
+      "stl": "02_parts/P05_canopy_frame/P05_assembly.stl",
+      "volume_mm3": 2005.649,
+      "size_mm": [
+        68.0,
+        38.405,
+        52.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "两片玻璃的承托边；细螺钉压条细节待薄片厚度确认。"
+    },
+    {
+      "id": "P06",
+      "slug": "eye_carrier",
+      "title": "双眼灯板承托",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P06_eye_carrier",
+      "stl": "02_parts/P06_eye_carrier/P06_assembly.stl",
+      "volume_mm3": 1556.813,
+      "size_mm": [
+        58.0,
+        8.7,
+        13.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "承托面已建；LED PCB 规格未定。"
+    },
+    {
+      "id": "P07",
+      "slug": "eye_lightguide_L",
+      "title": "眼睛导光件",
+      "category": "translucent",
+      "material": "light",
+      "folder": "02_parts/P07_eye_lightguide_L",
+      "stl": "02_parts/P07_eye_lightguide_L/P07_assembly.stl",
+      "volume_mm3": 26.64,
+      "size_mm": [
+        18.0,
+        4.7,
+        7.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "乳白透光件，LED 发光是渲染表示，非自带电路。"
+    },
+    {
+      "id": "P08",
+      "slug": "eye_lightguide_R",
+      "title": "眼睛导光件",
+      "category": "translucent",
+      "material": "light",
+      "folder": "02_parts/P08_eye_lightguide_R",
+      "stl": "02_parts/P08_eye_lightguide_R/P08_assembly.stl",
+      "volume_mm3": 26.64,
+      "size_mm": [
+        18.0,
+        4.7,
+        7.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "乳白透光件，LED 发光是渲染表示，非自带电路。"
+    },
+    {
+      "id": "P09",
+      "slug": "orange_shoulder_R",
+      "title": "右橙色肩部护架",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P09_orange_shoulder_R",
+      "stl": "02_parts/P09_orange_shoulder_R/P09_assembly.stl",
+      "volume_mm3": 3301.26,
+      "size_mm": [
+        10.0,
+        55.0,
+        31.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "两根定位销；后续按外壳接触区域微调。"
+    },
+    {
+      "id": "P10",
+      "slug": "orange_shoulder_L",
+      "title": "左橙色肩部护架",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P10_orange_shoulder_L",
+      "stl": "02_parts/P10_orange_shoulder_L/P10_assembly.stl",
+      "volume_mm3": 3301.264,
+      "size_mm": [
+        10.0,
+        55.0,
+        31.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P11",
+      "slug": "outer_strap_R",
+      "title": "右外侧装甲压条",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P11_outer_strap_R",
+      "stl": "02_parts/P11_outer_strap_R/P11_assembly.stl",
+      "volume_mm3": 1237.893,
+      "size_mm": [
+        3.2,
+        51.0,
+        29.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P12",
+      "slug": "outer_strap_L",
+      "title": "左外侧装甲压条",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P12_outer_strap_L",
+      "stl": "02_parts/P12_outer_strap_L/P12_assembly.stl",
+      "volume_mm3": 1237.269,
+      "size_mm": [
+        3.2,
+        51.0,
+        29.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P13",
+      "slug": "vent_frame_R",
+      "title": "侧前格栅装甲框 R",
+      "category": "fdm",
+      "material": "gray",
+      "folder": "02_parts/P13_vent_frame_R",
+      "stl": "02_parts/P13_vent_frame_R/P13_assembly.stl",
+      "volume_mm3": 1059.0,
+      "size_mm": [
+        23.32,
+        14.744,
+        35.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "模块独立，内侧固定耳尚需与实际声学器件位置协调。"
+    },
+    {
+      "id": "P14",
+      "slug": "vent_grille_R",
+      "title": "黑色百叶窗 R",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P14_vent_grille_R",
+      "stl": "02_parts/P14_vent_grille_R/P14_assembly.stl",
+      "volume_mm3": 310.166,
+      "size_mm": [
+        15.45,
+        9.291,
+        26.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P15",
+      "slug": "vent_trim_R",
+      "title": "橙色鳍片饰件 R",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P15_vent_trim_R",
+      "stl": "02_parts/P15_vent_trim_R/P15_assembly.stl",
+      "volume_mm3": 294.51,
+      "size_mm": [
+        16.567,
+        10.213,
+        32.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P16",
+      "slug": "vent_frame_L",
+      "title": "侧前格栅装甲框 L",
+      "category": "fdm",
+      "material": "gray",
+      "folder": "02_parts/P16_vent_frame_L",
+      "stl": "02_parts/P16_vent_frame_L/P16_assembly.stl",
+      "volume_mm3": 1059.0,
+      "size_mm": [
+        23.32,
+        14.744,
+        35.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "模块独立，内侧固定耳尚需与实际声学器件位置协调。"
+    },
+    {
+      "id": "P17",
+      "slug": "vent_grille_L",
+      "title": "黑色百叶窗 L",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P17_vent_grille_L",
+      "stl": "02_parts/P17_vent_grille_L/P17_assembly.stl",
+      "volume_mm3": 310.166,
+      "size_mm": [
+        15.45,
+        9.291,
+        26.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P18",
+      "slug": "vent_trim_L",
+      "title": "橙色鳍片饰件 L",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P18_vent_trim_L",
+      "stl": "02_parts/P18_vent_trim_L/P18_assembly.stl",
+      "volume_mm3": 294.51,
+      "size_mm": [
+        16.567,
+        10.213,
+        32.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P19",
+      "slug": "camera_bezel",
+      "title": "橙色前摄像头框",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P19_camera_bezel",
+      "stl": "02_parts/P19_camera_bezel/P19_assembly.stl",
+      "volume_mm3": 1743.571,
+      "size_mm": [
+        24.0,
+        5.0,
+        20.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "11.6 mm 光孔和 M2 孔为待校准尺寸。"
+    },
+    {
+      "id": "P20",
+      "slug": "camera_retainer",
+      "title": "镜头装饰压环",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P20_camera_retainer",
+      "stl": "02_parts/P20_camera_retainer/P20_assembly.stl",
+      "volume_mm3": 85.765,
+      "size_mm": [
+        10.594,
+        2.0,
+        10.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P21",
+      "slug": "side_armor_R",
+      "title": "侧面层叠装甲",
+      "category": "fdm",
+      "material": "gray",
+      "folder": "02_parts/P21_side_armor_R",
+      "stl": "02_parts/P21_side_armor_R/P21_assembly.stl",
+      "volume_mm3": 3994.262,
+      "size_mm": [
+        3.0,
+        49.0,
+        36.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P22",
+      "slug": "side_armor_L",
+      "title": "侧面层叠装甲",
+      "category": "fdm",
+      "material": "gray",
+      "folder": "02_parts/P22_side_armor_L",
+      "stl": "02_parts/P22_side_armor_L/P22_assembly.stl",
+      "volume_mm3": 3994.315,
+      "size_mm": [
+        3.0,
+        49.0,
+        36.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P23",
+      "slug": "hinge_disc_R",
+      "title": "侧圆形轴盖 R",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P23_hinge_disc_R",
+      "stl": "02_parts/P23_hinge_disc_R/P23_assembly.stl",
+      "volume_mm3": 1219.189,
+      "size_mm": [
+        3.0,
+        22.986,
+        23.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P24",
+      "slug": "hinge_ring_R",
+      "title": "侧轴橙色圈 R",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P24_hinge_ring_R",
+      "stl": "02_parts/P24_hinge_ring_R/P24_assembly.stl",
+      "volume_mm3": 167.133,
+      "size_mm": [
+        1.6,
+        19.388,
+        19.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P25",
+      "slug": "hinge_disc_L",
+      "title": "侧圆形轴盖 L",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P25_hinge_disc_L",
+      "stl": "02_parts/P25_hinge_disc_L/P25_assembly.stl",
+      "volume_mm3": 1229.018,
+      "size_mm": [
+        3.0,
+        22.996,
+        22.997
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P26",
+      "slug": "hinge_ring_L",
+      "title": "侧轴橙色圈 L",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P26_hinge_ring_L",
+      "stl": "02_parts/P26_hinge_ring_L/P26_assembly.stl",
+      "volume_mm3": 168.528,
+      "size_mm": [
+        1.6,
+        19.399,
+        19.398
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P27",
+      "slug": "roof_panel",
+      "title": "顶部检修装饰板",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P27_roof_panel",
+      "stl": "02_parts/P27_roof_panel/P27_assembly.stl",
+      "volume_mm3": 2864.114,
+      "size_mm": [
+        48.0,
+        28.0,
+        2.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P28",
+      "slug": "roof_inset",
+      "title": "顶部黑色嵌片",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P28_roof_inset",
+      "stl": "02_parts/P28_roof_inset/P28_assembly.stl",
+      "volume_mm3": 193.6,
+      "size_mm": [
+        24.0,
+        11.0,
+        0.8
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P40",
+      "slug": "side_utility_R",
+      "title": "右侧黑色检修面板",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P40_side_utility_R",
+      "stl": "02_parts/P40_side_utility_R/P40_assembly.stl",
+      "volume_mm3": 489.395,
+      "size_mm": [
+        2.2,
+        23.0,
+        12.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P41",
+      "slug": "side_utility_L",
+      "title": "左侧黑色检修面板",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P41_side_utility_L",
+      "stl": "02_parts/P41_side_utility_L/P41_assembly.stl",
+      "volume_mm3": 489.311,
+      "size_mm": [
+        2.2,
+        23.0,
+        12.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P42",
+      "slug": "shoulder_intake_R",
+      "title": "右肩橙色通风罩",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P42_shoulder_intake_R",
+      "stl": "02_parts/P42_shoulder_intake_R/P42_assembly.stl",
+      "volume_mm3": 1250.0,
+      "size_mm": [
+        5.0,
+        19.0,
+        22.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P43",
+      "slug": "shoulder_intake_L",
+      "title": "左肩橙色通风罩",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P43_shoulder_intake_L",
+      "stl": "02_parts/P43_shoulder_intake_L/P43_assembly.stl",
+      "volume_mm3": 1250.0,
+      "size_mm": [
+        5.0,
+        19.0,
+        22.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P29",
+      "slug": "phone_upright_R",
+      "title": "手机支架侧臂",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P29_phone_upright_R",
+      "stl": "02_parts/P29_phone_upright_R/P29_assembly.stl",
+      "volume_mm3": 3311.892,
+      "size_mm": [
+        5.0,
+        20.0,
+        82.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "仅保留手机定位宽度；手机实物尺寸与重心待验证。"
+    },
+    {
+      "id": "P30",
+      "slug": "phone_upright_L",
+      "title": "手机支架侧臂",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P30_phone_upright_L",
+      "stl": "02_parts/P30_phone_upright_L/P30_assembly.stl",
+      "volume_mm3": 3312.238,
+      "size_mm": [
+        5.0,
+        20.0,
+        82.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "仅保留手机定位宽度；手机实物尺寸与重心待验证。"
+    },
+    {
+      "id": "P31",
+      "slug": "phone_shelf",
+      "title": "手机托架底托",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P31_phone_shelf",
+      "stl": "02_parts/P31_phone_shelf/P31_assembly.stl",
+      "volume_mm3": 6325.108,
+      "size_mm": [
+        74.0,
+        16.0,
+        9.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P32",
+      "slug": "phone_grip_R",
+      "title": "右橙色手机挡条",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P32_phone_grip_R",
+      "stl": "02_parts/P32_phone_grip_R/P32_assembly.stl",
+      "volume_mm3": 875.414,
+      "size_mm": [
+        5.0,
+        5.0,
+        36.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P33",
+      "slug": "phone_grip_L",
+      "title": "左橙色手机挡条",
+      "category": "fdm",
+      "material": "orange",
+      "folder": "02_parts/P33_phone_grip_L",
+      "stl": "02_parts/P33_phone_grip_L/P33_assembly.stl",
+      "volume_mm3": 875.414,
+      "size_mm": [
+        5.0,
+        5.0,
+        36.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P34",
+      "slug": "dock_cassette",
+      "title": "四触点底部接触盒",
+      "category": "fdm",
+      "material": "black",
+      "folder": "02_parts/P34_dock_cassette",
+      "stl": "02_parts/P34_dock_cassette/P34_assembly.stl",
+      "volume_mm3": 2198.248,
+      "size_mm": [
+        50.0,
+        26.0,
+        2.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "触点和磁铁是外购件；机器人侧孔距未确认。"
+    },
+    {
+      "id": "P35",
+      "slug": "desktop_cradle",
+      "title": "独立桌面磁吸底座框",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P35_desktop_cradle",
+      "stl": "02_parts/P35_desktop_cradle/P35_assembly.stl",
+      "volume_mm3": 7929.93,
+      "size_mm": [
+        82.0,
+        61.0,
+        5.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "P36",
+      "slug": "desktop_foot_1",
+      "title": "桌面底座脚 1",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P36_desktop_foot_1",
+      "stl": "02_parts/P36_desktop_foot_1/P36_assembly.stl",
+      "volume_mm3": 3614.294,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "上方 M3 固定孔与底座框对应。"
+    },
+    {
+      "id": "P37",
+      "slug": "desktop_foot_2",
+      "title": "桌面底座脚 2",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P37_desktop_foot_2",
+      "stl": "02_parts/P37_desktop_foot_2/P37_assembly.stl",
+      "volume_mm3": 3614.294,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "上方 M3 固定孔与底座框对应。"
+    },
+    {
+      "id": "P38",
+      "slug": "desktop_foot_3",
+      "title": "桌面底座脚 3",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P38_desktop_foot_3",
+      "stl": "02_parts/P38_desktop_foot_3/P38_assembly.stl",
+      "volume_mm3": 3613.775,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "上方 M3 固定孔与底座框对应。"
+    },
+    {
+      "id": "P39",
+      "slug": "desktop_foot_4",
+      "title": "桌面底座脚 4",
+      "category": "fdm",
+      "material": "dark",
+      "folder": "02_parts/P39_desktop_foot_4",
+      "stl": "02_parts/P39_desktop_foot_4/P39_assembly.stl",
+      "volume_mm3": 3613.775,
+      "size_mm": [
+        14.0,
+        24.0,
+        18.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "上方 M3 固定孔与底座框对应。"
+    },
+    {
+      "id": "H01",
+      "slug": "camera_lens",
+      "title": "镜头外观占位",
+      "category": "hardware",
+      "material": "glass",
+      "folder": "02_parts/H01_camera_lens",
+      "stl": "02_parts/H01_camera_lens/H01_assembly.stl",
+      "volume_mm3": 86.017,
+      "size_mm": [
+        7.395,
+        2.0,
+        7.4
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": "BF3901 镜头尺寸待量；仅用于检查光孔。"
+    },
+    {
+      "id": "H02",
+      "slug": "magnet_1",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "material": "metal",
+      "folder": "02_parts/H02_magnet_1",
+      "stl": "02_parts/H02_magnet_1/H02_assembly.stl",
+      "volume_mm3": 56.549,
+      "size_mm": [
+        6.0,
+        5.996,
+        2.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H03",
+      "slug": "magnet_2",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "material": "metal",
+      "folder": "02_parts/H03_magnet_2",
+      "stl": "02_parts/H03_magnet_2/H03_assembly.stl",
+      "volume_mm3": 56.549,
+      "size_mm": [
+        6.0,
+        5.996,
+        2.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H04",
+      "slug": "magnet_3",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "material": "metal",
+      "folder": "02_parts/H04_magnet_3",
+      "stl": "02_parts/H04_magnet_3/H04_assembly.stl",
+      "volume_mm3": 56.549,
+      "size_mm": [
+        6.0,
+        5.996,
+        2.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H05",
+      "slug": "magnet_4",
+      "title": "磁铁占位",
+      "category": "hardware",
+      "material": "metal",
+      "folder": "02_parts/H05_magnet_4",
+      "stl": "02_parts/H05_magnet_4/H05_assembly.stl",
+      "volume_mm3": 56.549,
+      "size_mm": [
+        6.0,
+        5.996,
+        2.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H06",
+      "slug": "pogo_1",
+      "title": "信号触点占位",
+      "category": "hardware",
+      "material": "gold",
+      "folder": "02_parts/H06_pogo_1",
+      "stl": "02_parts/H06_pogo_1/H06_assembly.stl",
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.599,
+        3.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H07",
+      "slug": "pogo_2",
+      "title": "信号触点占位",
+      "category": "hardware",
+      "material": "gold",
+      "folder": "02_parts/H07_pogo_2",
+      "stl": "02_parts/H07_pogo_2/H07_assembly.stl",
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.599,
+        3.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H08",
+      "slug": "pogo_3",
+      "title": "信号触点占位",
+      "category": "hardware",
+      "material": "gold",
+      "folder": "02_parts/H08_pogo_3",
+      "stl": "02_parts/H08_pogo_3/H08_assembly.stl",
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.599,
+        3.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H09",
+      "slug": "pogo_4",
+      "title": "信号触点占位",
+      "category": "hardware",
+      "material": "gold",
+      "folder": "02_parts/H09_pogo_4",
+      "stl": "02_parts/H09_pogo_4/H09_assembly.stl",
+      "volume_mm3": 6.032,
+      "size_mm": [
+        1.6,
+        1.599,
+        3.0
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H10",
+      "slug": "roof_screw_10",
+      "title": "顶部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H10_roof_screw_10",
+      "stl": "02_parts/H10_roof_screw_10/H10_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        3.6,
+        3.598,
+        1.35
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H11",
+      "slug": "roof_screw_11",
+      "title": "顶部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H11_roof_screw_11",
+      "stl": "02_parts/H11_roof_screw_11/H11_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        3.6,
+        3.598,
+        1.35
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H12",
+      "slug": "roof_screw_12",
+      "title": "顶部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H12_roof_screw_12",
+      "stl": "02_parts/H12_roof_screw_12/H12_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        3.6,
+        3.598,
+        1.35
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H13",
+      "slug": "roof_screw_13",
+      "title": "顶部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H13_roof_screw_13",
+      "stl": "02_parts/H13_roof_screw_13/H13_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        3.6,
+        3.598,
+        1.35
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H14",
+      "slug": "side_screw_14",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H14_side_screw_14",
+      "stl": "02_parts/H14_side_screw_14/H14_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H15",
+      "slug": "side_screw_15",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H15_side_screw_15",
+      "stl": "02_parts/H15_side_screw_15/H15_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H16",
+      "slug": "side_screw_16",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H16_side_screw_16",
+      "stl": "02_parts/H16_side_screw_16/H16_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H17",
+      "slug": "side_screw_17",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H17_side_screw_17",
+      "stl": "02_parts/H17_side_screw_17/H17_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H18",
+      "slug": "side_screw_18",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H18_side_screw_18",
+      "stl": "02_parts/H18_side_screw_18/H18_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H19",
+      "slug": "side_screw_19",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H19_side_screw_19",
+      "stl": "02_parts/H19_side_screw_19/H19_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H20",
+      "slug": "side_screw_20",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H20_side_screw_20",
+      "stl": "02_parts/H20_side_screw_20/H20_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H21",
+      "slug": "side_screw_21",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H21_side_screw_21",
+      "stl": "02_parts/H21_side_screw_21/H21_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H22",
+      "slug": "side_screw_22",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H22_side_screw_22",
+      "stl": "02_parts/H22_side_screw_22/H22_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    },
+    {
+      "id": "H23",
+      "slug": "side_screw_23",
+      "title": "侧部螺钉头占位",
+      "category": "hardware",
+      "material": "black",
+      "folder": "02_parts/H23_side_screw_23",
+      "stl": "02_parts/H23_side_screw_23/H23_assembly.stl",
+      "volume_mm3": 11.699,
+      "size_mm": [
+        1.35,
+        3.598,
+        3.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "notes": ""
+    }
+  ],
+  "all_valid": true,
+  "status": "PROTOTYPE_NOT_RELEASED",
+  "shell_common_volume_mm3": 0.0
+}

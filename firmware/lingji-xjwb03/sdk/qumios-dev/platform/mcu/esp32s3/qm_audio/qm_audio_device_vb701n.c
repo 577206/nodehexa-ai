@@ -93,6 +93,7 @@ static uint8_t g_cap;
 static uint8_t g_mute;
 static uint8_t g_mic_logged;
 static uint32_t g_last_send_ms;
+static uint32_t g_last_send_duration_ms;
 static uint16_t g_play_frame_len = VB701N_PCM_FRAME_LEN;
 static uint16_t g_play_frame_ms = VB701N_PCM_FRAME_MS;
 static uint8_t g_hold[VB701N_AUDIO_SLOT_MAX];
@@ -410,7 +411,10 @@ static int pace_send(const uint8_t *data, uint32_t len, uint32_t timeout_ms)
         }
         n = (uint16_t)burst;
 
-        gap = CONFIG_QM_VB701N_TX_INTERVAL_MS;
+        /* Never feed 20 ms PCM every 5 ms. The chip has a finite FIFO;
+         * pace by the PREVIOUS burst (lead silence uses 10 ms bursts). */
+        gap = g_last_send_duration_ms > CONFIG_QM_VB701N_TX_INTERVAL_MS ?
+              g_last_send_duration_ms : CONFIG_QM_VB701N_TX_INTERVAL_MS;
         ret = wait_gap(gap, &deadline, timed);
         if (ret != QM_EOK) {
             if (ret == -QM_EINTR) {
@@ -421,6 +425,7 @@ static int pace_send(const uint8_t *data, uint32_t len, uint32_t timeout_ms)
 
         /* 间隔从这一帧开始算，串口发送时间算在间隔里面。 */
         g_last_send_ms = qm_now_ms();
+        g_last_send_duration_ms = ((uint32_t)n * g_play_frame_ms + g_play_frame_len - 1) / g_play_frame_len;
         while (sent < n) {
             uint16_t one = g_play_frame_len;
 
@@ -659,6 +664,7 @@ int qm_audio_device_get_caps(void *ctx, qm_audio_device_caps_t *caps)
     caps->output_format = g_out_fmt;
     caps->flags = QM_AUDIO_DEVICE_CAP_CAPTURE |
                   QM_AUDIO_DEVICE_CAP_PLAYBACK |
+                  QM_AUDIO_DEVICE_CAP_DRAIN |
                   QM_AUDIO_DEVICE_CAP_VOLUME |
                   QM_AUDIO_DEVICE_CAP_MUTE |
                   QM_AUDIO_DEVICE_CAP_ABORT_READ |
@@ -718,10 +724,18 @@ int qm_audio_device_playback_write(void *ctx, const qm_audio_data_t *input, uint
 int qm_audio_device_playback_drain(void *ctx, uint32_t timeout_ms)
 {
     (void)ctx;
-    (void)timeout_ms;
-    /* write 返回时这一帧已经写进串口。芯片没有播放完成回执。 */
+    qm_utils_time_t deadline;
+    int timed = timeout_ms != QM_WAIT_FOREVER;
+    /* No chip completion ACK: wait for the last paced PCM burst's duration.
+     * The engine calls this only after its packet queue has been consumed. */
     if (!g_open) {
         return -QM_EINIT;
+    }
+    if (timed) qm_utils_time_countdown_ms(&deadline, timeout_ms);
+    while (g_last_send_ms && qm_now_ms() - g_last_send_ms < g_last_send_duration_ms) {
+        if (g_abort_write) return -QM_EINTR;
+        if (timed && qm_utils_time_is_expired(&deadline)) return -QM_ETIMEOUT;
+        qm_msleep(1);
     }
     return QM_EOK;
 }

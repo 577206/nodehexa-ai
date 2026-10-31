@@ -1,0 +1,4622 @@
+{
+  "date": "2026-10-31",
+  "units": "mm (STL interpreted as project mm)",
+  "operation": "read-only measurement; source geometry not modified",
+  "groups": {
+    "cockpit_R06": {
+      "count": 125,
+      "union_bbox": {
+        "min": [
+          -83.33243659241533,
+          -92.48698181254439,
+          -18.500000035183135
+        ],
+        "max": [
+          83.33243659241533,
+          56.393163410713825,
+          92.0
+        ],
+        "size": [
+          166.66487318483067,
+          148.8801452232582,
+          110.50000003518313
+        ]
+      },
+      "union_note": "Includes all measured parts, including any desktop base/phone carrier."
+    },
+    "desktop_pet_34_alternative": {
+      "count": 34,
+      "union_bbox": {
+        "min": [
+          -82.25,
+          -75.0,
+          0.0
+        ],
+        "max": [
+          82.25,
+          84.3,
+          194.0
+        ],
+        "size": [
+          164.5,
+          159.3,
+          194.0
+        ]
+      },
+      "union_note": "Includes all measured parts, including any desktop base/phone carrier."
+    },
+    "original_chassis": {
+      "count": 18,
+      "union_bbox": {
+        "min": [
+          0.0,
+          -1.3877787807814457e-14,
+          0.0
+        ],
+        "max": [
+          134.80905151367188,
+          65.04774475097656,
+          88.97222137451172
+        ],
+        "size": [
+          134.80905151367188,
+          65.04774475097658,
+          88.97222137451172
+        ]
+      },
+      "union_note": "Original STL files have separate local origins; their union is NOT assembly size."
+    }
+  },
+  "parts": [
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyBackWall",
+      "file": "repository/mechanism/hexapod/TKRC-BodyBackWall.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          26.0,
+          33.650001525878906,
+          3.0
+        ],
+        "size": [
+          26.0,
+          33.650001525878906,
+          3.0
+        ]
+      },
+      "facets": 1788,
+      "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyButtom-18650-2S",
+      "file": "repository/mechanism/hexapod/TKRC-BodyButtom-18650-2S.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          10.629073143005371
+        ],
+        "max": [
+          130.3431396484375,
+          9.0,
+          88.97222137451172
+        ],
+        "size": [
+          130.3431396484375,
+          9.0,
+          78.34314823150635
+        ]
+      },
+      "facets": 6128,
+      "sha256": "f53baa27ee72213fc48ac95b0c4fe8a3a04d4571777c1b746b35cc95e9dc6622",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyButtom",
+      "file": "repository/mechanism/hexapod/TKRC-BodyButtom.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          10.629073143005371
+        ],
+        "max": [
+          130.3431396484375,
+          9.0,
+          88.97222137451172
+        ],
+        "size": [
+          130.3431396484375,
+          9.0,
+          78.34314823150635
+        ]
+      },
+      "facets": 5932,
+      "sha256": "04c93b62fec95a18120aea06341d8dc67fb5255d0dc33a40fed246ca1bb3c13e",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyCenter-Thin",
+      "file": "repository/mechanism/hexapod/TKRC-BodyCenter-Thin.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          96.67157745361328,
+          6.0,
+          44.34314727783203
+        ],
+        "size": [
+          96.67157745361328,
+          6.0,
+          44.34314727783203
+        ]
+      },
+      "facets": 3790,
+      "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyCenter",
+      "file": "repository/mechanism/hexapod/TKRC-BodyCenter.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          96.67157745361328,
+          6.0,
+          44.34314727783203
+        ],
+        "size": [
+          96.67157745361328,
+          6.0,
+          44.34314727783203
+        ]
+      },
+      "facets": 3242,
+      "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodySideWall",
+      "file": "repository/mechanism/hexapod/TKRC-BodySideWall.STL",
+      "bbox": {
+        "min": [
+          0.010248273611068726,
+          0.0,
+          0.0
+        ],
+        "max": [
+          105.02277374267578,
+          33.650001525878906,
+          6.0
+        ],
+        "size": [
+          105.01252546906471,
+          33.650001525878906,
+          6.0
+        ]
+      },
+      "facets": 11524,
+      "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-BodyTop",
+      "file": "repository/mechanism/hexapod/TKRC-BodyTop.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          -1.3877787807814457e-14,
+          0.0
+        ],
+        "max": [
+          134.80905151367188,
+          3.0,
+          74.34314727783203
+        ],
+        "size": [
+          134.80905151367188,
+          3.0000000000000138,
+          74.34314727783203
+        ]
+      },
+      "facets": 4670,
+      "sha256": "f279c669c215535969bb5389c552f16acf65f12d5bef4ac18376a8fe9bac88de",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-FootButtom",
+      "file": "repository/mechanism/hexapod/TKRC-FootButtom.STL",
+      "bbox": {
+        "min": [
+          0.027999281883239746,
+          -1.734723475976807e-15,
+          12.934981346130371
+        ],
+        "max": [
+          67.0,
+          3.0,
+          27.89666748046875
+        ],
+        "size": [
+          66.97200071811676,
+          3.0000000000000018,
+          14.961686134338379
+        ]
+      },
+      "facets": 1904,
+      "sha256": "4e92df197b429b663af76ab7b7d65343ee9da9ef6d9d0bfe9ec332c3f4183371",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-FootGround",
+      "file": "repository/mechanism/hexapod/TKRC-FootGround.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          39.5,
+          65.04774475097656,
+          3.0
+        ],
+        "size": [
+          39.5,
+          65.04774475097656,
+          3.0
+        ]
+      },
+      "facets": 2212,
+      "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-FootTip",
+      "file": "repository/mechanism/hexapod/TKRC-FootTip.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          10.0,
+          11.5,
+          10.0
+        ],
+        "size": [
+          10.0,
+          11.5,
+          10.0
+        ]
+      },
+      "facets": 4648,
+      "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-FootTop",
+      "file": "repository/mechanism/hexapod/TKRC-FootTop.STL",
+      "bbox": {
+        "min": [
+          0.008413568139076233,
+          -1.734723475976807e-15,
+          0.016141217201948166
+        ],
+        "max": [
+          77.0,
+          3.0,
+          14.983858108520508
+        ],
+        "size": [
+          76.99158643186092,
+          3.0000000000000018,
+          14.96771689131856
+        ]
+      },
+      "facets": 2336,
+      "sha256": "192adf2ca8efe196065845e5b630794e5a954a31d7c50a7b973232808fa369d0",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-JointCross",
+      "file": "repository/mechanism/hexapod/TKRC-JointCross.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          41.35468673706055,
+          3.8999998569488525,
+          41.35468673706055
+        ],
+        "size": [
+          41.35468673706055,
+          3.8999998569488525,
+          41.35468673706055
+        ]
+      },
+      "facets": 1912,
+      "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-JointDown",
+      "file": "repository/mechanism/hexapod/TKRC-JointDown.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          25.025062561035156,
+          6.0,
+          15.0
+        ],
+        "size": [
+          25.025062561035156,
+          6.0,
+          15.0
+        ]
+      },
+      "facets": 1600,
+      "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-JointTop",
+      "file": "repository/mechanism/hexapod/TKRC-JointTop.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          32.22916793823242,
+          6.0,
+          15.0
+        ],
+        "size": [
+          32.22916793823242,
+          6.0,
+          15.0
+        ]
+      },
+      "facets": 1514,
+      "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-LegBottom",
+      "file": "repository/mechanism/hexapod/TKRC-LegBottom.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          65.0,
+          6.0,
+          21.5
+        ],
+        "size": [
+          65.0,
+          6.0,
+          21.5
+        ]
+      },
+      "facets": 2816,
+      "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-LegTop",
+      "file": "repository/mechanism/hexapod/TKRC-LegTop.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          63.79999923706055,
+          4.599999904632568,
+          20.600000381469727
+        ],
+        "size": [
+          63.79999923706055,
+          4.599999904632568,
+          20.600000381469727
+        ]
+      },
+      "facets": 2312,
+      "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-ThighBottom",
+      "file": "repository/mechanism/hexapod/TKRC-ThighBottom.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          35.0,
+          6.0,
+          20.5
+        ],
+        "size": [
+          35.0,
+          6.0,
+          20.5
+        ]
+      },
+      "facets": 1420,
+      "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "original_chassis",
+      "id": "TKRC-ThighTop",
+      "file": "repository/mechanism/hexapod/TKRC-ThighTop.STL",
+      "bbox": {
+        "min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          34.39999771118164,
+          7.159999847412109,
+          20.600000381469727
+        ],
+        "size": [
+          34.39999771118164,
+          7.159999847412109,
+          20.600000381469727
+        ]
+      },
+      "facets": 1374,
+      "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183",
+      "evidence": "STL model dimensions; assumed mm, not physical measurement"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G01",
+      "label": "G01 | 舱罩折面 1C",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -19.72566432731891,
+          -52.97737258300203,
+          33.158391918985785
+        ],
+        "max": [
+          19.725664327318903,
+          -51.02262741699797,
+          39.841608081014215
+        ],
+        "size": [
+          39.45132865463781,
+          1.9547451660040593,
+          6.68321616202843
+        ]
+      },
+      "solids": 1,
+      "volume": 238.1386839819433,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G02",
+      "label": "G02 | 舱罩折面 1R",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          16.213159868485874,
+          -52.85246438050849,
+          33.153123247653525
+        ],
+        "max": [
+          26.786840131514126,
+          -44.14753561949151,
+          39.846876752346475
+        ],
+        "size": [
+          10.573680263028251,
+          8.704928761016987,
+          6.69375350469295
+        ]
+      },
+      "solids": 1,
+      "volume": 45.173988757239954,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G03",
+      "label": "G03 | 舱罩折面 1L",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -26.786840131514126,
+          -52.85246438050849,
+          33.153123247653525
+        ],
+        "max": [
+          -16.213159868485874,
+          -44.14753561949151,
+          39.846876752346475
+        ],
+        "size": [
+          10.573680263028251,
+          8.704928761016987,
+          6.69375350469295
+        ]
+      },
+      "solids": 1,
+      "volume": 45.17398875723993,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G04",
+      "label": "G04 | 舱罩折面 2C",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -21.823706480867024,
+          -51.92229713101142,
+          40.13986516417945
+        ],
+        "max": [
+          21.823706480867017,
+          -41.07770286898858,
+          57.860134835820546
+        ],
+        "size": [
+          43.64741296173404,
+          10.844594262022838,
+          17.7202696716411
+        ]
+      },
+      "solids": 1,
+      "volume": 738.5541551252234,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G05",
+      "label": "G05 | 舱罩折面 2R",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          20.141011423326457,
+          -51.79114871235314,
+          40.15263969472092
+        ],
+        "max": [
+          28.858988576673546,
+          -34.20885128764686,
+          57.84736030527909
+        ],
+        "size": [
+          8.71797715334709,
+          17.582297424706283,
+          17.69472061055817
+        ]
+      },
+      "solids": 1,
+      "volume": 119.47293251929358,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G06",
+      "label": "G06 | 舱罩折面 2L",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -28.858988576673546,
+          -51.791148712353134,
+          40.15263969472092
+        ],
+        "max": [
+          -20.141011423326457,
+          -34.20885128764686,
+          57.84736030527909
+        ],
+        "size": [
+          8.71797715334709,
+          17.582297424706276,
+          17.69472061055817
+        ]
+      },
+      "solids": 1,
+      "volume": 119.47293251929358,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G07",
+      "label": "G07 | 舱罩折面 3C",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -21.797903264924212,
+          -41.886862915010155,
+          58.113137084989845
+        ],
+        "max": [
+          21.79790326492422,
+          -26.11313708498985,
+          72.88686291501014
+        ],
+        "size": [
+          43.59580652984843,
+          15.773725830020304,
+          14.773725830020297
+        ]
+      },
+      "solids": 1,
+      "volume": 571.3181680437197,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G08",
+      "label": "G08 | 舱罩折面 3R",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          17.15841290026124,
+          -41.76397569972713,
+          58.116417100017436
+        ],
+        "max": [
+          28.84158709973876,
+          -19.236024300272863,
+          72.88358289998256
+        ],
+        "size": [
+          11.68317419947752,
+          22.52795139945427,
+          14.76716579996512
+        ]
+      },
+      "solids": 1,
+      "volume": 99.83764188567281,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G09",
+      "label": "G09 | 舱罩折面 3L",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -28.841587099738764,
+          -41.76397569972713,
+          58.11641710001744
+        ],
+        "max": [
+          -17.158412900261233,
+          -19.23602430027286,
+          72.88358289998256
+        ],
+        "size": [
+          11.68317419947753,
+          22.527951399454274,
+          14.767165799965113
+        ]
+      },
+      "solids": 1,
+      "volume": 99.83764188567288,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G10",
+      "label": "G10 | 舱罩折面 4C",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -16.789584137369896,
+          -26.866871952905946,
+          73.08875203139604
+        ],
+        "max": [
+          16.789584137369893,
+          -14.133128047094056,
+          80.91124796860396
+        ],
+        "size": [
+          33.579168274739786,
+          12.73374390581189,
+          7.822495937207918
+        ]
+      },
+      "solids": 1,
+      "volume": 232.07718606015587,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G11",
+      "label": "G11 | 舱罩折面 4R",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          13.16839004006733,
+          -26.739233916862336,
+          73.09237604307035
+        ],
+        "max": [
+          23.831609959932678,
+          -7.260766083137671,
+          80.90762395692965
+        ],
+        "size": [
+          10.663219919865348,
+          19.478467833724665,
+          7.815247913859309
+        ]
+      },
+      "solids": 1,
+      "volume": 52.7966572562095,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "G12",
+      "label": "G12 | 舱罩折面 4L",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -23.831609959932674,
+          -26.739233916862332,
+          73.09237604307035
+        ],
+        "max": [
+          -13.168390040067326,
+          -7.260766083137663,
+          80.90762395692965
+        ],
+        "size": [
+          10.663219919865348,
+          19.478467833724668,
+          7.815247913859309
+        ]
+      },
+      "solids": 1,
+      "volume": 52.79665725620954,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P03",
+      "label": "P03 | 多折面舱罩承托框",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -36.5,
+          -52.0,
+          31.8
+        ],
+        "max": [
+          36.5,
+          -4.699999999999999,
+          82.2
+        ],
+        "size": [
+          73.0,
+          47.3,
+          50.400000000000006
+        ]
+      },
+      "solids": 1,
+      "volume": 2578.378833708595,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P04",
+      "label": "P04 | 舱罩内接缝扣 1",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -4.5,
+          -50.08,
+          38.8
+        ],
+        "max": [
+          4.5,
+          -48.2,
+          41.199999999999996
+        ],
+        "size": [
+          9.0,
+          1.8799999999999955,
+          2.3999999999999986
+        ]
+      },
+      "solids": 1,
+      "volume": 30.695862078193677,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P05",
+      "label": "P05 | 舱罩内接缝扣 2",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -4.5,
+          -40.08,
+          56.8
+        ],
+        "max": [
+          4.5,
+          -38.050000000000004,
+          59.199999999999996
+        ],
+        "size": [
+          9.0,
+          2.029999999999994,
+          2.3999999999999986
+        ]
+      },
+      "solids": 1,
+      "volume": 31.073862078193674,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P06",
+      "label": "P06 | 舱罩内接缝扣 3",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -4.5,
+          -25.08,
+          71.8
+        ],
+        "max": [
+          4.5,
+          -22.450000000000003,
+          74.2
+        ],
+        "size": [
+          9.0,
+          2.6299999999999955,
+          2.4000000000000057
+        ]
+      },
+      "solids": 1,
+      "volume": 32.58586207819373,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P07",
+      "label": "P07 | 灯眼内托板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -22.5,
+          -43.7,
+          38.0
+        ],
+        "max": [
+          22.5,
+          -41.5,
+          52.0
+        ],
+        "size": [
+          45.0,
+          2.200000000000003,
+          14.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1353.0000000000005,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P08",
+      "label": "P08 | 斜向眼睛导光件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -22.0,
+          -44.8,
+          39.4
+        ],
+        "max": [
+          -7.999999999999999,
+          -43.699999999999996,
+          48.0
+        ],
+        "size": [
+          14.0,
+          1.1000000000000014,
+          8.600000000000001
+        ]
+      },
+      "solids": 1,
+      "volume": 33.110000000000056,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P09",
+      "label": "P09 | 斜向眼睛导光件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          7.999999999999999,
+          -44.8,
+          39.4
+        ],
+        "max": [
+          22.0,
+          -43.699999999999996,
+          48.0
+        ],
+        "size": [
+          14.0,
+          1.1000000000000014,
+          8.600000000000001
+        ]
+      },
+      "solids": 1,
+      "volume": 33.11000000000005,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P10",
+      "label": "P10 | 前侧上段舱罩护轨",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          20.25,
+          -48.4,
+          40.0
+        ],
+        "max": [
+          43.6,
+          4.9e-16,
+          84.0
+        ],
+        "size": [
+          23.35,
+          48.4,
+          44.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1066.1177898078192,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P66",
+      "label": "P66 | 前侧下段舱罩护轨",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          23.4,
+          -50.0,
+          33.0
+        ],
+        "max": [
+          37.7,
+          -33.9,
+          58.0
+        ],
+        "size": [
+          14.300000000000004,
+          16.1,
+          25.0
+        ]
+      },
+      "solids": 1,
+      "volume": 540.7550000000001,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P11",
+      "label": "P11 | 前侧上段舱罩护轨",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -43.6,
+          -48.4,
+          40.0
+        ],
+        "max": [
+          -20.25,
+          4.9e-16,
+          84.0
+        ],
+        "size": [
+          23.35,
+          48.4,
+          44.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1066.1177898078276,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P67",
+      "label": "P67 | 前侧下段舱罩护轨",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -37.7,
+          -50.0,
+          33.0
+        ],
+        "max": [
+          -23.4,
+          -33.9,
+          58.0
+        ],
+        "size": [
+          14.300000000000004,
+          16.1,
+          25.0
+        ]
+      },
+      "solids": 1,
+      "volume": 540.7550000000001,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P12",
+      "label": "P12 | 下颏橙色镜头框",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -12.970066445264305,
+          -55.0,
+          9.999999999999996
+        ],
+        "max": [
+          12.970066445264314,
+          -49.999999999999986,
+          32.0
+        ],
+        "size": [
+          25.940132890528616,
+          5.000000000000014,
+          22.000000000000004
+        ]
+      },
+      "solids": 1,
+      "volume": 1824.9645827844654,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P13",
+      "label": "P13 | 镜头方形内衬",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -10.000000000000002,
+          -55.600000000000016,
+          12.0
+        ],
+        "max": [
+          10.000000000000002,
+          -54.10000000000001,
+          29.0
+        ],
+        "size": [
+          20.000000000000004,
+          1.500000000000007,
+          17.0
+        ]
+      },
+      "solids": 1,
+      "volume": 314.4969105872754,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H01",
+      "label": "H01 | 双台阶镜筒外观占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -5.6,
+          -56.5,
+          15.4
+        ],
+        "max": [
+          5.6,
+          -53.5,
+          26.6
+        ],
+        "size": [
+          11.2,
+          3.0,
+          11.200000000000001
+        ]
+      },
+      "solids": 1,
+      "volume": 159.22848205454505,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H02",
+      "label": "H02 | 凹入镜片外观占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -3.18,
+          -54.85,
+          17.82
+        ],
+        "max": [
+          3.18,
+          -54.550000000000004,
+          24.18
+        ],
+        "size": [
+          6.36,
+          0.29999999999999716,
+          6.359999999999999
+        ]
+      },
+      "solids": 1,
+      "volume": 9.530712465048401,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P01",
+      "label": "P01 | 收边下壳／电池仓",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -63.96846036475864,
+          -50.0,
+          6.0
+        ],
+        "max": [
+          63.96846036475862,
+          43.0,
+          53.6
+        ],
+        "size": [
+          127.93692072951725,
+          93.0,
+          47.6
+        ]
+      },
+      "solids": 1,
+      "volume": 27354.84644003077,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P02",
+      "label": "P02 | 多折线内层主壳",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -63.96846036475864,
+          -50.0,
+          14.0
+        ],
+        "max": [
+          63.96846036475862,
+          43.0,
+          84.0
+        ],
+        "size": [
+          127.93692072951725,
+          93.0,
+          70.0
+        ]
+      },
+      "solids": 1,
+      "volume": 31325.952064638524,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P14",
+      "label": "P14 | 侧面格栅装甲框",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          36.21968114009808,
+          -45.73575450206687,
+          14.480863593220327
+        ],
+        "max": [
+          57.62857818149229,
+          -12.928281414593613,
+          53.93173522152866
+        ],
+        "size": [
+          21.408897041394205,
+          32.807473087473255,
+          39.450871628308334
+        ]
+      },
+      "solids": 1,
+      "volume": 1997.1831894671877,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P15",
+      "label": "P15 | 侧面黑色百叶",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          39.58030239422722,
+          -41.255932313887214,
+          17.977860100164477
+        ],
+        "max": [
+          53.641763406293606,
+          -16.596837460984947,
+          50.189255553615
+        ],
+        "size": [
+          14.061461012066388,
+          24.659094852902268,
+          32.21139545345052
+        ]
+      },
+      "solids": 1,
+      "volume": 830.4895281332809,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P16",
+      "label": "P16 | 侧面橙色斜鳍片",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          44.07586095882493,
+          -42.267150317524965,
+          19.4
+        ],
+        "max": [
+          59.097652874918765,
+          -16.040157986451856,
+          53.6
+        ],
+        "size": [
+          15.021791916093832,
+          26.22699233107311,
+          34.2
+        ]
+      },
+      "solids": 1,
+      "volume": 392.4671307514335,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P17",
+      "label": "P17 | 侧面格栅装甲框",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -57.6285781814923,
+          -45.73575450206688,
+          14.480863593220334
+        ],
+        "max": [
+          -36.2196811400981,
+          -12.928281414593604,
+          53.93173522152865
+        ],
+        "size": [
+          21.408897041394198,
+          32.80747308747328,
+          39.45087162830831
+        ]
+      },
+      "solids": 1,
+      "volume": 1997.1831894671873,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P18",
+      "label": "P18 | 侧面黑色百叶",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.64176340629362,
+          -41.25593231388719,
+          17.977860100164477
+        ],
+        "max": [
+          -39.58030239422723,
+          -16.596837460984922,
+          50.189255553615
+        ],
+        "size": [
+          14.061461012066388,
+          24.65909485290227,
+          32.21139545345052
+        ]
+      },
+      "solids": 1,
+      "volume": 830.4895281332839,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P19",
+      "label": "P19 | 侧面橙色斜鳍片",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -59.09765287491878,
+          -42.26715031752495,
+          19.4
+        ],
+        "max": [
+          -44.07586095882495,
+          -16.040157986451838,
+          53.6
+        ],
+        "size": [
+          15.021791916093832,
+          26.226992331073113,
+          34.2
+        ]
+      },
+      "solids": 1,
+      "volume": 392.46713075143225,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P60",
+      "label": "P60 | 前脸独立打孔颊甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -83.33243659241533,
+          -92.48698181254439,
+          -6.2683363131578425
+        ],
+        "max": [
+          83.33243659241533,
+          -15.363953491118501,
+          50.0
+        ],
+        "size": [
+          166.66487318483067,
+          77.12302832142589,
+          56.268336313157846
+        ]
+      },
+      "solids": 1,
+      "volume": 624.6301112534679,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P61",
+      "label": "P61 | 前脸独立打孔颊甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -83.33243659241533,
+          -92.48698181254439,
+          -6.2683363131578425
+        ],
+        "max": [
+          83.33243659241533,
+          -15.363953491118501,
+          50.0
+        ],
+        "size": [
+          166.66487318483067,
+          77.12302832142589,
+          56.268336313157846
+        ]
+      },
+      "solids": 1,
+      "volume": 624.6301112534683,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P20",
+      "label": "P20 | 折角橙色肩部护架",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          20.25,
+          -43.0,
+          50.0
+        ],
+        "max": [
+          50.6,
+          24.0,
+          84.0
+        ],
+        "size": [
+          30.35,
+          67.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 448.494110958384,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P21",
+      "label": "P21 | 灰色肩部压甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          33.75,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          52.5,
+          24.0,
+          80.62677609726506
+        ],
+        "size": [
+          18.75,
+          53.0,
+          30.626776097265065
+        ]
+      },
+      "solids": 1,
+      "volume": 346.03529881980626,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P22",
+      "label": "P22 | 折角橙色肩部护架",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -50.6,
+          -43.0,
+          50.0
+        ],
+        "max": [
+          -20.25,
+          24.0,
+          84.0
+        ],
+        "size": [
+          30.35,
+          67.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 448.49411096592456,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P23",
+      "label": "P23 | 灰色肩部压甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.5,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          -33.75,
+          24.0,
+          80.62677609726506
+        ],
+        "size": [
+          18.75,
+          53.0,
+          30.626776097265065
+        ]
+      },
+      "solids": 1,
+      "volume": 346.0352988437947,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P62",
+      "label": "P62 | 肩甲下凹黑色检修面板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          31.25,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          49.6,
+          24.0,
+          80.0
+        ],
+        "size": [
+          18.35,
+          53.0,
+          30.0
+        ]
+      },
+      "solids": 1,
+      "volume": 414.51096727902836,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P63",
+      "label": "P63 | 肩甲下凹黑色检修面板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -49.6,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          -31.25,
+          24.0,
+          80.0
+        ],
+        "size": [
+          18.35,
+          53.0,
+          30.0
+        ]
+      },
+      "solids": 1,
+      "volume": 414.5109666426352,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P68",
+      "label": "P68 | 连续包角过渡颊甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          30.45,
+          -50.0,
+          32.0
+        ],
+        "max": [
+          53.2,
+          24.0,
+          66.0
+        ],
+        "size": [
+          22.750000000000004,
+          74.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 643.4625806867743,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P69",
+      "label": "P69 | 连续包角过渡颊甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.199999999999996,
+          -50.0,
+          32.0
+        ],
+        "max": [
+          -30.45,
+          24.0,
+          66.0
+        ],
+        "size": [
+          22.749999999999996,
+          74.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 643.4625806867743,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H80",
+      "label": "H80 | 过渡颊甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          46.575792876358506,
+          -34.01151805312523,
+          48.22197952641782
+        ],
+        "max": [
+          50.211518053125246,
+          -30.375792876358535,
+          52.06850367069496
+        ],
+        "size": [
+          3.6357251767667407,
+          3.6357251767666945,
+          3.84652414427714
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938358,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H81",
+      "label": "H81 | 过渡颊甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          45.8424212583173,
+          -16.88,
+          58.177419501878994
+        ],
+        "max": [
+          48.375596289322054,
+          -13.12,
+          62.07108817521326
+        ],
+        "size": [
+          2.5331750310047525,
+          3.76,
+          3.8936686733342682
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H82",
+      "label": "H82 | 过渡颊甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -50.21151805312529,
+          -34.01151805312523,
+          48.22197952641782
+        ],
+        "max": [
+          -46.57579287635855,
+          -30.375792876358535,
+          52.068503670694966
+        ],
+        "size": [
+          3.6357251767667407,
+          3.6357251767666945,
+          3.846524144277147
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938381,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H83",
+      "label": "H83 | 过渡颊甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -48.37559628932207,
+          -16.88,
+          58.17741950187903
+        ],
+        "max": [
+          -45.842421258317316,
+          -13.12,
+          62.071088175213305
+        ],
+        "size": [
+          2.5331750310047525,
+          3.76,
+          3.8936686733342754
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938344,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P24",
+      "label": "P24 | 侧面上层梯形拼甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          42.35,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          53.95,
+          29.0,
+          66.0
+        ],
+        "size": [
+          11.600000000000001,
+          65.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 476.80658513032193,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P25",
+      "label": "P25 | 侧面下层收边拼甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          38.35,
+          -36.0,
+          6.0
+        ],
+        "max": [
+          53.7,
+          29.0,
+          32.0
+        ],
+        "size": [
+          15.350000000000001,
+          65.0,
+          26.0
+        ]
+      },
+      "solids": 1,
+      "volume": 816.8523864594569,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P58",
+      "label": "P58 | 轴盖下方后侧嵌甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          32.35,
+          -36.0,
+          14.0
+        ],
+        "max": [
+          53.970194056415714,
+          43.0,
+          50.0
+        ],
+        "size": [
+          21.620194056415713,
+          79.0,
+          36.0
+        ]
+      },
+      "solids": 1,
+      "volume": 150.65069257232295,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P70",
+      "label": "P70 | 侧甲黑色检修底板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          30.15,
+          -36.0,
+          6.0
+        ],
+        "max": [
+          51.35,
+          43.0,
+          66.0
+        ],
+        "size": [
+          21.200000000000003,
+          79.0,
+          60.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1463.9043933278265,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P29",
+      "label": "P29 | 贴壳双螺钉检修条 1",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          49.35,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          53.3,
+          29.0,
+          50.0
+        ],
+        "size": [
+          3.9499999999999957,
+          65.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 102.86727640770006,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P31",
+      "label": "P31 | 贴壳双螺钉检修条 2",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          47.35,
+          -36.0,
+          14.0
+        ],
+        "max": [
+          53.399229701769265,
+          29.0,
+          50.0
+        ],
+        "size": [
+          6.049229701769264,
+          65.0,
+          36.0
+        ]
+      },
+      "solids": 1,
+      "volume": 248.04520549167216,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P32",
+      "label": "P32 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          30.15,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          52.2,
+          43.0,
+          66.0
+        ],
+        "size": [
+          22.050000000000004,
+          79.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2958.3453753356757,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P33",
+      "label": "P33 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          52.300000000000004,
+          7.9,
+          37.9
+        ],
+        "max": [
+          53.800000000000004,
+          30.1,
+          60.1
+        ],
+        "size": [
+          1.5,
+          22.200000000000003,
+          22.200000000000003
+        ]
+      },
+      "solids": 1,
+      "volume": 190.38051480754166,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P34",
+      "label": "P34 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          52.400000000000006,
+          10.4,
+          40.4
+        ],
+        "max": [
+          53.400000000000006,
+          27.6,
+          57.6
+        ],
+        "size": [
+          1.0,
+          17.200000000000003,
+          17.200000000000003
+        ]
+      },
+      "solids": 1,
+      "volume": 224.80451630925157,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P26",
+      "label": "P26 | 侧面上层梯形拼甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.949999999999996,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          -42.35,
+          29.0,
+          66.0
+        ],
+        "size": [
+          11.599999999999994,
+          65.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 476.80658513037855,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P27",
+      "label": "P27 | 侧面下层收边拼甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.699999999999996,
+          -36.0,
+          6.0
+        ],
+        "max": [
+          -38.35,
+          29.0,
+          32.0
+        ],
+        "size": [
+          15.349999999999994,
+          65.0,
+          26.0
+        ]
+      },
+      "solids": 1,
+      "volume": 816.8523864594563,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P59",
+      "label": "P59 | 轴盖下方后侧嵌甲",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.970194056415714,
+          -36.0,
+          14.0
+        ],
+        "max": [
+          -32.35,
+          43.0,
+          50.0
+        ],
+        "size": [
+          21.620194056415713,
+          79.0,
+          36.0
+        ]
+      },
+      "solids": 1,
+      "volume": 150.6506925723228,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P71",
+      "label": "P71 | 侧甲黑色检修底板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -51.35,
+          -36.0,
+          6.0
+        ],
+        "max": [
+          -30.150000000000002,
+          43.0,
+          66.0
+        ],
+        "size": [
+          21.2,
+          79.0,
+          60.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1463.9043933542816,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P28",
+      "label": "P28 | 贴壳双螺钉检修条 1",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.300000000000004,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          -49.35,
+          29.0,
+          50.0
+        ],
+        "size": [
+          3.950000000000003,
+          65.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 102.86727640770013,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P30",
+      "label": "P30 | 贴壳双螺钉检修条 2",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.399229701769265,
+          -36.0,
+          14.0
+        ],
+        "max": [
+          -47.35,
+          29.0,
+          50.0
+        ],
+        "size": [
+          6.049229701769264,
+          65.0,
+          36.0
+        ]
+      },
+      "solids": 1,
+      "volume": 248.0452054916724,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P35",
+      "label": "P35 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.2,
+          -36.0,
+          32.0
+        ],
+        "max": [
+          -30.150000000000002,
+          43.0,
+          66.0
+        ],
+        "size": [
+          22.05,
+          79.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2958.3453753356766,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P36",
+      "label": "P36 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.800000000000004,
+          7.9,
+          37.9
+        ],
+        "max": [
+          -52.300000000000004,
+          30.1,
+          60.1
+        ],
+        "size": [
+          1.5,
+          22.200000000000003,
+          22.200000000000003
+        ]
+      },
+      "solids": 1,
+      "volume": 190.38051480754154,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P37",
+      "label": "P37 | 侧面圆形轴盖分件",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.400000000000006,
+          10.4,
+          40.4
+        ],
+        "max": [
+          -52.400000000000006,
+          27.6,
+          57.6
+        ],
+        "size": [
+          1.0,
+          17.200000000000003,
+          17.200000000000003
+        ]
+      },
+      "solids": 1,
+      "volume": 224.80451630925162,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H60",
+      "label": "H60 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          51.73280668619973,
+          -4.58,
+          40.10389069729488
+        ],
+        "max": [
+          53.26117900707567,
+          -0.8200000000000003,
+          43.96457684887153
+        ],
+        "size": [
+          1.5283723208759383,
+          3.76,
+          3.860686151576651
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938346,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H61",
+      "label": "H61 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          51.73280668619973,
+          2.3200000000000003,
+          40.10389069729488
+        ],
+        "max": [
+          53.26117900707567,
+          6.08,
+          43.96457684887153
+        ],
+        "size": [
+          1.5283723208759383,
+          3.76,
+          3.860686151576651
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938348,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H62",
+      "label": "H62 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          52.94610127480817,
+          -2.3800000000000003,
+          30.074635618902178
+        ],
+        "max": [
+          54.27294414417917,
+          1.3800000000000003,
+          33.89097296893181
+        ],
+        "size": [
+          1.3268428693709993,
+          3.7600000000000007,
+          3.8163373500296345
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938351,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H63",
+      "label": "H63 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          52.94610127480817,
+          17.82,
+          30.074635618902178
+        ],
+        "max": [
+          54.27294414417917,
+          21.58,
+          33.89097296893181
+        ],
+        "size": [
+          1.3268428693709993,
+          3.759999999999998,
+          3.8163373500296345
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H64",
+      "label": "H64 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          50.381457307588214,
+          -2.3800000000000003,
+          17.976038828551925
+        ],
+        "max": [
+          52.29044533639251,
+          1.3800000000000003,
+          21.88946428760049
+        ],
+        "size": [
+          1.9089880288042949,
+          3.7600000000000007,
+          3.9134254590485646
+        ]
+      },
+      "solids": 1,
+      "volume": 11.32961378693835,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H65",
+      "label": "H65 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          50.603679529810435,
+          18.12,
+          18.976038828551925
+        ],
+        "max": [
+          52.51266755861473,
+          21.88,
+          22.88946428760049
+        ],
+        "size": [
+          1.9089880288042949,
+          3.759999999999998,
+          3.9134254590485646
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938355,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H66",
+      "label": "H66 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          51.89493340785663,
+          27.47271118563444,
+          28.987568543719394
+        ],
+        "max": [
+          55.37969742281418,
+          30.957475200591933,
+          32.89293523788435
+        ],
+        "size": [
+          3.4847640149575554,
+          3.4847640149574914,
+          3.9053666941649574
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H67",
+      "label": "H67 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          47.0299212583173,
+          0.11999999999999966,
+          57.177419501878994
+        ],
+        "max": [
+          49.563096289322054,
+          3.8800000000000003,
+          61.07108817521326
+        ],
+        "size": [
+          2.5331750310047525,
+          3.7600000000000007,
+          3.8936686733342682
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H68",
+      "label": "H68 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          50.0924212583173,
+          -2.3800000000000003,
+          50.177419501878994
+        ],
+        "max": [
+          52.625596289322054,
+          1.3800000000000003,
+          54.07108817521326
+        ],
+        "size": [
+          2.5331750310047525,
+          3.7600000000000007,
+          3.8936686733342682
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H69",
+      "label": "H69 | 轴盖中心螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          53.45,
+          17.1,
+          47.1
+        ],
+        "max": [
+          54.550000000000004,
+          20.9,
+          50.9
+        ],
+        "size": [
+          1.1000000000000014,
+          3.799999999999997,
+          3.799999999999997
+        ]
+      },
+      "solids": 1,
+      "volume": 11.526862687212644,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H70",
+      "label": "H70 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.26117900707568,
+          -4.58,
+          40.103890697294844
+        ],
+        "max": [
+          -51.732806686199744,
+          -0.8200000000000003,
+          43.964576848871495
+        ],
+        "size": [
+          1.5283723208759383,
+          3.76,
+          3.860686151576651
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938337,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H71",
+      "label": "H71 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -53.26117900707568,
+          2.3200000000000003,
+          40.103890697294844
+        ],
+        "max": [
+          -51.732806686199744,
+          6.08,
+          43.964576848871495
+        ],
+        "size": [
+          1.5283723208759383,
+          3.76,
+          3.860686151576651
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938335,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H72",
+      "label": "H72 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -54.272944144179206,
+          -2.3800000000000003,
+          30.074635618902217
+        ],
+        "max": [
+          -52.9461012748082,
+          1.3800000000000003,
+          33.89097296893186
+        ],
+        "size": [
+          1.3268428693710064,
+          3.7600000000000007,
+          3.816337350029645
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938364,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H73",
+      "label": "H73 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -54.272944144179206,
+          17.82,
+          30.074635618902217
+        ],
+        "max": [
+          -52.9461012748082,
+          21.58,
+          33.89097296893186
+        ],
+        "size": [
+          1.3268428693710064,
+          3.759999999999998,
+          3.816337350029645
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938367,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H74",
+      "label": "H74 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.290445336392544,
+          -2.3800000000000003,
+          17.976038828551957
+        ],
+        "max": [
+          -50.38145730758826,
+          1.3800000000000003,
+          21.88946428760052
+        ],
+        "size": [
+          1.9089880288042806,
+          3.7600000000000007,
+          3.9134254590485646
+        ]
+      },
+      "solids": 1,
+      "volume": 11.32961378693836,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H75",
+      "label": "H75 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.512667558614766,
+          18.12,
+          18.97603882855196
+        ],
+        "max": [
+          -50.603679529810485,
+          21.88,
+          22.889464287600525
+        ],
+        "size": [
+          1.9089880288042806,
+          3.759999999999998,
+          3.9134254590485646
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938362,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H76",
+      "label": "H76 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -55.37969742281421,
+          27.472711185634502,
+          28.987568543719394
+        ],
+        "max": [
+          -51.894933407856655,
+          30.957475200591993,
+          32.89293523788435
+        ],
+        "size": [
+          3.4847640149575554,
+          3.4847640149574914,
+          3.9053666941649574
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938355,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H77",
+      "label": "H77 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -49.56309628932206,
+          0.11999999999999966,
+          57.177419501879044
+        ],
+        "max": [
+          -47.0299212583173,
+          3.8800000000000003,
+          61.07108817521332
+        ],
+        "size": [
+          2.5331750310047596,
+          3.7600000000000007,
+          3.8936686733342754
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938385,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H78",
+      "label": "H78 | 侧甲贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.6255962893221,
+          -2.3800000000000003,
+          50.177419501879044
+        ],
+        "max": [
+          -50.092421258317344,
+          1.3800000000000003,
+          54.07108817521332
+        ],
+        "size": [
+          2.5331750310047525,
+          3.7600000000000007,
+          3.8936686733342754
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938344,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H79",
+      "label": "H79 | 轴盖中心螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -54.550000000000004,
+          17.1,
+          47.1
+        ],
+        "max": [
+          -53.45,
+          20.9,
+          50.9
+        ],
+        "size": [
+          1.1000000000000014,
+          3.799999999999997,
+          3.799999999999997
+        ]
+      },
+      "solids": 1,
+      "volume": 11.526862687212638,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P38",
+      "label": "P38 | 后肩橙色导流罩",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          20.25,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          52.75,
+          38.0,
+          84.0
+        ],
+        "size": [
+          32.5,
+          67.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1177.2872778836604,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P39",
+      "label": "P39 | 后肩橙色导流罩",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -52.75,
+          -29.0,
+          50.0
+        ],
+        "max": [
+          -20.25,
+          38.0,
+          84.0
+        ],
+        "size": [
+          32.5,
+          67.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 1177.2872877661096,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P40",
+      "label": "P40 | 顶部检修甲板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -23.961009356631756,
+          -8.000000000000002,
+          83.99999999999994
+        ],
+        "max": [
+          23.96100935663175,
+          24.0,
+          85.99999999999997
+        ],
+        "size": [
+          47.922018713263505,
+          32.0,
+          2.0000000000000284
+        ]
+      },
+      "solids": 1,
+      "volume": 2436.6792311763147,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P41",
+      "label": "P41 | 顶部凹槽内衬",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -11.7,
+          0.3,
+          85.2
+        ],
+        "max": [
+          11.7,
+          14.700000000000001,
+          85.8
+        ],
+        "size": [
+          23.4,
+          14.4,
+          0.5999999999999943
+        ]
+      },
+      "solids": 1,
+      "volume": 202.17599999999808,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P42",
+      "label": "P42 | 顶部把手安装座",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          14.999999999999988,
+          10.142302494707577,
+          85.99999999999999
+        ],
+        "max": [
+          21.000000000000004,
+          21.85769750529242,
+          92.0
+        ],
+        "size": [
+          6.000000000000016,
+          11.715395010584844,
+          6.000000000000014
+        ]
+      },
+      "solids": 1,
+      "volume": 321.49518305967314,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P43",
+      "label": "P43 | 顶部把手安装座",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -21.000000000000018,
+          10.142302494707577,
+          86.0
+        ],
+        "max": [
+          -14.999999999999998,
+          21.857697505292425,
+          92.0
+        ],
+        "size": [
+          6.0000000000000195,
+          11.715395010584848,
+          6.0
+        ]
+      },
+      "solids": 1,
+      "volume": 321.4951830596734,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P44",
+      "label": "P44 | 顶部横向提手",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -20.0,
+          14.5,
+          88.0
+        ],
+        "max": [
+          20.0,
+          17.5,
+          91.0
+        ],
+        "size": [
+          40.0,
+          3.0,
+          3.0
+        ]
+      },
+      "solids": 1,
+      "volume": 282.74333882308133,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P45",
+      "label": "P45 | 后倾手机托架背板",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -32.0,
+          45.236597610629246,
+          38.33362708676122
+        ],
+        "max": [
+          32.00000000000001,
+          56.393163410713825,
+          85.01898228696895
+        ],
+        "size": [
+          64.0,
+          11.156565800084579,
+          46.68535520020773
+        ]
+      },
+      "solids": 1,
+      "volume": 8018.478192114172,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P46",
+      "label": "P46 | 橙色手机托架侧边",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          18.999999999999996,
+          41.39287309629723,
+          39.27502279535672
+        ],
+        "max": [
+          33.0,
+          56.274343540061466,
+          85.7917166775868
+        ],
+        "size": [
+          14.000000000000004,
+          14.881470443764236,
+          46.516693882230086
+        ]
+      },
+      "solids": 1,
+      "volume": 1410.5,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P47",
+      "label": "P47 | 橙色手机托架侧边",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -33.0,
+          41.39287309629723,
+          39.27502279535672
+        ],
+        "max": [
+          -18.999999999999996,
+          56.274343540061466,
+          85.7917166775868
+        ],
+        "size": [
+          14.000000000000004,
+          14.881470443764236,
+          46.516693882230086
+        ]
+      },
+      "solids": 1,
+      "volume": 1410.5,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P48",
+      "label": "P48 | 后倾手机下托",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -33.00000000000001,
+          36.66354287586387,
+          34.25547753257884
+        ],
+        "max": [
+          33.00000000000001,
+          49.01954526277786,
+          43.07662657576723
+        ],
+        "size": [
+          66.00000000000001,
+          12.356002386913993,
+          8.821149043188392
+        ]
+      },
+      "solids": 1,
+      "volume": 2574.6771151331695,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P64",
+      "label": "P64 | 手机托架底部连接肋",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          24.0,
+          37.0,
+          29.0
+        ],
+        "max": [
+          28.0,
+          46.0,
+          38.0
+        ],
+        "size": [
+          4.0,
+          9.0,
+          9.0
+        ]
+      },
+      "solids": 1,
+      "volume": 228.0,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P65",
+      "label": "P65 | 手机托架底部连接肋",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -28.0,
+          37.0,
+          29.0
+        ],
+        "max": [
+          -24.0,
+          46.0,
+          38.0
+        ],
+        "size": [
+          4.0,
+          9.0,
+          9.0
+        ]
+      },
+      "solids": 1,
+      "volume": 227.99999999999994,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P49",
+      "label": "P49 | 后部检修框",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -37.91174773918782,
+          40.999999999999986,
+          7.9999999999999964
+        ],
+        "max": [
+          37.911747739187824,
+          44.99999999999999,
+          41.0
+        ],
+        "size": [
+          75.82349547837563,
+          4.000000000000007,
+          33.0
+        ]
+      },
+      "solids": 1,
+      "volume": 5562.753307778709,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P50",
+      "label": "P50 | 后部条纹检修盖",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -15.0,
+          42.0,
+          8.0
+        ],
+        "max": [
+          15.0,
+          44.8,
+          29.5
+        ],
+        "size": [
+          30.0,
+          2.799999999999997,
+          21.5
+        ]
+      },
+      "solids": 1,
+      "volume": 1714.479999999999,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P51",
+      "label": "P51 | 后部橙色锁扣占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -10.000000000000004,
+          43.2,
+          33.0
+        ],
+        "max": [
+          10.000000000000004,
+          46.40000000000001,
+          37.00000000000001
+        ],
+        "size": [
+          20.000000000000007,
+          3.20000000000001,
+          4.000000000000007
+        ]
+      },
+      "solids": 1,
+      "volume": 245.4700000000002,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P52",
+      "label": "P52 | 磁吸底座／接触盒 P34",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -25.0,
+          -13.0,
+          5.2
+        ],
+        "max": [
+          25.0,
+          13.0,
+          7.2
+        ],
+        "size": [
+          50.0,
+          26.0,
+          2.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2198.2482336337907,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P53",
+      "label": "P53 | 磁吸底座／接触盒 P35",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -41.0,
+          -30.0,
+          -0.5000000351831356
+        ],
+        "max": [
+          41.0,
+          31.0,
+          4.5
+        ],
+        "size": [
+          82.0,
+          61.0,
+          5.0000000351831355
+        ]
+      },
+      "solids": 1,
+      "volume": 7929.930099383252,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P54",
+      "label": "P54 | 磁吸底座／接触盒 P36",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          29.0,
+          -44.0,
+          -18.500000035183135
+        ],
+        "max": [
+          43.0,
+          -20.0,
+          -0.5000000351831355
+        ],
+        "size": [
+          14.0,
+          24.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3614.2944503161543,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P55",
+      "label": "P55 | 磁吸底座／接触盒 P37",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -43.0,
+          -44.0,
+          -18.500000035183135
+        ],
+        "max": [
+          -29.0,
+          -20.0,
+          -0.5000000351831355
+        ],
+        "size": [
+          14.0,
+          24.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3614.2944503161543,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P56",
+      "label": "P56 | 磁吸底座／接触盒 P38",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          29.0,
+          20.0,
+          -18.500000035183135
+        ],
+        "max": [
+          43.0,
+          44.0,
+          -0.5000000351831355
+        ],
+        "size": [
+          14.0,
+          24.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3613.775448283828,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "P57",
+      "label": "P57 | 磁吸底座／接触盒 P39",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -43.0,
+          20.0,
+          -18.500000035183135
+        ],
+        "max": [
+          -29.0,
+          44.0,
+          -0.5000000351831355
+        ],
+        "size": [
+          14.0,
+          24.0,
+          18.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3613.775448283828,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H03",
+      "label": "H03 | 肩部贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -44.443533066999024,
+          -14.879999999999995,
+          68.32487152570165
+        ],
+        "max": [
+          -41.346695970863436,
+          -11.119999999999887,
+          72.03549615440424
+        ],
+        "size": [
+          3.0968370961355873,
+          3.760000000000108,
+          3.7106246287025897
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938328,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H04",
+      "label": "H04 | 肩部贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -39.44353306699896,
+          2.1199999999999997,
+          75.32487152570161
+        ],
+        "max": [
+          -36.346695970863564,
+          5.880000000000001,
+          79.0354961544043
+        ],
+        "size": [
+          3.0968370961353955,
+          3.760000000000001,
+          3.710624628702689
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938362,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H12",
+      "label": "H12 | 肩部贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          41.34669597086342,
+          -14.880000000000024,
+          68.32487152570165
+        ],
+        "max": [
+          44.44353306699901,
+          -11.119999999999916,
+          72.03549615440424
+        ],
+        "size": [
+          3.0968370961355873,
+          3.760000000000108,
+          3.7106246287025897
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938351,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H13",
+      "label": "H13 | 肩部贴面螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          36.346695970863536,
+          2.1199999999999997,
+          75.32487152570158
+        ],
+        "max": [
+          39.44353306699893,
+          5.880000000000001,
+          79.03549615440427
+        ],
+        "size": [
+          3.0968370961353955,
+          3.760000000000001,
+          3.710624628702689
+        ]
+      },
+      "solids": 1,
+      "volume": 11.329613786938356,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H21",
+      "label": "H21 | 顶盖螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -18.6,
+          -3.6,
+          86.0
+        ],
+        "max": [
+          -15.4,
+          -0.3999999999999999,
+          87.10000000000001
+        ],
+        "size": [
+          3.200000000000001,
+          3.2,
+          1.1000000000000085
+        ]
+      },
+      "solids": 1,
+      "volume": 7.532747868616913,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H22",
+      "label": "H22 | 顶盖螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -18.6,
+          3.4,
+          86.0
+        ],
+        "max": [
+          -15.4,
+          6.6,
+          87.10000000000001
+        ],
+        "size": [
+          3.200000000000001,
+          3.1999999999999997,
+          1.1000000000000085
+        ]
+      },
+      "solids": 1,
+      "volume": 7.5327478686169105,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H23",
+      "label": "H23 | 顶盖螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          15.4,
+          -3.6,
+          86.0
+        ],
+        "max": [
+          18.6,
+          -0.3999999999999999,
+          87.10000000000001
+        ],
+        "size": [
+          3.200000000000001,
+          3.2,
+          1.1000000000000085
+        ]
+      },
+      "solids": 1,
+      "volume": 7.532747868616911,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H24",
+      "label": "H24 | 顶盖螺钉占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          15.4,
+          3.4,
+          86.0
+        ],
+        "max": [
+          18.6,
+          6.6,
+          87.10000000000001
+        ],
+        "size": [
+          3.200000000000001,
+          3.1999999999999997,
+          1.1000000000000085
+        ]
+      },
+      "solids": 1,
+      "volume": 7.5327478686169105,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H25",
+      "label": "H25 | 磁铁占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -34.0,
+          -23.0,
+          5.0
+        ],
+        "max": [
+          -28.0,
+          -17.0,
+          7.0
+        ],
+        "size": [
+          6.0,
+          6.0,
+          2.0
+        ]
+      },
+      "solids": 1,
+      "volume": 56.548667764616255,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H26",
+      "label": "H26 | 磁铁占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          28.0,
+          -23.0,
+          5.0
+        ],
+        "max": [
+          34.0,
+          -17.0,
+          7.0
+        ],
+        "size": [
+          6.0,
+          6.0,
+          2.0
+        ]
+      },
+      "solids": 1,
+      "volume": 56.54866776461627,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H27",
+      "label": "H27 | 磁铁占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -34.0,
+          17.0,
+          5.0
+        ],
+        "max": [
+          -28.0,
+          23.0,
+          7.0
+        ],
+        "size": [
+          6.0,
+          6.0,
+          2.0
+        ]
+      },
+      "solids": 1,
+      "volume": 56.548667764616255,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H28",
+      "label": "H28 | 磁铁占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          28.0,
+          17.0,
+          5.0
+        ],
+        "max": [
+          34.0,
+          23.0,
+          7.0
+        ],
+        "size": [
+          6.0,
+          6.0,
+          2.0
+        ]
+      },
+      "solids": 1,
+      "volume": 56.54866776461627,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H29",
+      "label": "H29 | 磁吸信号触点占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -8.3,
+          -0.8,
+          3.8
+        ],
+        "max": [
+          -6.7,
+          0.8,
+          6.8
+        ],
+        "size": [
+          1.6000000000000005,
+          1.6,
+          3.0
+        ]
+      },
+      "solids": 1,
+      "volume": 6.031857894892402,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H30",
+      "label": "H30 | 磁吸信号触点占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          -3.3,
+          -0.8,
+          3.8
+        ],
+        "max": [
+          -1.7,
+          0.8,
+          6.8
+        ],
+        "size": [
+          1.5999999999999999,
+          1.6,
+          3.0
+        ]
+      },
+      "solids": 1,
+      "volume": 6.031857894892403,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H31",
+      "label": "H31 | 磁吸信号触点占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          1.7,
+          -0.8,
+          3.8
+        ],
+        "max": [
+          3.3,
+          0.8,
+          6.8
+        ],
+        "size": [
+          1.5999999999999999,
+          1.6,
+          3.0
+        ]
+      },
+      "solids": 1,
+      "volume": 6.031857894892403,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "cockpit_R06",
+      "id": "H32",
+      "label": "H32 | 磁吸信号触点占位",
+      "file": "repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R06.FCStd",
+      "bbox": {
+        "min": [
+          6.7,
+          -0.8,
+          3.8
+        ],
+        "max": [
+          8.3,
+          0.8,
+          6.8
+        ],
+        "size": [
+          1.6000000000000005,
+          1.6,
+          3.0
+        ]
+      },
+      "solids": 1,
+      "volume": 6.031857894892403,
+      "evidence": "Saved R06 CAD; provisional physical interfaces"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P01_internal_carrier",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P01_internal_carrier.step",
+      "bbox": {
+        "min": [
+          -44.0,
+          -51.0,
+          3.6
+        ],
+        "max": [
+          44.0,
+          47.0,
+          57.6
+        ],
+        "size": [
+          88.0,
+          98.0,
+          54.0
+        ]
+      },
+      "solids": 1,
+      "volume": 44362.76116225028,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P02_base_plate",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P02_base_plate.step",
+      "bbox": {
+        "min": [
+          -55.0,
+          -48.000000000001,
+          0.0
+        ],
+        "max": [
+          55.0,
+          46.000000000001,
+          3.6
+        ],
+        "size": [
+          110.0,
+          94.000000000002,
+          3.6
+        ]
+      },
+      "solids": 1,
+      "volume": 27749.149422256247,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P03_front_frame",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P03_front_frame.step",
+      "bbox": {
+        "min": [
+          -74.0,
+          -68.0,
+          4.0
+        ],
+        "max": [
+          74.0,
+          31.84,
+          133.0
+        ],
+        "size": [
+          148.0,
+          99.84,
+          129.0
+        ]
+      },
+      "solids": 1,
+      "volume": 61547.67600307534,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P04_rear_shell",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P04_rear_shell.step",
+      "bbox": {
+        "min": [
+          -74.0,
+          -39.84,
+          4.0
+        ],
+        "max": [
+          74.0,
+          61.0,
+          133.0
+        ],
+        "size": [
+          148.0,
+          100.84,
+          129.0
+        ]
+      },
+      "solids": 1,
+      "volume": 69088.50037927392,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P05_top_lid",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P05_top_lid.step",
+      "bbox": {
+        "min": [
+          -64.0,
+          -48.0,
+          102.0
+        ],
+        "max": [
+          64.0,
+          54.0,
+          135.60000000000002
+        ],
+        "size": [
+          128.0,
+          102.0,
+          33.60000000000002
+        ]
+      },
+      "solids": 1,
+      "volume": 18650.276820125848,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P06_side_armor_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P06_side_armor_L.step",
+      "bbox": {
+        "min": [
+          -78.0,
+          -72.0,
+          4.0
+        ],
+        "max": [
+          -35.568,
+          64.0,
+          133.0
+        ],
+        "size": [
+          42.432,
+          136.0,
+          129.0
+        ]
+      },
+      "solids": 1,
+      "volume": 17668.44460507052,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P07_side_armor_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P07_side_armor_R.step",
+      "bbox": {
+        "min": [
+          35.568,
+          -72.0,
+          4.0
+        ],
+        "max": [
+          78.0,
+          64.0,
+          133.0
+        ],
+        "size": [
+          42.432,
+          136.0,
+          129.0
+        ]
+      },
+      "solids": 1,
+      "volume": 17668.551832994788,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P08_upper_orange_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P08_upper_orange_L.step",
+      "bbox": {
+        "min": [
+          -81.0,
+          -75.0,
+          65.0
+        ],
+        "max": [
+          -38.61,
+          35.48,
+          133.0
+        ],
+        "size": [
+          42.39,
+          110.47999999999999,
+          68.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3977.5397111193047,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P08f_slanted_fins_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P08f_slanted_fins_L.step",
+      "bbox": {
+        "min": [
+          -79.5,
+          -50.5,
+          62.5
+        ],
+        "max": [
+          -76.5,
+          -21.5,
+          80.90656458122626
+        ],
+        "size": [
+          3.0,
+          29.0,
+          18.406564581226263
+        ]
+      },
+      "solids": 1,
+      "volume": 693.2828473398879,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P09_upper_orange_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P09_upper_orange_R.step",
+      "bbox": {
+        "min": [
+          38.61,
+          -75.0,
+          65.0
+        ],
+        "max": [
+          81.0,
+          35.48,
+          133.0
+        ],
+        "size": [
+          42.39,
+          110.47999999999999,
+          68.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3977.495208339494,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P09f_slanted_fins_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P09f_slanted_fins_R.step",
+      "bbox": {
+        "min": [
+          76.5,
+          -50.5,
+          62.5
+        ],
+        "max": [
+          79.5,
+          -21.5,
+          80.90656458122626
+        ],
+        "size": [
+          3.0,
+          29.0,
+          18.406564581226263
+        ]
+      },
+      "solids": 1,
+      "volume": 693.2828473398879,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P10_smoke_visor",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P10_smoke_visor.step",
+      "bbox": {
+        "min": [
+          -64.0,
+          -68.0,
+          24.0
+        ],
+        "max": [
+          64.0,
+          -5.792,
+          133.0
+        ],
+        "size": [
+          128.0,
+          62.208,
+          109.0
+        ]
+      },
+      "solids": 1,
+      "volume": 12116.762308842772,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P11_visor_retainer",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P11_visor_retainer.step",
+      "bbox": {
+        "min": [
+          -65.5,
+          -69.5,
+          24.0
+        ],
+        "max": [
+          65.5,
+          32.4,
+          133.0
+        ],
+        "size": [
+          131.0,
+          101.9,
+          109.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2746.2065733850427,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P12_camera_carrier",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P12_camera_carrier.step",
+      "bbox": {
+        "min": [
+          -16.0,
+          -52.0,
+          11.0
+        ],
+        "max": [
+          16.0,
+          -48.0,
+          43.0
+        ],
+        "size": [
+          32.0,
+          4.0,
+          32.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2575.4691556624857,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P13_lens_bezel",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P13_lens_bezel.step",
+      "bbox": {
+        "min": [
+          -20.0,
+          -69.0,
+          10.0
+        ],
+        "max": [
+          20.000000000000856,
+          -64.0,
+          44.0
+        ],
+        "size": [
+          40.00000000000085,
+          5.0,
+          34.0
+        ]
+      },
+      "solids": 1,
+      "volume": 4699.336444578201,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P14_eye_diffuser",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P14_eye_diffuser.step",
+      "bbox": {
+        "min": [
+          -36.0,
+          -61.0,
+          59.0
+        ],
+        "max": [
+          -9.0,
+          -59.0,
+          74.0
+        ],
+        "size": [
+          27.0,
+          2.0,
+          15.0
+        ]
+      },
+      "solids": 1,
+      "volume": 215.99999999969498,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P15_eye_diffuser",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P15_eye_diffuser.step",
+      "bbox": {
+        "min": [
+          9.0,
+          -61.0,
+          59.0
+        ],
+        "max": [
+          36.0,
+          -59.0,
+          74.0
+        ],
+        "size": [
+          27.0,
+          2.0,
+          15.0
+        ]
+      },
+      "solids": 1,
+      "volume": 215.99999999969498,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P16L_light_baffle",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P16L_light_baffle.step",
+      "bbox": {
+        "min": [
+          -40.0,
+          -58.0,
+          58.0
+        ],
+        "max": [
+          -6.0,
+          -52.0,
+          74.0
+        ],
+        "size": [
+          34.0,
+          6.0,
+          16.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2184.0,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P16R_light_baffle",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P16R_light_baffle.step",
+      "bbox": {
+        "min": [
+          6.0,
+          -58.0,
+          58.0
+        ],
+        "max": [
+          40.0,
+          -52.0,
+          74.0
+        ],
+        "size": [
+          34.0,
+          6.0,
+          16.0
+        ]
+      },
+      "solids": 1,
+      "volume": 2184.0,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P17_grille_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P17_grille_L.step",
+      "bbox": {
+        "min": [
+          -73.0,
+          -57.5,
+          24.0
+        ],
+        "max": [
+          -69.0,
+          -18.5,
+          62.0
+        ],
+        "size": [
+          4.0,
+          39.0,
+          38.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3447.999999999999,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P18_grille_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P18_grille_R.step",
+      "bbox": {
+        "min": [
+          69.0,
+          -57.5,
+          24.0
+        ],
+        "max": [
+          73.0,
+          -18.5,
+          62.0
+        ],
+        "size": [
+          4.0,
+          39.0,
+          38.0
+        ]
+      },
+      "solids": 1,
+      "volume": 3447.999999999999,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P19a_fixed_round_cap_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P19a_fixed_round_cap_L.step",
+      "bbox": {
+        "min": [
+          -79.5,
+          3.0,
+          46.0
+        ],
+        "max": [
+          -74.5,
+          47.0,
+          90.0
+        ],
+        "size": [
+          5.0,
+          44.0,
+          44.0
+        ]
+      },
+      "solids": 1,
+      "volume": 7557.258207843095,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P19b_orange_ring_L",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P19b_orange_ring_L.step",
+      "bbox": {
+        "min": [
+          -82.25,
+          6.0,
+          49.0
+        ],
+        "max": [
+          -79.75,
+          44.0,
+          87.0
+        ],
+        "size": [
+          2.5,
+          38.0,
+          38.0
+        ]
+      },
+      "solids": 1,
+      "volume": 824.6680715673388,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P20a_fixed_round_cap_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P20a_fixed_round_cap_R.step",
+      "bbox": {
+        "min": [
+          74.5,
+          3.0,
+          46.0
+        ],
+        "max": [
+          79.5,
+          47.0,
+          90.0
+        ],
+        "size": [
+          5.0,
+          44.0,
+          44.0
+        ]
+      },
+      "solids": 1,
+      "volume": 7557.258207843095,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P20b_orange_ring_R",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P20b_orange_ring_R.step",
+      "bbox": {
+        "min": [
+          79.75,
+          6.0,
+          49.0
+        ],
+        "max": [
+          82.25,
+          44.0,
+          87.0
+        ],
+        "size": [
+          2.5,
+          38.0,
+          38.0
+        ]
+      },
+      "solids": 1,
+      "volume": 824.6680715673388,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P21_top_bridge",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P21_top_bridge.step",
+      "bbox": {
+        "min": [
+          -26.5,
+          -5.0,
+          135.6
+        ],
+        "max": [
+          26.5,
+          11.0,
+          151.1
+        ],
+        "size": [
+          53.0,
+          16.0,
+          15.5
+        ]
+      },
+      "solids": 1,
+      "volume": 5458.54471416488,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P22_phone_backplate",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P22_phone_backplate.step",
+      "bbox": {
+        "min": [
+          -43.0,
+          50.0,
+          86.0
+        ],
+        "max": [
+          43.0,
+          68.0,
+          194.0
+        ],
+        "size": [
+          86.0,
+          18.0,
+          108.0
+        ]
+      },
+      "solids": 1,
+      "volume": 40294.09913354701,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P23_phone_cradle",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P23_phone_cradle.step",
+      "bbox": {
+        "min": [
+          -43.0,
+          68.3,
+          82.5
+        ],
+        "max": [
+          43.0,
+          84.3,
+          192.0
+        ],
+        "size": [
+          86.0,
+          16.0,
+          109.5
+        ]
+      },
+      "solids": 1,
+      "volume": 16079.999999999996,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P24_rear_access_cover",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P24_rear_access_cover.step",
+      "bbox": {
+        "min": [
+          -24.3,
+          57.5,
+          10.7
+        ],
+        "max": [
+          24.3,
+          60.5,
+          53.3
+        ],
+        "size": [
+          48.6,
+          3.0,
+          42.599999999999994
+        ]
+      },
+      "solids": 1,
+      "volume": 6211.08,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P25_contact_blank",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P25_contact_blank.step",
+      "bbox": {
+        "min": [
+          -16.8,
+          -11.8,
+          0.20000000000000018
+        ],
+        "max": [
+          16.8,
+          11.8,
+          3.0
+        ],
+        "size": [
+          33.6,
+          23.6,
+          2.8
+        ]
+      },
+      "solids": 1,
+      "volume": 2220.288,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P26a_magnet_site_blank",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P26a_magnet_site_blank.step",
+      "bbox": {
+        "min": [
+          -47.8,
+          -39.8,
+          0.20000000000000018
+        ],
+        "max": [
+          -28.2,
+          -20.2,
+          3.0
+        ],
+        "size": [
+          19.599999999999998,
+          19.599999999999998,
+          2.8
+        ]
+      },
+      "solids": 1,
+      "volume": 844.8119636621386,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P26b_magnet_site_blank",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P26b_magnet_site_blank.step",
+      "bbox": {
+        "min": [
+          28.2,
+          -39.8,
+          0.20000000000000018
+        ],
+        "max": [
+          47.8,
+          -20.2,
+          3.0
+        ],
+        "size": [
+          19.599999999999998,
+          19.599999999999998,
+          2.8
+        ]
+      },
+      "solids": 1,
+      "volume": 844.8119636621385,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P26c_magnet_site_blank",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P26c_magnet_site_blank.step",
+      "bbox": {
+        "min": [
+          -47.8,
+          20.2,
+          0.20000000000000018
+        ],
+        "max": [
+          -28.2,
+          39.8,
+          3.0
+        ],
+        "size": [
+          19.599999999999998,
+          19.599999999999998,
+          2.8
+        ]
+      },
+      "solids": 1,
+      "volume": 844.8119636621386,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    },
+    {
+      "family": "desktop_pet_34_alternative",
+      "id": "P26d_magnet_site_blank",
+      "file": "work/desktop-pet-cad-2026-10-29/outputs/step/P26d_magnet_site_blank.step",
+      "bbox": {
+        "min": [
+          28.2,
+          20.2,
+          0.20000000000000018
+        ],
+        "max": [
+          47.8,
+          39.8,
+          3.0
+        ],
+        "size": [
+          19.599999999999998,
+          19.599999999999998,
+          2.8
+        ]
+      },
+      "solids": 1,
+      "volume": 844.8119636621386,
+      "evidence": "Alternative head STEP; provisional, not chosen as new baseline"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "confirmed_user_constraint",
+  "date": "2026-10-31",
+  "user_statement": "考虑到舵机的大小，交界处的宽度不能变。",
+  "scope": "All original servo mounts and inter-part joint interfaces, not only screw-hole centers",
+  "must_preserve": [
+    "Servo pocket/seat internal width and depth",
+    "Separation of paired supporting plates around each servo",
+    "Local connector/tab/slot widths and engagement dimensions",
+    "Screw bearing thickness and original fastener grip stack",
+    "Joint axis locations within each local assembly and existing alignment",
+    "Servo horn, bearing/axle seat and original mechanical clearances"
+  ],
+  "allowed_change": "Widen only the central torso span by 30 mm total; translate intact left and right mounting groups by 15 mm without scaling. Exterior armor may change only outside the original fit and moving-component clearance envelopes.",
+  "current_evidence": {
+    "upper_frame": "validation/first_draft_checks.json confirms each original half is unchanged after rigid translation",
+    "shin_plate": "Protected connector regions and original 3 mm core match the reconstructed reference. Added exterior relief reaches 4.2 mm total only outside checked interface islands.",
+    "limitations": "This is not verification against a measured servo envelope or full assembled leg sweep."
+  },
+  "release_gates": [
+    "Compare original vs redesigned local interface sections and plate separation",
+    "Place original servo/shaft envelope in correct assembly coordinates",
+    "Check full joint travel, cable path and screw access",
+    "Physical fit test before complete printing"
+  ],
+  "geometry_changed_by_this_confirmation": false
+}

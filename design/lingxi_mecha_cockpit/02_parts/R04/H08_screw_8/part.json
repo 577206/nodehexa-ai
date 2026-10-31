@@ -1,0 +1,20 @@
+{
+  "id": "H08",
+  "slug": "screw_8",
+  "title": "侧甲螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/H08_screw_8",
+  "stl": "02_parts/R04/H08_screw_8/H08_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 9.883,
+  "size_mm": [
+    1.1,
+    3.6,
+    3.599
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

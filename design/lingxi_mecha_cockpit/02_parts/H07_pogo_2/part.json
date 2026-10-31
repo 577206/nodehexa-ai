@@ -1,0 +1,19 @@
+{
+  "id": "H07",
+  "slug": "pogo_2",
+  "title": "信号触点占位",
+  "category": "hardware",
+  "material": "gold",
+  "folder": "02_parts/H07_pogo_2",
+  "stl": "02_parts/H07_pogo_2/H07_assembly.stl",
+  "volume_mm3": 6.032,
+  "size_mm": [
+    1.6,
+    1.599,
+    3.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

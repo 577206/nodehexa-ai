@@ -1,0 +1,20 @@
+{
+  "id": "H81",
+  "slug": "cheek_fastener_1_1",
+  "title": "过渡颊甲贴面螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/H81_cheek_fastener_1_1",
+  "stl": "02_parts/R06/H81_cheek_fastener_1_1/H81_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 11.33,
+  "size_mm": [
+    2.533,
+    3.76,
+    3.893
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

@@ -1,0 +1,107 @@
+{
+  "operation": "R06_rear_source_envelope_clearance",
+  "receiver": "P02",
+  "nominal_review_gap_mm": 0.2,
+  "insert_parts": [
+    "P49",
+    "P48"
+  ],
+  "existing_concave_edge_break_mm": {
+    "P49": 0.45,
+    "P48": 0.45
+  },
+  "actions": [
+    {
+      "receiver": "P02",
+      "insert": "P49",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32489.37069805422,
+        "null": false
+      },
+      "insert_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 5562.753307778709,
+        "null": false
+      },
+      "tool_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 6877.773293619192,
+        "null": false
+      },
+      "insert_outside_envelope_mm3": 0.0,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32342.395754775393,
+        "null": false
+      },
+      "measured_min_gap_mm": 0.1999999999999858,
+      "remaining_overlap_mm3": 0.0,
+      "removed_volume_mm3": 146.9749432788267,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32342.395754775393,
+        "null": false
+      },
+      "insert_unchanged": true
+    },
+    {
+      "receiver": "P02",
+      "insert": "P48",
+      "before": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32342.395754775393,
+        "null": false
+      },
+      "insert_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 2574.6771151331695,
+        "null": false
+      },
+      "tool_state": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 4303.742037805423,
+        "null": false
+      },
+      "insert_outside_envelope_mm3": 0.0,
+      "candidate": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32248.94064355354,
+        "null": false
+      },
+      "measured_min_gap_mm": 0.19999999999998883,
+      "remaining_overlap_mm3": 0.0,
+      "removed_volume_mm3": 93.45511122185417,
+      "status": "applied",
+      "after": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 32248.94064355354,
+        "null": false
+      },
+      "insert_unchanged": true
+    }
+  ],
+  "changed_ids": [
+    "P02"
+  ],
+  "limitations": [
+    "Nominal clearance is not print-fit or fastening approval.",
+    "Minimum wall thickness and insertion path need separate validation."
+  ],
+  "final_measured_gaps_mm": {
+    "P49": 0.1999999999999858,
+    "P48": 0.19999999999998883
+  },
+  "status": "NOMINAL_GAP_VERIFIED_FIT_UNVERIFIED"
+}

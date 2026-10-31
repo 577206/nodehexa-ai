@@ -1,0 +1,20 @@
+{
+  "id": "P47",
+  "slug": "phone_orange_rail-1",
+  "title": "橙色手机托架侧边",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R06/P47_phone_orange_rail-1",
+  "stl": "02_parts/R06/P47_phone_orange_rail-1/P47_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1410.5,
+  "size_mm": [
+    14.0,
+    14.881,
+    46.517
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

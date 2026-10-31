@@ -1,0 +1,19 @@
+{
+  "id": "H10",
+  "slug": "roof_screw_10",
+  "title": "顶部螺钉头占位",
+  "category": "hardware",
+  "material": "black",
+  "folder": "02_parts/H10_roof_screw_10",
+  "stl": "02_parts/H10_roof_screw_10/H10_assembly.stl",
+  "volume_mm3": 11.699,
+  "size_mm": [
+    3.6,
+    3.598,
+    1.35
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

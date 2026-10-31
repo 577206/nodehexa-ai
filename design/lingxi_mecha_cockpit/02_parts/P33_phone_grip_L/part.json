@@ -1,0 +1,19 @@
+{
+  "id": "P33",
+  "slug": "phone_grip_L",
+  "title": "左橙色手机挡条",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P33_phone_grip_L",
+  "stl": "02_parts/P33_phone_grip_L/P33_assembly.stl",
+  "volume_mm3": 875.414,
+  "size_mm": [
+    5.0,
+    5.0,
+    36.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

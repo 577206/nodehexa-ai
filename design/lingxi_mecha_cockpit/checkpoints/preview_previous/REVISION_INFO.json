@@ -1,0 +1,25 @@
+{
+  "schema": "engineering-3d-modeling.preview_revision.v1",
+  "status": "available",
+  "created_at": "2026-10-30T05:16:09.493255Z",
+  "created_by": "scripts/checkpoint_preview_revision.py",
+  "reason": "R06: refine canopy frame, connected cheek armor and phone cradle; resolve explicit assembly interfaces while preserving R05",
+  "checkpoint": "checkpoints/preview_previous",
+  "hashes_before": {
+    "spec": null,
+    "parameters": null,
+    "source": null,
+    "review_manifest": null,
+    "review_mesh": null
+  },
+  "files": [],
+  "missing": [
+    "spec/current.yaml",
+    "parameters.yaml",
+    "source",
+    "review/manifest.json",
+    "review/cache",
+    "outputs/step"
+  ],
+  "checkpoint_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

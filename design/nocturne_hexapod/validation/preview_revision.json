@@ -1,0 +1,25 @@
+{
+  "schema": "engineering-3d-modeling.preview_revision.v1",
+  "status": "available",
+  "created_at": "2026-10-30T18:33:29.074999Z",
+  "created_by": "scripts/checkpoint_preview_revision.py",
+  "reason": "Extend shin exterior blades toward selected NOCTURNE silhouette while preserving original 3mm core and connector islands",
+  "checkpoint": "checkpoints/preview_previous",
+  "hashes_before": {
+    "spec": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419",
+    "parameters": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
+    "source": "b61a97b5f32093abec3b073ef2d12a8bde0b5fc09c3a7752abc0ebeab8316f1c",
+    "review_manifest": "0a084e19637e6f278f79f5cff49b8dbbe44744c13f61bccaff930690c4cc40b3",
+    "review_mesh": "de9a01fee291e4366f10a3124ff8b70a0a3abba431db8bb225235ecb501907c7"
+  },
+  "files": [
+    "spec/current.yaml",
+    "parameters.yaml",
+    "source",
+    "review/manifest.json",
+    "review/cache",
+    "outputs/step"
+  ],
+  "missing": [],
+  "checkpoint_hash": "a0024f31ffdc04475d8d3fac4e25b543282a0d1849400d672eba41da2aa244b4"
+}

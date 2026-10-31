@@ -1,0 +1,20 @@
+{
+  "id": "H17",
+  "slug": "screw_17",
+  "title": "侧甲螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/H17_screw_17",
+  "stl": "02_parts/R04/H17_screw_17/H17_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 9.883,
+  "size_mm": [
+    1.1,
+    3.6,
+    3.599
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

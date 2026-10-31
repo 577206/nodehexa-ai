@@ -1,0 +1,80 @@
+{
+  "revision": "R06",
+  "predecessor": "R05",
+  "phase": "draft_review",
+  "status": "REVIEW_READY_NOT_PRINT_RELEASE",
+  "coordinate_system": {
+    "units": "mm",
+    "X": "right",
+    "Y": "rear",
+    "Z": "up",
+    "front": "-Y"
+  },
+  "backend": "existing FreeCAD solid scripts, Blender renders same CAD tessellation",
+  "reference": "00_reference/turnaround/generated_six_views.png",
+  "intent": [
+    "连续的分层肩颊护框替代零散悬贴甲",
+    "细化透明舱罩边框/接缝扣结构",
+    "调整手机托架与主体关系",
+    "明确接收关系的CAD避让，减少装配交叠"
+  ],
+  "preserve": [
+    "橙灰配色和原概念方向",
+    "零件分目录",
+    "R05历史输出",
+    "硬件未测量状态"
+  ],
+  "print_assembly_ready": false,
+  "implemented": {
+    "shoulder_orange_skin_mm": {
+      "stand_off": 0.25,
+      "thickness": 2.35
+    },
+    "shoulder_gray_strap_mm": {
+      "stand_off": 2.75,
+      "thickness": 1.75
+    },
+    "phone_backplate_nominal_top_z_mm": 86,
+    "phone_pose_rearward_tilt_deg": 10,
+    "phone_pose_y_shift_mm": -8,
+    "canopy_longitudinal_ribs_mm": {
+      "width": 0.8,
+      "depth": 0.8
+    },
+    "canopy_rail_cross_section": "five-sided ruled loft with real bevel face",
+    "vent_receiving_pocket_local_x_mm": [
+      -4,
+      4
+    ],
+    "assembly_clearance_policy": "exact receiver pockets, no fragment deletion; nominal overlap check only",
+    "rear_interface_gap_mm": 0.2,
+    "canopy_rail_front_y_setbacks_mm": [
+      3,
+      3.6,
+      3.6,
+      2.5,
+      1.8
+    ],
+    "upper_rail_xy_pocket_expansion_mm": 0.3,
+    "upper_rail_measured_min_gap_mm": {
+      "P10": 0.17334507732513024,
+      "P11": 0.17334507732512922
+    }
+  },
+  "iteration_evidence": [
+    "04_review/iteration_06a",
+    "04_review/iteration_06b",
+    "04_review/iteration_06c"
+  ],
+  "result": {
+    "part_count": 125,
+    "all_cad_valid_single_solid": true,
+    "independent_saved_cad_validation": true,
+    "triangle_count": 116886,
+    "mesh_qa_pass": true,
+    "nonhardware_overlap_count": 0,
+    "print_ready": false,
+    "reference_match_exact": false,
+    "mesh_warning_count": 33
+  }
+}

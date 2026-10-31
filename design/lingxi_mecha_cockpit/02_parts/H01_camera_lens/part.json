@@ -1,0 +1,19 @@
+{
+  "id": "H01",
+  "slug": "camera_lens",
+  "title": "镜头外观占位",
+  "category": "hardware",
+  "material": "glass",
+  "folder": "02_parts/H01_camera_lens",
+  "stl": "02_parts/H01_camera_lens/H01_assembly.stl",
+  "volume_mm3": 86.017,
+  "size_mm": [
+    7.395,
+    2.0,
+    7.4
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "BF3901 镜头尺寸待量；仅用于检查光孔。",
+  "print_axis": null
+}

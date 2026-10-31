@@ -1,0 +1,159 @@
+schema: engineering-3d-modeling.spec.v1
+project:
+  name: NOCTURNE 六足机甲工程改版
+  kind: assembly
+  units: mm
+model:
+  selected_direction: NOCTURNE black-red hexapod
+  precision: reference-derived CAD; physical fit unverified
+coordinate_system:
+  units: mm
+  origin:
+    id: torso_origin
+    description: Top frame planar center, Z=0 at bottom frame lower face after interface-aligned
+      assembly
+    point_mm:
+    - 0
+    - 0
+    - 0
+  axes:
+    x:
+      vector:
+      - 1
+      - 0
+      - 0
+      positive: robot right
+      negative: robot left
+    y:
+      vector:
+      - 0
+      - 1
+      - 0
+      positive: robot front
+      negative: robot rear
+    z:
+      vector:
+      - 0
+      - 0
+      - 1
+      positive: up
+      negative: down
+  direction_aliases:
+    width: x
+    length: y
+    height: z
+  component_frames: {}
+  imported_components: {}
+  source:
+    status: recorded
+    confirmed_by: existing robot frame convention; user confirms width direction
+    notes:
+    - Local flat part coordinates u/v/w are separate from assembly XYZ. Assembly transforms
+      must be interface-aligned.
+lifecycle:
+  phase: draft_review
+  status: in_progress
+  note: STEP may be deferred while this project is in draft/review; export fresh STEP
+    with scripts/export_step.py when the preview is satisfactory.
+inputs:
+- path: inputs/reference/NOCTURNE_selected.png
+  role: qualitative appearance reference
+- path: inputs/original_chassis/manifest.json
+  role: frozen original interfaces and geometry evidence
+placements: {}
+features:
+- id: upper_frame_width_extension
+  description: Original opposite interface groups rigidly translated +/-15 mm, center
+    crossings bridged
+- id: shin_original_interfaces
+  description: Reference-contour reconstruction plus two measured transverse pilot
+    bores; compare protected bands before/after
+- id: shin_outer_relief
+  description: Two black raised reliefs inside original XY envelope, away from connector
+    bands
+- id: red_recesses_and_inserts
+  description: Two solid red inserts, no lighting; retention and printer tolerances
+    pending
+constraints:
+  formal: []
+  narrative:
+  - Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores,
+    nut pockets and screw bearing thickness.
+  - Width increase 30 mm total, left/right interface groups translate 15 mm each without
+    scale.
+  - Red leg inserts are solid non-emissive material. No leg lighting wiring.
+  - No whole-mesh scaling. Preserve original effective link lengths.
+  - Concept image is appearance reference only; never infer production hole dimensions
+    from it.
+  - Head electronic combined assembly approximately 120 by 50 mm per user; height,
+    connectors, camera adapter, battery, speaker and magnetic contacts not yet dimensioned.
+  - Original hardware remains. Any additive armor must preserve tool access and joint
+    sweep.
+  - No printable-production-ready claim before full assembly and fit checks.
+decisions:
+- id: style
+  status: confirmed
+  value: NOCTURNE selected by user
+- id: body_width_increase
+  status: confirmed
+  value_mm: 30
+- id: red_leg_details
+  status: confirmed
+  value: solid red inserts, no lights
+- id: electronics_footprint
+  status: approximate_user_measurement
+  value_mm:
+  - 120
+  - 50
+  scope: main board and voice board combined, not each board
+- id: draft_insert_retention
+  status: provisional_engineering_choice
+  value: small clearance inlay; retention not yet validated; do not rely on interference
+    fit for moving robot
+validation_targets:
+  dimensions:
+    leg_kinematics_mm:
+    - 19.4
+    - 32
+    - 43.8
+    - 90.05
+    body_top_plan_target_mm:
+    - 134.809
+    - 104.343
+    body_bottom_plan_target_mm:
+    - 130.343
+    - 108.343
+    note: Global body roughly 135 by 109 mm; not usable cavity size.
+  clearances: {}
+  features: {}
+backend:
+  default: build123d
+  override: null
+source:
+  entrypoint: source/model.py
+outputs:
+  assembly_step: outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step
+  per_part_step: true
+review:
+  manifest: review/manifest.json
+  annotations: review/annotations.json
+  parameter_patch: review/parameter_patch.json
+validation:
+  report: validation/report.json
+  current_context: validation/current_context.json
+  spec_coverage: validation/spec_coverage.json
+  feature_registry: validation/feature_registry.json
+  layout_report: validation/layout_report.json
+pending:
+- Full original leg assembled poses, real servo envelope and collision sweep
+- Head hardware heights, hole centers, camera adapter, speaker, battery and dock component
+  dimensions
+- Actual selected ordinary/2S bottom and Center/Thin variants before final assembly
+  release
+- Original short rear wall placement
+- Red insert retention verification and process fit coupon
+delivery_scope:
+  requested: all redesigned print parts with defined dimensions
+  current_iteration: 'partial CAD prototype: upper frame and shin face/inserts only'
+  whole_robot_complete: false
+  production_ready: false

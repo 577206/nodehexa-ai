@@ -1,0 +1,20 @@
+{
+  "id": "P44",
+  "slug": "roof_handle",
+  "title": "顶部横向提手",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/P44_roof_handle",
+  "stl": "02_parts/R06/P44_roof_handle/P44_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 282.743,
+  "size_mm": [
+    40.0,
+    3.0,
+    2.999
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

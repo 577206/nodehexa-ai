@@ -15,6 +15,8 @@ Usage: ./lingji.sh setup
        ./lingji.sh monitor /dev/cu.usbmodem...
        ./lingji.sh capture /dev/cu.usbmodem...
        ./lingji.sh preview /dev/cu.usbmodem...
+       ./lingji.sh preview-wifi
+       ./lingji.sh omni
 
 The flash command requires an explicit Lingji port, verifies ESP32-S3/16 MB,
 backs up the entire flash to the ignored backups/ directory, then flashes
@@ -52,6 +54,7 @@ activate_idf() {
   fi
   export IDF_PYTHON_ENV_PATH="$env_dir"
   export PATH="$env_dir/bin:$PATH"
+  "$env_dir/bin/python" "$ROOT/generate_motion_presets.py" --check
   # The official export script sets ADF_PATH and IDF_PATH and applies its IDF patches.
   source "$SDK/export.sh"
 }
@@ -155,6 +158,21 @@ PY
     if [[ -z "$port" ]]; then usage; exit 2; fi
     activate_idf
     "$IDF_PYTHON_ENV_PATH/bin/python" "$ROOT/camera_web.py" "$port"
+    ;;
+  preview-wifi)
+    if grep -Eq '^#define[[:space:]]+CONFIG_NODEHEXA_QWEN_DIRECT[[:space:]]+1' "$APP/main/qm_config/qm_config.h"; then
+      exec "$ROOT/lingji.sh" omni
+    fi
+    activate_idf
+    "$IDF_PYTHON_ENV_PATH/bin/python" "$ROOT/camera_web.py" --wifi
+    ;;
+  omni)
+    omni_python="$ROOT/../../../.venv-omni/bin/python"
+    if [[ ! -x "$omni_python" ]]; then
+      echo 'Create .venv-omni in the workspace root and install requirements-omni.txt first.' >&2
+      exit 1
+    fi
+    exec "$omni_python" "$ROOT/omni_bridge.py"
     ;;
   *)
     usage

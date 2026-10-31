@@ -1,0 +1,159 @@
+{
+  "id": "P23",
+  "slug": "shoulder_strap-1",
+  "title": "灰色肩部压甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P23_shoulder_strap-1",
+  "stl": "02_parts/R05/P23_shoulder_strap-1/P23_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 528.015,
+  "size_mm": [
+    16.858,
+    32.87,
+    24.0
+  ],
+  "edge_break_mm": 0.25,
+  "notes": "",
+  "edge_break_details": {
+    "eligible": true,
+    "applied": true,
+    "partial": false,
+    "size_mm": 0.25,
+    "strategy": "all_outward_convex_long_edges",
+    "selected_edge_count": 10,
+    "eligible_edge_count": 10,
+    "attempt_count": 2,
+    "selected_edges": [
+      {
+        "index": 18,
+        "length_mm": 11.504945262619366,
+        "midpoint_mm": [
+          -49.73680633578425,
+          -13.181241629742756,
+          61.00158551820742
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 97.8729590413659
+      },
+      {
+        "index": 22,
+        "length_mm": 5.117754023983568,
+        "midpoint_mm": [
+          -51.70545107515157,
+          -17.50913056969627,
+          56.50182611393926
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 113.14349092674937
+      },
+      {
+        "index": 24,
+        "length_mm": 5.067352188819198,
+        "midpoint_mm": [
+          -46.10055137912942,
+          -16.606391363317293,
+          68.0292280692188
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 80.15787599230833
+      },
+      {
+        "index": 25,
+        "length_mm": 10.206495250733939,
+        "midpoint_mm": [
+          -49.51382515336734,
+          -18.611920986983634,
+          61.51125679230319
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 83.23051290933525
+      },
+      {
+        "index": 27,
+        "length_mm": 15.843623580585428,
+        "midpoint_mm": [
+          -41.121428571428694,
+          -11.000000000000172,
+          74.99999999999983
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 65.73249038762441
+      },
+      {
+        "index": 29,
+        "length_mm": 19.0269607857782,
+        "midpoint_mm": [
+          -38.23368927556185,
+          3.093067364972756,
+          79.0428350142134
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 54.68687587078719
+      },
+      {
+        "index": 30,
+        "length_mm": 10.488088481701517,
+        "midpoint_mm": [
+          -44.33322594189389,
+          -7.997013987415543,
+          70.50348368134854
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 112.2262418688826
+      },
+      {
+        "index": 34,
+        "length_mm": 12.0,
+        "midpoint_mm": [
+          -41.83571428571428,
+          1.0,
+          74.0
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 125.5376777919744
+      },
+      {
+        "index": 37,
+        "length_mm": 7.842951827903133,
+        "midpoint_mm": [
+          -42.56228538703384,
+          10.922847562348345,
+          72.98280045815264
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 86.98354046293598
+      },
+      {
+        "index": 38,
+        "length_mm": 6.675571949131093,
+        "midpoint_mm": [
+          -43.2894919597187,
+          9.0352887436062,
+          71.9647112563938
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 114.2675096123756
+      }
+    ],
+    "straight_edge_count": 22,
+    "source_volume_mm3": 530.9468365128536,
+    "result_volume_mm3": 528.0153732807709,
+    "removed_volume_mm3": 2.931463232082706,
+    "valid": true,
+    "solids": 1,
+    "mirrored_from": "P21"
+  }
+}

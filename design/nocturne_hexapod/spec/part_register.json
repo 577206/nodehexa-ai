@@ -1,0 +1,166 @@
+[
+  {
+    "original_part": "BodyBackWall",
+    "scope": "torso",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyBackWall.STL"
+  },
+  {
+    "original_part": "BodyButtom-18650-2S",
+    "scope": "body_width_extension",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyButtom-18650-2S.STL"
+  },
+  {
+    "original_part": "BodyButtom",
+    "scope": "body_width_extension",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyButtom.STL"
+  },
+  {
+    "original_part": "BodyCenter-Thin",
+    "scope": "torso",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyCenter-Thin.STL"
+  },
+  {
+    "original_part": "BodyCenter",
+    "scope": "torso",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyCenter.STL"
+  },
+  {
+    "original_part": "BodySideWall",
+    "scope": "torso",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodySideWall.STL"
+  },
+  {
+    "original_part": "BodyTop",
+    "scope": "torso",
+    "status": "draft_CAD_created_not_release",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-BodyTop.STL"
+  },
+  {
+    "original_part": "FootButtom",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-FootButtom.STL"
+  },
+  {
+    "original_part": "FootGround",
+    "scope": "leg",
+    "status": "draft_CAD_created_not_release",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-FootGround.STL"
+  },
+  {
+    "original_part": "FootTip",
+    "scope": "leg",
+    "status": "preserve_original_functional_geometry_pending_assembly_check",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-FootTip.STL"
+  },
+  {
+    "original_part": "FootTop",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-FootTop.STL"
+  },
+  {
+    "original_part": "JointCross",
+    "scope": "leg",
+    "status": "preserve_original_functional_geometry_pending_assembly_check",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-JointCross.STL"
+  },
+  {
+    "original_part": "JointDown",
+    "scope": "leg",
+    "status": "preserve_original_functional_geometry_pending_assembly_check",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-JointDown.STL"
+  },
+  {
+    "original_part": "JointTop",
+    "scope": "leg",
+    "status": "preserve_original_functional_geometry_pending_assembly_check",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-JointTop.STL"
+  },
+  {
+    "original_part": "LegBottom",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-LegBottom.STL"
+  },
+  {
+    "original_part": "LegTop",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-LegTop.STL"
+  },
+  {
+    "original_part": "ThighBottom",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-ThighBottom.STL"
+  },
+  {
+    "original_part": "ThighTop",
+    "scope": "leg",
+    "status": "pending",
+    "quantity": null,
+    "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
+    "source": "inputs/original_chassis/TKRC-ThighTop.STL"
+  },
+  {
+    "new_part": "N112_L_red_insert",
+    "status": "draft_CAD_created_not_release"
+  },
+  {
+    "new_part": "N112_R_red_insert",
+    "status": "draft_CAD_created_not_release"
+  },
+  {
+    "assembly": "cockpit",
+    "status": "hardware_heights_and_mounts_pending",
+    "known_approx_combined_pcb_xy_mm": [
+      120,
+      50
+    ]
+  },
+  {
+    "assembly": "desktop_dock",
+    "status": "pending_cockpit_interface"
+  }
+]

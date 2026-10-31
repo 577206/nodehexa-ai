@@ -1,0 +1,651 @@
+{
+  "schema": "engineering-3d-modeling.project_validation.v1",
+  "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
+  "generated_at": "2026-10-30T18:34:56.801735Z",
+  "phase": {
+    "value": "draft_review",
+    "source": "spec.lifecycle.phase"
+  },
+  "step_requirement": {
+    "required": true,
+    "reason": "--require-step"
+  },
+  "status": "pass",
+  "checks": [
+    {
+      "check": "dir:spec",
+      "status": "pass"
+    },
+    {
+      "check": "dir:inputs",
+      "status": "pass"
+    },
+    {
+      "check": "dir:source",
+      "status": "pass"
+    },
+    {
+      "check": "dir:outputs/step",
+      "status": "pass"
+    },
+    {
+      "check": "dir:validation",
+      "status": "pass"
+    },
+    {
+      "check": "dir:review",
+      "status": "pass"
+    },
+    {
+      "check": "dir:previous",
+      "status": "pass"
+    },
+    {
+      "check": "file:AGENTS.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:brief.md",
+      "status": "pass"
+    },
+    {
+      "check": "file:spec/current.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:parameters.yaml",
+      "status": "pass"
+    },
+    {
+      "check": "file:source/model.py",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/index.html",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "file:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "source-direct-run-no-step-export",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:load_parameters",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:build_model",
+      "status": "pass"
+    },
+    {
+      "check": "source-interface:write_step",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/manifest.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/annotations.json",
+      "status": "pass"
+    },
+    {
+      "check": "schema:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "domain:review/parameter_patch.json",
+      "status": "pass"
+    },
+    {
+      "check": "step-output",
+      "status": "pass"
+    },
+    {
+      "check": "step-manifest-state",
+      "status": "pass",
+      "state": "exported"
+    },
+    {
+      "check": "review-parameter-audit:basic",
+      "status": "pass"
+    },
+    {
+      "check": "spec-coverage-audit",
+      "status": "pass"
+    },
+    {
+      "check": "review-preview-stability",
+      "status": "warn",
+      "trust": "warning"
+    },
+    {
+      "check": "preview-mesh",
+      "status": "pass"
+    }
+  ],
+  "warnings": [
+    "downstream or mesh output files found under outputs/: outputs/parts_DRAFT_NOT_FULL_KIT/N111_shin_face_DRAFT/N111_shin_face_DRAFT.stl, outputs/parts_DRAFT_NOT_FULL_KIT/N112_R_red_insert_DRAFT/N112_R_red_insert_DRAFT.stl, outputs/parts_DRAFT_NOT_FULL_KIT/N112_L_red_insert_DRAFT/N112_L_red_insert_DRAFT.stl, outputs/parts_DRAFT_NOT_FULL_KIT/N001_upper_frame_W30_DRAFT/N001_upper_frame_W30_DRAFT.stl",
+    "review preview assembly_rendering_bbox_overlap: assembly preview has overlapping part bounding boxes; this is rendering risk, not proof of CAD collision"
+  ],
+  "errors": [],
+  "step_files": [
+    "outputs/step/N001_upper_frame_W30_DRAFT.step",
+    "outputs/step/N111_shin_face_DRAFT.step",
+    "outputs/step/N112_L_red_insert_DRAFT.step",
+    "outputs/step/N112_R_red_insert_DRAFT.step",
+    "outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step"
+  ],
+  "snapshot": {
+    "generated_at": "2026-10-30T18:34:56.801735Z",
+    "phase": {
+      "value": "draft_review",
+      "source": "spec.lifecycle.phase"
+    },
+    "files": {
+      "spec": {
+        "path": "spec/current.yaml",
+        "sha256": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419"
+      },
+      "parameters": {
+        "path": "parameters.yaml",
+        "sha256": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b"
+      },
+      "source": {
+        "path": "source/model.py",
+        "sha256": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5"
+      },
+      "manifest": {
+        "path": "review/manifest.json",
+        "sha256": "b0fa2f7d8633578feaa51763a603bcd1a64226ffb31115e68593cc10474cd958"
+      },
+      "step_manifest": {
+        "path": "outputs/step/manifest.json",
+        "sha256": "2f48238fc921f7526905f511650ce03433360d4d014b9cd972a30933a8dac3c0"
+      },
+      "mesh": {
+        "path": "review/cache/current_mesh.json",
+        "sha256": "5410e1c9742f2a2f43dcaf2b272f91cf0d21a8bf63c431b180ee2c16191dfee0"
+      }
+    },
+    "step_files": [
+      {
+        "path": "outputs/step/N001_upper_frame_W30_DRAFT.step",
+        "sha256": "3c48a5d577251c28da33dcb02703aadee0ccbe9fbbd6bcd0b91280eaae6509c3"
+      },
+      {
+        "path": "outputs/step/N111_shin_face_DRAFT.step",
+        "sha256": "9724ae693c4bdff7f2628b758760ca47623ad9f53961c3f1193975fe97244132"
+      },
+      {
+        "path": "outputs/step/N112_L_red_insert_DRAFT.step",
+        "sha256": "2cf2a88fc5baed51a76b2feba628d636194e65ea9b85d0f7a5650ae78c8d123e"
+      },
+      {
+        "path": "outputs/step/N112_R_red_insert_DRAFT.step",
+        "sha256": "e60cffaf0b242c092cfd3062442c529f597b409b45438d3be2638208d257f0eb"
+      },
+      {
+        "path": "outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step",
+        "sha256": "a7cc70173b4c5bd614da5606b172534542a4498423897c941f400084168d4f5c"
+      }
+    ],
+    "warnings": []
+  },
+  "source_interface": {
+    "status": "pass",
+    "source": "source/model.py",
+    "warnings": [],
+    "errors": []
+  },
+  "step_manifest": {
+    "schema": "engineering-3d-modeling.step_manifest.v1",
+    "state": "exported",
+    "generated_for_phase": "draft_review",
+    "generated_at": "2026-10-30T18:34:56.681138Z",
+    "updated_at": "2026-10-30T18:34:56.681138Z",
+    "generated_by": "scripts/export_step.py",
+    "promoted_by": null,
+    "stale": false,
+    "stale_reason": "",
+    "previous_state": "exported",
+    "source_hash": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5",
+    "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
+    "spec_hash": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419",
+    "review_mesh_hash": "5410e1c9742f2a2f43dcaf2b272f91cf0d21a8bf63c431b180ee2c16191dfee0",
+    "step_files": [
+      {
+        "path": "outputs/step/N001_upper_frame_W30_DRAFT.step",
+        "sha256": "3c48a5d577251c28da33dcb02703aadee0ccbe9fbbd6bcd0b91280eaae6509c3"
+      },
+      {
+        "path": "outputs/step/N111_shin_face_DRAFT.step",
+        "sha256": "9724ae693c4bdff7f2628b758760ca47623ad9f53961c3f1193975fe97244132"
+      },
+      {
+        "path": "outputs/step/N112_L_red_insert_DRAFT.step",
+        "sha256": "2cf2a88fc5baed51a76b2feba628d636194e65ea9b85d0f7a5650ae78c8d123e"
+      },
+      {
+        "path": "outputs/step/N112_R_red_insert_DRAFT.step",
+        "sha256": "e60cffaf0b242c092cfd3062442c529f597b409b45438d3be2638208d257f0eb"
+      },
+      {
+        "path": "outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step",
+        "sha256": "a7cc70173b4c5bd614da5606b172534542a4498423897c941f400084168d4f5c"
+      }
+    ],
+    "export_kind": "direct_step",
+    "script_version": "export_step.v1",
+    "validation_summary": {
+      "step_files": [
+        {
+          "path": "outputs/step/N001_upper_frame_W30_DRAFT.step",
+          "sha256": "3c48a5d577251c28da33dcb02703aadee0ccbe9fbbd6bcd0b91280eaae6509c3",
+          "bytes": 4460548,
+          "readable": true,
+          "looks_like_step": true
+        },
+        {
+          "path": "outputs/step/N111_shin_face_DRAFT.step",
+          "sha256": "9724ae693c4bdff7f2628b758760ca47623ad9f53961c3f1193975fe97244132",
+          "bytes": 1828695,
+          "readable": true,
+          "looks_like_step": true
+        },
+        {
+          "path": "outputs/step/N112_L_red_insert_DRAFT.step",
+          "sha256": "2cf2a88fc5baed51a76b2feba628d636194e65ea9b85d0f7a5650ae78c8d123e",
+          "bytes": 34165,
+          "readable": true,
+          "looks_like_step": true
+        },
+        {
+          "path": "outputs/step/N112_R_red_insert_DRAFT.step",
+          "sha256": "e60cffaf0b242c092cfd3062442c529f597b409b45438d3be2638208d257f0eb",
+          "bytes": 34182,
+          "readable": true,
+          "looks_like_step": true
+        },
+        {
+          "path": "outputs/step/NOCTURNE_partial_draft_NOT_COMPLETE.step",
+          "sha256": "a7cc70173b4c5bd614da5606b172534542a4498423897c941f400084168d4f5c",
+          "bytes": 6443997,
+          "readable": true,
+          "looks_like_step": true
+        }
+      ],
+      "geometry": {
+        "status": "pass",
+        "signature": [
+          [
+            -0.0,
+            -15.0,
+            0.0
+          ],
+          [
+            194.5,
+            89.343147,
+            4.2
+          ],
+          [
+            194.5,
+            104.343147,
+            4.2
+          ],
+          13072.810708,
+          14817.300671
+        ],
+        "bbox_min": [
+          -0.0,
+          -15.0,
+          0.0
+        ],
+        "bbox_max": [
+          194.5,
+          89.343147,
+          4.2
+        ],
+        "bbox_size": [
+          194.5,
+          104.343147,
+          4.2
+        ],
+        "volume": 13072.810708,
+        "area": 14817.300671
+      }
+    }
+  },
+  "review_parameter_audit_mode": "basic",
+  "review_parameter_audit": {
+    "schema": "engineering-3d-modeling.review_parameter_audit.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
+    "mode": "basic",
+    "status": "pass",
+    "valid_preview_parameters": [],
+    "disabled_parameters": [],
+    "new_candidates": [],
+    "warnings": [],
+    "checks": []
+  },
+  "review_preview": {
+    "schema": "engineering-3d-modeling.review_preview_diagnostic.v1",
+    "generated_at": "2026-10-30T18:34:56.703173Z",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
+    "status": "warn",
+    "trust": {
+      "preview": "warning",
+      "reason": "assembly_rendering_bbox_overlap"
+    },
+    "checks": [
+      {
+        "check": "review-template-identity",
+        "status": "pass"
+      },
+      {
+        "check": "manifest-asset-paths",
+        "status": "pass"
+      },
+      {
+        "check": "preview-mesh-shape-topology",
+        "status": "pass"
+      },
+      {
+        "check": "preview-provenance",
+        "status": "pass"
+      }
+    ],
+    "warnings": [
+      {
+        "code": "assembly_rendering_bbox_overlap",
+        "message": "assembly preview has overlapping part bounding boxes; this is rendering risk, not proof of CAD collision",
+        "pairs": [
+          [
+            "N111_shin_face_DRAFT",
+            "N112_L_red_insert_DRAFT"
+          ],
+          [
+            "N111_shin_face_DRAFT",
+            "N112_R_red_insert_DRAFT"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "template": {
+      "path": "review/index.html",
+      "exists": true,
+      "sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "expected_sha256": "da233c9e7fdcfc43918f9b4894809bf34995c0851df33bd75c32087e3a9d1d3e",
+      "status": "pass"
+    },
+    "manifest": {
+      "path": "review/manifest.json",
+      "exists": true,
+      "sha256": "b0fa2f7d8633578feaa51763a603bcd1a64226ffb31115e68593cc10474cd958",
+      "status": "pass",
+      "mesh_json": "cache/current_mesh.json",
+      "mesh_path": "review/cache/current_mesh.json",
+      "adapter_js": null,
+      "adapter_path": null,
+      "mesh_closed": true
+    },
+    "mesh": {
+      "path": "review/cache/current_mesh.json",
+      "exists": true,
+      "sha256": "5410e1c9742f2a2f43dcaf2b272f91cf0d21a8bf63c431b180ee2c16191dfee0",
+      "status": "pass",
+      "vertex_count": 10566,
+      "face_count": 7440,
+      "part_count": 4,
+      "feature_count": 4,
+      "part_face_counts": {
+        "N001_upper_frame_W30_DRAFT": 4528,
+        "N111_shin_face_DRAFT": 2856,
+        "N112_L_red_insert_DRAFT": 28,
+        "N112_R_red_insert_DRAFT": 28
+      },
+      "feature_face_counts": {
+        "N001_upper_frame_W30_DRAFT": 4528,
+        "N111_shin_face_DRAFT": 2856,
+        "N112_L_red_insert_DRAFT": 28,
+        "N112_R_red_insert_DRAFT": 28
+      },
+      "semantic_metadata": {
+        "missing_feature_id_faces": 0,
+        "missing_world_point_faces": 0,
+        "missing_normal_faces": 0
+      },
+      "degenerate_faces": {},
+      "open_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "part_bboxes": {
+        "N001_upper_frame_W30_DRAFT": {
+          "min": [
+            0.0,
+            -15.0,
+            0.0
+          ],
+          "max": [
+            134.80905151367188,
+            89.34314727783203,
+            3.0
+          ]
+        },
+        "N111_shin_face_DRAFT": {
+          "min": [
+            155.0,
+            12.0,
+            0.0
+          ],
+          "max": [
+            194.5,
+            77.04774475097656,
+            4.2
+          ]
+        },
+        "N112_L_red_insert_DRAFT": {
+          "min": [
+            163.66774598553368,
+            26.074644713632757,
+            3.5
+          ],
+          "max": [
+            171.85,
+            60.67632063536404,
+            4.05
+          ]
+        },
+        "N112_R_red_insert_DRAFT": {
+          "min": [
+            177.65,
+            26.074644713632757,
+            3.5
+          ],
+          "max": [
+            185.83225401446632,
+            60.67632063536404,
+            4.05
+          ]
+        }
+      },
+      "transparent_parts": [],
+      "provenance": {
+        "source_hash": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5",
+        "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
+        "spec_hash": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419",
+        "manifest_hash": "b0fa2f7d8633578feaa51763a603bcd1a64226ffb31115e68593cc10474cd958"
+      },
+      "parameters": {}
+    },
+    "provenance": {
+      "status": "current",
+      "missing": [],
+      "stale": [],
+      "metadata_drift": [],
+      "recorded": {
+        "source_hash": "21d1e17dd2db94a0e78d913ec1e72c0e30c80626b466917f795ddd1c177348d5",
+        "parameters_hash": "1b7f5eeeda32484941b34091aa8e6e2884c3d5db1a64f10950c7908a31596d8b",
+        "spec_hash": "9c17834e92f9f9fe8b6ccdc2d732da6881cf695abd0f0389ee7248106cff7419",
+        "manifest_hash": "b0fa2f7d8633578feaa51763a603bcd1a64226ffb31115e68593cc10474cd958"
+      }
+    },
+    "rendering_risk": {
+      "status": "warning",
+      "risks": [
+        "bbox_overlap"
+      ],
+      "overlap_pairs": [
+        [
+          "N111_shin_face_DRAFT",
+          "N112_L_red_insert_DRAFT"
+        ],
+        [
+          "N111_shin_face_DRAFT",
+          "N112_R_red_insert_DRAFT"
+        ]
+      ],
+      "transparent_parts": []
+    },
+    "assembly_overlap_risk": {
+      "status": "warning",
+      "pairs": [
+        [
+          "N111_shin_face_DRAFT",
+          "N112_L_red_insert_DRAFT"
+        ],
+        [
+          "N111_shin_face_DRAFT",
+          "N112_R_red_insert_DRAFT"
+        ]
+      ]
+    },
+    "adapter": {
+      "declared": false,
+      "path": null,
+      "exists": false,
+      "sha256": null,
+      "adapter_parameter_ids": [],
+      "status": "not_declared"
+    },
+    "review_controls": {
+      "status": "clear",
+      "risks": []
+    },
+    "warning_count": 1,
+    "error_count": 0
+  },
+  "spec_coverage": {
+    "schema": "engineering-3d-modeling.spec_coverage.v1",
+    "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
+    "generated_at": "2026-10-30T18:34:56.699408Z",
+    "status": "pass",
+    "checks": [
+      {
+        "check": "feature:upper_frame_width_extension",
+        "status": "pass"
+      },
+      {
+        "check": "feature:shin_original_interfaces",
+        "status": "pass"
+      },
+      {
+        "check": "feature:shin_outer_relief",
+        "status": "pass"
+      },
+      {
+        "check": "feature:red_recesses_and_inserts",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Exactly six legs. Preserve original local servo seats, joint axes, holes, counterbores, nut pockets and screw bearing thickness.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Red leg inserts are solid non-emissive material. No leg lighting wiring.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:No whole-mesh scaling. Preserve original effective link lengths.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Concept image is appearance reference only; never infer production hole dimensions from it.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Head electronic combined assembly approximately 120 by 50 mm per user; height, connectors, camera adapter, battery, speaker and magnetic contacts not yet dimensioned.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:Original hardware remains. Any additive armor must preserve tool access and joint sweep.",
+        "status": "pass"
+      },
+      {
+        "check": "constraint:No printable-production-ready claim before full assembly and fit checks.",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:leg_kinematics_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:body_top_plan_target_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:body_bottom_plan_target_mm",
+        "status": "pass"
+      },
+      {
+        "check": "validation_target:dimensions:note",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:body_width_increase",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:ground_plate_thickness",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:armor_raise",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:inlay_depth",
+        "status": "pass"
+      },
+      {
+        "check": "parameter:inlay_clearance",
+        "status": "pass"
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "feature_gaps": [],
+    "placement_gaps": [],
+    "constraint_gaps": [],
+    "validation_target_gaps": [],
+    "unused_geometry_parameters": [],
+    "waived_unused_geometry_parameters": []
+  },
+  "consistency_audit_mode": "off",
+  "consistency_audit": null
+}

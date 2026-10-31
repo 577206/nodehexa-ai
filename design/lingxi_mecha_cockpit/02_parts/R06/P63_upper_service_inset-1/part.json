@@ -1,0 +1,21 @@
+{
+  "id": "P63",
+  "slug": "upper_service_inset-1",
+  "title": "肩甲下凹黑色检修面板",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/P63_upper_service_inset-1",
+  "stl": "02_parts/R06/P63_upper_service_inset-1/P63_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 414.511,
+  "size_mm": [
+    11.138,
+    34.737,
+    18.0
+  ],
+  "edge_break_mm": 0,
+  "notes": "",
+  "receiving_pockets_applied": true
+}

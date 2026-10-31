@@ -47,10 +47,13 @@ static qm_sem_t s_worker_sem;
 static uint8_t s_worker_ready;
 static qm_work_t s_idle_work;
 static volatile uint8_t s_pending_idle;
+static volatile uint8_t s_pending_wakeup;
 static volatile int s_dialog_state;
 /* Start with cloud microphone upload closed; only a local wake opens it. */
 static volatile uint8_t s_session_idle = 1U;
 static volatile uint8_t s_resource_active;
+static volatile uint8_t s_media_connected;
+static volatile uint32_t s_error_count;
 
 /* 投递给 worker 的请求类型。 */
 #define AGENT_IDLE_NONE     0U
@@ -216,9 +219,11 @@ static void on_agent_event(void *event_handler_arg,
             agent_sync_upload();
             break;
         case QM_AGENT_EVENT_CONNECTED:
+            s_media_connected = 1U;
             QM_LOGI(LOG_TAG, "agora connected");
             break;
         case QM_AGENT_EVENT_DISCONNECTED:
+            s_media_connected = 0U;
             QM_LOGW(LOG_TAG, "agora disconnected");
             s_agent_started = 0;
             s_session_idle = 1U;
@@ -300,6 +305,7 @@ static void on_agent_event(void *event_handler_arg,
                     (unsigned)notice->generation);
             break;
         case QM_AGENT_EVENT_ERROR:
+            ++s_error_count;
             QM_LOGE(LOG_TAG, "agent error code=%d msg=%s",
                     notice->code,
                     notice->data.text.text);
@@ -436,6 +442,7 @@ static void agent_on_cloud_disconnected(void)
     int ret;
 
     s_cloud_connected = 0;
+    s_media_connected = 0U;
     s_agent_started = 0;
     s_session_idle = 1U;
     s_dialog_state = QM_AGENT_DIALOG_STATE_NONE;
@@ -500,6 +507,11 @@ int agent_app_is_uplink_enabled(void)
     return (s_agent != NULL &&
             qm_agent_audio_engine_upload_allowed(s_agent)) ? 1 : 0;
 }
+
+int agent_app_is_media_connected(void) { return s_media_connected != 0U; }
+int agent_app_is_tts_waiting(void) { return s_waiting_tts_complete != 0U; }
+int agent_app_dialog_state(void) { return s_dialog_state; }
+uint32_t agent_app_error_count(void) { return s_error_count; }
 
 int agent_app_play_local_audio(const void *data, uint32_t len)
 {
@@ -836,8 +848,14 @@ static void agent_handle_wakeup(void)
 
     state = qm_agent_get_state(s_agent);
     if (agent_state_is_active(state)) {
-        (void)agent_app_abort_output();
+        /* A fresh wake during silence must reopen microphone upload without
+         * interrupting an already quiet session. Interrupt only active output. */
+        if (s_dialog_state == QM_AGENT_DIALOG_STATE_THINKING ||
+            s_dialog_state == QM_AGENT_DIALOG_STATE_SPEAKING) {
+            (void)agent_app_abort_output();
+        }
         s_agent_started = 1;
+        agent_sync_upload();
         agent_session_touch();
         return;
     }
@@ -874,12 +892,16 @@ static void agent_worker_task(void *arg)
         if (qm_sem_wait(&s_worker_sem, QM_WAIT_FOREVER) != QM_EOK) {
             continue;
         }
+        if (s_pending_wakeup) {
+            s_pending_wakeup = 0U;
+            s_pending_idle = AGENT_IDLE_NONE;
+            agent_handle_wakeup();
+            continue;
+        }
         if (s_pending_idle != AGENT_IDLE_NONE) {
             s_pending_idle = AGENT_IDLE_NONE;
             agent_handle_idle_silence();
-            continue;
         }
-        agent_handle_wakeup();
     }
 }
 
@@ -889,6 +911,7 @@ static void on_wakeup(void)
     if (!s_worker_ready) {
         return;
     }
+    s_pending_wakeup = 1U;
     (void)qm_sem_signal(&s_worker_sem);
 }
 

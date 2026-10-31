@@ -1,0 +1,19 @@
+{
+  "id": "P17",
+  "slug": "vent_grille_L",
+  "title": "黑色百叶窗 L",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P17_vent_grille_L",
+  "stl": "02_parts/P17_vent_grille_L/P17_assembly.stl",
+  "volume_mm3": 310.166,
+  "size_mm": [
+    15.45,
+    9.291,
+    26.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

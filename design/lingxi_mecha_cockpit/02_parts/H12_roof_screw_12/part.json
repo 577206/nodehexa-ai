@@ -1,0 +1,19 @@
+{
+  "id": "H12",
+  "slug": "roof_screw_12",
+  "title": "顶部螺钉头占位",
+  "category": "hardware",
+  "material": "black",
+  "folder": "02_parts/H12_roof_screw_12",
+  "stl": "02_parts/H12_roof_screw_12/H12_assembly.stl",
+  "volume_mm3": 11.699,
+  "size_mm": [
+    3.6,
+    3.598,
+    1.35
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": "P40",
+  "slug": "side_utility_R",
+  "title": "右侧黑色检修面板",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P40_side_utility_R",
+  "stl": "02_parts/P40_side_utility_R/P40_assembly.stl",
+  "volume_mm3": 473.375,
+  "size_mm": [
+    2.2,
+    22.523,
+    12.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

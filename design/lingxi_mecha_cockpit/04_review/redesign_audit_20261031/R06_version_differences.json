@@ -1,0 +1,807 @@
+[
+  {
+    "id": "P03",
+    "title": "多折面舱罩承托框",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      65.0,
+      47.3,
+      50.4
+    ],
+    "assembly_mm": [
+      73.0,
+      47.3,
+      50.400000000000006
+    ],
+    "review_stl_mm": [
+      65.0,
+      47.30000019073486,
+      50.39999771118164
+    ],
+    "assembly_delta_mm": 8.0,
+    "review_mesh_delta_mm": 2.2888183579539145e-06
+  },
+  {
+    "id": "P10",
+    "title": "前侧上段舱罩护轨",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      17.3,
+      34.367,
+      31.4
+    ],
+    "assembly_mm": [
+      23.35,
+      48.4,
+      44.0
+    ],
+    "review_stl_mm": [
+      17.30000114440918,
+      34.366665840148926,
+      31.400001525878906
+    ],
+    "assembly_delta_mm": 14.033000000000001,
+    "review_mesh_delta_mm": 0.0003341598510715471
+  },
+  {
+    "id": "P66",
+    "title": "前侧下段舱罩护轨",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      13.278,
+      10.989,
+      15.8
+    ],
+    "assembly_mm": [
+      14.300000000000004,
+      16.1,
+      25.0
+    ],
+    "review_stl_mm": [
+      13.277776718139648,
+      10.988887786865234,
+      15.799999237060547
+    ],
+    "assembly_delta_mm": 9.2,
+    "review_mesh_delta_mm": 0.00022328186035203146
+  },
+  {
+    "id": "P11",
+    "title": "前侧上段舱罩护轨",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      17.3,
+      34.367,
+      31.4
+    ],
+    "assembly_mm": [
+      23.35,
+      48.4,
+      44.0
+    ],
+    "review_stl_mm": [
+      17.30000114440918,
+      34.366665840148926,
+      31.400001525878906
+    ],
+    "assembly_delta_mm": 14.033000000000001,
+    "review_mesh_delta_mm": 0.0003341598510715471
+  },
+  {
+    "id": "P67",
+    "title": "前侧下段舱罩护轨",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      13.278,
+      10.989,
+      15.8
+    ],
+    "assembly_mm": [
+      14.300000000000004,
+      16.1,
+      25.0
+    ],
+    "review_stl_mm": [
+      13.277776718139648,
+      10.988887786865234,
+      15.799999237060547
+    ],
+    "assembly_delta_mm": 9.2,
+    "review_mesh_delta_mm": 0.00022328186035203146
+  },
+  {
+    "id": "P01",
+    "title": "收边下壳／电池仓",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      97.711,
+      92.428,
+      20.85
+    ],
+    "assembly_mm": [
+      127.93692072951725,
+      93.0,
+      47.6
+    ],
+    "review_stl_mm": [
+      97.71111297607422,
+      92.42777633666992,
+      20.850000381469727
+    ],
+    "assembly_delta_mm": 30.225920729517256,
+    "review_mesh_delta_mm": 0.00022366333007539652
+  },
+  {
+    "id": "P02",
+    "title": "多折线内层主壳",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      100.0,
+      93.0,
+      56.85
+    ],
+    "assembly_mm": [
+      127.93692072951725,
+      93.0,
+      70.0
+    ],
+    "review_stl_mm": [
+      100.0,
+      93.0,
+      56.85000038146973
+    ],
+    "assembly_delta_mm": 27.936920729517254,
+    "review_mesh_delta_mm": 3.8146972514141453e-07
+  },
+  {
+    "id": "P14",
+    "title": "侧面格栅装甲框",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      20.669,
+      31.859,
+      38.467
+    ],
+    "assembly_mm": [
+      21.408897041394205,
+      32.807473087473255,
+      39.450871628308334
+    ],
+    "review_stl_mm": [
+      20.668834686279297,
+      31.858670234680176,
+      38.46669292449951
+    ],
+    "assembly_delta_mm": 0.9838716283083357,
+    "review_mesh_delta_mm": 0.0003297653198259809
+  },
+  {
+    "id": "P17",
+    "title": "侧面格栅装甲框",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      20.669,
+      31.859,
+      38.467
+    ],
+    "assembly_mm": [
+      21.408897041394198,
+      32.80747308747328,
+      39.45087162830831
+    ],
+    "review_stl_mm": [
+      20.668834686279297,
+      31.858670234680176,
+      38.46669292449951
+    ],
+    "assembly_delta_mm": 0.9838716283083144,
+    "review_mesh_delta_mm": 0.0003297653198259809
+  },
+  {
+    "id": "P60",
+    "title": "前脸独立打孔颊甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      16.5,
+      9.275,
+      21.5
+    ],
+    "assembly_mm": [
+      166.66487318483067,
+      77.12302832142589,
+      56.268336313157846
+    ],
+    "review_stl_mm": [
+      16.5,
+      9.275001525878906,
+      21.5
+    ],
+    "assembly_delta_mm": 150.16487318483067,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P61",
+    "title": "前脸独立打孔颊甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      16.5,
+      9.275,
+      21.5
+    ],
+    "assembly_mm": [
+      166.66487318483067,
+      77.12302832142589,
+      56.268336313157846
+    ],
+    "review_stl_mm": [
+      16.5,
+      9.275001525878906,
+      21.5
+    ],
+    "assembly_delta_mm": 150.16487318483067,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P20",
+    "title": "折角橙色肩部护架",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      22.688,
+      38.227,
+      25.0
+    ],
+    "assembly_mm": [
+      30.35,
+      67.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      22.687973022460938,
+      38.22664165496826,
+      25.0
+    ],
+    "assembly_delta_mm": 28.773000000000003,
+    "review_mesh_delta_mm": 0.0003583450317350412
+  },
+  {
+    "id": "P21",
+    "title": "灰色肩部压甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      16.104,
+      31.842,
+      24.0
+    ],
+    "assembly_mm": [
+      18.75,
+      53.0,
+      30.626776097265065
+    ],
+    "review_stl_mm": [
+      16.10350799560547,
+      31.8424015045166,
+      24.0
+    ],
+    "assembly_delta_mm": 21.158,
+    "review_mesh_delta_mm": 0.0004920043945304542
+  },
+  {
+    "id": "P22",
+    "title": "折角橙色肩部护架",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      22.688,
+      38.227,
+      25.0
+    ],
+    "assembly_mm": [
+      30.35,
+      67.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      22.687973022460938,
+      38.22664165496826,
+      25.0
+    ],
+    "assembly_delta_mm": 28.773000000000003,
+    "review_mesh_delta_mm": 0.0003583450317350412
+  },
+  {
+    "id": "P23",
+    "title": "灰色肩部压甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      16.104,
+      31.842,
+      24.0
+    ],
+    "assembly_mm": [
+      18.75,
+      53.0,
+      30.626776097265065
+    ],
+    "review_stl_mm": [
+      16.10350799560547,
+      31.8424015045166,
+      24.0
+    ],
+    "assembly_delta_mm": 21.158,
+    "review_mesh_delta_mm": 0.0004920043945304542
+  },
+  {
+    "id": "P62",
+    "title": "肩甲下凹黑色检修面板",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      11.138,
+      34.737,
+      18.0
+    ],
+    "assembly_mm": [
+      18.35,
+      53.0,
+      30.0
+    ],
+    "review_stl_mm": [
+      11.13824462890625,
+      34.73709297180176,
+      18.0
+    ],
+    "assembly_delta_mm": 18.262999999999998,
+    "review_mesh_delta_mm": 0.0002446289062500995
+  },
+  {
+    "id": "P63",
+    "title": "肩甲下凹黑色检修面板",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      11.138,
+      34.737,
+      18.0
+    ],
+    "assembly_mm": [
+      18.35,
+      53.0,
+      30.0
+    ],
+    "review_stl_mm": [
+      11.13824462890625,
+      34.73709297180176,
+      18.0
+    ],
+    "assembly_delta_mm": 18.262999999999998,
+    "review_mesh_delta_mm": 0.0002446289062500995
+  },
+  {
+    "id": "P68",
+    "title": "连续包角过渡颊甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      12.55,
+      43.0,
+      26.0
+    ],
+    "assembly_mm": [
+      22.750000000000004,
+      74.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      12.549999237060547,
+      43.0,
+      26.0
+    ],
+    "assembly_delta_mm": 31.0,
+    "review_mesh_delta_mm": 7.629394538355427e-07
+  },
+  {
+    "id": "P69",
+    "title": "连续包角过渡颊甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      12.55,
+      43.0,
+      26.0
+    ],
+    "assembly_mm": [
+      22.749999999999996,
+      74.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      12.549999237060547,
+      43.0,
+      26.0
+    ],
+    "assembly_delta_mm": 31.0,
+    "review_mesh_delta_mm": 7.629394538355427e-07
+  },
+  {
+    "id": "P24",
+    "title": "侧面上层梯形拼甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      8.784,
+      23.335,
+      16.0
+    ],
+    "assembly_mm": [
+      11.600000000000001,
+      65.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      8.78403091430664,
+      23.335176467895508,
+      16.0
+    ],
+    "assembly_delta_mm": 41.665,
+    "review_mesh_delta_mm": 0.00017646789550695985
+  },
+  {
+    "id": "P25",
+    "title": "侧面下层收边拼甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      9.517,
+      30.0,
+      16.0
+    ],
+    "assembly_mm": [
+      15.350000000000001,
+      65.0,
+      26.0
+    ],
+    "review_stl_mm": [
+      9.516666412353516,
+      30.0,
+      16.0
+    ],
+    "assembly_delta_mm": 35.0,
+    "review_mesh_delta_mm": 0.000333587646483835
+  },
+  {
+    "id": "P58",
+    "title": "轴盖下方后侧嵌甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      10.072,
+      9.0,
+      13.5
+    ],
+    "assembly_mm": [
+      21.620194056415713,
+      79.0,
+      36.0
+    ],
+    "review_stl_mm": [
+      10.072223663330078,
+      9.0,
+      13.5
+    ],
+    "assembly_delta_mm": 70.0,
+    "review_mesh_delta_mm": 0.00022366333007894923
+  },
+  {
+    "id": "P70",
+    "title": "侧甲黑色检修底板",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      11.907,
+      43.0,
+      55.0
+    ],
+    "assembly_mm": [
+      21.200000000000003,
+      79.0,
+      60.0
+    ],
+    "review_stl_mm": [
+      11.906501770019531,
+      43.0,
+      55.0
+    ],
+    "assembly_delta_mm": 36.0,
+    "review_mesh_delta_mm": 0.0004982299804687784
+  },
+  {
+    "id": "P29",
+    "title": "贴壳双螺钉检修条 1",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      2.55,
+      13.3,
+      5.4
+    ],
+    "assembly_mm": [
+      3.9499999999999957,
+      65.0,
+      18.0
+    ],
+    "review_stl_mm": [
+      2.549999237060547,
+      13.300000190734863,
+      5.400001525878906
+    ],
+    "assembly_delta_mm": 51.7,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P31",
+    "title": "贴壳双螺钉检修条 2",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      2.55,
+      26.6,
+      5.4
+    ],
+    "assembly_mm": [
+      6.049229701769264,
+      65.0,
+      36.0
+    ],
+    "review_stl_mm": [
+      2.549999237060547,
+      26.59999990463257,
+      5.400001525878906
+    ],
+    "assembly_delta_mm": 38.4,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P32",
+    "title": "侧面圆形轴盖分件",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      13.308,
+      26.398,
+      26.4
+    ],
+    "assembly_mm": [
+      22.050000000000004,
+      79.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      13.307628631591797,
+      26.398146152496338,
+      26.399818420410156
+    ],
+    "assembly_delta_mm": 52.602000000000004,
+    "review_mesh_delta_mm": 0.00037136840820295447
+  },
+  {
+    "id": "P26",
+    "title": "侧面上层梯形拼甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      8.784,
+      23.335,
+      16.0
+    ],
+    "assembly_mm": [
+      11.599999999999994,
+      65.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      8.78403091430664,
+      23.335176467895508,
+      16.0
+    ],
+    "assembly_delta_mm": 41.665,
+    "review_mesh_delta_mm": 0.00017646789550695985
+  },
+  {
+    "id": "P27",
+    "title": "侧面下层收边拼甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      9.517,
+      30.0,
+      16.0
+    ],
+    "assembly_mm": [
+      15.349999999999994,
+      65.0,
+      26.0
+    ],
+    "review_stl_mm": [
+      9.516666412353516,
+      30.0,
+      16.0
+    ],
+    "assembly_delta_mm": 35.0,
+    "review_mesh_delta_mm": 0.000333587646483835
+  },
+  {
+    "id": "P59",
+    "title": "轴盖下方后侧嵌甲",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      10.072,
+      9.0,
+      13.5
+    ],
+    "assembly_mm": [
+      21.620194056415713,
+      79.0,
+      36.0
+    ],
+    "review_stl_mm": [
+      10.072223663330078,
+      9.0,
+      13.5
+    ],
+    "assembly_delta_mm": 70.0,
+    "review_mesh_delta_mm": 0.00022366333007894923
+  },
+  {
+    "id": "P71",
+    "title": "侧甲黑色检修底板",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      11.907,
+      43.0,
+      55.0
+    ],
+    "assembly_mm": [
+      21.2,
+      79.0,
+      60.0
+    ],
+    "review_stl_mm": [
+      11.906501770019531,
+      43.0,
+      55.0
+    ],
+    "assembly_delta_mm": 36.0,
+    "review_mesh_delta_mm": 0.0004982299804687784
+  },
+  {
+    "id": "P28",
+    "title": "贴壳双螺钉检修条 1",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      2.55,
+      13.3,
+      5.4
+    ],
+    "assembly_mm": [
+      3.950000000000003,
+      65.0,
+      18.0
+    ],
+    "review_stl_mm": [
+      2.549999237060547,
+      13.300000190734863,
+      5.400001525878906
+    ],
+    "assembly_delta_mm": 51.7,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P30",
+    "title": "贴壳双螺钉检修条 2",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      2.55,
+      26.6,
+      5.4
+    ],
+    "assembly_mm": [
+      6.049229701769264,
+      65.0,
+      36.0
+    ],
+    "review_stl_mm": [
+      2.549999237060547,
+      26.59999990463257,
+      5.400001525878906
+    ],
+    "assembly_delta_mm": 38.4,
+    "review_mesh_delta_mm": 1.5258789058947286e-06
+  },
+  {
+    "id": "P35",
+    "title": "侧面圆形轴盖分件",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      13.308,
+      26.398,
+      26.4
+    ],
+    "assembly_mm": [
+      22.05,
+      79.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      13.307628631591797,
+      26.398146152496338,
+      26.399818420410156
+    ],
+    "assembly_delta_mm": 52.602000000000004,
+    "review_mesh_delta_mm": 0.00037136840820295447
+  },
+  {
+    "id": "P38",
+    "title": "后肩橙色导流罩",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      21.456,
+      20.0,
+      20.0
+    ],
+    "assembly_mm": [
+      32.5,
+      67.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      21.455883026123047,
+      20.0,
+      20.0
+    ],
+    "assembly_delta_mm": 47.0,
+    "review_mesh_delta_mm": 0.00011697387695264183
+  },
+  {
+    "id": "P39",
+    "title": "后肩橙色导流罩",
+    "category": "fdm",
+    "group": "cockpit",
+    "manifest_mm": [
+      21.456,
+      20.0,
+      20.0
+    ],
+    "assembly_mm": [
+      32.5,
+      67.0,
+      34.0
+    ],
+    "review_stl_mm": [
+      21.455883026123047,
+      20.0,
+      20.0
+    ],
+    "assembly_delta_mm": 47.0,
+    "review_mesh_delta_mm": 0.00011697387695264183
+  }
+]

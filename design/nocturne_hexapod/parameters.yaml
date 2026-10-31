@@ -1,0 +1,51 @@
+schema: engineering-3d-modeling.parameters.v1
+units: mm
+parameters:
+  body_width_increase:
+    value: 30
+    unit: mm
+    role: Confirmed total width increase, no global scaling
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  side_translation:
+    value: 15
+    unit: mm
+    role: Derived half width increase
+    ui:
+      editable: false
+    validation:
+      affects_geometry: false
+  ground_plate_thickness:
+    value: 3
+    unit: mm
+    role: Original FootGround thickness
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  armor_raise:
+    value: 1.2
+    unit: mm
+    role: Draft exterior relief height; sweep unverified
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  inlay_depth:
+    value: 0.7
+    unit: mm
+    role: Draft recess into added relief, not original plate
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true
+  inlay_clearance:
+    value: 0.15
+    unit: mm
+    role: Per-side draft clearance; needs fit sample
+    ui:
+      editable: false
+    validation:
+      affects_geometry: true

@@ -1,0 +1,19 @@
+{
+  "id": "P31",
+  "slug": "phone_shelf",
+  "title": "手机托架底托",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P31_phone_shelf",
+  "stl": "02_parts/P31_phone_shelf/P31_assembly.stl",
+  "volume_mm3": 7047.366,
+  "size_mm": [
+    80.0,
+    16.0,
+    9.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

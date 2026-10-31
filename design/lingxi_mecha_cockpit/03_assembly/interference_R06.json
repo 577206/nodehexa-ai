@@ -1,0 +1,1008 @@
+{
+  "status": "PASS",
+  "rigid_part_interferences": [],
+  "all_saved_parts_valid": true,
+  "saved_part_validation": [
+    {
+      "id": "G01",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00031601805670788963,
+      "files_present": true
+    },
+    {
+      "id": "G02",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.1242760045604427e-05,
+      "files_present": true
+    },
+    {
+      "id": "G03",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.124276006692071e-05,
+      "files_present": true
+    },
+    {
+      "id": "G04",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00015512522338667623,
+      "files_present": true
+    },
+    {
+      "id": "G05",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 6.748070642004222e-05,
+      "files_present": true
+    },
+    {
+      "id": "G06",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 6.748070640583137e-05,
+      "files_present": true
+    },
+    {
+      "id": "G07",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00016804371966827603,
+      "files_present": true
+    },
+    {
+      "id": "G08",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003581143271844667,
+      "files_present": true
+    },
+    {
+      "id": "G09",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003581143271134124,
+      "files_present": true
+    },
+    {
+      "id": "G10",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001860601558689723,
+      "files_present": true
+    },
+    {
+      "id": "G11",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003427437905045849,
+      "files_present": true
+    },
+    {
+      "id": "G12",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00034274379045484693,
+      "files_present": true
+    },
+    {
+      "id": "P03",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00016629140509394347,
+      "files_present": true
+    },
+    {
+      "id": "P04",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001379218063242149,
+      "files_present": true
+    },
+    {
+      "id": "P05",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00013792180632776763,
+      "files_present": true
+    },
+    {
+      "id": "P06",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001379218062709242,
+      "files_present": true
+    },
+    {
+      "id": "P07",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 4.547473508864641e-13,
+      "files_present": true
+    },
+    {
+      "id": "P08",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 5.684341886080802e-14,
+      "files_present": true
+    },
+    {
+      "id": "P09",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 4.973799150320701e-14,
+      "files_present": true
+    },
+    {
+      "id": "P10",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00021019218070250645,
+      "files_present": true
+    },
+    {
+      "id": "P66",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.1368683772161603e-13,
+      "files_present": true
+    },
+    {
+      "id": "P11",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00021019217228968046,
+      "files_present": true
+    },
+    {
+      "id": "P67",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.1368683772161603e-13,
+      "files_present": true
+    },
+    {
+      "id": "P12",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004172155345258943,
+      "files_present": true
+    },
+    {
+      "id": "P13",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 8.941272460560867e-05,
+      "files_present": true
+    },
+    {
+      "id": "H01",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004820545450456848,
+      "files_present": true
+    },
+    {
+      "id": "H02",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002875349515996106,
+      "files_present": true
+    },
+    {
+      "id": "P01",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004400307698233519,
+      "files_present": true
+    },
+    {
+      "id": "P02",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 6.463852332672104e-05,
+      "files_present": true
+    },
+    {
+      "id": "P14",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00018946718773804605,
+      "files_present": true
+    },
+    {
+      "id": "P15",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00047186671906729316,
+      "files_present": true
+    },
+    {
+      "id": "P16",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00013075143351670704,
+      "files_present": true
+    },
+    {
+      "id": "P17",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001894671872832987,
+      "files_present": true
+    },
+    {
+      "id": "P18",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004718667161114354,
+      "files_present": true
+    },
+    {
+      "id": "P19",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00013075143226615182,
+      "files_present": true
+    },
+    {
+      "id": "P60",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00011125346793505742,
+      "files_present": true
+    },
+    {
+      "id": "P61",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00011125346827611793,
+      "files_present": true
+    },
+    {
+      "id": "P20",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00011095838397068292,
+      "files_present": true
+    },
+    {
+      "id": "P21",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002988198062325864,
+      "files_present": true
+    },
+    {
+      "id": "P22",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001109659245344119,
+      "files_present": true
+    },
+    {
+      "id": "P23",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00029884379466693645,
+      "files_present": true
+    },
+    {
+      "id": "P62",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 3.272097166018284e-05,
+      "files_present": true
+    },
+    {
+      "id": "P63",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 3.33573648276797e-05,
+      "files_present": true
+    },
+    {
+      "id": "P68",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.000419313225620499,
+      "files_present": true
+    },
+    {
+      "id": "P69",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.000419313225620499,
+      "files_present": true
+    },
+    {
+      "id": "H80",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616418824,
+      "files_present": true
+    },
+    {
+      "id": "H81",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H82",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306161878977,
+      "files_present": true
+    },
+    {
+      "id": "H83",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306165609326,
+      "files_present": true
+    },
+    {
+      "id": "P24",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004148696780816863,
+      "files_present": true
+    },
+    {
+      "id": "P25",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003864594568767643,
+      "files_present": true
+    },
+    {
+      "id": "P58",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00030742767705760343,
+      "files_present": true
+    },
+    {
+      "id": "P70",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003933278264867113,
+      "files_present": true
+    },
+    {
+      "id": "P29",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00027640770005632476,
+      "files_present": true
+    },
+    {
+      "id": "P31",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00020549167217609465,
+      "files_present": true
+    },
+    {
+      "id": "P32",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00037533567592618056,
+      "files_present": true
+    },
+    {
+      "id": "P33",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00048519245834199864,
+      "files_present": true
+    },
+    {
+      "id": "P34",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00048369074843890303,
+      "files_present": true
+    },
+    {
+      "id": "P26",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004148696214656411,
+      "files_present": true
+    },
+    {
+      "id": "P27",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003864594563083301,
+      "files_present": true
+    },
+    {
+      "id": "P59",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.000307427677199712,
+      "files_present": true
+    },
+    {
+      "id": "P71",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00039335428164122277,
+      "files_present": true
+    },
+    {
+      "id": "P28",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00027640770012737903,
+      "files_present": true
+    },
+    {
+      "id": "P30",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00020549167240346833,
+      "files_present": true
+    },
+    {
+      "id": "P35",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00037533567683567526,
+      "files_present": true
+    },
+    {
+      "id": "P36",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004851924584556855,
+      "files_present": true
+    },
+    {
+      "id": "P37",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0004836907483820596,
+      "files_present": true
+    },
+    {
+      "id": "H60",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616543169,
+      "files_present": true
+    },
+    {
+      "id": "H61",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306165254055,
+      "files_present": true
+    },
+    {
+      "id": "H62",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164898783,
+      "files_present": true
+    },
+    {
+      "id": "H63",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H64",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616507642,
+      "files_present": true
+    },
+    {
+      "id": "H65",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616454351,
+      "files_present": true
+    },
+    {
+      "id": "H66",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H67",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H68",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H69",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001373127873556257,
+      "files_present": true
+    },
+    {
+      "id": "H70",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616631987,
+      "files_present": true
+    },
+    {
+      "id": "H71",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306166497504,
+      "files_present": true
+    },
+    {
+      "id": "H72",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306163655333,
+      "files_present": true
+    },
+    {
+      "id": "H73",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616330006,
+      "files_present": true
+    },
+    {
+      "id": "H74",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164010605,
+      "files_present": true
+    },
+    {
+      "id": "H75",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616383297,
+      "files_present": true
+    },
+    {
+      "id": "H76",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616454351,
+      "files_present": true
+    },
+    {
+      "id": "H77",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306161523705,
+      "files_present": true
+    },
+    {
+      "id": "H78",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306165609326,
+      "files_present": true
+    },
+    {
+      "id": "H79",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00013731278736095476,
+      "files_present": true
+    },
+    {
+      "id": "P38",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002778836603738455,
+      "files_present": true
+    },
+    {
+      "id": "P39",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002877661095226358,
+      "files_present": true
+    },
+    {
+      "id": "P40",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00023117631462810095,
+      "files_present": true
+    },
+    {
+      "id": "P41",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.9042545318370685e-12,
+      "files_present": true
+    },
+    {
+      "id": "P42",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00018305967313381188,
+      "files_present": true
+    },
+    {
+      "id": "P43",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00018305967341802898,
+      "files_present": true
+    },
+    {
+      "id": "P44",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00033882308133570405,
+      "files_present": true
+    },
+    {
+      "id": "P45",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00019211417202313896,
+      "files_present": true
+    },
+    {
+      "id": "P46",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0,
+      "files_present": true
+    },
+    {
+      "id": "P47",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0,
+      "files_present": true
+    },
+    {
+      "id": "P48",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001151331694018154,
+      "files_present": true
+    },
+    {
+      "id": "P64",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0,
+      "files_present": true
+    },
+    {
+      "id": "P65",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 5.684341886080802e-14,
+      "files_present": true
+    },
+    {
+      "id": "P49",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00030777870961173903,
+      "files_present": true
+    },
+    {
+      "id": "P50",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 9.094947017729282e-13,
+      "files_present": true
+    },
+    {
+      "id": "P51",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 1.9895196601282805e-13,
+      "files_present": true
+    },
+    {
+      "id": "P52",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002336337906854169,
+      "files_present": true
+    },
+    {
+      "id": "P53",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 9.938325183611596e-05,
+      "files_present": true
+    },
+    {
+      "id": "P54",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00045031615445623174,
+      "files_present": true
+    },
+    {
+      "id": "P55",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00045031615445623174,
+      "files_present": true
+    },
+    {
+      "id": "P56",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00044828382806372247,
+      "files_present": true
+    },
+    {
+      "id": "P57",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00044828382806372247,
+      "files_present": true
+    },
+    {
+      "id": "H03",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306167385683,
+      "files_present": true
+    },
+    {
+      "id": "H04",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003862130616383297,
+      "files_present": true
+    },
+    {
+      "id": "H12",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164898783,
+      "files_present": true
+    },
+    {
+      "id": "H13",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00038621306164365876,
+      "files_present": true
+    },
+    {
+      "id": "H21",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002521313830872174,
+      "files_present": true
+    },
+    {
+      "id": "H22",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002521313830898819,
+      "files_present": true
+    },
+    {
+      "id": "H23",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00025213138308899374,
+      "files_present": true
+    },
+    {
+      "id": "H24",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0002521313830898819,
+      "files_present": true
+    },
+    {
+      "id": "H25",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00033223538374471673,
+      "files_present": true
+    },
+    {
+      "id": "H26",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003322353837305059,
+      "files_present": true
+    },
+    {
+      "id": "H27",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00033223538374471673,
+      "files_present": true
+    },
+    {
+      "id": "H28",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0003322353837305059,
+      "files_present": true
+    },
+    {
+      "id": "H29",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.00014210510759760098,
+      "files_present": true
+    },
+    {
+      "id": "H30",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001421051075967128,
+      "files_present": true
+    },
+    {
+      "id": "H31",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001421051075967128,
+      "files_present": true
+    },
+    {
+      "id": "H32",
+      "valid": true,
+      "solids": 1,
+      "positive_volume": true,
+      "manifest_volume_difference_mm3": 0.0001421051075967128,
+      "files_present": true
+    }
+  ],
+  "note": "Hardware omitted. Volumetric overlap does not evaluate minimum wall thickness, assembly paths or physical tolerances."
+}

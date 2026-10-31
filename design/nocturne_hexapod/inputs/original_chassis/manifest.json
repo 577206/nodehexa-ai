@@ -1,0 +1,128 @@
+[
+  {
+    "id": "TKRC-BodyBackWall",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyBackWall.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyBackWall.STL",
+    "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodyButtom-18650-2S",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyButtom-18650-2S.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyButtom-18650-2S.STL",
+    "sha256": "f53baa27ee72213fc48ac95b0c4fe8a3a04d4571777c1b746b35cc95e9dc6622",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodyButtom",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyButtom.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyButtom.STL",
+    "sha256": "04c93b62fec95a18120aea06341d8dc67fb5255d0dc33a40fed246ca1bb3c13e",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodyCenter-Thin",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyCenter-Thin.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyCenter-Thin.STL",
+    "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodyCenter",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyCenter.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyCenter.STL",
+    "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodySideWall",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodySideWall.STL",
+    "copy": "inputs/original_chassis/TKRC-BodySideWall.STL",
+    "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-BodyTop",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-BodyTop.STL",
+    "copy": "inputs/original_chassis/TKRC-BodyTop.STL",
+    "sha256": "f279c669c215535969bb5389c552f16acf65f12d5bef4ac18376a8fe9bac88de",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-FootButtom",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-FootButtom.STL",
+    "copy": "inputs/original_chassis/TKRC-FootButtom.STL",
+    "sha256": "4e92df197b429b663af76ab7b7d65343ee9da9ef6d9d0bfe9ec332c3f4183371",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-FootGround",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-FootGround.STL",
+    "copy": "inputs/original_chassis/TKRC-FootGround.STL",
+    "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-FootTip",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-FootTip.STL",
+    "copy": "inputs/original_chassis/TKRC-FootTip.STL",
+    "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-FootTop",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-FootTop.STL",
+    "copy": "inputs/original_chassis/TKRC-FootTop.STL",
+    "sha256": "192adf2ca8efe196065845e5b630794e5a954a31d7c50a7b973232808fa369d0",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-JointCross",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-JointCross.STL",
+    "copy": "inputs/original_chassis/TKRC-JointCross.STL",
+    "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-JointDown",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-JointDown.STL",
+    "copy": "inputs/original_chassis/TKRC-JointDown.STL",
+    "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-JointTop",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-JointTop.STL",
+    "copy": "inputs/original_chassis/TKRC-JointTop.STL",
+    "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-LegBottom",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-LegBottom.STL",
+    "copy": "inputs/original_chassis/TKRC-LegBottom.STL",
+    "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-LegTop",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-LegTop.STL",
+    "copy": "inputs/original_chassis/TKRC-LegTop.STL",
+    "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-ThighBottom",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-ThighBottom.STL",
+    "copy": "inputs/original_chassis/TKRC-ThighBottom.STL",
+    "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  },
+  {
+    "id": "TKRC-ThighTop",
+    "source": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/mechanism/hexapod/TKRC-ThighTop.STL",
+    "copy": "inputs/original_chassis/TKRC-ThighTop.STL",
+    "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183",
+    "role": "immutable reference mesh, not a new printable deliverable"
+  }
+]

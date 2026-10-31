@@ -1,0 +1,26 @@
+{
+  "id": "P10",
+  "slug": "orange_shoulder_L",
+  "title": "左橙色肩部护架",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P10_orange_shoulder_L",
+  "stl": "02_parts/P10_orange_shoulder_L/P10_assembly.stl",
+  "volume_mm3": 3301.264,
+  "size_mm": [
+    10.0,
+    55.0,
+    31.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

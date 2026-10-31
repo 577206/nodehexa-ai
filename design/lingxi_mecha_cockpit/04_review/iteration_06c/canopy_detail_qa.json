@@ -1,0 +1,113 @@
+{
+  "P04": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "asset lowest point z=0.0388 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.0388,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "P04": {
+        "verts": 112,
+        "faces": 224,
+        "tris": 224,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "P05": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "asset lowest point z=0.0568 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.0568,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "P05": {
+        "verts": 112,
+        "faces": 224,
+        "tris": 224,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  },
+  "P06": {
+    "ok": true,
+    "pass": true,
+    "errors": [],
+    "warnings": [
+      "asset lowest point z=0.0718 (not resting on ground plane z=0)"
+    ],
+    "ground_z": 0.0718,
+    "zfighting": [],
+    "floating": [],
+    "back_to_back": [],
+    "enclosed": [],
+    "objects": {
+      "P06": {
+        "verts": 112,
+        "faces": 224,
+        "tris": 224,
+        "ngons": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "wire_edges": 0,
+        "loose_verts": 0,
+        "degenerate_faces": 0,
+        "zero_length_edges": 0,
+        "inconsistent_normals_edges": 0,
+        "duplicate_verts": 0,
+        "islands": 1,
+        "inside_out_islands": 0,
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "materials": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "P36",
+  "slug": "desktop_foot_1",
+  "title": "桌面底座脚 1",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P36_desktop_foot_1",
+  "stl": "02_parts/P36_desktop_foot_1/P36_assembly.stl",
+  "volume_mm3": 2709.574,
+  "size_mm": [
+    14.0,
+    24.0,
+    13.5
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "上方 M3 固定孔与底座框对应。",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

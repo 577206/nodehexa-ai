@@ -1,0 +1,111 @@
+{
+  "id": "P39",
+  "slug": "shoulder_intake-1",
+  "title": "后肩橙色导流罩",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R06/P39_shoulder_intake-1",
+  "stl": "02_parts/R06/P39_shoulder_intake-1/P39_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1177.287,
+  "size_mm": [
+    21.456,
+    20.0,
+    20.0
+  ],
+  "edge_break_mm": 0.35,
+  "notes": "",
+  "edge_break_details": {
+    "eligible": true,
+    "applied": true,
+    "partial": true,
+    "size_mm": 0.35,
+    "strategy": "partial_greedy_outer_edges",
+    "selected_edge_count": 6,
+    "eligible_edge_count": 23,
+    "attempt_count": 16,
+    "selected_edges": [
+      {
+        "index": 45,
+        "length_mm": 12.32882800593796,
+        "midpoint_mm": [
+          -32.74248336946931,
+          27.98872505420396,
+          74.01879157632673
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 37.616112026735294
+      },
+      {
+        "index": 11,
+        "length_mm": 12.322615568305995,
+        "midpoint_mm": [
+          -42.163007025489875,
+          11.452564530516895,
+          71.02179016431417
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 93.01645953706401
+      },
+      {
+        "index": 51,
+        "length_mm": 11.313708498984766,
+        "midpoint_mm": [
+          -37.19454573829477,
+          26.5,
+          71.05545426170524
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 125.26438968275465
+      },
+      {
+        "index": 77,
+        "length_mm": 11.313708498984761,
+        "midpoint_mm": [
+          -35.49454573829468,
+          26.5,
+          71.05545426170531
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 125.26438968275465
+      },
+      {
+        "index": 83,
+        "length_mm": 11.313708498984758,
+        "midpoint_mm": [
+          -37.00210552391806,
+          25.0,
+          71.04789447608195
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 54.735610317245346
+      },
+      {
+        "index": 53,
+        "length_mm": 11.313708498984756,
+        "midpoint_mm": [
+          -38.70210552391768,
+          25.0,
+          71.04789447608232
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 54.735610317245346
+      }
+    ],
+    "straight_edge_count": 41,
+    "source_volume_mm3": 1178.5367614716072,
+    "result_volume_mm3": 1177.2872778836602,
+    "removed_volume_mm3": 1.2494835879469974,
+    "valid": true,
+    "solids": 1,
+    "mirrored_from": "P38"
+  }
+}

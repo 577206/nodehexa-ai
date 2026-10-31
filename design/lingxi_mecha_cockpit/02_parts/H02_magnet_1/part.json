@@ -1,0 +1,19 @@
+{
+  "id": "H02",
+  "slug": "magnet_1",
+  "title": "磁铁占位",
+  "category": "hardware",
+  "material": "metal",
+  "folder": "02_parts/H02_magnet_1",
+  "stl": "02_parts/H02_magnet_1/H02_assembly.stl",
+  "volume_mm3": 56.549,
+  "size_mm": [
+    6.0,
+    5.996,
+    2.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}

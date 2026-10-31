@@ -1,0 +1,28 @@
+{
+  "parts": 121,
+  "categories": {
+    "clear_sheet": 12,
+    "fdm": 69,
+    "translucent": 2,
+    "hardware": 38
+  },
+  "valid_single_solids": 121,
+  "chamfered_parts": 23,
+  "mesh_errors": 0,
+  "mesh_warnings": 31,
+  "mesh_triangles": 103360,
+  "rigid_overlap_pairs": 64,
+  "visual_review": [
+    "01_assembled.png",
+    "02_front.png",
+    "03_right.png",
+    "review_random.png",
+    "review_wire.png"
+  ],
+  "warnings_accepted_for": "appearance review only, not print release",
+  "source_hashes": {
+    "06_tools/build_r05.py": "ec9ceb145f8bf2e6d3f73be1f65002bbc98320c0f5923464187d2738a92b5a79",
+    "06_tools/cad_edge_break_r05.py": "49536d509310cc2bb5402f97afd5ea2c9754f1c7ab50e5af56830e628c2cdabd",
+    "06_tools/render_r05.py": "3b1c2633d1d652c78163d3e0606803a990d93f344e7e1664e1c022cd3b731eff"
+  }
+}

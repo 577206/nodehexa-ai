@@ -1,0 +1,26 @@
+{
+  "id": "P19",
+  "slug": "camera_bezel",
+  "title": "橙色前摄像头框",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P19_camera_bezel",
+  "stl": "02_parts/P19_camera_bezel/P19_assembly.stl",
+  "volume_mm3": 1743.571,
+  "size_mm": [
+    24.0,
+    5.0,
+    20.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "11.6 mm 光孔和 M2 孔为待校准尺寸。",
+  "print_axis": [
+    [
+      1,
+      0,
+      0
+    ],
+    90
+  ]
+}

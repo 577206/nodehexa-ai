@@ -1,0 +1,380 @@
+[
+  {
+    "id": "TKRC-BodyBackWall",
+    "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1492.5942144146138,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        26.0,
+        33.650001525878906,
+        3.0
+      ]
+    ],
+    "triangles": 1788,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodyButtom-18650-2S",
+    "sha256": "f53baa27ee72213fc48ac95b0c4fe8a3a04d4571777c1b746b35cc95e9dc6622",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 10637.645741375214,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        10.629073143005371
+      ],
+      [
+        130.3431396484375,
+        9.0,
+        88.97222137451172
+      ]
+    ],
+    "triangles": 6128,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodyButtom",
+    "sha256": "04c93b62fec95a18120aea06341d8dc67fb5255d0dc33a40fed246ca1bb3c13e",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 11191.027610738443,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        10.629073143005371
+      ],
+      [
+        130.3431396484375,
+        9.0,
+        88.97222137451172
+      ]
+    ],
+    "triangles": 5932,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodyCenter-Thin",
+    "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 4216.786487265175,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        96.67157745361328,
+        6.0,
+        44.34314727783203
+      ]
+    ],
+    "triangles": 3790,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodyCenter",
+    "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 4890.11185587066,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        96.67157745361328,
+        6.0,
+        44.34314727783203
+      ]
+    ],
+    "triangles": 3242,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodySideWall",
+    "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 4858.047138714369,
+    "bounds_xyz_mm": [
+      [
+        0.010248273611068726,
+        0.0,
+        0.0
+      ],
+      [
+        105.02277374267578,
+        33.650001525878906,
+        6.0
+      ]
+    ],
+    "triangles": 11524,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-BodyTop",
+    "sha256": "f279c669c215535969bb5389c552f16acf65f12d5bef4ac18376a8fe9bac88de",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 8993.67339196019,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        134.80905151367188,
+        3.0,
+        74.34314727783203
+      ]
+    ],
+    "triangles": 4670,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-FootButtom",
+    "sha256": "4e92df197b429b663af76ab7b7d65343ee9da9ef6d9d0bfe9ec332c3f4183371",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1559.4238174111294,
+    "bounds_xyz_mm": [
+      [
+        0.027999281883239746,
+        0.0,
+        12.934981346130371
+      ],
+      [
+        67.0,
+        3.0,
+        27.89666748046875
+      ]
+    ],
+    "triangles": 1904,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-FootGround",
+    "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2529.0520313504617,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        39.5,
+        65.04774475097656,
+        3.0
+      ]
+    ],
+    "triangles": 2212,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-FootTip",
+    "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 494.34668578300267,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        10.0,
+        11.5,
+        10.0
+      ]
+    ],
+    "triangles": 4648,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-FootTop",
+    "sha256": "192adf2ca8efe196065845e5b630794e5a954a31d7c50a7b973232808fa369d0",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1867.5341605677165,
+    "bounds_xyz_mm": [
+      [
+        0.008413568139076233,
+        0.0,
+        0.016141217201948166
+      ],
+      [
+        77.0,
+        3.0,
+        14.983858108520508
+      ]
+    ],
+    "triangles": 2336,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-JointCross",
+    "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2078.525472226523,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        41.35468673706055,
+        3.8999998569488525,
+        41.35468673706055
+      ]
+    ],
+    "triangles": 1912,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-JointDown",
+    "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1004.5919153177009,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        25.025062561035156,
+        6.0,
+        15.0
+      ]
+    ],
+    "triangles": 1600,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-JointTop",
+    "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1110.569686750481,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        32.22916793823242,
+        6.0,
+        15.0
+      ]
+    ],
+    "triangles": 1514,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-LegBottom",
+    "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 3715.5840836842285,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        2.6020852139652106e-15,
+        0.0
+      ],
+      [
+        65.0,
+        6.0,
+        21.5
+      ]
+    ],
+    "triangles": 2816,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-LegTop",
+    "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 2189.680312041902,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        63.79999923706055,
+        4.599999904632568,
+        20.600000381469727
+      ]
+    ],
+    "triangles": 2312,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-ThighBottom",
+    "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1975.3428901604038,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        8.673617379884035e-16,
+        0.0
+      ],
+      [
+        35.0,
+        6.0,
+        20.5
+      ]
+    ],
+    "triangles": 1420,
+    "physical_fit_verified": false
+  },
+  {
+    "id": "TKRC-ThighTop",
+    "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183",
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_mm3": 1623.0184958874886,
+    "bounds_xyz_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        34.39999771118164,
+        7.159999847412109,
+        20.600000381469727
+      ]
+    ],
+    "triangles": 1374,
+    "physical_fit_verified": false
+  }
+]

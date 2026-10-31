@@ -1,0 +1,20 @@
+{
+  "id": "H02",
+  "slug": "lens_glass",
+  "title": "凹入镜片外观占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R05/H02_lens_glass",
+  "stl": "02_parts/R05/H02_lens_glass/H02_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 9.531,
+  "size_mm": [
+    6.359,
+    0.3,
+    6.359
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "G02",
+  "slug": "visor_1R",
+  "title": "舱罩折面 1R",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R06/G02_visor_1R",
+  "stl": "02_parts/R06/G02_visor_1R/G02_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 45.174,
+  "size_mm": [
+    10.574,
+    8.705,
+    6.694
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

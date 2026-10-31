@@ -1,0 +1,74 @@
+{
+  "id": "P60",
+  "slug": "front_cheek_shield1",
+  "title": "前脸独立打孔颊甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R06/P60_front_cheek_shield1",
+  "stl": "02_parts/R06/P60_front_cheek_shield1/P60_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 624.63,
+  "size_mm": [
+    16.5,
+    9.275,
+    21.5
+  ],
+  "edge_break_mm": 0.35,
+  "notes": "",
+  "edge_break_details": {
+    "eligible": true,
+    "applied": true,
+    "partial": true,
+    "size_mm": 0.35,
+    "strategy": "partial_greedy_outer_edges",
+    "selected_edge_count": 3,
+    "eligible_edge_count": 4,
+    "attempt_count": 10,
+    "selected_edges": [
+      {
+        "index": 6,
+        "length_mm": 17.439263207904403,
+        "midpoint_mm": [
+          28.79978744228999,
+          -51.644326356827776,
+          22.498937211449938
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 88.7590251256743
+      },
+      {
+        "index": 33,
+        "length_mm": 17.439263207904403,
+        "midpoint_mm": [
+          28.79978744228999,
+          -49.24432635682777,
+          22.498937211449938
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 91.2409748743257
+      },
+      {
+        "index": 1,
+        "length_mm": 5.755486512884895,
+        "midpoint_mm": [
+          26.79842187892266,
+          -48.24967776624662,
+          12.492109394613307
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 80.38517065354846
+      }
+    ],
+    "straight_edge_count": 16,
+    "source_volume_mm3": 627.1536190388273,
+    "result_volume_mm3": 624.6301112534679,
+    "removed_volume_mm3": 2.5235077853593566,
+    "valid": true,
+    "solids": 1
+  }
+}

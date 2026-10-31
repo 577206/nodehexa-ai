@@ -1,0 +1,20 @@
+{
+  "id": "P41",
+  "slug": "roof_inset",
+  "title": "顶部凹槽内衬",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/P41_roof_inset",
+  "stl": "02_parts/R06/P41_roof_inset/P41_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 202.176,
+  "size_mm": [
+    23.4,
+    14.4,
+    0.6
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

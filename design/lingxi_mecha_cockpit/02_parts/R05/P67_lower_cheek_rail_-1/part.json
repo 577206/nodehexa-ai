@@ -1,0 +1,20 @@
+{
+  "id": "P67",
+  "slug": "lower_cheek_rail_-1",
+  "title": "前侧下段舱罩护轨",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P67_lower_cheek_rail_-1",
+  "stl": "02_parts/R05/P67_lower_cheek_rail_-1/P67_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 298.62,
+  "size_mm": [
+    9.478,
+    10.089,
+    15.8
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

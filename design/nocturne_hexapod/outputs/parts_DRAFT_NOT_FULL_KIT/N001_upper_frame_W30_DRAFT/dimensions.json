@@ -1,0 +1,21 @@
+{
+  "id": "N001_upper_frame_W30_DRAFT",
+  "units": "mm",
+  "bbox_mm": [
+    134.80905151367188,
+    104.34314727783203,
+    3.0
+  ],
+  "CAD_solids": 1,
+  "CAD_valid": true,
+  "STL_watertight": true,
+  "STL_winding_consistent": true,
+  "mesh_volume_mm3": 9713.672670902743,
+  "CAD_volume_mm3": 9713.672629273471,
+  "status": "prototype_for_review_not_production",
+  "physical_fit_verified": false,
+  "files": [
+    "N001_upper_frame_W30_DRAFT.step",
+    "N001_upper_frame_W30_DRAFT.stl"
+  ]
+}

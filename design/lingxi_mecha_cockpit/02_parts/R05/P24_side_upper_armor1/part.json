@@ -1,0 +1,110 @@
+{
+  "id": "P24",
+  "slug": "side_upper_armor1",
+  "title": "侧面上层梯形拼甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P24_side_upper_armor1",
+  "stl": "02_parts/R05/P24_side_upper_armor1/P24_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 487.675,
+  "size_mm": [
+    8.784,
+    23.335,
+    16.0
+  ],
+  "edge_break_mm": 0.25,
+  "notes": "顺主体折面；独立嵌甲、两道真实浅刻线；不是平面贴片。",
+  "edge_break_details": {
+    "eligible": true,
+    "applied": true,
+    "partial": true,
+    "size_mm": 0.25,
+    "strategy": "partial_greedy_outer_edges",
+    "selected_edge_count": 6,
+    "eligible_edge_count": 12,
+    "attempt_count": 20,
+    "selected_edges": [
+      {
+        "index": 29,
+        "length_mm": 16.0,
+        "midpoint_mm": [
+          46.04375,
+          7.0,
+          63.5
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 66.37062226934319
+      },
+      {
+        "index": 27,
+        "length_mm": 12.9364809381261,
+        "midpoint_mm": [
+          48.33708669149314,
+          -3.9953785358277725,
+          58.2580875623014
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 78.52959011033845
+      },
+      {
+        "index": 46,
+        "length_mm": 9.428118267316128,
+        "midpoint_mm": [
+          49.01246524084662,
+          1.7407785294375921,
+          56.71436516377915
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 67.7872055076262
+      },
+      {
+        "index": 64,
+        "length_mm": 9.428118267316128,
+        "midpoint_mm": [
+          48.91577952110911,
+          1.439550388379586,
+          55.563932523179176
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 112.2127944923738
+      },
+      {
+        "index": 39,
+        "length_mm": 9.428118267316126,
+        "midpoint_mm": [
+          49.515779518728955,
+          1.4395504038232183,
+          55.56393252861954
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 112.2127944923738
+      },
+      {
+        "index": 57,
+        "length_mm": 9.428118267316126,
+        "midpoint_mm": [
+          48.412465240926,
+          1.7407785289226005,
+          56.71436516359773
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 67.7872055076262
+      }
+    ],
+    "straight_edge_count": 16,
+    "source_volume_mm3": 488.5286930417621,
+    "result_volume_mm3": 487.67512281787657,
+    "removed_volume_mm3": 0.8535702238855265,
+    "valid": true,
+    "solids": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P08",
+  "slug": "eye_lightguide_R",
+  "title": "眼睛导光件",
+  "category": "translucent",
+  "material": "light",
+  "folder": "02_parts/P08_eye_lightguide_R",
+  "stl": "02_parts/P08_eye_lightguide_R/P08_assembly.stl",
+  "volume_mm3": 26.64,
+  "size_mm": [
+    18.0,
+    4.7,
+    7.8
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "乳白透光件，LED 发光是渲染表示，非自带电路。",
+  "print_axis": null
+}

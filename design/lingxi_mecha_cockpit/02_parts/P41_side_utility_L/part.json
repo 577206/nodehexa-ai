@@ -1,0 +1,26 @@
+{
+  "id": "P41",
+  "slug": "side_utility_L",
+  "title": "左侧黑色检修面板",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P41_side_utility_L",
+  "stl": "02_parts/P41_side_utility_L/P41_assembly.stl",
+  "volume_mm3": 473.294,
+  "size_mm": [
+    2.2,
+    22.523,
+    12.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

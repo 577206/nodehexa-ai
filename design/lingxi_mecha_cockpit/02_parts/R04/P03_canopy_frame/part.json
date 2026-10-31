@@ -1,0 +1,20 @@
+{
+  "id": "P03",
+  "slug": "canopy_frame",
+  "title": "多折面舱罩承托框",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R04/P03_canopy_frame",
+  "stl": "02_parts/R04/P03_canopy_frame/P03_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 3101.271,
+  "size_mm": [
+    69.0,
+    47.3,
+    55.4
+  ],
+  "edge_break_mm": 0,
+  "notes": "外侧窄压框及片间接缝；独立透明薄片需要实物固定验证。"
+}

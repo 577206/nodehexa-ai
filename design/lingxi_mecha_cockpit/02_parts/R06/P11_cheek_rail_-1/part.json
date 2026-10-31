@@ -1,0 +1,21 @@
+{
+  "id": "P11",
+  "slug": "cheek_rail_-1",
+  "title": "前侧上段舱罩护轨",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R06/P11_cheek_rail_-1",
+  "stl": "02_parts/R06/P11_cheek_rail_-1/P11_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1066.118,
+  "size_mm": [
+    17.3,
+    34.367,
+    31.4
+  ],
+  "edge_break_mm": 0,
+  "notes": "",
+  "receiving_pockets_applied": true
+}

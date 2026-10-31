@@ -1,0 +1,19 @@
+{
+  "id": "P34",
+  "slug": "dock_cassette",
+  "title": "四触点底部接触盒",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P34_dock_cassette",
+  "stl": "02_parts/P34_dock_cassette/P34_assembly.stl",
+  "volume_mm3": 2198.248,
+  "size_mm": [
+    50.0,
+    26.0,
+    2.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "触点和磁铁是外购件；机器人侧孔距未确认。",
+  "print_axis": null
+}

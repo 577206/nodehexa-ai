@@ -1,0 +1,20 @@
+{
+  "id": "H67",
+  "slug": "side_fastener_67",
+  "title": "侧甲贴面螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R05/H67_side_fastener_67",
+  "stl": "02_parts/R05/H67_side_fastener_67/H67_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 11.33,
+  "size_mm": [
+    2.533,
+    3.76,
+    3.893
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

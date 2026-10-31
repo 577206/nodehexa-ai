@@ -1,0 +1,23 @@
+{
+  "id": "P69",
+  "slug": "wraparound_cheek_bridge-1",
+  "title": "连续包角过渡颊甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R06/P69_wraparound_cheek_bridge-1",
+  "stl": "02_parts/R06/P69_wraparound_cheek_bridge-1/P69_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 643.463,
+  "size_mm": [
+    12.55,
+    43.0,
+    26.0
+  ],
+  "edge_break_mm": 0,
+  "notes": "",
+  "edge_break_details": {
+    "mirrored_from": "P68"
+  }
+}

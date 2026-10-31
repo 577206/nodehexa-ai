@@ -1,0 +1,26 @@
+{
+  "id": "P21",
+  "slug": "side_armor_R",
+  "title": "侧面层叠装甲",
+  "category": "fdm",
+  "material": "gray",
+  "folder": "02_parts/P21_side_armor_R",
+  "stl": "02_parts/P21_side_armor_R/P21_assembly.stl",
+  "volume_mm3": 3994.262,
+  "size_mm": [
+    3.0,
+    49.0,
+    36.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "G10",
+  "slug": "visor_4C",
+  "title": "舱罩折面 4C",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R04/G10_visor_4C",
+  "stl": "02_parts/R04/G10_visor_4C/G10_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 270.394,
+  "size_mm": [
+    35.563,
+    13.737,
+    8.818
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "P06",
+  "slug": "eye_carrier",
+  "title": "双眼灯板承托",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P06_eye_carrier",
+  "stl": "02_parts/P06_eye_carrier/P06_assembly.stl",
+  "volume_mm3": 1556.813,
+  "size_mm": [
+    58.0,
+    8.7,
+    13.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "承托面已建；LED PCB 规格未定。",
+  "print_axis": null
+}

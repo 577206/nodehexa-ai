@@ -1,0 +1,26 @@
+{
+  "id": "P23",
+  "slug": "hinge_disc_R",
+  "title": "侧圆形轴盖 R",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P23_hinge_disc_R",
+  "stl": "02_parts/P23_hinge_disc_R/P23_assembly.stl",
+  "volume_mm3": 1219.189,
+  "size_mm": [
+    3.0,
+    22.986,
+    23.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

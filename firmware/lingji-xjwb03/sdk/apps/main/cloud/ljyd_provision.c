@@ -9,6 +9,8 @@
 #include "qm_wifi_dev.h"
 #include "qm_work.h"
 
+#include "esp_netif.h"
+
 #include <string.h>
 
 #define LOG_TAG "provision"
@@ -204,12 +206,25 @@ static void provision_wifi_event_handler(void *arg, qm_event_base_t event_base,
             (void)qm_wifi_connect();
             break;
         case QM_WIFI_EVENT_STA_GOT_IP:
-            QM_LOGI(LOG_TAG, "wifi got ip");
+        {
+            esp_netif_t *station = esp_netif_get_handle_from_ifkey("WIFI_STA_DEF");
+            esp_netif_ip_info_t info;
+            if (station != NULL && esp_netif_get_ip_info(station, &info) == ESP_OK) {
+                QM_LOGI(LOG_TAG, "wifi got ip " IPSTR "; LAN bridge port 8766",
+                        IP2STR(&info.ip));
+            } else {
+                QM_LOGI(LOG_TAG, "wifi got ip; LAN bridge port 8766");
+            }
+#if !CONFIG_NODEHEXA_QWEN_DIRECT
             ljyd_cloud_on_network_up();
+#endif
             break;
+        }
         case QM_WIFI_EVENT_STA_DISCONNECTED:
             QM_LOGW(LOG_TAG, "wifi disconnected");
+#if !CONFIG_NODEHEXA_QWEN_DIRECT
             ljyd_cloud_on_network_down();
+#endif
             (void)qm_wifi_connect();
             break;
         default:

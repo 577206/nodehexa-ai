@@ -1,0 +1,26 @@
+{
+  "id": "P03",
+  "slug": "lower_visor",
+  "title": "透明舱盖下片",
+  "category": "clear_sheet",
+  "material": "glass",
+  "folder": "02_parts/P03_lower_visor",
+  "stl": "02_parts/P03_lower_visor/P03_assembly.stl",
+  "volume_mm3": 1482.0,
+  "size_mm": [
+    62.0,
+    14.0,
+    26.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "平面透明片模板；厚度占位 1 mm，可按轮廓裁片；视线在镜片下方。",
+  "print_axis": [
+    [
+      1,
+      0,
+      0
+    ],
+    -63.435
+  ]
+}

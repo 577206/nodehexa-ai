@@ -10,6 +10,7 @@
 #include "agent_app.h"
 #include "agent_arbiter.h"
 #include "robot_link.h"
+#include "direct_audio.h"
 #include "ljyd_cloud.h"
 #include "ljyd_provision.h"
 #include "iot_control.h"
@@ -22,6 +23,7 @@
 #if defined(CONFIG_APP_CAMERA_TEST) && CONFIG_APP_CAMERA_TEST
 #include "bsp_camera.h"
 #include "vision_bridge.h"
+#include "wifi_bridge.h"
 #endif
 
 #if defined(CONFIG_QM_ALARM_SUPPORT) && CONFIG_QM_ALARM_SUPPORT
@@ -105,6 +107,20 @@ void qm_application_start(void)
 #endif
     return;
 #endif
+#if CONFIG_NODEHEXA_QWEN_DIRECT
+    /* Hardware audio and saved Wi-Fi only: no Lingji cloud/Agent session. */
+    if (direct_audio_init() != 0) {
+        QM_LOGE("main", "direct audio init failed");
+        return;
+    }
+    if (ljyd_provision_init() != QM_EOK) QM_LOGE("main", "Wi-Fi init failed");
+    if (robot_link_init() != 0) QM_LOGE("main", "robot UART init failed");
+    if (wifi_bridge_init() != 0) QM_LOGE("main", "LAN bridge init failed");
+    if (bsp_camera_is_available() && bsp_camera_stream_start() != ESP_OK)
+        QM_LOGE("main", "camera stream init failed");
+    QM_LOGI("main", "direct Qwen profile; Lingji cloud Agent disabled");
+    return;
+#endif
 #if defined(CONFIG_LJYD_PLAYBACK_SUPPORT) && CONFIG_LJYD_PLAYBACK_SUPPORT
     if (playback_init() != QM_EOK) {
         QM_LOGE("main", "playback init failed");
@@ -137,6 +153,12 @@ void qm_application_start(void)
     if (robot_link_init() != 0) {
         QM_LOGE("main", "robot UART link init failed");
     }
+
+#if defined(CONFIG_APP_CAMERA_TEST) && CONFIG_APP_CAMERA_TEST
+    if (wifi_bridge_init() != 0) {
+        QM_LOGE("main", "LAN vision bridge init failed");
+    }
+#endif
 
 #if defined(CONFIG_QM_ALARM_SUPPORT) && CONFIG_QM_ALARM_SUPPORT
     /* 闹钟：开机即初始化（不要求已联网）。云端同步与响铃行为注册都在模块内部完成。 */

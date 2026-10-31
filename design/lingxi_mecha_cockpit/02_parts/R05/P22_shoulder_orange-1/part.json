@@ -1,0 +1,111 @@
+{
+  "id": "P22",
+  "slug": "shoulder_orange-1",
+  "title": "折角橙色肩部护架",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R05/P22_shoulder_orange-1",
+  "stl": "02_parts/R05/P22_shoulder_orange-1/P22_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 669.618,
+  "size_mm": [
+    23.838,
+    38.227,
+    25.0
+  ],
+  "edge_break_mm": 0.35,
+  "notes": "",
+  "edge_break_details": {
+    "eligible": true,
+    "applied": true,
+    "partial": true,
+    "size_mm": 0.35,
+    "strategy": "partial_greedy_outer_edges",
+    "selected_edge_count": 6,
+    "eligible_edge_count": 9,
+    "attempt_count": 16,
+    "selected_edges": [
+      {
+        "index": 44,
+        "length_mm": 16.924178431187514,
+        "midpoint_mm": [
+          -37.20621836106225,
+          -1.3354084042557055,
+          76.56129429451286
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 125.48113160949498
+      },
+      {
+        "index": 48,
+        "length_mm": 13.547255172813141,
+        "midpoint_mm": [
+          -34.083002378072216,
+          1.3399524385558197,
+          80.6669976219278
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 45.07144119563472
+      },
+      {
+        "index": 24,
+        "length_mm": 11.572965238359787,
+        "midpoint_mm": [
+          -46.934634354862595,
+          -20.074403828450638,
+          61.006550046028345
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 98.2727506934486
+      },
+      {
+        "index": 22,
+        "length_mm": 11.303685939511192,
+        "midpoint_mm": [
+          -46.763698630136986,
+          -22.589041095890412,
+          61.397260273972606
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 40.50435974643507
+      },
+      {
+        "index": 12,
+        "length_mm": 11.171666055203207,
+        "midpoint_mm": [
+          -44.83823089505561,
+          -24.382350497253114,
+          61.52941860769128
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 42.44726344924226
+      },
+      {
+        "index": 51,
+        "length_mm": 4.895867130228126,
+        "midpoint_mm": [
+          -37.76557428290347,
+          8.832705994097298,
+          75.77819600393514
+        ],
+        "outward": true,
+        "convex": true,
+        "angle_deg": 118.9220594571877
+      }
+    ],
+    "straight_edge_count": 30,
+    "source_volume_mm3": 672.9869664728144,
+    "result_volume_mm3": 669.6184108174743,
+    "removed_volume_mm3": 3.36855565534006,
+    "valid": true,
+    "solids": 1,
+    "mirrored_from": "P20"
+  }
+}

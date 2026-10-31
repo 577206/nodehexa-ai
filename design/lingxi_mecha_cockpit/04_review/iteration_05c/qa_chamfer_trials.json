@@ -1,0 +1,1246 @@
+{
+  "source_blend": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/lingxi_mecha_cockpit/03_assembly/Lingxi_Cockpit_R05_review.blend",
+  "source_mtime": 1793336383.1453922,
+  "method": "Separate in-memory clones, no model saves. Bidirectional vertex and triangle-centroid sampled surface distance, not exact Hausdorff.",
+  "objects": {
+    "SM_P25_side_lower_armor1": [
+      {
+        "angle_rad": 0,
+        "deviation_sampled_mm": 0.008458219781459775,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=30 zero-len edges=0",
+            "SM_P25_side_lower_armor1: duplicate verts=17 loose verts=0",
+            "z-fighting: SM_P25_side_lower_armor1 (19 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P25_side_lower_armor1",
+              "tri_pairs": 19
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1184,
+              "faces": 2372,
+              "tris": 2372,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 30,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 17,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.003,
+        "deviation_sampled_mm": 0.008464163329335861,
+        "volume_change_percent": 3.1983273648766267e-06,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=25 zero-len edges=0",
+            "SM_P25_side_lower_armor1: duplicate verts=17 loose verts=0",
+            "z-fighting: SM_P25_side_lower_armor1 (15 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P25_side_lower_armor1",
+              "tri_pairs": 15
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1164,
+              "faces": 1214,
+              "tris": 2332,
+              "ngons": 25,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 25,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 17,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "deviation_sampled_mm": 0.008464163329335861,
+        "volume_change_percent": 8.71381816294218e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=14 zero-len edges=0",
+            "SM_P25_side_lower_armor1: duplicate verts=16 loose verts=0",
+            "z-fighting: SM_P25_side_lower_armor1 (7 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P25_side_lower_armor1",
+              "tri_pairs": 7
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1160,
+              "faces": 1048,
+              "tris": 2324,
+              "ngons": 29,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 14,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 16,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 5e-06,
+        "deviation_sampled_mm": 0.016664815120748244,
+        "volume_change_percent": -0.004060205640499141,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=8 zero-len edges=0",
+            "SM_P25_side_lower_armor1: duplicate verts=10 loose verts=0",
+            "z-fighting: SM_P25_side_lower_armor1 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P25_side_lower_armor1",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1153,
+              "faces": 1042,
+              "tris": 2310,
+              "ngons": 27,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 8,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 10,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 1e-05,
+        "deviation_sampled_mm": 0.016664815120748244,
+        "volume_change_percent": -0.0019777644781282227,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=1 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1141,
+              "faces": 1037,
+              "tris": 2286,
+              "ngons": 23,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 1,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 2e-05,
+        "deviation_sampled_mm": 0.018087819626089185,
+        "volume_change_percent": 9.225670087515397e-06,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P25_side_lower_armor1: degenerate faces=3 zero-len edges=0",
+            "z-fighting: SM_P25_side_lower_armor1 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P25_side_lower_armor1",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P25_side_lower_armor1": {
+              "verts": 1131,
+              "faces": 1035,
+              "tris": 2266,
+              "ngons": 26,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 3,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_P27_side_lower_armor-1": [
+      {
+        "angle_rad": 0,
+        "deviation_sampled_mm": 0.01666437128733378,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=30 zero-len edges=0",
+            "SM_P27_side_lower_armor-1: duplicate verts=17 loose verts=0",
+            "z-fighting: SM_P27_side_lower_armor-1 (19 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P27_side_lower_armor-1",
+              "tri_pairs": 19
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1184,
+              "faces": 2372,
+              "tris": 2372,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 30,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 17,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.003,
+        "deviation_sampled_mm": 0.009566951121087186,
+        "volume_change_percent": 2.5336292726739532e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=25 zero-len edges=0",
+            "SM_P27_side_lower_armor-1: duplicate verts=17 loose verts=0",
+            "z-fighting: SM_P27_side_lower_armor-1 (14 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P27_side_lower_armor-1",
+              "tri_pairs": 14
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1166,
+              "faces": 1214,
+              "tris": 2336,
+              "ngons": 24,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 25,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 17,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "deviation_sampled_mm": 0.009566951121087186,
+        "volume_change_percent": 7.19738589685051e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=14 zero-len edges=0",
+            "SM_P27_side_lower_armor-1: duplicate verts=16 loose verts=0",
+            "z-fighting: SM_P27_side_lower_armor-1 (7 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P27_side_lower_armor-1",
+              "tri_pairs": 7
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1162,
+              "faces": 1048,
+              "tris": 2328,
+              "ngons": 28,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 14,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 16,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 5e-06,
+        "deviation_sampled_mm": 0.016570096704526804,
+        "volume_change_percent": -0.005180318733609005,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=4 zero-len edges=0",
+            "SM_P27_side_lower_armor-1: duplicate verts=10 loose verts=0",
+            "z-fighting: SM_P27_side_lower_armor-1 (2 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P27_side_lower_armor-1",
+              "tri_pairs": 2
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1153,
+              "faces": 1040,
+              "tris": 2310,
+              "ngons": 27,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 4,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 10,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 1e-05,
+        "deviation_sampled_mm": 0.01138193783845054,
+        "volume_change_percent": -0.00763545635452294,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=4 zero-len edges=0"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1141,
+              "faces": 1034,
+              "tris": 2286,
+              "ngons": 26,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 4,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 2e-05,
+        "deviation_sampled_mm": 0.018087819626089185,
+        "volume_change_percent": -0.007400307259362122,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P27_side_lower_armor-1: degenerate faces=2 zero-len edges=0",
+            "z-fighting: SM_P27_side_lower_armor-1 (1 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.01 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.01,
+          "zfighting": [
+            {
+              "where": "SM_P27_side_lower_armor-1",
+              "tri_pairs": 1
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P27_side_lower_armor-1": {
+              "verts": 1133,
+              "faces": 1032,
+              "tris": 2270,
+              "ngons": 25,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 2,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_P68_diagonal_cheek_bridge1": [
+      {
+        "angle_rad": 0,
+        "deviation_sampled_mm": 3.4142850324769825e-05,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=230 zero-len edges=0",
+            "SM_P68_diagonal_cheek_bridge1: duplicate verts=55 loose verts=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (57 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 57
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 345,
+              "faces": 686,
+              "tris": 686,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 230,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 55,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.003,
+        "deviation_sampled_mm": 0.0036787218959943857,
+        "volume_change_percent": 1.7851686496616314e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=198 zero-len edges=0",
+            "SM_P68_diagonal_cheek_bridge1: duplicate verts=54 loose verts=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (40 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 40
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 337,
+              "faces": 506,
+              "tris": 670,
+              "ngons": 14,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 198,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 54,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "deviation_sampled_mm": 0.0005205018283049867,
+        "volume_change_percent": 0.00011329481451993527,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=170 zero-len edges=0",
+            "SM_P68_diagonal_cheek_bridge1: duplicate verts=53 loose verts=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (34 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 34
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 333,
+              "faces": 449,
+              "tris": 662,
+              "ngons": 22,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 170,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 53,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 5e-06,
+        "deviation_sampled_mm": 0.0017951647350855637,
+        "volume_change_percent": 0.00018063669751893567,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: 1 edges with inconsistent face winding",
+            "SM_P68_diagonal_cheek_bridge1: non-manifold edges=1 wire=0",
+            "SM_P68_diagonal_cheek_bridge1: 2 open boundary edges (not watertight)",
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=112 zero-len edges=0",
+            "SM_P68_diagonal_cheek_bridge1: duplicate verts=28 loose verts=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (10 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 10
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 298,
+              "faces": 406,
+              "tris": 591,
+              "ngons": 23,
+              "boundary_edges": 2,
+              "nonmanifold_edges": 1,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 112,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 1,
+              "duplicate_verts": 28,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 1e-05,
+        "deviation_sampled_mm": 0.004200145667709876,
+        "volume_change_percent": 4.0625418394463164e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: 2 edges with inconsistent face winding",
+            "SM_P68_diagonal_cheek_bridge1: non-manifold edges=2 wire=0",
+            "SM_P68_diagonal_cheek_bridge1: 4 open boundary edges (not watertight)",
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=17 zero-len edges=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (3 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 3
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 237,
+              "faces": 320,
+              "tris": 468,
+              "ngons": 24,
+              "boundary_edges": 4,
+              "nonmanifold_edges": 2,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 17,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 2,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 2e-05,
+        "deviation_sampled_mm": 0.014409781215363182,
+        "volume_change_percent": 9.52615864438577e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P68_diagonal_cheek_bridge1: degenerate faces=3 zero-len edges=0",
+            "z-fighting: SM_P68_diagonal_cheek_bridge1 (2 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P68_diagonal_cheek_bridge1",
+              "tri_pairs": 2
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P68_diagonal_cheek_bridge1": {
+              "verts": 182,
+              "faces": 250,
+              "tris": 360,
+              "ngons": 24,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 3,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ],
+    "SM_P69_diagonal_cheek_bridge-1": [
+      {
+        "angle_rad": 0,
+        "deviation_sampled_mm": 0.0001096273862799535,
+        "volume_change_percent": 0.0,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=230 zero-len edges=0",
+            "SM_P69_diagonal_cheek_bridge-1: duplicate verts=55 loose verts=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (57 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 57
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 345,
+              "faces": 686,
+              "tris": 686,
+              "ngons": 0,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 230,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 55,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.003,
+        "deviation_sampled_mm": 0.000191046026998265,
+        "volume_change_percent": 7.2422066310423e-05,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=198 zero-len edges=0",
+            "SM_P69_diagonal_cheek_bridge-1: duplicate verts=54 loose verts=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (40 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 40
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 337,
+              "faces": 506,
+              "tris": 670,
+              "ngons": 14,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 198,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 54,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "deviation_sampled_mm": 0.0005191536729398649,
+        "volume_change_percent": 0.00016840870825711278,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=170 zero-len edges=0",
+            "SM_P69_diagonal_cheek_bridge-1: duplicate verts=53 loose verts=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (34 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 34
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 333,
+              "faces": 449,
+              "tris": 662,
+              "ngons": 22,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 0,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 170,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 0,
+              "duplicate_verts": 53,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 5e-06,
+        "deviation_sampled_mm": 0.0017937650227395352,
+        "volume_change_percent": 0.00024085886413447374,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: 1 edges with inconsistent face winding",
+            "SM_P69_diagonal_cheek_bridge-1: non-manifold edges=1 wire=0",
+            "SM_P69_diagonal_cheek_bridge-1: 2 open boundary edges (not watertight)",
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=113 zero-len edges=0",
+            "SM_P69_diagonal_cheek_bridge-1: duplicate verts=30 loose verts=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (12 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 12
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 298,
+              "faces": 407,
+              "tris": 591,
+              "ngons": 24,
+              "boundary_edges": 2,
+              "nonmanifold_edges": 1,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 113,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 1,
+              "duplicate_verts": 30,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 1e-05,
+        "deviation_sampled_mm": 0.005992541446175892,
+        "volume_change_percent": -0.0002361183449798752,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: 1 edges with inconsistent face winding",
+            "SM_P69_diagonal_cheek_bridge-1: non-manifold edges=1 wire=0",
+            "SM_P69_diagonal_cheek_bridge-1: 2 open boundary edges (not watertight)",
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=11 zero-len edges=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (2 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 2
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 231,
+              "faces": 313,
+              "tris": 457,
+              "ngons": 21,
+              "boundary_edges": 2,
+              "nonmanifold_edges": 1,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 11,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 1,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      },
+      {
+        "angle_rad": 0.01,
+        "merge_and_degenerate_distance_m": 2e-05,
+        "deviation_sampled_mm": 0.015196339518297464,
+        "volume_change_percent": -0.01033251276121282,
+        "qa": {
+          "ok": true,
+          "pass": false,
+          "errors": [
+            "SM_P69_diagonal_cheek_bridge-1: 1 edges with inconsistent face winding",
+            "SM_P69_diagonal_cheek_bridge-1: non-manifold edges=1 wire=0",
+            "SM_P69_diagonal_cheek_bridge-1: 4 open boundary edges (not watertight)",
+            "SM_P69_diagonal_cheek_bridge-1: degenerate faces=1 zero-len edges=0",
+            "z-fighting: SM_P69_diagonal_cheek_bridge-1 (2 overlapping coplanar tri pairs)"
+          ],
+          "warnings": [
+            "asset lowest point z=0.032 (not resting on ground plane z=0)"
+          ],
+          "ground_z": 0.032,
+          "zfighting": [
+            {
+              "where": "SM_P69_diagonal_cheek_bridge-1",
+              "tri_pairs": 2
+            }
+          ],
+          "floating": [],
+          "back_to_back": [],
+          "enclosed": [],
+          "objects": {
+            "SM_P69_diagonal_cheek_bridge-1": {
+              "verts": 181,
+              "faces": 243,
+              "tris": 355,
+              "ngons": 25,
+              "boundary_edges": 4,
+              "nonmanifold_edges": 1,
+              "wire_edges": 0,
+              "loose_verts": 0,
+              "degenerate_faces": 1,
+              "zero_length_edges": 0,
+              "inconsistent_normals_edges": 1,
+              "duplicate_verts": 0,
+              "islands": 1,
+              "inside_out_islands": 0,
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "materials": 1
+            }
+          }
+        }
+      }
+    ]
+  }
+}

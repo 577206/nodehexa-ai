@@ -1,0 +1,23 @@
+{
+  "id": "P27",
+  "slug": "side_lower_armor-1",
+  "title": "侧面下层收边拼甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "gray",
+  "folder": "02_parts/R05/P27_side_lower_armor-1",
+  "stl": "02_parts/R05/P27_side_lower_armor-1/P27_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 816.852,
+  "size_mm": [
+    9.517,
+    30.0,
+    16.0
+  ],
+  "edge_break_mm": 0,
+  "notes": "与上方检修带分缝，双孔贴面螺钉。",
+  "edge_break_details": {
+    "mirrored_from": "P25"
+  }
+}

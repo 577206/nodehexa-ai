@@ -1,0 +1,20 @@
+{
+  "id": "H06",
+  "slug": "screw_6",
+  "title": "侧甲螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R04/H06_screw_6",
+  "stl": "02_parts/R04/H06_screw_6/H06_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 9.883,
+  "size_mm": [
+    1.1,
+    3.6,
+    3.599
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

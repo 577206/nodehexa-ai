@@ -1,0 +1,21 @@
+{
+  "id": "P71",
+  "slug": "side_service_backing-1",
+  "title": "侧甲黑色检修底板",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/P71_side_service_backing-1",
+  "stl": "02_parts/R06/P71_side_service_backing-1/P71_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1463.904,
+  "size_mm": [
+    11.907,
+    43.0,
+    55.0
+  ],
+  "edge_break_mm": 0,
+  "notes": "连续贴合壳面，暴露部分形成真实装甲分缝。",
+  "receiving_pockets_applied": true
+}

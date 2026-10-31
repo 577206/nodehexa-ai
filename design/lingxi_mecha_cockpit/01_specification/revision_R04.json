@@ -1,0 +1,210 @@
+{
+  "revision": "R04",
+  "updated_local_date": "2026-10-29",
+  "backend": {
+    "name": "FreeCAD",
+    "reason": "CAD solids are authoritative; Blender imports their tessellation for review"
+  },
+  "units": "mm",
+  "phase": "appearance_review_prototype",
+  "status": "DRAFT_REVIEW_NOT_PRINT_RELEASE",
+  "reference_match": "partial_not_approved",
+  "print_assembly_ready": false,
+  "coordinate_system": {
+    "origin": "nominal body center at Z=0",
+    "x": "right",
+    "y": "rear / phone cradle",
+    "z": "up",
+    "front": "-Y",
+    "left_side": "-X",
+    "right_side": "+X"
+  },
+  "files": {
+    "cad_source": "06_tools/build_r04.py",
+    "assembly": "03_assembly/Lingxi_Cockpit_R04.FCStd",
+    "part_root": "02_parts/R04",
+    "manifest": "03_assembly/manifest_R04.json",
+    "blender_scene": "03_assembly/Lingxi_Cockpit_R04_review.blend",
+    "review_root": "04_review/iteration_04c",
+    "interference_report": "03_assembly/interference_R04.json",
+    "mesh_qa_report": "04_review/iteration_04c/blender_qa.json",
+    "historical_base_dependency": "03_assembly/Lingxi_Cockpit_R03.FCStd"
+  },
+  "specification_role": "Decision record only; current modeling parameters live in build_r04.py. parameters.json belongs to R03.",
+  "user_feedback": [
+    {
+      "request": "整体形状与精细度不符参考",
+      "state": "partially_addressed",
+      "implemented": [
+        "重做后扫前额与收紧下缘",
+        "护轨跟随舱罩坡段",
+        "侧甲随壳体收缩并分出轴盖下嵌甲",
+        "有效候选应用真实实体倒角"
+      ],
+      "remaining": "肩颊平面、装甲比例、接缝和细节密度仍有差距，未完成参考复原"
+    },
+    {
+      "request": "透明舱罩折面太少",
+      "state": "geometry_revised_not_fit_validated",
+      "implemented": [
+        "4纵向坡段×3横向面，共12片",
+        "每片边内退0.16mm，名义拼缝约0.32mm",
+        "真实横向接缝承托条"
+      ],
+      "remaining": "视觉层次继续对照；片材、紧固及实际装配缝未验证"
+    },
+    {
+      "request": "通风格栅应位于两侧",
+      "state": "relocated_interfaces_pending",
+      "implemented": [
+        "左右侧前格栅，灰框/黑百叶/橙鳍分件",
+        "主壳对应侧孔",
+        "模块中心前移至Y=-29mm"
+      ],
+      "remaining": "与主壳和护轨的避让及紧固未清理完"
+    }
+  ],
+  "decisions": {
+    "canopy": {
+      "longitudinal_segments": 4,
+      "panels_per_segment": 3,
+      "total_panels": 12,
+      "edge_inset_mm": 0.16,
+      "nominal_joint_gap_mm": 0.32
+    },
+    "vents": {
+      "positive_side_center_mm": [
+        51,
+        -29,
+        31
+      ],
+      "positive_side_rotation_z_deg": -28,
+      "normal_vectors": [
+        [
+          0.882948,
+          -0.469472,
+          0
+        ],
+        [
+          -0.882948,
+          -0.469472,
+          0
+        ]
+      ],
+      "direction": "side-facing with forward cant; 62 degrees from front"
+    },
+    "desktop_base": "Independent provisional assembly inherited from R03; hidden in main cockpit review views",
+    "dimensions": "All hardware fit dimensions remain unmeasured",
+    "colors": "Dark gray shell, black recesses, orange armor, smoked canopy"
+  },
+  "part_inventory": {
+    "total": 103,
+    "ids": {
+      "P": "P01-P59",
+      "G": "G01-G12",
+      "H": "H01-H32"
+    },
+    "categories": {
+      "clear_sheet": 12,
+      "fdm": 57,
+      "translucent": 2,
+      "hardware": 32
+    },
+    "is_released_print_inventory": false
+  },
+  "edge_breaks": {
+    "candidate_count": 19,
+    "applied_count": 14,
+    "applied": [
+      {
+        "id": "P12",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P13",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P14",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P17",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P20",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P22",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P38",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P39",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P40",
+        "size_mm": 0.25
+      },
+      {
+        "id": "P46",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P47",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P48",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P49",
+        "size_mm": 0.45
+      },
+      {
+        "id": "P51",
+        "size_mm": 0.45
+      }
+    ],
+    "policy": "Apply only when result is a valid positive-volume single solid; P10/P11 excluded after poor tessellation QA"
+  },
+  "validation": {
+    "cad": {
+      "all_valid_single_solids": true,
+      "count": 103
+    },
+    "blender_render_qa": {
+      "errors": 0,
+      "warnings": 27,
+      "warning_classes": [
+        "inconsistent face winding",
+        "degenerate faces",
+        "duplicate vertices",
+        "back-to-back faces",
+        "ground placement"
+      ]
+    },
+    "assembly": {
+      "status": "INTERFACES_NEED_REVIEW",
+      "intersecting_pairs": 76,
+      "minimum_overlap_volume_mm3": 0.05,
+      "hardware_excluded": true
+    },
+    "reports_refreshed_after_latest_manifest": true,
+    "not_validated": [
+      "hardware fit",
+      "clearance and wall thickness",
+      "retention and assembly paths",
+      "printability of complete kit",
+      "stability and load strength"
+    ]
+  },
+  "history": "R03 remains historical and supplies provisional desktop-base geometry; R03 print/STEP exports are not R04 releases."
+}

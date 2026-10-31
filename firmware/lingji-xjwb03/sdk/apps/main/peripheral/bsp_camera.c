@@ -39,6 +39,7 @@
 #define CAM_STREAM_STACK        (6 * 1024)
 #define CAM_STACK_CAPS          (MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT)
 #define CAM_JPEG_MAX_BYTES      (256 * 1024)
+#define CAM_JPEG_INITIAL_BYTES  (64 * 1024)
 #define CAM_SNAPSHOT_WAIT_MS    5000
 
 typedef struct {
@@ -393,19 +394,34 @@ esp_err_t bsp_camera_capture_jpeg(uint8_t **jpeg, size_t *jpeg_len)
     config.src_type = JPEG_PIXEL_FORMAT_CbYCrY;
     config.subsampling = JPEG_SUBSAMPLE_420;
     config.quality = 60;
-    if (jpeg_enc_open(&config, &encoder) != JPEG_ERR_OK) {
-        result = ESP_ERR_NO_MEM;
-        goto done;
+    /* Typical 240x320 frames are much smaller than 256 KiB. Avoid reserving
+     * the worst-case output buffer on every snapshot while retaining a safe
+     * retry for detailed/noisy scenes. Reopen the encoder for each attempt so
+     * a failed capacity check cannot leave its internal state half-used. */
+    for (size_t capacity = CAM_JPEG_INITIAL_BYTES;
+         capacity <= CAM_JPEG_MAX_BYTES; capacity *= 2U) {
+        if (jpeg_enc_open(&config, &encoder) != JPEG_ERR_OK) {
+            result = ESP_ERR_NO_MEM;
+            goto done;
+        }
+        output = heap_caps_aligned_alloc(16, capacity,
+                                         MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+        if (output == NULL) {
+            result = ESP_ERR_NO_MEM;
+            goto done;
+        }
+        encoded_len = 0;
+        if (jpeg_enc_process(encoder, s_snapshot_raw, (int)s_snapshot_raw_len,
+                             output, (int)capacity, &encoded_len) == JPEG_ERR_OK &&
+            encoded_len > 0) {
+            break;
+        }
+        (void)jpeg_enc_close(encoder);
+        encoder = NULL;
+        heap_caps_free(output);
+        output = NULL;
     }
-    output = heap_caps_aligned_alloc(16, CAM_JPEG_MAX_BYTES,
-                                     MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
     if (output == NULL) {
-        result = ESP_ERR_NO_MEM;
-        goto done;
-    }
-    if (jpeg_enc_process(encoder, s_snapshot_raw, (int)s_snapshot_raw_len,
-                         output, CAM_JPEG_MAX_BYTES, &encoded_len) != JPEG_ERR_OK ||
-        encoded_len <= 0) {
         result = ESP_FAIL;
         goto done;
     }

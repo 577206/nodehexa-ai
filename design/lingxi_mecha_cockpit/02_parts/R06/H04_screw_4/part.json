@@ -1,0 +1,20 @@
+{
+  "id": "H04",
+  "slug": "screw_4",
+  "title": "肩部贴面螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R06/H04_screw_4",
+  "stl": "02_parts/R06/H04_screw_4/H04_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 11.33,
+  "size_mm": [
+    3.096,
+    3.76,
+    3.71
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

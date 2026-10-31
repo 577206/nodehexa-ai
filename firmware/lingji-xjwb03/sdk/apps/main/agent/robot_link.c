@@ -29,13 +29,15 @@ typedef struct {
 
 /* The model never supplies movementMode, speed, duration, or raw JSON. */
 static const preset_t s_presets[] = {
-    {"forward", "{\"mode\":\"forward\",\"cycles\":1}"},
-    {"backward", "{\"mode\":\"backward\",\"cycles\":1}"},
-    {"turn_left", "{\"mode\":\"turn_left\",\"cycles\":0.5}"},
-    {"turn_right", "{\"mode\":\"turn_right\",\"cycles\":0.5}"},
-    {"shift_left", "{\"mode\":\"shift_left\",\"cycles\":0.5}"},
-    {"shift_right", "{\"mode\":\"shift_right\",\"cycles\":0.5}"},
+#include "robot_presets.inc"
 };
+
+unsigned robot_link_action_count(void) { return sizeof(s_presets)/sizeof(s_presets[0])+1; }
+const char *robot_link_action_name(unsigned index)
+{
+    unsigned count=sizeof(s_presets)/sizeof(s_presets[0]);
+    return index<count ? s_presets[index].name : index==count ? "stop" : NULL;
+}
 
 static atomic_bool s_online = ATOMIC_VAR_INIT(false);
 static atomic_bool s_bench = ATOMIC_VAR_INIT(false);
@@ -44,6 +46,46 @@ static atomic_uint s_tx_count = ATOMIC_VAR_INIT(0);
 static uint16_t s_pending_sequence;
 static QueueHandle_t s_commands;
 static atomic_bool s_stop_requested = ATOMIC_VAR_INIT(false);
+static atomic_uint s_ack_sequence = ATOMIC_VAR_INIT(0);
+static atomic_uint s_ack_action_index = ATOMIC_VAR_INIT(0);
+static atomic_bool s_ack_success = ATOMIC_VAR_INIT(false);
+
+robot_link_snapshot_t robot_link_snapshot(void)
+{
+    const unsigned index = atomic_load(&s_ack_action_index);
+    robot_link_snapshot_t result = {
+        .online = atomic_load(&s_online),
+        .bench = atomic_load(&s_bench),
+        .tx_count = atomic_load(&s_tx_count),
+        .rx_count = atomic_load(&s_rx_count),
+        .ack_sequence = atomic_load(&s_ack_sequence),
+        .ack_action = index == 1U ? "stop" :
+            index >= 2U && index - 2U < sizeof(s_presets) / sizeof(s_presets[0]) ?
+            s_presets[index - 2U].name : "",
+        .ack_success = atomic_load(&s_ack_success),
+    };
+    return result;
+}
+
+robot_link_result_t robot_link_request_action(const char *action)
+{
+    if (action == NULL) return ROBOT_LINK_INVALID;
+    if (!atomic_load(&s_online)) return ROBOT_LINK_OFFLINE;
+    if (strcmp(action, "stop") == 0) {
+        if (s_commands) xQueueReset(s_commands);
+        atomic_store(&s_stop_requested, true);
+        return ROBOT_LINK_QUEUED;
+    }
+    for (size_t i = 0; i < sizeof(s_presets) / sizeof(s_presets[0]); ++i) {
+        if (strcmp(action, s_presets[i].name) == 0) {
+            const preset_t *selected = &s_presets[i];
+            if (atomic_load(&s_bench)) return ROBOT_LINK_BENCH;
+            return s_commands && xQueueSend(s_commands, &selected, 0) == pdTRUE ?
+                   ROBOT_LINK_QUEUED : ROBOT_LINK_BUSY;
+        }
+    }
+    return ROBOT_LINK_INVALID;
+}
 
 static uint16_t crc16(const uint8_t *data, size_t length)
 {
@@ -157,6 +199,12 @@ static void link_task(void *arg)
                     const char *status = strstr(payload, "\"status\":\"success\"") ? "success" : "error";
                     qm_cli_printf("ROBOT-ACK seq=%u status=%s action=%s\r\n",
                                   command_sequence, status, pending_command);
+                    unsigned action_index = strcmp(pending_command, "stop") == 0 ? 1U : 0U;
+                    for (size_t i = 0; i < sizeof(s_presets) / sizeof(s_presets[0]); ++i)
+                        if (strcmp(pending_command, s_presets[i].name) == 0) action_index = (unsigned)i + 2U;
+                    atomic_store(&s_ack_action_index, action_index);
+                    atomic_store(&s_ack_success, strcmp(status, "success") == 0);
+                    atomic_fetch_add(&s_ack_sequence, 1);
                     pending_command = NULL;
                     atomic_fetch_add(&s_rx_count, 1);
                     last_reply = xTaskGetTickCount();
@@ -181,32 +229,12 @@ static void link_task(void *arg)
 static void link_cli(char *out, int out_len, int argc, char **argv)
 {
     if (argc == 3 && strcmp(argv[1], "action") == 0) {
-        if (!atomic_load(&s_online)) {
-            snprintf(out, out_len, "ROBOT-OFFLINE\r\n");
-            return;
-        }
-        if (strcmp(argv[2], "stop") == 0) {
-            if (s_commands) xQueueReset(s_commands);
-            atomic_store(&s_stop_requested, true);
-            snprintf(out, out_len, "ROBOT-QUEUED action=stop\r\n");
-            return;
-        }
-        for (size_t i = 0; i < sizeof(s_presets) / sizeof(s_presets[0]); ++i) {
-            if (strcmp(argv[2], s_presets[i].name) == 0) {
-                if (atomic_load(&s_bench)) {
-                    snprintf(out, out_len, "ROBOT-BENCH action=%s\r\n", argv[2]);
-                    return;
-                }
-                const preset_t *selected = &s_presets[i];
-                if (s_commands && xQueueSend(s_commands, &selected, 0) == pdTRUE) {
-                    snprintf(out, out_len, "ROBOT-QUEUED action=%s\r\n", argv[2]);
-                } else {
-                    snprintf(out, out_len, "ROBOT-BUSY\r\n");
-                }
-                return;
-            }
-        }
-        snprintf(out, out_len, "ROBOT-INVALID-ACTION\r\n");
+        const robot_link_result_t result = robot_link_request_action(argv[2]);
+        if (result == ROBOT_LINK_QUEUED) snprintf(out, out_len, "ROBOT-QUEUED action=%s\r\n", argv[2]);
+        else if (result == ROBOT_LINK_OFFLINE) snprintf(out, out_len, "ROBOT-OFFLINE\r\n");
+        else if (result == ROBOT_LINK_BENCH) snprintf(out, out_len, "ROBOT-BENCH action=%s\r\n", argv[2]);
+        else if (result == ROBOT_LINK_BUSY) snprintf(out, out_len, "ROBOT-BUSY\r\n");
+        else snprintf(out, out_len, "ROBOT-INVALID-ACTION\r\n");
         return;
     }
     if (argc != 2 || strcmp(argv[1], "status") != 0) {
@@ -220,7 +248,7 @@ static void link_cli(char *out, int out_len, int argc, char **argv)
 
 static const struct qm_cli_command s_cli = {
     .name = "robot",
-    .help = "robot status | robot action <forward|backward|turn_left|turn_right|shift_left|shift_right|stop>",
+    .help = "robot status | robot action <preset|stop>; see motion_presets.json",
     .function = link_cli,
 };
 

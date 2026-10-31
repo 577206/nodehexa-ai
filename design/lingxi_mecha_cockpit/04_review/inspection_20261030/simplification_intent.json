@@ -1,0 +1,132 @@
+{
+  "status": "proposed_not_geometry_implemented",
+  "baseline": "R06c saved FCStd",
+  "dimensions": {
+    "confirmed_target_mm": null,
+    "previous_160_140_145_mm": "unconfirmed draft only; not a scale instruction",
+    "measured_current_mm": [
+      118.19530594983755,
+      102.9,
+      88.2
+    ],
+    "components": "all physical dimensions pending"
+  },
+  "manufacturing_assumption": "dark grey main surfaces, limited orange inserts; decorative black features integrated",
+  "silhouette_changes": [
+    {
+      "region": "crown",
+      "intent": "lower visual prominence of handle pedestals; make roof transition continuous with shoulder"
+    },
+    {
+      "region": "side cheek",
+      "intent": "broaden continuous cheek panel toward rear circular cap; replace isolated triangular patches"
+    },
+    {
+      "region": "lower side",
+      "intent": "fuller curved/faceted lower cheek; avoid tall flat rear wall appearance"
+    },
+    {
+      "region": "phone support",
+      "intent": "reduce visual gap to rear shell; reserve phone clearance until measured"
+    }
+  ],
+  "part_consolidation": [
+    {
+      "source_ids": [
+        "P10",
+        "P66",
+        "P11",
+        "P67"
+      ],
+      "intent": "one continuous canopy guard per side; integrate with side cover where assembly access permits"
+    },
+    {
+      "source_ids": [
+        "P14",
+        "P15",
+        "P60",
+        "P68",
+        "P24",
+        "P25",
+        "P58",
+        "P70",
+        "P29",
+        "P31",
+        "P21",
+        "P62",
+        "P17",
+        "P18",
+        "P61",
+        "P69",
+        "P26",
+        "P27",
+        "P59",
+        "P71",
+        "P28",
+        "P30",
+        "P23",
+        "P63"
+      ],
+      "intent": "two continuous serviceable side covers; louvres, strips and shallow panel lines become features; joining ribs and shell clearance must be rebuilt, not merely grouped"
+    },
+    {
+      "source_ids": [
+        "P32",
+        "P34",
+        "P35",
+        "P37"
+      ],
+      "intent": "integrate cap base and centre into grey side covers; retain orange rings P33/P36 if desired"
+    },
+    {
+      "source_ids": [
+        "P40",
+        "P41",
+        "P42",
+        "P43",
+        "P44"
+      ],
+      "intent": "one low-profile roof/handle module; do not assume functional carrying capacity"
+    },
+    {
+      "source_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "intent": "evaluate one formed canopy versus 3-4 manufacturable panels; optical process must be selected before final CAD"
+    },
+    {
+      "source_ids": [
+        "P45",
+        "P48",
+        "P64",
+        "P65"
+      ],
+      "intent": "one phone support body; rebuild clearance and support angles after phone envelope is known"
+    }
+  ],
+  "preserve": [
+    "camera opening and visibility",
+    "eye light path",
+    "service access",
+    "bottom mounting and electrical cassette",
+    "left-right symmetry"
+  ],
+  "release_blockers": [
+    "target size not confirmed",
+    "hardware/phone envelopes unknown",
+    "mounting holes and fasteners unspecified",
+    "simplified joints not yet rebuilt or validated"
+  ],
+  "scope_note": "Visual comparison uses perspective reference art; it is not a dimensioned orthographic drawing."
+}

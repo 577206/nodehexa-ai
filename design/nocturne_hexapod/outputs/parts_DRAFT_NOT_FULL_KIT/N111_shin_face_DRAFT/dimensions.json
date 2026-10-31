@@ -1,0 +1,21 @@
+{
+  "id": "N111_shin_face_DRAFT",
+  "units": "mm",
+  "bbox_mm": [
+    39.5,
+    65.04774475097656,
+    4.199999809265137
+  ],
+  "CAD_solids": 1,
+  "CAD_valid": true,
+  "STL_watertight": true,
+  "STL_winding_consistent": true,
+  "mesh_volume_mm3": 3309.5221615905916,
+  "CAD_volume_mm3": 3309.511773652347,
+  "status": "prototype_for_review_not_production",
+  "physical_fit_verified": false,
+  "files": [
+    "N111_shin_face_DRAFT.step",
+    "N111_shin_face_DRAFT.stl"
+  ]
+}

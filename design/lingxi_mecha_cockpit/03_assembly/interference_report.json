@@ -1,0 +1,293 @@
+{
+  "status": "INTERFACES_NEED_REVIEW",
+  "rigid_part_interferences": [
+    {
+      "parts": [
+        "P02",
+        "P21"
+      ],
+      "overlap_mm3": 1844.518
+    },
+    {
+      "parts": [
+        "P02",
+        "P22"
+      ],
+      "overlap_mm3": 1844.513
+    },
+    {
+      "parts": [
+        "P01",
+        "P34"
+      ],
+      "overlap_mm3": 639.381
+    },
+    {
+      "parts": [
+        "P02",
+        "P09"
+      ],
+      "overlap_mm3": 572.758
+    },
+    {
+      "parts": [
+        "P02",
+        "P10"
+      ],
+      "overlap_mm3": 572.665
+    },
+    {
+      "parts": [
+        "P02",
+        "P31"
+      ],
+      "overlap_mm3": 565.506
+    },
+    {
+      "parts": [
+        "P01",
+        "P21"
+      ],
+      "overlap_mm3": 401.248
+    },
+    {
+      "parts": [
+        "P01",
+        "P22"
+      ],
+      "overlap_mm3": 401.248
+    },
+    {
+      "parts": [
+        "P01",
+        "P31"
+      ],
+      "overlap_mm3": 334.202
+    },
+    {
+      "parts": [
+        "P30",
+        "P33"
+      ],
+      "overlap_mm3": 288.313
+    },
+    {
+      "parts": [
+        "P29",
+        "P32"
+      ],
+      "overlap_mm3": 288.247
+    },
+    {
+      "parts": [
+        "P02",
+        "P29"
+      ],
+      "overlap_mm3": 218.834
+    },
+    {
+      "parts": [
+        "P02",
+        "P30"
+      ],
+      "overlap_mm3": 218.834
+    },
+    {
+      "parts": [
+        "P11",
+        "P42"
+      ],
+      "overlap_mm3": 217.374
+    },
+    {
+      "parts": [
+        "P12",
+        "P43"
+      ],
+      "overlap_mm3": 216.967
+    },
+    {
+      "parts": [
+        "P02",
+        "P42"
+      ],
+      "overlap_mm3": 208.562
+    },
+    {
+      "parts": [
+        "P02",
+        "P43"
+      ],
+      "overlap_mm3": 208.516
+    },
+    {
+      "parts": [
+        "P35",
+        "P38"
+      ],
+      "overlap_mm3": 208.108
+    },
+    {
+      "parts": [
+        "P35",
+        "P39"
+      ],
+      "overlap_mm3": 208.107
+    },
+    {
+      "parts": [
+        "P02",
+        "P12"
+      ],
+      "overlap_mm3": 205.529
+    },
+    {
+      "parts": [
+        "P02",
+        "P11"
+      ],
+      "overlap_mm3": 205.505
+    },
+    {
+      "parts": [
+        "P35",
+        "P36"
+      ],
+      "overlap_mm3": 172.193
+    },
+    {
+      "parts": [
+        "P35",
+        "P37"
+      ],
+      "overlap_mm3": 172.193
+    },
+    {
+      "parts": [
+        "P02",
+        "P05"
+      ],
+      "overlap_mm3": 151.842
+    },
+    {
+      "parts": [
+        "P13",
+        "P15"
+      ],
+      "overlap_mm3": 107.699
+    },
+    {
+      "parts": [
+        "P16",
+        "P18"
+      ],
+      "overlap_mm3": 107.699
+    },
+    {
+      "parts": [
+        "P02",
+        "P40"
+      ],
+      "overlap_mm3": 100.221
+    },
+    {
+      "parts": [
+        "P02",
+        "P41"
+      ],
+      "overlap_mm3": 100.151
+    },
+    {
+      "parts": [
+        "P29",
+        "P31"
+      ],
+      "overlap_mm3": 70.342
+    },
+    {
+      "parts": [
+        "P30",
+        "P31"
+      ],
+      "overlap_mm3": 70.342
+    },
+    {
+      "parts": [
+        "P02",
+        "P23"
+      ],
+      "overlap_mm3": 63.146
+    },
+    {
+      "parts": [
+        "P02",
+        "P25"
+      ],
+      "overlap_mm3": 63.142
+    },
+    {
+      "parts": [
+        "P02",
+        "P14"
+      ],
+      "overlap_mm3": 55.024
+    },
+    {
+      "parts": [
+        "P02",
+        "P17"
+      ],
+      "overlap_mm3": 55.023
+    },
+    {
+      "parts": [
+        "P23",
+        "P40"
+      ],
+      "overlap_mm3": 16.02
+    },
+    {
+      "parts": [
+        "P25",
+        "P41"
+      ],
+      "overlap_mm3": 16.02
+    },
+    {
+      "parts": [
+        "P02",
+        "P06"
+      ],
+      "overlap_mm3": 15.743
+    },
+    {
+      "parts": [
+        "P01",
+        "P29"
+      ],
+      "overlap_mm3": 14.107
+    },
+    {
+      "parts": [
+        "P01",
+        "P30"
+      ],
+      "overlap_mm3": 14.107
+    },
+    {
+      "parts": [
+        "P01",
+        "P14"
+      ],
+      "overlap_mm3": 10.142
+    },
+    {
+      "parts": [
+        "P01",
+        "P17"
+      ],
+      "overlap_mm3": 10.142
+    }
+  ],
+  "note": "Hardware omitted. Volumetric overlap does not evaluate minimum wall thickness, assembly paths or physical tolerances."
+}

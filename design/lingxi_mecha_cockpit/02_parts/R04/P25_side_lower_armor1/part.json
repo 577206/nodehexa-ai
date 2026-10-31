@@ -1,0 +1,20 @@
+{
+  "id": "P25",
+  "slug": "side_lower_armor1",
+  "title": "侧面下层收边装甲",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "dark",
+  "folder": "02_parts/R04/P25_side_lower_armor1",
+  "stl": "02_parts/R04/P25_side_lower_armor1/P25_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 1156.663,
+  "size_mm": [
+    13.036,
+    37.0,
+    21.5
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

@@ -1,0 +1,44 @@
+{
+  "status": "baseline_and_proportion_proposal_not_approved_dimensions",
+  "sources": [
+    {
+      "file": "NodeHexa_文字建模尺寸说明.txt",
+      "sha256": "74d7929096907a7f6f90432fea3860b1b40cc5a1600a9c042d0bfdf2dcc1b9a4"
+    },
+    {
+      "file": "NodeHexa_平面轮廓坐标.txt",
+      "sha256": "787d0ea848fef9fe8b82a35f64e01bb310f55233e8e22144b618644a29032286"
+    }
+  ],
+  "confirmed_intent": {
+    "body": "wider than original",
+    "legs": "preserve servos, joint axis distances and effective lengths; redesign shape and part separation",
+    "head": "rounder and fuller, less elongated; fit redesigned body",
+    "finish": "dark grey shell with limited orange inserts; integrate black details"
+  },
+  "original_body_plan_envelope_mm": {
+    "length": 135,
+    "width": 79,
+    "note": "rounded overall envelope, not a rectangular plate replacement"
+  },
+  "proposed_body_plan_envelope_mm": {
+    "length": 135,
+    "width": 100,
+    "status": "recommendation_only"
+  },
+  "preserved_leg_kinematics_mm": {
+    "root_offset": 19.4,
+    "joint1_to_joint2": 32,
+    "joint2_to_joint3": 43.8,
+    "joint3_to_tip": 90.05
+  },
+  "pending": [
+    "target body width acceptance",
+    "actual servo and electronics envelopes",
+    "body-to-head mount",
+    "joint sweep and leg-to-shell clearance",
+    "head/phone mass and centre of gravity"
+  ],
+  "coordinate_note": "Robot +Y forward; existing head +Y rear. Establish proper assembly rotation and translation before combining. Local part u/v/w are not global assembly coordinates.",
+  "firmware_note": "Moving leg roots requires updating mount reference coordinates even when leg lengths are preserved."
+}

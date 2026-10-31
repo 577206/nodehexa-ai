@@ -1,0 +1,26 @@
+{
+  "id": "P24",
+  "slug": "hinge_ring_R",
+  "title": "侧轴橙色圈 R",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P24_hinge_ring_R",
+  "stl": "02_parts/P24_hinge_ring_R/P24_assembly.stl",
+  "volume_mm3": 167.133,
+  "size_mm": [
+    1.6,
+    19.388,
+    19.4
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

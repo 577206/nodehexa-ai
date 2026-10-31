@@ -1,0 +1,20 @@
+{
+  "id": "P53",
+  "slug": "legacy_P35",
+  "title": "磁吸底座／接触盒 P35",
+  "category": "fdm",
+  "group": "desktop_base",
+  "material": "dark",
+  "folder": "02_parts/R04/P53_legacy_P35",
+  "stl": "02_parts/R04/P53_legacy_P35/P53_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 7929.93,
+  "size_mm": [
+    82.0,
+    61.0,
+    5.0
+  ],
+  "edge_break_mm": 0,
+  "notes": "沿用 R03，实体尺寸待校准。"
+}

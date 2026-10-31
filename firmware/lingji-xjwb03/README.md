@@ -2,15 +2,17 @@
 
 本目录用于 **XJWB03-DevKIT-V1 + LJX40-Audio-KIT-V1** 的独立固件、构建和烧录。仓库原有的 `firmware/src/` 仍是 NodeHexa 运动控制板的 PlatformIO 工程；两块板分别构建和烧录。
 
-当前状态：已复制官方 SDK、安装 ESP-IDF 工具链，云端语音问答和两轮连续对话已实测。BF3901 官方帧校验通过，板上运行摄像头与云端语音合并固件。本机[摄像头预览页](CAMERA_PREVIEW.md)可显示实时画面；点击按钮或在唤醒后提出视觉问题才会调用千问。实测发现官方 `sendSpeakRequest` 会把传入内容逐字念出，旧版因此会朗读内部提示词；[修复版](VISION_VOICE_BRIDGE.md)已改为千问生成最终短答、板端只播短答，编译通过，但截至 2026-10-29 板子未连接，尚未重新烧录实测。灵犀云端普通对话和[视觉等待规则](AGENT_VISUAL_CONTEXT.md)仍由平台负责；当前 Agora 传输不支持 SDK 的文本输入，不能把画面作为可推理上下文直接注入灵犀。待机云端麦克风上行实测关闭。2026-10-28 两板 UART 双向握手、受限动作命令接口和停止应答已验证；机器人仍是 USB 台架固件，舵机关闭，实际行走、主动坐姿提醒及偏好跨会话持久化尚未完成。语音、视觉、运动的分流方式见[控制链路说明](MOTION_VOICE_PLAN.md)。
+当前配置已切换为 **[千问全模态直连](QWEN_DIRECT.md)**：本地唤醒、麦克风采集、摄像头和喇叭留在灵机板，电脑通过 Wi-Fi 连接板子，再用原有本地密钥连接 `qwen3.8-omni-flash-realtime`。不再启动灵机平台 Agent。普通聊天、按需视觉工具和运动意图由同一会话处理。运动默认禁用，启用后仍受底盘在线状态和固定动作白名单约束。
 
-## 现在可做的语音测试
+2026-10-30 已编译并烧录直连固件，Wi-Fi 接口与摄像头取图正常，云 Agent 状态为关闭。原密钥的实时连接、语音生成、当前帧理解、运动/停止工具选择已实测；板端真实唤醒、连续麦克风对话和喇叭效果正在进行用户验收。当前机器人 UART 未在线，不能宣布实际运动通过。供电仍需完成充电宝条件下的复测。
 
-在 macOS 终端进入本目录，首次配置工具链时运行 `./lingji.sh setup`。板上当前是云端语音与摄像头合并固件：`CONFIG_NODEHEXA_VOICE_SELFTEST=0`、`CONFIG_APP_CAMERA_TEST=1`、`CONFIG_QM_POSE_SUPPORT=0`。此前本地自检固件已验证开机音和唤醒提示音，云端语音固件已完成配网和连续对话实测。重新构建前须先按目标功能核对宏并在本机配置产品身份。实测模块把该唤醒事件记作“你好小鹰”。
+## 当前测试入口
 
-烧录用 `./lingji.sh flash /dev/cu.usbmodem...`，端口必须显式给出。脚本先核对 USB 桥 VID/PID、ESP32-S3 和 16 MB Flash，备份整片 Flash 到被 Git 忽略的 `backups/`，再写入当前构建的全部镜像。查看串口运行日志用 `./lingji.sh monitor /dev/cu.usbmodem...`，退出监视器按 `Ctrl+]`。摄像头和 NodeHexa 串口线已接入。
+在本目录运行 `./lingji.sh omni`，打开 <http://127.0.0.1:8765/>。先说“你好，小灵”，然后问普通问题；确认回答后再问当前画面。网页只按需取图，不持续请求摄像头。`preview-wifi` 在直连配置下也进入新服务。
 
-云端固件已从**本机忽略文件** `project_identity.local.h` 读取产品身份并烧录。官方小程序 BLE 配网、Wi-Fi、动态注册和云连接均已验证；接着验证连续对话。详细步骤见 [CLOUD_SETUP.md](CLOUD_SETUP.md)。不要将 SECRET 发在聊天中或提交到 Git。
+当前宏为 `CONFIG_NODEHEXA_QWEN_DIRECT=1`、`CONFIG_NODEHEXA_VOICE_SELFTEST=0`、`CONFIG_APP_CAMERA_TEST=1`。构建与烧录仍使用 `./lingji.sh build` 和 `./lingji.sh flash-app /dev/cu.usbmodem...`。只更新应用分区时保留已有 Wi-Fi 配置。
+
+旧云端方案、配网与历史验证记录保留在 [CLOUD_SETUP.md](CLOUD_SETUP.md)、[WIFI_BRIDGE.md](WIFI_BRIDGE.md)、[CAMERA_PREVIEW.md](CAMERA_PREVIEW.md) 中；当前运行方式以 [QWEN_DIRECT.md](QWEN_DIRECT.md) 为准。旧应用已备份，详见该文档的回退说明。密钥与令牌仍只存本机忽略文件，不提交 Git。
 
 ## 产品理解
 

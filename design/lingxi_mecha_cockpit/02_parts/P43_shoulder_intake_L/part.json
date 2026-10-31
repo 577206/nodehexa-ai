@@ -1,0 +1,26 @@
+{
+  "id": "P43",
+  "slug": "shoulder_intake_L",
+  "title": "左肩橙色通风罩",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P43_shoulder_intake_L",
+  "stl": "02_parts/P43_shoulder_intake_L/P43_assembly.stl",
+  "volume_mm3": 1033.069,
+  "size_mm": [
+    5.0,
+    19.0,
+    22.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    -90
+  ]
+}

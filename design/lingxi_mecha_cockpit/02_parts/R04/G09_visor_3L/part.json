@@ -1,0 +1,20 @@
+{
+  "id": "G09",
+  "slug": "visor_3L",
+  "title": "舱罩折面 3L",
+  "category": "clear_sheet",
+  "group": "cockpit",
+  "material": "glass",
+  "folder": "02_parts/R04/G09_visor_3L",
+  "stl": "02_parts/R04/G09_visor_3L/G09_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 113.38,
+  "size_mm": [
+    12.68,
+    23.541,
+    16.764
+  ],
+  "edge_break_mm": 0,
+  "notes": "每边退让0.16mm，片间名义缝0.32mm；待裁片装配试验。"
+}

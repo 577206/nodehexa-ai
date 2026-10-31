@@ -1,0 +1,19 @@
+{
+  "id": "P16",
+  "slug": "vent_frame_L",
+  "title": "侧前格栅装甲框 L",
+  "category": "fdm",
+  "material": "gray",
+  "folder": "02_parts/P16_vent_frame_L",
+  "stl": "02_parts/P16_vent_frame_L/P16_assembly.stl",
+  "volume_mm3": 951.301,
+  "size_mm": [
+    23.32,
+    14.744,
+    35.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "模块独立，内侧固定耳尚需与实际声学器件位置协调。",
+  "print_axis": null
+}

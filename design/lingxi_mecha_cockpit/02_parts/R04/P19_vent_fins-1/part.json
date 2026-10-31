@@ -1,0 +1,20 @@
+{
+  "id": "P19",
+  "slug": "vent_fins-1",
+  "title": "侧面橙色斜鳍片",
+  "category": "fdm",
+  "group": "cockpit",
+  "material": "orange",
+  "folder": "02_parts/R04/P19_vent_fins-1",
+  "stl": "02_parts/R04/P19_vent_fins-1/P19_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 423.479,
+  "size_mm": [
+    14.177,
+    24.638,
+    33.0
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

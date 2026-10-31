@@ -1,0 +1,26 @@
+{
+  "id": "P20",
+  "slug": "camera_retainer",
+  "title": "镜头装饰压环",
+  "category": "fdm",
+  "material": "black",
+  "folder": "02_parts/P20_camera_retainer",
+  "stl": "02_parts/P20_camera_retainer/P20_assembly.stl",
+  "volume_mm3": 85.765,
+  "size_mm": [
+    10.594,
+    2.0,
+    10.6
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      1,
+      0,
+      0
+    ],
+    90
+  ]
+}

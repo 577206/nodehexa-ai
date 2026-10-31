@@ -1,0 +1,21 @@
+{
+  "id": "N112_R_red_insert_DRAFT",
+  "units": "mm",
+  "bbox_mm": [
+    8.182254791259766,
+    34.60167407989502,
+    0.5500001907348633
+  ],
+  "CAD_solids": 1,
+  "CAD_valid": true,
+  "STL_watertight": true,
+  "STL_winding_consistent": true,
+  "mesh_volume_mm3": 24.81317319981639,
+  "CAD_volume_mm3": 24.813152531141736,
+  "status": "prototype_for_review_not_production",
+  "physical_fit_verified": false,
+  "files": [
+    "N112_R_red_insert_DRAFT.step",
+    "N112_R_red_insert_DRAFT.stl"
+  ]
+}

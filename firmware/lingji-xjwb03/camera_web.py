@@ -12,6 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from capture_camera import CameraSerial
+from wifi_camera import CameraWifi
 from interaction_intent import classify
 from vision_qwen import DEFAULT_BASE_URL, DEFAULT_MODEL, analyze, load_local_config
 
@@ -20,14 +21,15 @@ STALE_SECONDS = 12.0
 
 
 class CameraState:
-    def __init__(self) -> None:
+    def __init__(self, transport: str = "serial") -> None:
         self.lock = threading.Lock()
         self.serial_lock = threading.Lock()
-        self.camera: CameraSerial | None = None
+        self.camera: CameraSerial | CameraWifi | None = None
+        self.transport = transport
         self.frame: bytes | None = None
         self.frame_at = 0.0
         self.sequence = 0
-        self.error = "等待摄像头启动"
+        self.error = "" if transport == "wifi" else "等待摄像头启动"
         self.analyzing = False
         self.last_analysis_at = 0.0
         self.result: str | None = None
@@ -53,7 +55,8 @@ class CameraState:
         with self.lock:
             age = round(time.time() - self.frame_at, 1) if self.frame is not None else None
             return {
-                "ready": age is not None and age < STALE_SECONDS,
+                "ready": self.frame is not None,
+                "fresh": age is not None and age < STALE_SECONDS,
                 "sequence": self.sequence,
                 "age_seconds": age,
                 "bytes": len(self.frame) if self.frame is not None else 0,
@@ -65,6 +68,7 @@ class CameraState:
                 "agent_delivery": self.agent_delivery,
                 "audio_status": self.audio_status,
                 "last_wake_text": self.last_asr_text if time.monotonic() - self.last_asr_at < 60 else "",
+                "transport": self.transport,
             }
 
     def submit_asr(self, text: str) -> None:
@@ -105,28 +109,41 @@ class CameraState:
                 return None
             return self.frame
 
+    def display_frame(self) -> bytes | None:
+        with self.lock:
+            return self.frame
+
+    def capture_for_request(self) -> bytes:
+        """Take one fresh frame after a spoken vision request has been recognized."""
+        with self.serial_lock:
+            if self.camera is None:
+                raise RuntimeError("灵机板尚未连接")
+            frame = self.camera.capture_jpeg(timeout=18)
+        self.publish(frame)
+        return frame
+
     def send_to_agent(self, description: str) -> None:
         with self.serial_lock:
             if self.camera is None:
-                raise RuntimeError("灵机板串口尚未连接")
+                raise RuntimeError("灵机板尚未连接")
             self.camera.send_vision_text(description)
 
     def require_agent_bridge(self) -> None:
         with self.serial_lock:
             if self.camera is None:
-                raise RuntimeError("灵机板串口尚未连接")
+                raise RuntimeError("灵机板尚未连接")
             self.camera.check_vision_bridge()
 
     def send_robot_action(self, action: str) -> str:
         with self.serial_lock:
             if self.camera is None:
-                raise RuntimeError("灵机板串口尚未连接")
+                raise RuntimeError("灵机板尚未连接")
             return self.camera.robot_action(action)
 
     def send_agent_feedback(self, text: str) -> None:
         with self.serial_lock:
             if self.camera is None:
-                raise RuntimeError("灵机板串口尚未连接")
+                raise RuntimeError("灵机板尚未连接")
             self.camera.send_agent_feedback(text)
 
 
@@ -142,10 +159,17 @@ def spoken_answer(answer: str) -> str:
     return raw[:157].decode("utf-8", "ignore").rstrip("，、。 ") + "…"
 
 
-def capture_loop(state: CameraState, port: str, stop: threading.Event) -> None:
+def open_camera(source: str) -> CameraSerial | CameraWifi:
+    if source.startswith("http://"):
+        settings = load_local_config()
+        return CameraWifi(source, settings.get("LINGXI_BRIDGE_TOKEN", ""))
+    return CameraSerial(source)
+
+
+def capture_loop(state: CameraState, source: str, stop: threading.Event) -> None:
     while not stop.is_set():
         try:
-            with CameraSerial(port) as camera:
+            with open_camera(source) as camera:
                 with state.serial_lock:
                     state.camera = camera
                 try:
@@ -154,6 +178,22 @@ def capture_loop(state: CameraState, port: str, stop: threading.Event) -> None:
                         frame = None
                         with state.serial_lock:
                             try:
+                                if isinstance(camera, CameraWifi):
+                                    audio = camera.audio_status()
+                                    events = camera.pop_asr_events()
+                                    agent_events = camera.pop_agent_events()
+                                    with state.lock:
+                                        state.audio_status = audio
+                                    for text in events:
+                                        state.submit_asr(text)
+                                    for event in agent_events:
+                                        state.set_agent_delivery(event)
+                                    if state.transport == "wifi":
+                                        # Wireless voice and repeated JPEG capture contend for
+                                        # board resources. Keep only the light status poll here;
+                                        # explicit visual requests take one fresh frame below.
+                                        stop.wait(0.4)
+                                        continue
                                 frame = camera.capture_jpeg(timeout=18)
                             except RuntimeError as exc:
                                 if "camera capture failed: ESP_ERR_INVALID_STATE" not in str(exc):
@@ -263,7 +303,7 @@ def voice_intent_loop(state: CameraState, stop: threading.Event) -> None:
             try:
                 frame = state.current_frame()
                 if frame is None:
-                    raise RuntimeError("摄像头尚无新鲜画面")
+                    frame = state.capture_for_request()
                 result = analyze(frame, key, base_url, model,
                                  brief=True, question=utterance)
                 state.send_to_agent(spoken_answer(result))
@@ -302,7 +342,7 @@ def handler_for(state: CameraState) -> type[BaseHTTPRequestHandler]:
             elif path == "/status":
                 self.send_json(200, state.status())
             elif path == "/frame.jpg":
-                frame = state.current_frame()
+                frame = state.display_frame()
                 if frame is None:
                     self.send_json(503, {"error": "还没有新鲜画面"})
                 else:
@@ -311,7 +351,7 @@ def handler_for(state: CameraState) -> type[BaseHTTPRequestHandler]:
                 self.send_json(404, {"error": "未找到页面"})
 
         def do_POST(self) -> None:
-            if self.path not in ("/analyze", "/talk"):
+            if self.path not in ("/analyze", "/talk", "/snapshot"):
                 self.send_json(404, {"error": "未找到接口"})
                 return
             allowed_origins = (None,
@@ -320,18 +360,21 @@ def handler_for(state: CameraState) -> type[BaseHTTPRequestHandler]:
             if self.headers.get("Origin") not in allowed_origins:
                 self.send_json(403, {"error": "仅允许本机页面发起识别"})
                 return
-            frame = state.current_frame()
-            if frame is None:
-                self.send_json(409, {"error": "摄像头尚无新鲜画面"})
-                return
             if not state.begin_analysis():
                 self.send_json(409, {"error": "上一次识别还在进行"})
                 return
             result = None
             try:
+                if self.path == "/snapshot":
+                    state.capture_for_request()
+                    self.send_json(200, {"status": "captured"})
+                    return
                 talk = self.path == "/talk"
                 if talk:
                     state.require_agent_bridge()
+                frame = state.current_frame()
+                if frame is None:
+                    frame = state.capture_for_request()
                 settings = load_local_config()
                 key = settings.get("DASHSCOPE_API_KEY", "").strip()
                 if not key or key == "REPLACE_WITH_YOUR_KEY":
@@ -360,12 +403,16 @@ def handler_for(state: CameraState) -> type[BaseHTTPRequestHandler]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("port", help="Explicit /dev/cu.* XJWB03 serial port")
+    parser.add_argument("source", nargs="?", help="XJWB03 /dev/cu.* port or http://LAN-IP:8766")
+    parser.add_argument("--wifi", action="store_true", help="Use LINGXI_BOARD_URL from .env.local")
     parser.add_argument("--http-port", type=int, default=8765)
     args = parser.parse_args()
-    state = CameraState()
+    source = load_local_config().get("LINGXI_BOARD_URL", "") if args.wifi else args.source
+    if not source:
+        parser.error("Provide a serial port, a LAN URL, or set LINGXI_BOARD_URL and --wifi")
+    state = CameraState("wifi" if source.startswith("http://") else "serial")
     stop = threading.Event()
-    worker = threading.Thread(target=capture_loop, args=(state, args.port, stop), daemon=True)
+    worker = threading.Thread(target=capture_loop, args=(state, source, stop), daemon=True)
     intent_worker = threading.Thread(target=voice_intent_loop, args=(state, stop), daemon=True)
     server = ThreadingHTTPServer(("127.0.0.1", args.http_port), handler_for(state))
     worker.start()

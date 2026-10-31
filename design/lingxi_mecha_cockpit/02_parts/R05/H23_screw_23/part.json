@@ -1,0 +1,20 @@
+{
+  "id": "H23",
+  "slug": "screw_23",
+  "title": "顶盖螺钉占位",
+  "category": "hardware",
+  "group": "cockpit",
+  "material": "black",
+  "folder": "02_parts/R05/H23_screw_23",
+  "stl": "02_parts/R05/H23_screw_23/H23_review.stl",
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 7.533,
+  "size_mm": [
+    3.199,
+    3.2,
+    1.1
+  ],
+  "edge_break_mm": 0,
+  "notes": ""
+}

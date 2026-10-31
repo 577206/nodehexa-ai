@@ -1,0 +1,19 @@
+{
+  "id": "P05",
+  "slug": "canopy_frame",
+  "title": "折面舱盖压框",
+  "category": "fdm",
+  "material": "dark",
+  "folder": "02_parts/P05_canopy_frame",
+  "stl": "02_parts/P05_canopy_frame/P05_assembly.stl",
+  "volume_mm3": 2005.649,
+  "size_mm": [
+    68.0,
+    38.405,
+    52.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "两片玻璃的承托边；细螺钉压条细节待薄片厚度确认。",
+  "print_axis": null
+}

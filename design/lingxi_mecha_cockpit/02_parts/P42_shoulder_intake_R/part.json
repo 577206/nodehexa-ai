@@ -1,0 +1,26 @@
+{
+  "id": "P42",
+  "slug": "shoulder_intake_R",
+  "title": "右肩橙色通风罩",
+  "category": "fdm",
+  "material": "orange",
+  "folder": "02_parts/P42_shoulder_intake_R",
+  "stl": "02_parts/P42_shoulder_intake_R/P42_assembly.stl",
+  "volume_mm3": 1032.626,
+  "size_mm": [
+    5.0,
+    19.0,
+    22.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": [
+    [
+      0,
+      1,
+      0
+    ],
+    90
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "H08",
+  "slug": "pogo_3",
+  "title": "信号触点占位",
+  "category": "hardware",
+  "material": "gold",
+  "folder": "02_parts/H08_pogo_3",
+  "stl": "02_parts/H08_pogo_3/H08_assembly.stl",
+  "volume_mm3": 6.032,
+  "size_mm": [
+    1.6,
+    1.599,
+    3.0
+  ],
+  "valid": true,
+  "solids": 1,
+  "notes": "",
+  "print_axis": null
+}
