@@ -1,7 +1,7 @@
 {
   "schema": "engineering-3d-modeling.spec_coverage.v1",
   "project": "/Users/dyke_4/Documents/Codex/2026-10-21/nodehexa-ai/repository/design/nocturne_hexapod",
-  "generated_at": "2026-10-30T18:34:56.699408Z",
+  "generated_at": "2026-10-31T02:34:31.301127Z",
   "status": "pass",
   "checks": [
     {
@@ -18,6 +18,10 @@
     },
     {
       "check": "feature:red_recesses_and_inserts",
+      "status": "pass"
+    },
+    {
+      "check": "feature:lower_frame_width_extension",
       "status": "pass"
     },
     {

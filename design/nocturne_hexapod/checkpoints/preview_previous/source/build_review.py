@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon
+from matplotlib.patches import Polygon,Rectangle
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from model import *
 
@@ -33,7 +33,7 @@ def main():
     manifest['preview']={'mesh_json':'cache/current_mesh.json','mesh_closed':True}
     manifest['parts']=part_records;manifest['parameters']=[]
     manifest['versions']['current']['source']='../source/model.py'
-    (ROOT/'review/manifest.json').write_text(json.dumps(manifest,indent=2))
+    (ROOT/'review/manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
     mesh={'vertices':vertices,'faces':faces,'provenance':{k:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for k,f in [('source_hash','source/model.py'),('parameters_hash','parameters.yaml'),('spec_hash','spec/current.yaml'),('manifest_hash','review/manifest.json')]}}
     (ROOT/'review/cache/current_mesh.json').write_text(json.dumps(mesh))
 
@@ -55,8 +55,9 @@ def main():
     for rail,recess in [(ARMOR_RAIL,RED_RECESS),(mirrored(ARMOR_RAIL),mirrored(RED_RECESS))]:
         ax.add_patch(Polygon(rail,facecolor='#686b71',edgecolor='#25272c',lw=.8))
         ax.add_patch(Polygon(recess,facecolor='#c22437',edgecolor='#7d1420',lw=.5))
-    ax.axhspan(0,35,color='#499d81',alpha=.13);ax.axhspan(54.8,65.05,color='#499d81',alpha=.13)
-    ax.text(45,48,'Green bands:\noriginal connector\ngeometry unchanged\n\nRaised relief: 1.2 mm\nOriginal plate: 3.0 mm\nMax thickness: 4.2 mm',fontsize=9,va='top')
+    for x,y,w,h in [(0,24,5.5,12),(34,24,5.5,12),(12.75,0,14,6.8),(0,54.8,39.5,10.25)]:
+        ax.add_patch(Rectangle((x,y),w,h,facecolor='#499d81',alpha=.18,edgecolor='none'))
+    ax.text(45,48,'Green zones:\noriginal connector\ngeometry unchanged\n\nOriginal 3 mm core\nis preserved.\nExterior relief: 1.2 mm\nMax thickness: 4.2 mm',fontsize=9,va='top')
     ax.set_xlim(-3,82);ax.set_ylim(-4,70);ax.set_aspect('equal');ax.set_xlabel('Local u / mm');ax.set_ylabel('Local v / mm');ax.grid(alpha=.12)
 
     ax=fig.add_subplot(gs[1,0],projection='3d');ax.set_title('03 / ACTUAL CAD — shin + two red inserts',loc='left',fontsize=12,fontweight='bold')
@@ -70,7 +71,8 @@ def main():
 
     ax=fig.add_subplot(gs[1,1]);ax.axis('off')
     ax.text(0,.98,'DRAFT ENGINEERING CHECK',fontsize=16,fontweight='bold',va='top')
-    text='Four valid CAD solids / no mutual solid overlap\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nRed inserts: 8.577 × 13.365 × 0.550 mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining chassis parts and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
+    bb=ground_parts(params)[1].bounding_box().size
+    text=f'Four valid CAD solids / no mutual solid overlap\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nRed inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining chassis parts and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
     ax.text(0,.84,text,fontsize=11,linespacing=1.65,va='top')
     fig.suptitle('NOCTURNE / ENGINEERING DRAFT 01',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.png',dpi=150,bbox_inches='tight')

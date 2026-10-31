@@ -15,7 +15,7 @@ def main():
     params=load_parameters(ROOT/'parameters.yaml')
     model=build_model(params)
     vertices=[];faces=[];part_records=[]
-    colors={'N001_upper_frame_W30_DRAFT':'#36383d','N111_shin_face_DRAFT':'#33353a',
+    colors={'N002_lower_frame_W30_DRAFT':'#494b50','N003_lower_frame_18650_2S_W30_ALTERNATIVE_DRAFT':'#565860','N001_upper_frame_W30_DRAFT':'#36383d','N111_shin_face_DRAFT':'#33353a',
             'N112_L_red_insert_DRAFT':'#c22437','N112_R_red_insert_DRAFT':'#c22437'}
     for part in model.children:
         vv,tt=part.tessellate(0.08,0.15)
@@ -72,7 +72,7 @@ def main():
     ax=fig.add_subplot(gs[1,1]);ax.axis('off')
     ax.text(0,.98,'DRAFT ENGINEERING CHECK',fontsize=16,fontweight='bold',va='top')
     bb=ground_parts(params)[1].bounding_box().size
-    text=f'Four valid CAD solids / no mutual solid overlap\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nRed inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining chassis parts and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
+    text=f'Six CAD solids / lower frames are alternatives\n\nUpper frame: 134.809 × 104.343 × 3.000 mm\nShin face: 39.500 × 65.048 × 4.200 mm\nRed inserts: {bb.X:.3f} × {bb.Y:.3f} × {bb.Z:.3f} mm each\n\nSide pilot bores retained: diameter ≈ 0.900 mm\nCenters: v = 30.048 / 60.048; w = 1.500 mm\n\nNOT VERIFIED:\nFull leg sweep, physical fit, insert retention,\nremaining walls, assembled fit and electronics packaging.\n\nThis is a partial prototype, NOT a full print kit.'
     ax.text(0,.84,text,fontsize=11,linespacing=1.65,va='top')
     fig.suptitle('NOCTURNE / ENGINEERING DRAFT 01',x=.05,y=.98,ha='left',fontsize=22,fontweight='bold')
     fig.savefig(ROOT/'outputs/drawings/first_draft_comparison.png',dpi=150,bbox_inches='tight')

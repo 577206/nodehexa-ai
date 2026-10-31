@@ -75,8 +75,8 @@ def widened_top(params):
 
 # Relief stays inside the original planar envelope and away from all outer
 # connector islands. Its outward height still requires assembly sweep checking.
-ARMOR_RAIL=[(3.4,36.2),(6.5,35.2),(17.6,41.1),(17.6,44.6),(8.4,53.8),(4.7,53.8),(13.3,43.5)]
-RED_RECESS=[(6.8,36.0),(15.3,41.8),(15.3,43.6),(9.1,49.8),(8.0,49.0),(13.7,43.1),(6.4,37.3)]
+ARMOR_RAIL=[(6,50),(10,54),(18.2,43),(18.2,20),(15,7),(10,15),(6,24),(10.5,29),(10.5,38),(6,44)]
+RED_RECESS=[(8.5,47),(15.5,37.5),(15.5,23),(12.8,17),(13.3,13.5),(17,22.7),(17,38),(9.2,49)]
 
 
 def mirrored(points):
@@ -93,7 +93,12 @@ def ground_parts(params):
     for suffix, rail, recess in [('L',ARMOR_RAIL,RED_RECESS),('R',mirrored(ARMOR_RAIL),mirrored(RED_RECESS))]:
         # New relief is bonded into the base geometry, not a separate spacer
         # under any original screw head. Original interfaces remain at 3 mm.
-        base=base+prism(rail,0,t+h)
+        bottom_wire=polygon(rail,t).outer_wire()
+        middle_wire=polygon(rail,t+h-.4).outer_wire()
+        top_wire=polygon(rail).outer_wire().offset_2d(-.35,kind=Kind.INTERSECTION)
+        top_wire=Pos(0,0,t+h)*top_wire
+        blade=Solid.make_loft([bottom_wire,middle_wire,top_wire],ruled=True)
+        base=base+blade
         base=base-prism(recess,t+h-depth,depth+0.05)
         wire=polygon(recess).outer_wire().offset_2d(-gap,kind=Kind.INTERSECTION)
         insert=Solid.extrude(Face(wire),(0,0,depth-gap))

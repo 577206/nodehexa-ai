@@ -24,6 +24,12 @@
       "source": "source/model.py:ground_parts / RED_RECESS",
       "evidence": "validation/first_draft_checks.json:intersections",
       "status": "no_solid_overlap_retention_pending"
+    },
+    {
+      "id": "lower_frame_width_extension",
+      "source": "source/lower_frame.py:widened_bottom",
+      "evidence": "validation/lower_frame_checks.json",
+      "status": "see_validation_report"
     }
   ],
   "constraints": [
@@ -34,8 +40,8 @@
     },
     {
       "id": "Width increase 30 mm total, left/right interface groups translate 15 mm each without scale.",
-      "status": "verified_for_upper_frame_only",
-      "evidence": "validation/first_draft_checks.json:interface_checks"
+      "status": "upper_and_lower_drafts_rigid_translation",
+      "evidence": "validation/first_draft_checks.json; validation/lower_frame_checks.json"
     },
     {
       "id": "Red leg inserts are solid non-emissive material. No leg lighting wiring.",
@@ -81,8 +87,8 @@
     },
     {
       "id": "body_bottom_plan_target_mm",
-      "status": "pending_or_reference_only",
-      "evidence": "validation/first_draft_checks.json; spec/part_register.json"
+      "status": "see_lower_frame_checks",
+      "evidence": "validation/lower_frame_checks.json"
     },
     {
       "id": "note",

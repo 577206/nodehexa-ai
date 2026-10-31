@@ -21,7 +21,10 @@ def main():
     gp=profile('FootGround')
     reference_error=abs(original_ground.volume-gp['mesh_volume_mm3'])/gp['mesh_volume_mm3']
     ground=parts[1]
-    zones=[('lower_joint_and_tip_band',Pos(19.75,17.5,3)*Box(45,35,10)),
+    zones=[('original_3mm_core',Pos(19.75,32.5,1.49999)*Box(45,70,2.99998)),
+           ('left_lower_connector',Pos(2.75,30,3)*Box(5.5,12,10)),
+           ('right_lower_connector',Pos(36.75,30,3)*Box(5.5,12,10)),
+           ('tip_mount',Pos(19.75,3.4,3)*Box(14,6.8,10)),
            ('upper_connector_band',Pos(19.75,60,3)*Box(45,10.4,10))]
     checks=[]
     for name,box in zones:

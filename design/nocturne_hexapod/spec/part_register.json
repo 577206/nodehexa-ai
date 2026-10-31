@@ -10,18 +10,20 @@
   {
     "original_part": "BodyButtom-18650-2S",
     "scope": "body_width_extension",
-    "status": "pending",
+    "status": "draft_CAD_created_not_release",
     "quantity": null,
     "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
-    "source": "inputs/original_chassis/TKRC-BodyButtom-18650-2S.STL"
+    "source": "inputs/original_chassis/TKRC-BodyButtom-18650-2S.STL",
+    "evidence": "validation/lower_frame_checks.json"
   },
   {
     "original_part": "BodyButtom",
     "scope": "body_width_extension",
-    "status": "pending",
+    "status": "draft_CAD_created_not_release",
     "quantity": null,
     "quantity_note": "Confirm assembly usage; alternatives are not cumulative",
-    "source": "inputs/original_chassis/TKRC-BodyButtom.STL"
+    "source": "inputs/original_chassis/TKRC-BodyButtom.STL",
+    "evidence": "validation/lower_frame_checks.json"
   },
   {
     "original_part": "BodyCenter-Thin",

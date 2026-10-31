@@ -8,6 +8,7 @@
 #include "qm_wifi.h"
 #include "qm_wifi_dev.h"
 #include "qm_work.h"
+#include "qm_cli.h"
 
 #include "esp_netif.h"
 
@@ -25,6 +26,84 @@ static uint8_t wifi_event_registered;
 static qm_work_t wifi_delay_work;
 static char pending_ssid[CONFIG_QM_WIFI_SSID_MAX_LEN + 1];
 static char pending_password[CONFIG_QM_WIFI_PASSWD_MAX_LEN + 1];
+static qm_work_t usb_wifi_reboot_work;
+
+static int wifi_hex_decode(const char *hex, char *out, size_t capacity)
+{
+    size_t length = strlen(hex);
+    if ((length & 1U) != 0 || length / 2 >= capacity) return -1;
+    for (size_t i = 0; i < length / 2; ++i) {
+        unsigned value = 0;
+        for (size_t j = 0; j < 2; ++j) {
+            unsigned char c = (unsigned char)hex[2 * i + j];
+            unsigned digit;
+            if (c >= '0' && c <= '9') digit = c - '0';
+            else if (c >= 'a' && c <= 'f') digit = c - 'a' + 10;
+            else if (c >= 'A' && c <= 'F') digit = c - 'A' + 10;
+            else return -1;
+            value = value * 16 + digit;
+        }
+        if (value == 0) return -1;
+        out[i] = (char)value;
+    }
+    out[length / 2] = '\0';
+    return (int)(length / 2);
+}
+
+static void usb_wifi_reboot(void *arg)
+{
+    (void)arg;
+    qm_reboot();
+}
+
+/* Physical USB only: no credentials in firmware, logs, or network endpoints.
+ * Hex is framing for spaces/non-ASCII bytes; it is not encryption. */
+static void provision_usb_cli(char *out, int out_len, int argc, char **argv)
+{
+    if (argc == 2 && strcmp(argv[1], "status") == 0) {
+        qm_wifi_ap_record_t ap = {0};
+        esp_netif_ip_info_t ip = {0};
+        esp_netif_t *netif = esp_netif_get_handle_from_ifkey("WIFI_STA_DEF");
+        if (qm_wifi_sta_get_ap_info(&ap) == QM_EOK && netif != NULL &&
+                esp_netif_get_ip_info(netif, &ip) == ESP_OK && ip.ip.addr != 0) {
+            snprintf(out, out_len, "WIFI-ONLINE ip=" IPSTR " channel=%u rssi=%d\r\n",
+                     IP2STR(&ip.ip), (unsigned)ap.channel, (int)ap.rssi);
+        } else snprintf(out, out_len, "WIFI-OFFLINE\r\n");
+        return;
+    }
+    if (argc == 4 && strcmp(argv[1], "joinhex") == 0) {
+        qm_wifi_cfg_t cfg = {0};
+        char ssid[CONFIG_QM_WIFI_SSID_MAX_LEN + 1] = {0};
+        char password[CONFIG_QM_WIFI_PASSWD_MAX_LEN + 1] = {0};
+        int ns = wifi_hex_decode(argv[2], ssid, sizeof(ssid));
+        int np = wifi_hex_decode(argv[3], password, sizeof(password));
+        /* Do not leave the credential in the CLI argument buffer/history. */
+        memset(argv[3], 0, strlen(argv[3]));
+        if (ns <= 0 || np < 8 || np > 63) {
+            snprintf(out, out_len, "WIFI-INVALID: SSID 1..32 bytes, WPA password 8..63 bytes\r\n");
+        } else {
+            cfg.mode = QM_WIFI_MODE_STA;
+            memcpy(cfg.config.sta.ssid, ssid, ns);
+            cfg.config.sta.ssid_len = (uint8_t)ns;
+            memcpy(cfg.config.sta.password, password, np);
+            cfg.config.sta.password_len = (uint8_t)np;
+            if (qm_kv_set("wifi_cfg", &cfg, (int)sizeof(cfg), 1) == QM_EOK) {
+                snprintf(out, out_len, "WIFI-SAVED; rebooting to join new network\r\n");
+                (void)qm_post_delayed_action(&usb_wifi_reboot_work, usb_wifi_reboot, NULL, 500);
+            } else snprintf(out, out_len, "WIFI-SAVE-FAILED\r\n");
+        }
+        memset(password, 0, sizeof(password));
+        memset(&cfg, 0, sizeof(cfg));
+        return;
+    }
+    snprintf(out, out_len, "wifi status | wifi joinhex <ssid-utf8-hex> <wpa-password-hex>\r\n");
+}
+
+static const struct qm_cli_command usb_wifi_cli = {
+    .name = "wifi",
+    .help = "USB Wi-Fi provisioning: status | joinhex <ssid-hex> <password-hex>",
+    .function = provision_usb_cli,
+};
 
 static void provision_env_load(void)
 {
@@ -235,6 +314,11 @@ static void provision_wifi_event_handler(void *arg, qm_event_base_t event_base,
 int ljyd_provision_init(void)
 {
     int ret;
+    static uint8_t cli_registered;
+
+    if (!cli_registered) {
+        if (qm_cli_register_command(&usb_wifi_cli) == 0) cli_registered = 1;
+    }
 
     if (!wifi_event_registered) {
         ret = qm_event_handler_register(QM_EVENT_WIFI, QM_EVENT_ANY_ID,

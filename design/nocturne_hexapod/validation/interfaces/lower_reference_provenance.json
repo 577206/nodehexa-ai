@@ -1,0 +1,22 @@
+[
+  {
+    "name": "BodyButtom",
+    "source_sha256": "04c93b62fec95a18120aea06341d8dc67fb5255d0dc33a40fed246ca1bb3c13e",
+    "reference_sha256": "fd69b6225309fbe16cd8790eae01312db9d608375f732bf6f71f01296a90a349",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 11191.027610712168,
+    "local_coordinates": "u=X-Xmin; v=Zmax-Z; w=Y-Ymin (proper rotation, not assembly placement)",
+    "source_precision": "original triangulated STL surface; no nominal tolerance recovery"
+  },
+  {
+    "name": "BodyButtom-18650-2S",
+    "source_sha256": "f53baa27ee72213fc48ac95b0c4fe8a3a04d4571777c1b746b35cc95e9dc6622",
+    "reference_sha256": "b9c35c4d031864b88a98e6e805151a3adb8b16fc650ae67a6874a57237a95eb9",
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 10637.645740535105,
+    "local_coordinates": "u=X-Xmin; v=Zmax-Z; w=Y-Ymin (proper rotation, not assembly placement)",
+    "source_precision": "original triangulated STL surface; no nominal tolerance recovery"
+  }
+]
