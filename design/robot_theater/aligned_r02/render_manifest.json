@@ -1,0 +1,621 @@
+{
+  "status": "CURRENT_SOURCE_MESHES_RENDERED",
+  "head_geometry_source": "design/lingxi_head_simplified/review/cache/current_mesh.json",
+  "head_parts": {
+    "H01_MAIN_SHELL": {
+      "min": [
+        -62.6,
+        -67.0,
+        10.0
+      ],
+      "max": [
+        62.6,
+        74.0,
+        111.79994590108817
+      ],
+      "label": "H01 主体壳 / 第一批打印1件",
+      "reference": false
+    },
+    "H02_DOCK_RECEIVER": {
+      "min": [
+        -56.84,
+        -63.84,
+        0.0
+      ],
+      "max": [
+        56.84,
+        69.8,
+        34.0
+      ],
+      "label": "H02 头部深腔底座 / 第一批打印1件",
+      "reference": false
+    },
+    "H03_CLEAR_VISOR": {
+      "min": [
+        -42.0,
+        22.1,
+        33.50031947966036
+      ],
+      "max": [
+        42.0,
+        82.5,
+        111.6989580932089
+      ],
+      "label": "H03 透明盖 / 第一批打印1件",
+      "reference": false
+    },
+    "H04_VISOR_FRAME": {
+      "min": [
+        -51.4,
+        20.0,
+        32.500958389666046
+      ],
+      "max": [
+        51.4,
+        86.5,
+        113.09974229477258
+      ],
+      "label": "H04 灰色压框 / 第一批打印1件",
+      "reference": false
+    },
+    "D01_VENT_FRAME_L": {
+      "min": [
+        -72.80000000000001,
+        8.0,
+        20.0
+      ],
+      "max": [
+        -65.4,
+        54.0,
+        76.0
+      ],
+      "label": "左橙色通风口外框",
+      "reference": false
+    },
+    "D03_VENT_GRILLE_L": {
+      "min": [
+        -70.0,
+        8.0,
+        20.0
+      ],
+      "max": [
+        -58.64615384615385,
+        54.0,
+        76.0
+      ],
+      "label": "左灰色独立百叶",
+      "reference": false
+    },
+    "D02_VENT_FRAME_R": {
+      "min": [
+        65.4,
+        8.0,
+        20.0
+      ],
+      "max": [
+        72.80000000000001,
+        54.0,
+        76.0
+      ],
+      "label": "右橙色通风口外框",
+      "reference": false
+    },
+    "D04_VENT_GRILLE_R": {
+      "min": [
+        58.64615384615385,
+        8.0,
+        20.0
+      ],
+      "max": [
+        70.0,
+        54.0,
+        76.0
+      ],
+      "label": "右灰色独立百叶",
+      "reference": false
+    },
+    "D05_SHOULDER_ORANGE_L": {
+      "min": [
+        -58.9,
+        -45.0,
+        77.0
+      ],
+      "max": [
+        -29.799999999999994,
+        34.0,
+        109.2
+      ],
+      "label": "左橙色肩甲 / 1件",
+      "reference": false
+    },
+    "D06_SHOULDER_ORANGE_R": {
+      "min": [
+        29.799999999999994,
+        -45.0,
+        77.0
+      ],
+      "max": [
+        58.9,
+        34.0,
+        109.2
+      ],
+      "label": "右橙色肩甲 / 1件",
+      "reference": false
+    },
+    "D07_SHOULDER_GRAY_L": {
+      "min": [
+        -59.05,
+        -32.206250000000004,
+        82.0
+      ],
+      "max": [
+        -40.65,
+        25.0,
+        106.8
+      ],
+      "label": "左灰色肩甲压条 / 1件",
+      "reference": false
+    },
+    "D08_SHOULDER_GRAY_R": {
+      "min": [
+        40.65,
+        -32.206250000000004,
+        82.0
+      ],
+      "max": [
+        59.05,
+        25.0,
+        106.8
+      ],
+      "label": "右灰色肩甲压条 / 1件",
+      "reference": false
+    },
+    "D09_ROUND_ORANGE_L": {
+      "min": [
+        -65.5,
+        -45.49777442594767,
+        65.00027003974516
+      ],
+      "max": [
+        -46.5,
+        -16.5,
+        98.2
+      ],
+      "label": "左橙色圆盖底座 / 1件",
+      "reference": false
+    },
+    "D10_ROUND_ORANGE_R": {
+      "min": [
+        46.5,
+        -45.49777442594767,
+        65.00027003974516
+      ],
+      "max": [
+        65.5,
+        -16.5,
+        98.2
+      ],
+      "label": "右橙色圆盖底座 / 1件",
+      "reference": false
+    },
+    "D11_ROUND_GRAY_L": {
+      "min": [
+        -64.46153846153845,
+        -42.09975588726264,
+        68.4049159617787
+      ],
+      "max": [
+        -61.86153846153846,
+        -19.90024411273736,
+        91.2
+      ],
+      "label": "左灰色圆盖面板 / 1件",
+      "reference": false
+    },
+    "D12_ROUND_GRAY_R": {
+      "min": [
+        61.86153846153846,
+        -42.09975588726264,
+        68.4049159617787
+      ],
+      "max": [
+        64.46153846153845,
+        -19.90024411273736,
+        91.2
+      ],
+      "label": "右灰色圆盖面板 / 1件",
+      "reference": false
+    },
+    "D13_CAMERA_BEZEL": {
+      "min": [
+        -15.400000000000006,
+        74.2,
+        12.5
+      ],
+      "max": [
+        15.400000000000006,
+        78.2,
+        39.0
+      ],
+      "label": "摄像头橙色外框",
+      "reference": false
+    },
+    "D14_PHONE_BACK": {
+      "min": [
+        -46.0,
+        -92.0,
+        42.0
+      ],
+      "max": [
+        46.0,
+        -67.0,
+        145.0
+      ],
+      "label": "直立手机背托 / 灰色1件",
+      "reference": false
+    },
+    "D15_PHONE_JAW_L": {
+      "min": [
+        -46.0,
+        -90.0,
+        46.2
+      ],
+      "max": [
+        -35.0,
+        -74.0,
+        136.0
+      ],
+      "label": "手机支架橙色侧夹L / 1件",
+      "reference": false
+    },
+    "D16_PHONE_JAW_R": {
+      "min": [
+        35.0,
+        -90.0,
+        46.2
+      ],
+      "max": [
+        46.0,
+        -74.0,
+        136.0
+      ],
+      "label": "手机支架橙色侧夹R / 1件",
+      "reference": false
+    },
+    "REF_OLED_L": {
+      "min": [
+        -30.0,
+        54.59030506197635,
+        45.096118262605344
+      ],
+      "max": [
+        -3.0,
+        69.27456630346335,
+        70.50751496768395
+      ],
+      "label": "REF_OLED_L / 参照不打印",
+      "reference": true
+    },
+    "REF_OLED_R": {
+      "min": [
+        3.0,
+        54.59030506197635,
+        45.096118262605344
+      ],
+      "max": [
+        30.0,
+        69.27456630346335,
+        70.50751496768395
+      ],
+      "label": "REF_OLED_R / 参照不打印",
+      "reference": true
+    }
+  },
+  "head_print_parts": 20,
+  "oled_envelopes_shown": 2,
+  "body_parts": [
+    {
+      "image": "renders/part_00.png",
+      "file": "RED/models/QTY_06/TKRC-LegTop.STL",
+      "source": "mechanism/hexapod/TKRC-LegTop.STL",
+      "name": "TKRC-LegTop.STL",
+      "quantity": 6,
+      "color": "RED",
+      "optional": false,
+      "dimensions_mm": [
+        63.79999923706055,
+        4.599999904632568,
+        20.600000381469727
+      ],
+      "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a"
+    },
+    {
+      "image": "renders/part_01.png",
+      "file": "RED/models/QTY_06/TKRC-ThighTop.STL",
+      "source": "mechanism/hexapod/TKRC-ThighTop.STL",
+      "name": "TKRC-ThighTop.STL",
+      "quantity": 6,
+      "color": "RED",
+      "optional": false,
+      "dimensions_mm": [
+        34.39999771118164,
+        7.159999847412109,
+        20.600000381469727
+      ],
+      "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183"
+    },
+    {
+      "image": "renders/part_02.png",
+      "file": "RED/models/QTY_06/TKRC-JointCross.STL",
+      "source": "mechanism/hexapod/TKRC-JointCross.STL",
+      "name": "TKRC-JointCross.STL",
+      "quantity": 6,
+      "color": "RED",
+      "optional": false,
+      "dimensions_mm": [
+        41.35468673706055,
+        3.8999998569488525,
+        41.35468673706055
+      ],
+      "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73"
+    },
+    {
+      "image": "renders/part_03.png",
+      "file": "BLACK/models/QTY_06/TKRC-FootGround.STL",
+      "source": "mechanism/hexapod/TKRC-FootGround.STL",
+      "name": "TKRC-FootGround.STL",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        39.5,
+        65.04774475097656,
+        3.0
+      ],
+      "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a"
+    },
+    {
+      "image": "renders/part_04.png",
+      "file": "BLACK/models/QTY_06/TKRC-LegBottom.STL",
+      "source": "mechanism/hexapod/TKRC-LegBottom.STL",
+      "name": "TKRC-LegBottom.STL",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        65.0,
+        6.0,
+        21.5
+      ],
+      "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b"
+    },
+    {
+      "image": "renders/part_05.png",
+      "file": "BLACK/models/QTY_06/TKRC-ThighBottom.STL",
+      "source": "mechanism/hexapod/TKRC-ThighBottom.STL",
+      "name": "TKRC-ThighBottom.STL",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        35.0,
+        6.0,
+        20.5
+      ],
+      "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6"
+    },
+    {
+      "image": "renders/part_06.png",
+      "file": "BLACK/models/QTY_12/TKRC-JointTop.STL",
+      "source": "mechanism/hexapod/TKRC-JointTop.STL",
+      "name": "TKRC-JointTop.STL",
+      "quantity": 12,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        32.22916793823242,
+        6.0,
+        15.0
+      ],
+      "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7"
+    },
+    {
+      "image": "renders/part_07.png",
+      "file": "BLACK/models/QTY_12/TKRC-JointDown.STL",
+      "source": "mechanism/hexapod/TKRC-JointDown.STL",
+      "name": "TKRC-JointDown.STL",
+      "quantity": 12,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        25.025062561035156,
+        6.0,
+        15.0
+      ],
+      "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43"
+    },
+    {
+      "image": "renders/part_08.png",
+      "file": "BLACK/models/QTY_06/TKRC-FootTip.STL",
+      "source": "mechanism/hexapod/TKRC-FootTip.STL",
+      "name": "TKRC-FootTip.STL",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        10.0,
+        11.5,
+        10.0
+      ],
+      "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a"
+    },
+    {
+      "image": "renders/part_09.png",
+      "file": "BLACK/models/QTY_01/TKRC-BodyCenter.STL",
+      "source": "mechanism/hexapod/TKRC-BodyCenter.STL",
+      "name": "TKRC-BodyCenter.STL",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        96.67157745361328,
+        6.0,
+        44.34314727783203
+      ],
+      "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5"
+    },
+    {
+      "image": "renders/part_10.png",
+      "file": "BLACK/models/QTY_02/TKRC-BodySideWall.STL",
+      "source": "mechanism/hexapod/TKRC-BodySideWall.STL",
+      "name": "TKRC-BodySideWall.STL",
+      "quantity": 2,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        105.01252746582031,
+        33.650001525878906,
+        6.0
+      ],
+      "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78"
+    },
+    {
+      "image": "renders/part_11.png",
+      "file": "BLACK/models/QTY_01/TKRC-BodyBackWall.STL",
+      "source": "mechanism/hexapod/TKRC-BodyBackWall.STL",
+      "name": "TKRC-BodyBackWall.STL",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        26.0,
+        33.650001525878906,
+        3.0
+      ],
+      "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad"
+    },
+    {
+      "image": "renders/part_12.png",
+      "file": "BLACK/models/QTY_06/TKRC-FootTop_MountDraft.stl",
+      "source": "user_supplied/TKRC-FootTop_MountDraft.stl",
+      "name": "TKRC-FootTop_MountDraft.stl",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        76.99199676513672,
+        3.0,
+        14.968000411987305
+      ],
+      "sha256": "27a4fb3d8c1c3e2a9f64fdd19d3b18c17523ccbaecc89ad2aaf5dd3c4cb40951"
+    },
+    {
+      "image": "renders/part_13.png",
+      "file": "BLACK/models/QTY_06/TKRC-FootButtom_MountDraft.stl",
+      "source": "user_supplied/TKRC-FootButtom_MountDraft.stl",
+      "name": "TKRC-FootButtom_MountDraft.stl",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        66.97200012207031,
+        3.0,
+        14.942000389099121
+      ],
+      "sha256": "fb3ab5e1b1070a27daacb26ce37aa9f6539f1b092c5f73aabe2ebf96f32fae48"
+    },
+    {
+      "image": "renders/part_14.png",
+      "file": "BLACK/models/QTY_06/Armor_L_A1_TrialFit.stl",
+      "source": "user_supplied/Armor_L_A1_TrialFit.stl",
+      "name": "Armor_L_A1_TrialFit.stl",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        75.0,
+        25.392438888549805,
+        25.213123321533203
+      ],
+      "sha256": "3a2c2ac4adde4ca49b9dcc872488346cef9067a3162e2e0688699212ccae84c6"
+    },
+    {
+      "image": "renders/part_15.png",
+      "file": "BLACK/models/QTY_06/Armor_R_A1_TrialFit.stl",
+      "source": "user_supplied/Armor_R_A1_TrialFit.stl",
+      "name": "Armor_R_A1_TrialFit.stl",
+      "quantity": 6,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        75.0,
+        25.392438888549805,
+        25.213123321533203
+      ],
+      "sha256": "713999f303cdaf5029a4c3dc6112d4bbebfdb33eade42e1a664045467a1dfe0b"
+    },
+    {
+      "image": "renders/part_16.png",
+      "file": "BLACK/models/QTY_01/N001_BodyTop_EDGE50.stl",
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "name": "N001_BodyTop_EDGE50.stl",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        134.80905151367188,
+        124.34314727783203,
+        3.0
+      ],
+      "sha256": "ad0ba2c6b914f3b039a84fd4d05e34d49cbe99e0ac47f68dd9691a378b120116"
+    },
+    {
+      "image": "renders/part_17.png",
+      "file": "BLACK/models/QTY_01/N002_BodyBottom_EDGE50_InnerSeatsRemoved.stl",
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "name": "N002_BodyBottom_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": false,
+      "dimensions_mm": [
+        130.3431396484375,
+        128.3431396484375,
+        9.0
+      ],
+      "sha256": "fae1a5d49df2d5aa191d91d15c4d3d236e1248fb820e411bc5b1c317ccd717bd"
+    },
+    {
+      "image": "renders/part_18.png",
+      "file": "BLACK/optional_not_in_main_count/QTY_01/TKRC-BodyCenter-Thin.STL",
+      "source": "optional original part",
+      "name": "TKRC-BodyCenter-Thin.STL",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": true,
+      "dimensions_mm": [
+        96.67157745361328,
+        6.0,
+        44.34314727783203
+      ],
+      "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0"
+    },
+    {
+      "image": "renders/part_19.png",
+      "file": "BLACK/optional_not_in_main_count/QTY_01/N003_BodyBottom_18650_2S_EDGE50_InnerSeatsRemoved.stl",
+      "source": "nocturne_hexapod/source/edge_frames.py",
+      "name": "N003_BodyBottom_18650_2S_EDGE50_InnerSeatsRemoved.stl",
+      "quantity": 1,
+      "color": "BLACK",
+      "optional": true,
+      "dimensions_mm": [
+        130.3431396484375,
+        128.3431396484375,
+        9.0
+      ],
+      "sha256": "6fad4e9bbdefd86fdf46f9e713f07091677db4d780d2e156a8fb29f9596f3459"
+    }
+  ],
+  "head_native_coordinate_system": "+X right, +Y front, +Z up; millimeters",
+  "assembly_claim": "No full robot assembly is shown or inferred",
+  "renderer_sha256": "7de1ef691a72bbbe4f6637610cdd83f2ac2381e307eee965d4f018c646c59fd9"
+}

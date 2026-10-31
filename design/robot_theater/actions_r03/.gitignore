@@ -1,0 +1,5 @@
+source/__pycache__/
+*/renders/
+*.blend1
+*/performance.blend1
+layout_check.png

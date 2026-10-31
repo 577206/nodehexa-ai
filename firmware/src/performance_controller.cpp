@@ -107,16 +107,33 @@ const char* kindToKey(Kind kind) {
             return "beatsway";
         case Kind::Showtime:
             return "showtime";
+        case Kind::HoldThatCompliment:
+            return "hold_that_compliment";
+        case Kind::GossipRadar:
+            return "gossip_radar";
+        case Kind::ComplimentReceipt:
+            return "compliment_receipt";
         case Kind::None:
         default:
             return "none";
     }
 }
 
+bool isSingleRound(Kind kind) {
+    return kind == Kind::HoldThatCompliment
+        || kind == Kind::GossipRadar
+        || kind == Kind::ComplimentReceipt;
+}
+
 bool isSupported(Kind kind) {
-    return kind == Kind::Freestyle
-        || kind == Kind::BeatSway
-        || kind == Kind::Showtime;
+    if (kind == Kind::Freestyle || kind == Kind::BeatSway || kind == Kind::Showtime) {
+        return true;
+    }
+#ifdef ROBOT_MODEL_NODEQUADMINI
+    return false;
+#else
+    return isSingleRound(kind);
+#endif
 }
 
 void Controller::begin() {
@@ -137,6 +154,10 @@ bool Controller::start(Kind kind,
 
     if (!isSupported(kind)) {
         error = "unsupported performance";
+        return false;
+    }
+    if (isSingleRound(kind) && repeat) {
+        error = "performance does not support repeat";
         return false;
     }
 
@@ -215,6 +236,10 @@ bool Controller::enqueueRound(const State& state, bool clearQueue, String& error
             return enqueueBeatSway(state.sequenceId, error);
         case Kind::Showtime:
             return enqueueShowtime(state.sequenceId, error);
+        case Kind::HoldThatCompliment:
+        case Kind::GossipRadar:
+        case Kind::ComplimentReceipt:
+            return enqueueTheater(state.kind, state.sequenceId, error);
         case Kind::None:
         default:
             error = "invalid performance kind";
@@ -312,6 +337,34 @@ bool Controller::enqueueBeatSway(uint32_t sequenceId, String& error) {
     }
     return true;
 #endif
+}
+
+bool Controller::enqueueTheater(Kind kind, uint32_t sequenceId, String& error) {
+    MovementMode mode;
+    switch (kind) {
+        case Kind::HoldThatCompliment:
+            mode = MOVEMENT_HOLDTHATCOMPLIMENT;
+            break;
+        case Kind::GossipRadar:
+            mode = MOVEMENT_GOSSIPRADAR;
+            break;
+        case Kind::ComplimentReceipt:
+            mode = MOVEMENT_COMPLIMENTRECEIPT;
+            break;
+        default:
+            error = "invalid theater performance";
+            return false;
+    }
+
+    Action action = makeCyclesAction(mode, 1.0f);
+    action.speed = 1.0f;
+    action.sequenceId = sequenceId;
+    action.sequenceTail = true;
+    if (!motion::controller().enqueue(action)) {
+        error = "queue full";
+        return false;
+    }
+    return true;
 }
 
 uint32_t Controller::nextSequenceId() {

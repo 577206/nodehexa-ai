@@ -16,3 +16,6 @@
     {"freestyle", "{\"performance\":\"freestyle\",\"repeat\":false}"},
     {"dance_beatsway", "{\"performance\":\"beatsway\",\"repeat\":false}"},
     {"showtime", "{\"performance\":\"showtime\",\"repeat\":false}"},
+    {"hold_that_compliment", "{\"performance\":\"hold_that_compliment\",\"repeat\":false}"},
+    {"gossip_radar", "{\"performance\":\"gossip_radar\",\"repeat\":false}"},
+    {"compliment_receipt", "{\"performance\":\"compliment_receipt\",\"repeat\":false}"},

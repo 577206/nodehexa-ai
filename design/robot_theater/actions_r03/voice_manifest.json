@@ -1,0 +1,50 @@
+[
+  {
+    "action": "hold_that_compliment",
+    "file": "hold_that_compliment/voice_1.aiff",
+    "start_seconds": 0.35,
+    "duration_seconds": 0.228027,
+    "text": "嗯。",
+    "voice": "macOS Tingting temporary"
+  },
+  {
+    "action": "hold_that_compliment",
+    "file": "hold_that_compliment/voice_2.aiff",
+    "start_seconds": 5.1,
+    "duration_seconds": 1.863447,
+    "text": "客观评价，我收下了。",
+    "voice": "macOS Tingting temporary"
+  },
+  {
+    "action": "gossip_radar",
+    "file": "gossip_radar/voice_1.aiff",
+    "start_seconds": 0.2,
+    "duration_seconds": 1.538594,
+    "text": "我本来不爱听八卦。",
+    "voice": "macOS Tingting temporary"
+  },
+  {
+    "action": "gossip_radar",
+    "file": "gossip_radar/voice_2.aiff",
+    "start_seconds": 4.45,
+    "duration_seconds": 1.668118,
+    "text": "但你可以展开说说。",
+    "voice": "macOS Tingting temporary"
+  },
+  {
+    "action": "compliment_receipt",
+    "file": "compliment_receipt/voice_1.aiff",
+    "start_seconds": 0.2,
+    "duration_seconds": 1.189433,
+    "text": "夸奖已签收。",
+    "voice": "macOS Tingting temporary"
+  },
+  {
+    "action": "compliment_receipt",
+    "file": "compliment_receipt/voice_2.aiff",
+    "start_seconds": 4.0,
+    "duration_seconds": 1.501905,
+    "text": "本人将循环回味。",
+    "voice": "macOS Tingting temporary"
+  }
+]

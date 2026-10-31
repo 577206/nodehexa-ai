@@ -9,14 +9,18 @@ from omni_bridge import Controller,Conversation,session_config
 from test_omni import config
 
 ROOT=Path(__file__).parent
+THEATER_PERFORMANCES={'hold_that_compliment','gossip_radar','compliment_receipt'}
 
 def test_catalog_covers_all_implemented_modes_and_bounded_performances():
     enum=(ROOT.parent/'src/movement.h').read_text()
     modes=set(re.findall(r'\bMOVEMENT_([A-Z]+)\b',enum))-{'TOTAL'}
     actual={p['payload']['mode'].replace('_','').upper() for p in PRESETS if 'mode' in p['payload']}
+    actual|={p['payload']['performance'].replace('_','').upper() for p in PRESETS
+             if p['payload'].get('performance') in THEATER_PERFORMANCES}
     assert actual==modes
-    assert len(set(ACTIONS))==len(ACTIONS)==18
-    assert {p['payload']['performance'] for p in PRESETS if 'performance' in p['payload']}=={'freestyle','beatsway','showtime'}
+    assert len(set(ACTIONS))==len(ACTIONS)==21
+    assert {p['payload']['performance'] for p in PRESETS if 'performance' in p['payload']}=={
+        'freestyle','beatsway','showtime',*THEATER_PERFORMANCES}
     for p in PRESETS:
         payload=p['payload']
         if 'cycles' in payload:assert 0<payload['cycles']<=1
@@ -47,7 +51,7 @@ def test_old_firmware_does_not_advertise_or_receive_new_actions():
 def test_expanded_actions_still_require_enable_and_real_ack():
     async def run():
         c=Controller(config());c.board_status={'robot':{'actions':list(ACTIONS)}}
-        assert len(c.available_actions())==18
+        assert len(c.available_actions())==21
         r=await c.move('showtime');assert r['status']=='disabled'
         c.motion_enabled=True;calls=[]
         async def request(method,path,data=None):

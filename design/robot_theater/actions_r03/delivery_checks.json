@@ -1,0 +1,140 @@
+{
+  "status": "PASS_OFFLINE_PREVIEW_CHECKS",
+  "files": [
+    {
+      "file": "hold_that_compliment/preview.mp4",
+      "sha256": "581f65f5a29c256eb190e2f2315fb4bc1a759ff63e855aea478dd0c54cbb7436",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1600,
+            "height": 1000,
+            "r_frame_rate": "24/1",
+            "duration": "9.000000",
+            "nb_frames": "216"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "duration": "9.000000",
+            "nb_frames": "195"
+          }
+        ],
+        "format": {
+          "duration": "9.000000",
+          "size": "1094304"
+        }
+      }
+    },
+    {
+      "file": "gossip_radar/preview.mp4",
+      "sha256": "c73afcc30f6974e4e1110a94478f887214ba0653b405c90e9f3440fbdbaa0e09",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1600,
+            "height": 1000,
+            "r_frame_rate": "24/1",
+            "duration": "8.000000",
+            "nb_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "duration": "8.000000",
+            "nb_frames": "174"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "902770"
+        }
+      }
+    },
+    {
+      "file": "compliment_receipt/preview.mp4",
+      "sha256": "a584618f0a8fbda57007ef5dbcdde3fc7bde5517ba14a88ebc248825d6176468",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1600,
+            "height": 1000,
+            "r_frame_rate": "24/1",
+            "duration": "8.000000",
+            "nb_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "duration": "8.000000",
+            "nb_frames": "174"
+          }
+        ],
+        "format": {
+          "duration": "8.000000",
+          "size": "1035047"
+        }
+      }
+    },
+    {
+      "file": "three_actions_storyboard.png",
+      "sha256": "42406ed9f6caf711001db137bc5fb03688835fdaa0269e249b2624781aa41fd5",
+      "size": [
+        2100,
+        2090
+      ],
+      "frames": 1,
+      "duration_ms": null
+    },
+    {
+      "file": "unique_actions_reel.gif",
+      "sha256": "bb3a113b837c8556baebc0c5df0e78ff65e054faddbb7e86bd86bdd9cd8f99cf",
+      "size": [
+        800,
+        500
+      ],
+      "frames": 200,
+      "duration_ms": 25010
+    }
+  ],
+  "reel": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1600,
+        "height": 1000,
+        "r_frame_rate": "24/1",
+        "duration": "25.000000",
+        "nb_frames": "600"
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "duration": "25.046440",
+        "nb_frames": "543"
+      }
+    ],
+    "format": {
+      "duration": "25.046440",
+      "size": "3029483"
+    }
+  },
+  "reel_sha256": "61bb997fb6dde0f1ce1be9e44d4b6e625784981a3521bc176eb6acd7e401da4c",
+  "full_reel_decoded": true,
+  "cad_source_and_action_source_bound": true,
+  "three_finite_actions": true,
+  "hardware_motion_verified": false,
+  "physical_oled_mapping_verified": false,
+  "full_body_assembly_verified": false
+}

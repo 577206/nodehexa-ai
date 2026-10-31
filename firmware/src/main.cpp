@@ -683,6 +683,9 @@ void handleCapsGet(AsyncWebServerRequest *request) {
   performanceCaps["freestyle"] = performance::isSupported(performance::Kind::Freestyle);
   performanceCaps["beatsway"] = performance::isSupported(performance::Kind::BeatSway);
   performanceCaps["showtime"] = performance::isSupported(performance::Kind::Showtime);
+  performanceCaps["hold_that_compliment"] = performance::isSupported(performance::Kind::HoldThatCompliment);
+  performanceCaps["gossip_radar"] = performance::isSupported(performance::Kind::GossipRadar);
+  performanceCaps["compliment_receipt"] = performance::isSupported(performance::Kind::ComplimentReceipt);
 
   JsonObject manualCaps = doc.createNestedObject("manual");
 #ifdef ROBOT_MODEL_NODEQUADMINI
@@ -1632,6 +1635,9 @@ static bool parseMovementModeField(JsonVariantConst value, hexapod::MovementMode
       {"twist", hexapod::MOVEMENT_TWIST},
       {"beatsway", hexapod::MOVEMENT_BEATSWAY},
       {"beat_sway", hexapod::MOVEMENT_BEATSWAY},
+      {"hold_that_compliment", hexapod::MOVEMENT_HOLDTHATCOMPLIMENT},
+      {"gossip_radar", hexapod::MOVEMENT_GOSSIPRADAR},
+      {"compliment_receipt", hexapod::MOVEMENT_COMPLIMENTRECEIPT},
     };
     String lower = value.as<const char*>();
     lower.toLowerCase();
@@ -1663,6 +1669,18 @@ static bool parsePerformanceKindField(JsonVariantConst value, performance::Kind&
   }
   if (lower == "showtime") {
     kind = performance::Kind::Showtime;
+    return true;
+  }
+  if (lower == "hold_that_compliment") {
+    kind = performance::Kind::HoldThatCompliment;
+    return true;
+  }
+  if (lower == "gossip_radar") {
+    kind = performance::Kind::GossipRadar;
+    return true;
+  }
+  if (lower == "compliment_receipt") {
+    kind = performance::Kind::ComplimentReceipt;
     return true;
   }
   return false;

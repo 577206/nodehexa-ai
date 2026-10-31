@@ -1,0 +1,5 @@
+__pycache__/
+source/__pycache__/
+renders/
+layout_check.png
+*.blend1

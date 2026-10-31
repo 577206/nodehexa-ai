@@ -20,6 +20,11 @@ namespace hexapod {
     extern const MovementTable& rotatezTable();
     extern const MovementTable& twistTable();
     extern const MovementTable& beatswayTable();
+#ifndef ROBOT_MODEL_NODEQUADMINI
+    extern const MovementTable& HoldThatComplimentTable();
+    extern const MovementTable& GossipRadarTable();
+    extern const MovementTable& ComplimentReceiptTable();
+#endif
 
     const MovementTable kTable[MOVEMENT_TOTAL] {
         standbyTable(),
@@ -36,6 +41,15 @@ namespace hexapod {
         rotatezTable(),
         twistTable(),
         beatswayTable(),
+#ifdef ROBOT_MODEL_NODEQUADMINI
+        standbyTable(),
+        standbyTable(),
+        standbyTable(),
+#else
+        HoldThatComplimentTable(),
+        GossipRadarTable(),
+        ComplimentReceiptTable(),
+#endif
     };
 
     const MovementTable& getMovementTable(MovementMode mode) {

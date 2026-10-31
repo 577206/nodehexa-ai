@@ -1,0 +1,38 @@
+{
+  "status": "OFFLINE_PREVIEW_ONLY",
+  "sample_interval_seconds": 0.02,
+  "samples": 601,
+  "legs": 6,
+  "joint_angle_min_deg": [
+    -6.33603014895637,
+    12.224226440625994,
+    -22.940883247818807
+  ],
+  "joint_angle_max_deg": [
+    6.336003604271291,
+    47.74642572898789,
+    -5.323746069923461
+  ],
+  "servo_limit_violations": [],
+  "max_fk_foot_error_mm": 4.7016845024713884e-05,
+  "all_six_foot_targets_fixed": true,
+  "not_validated": [
+    "actual center of mass / stability",
+    "body and leg collision",
+    "loaded servo torque and speed",
+    "electrical power",
+    "OLED driver",
+    "real speech / body / OLED synchronization"
+  ],
+  "geometry": {
+    "kLegMountLeftRightX": 34.7,
+    "kLegMountOtherX": 25.0,
+    "kLegMountOtherY": 58.0,
+    "kLegRootToJoint1": 19.4,
+    "kLegJoint1ToJoint2": 32.0,
+    "kLegJoint2ToJoint3": 43.8,
+    "kLegJoint3ToTip": 90.05,
+    "standby_height_mm": 65.079295
+  },
+  "cockpit_source": "design/cockpit_cad/output/Lingxi-Mecha-Cockpit-Visual-v2.blend"
+}

@@ -13,6 +13,9 @@ enum class Kind : uint8_t {
     Freestyle,
     BeatSway,
     Showtime,
+    HoldThatCompliment,
+    GossipRadar,
+    ComplimentReceipt,
 };
 
 class Controller {
@@ -45,6 +48,7 @@ private:
     bool enqueueFreestyle(uint32_t sequenceId, String& error);
     bool enqueueShowtime(uint32_t sequenceId, String& error);
     bool enqueueBeatSway(uint32_t sequenceId, String& error);
+    bool enqueueTheater(Kind kind, uint32_t sequenceId, String& error);
 
     uint32_t nextSequenceId();
     uint32_t nextRandom();

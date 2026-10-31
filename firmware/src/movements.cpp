@@ -56,4 +56,7 @@ namespace hexapod {
     }
 
     #include "generated/movement_table.h"
+#ifndef ROBOT_MODEL_NODEQUADMINI
+    #include "generated/movement_table_theater.h"
+#endif
 }

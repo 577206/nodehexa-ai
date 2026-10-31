@@ -7,8 +7,9 @@ import base64
 import pytest
 
 from omni_audio import MicrophoneDecoder, SpeakerEncoder
-from omni_protocol import pack_downlink, unpack_uplink, validate_action, validate_board_url
-from omni_bridge import Controller, Conversation
+from omni_protocol import (POSTURE_ACTIONS, pack_downlink, unpack_uplink, validate_action,
+                           validate_board_url, validate_posture)
+from omni_bridge import Controller, Conversation, session_config
 
 
 def config():
@@ -175,4 +176,42 @@ def test_speaker_batches_are_paced_without_catchup_burst(monkeypatch, network_de
         audio = sent[1:]
         for before, after in zip(audio, audio[1:]):
             assert after[1] - before[1] >= before[2] * .02 - 1e-9
+    asyncio.run(run())
+
+
+def test_posture_tool_schema_and_argument_validation():
+    tools = session_config(instructions='test')['session']['tools']
+    tool = next(item['function'] for item in tools if item['function']['name'] == 'posture_action')
+    parameters = tool['parameters']
+    assert parameters['required'] == ['posture'] and parameters['additionalProperties'] is False
+    assert set(parameters['properties']['posture']['enum']) == set(POSTURE_ACTIONS)
+    assert validate_posture({'posture': 'good'}) == 'good'
+    for payload in ({'posture': 'jump'}, {'posture': 'good', 'action': 'forward'}, {}, []):
+        with pytest.raises(ValueError):
+            validate_posture(payload)
+
+
+def test_look_and_action_in_one_batch_are_rejected_before_side_effects():
+    async def run():
+        owner = Controller(config())
+        async def down(*args):
+            pass
+        async def forbidden(*args):
+            raise AssertionError('Visual sequencing guard failed')
+        owner.down = down
+        owner.frame = forbidden
+        owner.posture_action = forbidden
+        session = Conversation(owner, 41)
+        sent = []
+        async def send(payload):
+            sent.append(payload)
+        session.send = send
+        await session.run_tools([
+            {'call_id': 'look1', 'name': 'look', 'arguments': '{}'},
+            {'call_id': 'posture1', 'name': 'posture_action', 'arguments': '{"posture":"good"}'},
+        ])
+        outputs = [json.loads(item['item']['output']) for item in sent
+                   if item['type'] == 'conversation.item.create']
+        assert [item['reason'] for item in outputs] == ['visual_sequence_required'] * 2
+        assert sent[-1]['type'] == 'response.create'
     asyncio.run(run())

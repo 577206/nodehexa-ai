@@ -16,5 +16,8 @@
   {"id":"freestyle","label":"自由舞","group":"表演","example":"跳一段自由舞","payload":{"performance":"freestyle","repeat":false}},
   {"id":"dance_beatsway","label":"节奏舞","group":"表演","example":"跳一段节奏舞","payload":{"performance":"beatsway","repeat":false}},
   {"id":"showtime","label":"组合表演","group":"表演","example":"来一段组合表演","payload":{"performance":"showtime","repeat":false}},
+  {"id":"hold_that_compliment","label":"被夸后努力绷住","group":"表演","example":"表演被夸后努力绷住","payload":{"performance":"hold_that_compliment","repeat":false}},
+  {"id":"gossip_radar","label":"八卦雷达上线","group":"表演","example":"表演八卦雷达上线","payload":{"performance":"gossip_radar","repeat":false}},
+  {"id":"compliment_receipt","label":"夸奖签收","group":"表演","example":"表演夸奖签收","payload":{"performance":"compliment_receipt","repeat":false}},
   {"id":"stop","label":"停止运动","group":"控制","example":"停下来","payload":{"stop":true}}
 ]

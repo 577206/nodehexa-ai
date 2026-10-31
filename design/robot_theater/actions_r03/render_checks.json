@@ -1,0 +1,30 @@
+{
+  "status": "RENDERED_ACCEPTED_R06_CAD_ORIENTATION_STUDIES",
+  "actions": [
+    {
+      "id": "hold_that_compliment",
+      "frames": 108,
+      "head_cad_parts": 20,
+      "concept_eyes": 2
+    },
+    {
+      "id": "gossip_radar",
+      "frames": 96,
+      "head_cad_parts": 20,
+      "concept_eyes": 2
+    },
+    {
+      "id": "compliment_receipt",
+      "frames": 96,
+      "head_cad_parts": 20,
+      "concept_eyes": 2
+    }
+  ],
+  "source_scene_sha256": "50d5cb7af6343b14e68061997a803d5a2b2edf9a9bc4658b4846bbecd7378318",
+  "renderer_sha256": "ec8a812380b5c2ee3436cfd1568064d1a95b8d11db68835450bfb6d5c57acd6e",
+  "geometry_modified": false,
+  "neck_joint_added": false,
+  "full_body_assembly_simulated": false,
+  "concept_overlay_size_mm": 18,
+  "overlay_size_is_not_a_hardware_active_area_claim": true
+}

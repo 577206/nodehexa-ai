@@ -1,0 +1,53 @@
+{
+  "status": "PREVIEW_FULL_ESP32_BUILD_NOT_VERIFIED",
+  "host_geometry_profiles_compiled_and_executed": true,
+  "source_and_figures_verified": true,
+  "negative_compile_guards": {
+    "edge50_without_bench": true,
+    "edge50_quadruped": true
+  },
+  "resolved_environment": {
+    "extends": [
+      "env:nodehexa-v2-bench"
+    ],
+    "platform": "espressif32@6.9.0",
+    "build_flags": [
+      "-D FIRMWARE_VERSION=\"3.0.1\"",
+      "-D NODEHEXA_HARDWARE_REVISION=2",
+      "-D NODEHEXA_BENCH_MODE",
+      "-D NODEHEXA_CHASSIS_EDGE50"
+    ],
+    "board": "nodemcu-32s",
+    "framework": [
+      "arduino"
+    ],
+    "board_build.flash_mode": "dio",
+    "upload_port": "COM[3]",
+    "monitor_port": "COM[3]",
+    "monitor_speed": 115200,
+    "build_type": "debug",
+    "lib_deps": [
+      "adafruit/Adafruit PWM Servo Driver Library@^3.0.2",
+      "SPI"
+    ]
+  },
+  "attempts": [
+    {
+      "platform": "espressif32 8.0.0 / Arduino 3.3.12",
+      "result": "FAILED",
+      "errors": [
+        "buzzer.cpp: ledcSetup not declared",
+        "buzzer.cpp: ledcAttachPin not declared"
+      ],
+      "exit_code": 1
+    },
+    {
+      "platform": "espressif32@6.9.0 / Arduino 2.0.17",
+      "result": "STOPPED_DURING_DEPENDENCY_DOWNLOAD_BEFORE_COMPILATION",
+      "reason": "Pause implementation and validation at the visual preview gate; framework dependency download was still incomplete"
+    }
+  ],
+  "full_firmware_build_passed": false,
+  "firmware_flashed": false,
+  "hardware_motion_tested": false
+}

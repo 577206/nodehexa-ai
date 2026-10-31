@@ -12,7 +12,7 @@ def test_eye_controls_validation_transport_and_no_motion():
   h={'Host':'127.0.0.1:8765'}
   async with TestClient(TestServer(create_app(owner))) as c:
    valid={'mode':8,'durationMs':1000,'contrast':127}
-   for bad in ([],{},dict(valid,mode=9),dict(valid,mode=True),dict(valid,contrast=256),dict(valid,durationMs=0)):
+   for bad in ([],{},dict(valid,mode=17),dict(valid,mode=True),dict(valid,contrast=256),dict(valid,durationMs=0)):
     assert (await c.post('/api/eyes',headers=h,json=bad)).status==400
    assert not sent
    assert (await c.post('/api/eyes',headers={**h,'Origin':'https://example.com'},json=valid)).status==403

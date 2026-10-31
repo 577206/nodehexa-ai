@@ -4,8 +4,22 @@ namespace hexapod {
 
     namespace config {
         // all below definition use unit: mm
-        const float kLegMountLeftRightX = 34.7;
-        const float kLegMountOtherX = 25;
+        // EDGE50 moves each complete leg-root group outward by 25 mm.
+        // Link lengths and the longitudinal mounting coordinates stay fixed.
+        // Only the explicit EDGE50 bench environment enables this profile.
+#if defined(NODEHEXA_CHASSIS_EDGE50) && defined(ROBOT_MODEL_NODEQUADMINI)
+#error "EDGE50 geometry is only defined for the six-leg NodeHexa chassis"
+#endif
+#if defined(NODEHEXA_CHASSIS_EDGE50) && !defined(NODEHEXA_BENCH_MODE)
+#error "EDGE50 geometry requires bench mode until physical motion is validated"
+#endif
+#ifdef NODEHEXA_CHASSIS_EDGE50
+        const float kChassisSideTranslationMm = 25.0;
+#else
+        const float kChassisSideTranslationMm = 0.0;
+#endif
+        const float kLegMountLeftRightX = 34.7 + kChassisSideTranslationMm;
+        const float kLegMountOtherX = 25.0 + kChassisSideTranslationMm;
         const float kLegMountOtherY = 58;
 
         // ---- quadruped mounting (NodeQuadMini) ----

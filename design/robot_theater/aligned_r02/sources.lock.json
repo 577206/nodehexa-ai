@@ -1,0 +1,238 @@
+{
+  "revision": "R02",
+  "status": "SOURCE_MATCHED_PREVIEW_NOT_FULL_ASSEMBLY",
+  "user_confirmed_baseline": "red-black EDGE50 chassis + lingxi_head_simplified R06",
+  "cad_sources_regenerated": false,
+  "cad_sources_modified": false,
+  "head_part_count": 20,
+  "head_display_modules": 2,
+  "head_display_active_area_and_pixel_resolution": "not yet confirmed by hardware measurement",
+  "head_source": "design/lingxi_head_simplified/source/model.py",
+  "head_mesh": "design/lingxi_head_simplified/review/cache/current_mesh.json",
+  "release_manifest": "design/red_black_print_release_20261031/manifest.json",
+  "part_types_in_main_release": 18,
+  "firmware_geometry": {
+    "original": {
+      "side_translation_mm": 0,
+      "mount_side_x_mm": 34.7,
+      "mount_corner_x_mm": 25,
+      "mount_corner_y_mm": 58,
+      "link_lengths_mm": [
+        19.4,
+        32,
+        43.8,
+        90.05
+      ]
+    },
+    "edge50": {
+      "side_translation_mm": 25,
+      "mount_side_x_mm": 59.7,
+      "mount_corner_x_mm": 50,
+      "mount_corner_y_mm": 58,
+      "link_lengths_mm": [
+        19.4,
+        32,
+        43.8,
+        90.05
+      ]
+    },
+    "validation": {
+      "cad_side_translation_mm": 25,
+      "two_lateral_mount_coordinates_match_cad_shift": true,
+      "longitudinal_coordinate_and_link_lengths_preserved": true,
+      "physical_hole_alignment_validated": false,
+      "method": "compile and execute firmware/include/config.h for both profiles; compare against CAD dimension record"
+    }
+  },
+  "firmware_environment": "nodehexa-edge50-bench",
+  "servo_pwm_enabled": false,
+  "known_gaps": [
+    "No complete validated six-leg assembly transforms / servo-axis alignment",
+    "No hardware-verified head / chassis / leg collisions or center of mass",
+    "Two OLED active areas, resolutions, pinout and firmware drivers unconfirmed",
+    "Theater deployment is implemented, but real assembly and hardware synchronization are not verified",
+    "Existing head preview mesh carries a nonmanifold-edge warning; source CAD not repaired in this task"
+  ],
+  "sources": [
+    {
+      "path": "design/lingxi_head_simplified/source/model.py",
+      "sha256": "4bc3d01f99b9ad19b9381eff65fe7c4e26be7dae0c75824feb39314dbc9eb64e"
+    },
+    {
+      "path": "design/lingxi_head_simplified/parameters.yaml",
+      "sha256": "28da7670278478fb06dd0e0e65734b9f50b22238a7c181ce90ebe3c750e5b123"
+    },
+    {
+      "path": "design/lingxi_head_simplified/spec/current.yaml",
+      "sha256": "1c7bd65bebb1ac346618e31c373aee5416e46fb32cb35040197e1d4835876747"
+    },
+    {
+      "path": "design/lingxi_head_simplified/review/manifest.json",
+      "sha256": "b2fa984af26bf0fb5bd12a3cf8f12fcff271d3b0fd52c38f102b32946e6b2a71"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/model_R05A_archive.py",
+      "sha256": "11a6ed040ed50dc435f680c6c301fa8b42ce3d328206a8609be575b3d4783309"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/visor_R05A.py",
+      "sha256": "5d44e1e485d76e80bf138f24618c2f300b9408f5f2f0b7145b4fed7e81ac926a"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/decoration_vents_R06.py",
+      "sha256": "0547fb5116ad36e2903f89e40c789b4b784d6e1b32d9731afd9d17f3bddce918"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/decoration_armor_R06.py",
+      "sha256": "35652df4a4534ae3339b1be8895826bc6022385567610bcd0438f8e06a5e61c8"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/decoration_camera_R06.py",
+      "sha256": "26ebaea069c3b1c6f580629a47b76b2fac89da42dd01dcc0ed684ea3ec9612f5"
+    },
+    {
+      "path": "design/lingxi_head_simplified/source/decoration_phone_R06.py",
+      "sha256": "a24b555bd5b933aaddca23c0bb1270e93f5639679a2c1c66de01d241590e77c6"
+    },
+    {
+      "path": "design/lingxi_head_simplified/review/cache/current_mesh.json",
+      "sha256": "adc0b9d9038390840210545cc217fadb1d0e7afdf2f892776cb6038a41f784c4"
+    },
+    {
+      "path": "design/nocturne_hexapod/source/edge_frames.py",
+      "sha256": "1b6473bd16bbe32e4b04dbdd7b95843ceeabb4519c22de0dca0731112724eac9"
+    },
+    {
+      "path": "design/nocturne_hexapod/source/build_edge_bottom_freecad.py",
+      "sha256": "8c5e7e4a6cf40e9b0a9ee6351d9a700bb0854fc072141bc585f9f16c6eebeddd"
+    },
+    {
+      "path": "design/nocturne_hexapod/spec/current.yaml",
+      "sha256": "884d890a7a90d75fd40f35287e65a3a2879ff35036544ccf4a46f4bced3034ff"
+    },
+    {
+      "path": "design/nocturne_hexapod/validation/interfaces/BodyButtom_edge50.brep",
+      "sha256": "7e98b6fe1d279d35b474bac781807be37b15b5624b1fc94ea53e33abcf85673d"
+    },
+    {
+      "path": "design/nocturne_hexapod/validation/interfaces/BodyButtom-18650-2S_edge50.brep",
+      "sha256": "7366e5001d3054cb0da538d965ea3fb56d07b4b0dc276c82a101367f8edd0da9"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/RED/models/QTY_06/TKRC-LegTop.STL",
+      "sha256": "60992f22c2472132f8bc60b044d2e091be26214db903febbd52427b99a3f8e9a"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/RED/models/QTY_06/TKRC-ThighTop.STL",
+      "sha256": "427b456c4be82f7fba44b34568e8d65b6480a0f569de57be394af50e6533d183"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/RED/models/QTY_06/TKRC-JointCross.STL",
+      "sha256": "90878b96532fbbb3384f56af9ff0651b6ee78827dd9f2a7d16b843613d3ccb73"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-FootGround.STL",
+      "sha256": "07f750e0ee790d3474e1684f19e1ddc55febe65da46b20c34e2b905d6f78716a"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-LegBottom.STL",
+      "sha256": "c3d2a6545497ea660106bc6cb3d3f79d73f1b59785ad0f84528d7bb01dec425b"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-ThighBottom.STL",
+      "sha256": "e794388b7a73cb07d71d675acf1bd27d0787369ed213d5d67de5d06b5afb2da6"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_12/TKRC-JointTop.STL",
+      "sha256": "5fe3e98fa2f876b9cf67e83b55242e390285873e9b019b4c32793acfcfc46fe7"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_12/TKRC-JointDown.STL",
+      "sha256": "f876b395af3a1997fcd6020a74248f9a049242ecbbc24cc51a479ee945d0ea43"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-FootTip.STL",
+      "sha256": "04a8091c9011ecb71cb2bc81d47eed72279453c8b3b33c1ea2d4d8860e2afa6a"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_01/TKRC-BodyCenter.STL",
+      "sha256": "b6aaaac1fc07fe1807fa18cf88595fd08f032b55f9d128468b9e77ce57929dc5"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_02/TKRC-BodySideWall.STL",
+      "sha256": "2beec61f54f62d8f4c7f79298f30621940f18b70a9e139fe8a471397c7ac1b78"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_01/TKRC-BodyBackWall.STL",
+      "sha256": "a9694cb8b6a46359e96364d0664983dae3bd9cab56309cea816d7361064ed4ad"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-FootTop_MountDraft.stl",
+      "sha256": "27a4fb3d8c1c3e2a9f64fdd19d3b18c17523ccbaecc89ad2aaf5dd3c4cb40951"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/TKRC-FootButtom_MountDraft.stl",
+      "sha256": "fb3ab5e1b1070a27daacb26ce37aa9f6539f1b092c5f73aabe2ebf96f32fae48"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/Armor_L_A1_TrialFit.stl",
+      "sha256": "3a2c2ac4adde4ca49b9dcc872488346cef9067a3162e2e0688699212ccae84c6"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_06/Armor_R_A1_TrialFit.stl",
+      "sha256": "713999f303cdaf5029a4c3dc6112d4bbebfdb33eade42e1a664045467a1dfe0b"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_01/N001_BodyTop_EDGE50.stl",
+      "sha256": "ad0ba2c6b914f3b039a84fd4d05e34d49cbe99e0ac47f68dd9691a378b120116"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/models/QTY_01/N002_BodyBottom_EDGE50_InnerSeatsRemoved.stl",
+      "sha256": "fae1a5d49df2d5aa191d91d15c4d3d236e1248fb820e411bc5b1c317ccd717bd"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/optional_not_in_main_count/QTY_01/TKRC-BodyCenter-Thin.STL",
+      "sha256": "fc1ca3313cf2e4d7d8ddb90949068d167b56da6636da938301c55666a98238e0"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/optional_not_in_main_count/QTY_01/N003_BodyBottom_18650_2S_EDGE50_InnerSeatsRemoved.stl",
+      "sha256": "6fad4e9bbdefd86fdf46f9e713f07091677db4d780d2e156a8fb29f9596f3459"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/manifest.json",
+      "sha256": "6287765108f334a2d4407c1bca71ab16d21819451427dd450d28ce0452f9d6bb"
+    },
+    {
+      "path": "design/red_black_print_release_20261031/BLACK/manifest.json",
+      "sha256": "238068806106ee2f51e870d3f5effa6b19bfd3c4e254195e26b09c17b77637fc"
+    },
+    {
+      "path": "firmware/include/config.h",
+      "sha256": "1ca77e6f2573eef2bd52b8bac45c7626ae120a2dfb91f006f951ed4c76993132"
+    },
+    {
+      "path": "firmware/platformio.ini",
+      "sha256": "a39b6f4c001451efa78a37056dd8305df822fc9f760c151c5da80a97ada2f65b"
+    },
+    {
+      "path": "design/robot_theater/aligned_r02/source/geometry_probe.cpp",
+      "sha256": "16b4c4e2e7597de17f2a100a3cb7a5331856c48c5a7b3b7dd3421aae888b9304"
+    },
+    {
+      "path": "design/robot_theater/aligned_r02/source/collect_sources.py",
+      "sha256": "6ea5f68348429a7b0d0a5d8b6a7efce25d83e6229608e76f44da49374442e102"
+    },
+    {
+      "path": "design/robot_theater/aligned_r02/source/render_current.py",
+      "sha256": "7de1ef691a72bbbe4f6637610cdd83f2ac2381e307eee965d4f018c646c59fd9"
+    },
+    {
+      "path": "design/robot_theater/aligned_r02/source/compose_current.py",
+      "sha256": "627f5b523264a0e4cd68a46968916e055bda3c647b4b545362adfb9292272f4b"
+    },
+    {
+      "path": "design/head_body_interface_20261031/dimension_basis.json",
+      "sha256": "450de3b7315fd0e5b17ac418ecc5c1ce8c5d4cde42e513eea009602fd33a35aa"
+    }
+  ]
+}

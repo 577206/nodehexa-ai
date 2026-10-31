@@ -1,0 +1,9 @@
+{
+  "status": "PASS_SOURCE_FIGURE_CORRESPONDENCE",
+  "source_files": 45,
+  "figures": 3,
+  "head_print_parts": 20,
+  "body_part_types_including_alternatives": 20,
+  "full_assembly_validated": false,
+  "hardware_motion_validated": false
+}

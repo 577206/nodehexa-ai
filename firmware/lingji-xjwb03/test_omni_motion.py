@@ -3,7 +3,7 @@ import asyncio
 import json
 
 from aiohttp.test_utils import TestClient, TestServer
-from omni_bridge import Controller, create_app
+from omni_bridge import Controller, Conversation, create_app
 from omni_protocol import ACTIONS
 from test_omni import config
 
@@ -101,4 +101,58 @@ def test_timeout_does_not_retry_or_claim_success():
         result = await owner.move('forward')
         assert not result['ok'] and result['status'] == 'transport_error'
         assert sent == ['forward'] and not owner.motion_pending
+    asyncio.run(run())
+
+
+def test_posture_actions_use_only_fixed_in_place_presets():
+    async def run():
+        owner = Controller(config())
+        owner.motion_enabled = True
+        _, sent = fake_robot(owner)
+        expected = {'good': 'beat_sway', 'head_tilt': 'rotate_z',
+                    'forward_lean': 'rotate_x', 'slouch': 'twist'}
+        for posture, action in expected.items():
+            result = await owner.posture_action(posture)
+            assert result['ok'] and result['action'] == action and result['posture'] == posture
+        assert sent == list(expected.values())
+    asyncio.run(run())
+
+
+def test_away_uncertain_and_disarmed_posture_do_not_dispatch():
+    async def run():
+        owner = Controller(config())
+        async def forbidden(*args):
+            raise AssertionError('Unexpected board request')
+        owner.request = forbidden
+        for posture in ('away', 'uncertain'):
+            result = await owner.posture_action(posture)
+            assert result['ok'] and result['status'] == 'no_motion'
+        result = await owner.posture_action('good')
+        assert not result['ok'] and result['status'] == 'disabled'
+    asyncio.run(run())
+
+
+def test_look_then_posture_action_runs_two_stage_chain():
+    async def run():
+        owner = Controller(config())
+        owner.motion_enabled = True
+        _, sent = fake_robot(owner)
+        async def frame():
+            return b'\xff\xd8jpeg\xff\xd9'
+        async def down(*args):
+            pass
+        owner.frame, owner.down = frame, down
+        session = Conversation(owner, 31)
+        events = []
+        async def send(payload):
+            events.append(payload)
+        session.send = send
+        await session.run_tools([{'call_id': 'look1', 'name': 'look', 'arguments': '{}'}])
+        assert session.image_commit_pending and sent == []
+        await session.run_tools([{'call_id': 'posture1', 'name': 'posture_action',
+                                  'arguments': '{"posture":"head_tilt"}'}])
+        assert sent == ['rotate_z']
+        result = json.loads(events[-2]['item']['output'])
+        assert result['ok'] and result['posture'] == 'head_tilt'
+        assert events[-1]['type'] == 'response.create'
     asyncio.run(run())

@@ -10,6 +10,14 @@ MAX_BATCH = 12
 PRESETS = json.loads(Path(__file__).with_name('motion_presets.json').read_text())
 ACTIONS = tuple(preset['id'] for preset in PRESETS)
 LEGACY_ACTIONS = ('forward', 'backward', 'turn_left', 'turn_right', 'shift_left', 'shift_right', 'stop')
+POSTURE_ACTIONS = {
+    'good': 'beat_sway',
+    'head_tilt': 'rotate_z',
+    'forward_lean': 'rotate_x',
+    'slouch': 'twist',
+    'away': None,
+    'uncertain': None,
+}
 
 
 def validate_board_url(url):
@@ -60,3 +68,9 @@ def validate_action(arguments):
     if not isinstance(arguments, dict) or set(arguments) != {'action'} or arguments['action'] not in ACTIONS:
         raise ValueError('Only named, bounded movement presets are allowed')
     return arguments['action']
+
+
+def validate_posture(arguments):
+    if not isinstance(arguments, dict) or set(arguments) != {'posture'} or arguments['posture'] not in POSTURE_ACTIONS:
+        raise ValueError('Only supported posture categories are allowed')
+    return arguments['posture']

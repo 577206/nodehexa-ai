@@ -25,6 +25,9 @@ constexpr MovementMetrics kMetrics[MOVEMENT_TOTAL] = {
     /* MOVEMENT_ROTATEZ     */ {0.0f, 20.0f, 2.0f},
     /* MOVEMENT_TWIST       */ {0.0f, 15.0f, 2.0f},
     /* MOVEMENT_BEATSWAY    */ {0.0f, 18.0f, 2.0f},
+    /* MOVEMENT_HOLDTHATCOMPLIMENT */ {0.0f, 0.0f, 2.0f},
+    /* MOVEMENT_GOSSIPRADAR */ {0.0f, 0.0f, 2.0f},
+    /* MOVEMENT_COMPLIMENTRECEIPT */ {0.0f, 0.0f, 2.0f},
 };
 
 }

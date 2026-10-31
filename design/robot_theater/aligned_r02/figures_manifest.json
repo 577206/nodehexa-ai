@@ -1,0 +1,32 @@
+{
+  "revision": "R02",
+  "images": [
+    {
+      "file": "current_head_views.png",
+      "sha256": "a2e46bd529f82b5446525544caefd2a768c5ceb4d9c5a095ab66a12c537b460a",
+      "size": [
+        2100,
+        1260
+      ]
+    },
+    {
+      "file": "current_parts_atlas.png",
+      "sha256": "82dc696556ae6c7489ae71f548a4604c118ffcffb25bb9a10858499b4387d31b",
+      "size": [
+        2100,
+        2160
+      ]
+    },
+    {
+      "file": "code_geometry_map.png",
+      "sha256": "c2eadbfacb985ef98d5a07f584d99e10be2d26077aba25ee81a4af199c864593",
+      "size": [
+        2100,
+        1440
+      ]
+    }
+  ],
+  "sources_lock_sha256": "19af177a24b053bdff35f49bb8d283e348ebd044fb0fbdbcf5ff0670fda41e8b",
+  "render_manifest_sha256": "bbdd188fd68ccecd53ed1f88438114ee0f7c624a65de28b1c123082adfab3b8a",
+  "composer_sha256": "627f5b523264a0e4cd68a46968916e055bda3c647b4b545362adfb9292272f4b"
+}

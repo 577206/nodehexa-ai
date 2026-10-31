@@ -1,0 +1,79 @@
+{
+  "status": "PASS_IDEAL_KINEMATICS_ONLY",
+  "geometry": {
+    "side_translation_mm": 25,
+    "mount_side_x_mm": 59.7,
+    "mount_corner_x_mm": 50,
+    "mount_corner_y_mm": 58,
+    "link_lengths_mm": [
+      19.4,
+      32,
+      43.8,
+      90.05
+    ]
+  },
+  "actions": [
+    {
+      "id": "hold_that_compliment",
+      "samples_20ms": 451,
+      "joint_min_deg": [
+        -1.0467759636857625,
+        23.451353615370927,
+        -18.600357813759427
+      ],
+      "joint_max_deg": [
+        1.0467759636857625,
+        35.80954036572415,
+        -10.61969360917058
+      ],
+      "max_fk_foot_error_mm": 8.644125458514252e-14,
+      "servo_limit_violations": [],
+      "ends_at_neutral": true,
+      "all_six_foot_targets_fixed": true
+    },
+    {
+      "id": "gossip_radar",
+      "samples_20ms": 401,
+      "joint_min_deg": [
+        -6.087291789676453,
+        22.798824742752803,
+        -19.72104771395624
+      ],
+      "joint_max_deg": [
+        6.087291789676453,
+        37.2829086934171,
+        -10.02519569825581
+      ],
+      "max_fk_foot_error_mm": 1.0345658394727079e-13,
+      "servo_limit_violations": [],
+      "ends_at_neutral": true,
+      "all_six_foot_targets_fixed": true
+    },
+    {
+      "id": "compliment_receipt",
+      "samples_20ms": 401,
+      "joint_min_deg": [
+        -1.6045677217126604,
+        23.462510238679325,
+        -18.593730339755208
+      ],
+      "joint_max_deg": [
+        1.6045677217126604,
+        36.6200393066186,
+        -11.18282632381004
+      ],
+      "max_fk_foot_error_mm": 8.163514517232825e-14,
+      "servo_limit_violations": [],
+      "ends_at_neutral": true,
+      "all_six_foot_targets_fixed": true
+    }
+  ],
+  "not_validated": [
+    "complete physical assembly",
+    "servo torque/speed/power",
+    "center of mass or dynamic stability",
+    "leg and body collision",
+    "real OLED display area/driver",
+    "real speech and robot synchronization"
+  ]
+}

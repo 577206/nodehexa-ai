@@ -1,0 +1,12 @@
+{
+  "status": "COMPOSED_PREVIEW",
+  "composer_sha256": "6e2f559538dbe1ce029f7eaf08002b9aa64e9b9ac7b74770de35d30bd6ac1fdd",
+  "source_r02_lock_sha256": "c9bd71eb5afe758ed417e8c73b48268fff3f8d6fa1c6b48a657a6592f5505e09",
+  "actions": [
+    "hold_that_compliment",
+    "gossip_radar",
+    "compliment_receipt"
+  ],
+  "video": "unique_actions_reel.mp4",
+  "storyboard": "three_actions_storyboard.png"
+}

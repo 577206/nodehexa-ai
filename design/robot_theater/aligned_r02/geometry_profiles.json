@@ -1,0 +1,33 @@
+{
+  "original": {
+    "side_translation_mm": 0,
+    "mount_side_x_mm": 34.7,
+    "mount_corner_x_mm": 25,
+    "mount_corner_y_mm": 58,
+    "link_lengths_mm": [
+      19.4,
+      32,
+      43.8,
+      90.05
+    ]
+  },
+  "edge50": {
+    "side_translation_mm": 25,
+    "mount_side_x_mm": 59.7,
+    "mount_corner_x_mm": 50,
+    "mount_corner_y_mm": 58,
+    "link_lengths_mm": [
+      19.4,
+      32,
+      43.8,
+      90.05
+    ]
+  },
+  "validation": {
+    "cad_side_translation_mm": 25,
+    "two_lateral_mount_coordinates_match_cad_shift": true,
+    "longitudinal_coordinate_and_link_lengths_preserved": true,
+    "physical_hole_alignment_validated": false,
+    "method": "compile and execute firmware/include/config.h for both profiles; compare against CAD dimension record"
+  }
+}

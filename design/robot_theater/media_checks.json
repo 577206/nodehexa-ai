@@ -1,0 +1,35 @@
+{
+  "am_i_cute_preview.mp4": {
+    "size_bytes": 886859
+  },
+  "am_i_cute_preview.gif": {
+    "size_bytes": 1354189
+  },
+  "storyboard.png": {
+    "size_bytes": 1360698
+  },
+  "theater_preview.blend": {
+    "size_bytes": 506608
+  },
+  "gif": {
+    "size": [
+      800,
+      540
+    ],
+    "frames": 96,
+    "duration_ms": 12010
+  },
+  "storyboard_verified": true,
+  "kinematic_samples": 601,
+  "mp4_probe": {
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "width": 1600,
+    "height": 1080,
+    "fps": 24,
+    "video_frames": 288,
+    "duration_seconds": 12.0,
+    "full_decode_exit_code": 0
+  },
+  "review_status": "WAITING_FOR_USER_VISUAL_FEEDBACK_NOT_HARDWARE_VALIDATED"
+}
