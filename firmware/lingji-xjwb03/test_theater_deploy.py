@@ -147,3 +147,19 @@ def test_theater_api_exposes_named_start_and_status():
             response = await client.get('/api/status', headers=headers)
             assert 'theater' in await response.json()
     asyncio.run(run())
+
+
+def test_studio_page_and_media_share_local_origin():
+    async def run():
+        owner = Controller(config())
+        async with TestClient(TestServer(create_app(owner))) as client:
+            headers = {'Host': '127.0.0.1:8765'}
+            response = await client.get('/studio', headers=headers)
+            assert response.status == 200
+            body = await response.text()
+            assert '陪你一生' in body and '/studio-assets/v2/studio.js' in body
+            response = await client.get('/studio-media/actions_r03/unique_actions_reel.mp4', headers=headers)
+            assert response.status == 200 and int(response.content_length) > 1000
+            response = await client.get('/studio', headers={**headers, 'Origin': 'https://example.com'})
+            assert response.status == 403
+    asyncio.run(run())

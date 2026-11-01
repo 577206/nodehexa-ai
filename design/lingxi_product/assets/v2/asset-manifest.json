@@ -1,0 +1,63 @@
+{
+  "version": "V2",
+  "status": "long_term_companion_copy_preview",
+  "aigc": {
+    "tool": "built-in image_gen.imagegen",
+    "prompt": "Use case: ads-marketing\nAsset type: 16:9 ultra-wide cinematic background for a Chinese desktop mecha product website and PowerPoint deck.\nPrimary request: empty premium industrial photography stage, black graphite hangar, deep crimson light coming from a huge rectangular opening high in the right background, one pale silver angled spotlight and soft atmospheric smoke. A low dark brushed-metal workbench surface in the lower half, with believable red reflected light. Empty stage ready for a small physical robot product composited later. Composition: left 42 percent deliberately almost black calm negative space for large Chinese typography; right 58 percent richly lit but still dark empty stage, low camera angle, refined asymmetric architectural framing. Mood: precise, cinematic, tangible, Japanese mecha product campaign, quiet strength, striking but restrained. Palette: charcoal black, subtle neutral steel, deep crimson red as the only color accent. Ultra high quality film still, physically believable light, fine grain, hard directional rim light and soft smoke.\nConstraints: no robot, no people, no humanoids, no legs, no mechanical product, no text, no letters, no logos, no watermark, no UI or HUD, no blue or purple neon, no busy details. Landscape 16:9.",
+    "source": "/Users/ashley/.codex/generated_images/01a19182-d9e9-7301-965a-2396c1c66db1/exec-b8713c9a-89f7-4bbd-a64e-68f4d7624c75.png",
+    "project_asset": "assets/v2/hangar-aigc.png",
+    "usage": "Environment only. Contains no robot or product geometry."
+  },
+  "geometry": {
+    "head": "design/robot_theater/aligned_r02/current_sources_preview.blend",
+    "lock": "design/robot_theater/aligned_r02/sources.lock.json",
+    "current_CAD": "design/lingxi_head_simplified/review/cache/current_mesh.json",
+    "claim": "Frozen mesh lighting and camera derivatives only. No CAD regeneration. Conceptual 18 mm eye overlays do not assert hardware active area."
+  },
+  "chassis": {
+    "reference": "design/red_black_print_release_20261031/approved_color_reference.png",
+    "parts": [
+      "design/robot_theater/aligned_r02/renders/part_00.png",
+      "design/robot_theater/aligned_r02/renders/part_03.png",
+      "design/robot_theater/aligned_r02/renders/part_16.png"
+    ],
+    "claim": "Authentic released part images; not a calibrated complete R06 + EDGE50 assembly."
+  },
+  "font": {
+    "web_display": "workspace/fonts/smiley-sans/SmileySans-Oblique.ttf.woff2",
+    "deck": "Hiragino Sans GB"
+  },
+  "deliverables": {
+    "site": "http://127.0.0.1:8765/studio",
+    "deck": "output-v2/灵犀-黑红机库-产品展示-V2-长期陪伴版.pptx",
+    "deck_preview": "companion-ppt-contact-sheet.jpg",
+    "web_preview": "companion-desktop-preview.png"
+  },
+  "asset_sha256": {
+    "assets/v2/leg-shell.png": "9e4b18a97b5f93bfbba453859423128ee326d85fc348cd364c54c75fa16b360c",
+    "assets/v2/foot-frame.png": "2c5ff6ef0504fe2e1b17dd79da9cf622526fa99dcb6e242a1503f6d6ec3468bf",
+    "assets/v2/head-hero.webp": "1642fc6b1e1d9e5c73db936025620325d4abc1418006097e259828c5e6557375",
+    "assets/v2/SmileySans-Oblique.woff2": "731f22973349404b15a88a99ef3b5dd4104c0965c23b7e485c1f11e84fea99e2",
+    "assets/v2/studio.css": "c211d47ed95a1b31f8f5c4effc7b3d3f1b7c22978c3d753e33a6df14a438b828",
+    "assets/v2/head-side.webp": "681b87e65d4bf33ae1dd4cd6b893e747602d64bb5a6fbac63505d5fb86f5f05f",
+    "assets/v2/console-preview.png": "48cf0bb8ffabfd0646429bb2dd4091bcfe0a3214a639b94d6d0994c7df114a32",
+    "assets/v2/hangar-aigc.png": "487d2dd120e793ffc00923cca634790fad40f32f754ac4987b98ecaf1d96a787",
+    "assets/v2/studio.js": "daa64698534ddd63a55da1f47382bd1a4bff473405d67fc47f83e43ba6aab505",
+    "assets/v2/head-side.png": "026b93bc5f4ab47a3fe9c6b597c7007da2e937fb441be3fd2015a1e336cabdb6",
+    "assets/v2/head-front.webp": "d7494a2df3b03e4a4d5beeafbd6403f7f18964acc44b335f26fecf086b57cdcd",
+    "assets/v2/head-detail.webp": "86ba4f0611dfdaa905de9763e8515925e9b8bd42ed498c593f85491c9808ec3f",
+    "assets/v2/hangar-aigc.webp": "3e68c536ee9bdd75f65014780e000e824fcd91b060b4e3deb14f97bf07de5b5c",
+    "assets/v2/head-hero.png": "28a91248bbcc73f606ad466e684faf93c48b6fe06a59cec767c621403f4e042b",
+    "assets/v2/head-detail.png": "3f16fe67dc9ad62150a86e5839a84eae18118463146ea337a07529f4deb2ce6b",
+    "assets/v2/head-front.png": "121de84d7bc3ade25ea805928dde23ad98443830b698fa39c5771363452fc7c5",
+    "assets/v2/chassis-reference.png": "df01f8b43855b7ca41949f6fb9e2d24ffa7302b42f4483e5c5bd59d088302a37",
+    "assets/v2/edge50-top.png": "9b64d4660292b68751e7cd50d950fdffbbfe0077fcb0344241db9e962688ac3f"
+  },
+  "copy": {
+    "approved_direction": "长期陪伴，赛博永生",
+    "slogan": "十岁学习，二十牛马；三十谋划，四十喝茶。灵犀，陪你一生。",
+    "user_wording": "十岁陪伴学习，二十陪你度过牛马生活，三十陪你出谋划策，四十陪你养生喝茶",
+    "api": "已通过 API 接入对话与视觉能力",
+    "continuity": "长期记忆迁移与延续作为愿景表达"
+  }
+}

@@ -594,6 +594,9 @@ def create_app(controller, port=8765):
     async def index(request):
         return web.FileResponse(Path(__file__).with_name('omni_dashboard.html'))
 
+    async def studio(request):
+        return web.FileResponse(Path(__file__).resolve().parents[2] / 'design/lingxi_product/index.html')
+
     async def status(request):
         return web.json_response(controller.status(), headers={'Cache-Control': 'no-store'})
 
@@ -687,6 +690,9 @@ def create_app(controller, port=8765):
         return web.json_response({'ok': True})
 
     app.router.add_get('/', index)
+    app.router.add_get('/studio', studio)
+    app.router.add_static('/studio-media/', str(Path(__file__).resolve().parents[2] / 'design/robot_theater'))
+    app.router.add_static('/studio-assets/', str(Path(__file__).resolve().parents[2] / 'design/lingxi_product/assets'))
     app.router.add_get('/memory', index)
     app.router.add_get('/api/memory', memory)
     app.router.add_post('/api/settings', settings)
